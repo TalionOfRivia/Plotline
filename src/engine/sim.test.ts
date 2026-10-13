@@ -51,7 +51,8 @@ describe('full simulation', () => {
   it('plays 40 random lives without errors', () => {
     const results: Life[] = []
     for (let i = 0; i < 40; i++) results.push(playLife(`sim-${i}`))
-    expect(results.every((l) => !l.alive)).toBe(true)
+    const stuck = results.filter((l) => l.alive)
+    expect(stuck.map((l) => ({ seed: l.seed, age: l.age, pending: l.pending, prison: l.prison, stage: l.education.stage, job: l.job?.trackId }))).toEqual([])
     expect(results.every((l) => l.ribbon)).toBe(true)
     const avgAge = results.reduce((s, l) => s + l.age, 0) / results.length
     expect(avgAge).toBeGreaterThan(40)

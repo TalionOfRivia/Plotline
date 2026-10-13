@@ -92,6 +92,7 @@ export function withRng<T>(life: Life, fn: (rng: Rng) => T): T {
   const out = fn(rng)
   life.rngCalls = rng.calls
   syncDerivedFlags(life)
+  if (!life.alive) finish(life)
   return out
 }
 

@@ -2,6 +2,20 @@ import { useTranslation } from 'react-i18next'
 import { LANGS } from '../i18n'
 import { useGame } from '../state/store'
 
+/** Shown in mobile Safari when the app isn't installed yet. */
+function InstallHint() {
+  const { t } = useTranslation()
+  const nav = navigator as Navigator & { standalone?: boolean }
+  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent)
+  const standalone = nav.standalone || window.matchMedia('(display-mode: standalone)').matches
+  if (!isIOS || standalone) return null
+  return (
+    <div className="max-w-xs text-center text-xs bg-ink-soft rounded-2xl px-4 py-3 opacity-90">
+      {t('menu.installHint')}
+    </div>
+  )
+}
+
 export function TitleScreen() {
   const { t, i18n } = useTranslation()
   const newLife = useGame((s) => s.newLife)
@@ -34,6 +48,8 @@ export function TitleScreen() {
             : t('menu.continue')}
         </button>
       </div>
+
+      <InstallHint />
 
       <div className="flex gap-2 text-sm">
         {LANGS.map((l) => (

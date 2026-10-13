@@ -1,4 +1,7 @@
-# Life-Sim Game — Project Plan
+# Plotline — Project Plan
+
+> **Status (2026-10-13):** Phases 0–6 built. Live at https://talionofrivia.github.io/Plotline/.
+> Remaining: Phase 7 (phone handoff & on-device checks) and whatever corrections come from play-testing.
 
 An original, ad-free, fully-unlocked text life simulator in the BitLife genre, built as a PWA
 for iPhone (Safari → Add to Home Screen). English + Hebrew, hosted free on GitHub Pages.

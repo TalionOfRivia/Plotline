@@ -1,0 +1,172 @@
+{
+  "tracks": {
+    "babysitter": {
+      "name": "בייביסיטר",
+      "ladder": { "new_sitter": "בייביסיטר מתחיל/ה", "sitter": "בייביסיטר", "lead_sitter": "בייביסיטר בכיר/ה" }
+    },
+    "cashier": {
+      "name": "קופאי/ת",
+      "ladder": { "cashier_trainee": "קופאי/ת בהתמחות", "cashier": "קופאי/ת", "shift_lead": "אחראי/ת משמרת" }
+    },
+    "dog_walker": {
+      "name": "דוגווקר",
+      "ladder": { "walker": "דוגווקר", "pack_leader": "מוביל/ת להקה", "walking_business_owner": "בעל/ת עסק טיולי כלבים" }
+    },
+    "lifeguard": {
+      "name": "מציל/ה",
+      "ladder": { "guard": "מציל/ה", "head_guard": "מציל/ה ראשי/ת", "aquatics_supervisor": "מפקח/ת מים" }
+    },
+    "tutor": {
+      "name": "מורה פרטי/ת",
+      "ladder": { "tutor": "מורה פרטי/ת", "senior_tutor": "מורה פרטי/ת בכיר/ה", "tutoring_center_owner": "בעל/ת מרכז שיעורים פרטיים" }
+    },
+    "fast_food": {
+      "name": "עובד/ת מזון מהיר",
+      "ladder": { "crew_member": "איש/אשת צוות", "crew_trainer": "מדריך/ת צוות", "shift_manager": "מנהל/ת משמרת", "store_manager": "מנהל/ת סניף" }
+    },
+    "janitor": {
+      "name": "מנקה",
+      "ladder": { "custodian": "עובד/ת תחזוקה", "janitor": "מנקה", "lead_custodian": "ראש צוות תחזוקה", "facilities_supervisor": "מפקח/ת מתקנים" }
+    },
+    "barista": {
+      "name": "בריסטה",
+      "ladder": { "barista": "בריסטה", "shift_supervisor": "אחראי/ת משמרת", "cafe_manager": "מנהל/ת בית קפה" }
+    },
+    "retail": {
+      "name": "איש/אשת מכירות",
+      "ladder": { "sales_associate": "מוכר/ת", "senior_associate": "מוכר/ת בכיר/ה", "department_lead": "אחראי/ת מחלקה", "store_manager": "מנהל/ת חנות" }
+    },
+    "delivery_driver": {
+      "name": "שליח/ה",
+      "ladder": { "courier": "שליח/ה", "driver": "נהג/ת משלוחים", "route_lead": "אחראי/ת קו", "dispatch_supervisor": "מפקח/ת שילוח" }
+    },
+    "construction": {
+      "name": "עובד/ת בניין",
+      "ladder": { "laborer": "פועל/ת", "skilled_laborer": "פועל/ת מקצועי/ת", "foreman": "מנהל/ת עבודה", "site_superintendent": "מנהל/ת פרויקט" }
+    },
+    "factory": {
+      "name": "עובד/ת מפעל",
+      "ladder": { "line_worker": "עובד/ת פס ייצור", "line_lead": "אחראי/ת פס", "production_supervisor": "מפקח/ת ייצור", "plant_manager": "מנהל/ת מפעל" }
+    },
+    "security_guard": {
+      "name": "מאבטח/ת",
+      "ladder": { "guard": "מאבטח/ת", "senior_guard": "מאבטח/ת בכיר/ה", "security_supervisor": "מפקח/ת אבטחה", "security_director": "מנהל/ת אבטחה" }
+    },
+    "mechanic": {
+      "name": "מכונאי/ת רכב",
+      "ladder": { "apprentice": "מכונאי/ת מתלמד/ת", "mechanic": "מכונאי/ת", "master_mechanic": "מכונאי/ת ראשי/ת", "shop_owner": "בעל/ת מוסך" }
+    },
+    "police_officer": {
+      "name": "שוטר/ת",
+      "ladder": { "patrol_officer": "שוטר/ת סיור", "detective": "בלש/ית", "sergeant": "סמל/ת", "lieutenant": "סגן/ית ניצב", "police_chief": "מפכ״ל/ית" }
+    },
+    "firefighter": {
+      "name": "כבאי/ת",
+      "ladder": { "recruit": "כבאי/ת מתגייס/ת", "firefighter": "כבאי/ת", "engineer": "נהג/ת כבאית", "captain": "קפטן/ית כיבוי", "battalion_chief": "מפקד/ת גדוד כיבוי" }
+    },
+    "plumber": {
+      "name": "אינסטלטור/ית",
+      "ladder": { "apprentice": "אינסטלטור/ית מתלמד/ת", "journeyman": "אינסטלטור/ית מקצועי/ת", "master_plumber": "אינסטלטור/ית ראשי/ת", "plumbing_business_owner": "בעל/ת עסק אינסטלציה" }
+    },
+    "electrician": {
+      "name": "חשמלאי/ת",
+      "ladder": { "apprentice": "חשמלאי/ת מתלמד/ת", "journeyman": "חשמלאי/ת מקצועי/ת", "master_electrician": "חשמלאי/ת ראשי/ת", "electrical_contractor": "קבלן/ית חשמל" }
+    },
+    "chef": {
+      "name": "שף/ית",
+      "ladder": { "line_cook": "טבח/ית", "sous_chef": "סו שף", "head_chef": "שף/ית ראשי/ת", "executive_chef": "שף/ית מנהל/ת" }
+    },
+    "real_estate_agent": {
+      "name": "סוכן/ת נדל״ן",
+      "ladder": { "associate_agent": "סוכן/ת מתחיל/ה", "agent": "סוכן/ת נדל״ן", "broker": "מתווך/ת", "brokerage_owner": "בעל/ת משרד תיווך" }
+    },
+    "flight_attendant": {
+      "name": "דייל/ת אוויר",
+      "ladder": { "junior_attendant": "דייל/ת מתחיל/ה", "flight_attendant": "דייל/ת אוויר", "senior_attendant": "דייל/ת בכיר/ה", "chief_purser": "ראש/ת צוות דיילים" }
+    },
+    "military_soldier": {
+      "name": "חייל/ת",
+      "ladder": { "private": "טוראי/ת", "corporal": "רב״ט", "sergeant": "סמל/ת", "master_sergeant": "רב סמל" }
+    },
+    "software": {
+      "name": "מפתח/ת תוכנה",
+      "ladder": { "junior_dev": "מפתח/ת ג׳וניור", "developer": "מפתח/ת תוכנה", "senior_dev": "מפתח/ת סניור", "staff_eng": "מהנדס/ת בכיר/ה", "cto": "סמנכ״ל/ית טכנולוגיות" }
+    },
+    "accountant": {
+      "name": "רואה חשבון",
+      "ladder": { "staff_accountant": "חשב/ת", "senior_accountant": "חשב/ת בכיר/ה", "audit_manager": "מנהל/ת ביקורת", "cfo": "סמנכ״ל/ית כספים" }
+    },
+    "teacher": {
+      "name": "מורה",
+      "ladder": { "new_teacher": "מורה בשנה הראשונה", "teacher": "מורה", "department_head": "רכז/ת מקצוע", "principal": "מנהל/ת בית ספר" }
+    },
+    "nurse": {
+      "name": "אח/ות",
+      "ladder": { "staff_nurse": "אח/ות", "charge_nurse": "אח/ות אחראי/ת משמרת", "nurse_manager": "אח/ות ראשי/ת מחלקה", "chief_nursing_officer": "מנהל/ת סיעוד" }
+    },
+    "engineer": {
+      "name": "מהנדס/ת",
+      "ladder": { "junior_engineer": "מהנדס/ת מתחיל/ה", "engineer": "מהנדס/ת", "senior_engineer": "מהנדס/ת בכיר/ה", "principal_engineer": "מהנדס/ת ראשי/ת" }
+    },
+    "marketing": {
+      "name": "שיווק",
+      "ladder": { "coordinator": "רכז/ת שיווק", "manager": "מנהל/ת שיווק", "director": "סמנכ״ל/ית שיווק", "cmo": "מנהל/ת שיווק ראשי/ת" }
+    },
+    "journalist": {
+      "name": "עיתונאי/ת",
+      "ladder": { "reporter": "כתב/ת", "senior_reporter": "כתב/ת בכיר/ה", "editor": "עורך/ת", "editor_in_chief": "עורך/ת ראשי/ת" }
+    },
+    "architect": {
+      "name": "אדריכל/ית",
+      "ladder": { "junior_architect": "אדריכל/ית מתחיל/ה", "architect": "אדריכל/ית", "senior_architect": "אדריכל/ית בכיר/ה", "principal_architect": "אדריכל/ית ראשי/ת" }
+    },
+    "pilot": {
+      "name": "טייס/ת",
+      "ladder": { "first_officer": "טייס/ת משנה", "captain": "קפטן/ית", "check_airman": "טייס/ת בוחן/ת", "chief_pilot": "טייס/ת ראשי/ת" }
+    },
+    "scientist": {
+      "name": "מדען/ית",
+      "ladder": { "research_assistant": "עוזר/ת מחקר", "research_scientist": "חוקר/ת", "senior_scientist": "חוקר/ת בכיר/ה", "principal_investigator": "ראש/ת קבוצת מחקר" }
+    },
+    "graphic_designer": {
+      "name": "מעצב/ת גרפי/ת",
+      "ladder": { "junior_designer": "מעצב/ת ג׳וניור", "graphic_designer": "מעצב/ת גרפי/ת", "senior_designer": "מעצב/ת בכיר/ה", "creative_director": "מנהל/ת קריאייטיב" }
+    },
+    "social_worker": {
+      "name": "עובד/ת סוציאלי/ת",
+      "ladder": { "caseworker": "מטפל/ת בתיקים", "social_worker": "עובד/ת סוציאלי/ת", "clinical_social_worker": "עובד/ת סוציאלי/ת קליני/ת", "program_director": "מנהל/ת תוכנית" }
+    },
+    "doctor": {
+      "name": "רופא/ה",
+      "ladder": { "resident": "מתמחה", "physician": "רופא/ה", "specialist": "רופא/ה מומחה", "chief_of_medicine": "מנהל/ת רפואי/ת" }
+    },
+    "lawyer": {
+      "name": "עורך/ת דין",
+      "ladder": { "associate": "עורך/ת דין מתמחה", "senior_associate": "עורך/ת דין בכיר/ה", "partner": "שותף/ה" }
+    },
+    "dentist": {
+      "name": "רופא/ת שיניים",
+      "ladder": { "associate_dentist": "רופא/ת שיניים שכיר/ה", "dentist": "רופא/ת שיניים", "practice_owner": "בעל/ת מרפאה" }
+    },
+    "veterinarian": {
+      "name": "וטרינר/ית",
+      "ladder": { "associate_vet": "וטרינר/ית שכיר/ה", "veterinarian": "וטרינר/ית", "senior_vet": "וטרינר/ית בכיר/ה", "clinic_owner": "בעל/ת מרפאה" }
+    },
+    "pharmacist": {
+      "name": "רוקח/ת",
+      "ladder": { "staff_pharmacist": "רוקח/ת", "pharmacist_in_charge": "רוקח/ת אחראי/ת", "pharmacy_director": "מנהל/ת בית מרקחת" }
+    },
+    "executive": {
+      "name": "מנהל/ת בכיר/ה",
+      "ladder": { "associate": "אנליסט/ית", "vice_president": "סגן/ית נשיא", "svp": "סגן/ית נשיא בכיר/ה", "ceo": "מנכ״ל/ית" }
+    },
+    "politician": {
+      "name": "פוליטיקאי/ת",
+      "ladder": { "city_council": "חבר/ת מועצת העיר", "mayor": "ראש/ת עיר", "governor": "מושל/ת", "senator": "סנאטור/ית", "president": "נשיא/ה" }
+    },
+    "professional_athlete": {
+      "name": "ספורטאי/ת מקצועי/ת",
+      "ladder": { "rookie": "טירון/ית", "starter": "שחקן/ית ראשי/ת", "star": "כוכב/ת", "legend": "אגדה" }
+    }
+  }
+}
