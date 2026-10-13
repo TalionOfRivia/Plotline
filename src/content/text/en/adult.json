@@ -1,0 +1,624 @@
+{
+  "ad_lease_trap": {
+    "text": "The landlord slides a lease across the table. The font is small. The clauses are not.",
+    "choices": {
+      "read": "Read every clause",
+      "sign": "Sign without reading",
+      "haggle": "Negotiate the rent"
+    },
+    "outcomes": {
+      "fine": "The lease turns out to be ordinary. You feel lucky and slightly stupid.",
+      "fees": "Page six contained a \"move-out enhancement fee.\" It enhances nothing."
+    }
+  },
+  "ad_gym_signup": {
+    "text": "A gym offers a year of membership for the price of a decent bicycle. The receptionist is very tan and very patient.",
+    "choices": {
+      "join": "Sign up for a year",
+      "trial": "Take the free trial only",
+      "home": "Exercise at home, allegedly"
+    }
+  },
+  "ad_roommate_fridge": {
+    "text": "Someone has eaten your labeled leftovers. The label said \"Mine.\" It was underlined twice.",
+    "choices": {
+      "confront": "Confront the roommates",
+      "note": "Leave a passive note",
+      "lock": "Buy a tiny padlock"
+    }
+  },
+  "ad_first_apartment_mouse": {
+    "text": "Something small and determined lives in your wall. You have named it. This was a mistake.",
+    "choices": {
+      "trap": "Set a trap",
+      "cat": "Adopt a cat",
+      "coexist": "Learn to coexist"
+    },
+    "outcomes": {
+      "caught": "The trap works. You feel like a villain in a very small story.",
+      "nothing": "The trap catches only your thumb. The mouse remains unbothered."
+    }
+  },
+  "ad_stranger_wallet_train": {
+    "text": "A stranger on the train falls asleep and drops a phone. It is buzzing with someone else's life.",
+    "choices": {
+      "wake": "Wake them and return it",
+      "station": "Hand it to station staff",
+      "pocket": "Quietly pocket it"
+    },
+    "outcomes": {
+      "sold": "You sell it for 300. The guilt costs extra and does not come with a receipt.",
+      "tracked": "It has tracking. Two officers wait at your stop. You pay a fine and a lot of dignity."
+    }
+  },
+  "ad_volunteer_shelter": {
+    "text": "A flyer asks for weekend help at an animal shelter. The animals in the photo look like they know exactly what they are doing.",
+    "choices": {
+      "sign_up": "Volunteer every Saturday",
+      "once": "Go once, bring snacks",
+      "donate": "Donate a little cash",
+      "pass": "Pin it to the fridge"
+    }
+  },
+  "ad_free_stuff_curb": {
+    "text": "A \"FREE\" sign sits on a heap of furniture, lamps, and one suspicious rug. Everything is almost useful.",
+    "choices": {
+      "take_all": "Carry it all home",
+      "one": "Take one good lamp",
+      "walk": "Walk past, strong-willed"
+    }
+  },
+  "ad_back_pain_desk": {
+    "text": "Your lower back has started sending formal complaints. You have been sitting like a question mark for years.",
+    "choices": {
+      "stretch": "Stretch daily",
+      "chair": "Buy an ergonomic chair",
+      "ignore": "Lean on painkillers"
+    },
+    "outcomes": {
+      "ok": "The pain fades and returns, like a bad sequel.",
+      "worse": "It becomes a pinched nerve. The physiotherapist is kind and expensive."
+    }
+  },
+  "ad_friend_moving": {
+    "text": "{{name}} is moving apartments and has a plan: you, a truck, and \"just a few boxes.\" The boxes are books.",
+    "choices": {
+      "help": "Spend the weekend helping",
+      "pizza": "Show up for the pizza",
+      "excuse": "Invent a sudden wedding"
+    }
+  },
+  "ad_friend_wedding_speech": {
+    "text": "{{name}} asks you to give a speech at their wedding. You have two weeks and one embarrassing story.",
+    "choices": {
+      "heartfelt": "Write something heartfelt",
+      "story": "Tell the embarrassing story",
+      "decline": "Politely decline"
+    },
+    "outcomes": {
+      "moved": "Half the room cries. {{name}} hugs you so hard your ribs file a report.",
+      "flat": "You lose your place twice. The applause is merciful.",
+      "laughs": "The room roars. {{name}} pretends to be furious, then isn't.",
+      "oops": "The story had a detail you forgot was a secret. Someone's aunt gasps."
+    }
+  },
+  "ad_friend_road_trip": {
+    "text": "{{name}} proposes a spontaneous road trip. The car is old, the map is older, and the plan is a vibe.",
+    "choices": {
+      "go": "Pack a bag and go",
+      "maybe": "Say maybe and mean no",
+      "weekend": "Offer a calm weekend instead"
+    },
+    "outcomes": {
+      "great": "You sing badly at sunrise on a highway. It is perfect.",
+      "breakdown": "The car dies in a town with one diner. The repair is memorable and costly."
+    }
+  },
+  "ad_mom_laundry_call": {
+    "text": "{{name}} calls to ask if you are eating \"real food.\" You are holding a spoon over a pot of cereal.",
+    "choices": {
+      "honest": "Admit the cereal",
+      "lie": "Describe a fake salad",
+      "visit": "Visit for a home meal"
+    }
+  },
+  "ad_sibling_loan": {
+    "text": "{{name}} asks to borrow money. The amount is vague. The tone is not.",
+    "choices": {
+      "lend": "Lend the money",
+      "gift_small": "Give a small gift",
+      "refuse": "Say no"
+    },
+    "outcomes": {
+      "repaid": "{{name}} repays you within the year, with a card and a terrible pun.",
+      "gone": "The money vanishes. Holidays now involve careful eye contact."
+    }
+  },
+  "ad_dad_advice": {
+    "text": "{{name}} offers advice about \"the real world.\" It consists of a handshake and a battered set of tools.",
+    "choices": {
+      "listen": "Listen carefully",
+      "tools": "Accept the tools",
+      "eyeroll": "Roll your eyes"
+    }
+  },
+  "ad_partner_move_in": {
+    "text": "{{name}} suggests moving in together. Your shared toothbrush holder is already a quiet commitment.",
+    "choices": {
+      "yes": "Move in together",
+      "wait": "Wait another year",
+      "no": "Say no gently"
+    },
+    "outcomes": {
+      "bliss": "Rent is halved and breakfast improves. You discover each other's loud habits with affection.",
+      "friction": "The dishes become a cold war. Neither of you knows where the good spatula went."
+    }
+  },
+  "ad_phishing_prince": {
+    "text": "An email from a \"royal accountant\" promises you a fortune if you pay a small processing fee first. The grammar is a work of art.",
+    "choices": {
+      "delete": "Delete and move on",
+      "reply": "Reply for the story",
+      "pay": "Send the fee anyway"
+    },
+    "outcomes": {
+      "bait": "The \"prince\" asks for more fees, then vanishes. Your bank account feels the loss.",
+      "laugh": "A few exchanges later it gets boring. You block them and feel clever."
+    }
+  },
+  "ad_lottery_ticket": {
+    "text": "A scratch ticket sits by the register. The shopkeeper says \"Someone has to win.\" Someone does. Rarely it's the person asking.",
+    "choices": {
+      "buy": "Buy a ticket",
+      "skip": "Walk past it"
+    },
+    "outcomes": {
+      "jackpot": "Six numbers line up. You check them four times. The shopkeeper checks them five.",
+      "small": "You win 200. It is the nicest little lie the lottery tells.",
+      "nothing": "Nothing. You scratch the card with a coin and a little less hope."
+    }
+  },
+  "ad_lost_dog_stranger": {
+    "text": "A friendly dog with no tag follows you for three blocks. It has the dignity of someone who has made a decision.",
+    "choices": {
+      "post": "Post flyers, look for owner",
+      "shelter": "Take it to a shelter",
+      "ignore": "Keep walking"
+    },
+    "outcomes": {
+      "reunited": "A tearful family collects the dog. A child gives you a drawing of a potato. It might be you.",
+      "kept": "No one claims the dog. It moves in as if it paid the deposit."
+    }
+  },
+  "ad_friend_gossip": {
+    "text": "{{name}} leans in over coffee with news about someone you both know. It is too good to be useful.",
+    "choices": {
+      "listen": "Listen and nod",
+      "change": "Change the subject",
+      "spread": "Pass it on"
+    },
+    "outcomes": {
+      "quiet": "Nothing happens. You feel smaller anyway.",
+      "backfire": "The story gets back to the subject. It arrives with extra details and your name."
+    }
+  },
+  "ad_weird_package": {
+    "text": "A package arrives addressed to you. You didn't order anything. The label says \"fragile\" and \"do not open near water.\"",
+    "choices": {
+      "open": "Open it carefully",
+      "return": "Mark it return to sender",
+      "ask": "Ask the neighbors"
+    },
+    "outcomes": {
+      "gift": "It is a gift from a distant relative: a vintage watch and a note that says \"good luck.\"",
+      "junk": "Wooden ducks, forty of them. No note.",
+      "trouble": "It contains a returned item from a stranger's dispute. You get the bill."
+    }
+  },
+  "ad_midlife_checkup": {
+    "text": "The doctor has \"a few numbers to discuss.\" This is how every bad mood starts.",
+    "choices": {
+      "follow": "Follow every instruction",
+      "partial": "Do half of it",
+      "ignore": "Ignore the numbers"
+    },
+    "outcomes": {
+      "improved": "Three months of salad and walking later, the numbers move kindly.",
+      "meh": "You improve a little. The doctor nods like a coach.",
+      "lucky": "Nothing happens. You pretend it was a plan.",
+      "bad": "Six months later it becomes a procedure, and the numbers get louder."
+    }
+  },
+  "ad_gym_plateau": {
+    "text": "Your gym membership has become a monthly ritual of paying for the building. The mirror has opinions.",
+    "choices": {
+      "trainer": "Hire a trainer",
+      "routine": "Change your routine",
+      "quit": "Cancel the membership"
+    }
+  },
+  "ad_sudden_collapse": {
+    "text": "You feel odd climbing the stairs. Not terrible. Just wrong, like a tune played a half-step off.",
+    "choices": {
+      "rest": "Sit and call for help",
+      "walk": "Walk it off"
+    },
+    "outcomes": {
+      "saved": "Paramedics arrive fast. It was a warning shot and you hear it clearly.",
+      "gone": "The help arrives too late. A heart gives out without a speech.",
+      "fine": "It passes. You schedule a checkup you will probably delay.",
+      "gone2": "The feeling grows. You do not finish the stairs."
+    }
+  },
+  "ad_hoard_garage": {
+    "text": "Your garage can no longer hold a car, a bike, or a believable excuse. A neighbor mentions the smell of cardboard.",
+    "choices": {
+      "purge": "Clear out the garage",
+      "rent": "Rent a storage unit",
+      "keep": "Defend your collection"
+    }
+  },
+  "ad_scam_followup": {
+    "text": "A caller offers to \"recover your lost funds\" for a small fee. You recognize the voice of someone who has done this before.",
+    "choices": {
+      "hang_up": "Hang up immediately",
+      "report": "Report the call",
+      "pay": "Pay the recovery fee"
+    }
+  },
+  "ad_neighbor_tree": {
+    "text": "A neighbor's tree hangs over your fence and drops things on your car. Politely. Constantly.",
+    "choices": {
+      "talk": "Talk to the neighbor",
+      "trim": "Trim it yourself",
+      "ignore": "Park elsewhere"
+    },
+    "outcomes": {
+      "friendly": "They trim it and bring you a jar of jam. This is the best outcome.",
+      "feud": "They defend the tree like a family member. You are now in a feud."
+    }
+  },
+  "ad_neighbor_party": {
+    "text": "Next door throws a loud party at midnight. The bass knows your name.",
+    "choices": {
+      "join": "Go over and join in",
+      "complain": "Call the landlord",
+      "earplugs": "Earplugs and silence"
+    }
+  },
+  "ad_tax_audit": {
+    "text": "A letter from the tax office wants \"some clarifications.\" Your receipts live in a shoebox and a prayer.",
+    "choices": {
+      "organize": "Organize every receipt",
+      "accountant": "Hire a professional",
+      "ignore": "Hope it goes away"
+    },
+    "outcomes": {
+      "clear": "You pay a modest accountant fee, and the audit closes politely.",
+      "fine": "A few mistakes cost you. The audit report is more humiliating than the money."
+    }
+  },
+  "ad_roof_leak": {
+    "text": "A water stain blooms on the ceiling like a slow, damp flower. It was not on the inspection report.",
+    "choices": {
+      "repair": "Repair the roof properly",
+      "patch": "Patch it cheaply",
+      "bucket": "Buy a large bucket"
+    },
+    "outcomes": {
+      "holds": "The patch holds. You are briefly a builder.",
+      "fails": "The next storm turns the patch into a waterfall. The real repair costs double."
+    }
+  },
+  "ad_aunt_windfall": {
+    "text": "A lawyer calls about a distant aunt you met twice. She left you \"a sum\" and a parrot.",
+    "choices": {
+      "accept": "Accept the inheritance",
+      "decline": "Decline the money",
+      "parrot": "Take only the parrot"
+    },
+    "outcomes": {
+      "nice": "A decent sum arrives. The parrot knows your name by the end of the week.",
+      "small": "Most of the estate goes to charity. You receive modest cash and a very loud bird."
+    }
+  },
+  "ad_lottery_aftermath": {
+    "text": "Word of your winnings has spread. Old friends call. Distant cousins write poems about you.",
+    "choices": {
+      "invest": "Hire an advisor, invest it",
+      "give": "Give a chunk to charity",
+      "splurge": "Splurge on everything"
+    },
+    "outcomes": {
+      "fun": "You buy a boat, a piano, and a hat. You enjoy all three.",
+      "regret": "The money disappears into projects, favors, and one strange sailboat."
+    }
+  },
+  "ad_friend_crisis": {
+    "text": "{{name}} calls late at night, voice thin. Their life has gone sideways and they need an ear.",
+    "choices": {
+      "listen": "Listen for hours",
+      "visit": "Drive over with food",
+      "text": "Send a supportive text",
+      "voicemail": "Let it go to voicemail"
+    }
+  },
+  "ad_friend_reunion": {
+    "text": "{{name}} suggests a reunion dinner after years of \"we should meet.\" Both of you have gained a little bit of everything.",
+    "choices": {
+      "go": "Go and stay late",
+      "short": "Go for an hour",
+      "bail": "Cancel at the last minute"
+    }
+  },
+  "ad_friend_pyramid": {
+    "text": "{{name}} invites you to an \"exciting business opportunity.\" There is a slideshow. There is also a starter kit.",
+    "choices": {
+      "buy_in": "Buy the starter kit",
+      "refuse": "Politely refuse",
+      "warn": "Warn them it's a scam"
+    },
+    "outcomes": {
+      "loss": "The kit sits in a closet. The \"opportunity\" is a shared debt.",
+      "meh": "You break even by the end of the year and swear never again."
+    }
+  },
+  "ad_friend_birthday": {
+    "text": "{{name}} has a milestone birthday, and nobody has organized anything. You can feel the awkward silence from here.",
+    "choices": {
+      "party": "Throw a surprise party",
+      "dinner": "Take them to dinner",
+      "card": "Send a card"
+    }
+  },
+  "ad_kid_tantrum": {
+    "text": "{{name}} has a magnificent meltdown in a grocery store over cereal. Strangers watch like it is a play.",
+    "choices": {
+      "calm": "Stay calm and wait",
+      "bribe": "Buy the cereal",
+      "carry": "Carry them out, yelling"
+    }
+  },
+  "ad_kid_school_play": {
+    "text": "{{name}} plays a tree in the school production. It is the finest tree in the history of drama.",
+    "choices": {
+      "attend": "Attend and clap loudly",
+      "late": "Slip in late",
+      "work": "Skip it for work"
+    }
+  },
+  "ad_spouse_anniversary": {
+    "text": "Your anniversary arrives. {{name}} has not mentioned it, which is either a trap or a test.",
+    "choices": {
+      "dinner": "Book a nice dinner",
+      "homemade": "Cook something yourself",
+      "forget": "Wing it and hope"
+    },
+    "outcomes": {
+      "tasty": "The dinner is edible and warm. {{name}} says it's the best they've had, which is generous.",
+      "burnt": "The smoke alarm sings. You order takeout and laugh until it's nearly dawn."
+    }
+  },
+  "ad_partner_counseling": {
+    "text": "{{name}} suggests couples counseling. There are bad signs and a good chance of improvement.",
+    "choices": {
+      "attend": "Go to counseling",
+      "talk": "Talk at home instead",
+      "avoid": "Change the subject"
+    },
+    "outcomes": {
+      "better": "You learn how to argue without keeping score. The counselor has a plant. It helps.",
+      "worse": "Honesty arrives in bulk. Some of it is hard to put back."
+    }
+  },
+  "ad_faith_question": {
+    "text": "A quiet doubt about the big questions settles over you. A neighbor invites you to a service, a community meal, and a free coffee.",
+    "choices": {
+      "join": "Attend regularly",
+      "visit": "Visit once, with curiosity",
+      "read": "Read about it alone",
+      "pass": "Politely decline"
+    }
+  },
+  "ad_retirement_boredom": {
+    "text": "The mornings are long and the garden is surprisingly demanding. You have time and no plan.",
+    "choices": {
+      "hobby": "Take up a new hobby",
+      "travel": "Plan a long trip",
+      "nap": "Nap and watch birds"
+    },
+    "outcomes": {
+      "trip": "You see seven cities and one genuinely great sandwich.",
+      "rain": "It rains the entire time. You collect souvenirs and mild resentment."
+    }
+  },
+  "ad_grandkid_visit": {
+    "text": "{{name}} brings the grandchildren for the weekend. They treat your house like a research facility.",
+    "choices": {
+      "spoil": "Spoil them with sweets",
+      "stories": "Tell them old stories",
+      "rest": "Politely request quiet"
+    }
+  },
+  "ad_mother_care": {
+    "text": "{{name}} is old and stubborn and needs more help than she will admit. She calls it \"no trouble.\"",
+    "choices": {
+      "move_in": "Move her in with you",
+      "carer": "Hire a carer",
+      "visit": "Visit more often",
+      "avoid": "Keep your distance"
+    }
+  },
+  "ad_sibling_reconcile": {
+    "text": "You and {{name}} haven't spoken properly in years. The reason has shrunk, but the silence has not.",
+    "choices": {
+      "call": "Call and apologize",
+      "letter": "Write a letter",
+      "let_go": "Let it be"
+    },
+    "outcomes": {
+      "warm": "The call lasts three hours. Neither of you remembers the argument.",
+      "cold": "They answer politely and hang up quickly. Some doors stay closed."
+    }
+  },
+  "ad_spouse_dance": {
+    "text": "A song comes on in the kitchen. {{name}} holds out a hand, knees and all.",
+    "choices": {
+      "dance": "Dance slowly",
+      "laugh": "Laugh and dance badly",
+      "sit": "Say your knees hurt"
+    }
+  },
+  "ad_partner_trip": {
+    "text": "{{name}} wants one more trip somewhere warm. They already bought hats.",
+    "choices": {
+      "go": "Go and enjoy it",
+      "staycation": "Stay home but celebrate",
+      "no": "Decline"
+    }
+  },
+  "ad_pension_scam": {
+    "text": "A voice on the phone says it's from your bank. It sounds helpful, urgent, and slightly rehearsed.",
+    "choices": {
+      "hang_up": "Hang up, call the bank",
+      "verify": "Ask for verification",
+      "comply": "Give the details"
+    },
+    "outcomes": {
+      "sharp": "The caller stumbles on the details and vanishes. You feel like a detective.",
+      "slip": "They had enough details to sound plausible. You find out too late."
+    }
+  },
+  "ad_estate_planning": {
+    "text": "You sit in a lawyer's office discussing who gets the good china. The pen is heavier than expected.",
+    "choices": {
+      "will": "Write a thoughtful will",
+      "gift_now": "Give gifts while you can",
+      "delay": "Put it off again"
+    }
+  },
+  "ad_hip_fall": {
+    "text": "You step out of the shower and the floor has other plans. You land hard on your hip.",
+    "choices": {
+      "call": "Call for help",
+      "crawl": "Crawl to the phone"
+    },
+    "outcomes": {
+      "recover": "Surgery and weeks of rehab later, you walk with a cane and opinions.",
+      "complications": "Complications follow the surgery. The medical team does all it can.",
+      "managed": "You reach the phone eventually. The delay does not help.",
+      "complications2": "The long wait on the floor takes more than a body should give."
+    }
+  },
+  "ad_cardiac_episode": {
+    "text": "Your chest feels tight at the breakfast table. The toast gets cold. You are not sure whether this is the dramatic kind of tight.",
+    "choices": {
+      "ambulance": "Call an ambulance",
+      "wait": "Wait it out"
+    },
+    "outcomes": {
+      "stabilized": "Doctors stabilize you. You stay four nights and master the hospital soup.",
+      "arrest": "Your heart stops en route. The paramedics try everything.",
+      "passes": "It passes. You pretend it was indigestion.",
+      "arrest2": "The pain does not pass. It is quiet, then it is not."
+    }
+  },
+  "ad_pneumonia_winter": {
+    "text": "A winter cough turns into something heavier. You tell everyone it's \"just a cold.\" Everyone knows better.",
+    "choices": {
+      "doctor": "See a doctor now",
+      "tough": "Tough it out"
+    },
+    "outcomes": {
+      "treated": "Antibiotics and rest do the work. You feel dramatically old for a week.",
+      "fatal": "The infection is stubborn. You slip away quietly, in a warm room.",
+      "recovers": "You recover slowly, with a deeper respect for soup.",
+      "fatal2": "The cough wins. Winter has a way of doing that."
+    }
+  },
+  "ad_stairs_fall": {
+    "text": "The stairs look the same as always. Your balance does not. A misstep happens in half a second.",
+    "choices": {
+      "grab": "Grab the railing",
+      "chairlift": "Install a stairlift",
+      "careful": "Take stairs slowly"
+    },
+    "outcomes": {
+      "saved": "You catch yourself. Your heart does not forgive you for an hour.",
+      "fall": "The railing slips from your grip. It is a short fall with a long consequence."
+    }
+  },
+  "ad_stroke_warning": {
+    "text": "Half your face goes numb while you're stirring tea. Your words arrive late and in the wrong order.",
+    "choices": {
+      "emergency": "Call emergency at once",
+      "lie_down": "Lie down and wait"
+    },
+    "outcomes": {
+      "recovers": "Fast treatment saves most of what matters. Therapy is slow and humbling.",
+      "stroke": "The stroke is severe. The doctors are kind and honest.",
+      "luck": "It was a mild one. You are lucky and you know it.",
+      "stroke2": "Waiting costs time you did not have. The stroke takes the rest."
+    }
+  },
+  "ad_surgery_decision": {
+    "text": "A surgeon explains a risky operation that could fix your problem. The odds are given in numbers, which helps and doesn't.",
+    "choices": {
+      "operate": "Go through with surgery",
+      "meds": "Choose medication only",
+      "nothing": "Do nothing"
+    },
+    "outcomes": {
+      "success": "The operation goes well. You wake up with a new lease on stairs.",
+      "death": "Complications arise on the table. The team does all it can."
+    }
+  },
+  "ad_gym_senior": {
+    "text": "The young trainer says you are \"an inspiration.\" You think you are a person who likes to stay upright.",
+    "choices": {
+      "keep_going": "Keep your routine",
+      "light": "Switch to light exercise",
+      "retire": "Retire from the gym"
+    }
+  },
+  "ad_hoard_cleanup": {
+    "text": "Your child offers to help clean the house. Every object has a story, and each story is six hours long.",
+    "choices": {
+      "accept": "Let them help",
+      "sort": "Sort a little yourself",
+      "refuse": "Protect your treasures"
+    }
+  },
+  "ad_faith_comfort": {
+    "text": "A quiet hour in your community's place of worship settles something. The people there ask after you by name.",
+    "choices": {
+      "attend": "Attend every week",
+      "donate": "Make a generous donation",
+      "stay_home": "Pray at home"
+    }
+  },
+  "ad_friend_funeral": {
+    "text": "{{name}}'s funeral is held on a sunny day, which feels like a rude detail. The room is full of people you have known too long.",
+    "choices": {
+      "speak": "Speak about {{name}}",
+      "listen": "Sit quietly and listen",
+      "skip": "Stay home"
+    }
+  },
+  "ad_old_friend_bench": {
+    "text": "You and {{name}} sit on a park bench and argue about nothing. It is the happiest argument you've had all year.",
+    "choices": {
+      "stay": "Stay until sunset",
+      "bring_snacks": "Bring snacks next time",
+      "leave": "Head home early"
+    }
+  },
+  "ad_volunteer_award": {
+    "text": "The shelter holds a small ceremony for your years of service. There is a plaque, a cake, and one dog in a bow tie.",
+    "choices": {
+      "accept": "Accept humbly",
+      "speech": "Give a short speech",
+      "stay_away": "Skip it, send thanks"
+    }
+  }
+}

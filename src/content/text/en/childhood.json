@@ -1,0 +1,490 @@
+{
+  "ch_first_smile": {
+    "text": "Your face does something new. Everyone in the room agrees it was a smile and not gas.",
+    "choices": {
+      "beam": "Smile at everyone",
+      "stoic": "Stay unimpressed",
+      "drool": "Drool and gurgle"
+    }
+  },
+  "ch_sleepless_night": {
+    "text": "It is 3 a.m. and you have decided the whole house should be awake. You are very committed to this.",
+    "choices": {
+      "wail": "Wail until rescued",
+      "gurgle": "Gurgle quietly instead",
+      "bounce": "Demand to be bounced"
+    },
+    "outcomes": {
+      "rescued": "Someone carries you around the kitchen until dawn. You win.",
+      "ignored": "The grown-ups take turns pretending to sleep. You finally pass out from sheer effort."
+    }
+  },
+  "ch_first_word": {
+    "text": "You open your mouth and a real word comes out. Everyone leans in, phones raised.",
+    "choices": {
+      "mama": "Say \"mama\"",
+      "dada": "Say \"dada\"",
+      "no": "Say \"no\"",
+      "dog": "Say \"dog\" at a cat"
+    }
+  },
+  "ch_first_steps": {
+    "text": "You let go of the couch. The floor looks very far away and very hard.",
+    "choices": {
+      "go": "Charge across the room",
+      "crawl": "Stay with crawling",
+      "cruise": "Cruise along the furniture"
+    },
+    "outcomes": {
+      "wobble": "You make it four whole steps before sitting down hard. Applause erupts.",
+      "faceplant": "Gravity wins. You cry for ten seconds, then try again."
+    }
+  },
+  "ch_baby_food_war": {
+    "text": "A spoon of mashed peas approaches your face like a tiny green airplane. You have opinions.",
+    "choices": {
+      "eat": "Eat the peas",
+      "spit": "Spit them back",
+      "grab": "Grab the spoon yourself"
+    },
+    "outcomes": {
+      "laugh": "The spoon-holder laughs so hard they forget the rest of the peas.",
+      "scolded": "You are wearing the peas now. Nobody is laughing."
+    }
+  },
+  "ch_tantrum": {
+    "text": "The grocery store will not buy you the cereal with the cartoon tiger. You make your feelings known to the entire aisle.",
+    "choices": {
+      "scream": "Scream on the floor",
+      "sulk": "Sulk in the cart",
+      "accept": "Accept a banana instead"
+    },
+    "outcomes": {
+      "cereal": "The cereal is yours. You learn a dangerous lesson about leverage.",
+      "nope": "You get carried out like a sack of potatoes. No cereal."
+    }
+  },
+  "ch_imaginary_friend": {
+    "text": "You have a new friend named Sir Biscuit. Only you can see him, and he has a lot of demands.",
+    "choices": {
+      "tea": "Set a place at the table",
+      "blame": "Blame him for everything",
+      "evict": "Tell him to leave"
+    }
+  },
+  "ch_wall_masterpiece": {
+    "text": "You find a box of crayons and an enormous blank wall. The wall is practically asking for it.",
+    "choices": {
+      "mural": "Paint the whole hallway",
+      "paper": "Use the paper",
+      "blame_cat": "Blame the cat"
+    },
+    "outcomes": {
+      "gallery": "Your parents stare, then laugh, then frame a section. You are an artist now.",
+      "grounded": "The wall has been repainted. You have been sent to your room to think about art."
+    }
+  },
+  "ch_goldfish": {
+    "text": "You win a goldfish at the fair, in a plastic bag. Its name is yours to choose and its future is uncertain.",
+    "choices": {
+      "keep": "Take it home, name it Gerald",
+      "gift": "Give it to a friend",
+      "refuse": "Leave it at the stall"
+    }
+  },
+  "ch_goldfish_funeral": {
+    "text": "Gerald is floating in an unfortunate direction. The fishbowl suddenly feels very quiet.",
+    "choices": {
+      "funeral": "Hold a toilet-side funeral",
+      "replace": "Quietly swap in a new fish",
+      "cry": "Cry for a day"
+    },
+    "outcomes": {
+      "unnoticed": "Nobody notices. Gerald 2.0 settles in beautifully.",
+      "noticed": "Your parent notices immediately and gives the speech about honesty."
+    }
+  },
+  "ch_tooth_fairy": {
+    "text": "A tooth wobbles loose. You have heard of a small winged creature that pays for them.",
+    "choices": {
+      "pillow": "Put it under the pillow",
+      "keep": "Keep the tooth",
+      "negotiate": "Leave a note asking for more"
+    },
+    "outcomes": {
+      "coin": "Morning brings a shiny coin. The economy of baby teeth is thriving.",
+      "forgot": "The fairy forgot. You are told she had a busy night. You do not forget this.",
+      "rich": "The fairy is impressed by your business sense and pays double.",
+      "flat": "The fairy ignores your note and pays the usual rate."
+    }
+  },
+  "ch_lemonade_stand": {
+    "text": "It is a hot day and you have a pitcher of lemonade and an entrepreneurial gleam in your eye.",
+    "choices": {
+      "sell": "Open a lemonade stand",
+      "free": "Give it away free",
+      "drink": "Drink it all yourself"
+    },
+    "outcomes": {
+      "sold_out": "The whole street buys a cup. You count your coins like a dragon.",
+      "meh": "Three customers, two of them your relatives. You drink the rest."
+    }
+  },
+  "ch_bike": {
+    "text": "Your parents unscrew the training wheels. You are told you are ready. You are not told how.",
+    "choices": {
+      "ride": "Pedal as fast as possible",
+      "careful": "Go slow and careful",
+      "walk": "Push it and refuse"
+    },
+    "outcomes": {
+      "soar": "You wobble, you wobble, then you fly. Gravel has never felt so far away.",
+      "crash": "You meet the hedge. Your knee is now a map of the hedge."
+    }
+  },
+  "ch_early_reader": {
+    "text": "You have figured out that the squiggles on cereal boxes mean things. Now nothing is safe from you.",
+    "choices": {
+      "devour": "Read every label in the house",
+      "read_aloud": "Read aloud to guests",
+      "blocks": "Prefer building blocks"
+    }
+  },
+  "ch_music_lessons": {
+    "text": "A relative's old instrument lands in your lap. Somebody mentions lessons, in a hopeful voice.",
+    "choices": {
+      "sign_up": "Sign up for lessons",
+      "bang": "Just bang on it",
+      "decline": "Politely decline"
+    }
+  },
+  "ch_first_day_school": {
+    "text": "First day of school. Your backpack is bigger than your torso and everyone looks equally terrified.",
+    "choices": {
+      "wave": "Wave and walk in",
+      "cling": "Cling to your parent",
+      "hide": "Hide in the coat closet"
+    },
+    "outcomes": {
+      "great": "Within an hour you have a best friend and a missing sandwich.",
+      "shaky": "You hold the doorframe for ten minutes. The teacher is kind about it."
+    }
+  },
+  "ch_show_and_tell": {
+    "text": "It is show-and-tell day. You can bring anything, as long as it is not alive. Some rules are more flexible than others.",
+    "choices": {
+      "rock": "Bring a really good rock",
+      "story": "Tell a wildly exaggerated story",
+      "pass": "Pretend you forgot"
+    },
+    "outcomes": {
+      "legend": "The class gasps. You are briefly the most interesting person in the building.",
+      "caught": "Your teacher raises one eyebrow. The story falls apart mid-sentence."
+    }
+  },
+  "ch_library_card": {
+    "text": "The school librarian notices you reading above your grade. She hands you a card and a very long look.",
+    "choices": {
+      "borrow": "Borrow ten books at once",
+      "series": "Disappear into one big series",
+      "recess": "Choose recess instead"
+    }
+  },
+  "ch_bully": {
+    "text": "A larger kid has decided your lunch money is his lunch money. He has a smile like a closed door.",
+    "choices": {
+      "stand": "Stand up to him",
+      "pay": "Hand it over, quietly",
+      "tell": "Tell a teacher"
+    },
+    "outcomes": {
+      "wins": "He blinks, mutters, and walks off. You stand there, shaking, a legend.",
+      "loses": "It does not go well. Your pride hurts longer than your nose."
+    }
+  },
+  "ch_bully_followup": {
+    "text": "The kid from last month is back at it, but this time he has an audience.",
+    "choices": {
+      "ignore": "Ignore him and walk on",
+      "joke": "Make a joke at his expense",
+      "friend": "Befriend a bigger kid",
+      "report": "Report it again"
+    },
+    "outcomes": {
+      "laugh": "The audience laughs with you, not at you. He goes red and leaves.",
+      "worse": "The joke lands on the floor. His response lands on you."
+    }
+  },
+  "ch_class_test": {
+    "text": "A pop quiz drops onto your desk. The teacher says it will not count, in the tone of someone who is lying.",
+    "choices": {
+      "study": "Wing it using logic",
+      "copy": "Peek at your neighbor",
+      "blank": "Hand in a blank page"
+    },
+    "outcomes": {
+      "pass": "Logic, it turns out, works some of the time. You scrape a solid grade.",
+      "fail": "Logic did not show up. A red number appears in the corner."
+    }
+  },
+  "ch_school_play": {
+    "text": "The class is doing a play about a very important tree. Auditions are open and nobody wants to be the tree.",
+    "choices": {
+      "lead": "Audition for the lead",
+      "prop": "Volunteer for props",
+      "sick": "Fake a stomachache"
+    },
+    "outcomes": {
+      "lead": "You get the lead. Your mom cries during the bow.",
+      "tree": "You become the tree. You stand very still and give it everything."
+    }
+  },
+  "ch_science_fair": {
+    "text": "The science fair is in two weeks and your volcano is, in your opinion, mostly done.",
+    "choices": {
+      "volcano": "Go big on the volcano",
+      "honest": "Run a quiet, honest experiment",
+      "parent": "Let your parent do it"
+    },
+    "outcomes": {
+      "prize": "It erupts exactly on time. A blue ribbon is pinned to your chest.",
+      "mess": "It erupts early, on a judge. You are asked to step away from the table."
+    }
+  },
+  "ch_recital": {
+    "text": "Your music teacher announces a recital. It will be in the gym, in front of everyone's grandparents.",
+    "choices": {
+      "perform": "Perform your best piece",
+      "easy": "Play something simple",
+      "quit": "Quit the day before"
+    },
+    "outcomes": {
+      "standing": "The gym applauds. A grandparent you have never met weeps.",
+      "flub": "You lose your place twice and recover once. The grandparents clap kindly."
+    }
+  },
+  "ch_cheating": {
+    "text": "The answer key is sitting on the teacher's desk. The teacher is facing the other way. Time moves slowly.",
+    "choices": {
+      "peek": "Take a quick look",
+      "resist": "Walk away",
+      "tell": "Mention it afterwards"
+    },
+    "outcomes": {
+      "clean": "Nobody saw. You feel awful, which is a strange return on investment.",
+      "busted": "The teacher turns around at the worst possible second. A letter goes home."
+    }
+  },
+  "ch_mother_lullaby": {
+    "text": "{{name}} hums the same four notes every night until your eyes close. It is the best music in the world.",
+    "choices": {
+      "hum": "Hum along",
+      "cry": "Cry for a second verse",
+      "sleep": "Fall asleep instantly"
+    }
+  },
+  "ch_father_shoulders": {
+    "text": "{{name}} hoists you onto their shoulders at the parade. From up here you can see everything, including hats.",
+    "choices": {
+      "wave": "Wave like royalty",
+      "grab_hair": "Hold on to their ears",
+      "nap": "Fall asleep up there"
+    }
+  },
+  "ch_sibling_blame": {
+    "text": "A lamp lies shattered in the living room. {{name}} points at you. You point at {{name}}. A grown-up is on the way.",
+    "choices": {
+      "confess": "Take the blame",
+      "deny": "Deny everything",
+      "frame": "Blame them harder"
+    },
+    "outcomes": {
+      "clear": "The grown-ups give up. The lamp becomes a household mystery.",
+      "caught": "Your story has more holes than the lamp. You both get sent to your rooms."
+    }
+  },
+  "ch_sibling_borrow": {
+    "text": "{{name}} borrowed your favorite toy and returned it with a new, mysterious chew mark.",
+    "choices": {
+      "forgive": "Let it go",
+      "revenge": "Take something of theirs",
+      "trade": "Demand a trade"
+    },
+    "outcomes": {
+      "fair": "{{name}} hands over a better toy. Justice, of a kind.",
+      "fight": "The negotiation turns into wrestling. Nobody wins, everyone has a rug burn."
+    }
+  },
+  "ch_friend_secret": {
+    "text": "{{name}} whispers a secret and makes you swear on everything you own. You own a sticker collection and a shoe.",
+    "choices": {
+      "keep": "Keep it forever",
+      "tell_one": "Tell just one person",
+      "trade": "Trade it for a snack"
+    },
+    "outcomes": {
+      "safe": "That one person tells no one. Miracles do happen.",
+      "spread": "By lunch the whole grade knows. {{name}} stops talking to you."
+    }
+  },
+  "ch_friend_fight": {
+    "text": "You and {{name}} are in a heated argument about whether a hot dog is a sandwich. It is no longer about the hot dog.",
+    "choices": {
+      "sorry": "Apologize first",
+      "stubborn": "Hold your ground",
+      "third": "Ask a teacher to decide"
+    },
+    "outcomes": {
+      "respect": "{{name}} admits you have a point. Peace returns, damp with pride.",
+      "frosty": "Two weeks of silence follow. The hot dog remains unclassified."
+    }
+  },
+  "ch_mother_vegetables": {
+    "text": "{{name}} places a plate of broccoli in front of you and says you cannot leave until it is gone. You have all night.",
+    "choices": {
+      "eat": "Eat it, bravely",
+      "hide": "Hide it in a napkin",
+      "hold_out": "Sit there for an hour"
+    },
+    "outcomes": {
+      "stealth": "The broccoli vanishes. You will not be told how you did it.",
+      "spotted": "{{name}} finds it in your pocket three days later."
+    }
+  },
+  "ch_father_fishing": {
+    "text": "{{name}} takes you fishing at dawn. The lake is quiet, the thermos is warm, and nothing is biting.",
+    "choices": {
+      "patient": "Wait patiently",
+      "skip_stones": "Skip stones instead",
+      "complain": "Complain loudly"
+    },
+    "outcomes": {
+      "big": "A fish bites. It is enormous in your memory and in the photo.",
+      "nothing": "Nothing bites. You split a sandwich and call it a good day."
+    }
+  },
+  "ch_mother_homework": {
+    "text": "{{name}} offers to help with your homework and then solves the whole page in the wrong order.",
+    "choices": {
+      "accept": "Accept the help",
+      "argue": "Argue about long division",
+      "alone": "Do it yourself, loudly"
+    }
+  },
+  "ch_road_trip": {
+    "text": "The whole family is stuffed into the car for a trip that is supposedly four hours long. The back seat has no legroom and a lot of opinions.",
+    "choices": {
+      "singalong": "Start a sing-along",
+      "are_we": "Ask \"are we there yet?\"",
+      "games": "Invent a car game"
+    },
+    "outcomes": {
+      "hit": "Everyone is playing by mile forty. Four hours becomes three and a half.",
+      "flop": "Nobody understands the rules, including you."
+    }
+  },
+  "ch_ear_infection": {
+    "text": "You pull at your ear and wail with feeling. It is a classic sign, and a very loud one.",
+    "choices": {
+      "doctor": "Visit the doctor",
+      "tough": "Tough it out",
+      "cuddle": "Demand extra cuddles"
+    },
+    "outcomes": {
+      "ok": "It clears by itself. You stay grumpy for another week out of principle.",
+      "worse": "It gets worse. The doctor visit is more fun than the pain was."
+    }
+  },
+  "ch_chickenpox": {
+    "text": "You wake up covered in itchy red dots. A grown-up mutters a word that sounds like \"quarantine\".",
+    "choices": {
+      "scratch": "Scratch everything",
+      "resist": "Resist the urge to scratch",
+      "movie": "Lie on the couch all week"
+    }
+  },
+  "ch_peanut_reaction": {
+    "text": "At a birthday party you take a bite of a cookie and your lips swell. The party becomes a hospital visit.",
+    "choices": {
+      "er": "Go to the emergency room",
+      "panic": "Panic, then calm down",
+      "milk": "Insist it was the milk"
+    },
+    "outcomes": {
+      "fine": "It was just the milk. A rare and joyful false alarm.",
+      "allergy": "It was not the milk. Peanuts are now your enemy."
+    }
+  },
+  "ch_broken_arm": {
+    "text": "You attempt a jump you saw in a cartoon. The cartoon failed to mention the ground.",
+    "choices": {
+      "cast": "Get a bright green cast",
+      "brave": "Say it is fine",
+      "cry": "Cry first, ask later"
+    },
+    "outcomes": {
+      "signed": "Everyone signs it and you feel like a celebrity for a month.",
+      "itchy": "It itches in places you cannot reach. You use a ruler."
+    }
+  },
+  "ch_glasses": {
+    "text": "You cannot read the board anymore. The optometrist hands you a pair of frames and says you look \"very studious\".",
+    "choices": {
+      "wear": "Wear them proudly",
+      "hide": "Leave them in your pocket",
+      "pick": "Pick the wildest frames"
+    },
+    "outcomes": {
+      "cool": "Your frames are the talk of recess. You are suddenly very interesting.",
+      "dorky": "The frames are loud, round, and impossible to ignore. Nobody says anything. Everyone looks."
+    }
+  },
+  "ch_found_coin": {
+    "text": "A shiny coin sits on the sidewalk, heads up. Fate has left you a small, round gift.",
+    "choices": {
+      "keep": "Pocket it",
+      "candy": "Spend it on candy",
+      "give": "Give it to a stranger"
+    }
+  },
+  "ch_lost_at_store": {
+    "text": "You turn around and your parent is gone. There is only a wall of cereal and the hum of freezers.",
+    "choices": {
+      "staff": "Ask a store worker",
+      "wander": "Wander the aisles",
+      "cry": "Cry in the cart corral"
+    },
+    "outcomes": {
+      "found": "You are found by the toy aisle, completely at ease.",
+      "stuck": "You end up at the front desk, hearing your own name over the speaker."
+    }
+  },
+  "ch_thunderstorm": {
+    "text": "A thunderstorm shakes the windows. The lights flicker and the dog starts to growl at nothing.",
+    "choices": {
+      "blanket": "Hide under blankets",
+      "watch": "Watch the lightning",
+      "bed": "Run to the big bed"
+    }
+  },
+  "ch_neighbor_dog": {
+    "text": "The neighbor's dog is bigger than you, and it has just discovered you exist.",
+    "choices": {
+      "pet": "Offer a gentle pet",
+      "run": "Run away",
+      "stick": "Throw it a stick"
+    },
+    "outcomes": {
+      "friend": "The dog collapses against your leg and an alliance is formed.",
+      "nip": "The dog nips your sleeve. Nothing worse than a ripped sleeve and a bruised ego."
+    }
+  },
+  "ch_freak_accident": {
+    "text": "You decide to climb the shelf for a cookie. The shelf has been waiting a long time for this.",
+    "choices": {
+      "climb": "Keep climbing",
+      "wait": "Ask for help instead",
+      "skip": "Forget the cookie"
+    }
+  }
+}

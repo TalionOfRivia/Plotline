@@ -1,0 +1,537 @@
+{
+  "tn_midterm_cram": {
+    "text": "Midterms are tomorrow and your notes are a crime scene. The clock does not care.",
+    "choices": {
+      "study_calmly": "Study calmly, sleep well",
+      "allnighter": "Pull an all-nighter",
+      "peek": "Peek at a neighbor's paper"
+    },
+    "outcomes": {
+      "aced": "Caffeine and panic deliver. You ace it and feel like a legend.",
+      "zombie": "You fall asleep on question four. The exam wins.",
+      "unseen": "Nobody notices. Your conscience files a formal complaint.",
+      "caught": "The teacher stands right behind you. You get a zero and a detention slip."
+    }
+  },
+  "tn_science_fair": {
+    "text": "The science fair is next week. Your volcano idea has been done by every kid since the dawn of volcanoes.",
+    "choices": {
+      "classic_volcano": "Build the classic volcano",
+      "wild_experiment": "Try an ambitious experiment",
+      "skip_it": "Fake a sick day"
+    },
+    "outcomes": {
+      "first_prize": "Your project wins first prize. A judge shakes your hand like you matter.",
+      "fiasco": "The project fails loudly and spectacularly. Some of it ends up in your hair."
+    }
+  },
+  "tn_teacher_feud": {
+    "text": "Your history teacher has decided you are the problem. Every class, she says your name like a sigh.",
+    "choices": {
+      "argue_back": "Argue your case",
+      "win_her_over": "Win her over with effort",
+      "keep_head_down": "Keep your head down"
+    }
+  },
+  "tn_join_band": {
+    "text": "The music teacher is recruiting for the school band. Your only qualification is that you once owned a recorder.",
+    "choices": {
+      "join_drums": "Join on drums",
+      "join_guitar": "Join on guitar",
+      "no_thanks": "Politely decline"
+    }
+  },
+  "tn_late_again": {
+    "text": "You overslept again and strolled in twenty minutes late. The hall monitor has a clipboard and zero mercy.",
+    "choices": {
+      "take_detention": "Accept your detention",
+      "sweet_talk": "Sweet-talk the monitor",
+      "blame_bus": "Blame the bus"
+    },
+    "outcomes": {
+      "let_off": "She waves you through with an eye roll. You feel invincible.",
+      "detention_anyway": "Your charm lands about as well as a paper plane. Detention."
+    }
+  },
+  "tn_group_project": {
+    "text": "Group project time. Your partners are one genius, one ghost, and one kid who only draws sharks.",
+    "choices": {
+      "do_it_all": "Do it all yourself",
+      "delegate": "Assign fair tasks",
+      "rely_on_others": "Let the genius carry it"
+    }
+  },
+  "tn_final_exams": {
+    "text": "Final exams arrive like a storm you saw coming and ignored. Everything depends on the next three hours.",
+    "choices": {
+      "steady_review": "Review steadily all week",
+      "trust_your_gut": "Trust your gut",
+      "hire_tutor": "Beg for a tutor"
+    },
+    "outcomes": {
+      "great_luck": "Somehow your gut knew every answer. You walk out glowing.",
+      "average": "It goes fine. Fine is a very respectable word.",
+      "disaster": "Your gut was wrong about nearly everything. Including lunch."
+    }
+  },
+  "tn_debate_club": {
+    "text": "Someone dares you to join the debate club. They promise you will be good at winning arguments, which is your best skill.",
+    "choices": {
+      "compete": "Join and compete",
+      "watch_only": "Just watch from the back",
+      "pass": "Pass"
+    },
+    "outcomes": {
+      "champion": "You win your first tournament with a speech about cafeteria pizza. The crowd roars.",
+      "crushed": "You get crushed by a kid who talks like a lawyer. You learn a lot."
+    }
+  },
+  "tn_skip_class": {
+    "text": "Your friends are skipping last period to sit by the creek. Math class suddenly sounds like prison.",
+    "choices": {
+      "skip_with_them": "Skip with them",
+      "stay_in_class": "Stay in class",
+      "talk_them_out": "Talk them out of it"
+    },
+    "outcomes": {
+      "fun_day": "The creek is lovely and nobody notices you left. Freedom tastes like gas station chips.",
+      "busted": "The vice principal is waiting at the gate. Detention for a week."
+    }
+  },
+  "tn_college_talk": {
+    "text": "The guidance counselor wants to discuss your future. She slides a pamphlet across the desk that says 'Dream Big' in a font that does not.",
+    "choices": {
+      "aim_high": "Aim for a top university",
+      "aim_practical": "Choose a practical plan",
+      "no_idea": "Shrug dramatically"
+    }
+  },
+  "tn_detention_hallway": {
+    "text": "You are stuck in detention again, staring at a clock that refuses to move. The kid next to you offers half a sandwich and a brilliant escape plan.",
+    "choices": {
+      "escape_plan": "Try the escape plan",
+      "do_homework": "Finally finish homework",
+      "chat_neighbor": "Befriend the sandwich kid"
+    },
+    "outcomes": {
+      "clean_getaway": "You slip out through the window and become a minor legend.",
+      "caught_again": "Your chair squeaks. The teacher adds another week to your sentence."
+    }
+  },
+  "tn_new_friend": {
+    "text": "A new kid stands at the lunch table holding a tray and the look of someone expecting rejection.",
+    "choices": {
+      "invite_them": "Invite them to your table",
+      "nod_politely": "Nod politely",
+      "ignore": "Pretend not to notice"
+    }
+  },
+  "tn_house_party": {
+    "text": "A classmate's parents are out of town and the invitation is circulating like a rumor. Everyone you know will be there.",
+    "choices": {
+      "go_party": "Go to the party",
+      "stay_home": "Stay home and rest",
+      "host_movie_night": "Host a movie night instead"
+    },
+    "outcomes": {
+      "legend": "You are a hit. Someone says your name with admiration, which is new.",
+      "awkward": "You spend three hours holding one cup and discussing the sofa.",
+      "cops": "The neighbors call the police. You run home in a stranger's jacket."
+    }
+  },
+  "tn_hot_pepper_dare": {
+    "text": "Someone has brought the hottest pepper they could find and a crowd has formed. Eating it is clearly the only way to be a person.",
+    "choices": {
+      "eat_it": "Eat the pepper",
+      "refuse": "Decline the dare",
+      "trade_dare": "Dare them to eat it"
+    },
+    "outcomes": {
+      "hero": "You finish it, cry for ten minutes, and are carried through the hallway like a champion.",
+      "regret": "Your face goes through five colors. The nurse gives you milk and judgment."
+    }
+  },
+  "tn_secret_spilled": {
+    "text": "You find out your best friend told everyone the secret you swore never to repeat. The hallway is suddenly full of knowing smiles.",
+    "choices": {
+      "confront": "Confront them directly",
+      "forgive": "Forgive and move on",
+      "revenge": "Plot a petty revenge"
+    }
+  },
+  "tn_embarrassing_video": {
+    "text": "Someone filmed you tripping over absolutely nothing and posted the video. It has more views than anything you have ever done.",
+    "choices": {
+      "laugh_it_off": "Laugh it off publicly",
+      "report_it": "Demand they delete it",
+      "hide_for_week": "Hide for a week"
+    },
+    "outcomes": {
+      "deleted": "The video comes down. You are a hero in your own story.",
+      "backfired": "Your outrage becomes the second video."
+    }
+  },
+  "tn_band_gig": {
+    "text": "Your band gets offered a slot at the school talent night. You have three songs, two of which are the same song.",
+    "choices": {
+      "play_original": "Play your own songs",
+      "play_covers": "Play safe covers",
+      "quit_band": "Quit the band"
+    },
+    "outcomes": {
+      "crowd_loves": "The crowd cheers. A kid yells your band's name wrong, but it counts.",
+      "crickets": "Polite clapping. Someone coughs in a sentimental key."
+    }
+  },
+  "tn_popular_table": {
+    "text": "Now that you're popular, the cool table has a chair for you. Your old friends wave from a distance like survivors on a raft.",
+    "choices": {
+      "sit_cool_table": "Sit at the cool table",
+      "stay_old_friends": "Stay with your old friends",
+      "bring_everyone": "Merge the tables"
+    }
+  },
+  "tn_sleepover": {
+    "text": "You're invited to a sleepover where the main activities are scary stories, pizza, and a loud argument over who gets the couch.",
+    "choices": {
+      "tell_story": "Tell the scariest story",
+      "claim_couch": "Fight for the couch",
+      "go_to_sleep": "Fall asleep early"
+    }
+  },
+  "tn_rebel_haircut": {
+    "text": "You stare at the mirror and decide your hair is boring. A box of neon dye sits in the bathroom like a dare.",
+    "choices": {
+      "dye_it": "Dye it neon green",
+      "small_change": "Just trim the ends",
+      "keep_hair": "Keep the boring hair"
+    },
+    "outcomes": {
+      "stunning": "You look like a dangerous cartoon. People stare, and you love it.",
+      "swamp": "It turns the color of pond water. Your relatives stop making eye contact."
+    }
+  },
+  "tn_mom_curfew": {
+    "text": "{{name}} announces a new curfew: home by nine. She says it like a verdict.",
+    "choices": {
+      "obey": "Obey without argument",
+      "negotiate": "Negotiate for ten-thirty",
+      "sneak_late": "Ignore it"
+    },
+    "outcomes": {
+      "got_away": "You get home at midnight. {{name}} is asleep and the secret is yours.",
+      "grounded": "{{name}} is waiting in the dark kitchen. You are grounded until further notice."
+    }
+  },
+  "tn_dad_lessons": {
+    "text": "{{name}} decides it's time to teach you to drive. He grips the dashboard before you've even turned the key.",
+    "choices": {
+      "listen_carefully": "Listen carefully",
+      "too_fast": "Drive a bit too fast",
+      "refuse_to_drive": "Say you're not ready"
+    },
+    "outcomes": {
+      "thrill": "You hit a hundred in an empty lot. {{name}} makes a noise like a kettle.",
+      "bump": "You tap a cone, then a lamppost. {{name}} stops speaking for the rest of the lesson."
+    }
+  },
+  "tn_sibling_borrow": {
+    "text": "You discover {{name}} has been wearing your clothes without asking. Your favorite shirt returns with a mystery stain.",
+    "choices": {
+      "demand_payment": "Demand payment",
+      "talk_it_out": "Talk it out",
+      "borrow_back": "Wear their stuff in revenge"
+    }
+  },
+  "tn_mom_phone": {
+    "text": "{{name}} picks up your phone and starts reading your messages. She treats your friend group like a mystery novel.",
+    "choices": {
+      "protest": "Protest loudly",
+      "lock_it_down": "Add a better passcode",
+      "laugh_together": "Show her the funny ones"
+    }
+  },
+  "tn_dad_report_card": {
+    "text": "{{name}} finds your report card and studies it in silence, like a treasure map leading to disappointment.",
+    "choices": {
+      "promise_better": "Promise to do better",
+      "defend_grades": "Defend your grades",
+      "hide_next_time": "Hide the next one"
+    }
+  },
+  "tn_sibling_secret": {
+    "text": "{{name}} confides a big secret and makes you swear not to tell. You can already feel it burning a hole in your pocket.",
+    "choices": {
+      "keep_secret": "Keep it, no matter what",
+      "tell_parents": "Tell your parents",
+      "use_as_leverage": "Use it as leverage"
+    },
+    "outcomes": {
+      "they_help": "Your parents handle it kindly. {{name}} is furious for exactly one week.",
+      "bad_idea": "It goes badly. {{name}} refers to you only as 'the traitor'."
+    }
+  },
+  "tn_mom_birthday": {
+    "text": "{{name}}'s birthday is tomorrow and you have not planned anything. A card feels cheap, a cake feels risky.",
+    "choices": {
+      "bake_cake": "Bake a questionable cake",
+      "buy_gift": "Buy a gift with savings",
+      "forget": "Hope she forgets too"
+    }
+  },
+  "tn_dad_chores": {
+    "text": "{{name}} hands you a list titled 'Weekend Duties'. It is two pages long and includes the garage.",
+    "choices": {
+      "do_chores": "Do them all, sulkily",
+      "bargain_allowance": "Bargain for extra allowance",
+      "dodge_chores": "Vanish for the afternoon"
+    }
+  },
+  "tn_first_crush": {
+    "text": "You notice someone in your class who laughs at all the wrong jokes. You think about them far more than any normal person should.",
+    "choices": {
+      "confess_note": "Slip them a note",
+      "admire_from_afar": "Admire from afar",
+      "tell_friend": "Tell your best friend"
+    }
+  },
+  "tn_ask_out": {
+    "text": "After weeks of practicing in the mirror, you finally have a chance to ask someone out. Your heart is making loud, unhelpful noises.",
+    "choices": {
+      "ask_directly": "Ask them out directly",
+      "ask_by_text": "Send a message instead",
+      "chicken_out": "Chicken out"
+    },
+    "outcomes": {
+      "yes": "They say yes and smile. You float home without touching the ground.",
+      "no": "They let you down gently, which somehow hurts more.",
+      "yes_text": "They reply 'sure!' with a tiny star. You read it twelve times.",
+      "left_on_read": "Read at 4:12 p.m. No reply. You consider moving to another country."
+    }
+  },
+  "tn_first_date": {
+    "text": "Your first official date is at the park, with snacks you both pretend not to be nervous about.",
+    "choices": {
+      "be_yourself": "Just be yourself",
+      "overplan": "Plan every detail",
+      "bring_friend": "Bring a friend for safety"
+    },
+    "outcomes": {
+      "sweet": "They laugh at your jokes, even the bad ones. It's the nicest afternoon in months.",
+      "awkward_date": "You spill soda on them within five minutes. They claim it's fine. It is not fine."
+    }
+  },
+  "tn_dance_invite": {
+    "text": "The school dance is coming. Your friends say you must go, and also that you must bring somebody, and also that you should hurry.",
+    "choices": {
+      "go_with_crush": "Ask your crush",
+      "go_with_friends": "Go with a group",
+      "skip_dance": "Skip it completely"
+    }
+  },
+  "tn_breakup": {
+    "text": "The text arrives without warning: 'we need to talk.' It is never about how well things are going.",
+    "choices": {
+      "accept_gracefully": "Accept it with grace",
+      "cry_for_days": "Cry into your pillow",
+      "fight_for_them": "Fight for the relationship"
+    },
+    "outcomes": {
+      "make_up": "You talk it through and decide to stay together. The panic fades into relief.",
+      "final_end": "Your speech is moving, but they're already gone."
+    }
+  },
+  "tn_love_note": {
+    "text": "Someone has slipped a folded note into your locker. It contains a heart and the words 'you're okay I guess.' You decode it for three days.",
+    "choices": {
+      "write_back": "Write back",
+      "show_everyone": "Show it to everyone",
+      "keep_it_secret": "Keep it private"
+    }
+  },
+  "tn_love_triangle": {
+    "text": "Two people you like have both asked you to the same event. Your afternoon turns into a soap opera with a vending machine.",
+    "choices": {
+      "choose_one": "Choose one decisively",
+      "pick_neither": "Pick neither",
+      "tell_the_truth": "Tell them both the truth"
+    },
+    "outcomes": {
+      "smooth": "You choose, and everyone is surprisingly mature about it. Suspicious.",
+      "drama": "Both of them find out you hesitated. A cafeteria argument breaks out."
+    }
+  },
+  "tn_prom": {
+    "text": "Prom night arrives. Everyone is in rented formal wear and fake confidence.",
+    "choices": {
+      "slow_dance": "Ask for a slow dance",
+      "dance_with_friends": "Dance with your friends",
+      "leave_early": "Leave early for pizza"
+    },
+    "outcomes": {
+      "magic": "The music is cheesy and the moment is perfect.",
+      "stepped_on": "You step on their foot twice. They laugh anyway, which is generous."
+    }
+  },
+  "tn_allowance_raise": {
+    "text": "You decide it is time for an allowance raise. You prepare a presentation with charts. The charts are drawn in marker.",
+    "choices": {
+      "pitch_raise": "Pitch your parents",
+      "do_extra_chores": "Earn it with chores",
+      "save_allowance": "Save what you have"
+    },
+    "outcomes": {
+      "approved": "They approve a modest raise and applaud your effort. The charts get framed.",
+      "denied": "They give you ten dollars for 'creativity' and send you to your room."
+    }
+  },
+  "tn_first_job": {
+    "text": "You apply for your first real job. Every posting wants experience, and the only way to get experience is a job.",
+    "choices": {
+      "fast_food": "Apply at a burger place",
+      "grocery_store": "Apply at the grocery store",
+      "wait_longer": "Wait until you're older"
+    },
+    "outcomes": {
+      "hired_burger": "You're hired to flip burgers and wear a paper hat. The grill is cruel but the pay is real.",
+      "rejected_burger": "The manager says they will keep your resume on file. The file is a trash can.",
+      "hired_store": "You get a job stacking shelves and learn more about cereal than anyone should.",
+      "rejected_store": "They ask for experience you do not have. Not even a little."
+    }
+  },
+  "tn_boss_raise": {
+    "text": "Your boss notices you've been showing up on time, which is shockingly rare. She hints at a possible raise.",
+    "choices": {
+      "ask_raise": "Ask for a raise",
+      "work_harder": "Work harder quietly",
+      "quit_job": "Quit dramatically"
+    },
+    "outcomes": {
+      "raise_given": "She smiles and bumps your pay. You immediately spend it in your head.",
+      "raise_denied": "She says 'budget' in a tragic voice. You return to the grill with dignity."
+    }
+  },
+  "tn_lawn_mowing": {
+    "text": "A neighbor offers to pay you to mow their lawn. The lawn is huge and so is the mower.",
+    "choices": {
+      "mow_neatly": "Do a perfect job",
+      "rush_job": "Rush through it",
+      "refuse_job": "Decline politely"
+    },
+    "outcomes": {
+      "good_enough": "Close enough. The neighbor pays you anyway.",
+      "flowerbed": "You mow the flowerbed. The neighbor won't speak of it."
+    }
+  },
+  "tn_birthday_cash": {
+    "text": "Birthday cash arrives from relatives in an envelope that smells like perfume. It's eighty dollars, a small fortune in teenage currency.",
+    "choices": {
+      "save_it_all": "Save every cent",
+      "treat_friends": "Treat your friends",
+      "buy_gadget": "Buy something shiny"
+    }
+  },
+  "tn_shoplift_dare": {
+    "text": "Your friends dare you to swipe a candy bar from the corner store. The cashier is busy with a crossword.",
+    "choices": {
+      "take_it": "Take the candy bar",
+      "say_no": "Say no firmly",
+      "pay_for_it": "Pay for it instead"
+    },
+    "outcomes": {
+      "get_away": "You stroll out unnoticed. The candy tastes like guilt.",
+      "caught_stealing": "The cashier catches you and calls your school. A very long lecture follows."
+    }
+  },
+  "tn_graffiti": {
+    "text": "A blank concrete wall behind the gym is begging for art. You have a can of spray paint and an opinion.",
+    "choices": {
+      "tag_wall": "Tag the wall",
+      "paint_legally": "Ask permission to paint it",
+      "leave_wall": "Leave it blank"
+    },
+    "outcomes": {
+      "masterpiece": "Your mural gets nicknamed 'The Blob.' You are secretly proud.",
+      "arrested_painter": "A security guard spots you mid-stroke. You scrub the wall for hours."
+    }
+  },
+  "tn_fake_id": {
+    "text": "Someone sells fake IDs out of a locker. The photo looks like a hostage from a bad dream.",
+    "choices": {
+      "buy_fake_id": "Buy one",
+      "report_seller": "Report the seller",
+      "ignore_it": "Walk away"
+    },
+    "outcomes": {
+      "works": "The cashier barely glances at it. You feel powerful and also a little sick.",
+      "confiscated": "Your ID gets confiscated, and the principal makes a speech."
+    }
+  },
+  "tn_mailbox_prank": {
+    "text": "A friend suggests whacking mailboxes with a bat on the walk home. It's hilarious until it is not.",
+    "choices": {
+      "join_prank": "Take a swing",
+      "refuse_prank": "Refuse and walk home",
+      "film_it": "Just film it"
+    },
+    "outcomes": {
+      "clean_escape": "You hit one, the bat flies, and nobody sees. Your heart pounds like a drum.",
+      "witness": "A porch light flips on. You spend the weekend repairing mailboxes."
+    }
+  },
+  "tn_growth_spurt": {
+    "text": "Overnight you grow three inches and lose all coordination. Doorframes now seem hostile.",
+    "choices": {
+      "embrace_it": "Embrace your new height",
+      "stretch_routine": "Start a stretching routine",
+      "hide_slouch": "Slouch to hide it"
+    }
+  },
+  "tn_sports_injury": {
+    "text": "During gym class, you sprint for the ball and the ground hits you first. Your ankle makes a noise like a snapped pencil.",
+    "choices": {
+      "walk_it_off": "Walk it off",
+      "see_nurse": "See the school nurse",
+      "milk_it": "Milk the sympathy"
+    },
+    "outcomes": {
+      "fine": "It was just a sprain. You limp with dignity.",
+      "worse": "It was not fine. The doctor says the word 'crutches' with joy."
+    }
+  },
+  "tn_sleep_debt": {
+    "text": "Between homework, scrolling, and existential thoughts, you have survived on four hours of sleep for a week. Your eyes look like raisins.",
+    "choices": {
+      "fix_schedule": "Fix your sleep schedule",
+      "energy_drinks": "Rely on energy drinks",
+      "power_through": "Power through"
+    }
+  },
+  "tn_driving_test": {
+    "text": "The driving test day arrives. The examiner holds a clipboard and looks like she has seen things.",
+    "choices": {
+      "take_test": "Take the test",
+      "practice_more": "Practice another month first",
+      "skip_license": "Not interested in driving"
+    },
+    "outcomes": {
+      "passed": "You pass with a perfect parallel park. The examiner almost smiles.",
+      "failed": "You roll through a stop sign and take out a cone. Better luck next time.",
+      "passed_later": "Extra practice pays off. You pass, a little bored of parking.",
+      "failed_later": "Even with practice, the cone remains your enemy."
+    }
+  },
+  "tn_joyride": {
+    "text": "Your friend dares you to take the car out at night and floor it on the empty back road. The speedometer needle quivers with anticipation.",
+    "choices": {
+      "floor_it": "Floor it",
+      "drive_sensibly": "Drive the speed limit",
+      "hand_keys_over": "Hand over the keys"
+    },
+    "outcomes": {
+      "thrill_ride": "You hit a hundred, scream with joy, and ease off before anything goes wrong.",
+      "ticket": "Blue lights flash in the mirror. The ticket is the worst souvenir.",
+      "crash": "You take the curve a little too fast. The night goes silent, and so does your story."
+    }
+  }
+}

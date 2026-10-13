@@ -1,0 +1,2307 @@
+[
+  {
+    "id": "tn_midterm_cram",
+    "category": "school",
+    "weight": 4,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "study_calmly",
+        "effects": {
+          "smarts": 6,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "allnighter",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "aced",
+            "weight": 45,
+            "effects": {
+              "smarts": 8,
+              "happiness": 6,
+              "health": -3
+            }
+          },
+          {
+            "id": "zombie",
+            "weight": 55,
+            "effects": {
+              "smarts": -2,
+              "happiness": -6,
+              "health": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "peek",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "unseen",
+            "weight": 55,
+            "effects": {
+              "smarts": -1,
+              "karma": -6,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 45,
+            "effects": {
+              "karma": -8,
+              "happiness": -10,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tn_science_fair",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "classic_volcano",
+        "effects": {
+          "smarts": 2,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "wild_experiment",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "first_prize",
+            "weight": 30,
+            "effects": {
+              "smarts": 10,
+              "happiness": 12,
+              "karma": 2
+            }
+          },
+          {
+            "id": "fiasco",
+            "weight": 70,
+            "effects": {
+              "smarts": 3,
+              "happiness": -5,
+              "looks": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip_it",
+        "effects": {
+          "happiness": -1,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_teacher_feud",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "argue_back",
+        "effects": {
+          "happiness": -4,
+          "smarts": 2,
+          "karma": -2
+        }
+      },
+      {
+        "id": "win_her_over",
+        "effects": {
+          "smarts": 6,
+          "happiness": 3,
+          "karma": 4
+        }
+      },
+      {
+        "id": "keep_head_down",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_join_band",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "notFlags": [
+        "band_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join_drums",
+        "effects": {
+          "happiness": 8,
+          "smarts": 2,
+          "flags": {
+            "band_member": true
+          }
+        }
+      },
+      {
+        "id": "join_guitar",
+        "effects": {
+          "happiness": 7,
+          "looks": 3,
+          "flags": {
+            "band_member": true
+          }
+        }
+      },
+      {
+        "id": "no_thanks",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_late_again",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "notFlags": [
+        "detention"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take_detention",
+        "effects": {
+          "happiness": -4,
+          "karma": 2,
+          "flags": {
+            "detention": true
+          }
+        }
+      },
+      {
+        "id": "sweet_talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "let_off",
+            "weight": 50,
+            "effects": {
+              "happiness": 5,
+              "karma": -1
+            }
+          },
+          {
+            "id": "detention_anyway",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "blame_bus",
+        "effects": {
+          "karma": -4,
+          "happiness": -2,
+          "flags": {
+            "detention": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_group_project",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "do_it_all",
+        "effects": {
+          "smarts": 5,
+          "happiness": -6,
+          "health": -2
+        }
+      },
+      {
+        "id": "delegate",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3,
+          "karma": 3
+        }
+      },
+      {
+        "id": "rely_on_others",
+        "effects": {
+          "smarts": -2,
+          "karma": -4,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_final_exams",
+    "category": "school",
+    "weight": 4,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "steady_review",
+        "effects": {
+          "smarts": 7,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "trust_your_gut",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great_luck",
+            "weight": 35,
+            "effects": {
+              "smarts": 5,
+              "happiness": 10
+            }
+          },
+          {
+            "id": "average",
+            "weight": 40,
+            "effects": {
+              "smarts": 1,
+              "happiness": -1
+            }
+          },
+          {
+            "id": "disaster",
+            "weight": 25,
+            "effects": {
+              "smarts": -3,
+              "happiness": -10
+            }
+          }
+        ]
+      },
+      {
+        "id": "hire_tutor",
+        "effects": {
+          "smarts": 6,
+          "money": -60,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_debate_club",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "compete",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "champion",
+            "weight": 35,
+            "effects": {
+              "smarts": 8,
+              "happiness": 9,
+              "looks": 2
+            }
+          },
+          {
+            "id": "crushed",
+            "weight": 65,
+            "effects": {
+              "smarts": 4,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "watch_only",
+        "effects": {
+          "smarts": 2
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "tn_skip_class",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "skip_with_them",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun_day",
+            "weight": 60,
+            "effects": {
+              "happiness": 9,
+              "smarts": -2,
+              "karma": -2
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 40,
+            "effects": {
+              "happiness": -7,
+              "smarts": -2,
+              "karma": -3,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay_in_class",
+        "effects": {
+          "smarts": 3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "talk_them_out",
+        "effects": {
+          "karma": 3,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_college_talk",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "aim_high",
+        "effects": {
+          "smarts": 5,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "aim_practical",
+        "effects": {
+          "smarts": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "no_idea",
+        "effects": {
+          "happiness": -2,
+          "smarts": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_detention_hallway",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "detention"
+      ]
+    },
+    "choices": [
+      {
+        "id": "escape_plan",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean_getaway",
+            "weight": 30,
+            "effects": {
+              "happiness": 8,
+              "karma": -3,
+              "flags": {
+                "rebel": true
+              }
+            }
+          },
+          {
+            "id": "caught_again",
+            "weight": 70,
+            "effects": {
+              "happiness": -6,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "do_homework",
+        "effects": {
+          "smarts": 4,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "chat_neighbor",
+        "effects": {
+          "happiness": 5,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_new_friend",
+    "category": "social",
+    "weight": 4,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "invite_them",
+        "effects": {
+          "happiness": 6,
+          "karma": 6
+        }
+      },
+      {
+        "id": "nod_politely",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "karma": -3,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_house_party",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "go_party",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 35,
+            "effects": {
+              "happiness": 12,
+              "looks": 2,
+              "flags": {
+                "popular": true
+              }
+            }
+          },
+          {
+            "id": "awkward",
+            "weight": 45,
+            "effects": {
+              "happiness": -2
+            }
+          },
+          {
+            "id": "cops",
+            "weight": 20,
+            "effects": {
+              "happiness": -8,
+              "karma": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay_home",
+        "effects": {
+          "happiness": -1,
+          "health": 2
+        }
+      },
+      {
+        "id": "host_movie_night",
+        "effects": {
+          "happiness": 4,
+          "karma": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_hot_pepper_dare",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16
+    },
+    "choices": [
+      {
+        "id": "eat_it",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hero",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "health": -3
+            }
+          },
+          {
+            "id": "regret",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "health": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "trade_dare",
+        "effects": {
+          "happiness": 3,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_secret_spilled",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "confront",
+        "effects": {
+          "happiness": -4,
+          "karma": 2
+        }
+      },
+      {
+        "id": "forgive",
+        "effects": {
+          "happiness": 3,
+          "karma": 5
+        }
+      },
+      {
+        "id": "revenge",
+        "effects": {
+          "happiness": 4,
+          "karma": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_embarrassing_video",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "laugh_it_off",
+        "effects": {
+          "happiness": 4,
+          "looks": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "report_it",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "deleted",
+            "weight": 60,
+            "effects": {
+              "happiness": 3,
+              "karma": 2
+            }
+          },
+          {
+            "id": "backfired",
+            "weight": 40,
+            "effects": {
+              "happiness": -7
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide_for_week",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_band_gig",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "band_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play_original",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "crowd_loves",
+            "weight": 40,
+            "effects": {
+              "happiness": 12,
+              "looks": 3,
+              "flags": {
+                "popular": true
+              }
+            }
+          },
+          {
+            "id": "crickets",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "smarts": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "play_covers",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "quit_band",
+        "effects": {
+          "happiness": -6,
+          "flags": {
+            "band_member": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_popular_table",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "popular"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sit_cool_table",
+        "effects": {
+          "happiness": 5,
+          "karma": -4,
+          "looks": 1
+        }
+      },
+      {
+        "id": "stay_old_friends",
+        "effects": {
+          "happiness": 6,
+          "karma": 5
+        }
+      },
+      {
+        "id": "bring_everyone",
+        "effects": {
+          "happiness": 8,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_sleepover",
+    "category": "social",
+    "weight": 2,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 14
+    },
+    "choices": [
+      {
+        "id": "tell_story",
+        "effects": {
+          "happiness": 7
+        }
+      },
+      {
+        "id": "claim_couch",
+        "effects": {
+          "happiness": 3,
+          "karma": -2
+        }
+      },
+      {
+        "id": "go_to_sleep",
+        "effects": {
+          "health": 3,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_rebel_haircut",
+    "category": "social",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "dye_it",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stunning",
+            "weight": 45,
+            "effects": {
+              "looks": 6,
+              "happiness": 8,
+              "flags": {
+                "rebel": true
+              }
+            }
+          },
+          {
+            "id": "swamp",
+            "weight": 55,
+            "effects": {
+              "looks": -5,
+              "happiness": -4,
+              "flags": {
+                "rebel": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "small_change",
+        "effects": {
+          "looks": 2
+        }
+      },
+      {
+        "id": "keep_hair",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "tn_mom_curfew",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "obey",
+        "effects": {
+          "happiness": -3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "negotiate",
+        "effects": {
+          "smarts": 2,
+          "relationship": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "sneak_late",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "got_away",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "karma": -3
+            }
+          },
+          {
+            "id": "grounded",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "relationship": -12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tn_dad_lessons",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 16,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "listen_carefully",
+        "effects": {
+          "smarts": 4,
+          "relationship": 6,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "too_fast",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "thrill",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "relationship": -4
+            }
+          },
+          {
+            "id": "bump",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "relationship": -8,
+              "money": -30
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse_to_drive",
+        "effects": {
+          "happiness": -1,
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_sibling_borrow",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "demand_payment",
+        "effects": {
+          "money": 20,
+          "relationship": -4,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "talk_it_out",
+        "effects": {
+          "relationship": 6,
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "borrow_back",
+        "effects": {
+          "relationship": -3,
+          "happiness": 3,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_mom_phone",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "protest",
+        "effects": {
+          "happiness": -4,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "lock_it_down",
+        "effects": {
+          "smarts": 2,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "laugh_together",
+        "effects": {
+          "happiness": 3,
+          "relationship": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_dad_report_card",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "promise_better",
+        "effects": {
+          "smarts": 3,
+          "relationship": 4,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "defend_grades",
+        "effects": {
+          "relationship": -3,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "hide_next_time",
+        "effects": {
+          "relationship": -5,
+          "karma": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_sibling_secret",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "keep_secret",
+        "effects": {
+          "relationship": 10,
+          "karma": 4,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "tell_parents",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "they_help",
+            "weight": 50,
+            "effects": {
+              "relationship": -4,
+              "karma": 2,
+              "happiness": 1
+            }
+          },
+          {
+            "id": "bad_idea",
+            "weight": 50,
+            "effects": {
+              "relationship": -15,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "use_as_leverage",
+        "effects": {
+          "money": 25,
+          "relationship": -12,
+          "karma": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_mom_birthday",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "bake_cake",
+        "effects": {
+          "relationship": 8,
+          "happiness": 4,
+          "karma": 3
+        }
+      },
+      {
+        "id": "buy_gift",
+        "effects": {
+          "money": -25,
+          "relationship": 6,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "forget",
+        "effects": {
+          "relationship": -8,
+          "karma": -3,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_dad_chores",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "do_chores",
+        "effects": {
+          "relationship": 5,
+          "karma": 3,
+          "health": 2,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "bargain_allowance",
+        "effects": {
+          "money": 40,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "dodge_chores",
+        "effects": {
+          "happiness": 4,
+          "relationship": -6,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_first_crush",
+    "category": "romance",
+    "weight": 5,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "confess_note",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "crush": true
+          }
+        }
+      },
+      {
+        "id": "admire_from_afar",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "crush": true
+          }
+        }
+      },
+      {
+        "id": "tell_friend",
+        "effects": {
+          "happiness": 3,
+          "karma": -1,
+          "flags": {
+            "crush": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_ask_out",
+    "category": "romance",
+    "weight": 4,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "ask_directly",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "yes",
+            "weight": 45,
+            "effects": {
+              "happiness": 12,
+              "looks": 1,
+              "flags": {
+                "dating": true
+              }
+            }
+          },
+          {
+            "id": "no",
+            "weight": 55,
+            "effects": {
+              "happiness": -9
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask_by_text",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "yes_text",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "dating": true
+              }
+            }
+          },
+          {
+            "id": "left_on_read",
+            "weight": 60,
+            "effects": {
+              "happiness": -7
+            }
+          }
+        ]
+      },
+      {
+        "id": "chicken_out",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_first_date",
+    "category": "romance",
+    "weight": 4,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "dating"
+      ]
+    },
+    "choices": [
+      {
+        "id": "be_yourself",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sweet",
+            "weight": 60,
+            "effects": {
+              "happiness": 10,
+              "looks": 1
+            }
+          },
+          {
+            "id": "awkward_date",
+            "weight": 40,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "overplan",
+        "effects": {
+          "happiness": 4,
+          "money": -30
+        }
+      },
+      {
+        "id": "bring_friend",
+        "effects": {
+          "happiness": -4,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_dance_invite",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "go_with_crush",
+        "effects": {
+          "happiness": 7,
+          "money": -20
+        }
+      },
+      {
+        "id": "go_with_friends",
+        "effects": {
+          "happiness": 5,
+          "money": -10
+        }
+      },
+      {
+        "id": "skip_dance",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_breakup",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17,
+      "flags": [
+        "dating"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept_gracefully",
+        "effects": {
+          "happiness": -6,
+          "karma": 3,
+          "flags": {
+            "dating": false
+          }
+        }
+      },
+      {
+        "id": "cry_for_days",
+        "effects": {
+          "happiness": -12,
+          "health": -2,
+          "flags": {
+            "dating": false
+          }
+        }
+      },
+      {
+        "id": "fight_for_them",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "make_up",
+            "weight": 30,
+            "effects": {
+              "happiness": 7,
+              "karma": 2
+            }
+          },
+          {
+            "id": "final_end",
+            "weight": 70,
+            "effects": {
+              "happiness": -10,
+              "flags": {
+                "dating": false
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tn_love_note",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 14
+    },
+    "choices": [
+      {
+        "id": "write_back",
+        "effects": {
+          "happiness": 6,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "show_everyone",
+        "effects": {
+          "happiness": 2,
+          "karma": -5
+        }
+      },
+      {
+        "id": "keep_it_secret",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_love_triangle",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "choose_one",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "smooth",
+            "weight": 50,
+            "effects": {
+              "happiness": 6
+            }
+          },
+          {
+            "id": "drama",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "karma": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "pick_neither",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "tell_the_truth",
+        "effects": {
+          "happiness": 2,
+          "karma": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_prom",
+    "category": "romance",
+    "weight": 4,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "slow_dance",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "magic",
+            "weight": 50,
+            "effects": {
+              "happiness": 12,
+              "looks": 2
+            }
+          },
+          {
+            "id": "stepped_on",
+            "weight": 50,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "dance_with_friends",
+        "effects": {
+          "happiness": 8,
+          "health": 1
+        }
+      },
+      {
+        "id": "leave_early",
+        "effects": {
+          "happiness": 4,
+          "money": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_allowance_raise",
+    "category": "money",
+    "weight": 4,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 14
+    },
+    "choices": [
+      {
+        "id": "pitch_raise",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "approved",
+            "weight": 50,
+            "effects": {
+              "money": 50,
+              "happiness": 6,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "denied",
+            "weight": 50,
+            "effects": {
+              "money": 10,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "do_extra_chores",
+        "effects": {
+          "money": 30,
+          "karma": 3,
+          "health": 1
+        }
+      },
+      {
+        "id": "save_allowance",
+        "effects": {
+          "money": 20,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_first_job",
+    "category": "money",
+    "weight": 5,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17,
+      "notFlags": [
+        "first_job"
+      ]
+    },
+    "choices": [
+      {
+        "id": "fast_food",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hired_burger",
+            "weight": 70,
+            "effects": {
+              "money": 1500,
+              "happiness": 2,
+              "smarts": 1,
+              "flags": {
+                "first_job": true
+              }
+            }
+          },
+          {
+            "id": "rejected_burger",
+            "weight": 30,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "grocery_store",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hired_store",
+            "weight": 65,
+            "effects": {
+              "money": 2200,
+              "health": 1,
+              "flags": {
+                "first_job": true
+              }
+            }
+          },
+          {
+            "id": "rejected_store",
+            "weight": 35,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait_longer",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_boss_raise",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "flags": [
+        "first_job"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ask_raise",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "raise_given",
+            "weight": 50,
+            "effects": {
+              "money": 1800,
+              "happiness": 8,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "raise_denied",
+            "weight": 50,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "work_harder",
+        "effects": {
+          "money": 900,
+          "smarts": 1,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "quit_job",
+        "effects": {
+          "happiness": 3,
+          "money": 200,
+          "karma": -2,
+          "flags": {
+            "first_job": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_lawn_mowing",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "mow_neatly",
+        "effects": {
+          "money": 50,
+          "health": 1,
+          "karma": 2
+        }
+      },
+      {
+        "id": "rush_job",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good_enough",
+            "weight": 60,
+            "effects": {
+              "money": 40,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "flowerbed",
+            "weight": 40,
+            "effects": {
+              "karma": -3,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse_job",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_birthday_cash",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "save_it_all",
+        "effects": {
+          "money": 80,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "treat_friends",
+        "effects": {
+          "money": 20,
+          "happiness": 7,
+          "karma": 3
+        }
+      },
+      {
+        "id": "buy_gadget",
+        "effects": {
+          "money": 10,
+          "happiness": 6,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_shoplift_dare",
+    "category": "crime",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16
+    },
+    "choices": [
+      {
+        "id": "take_it",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "get_away",
+            "weight": 55,
+            "effects": {
+              "happiness": 5,
+              "karma": -7,
+              "flags": {
+                "rebel": true
+              }
+            }
+          },
+          {
+            "id": "caught_stealing",
+            "weight": 45,
+            "effects": {
+              "happiness": -10,
+              "karma": -6,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "say_no",
+        "effects": {
+          "karma": 5,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "pay_for_it",
+        "effects": {
+          "money": -2,
+          "karma": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_graffiti",
+    "category": "crime",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "tag_wall",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "masterpiece",
+            "weight": 40,
+            "effects": {
+              "happiness": 8,
+              "karma": -4,
+              "looks": 1,
+              "flags": {
+                "rebel": true
+              }
+            }
+          },
+          {
+            "id": "arrested_painter",
+            "weight": 60,
+            "effects": {
+              "happiness": -9,
+              "karma": -6,
+              "money": -60,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "paint_legally",
+        "effects": {
+          "happiness": 6,
+          "karma": 5,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "leave_wall",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "tn_fake_id",
+    "category": "crime",
+    "weight": 2,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "buy_fake_id",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 30,
+            "effects": {
+              "happiness": 6,
+              "karma": -5,
+              "money": -40,
+              "flags": {
+                "rebel": true
+              }
+            }
+          },
+          {
+            "id": "confiscated",
+            "weight": 70,
+            "effects": {
+              "happiness": -8,
+              "karma": -6,
+              "money": -40,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "report_seller",
+        "effects": {
+          "karma": 6,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "ignore_it",
+        "effects": {
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_mailbox_prank",
+    "category": "crime",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 16
+    },
+    "choices": [
+      {
+        "id": "join_prank",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean_escape",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "karma": -6
+            }
+          },
+          {
+            "id": "witness",
+            "weight": 50,
+            "effects": {
+              "happiness": -9,
+              "karma": -6,
+              "money": -50,
+              "flags": {
+                "detention": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse_prank",
+        "effects": {
+          "karma": 4,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "film_it",
+        "effects": {
+          "karma": -3,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_growth_spurt",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "embrace_it",
+        "effects": {
+          "looks": 3,
+          "happiness": 4
+        }
+      },
+      {
+        "id": "stretch_routine",
+        "effects": {
+          "health": 4,
+          "looks": 2
+        }
+      },
+      {
+        "id": "hide_slouch",
+        "effects": {
+          "happiness": -3,
+          "looks": -1,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_sports_injury",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "walk_it_off",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 45,
+            "effects": {
+              "health": -2,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 55,
+            "effects": {
+              "health": -9,
+              "happiness": -5,
+              "money": -40
+            }
+          }
+        ]
+      },
+      {
+        "id": "see_nurse",
+        "effects": {
+          "health": -2,
+          "happiness": -1,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "milk_it",
+        "effects": {
+          "health": -2,
+          "happiness": 5,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_sleep_debt",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "fix_schedule",
+        "effects": {
+          "health": 6,
+          "happiness": 3,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "energy_drinks",
+        "effects": {
+          "health": -5,
+          "happiness": 1,
+          "money": -15
+        }
+      },
+      {
+        "id": "power_through",
+        "effects": {
+          "health": -4,
+          "smarts": -1,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_driving_test",
+    "category": "random",
+    "weight": 5,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "notFlags": [
+        "has_license"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take_test",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "passed",
+            "weight": 55,
+            "effects": {
+              "happiness": 14,
+              "smarts": 1,
+              "flags": {
+                "has_license": true
+              }
+            }
+          },
+          {
+            "id": "failed",
+            "weight": 45,
+            "effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "practice_more",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "passed_later",
+            "weight": 75,
+            "effects": {
+              "happiness": 10,
+              "smarts": 1,
+              "money": -30,
+              "flags": {
+                "has_license": true
+              }
+            }
+          },
+          {
+            "id": "failed_later",
+            "weight": 25,
+            "effects": {
+              "happiness": -5,
+              "money": -30
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip_license",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn_joyride",
+    "category": "death",
+    "weight": 0.3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "flags": [
+        "has_license"
+      ]
+    },
+    "choices": [
+      {
+        "id": "floor_it",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "thrill_ride",
+            "weight": 60,
+            "effects": {
+              "happiness": 10,
+              "karma": -3
+            }
+          },
+          {
+            "id": "ticket",
+            "weight": 25,
+            "effects": {
+              "happiness": -8,
+              "money": -150,
+              "karma": -2
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 15,
+            "effects": {
+              "death": "reckless_driving"
+            }
+          }
+        ]
+      },
+      {
+        "id": "drive_sensibly",
+        "effects": {
+          "karma": 3,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "hand_keys_over",
+        "effects": {
+          "karma": 4,
+          "happiness": -1
+        }
+      }
+    ]
+  }
+]

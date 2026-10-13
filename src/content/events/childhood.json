@@ -1,0 +1,2044 @@
+[
+  {
+    "id": "ch_first_smile",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 0,
+      "maxAge": 1
+    },
+    "choices": [
+      {
+        "id": "beam",
+        "effects": {
+          "happiness": 6,
+          "looks": 3
+        }
+      },
+      {
+        "id": "stoic",
+        "effects": {
+          "happiness": -2,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "drool",
+        "effects": {
+          "happiness": 4,
+          "looks": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_sleepless_night",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 0,
+      "maxAge": 2
+    },
+    "choices": [
+      {
+        "id": "wail",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rescued",
+            "weight": 65,
+            "effects": {
+              "happiness": 6,
+              "health": -2
+            }
+          },
+          {
+            "id": "ignored",
+            "weight": 35,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "gurgle",
+        "effects": {
+          "happiness": 2,
+          "health": 3
+        }
+      },
+      {
+        "id": "bounce",
+        "effects": {
+          "happiness": 5,
+          "health": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_first_word",
+    "category": "childhood",
+    "weight": 4,
+    "conditions": {
+      "minAge": 1,
+      "maxAge": 2
+    },
+    "choices": [
+      {
+        "id": "mama",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "dada",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3,
+          "karma": -2
+        }
+      },
+      {
+        "id": "dog",
+        "effects": {
+          "smarts": 2,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_first_steps",
+    "category": "childhood",
+    "weight": 4,
+    "conditions": {
+      "minAge": 1,
+      "maxAge": 2
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wobble",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "health": 3
+            }
+          },
+          {
+            "id": "faceplant",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "health": -3,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "crawl",
+        "effects": {
+          "happiness": 1,
+          "health": 2
+        }
+      },
+      {
+        "id": "cruise",
+        "effects": {
+          "happiness": 4,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_baby_food_war",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 0,
+      "maxAge": 2
+    },
+    "choices": [
+      {
+        "id": "eat",
+        "effects": {
+          "health": 5,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "spit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "laugh",
+            "weight": 50,
+            "effects": {
+              "happiness": 5
+            }
+          },
+          {
+            "id": "scolded",
+            "weight": 50,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "grab",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3,
+          "looks": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_tantrum",
+    "category": "childhood",
+    "weight": 4,
+    "conditions": {
+      "minAge": 2,
+      "maxAge": 3
+    },
+    "choices": [
+      {
+        "id": "scream",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cereal",
+            "weight": 35,
+            "effects": {
+              "happiness": 6,
+              "karma": -3
+            }
+          },
+          {
+            "id": "nope",
+            "weight": 65,
+            "effects": {
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": 2,
+          "health": 3,
+          "karma": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_imaginary_friend",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 5
+    },
+    "choices": [
+      {
+        "id": "tea",
+        "effects": {
+          "happiness": 6,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "blame",
+        "effects": {
+          "happiness": 3,
+          "karma": -4
+        }
+      },
+      {
+        "id": "evict",
+        "effects": {
+          "happiness": -3,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_wall_masterpiece",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 2,
+      "maxAge": 4
+    },
+    "choices": [
+      {
+        "id": "mural",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "gallery",
+            "weight": 40,
+            "effects": {
+              "happiness": 8,
+              "smarts": 3
+            }
+          },
+          {
+            "id": "grounded",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "karma": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "paper",
+        "effects": {
+          "smarts": 3,
+          "happiness": 2,
+          "karma": 3
+        }
+      },
+      {
+        "id": "blame_cat",
+        "effects": {
+          "karma": -5,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_goldfish",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 8,
+      "notFlags": [
+        "pet_goldfish"
+      ]
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 8,
+          "karma": 3,
+          "flags": {
+            "pet_goldfish": true
+          }
+        }
+      },
+      {
+        "id": "gift",
+        "effects": {
+          "happiness": 2,
+          "karma": 6
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_goldfish_funeral",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 10,
+      "flags": [
+        "pet_goldfish"
+      ]
+    },
+    "choices": [
+      {
+        "id": "funeral",
+        "effects": {
+          "happiness": -3,
+          "karma": 4,
+          "flags": {
+            "pet_goldfish": false
+          }
+        }
+      },
+      {
+        "id": "replace",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "unnoticed",
+            "weight": 50,
+            "effects": {
+              "happiness": 3,
+              "karma": -3
+            }
+          },
+          {
+            "id": "noticed",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "karma": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": -5,
+          "health": -1,
+          "flags": {
+            "pet_goldfish": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_tooth_fairy",
+    "category": "childhood",
+    "weight": 4,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 8
+    },
+    "choices": [
+      {
+        "id": "pillow",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "coin",
+            "weight": 70,
+            "effects": {
+              "money": 5,
+              "happiness": 5
+            }
+          },
+          {
+            "id": "forgot",
+            "weight": 30,
+            "effects": {
+              "happiness": -5,
+              "money": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "keep",
+        "effects": {
+          "smarts": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "negotiate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rich",
+            "weight": 30,
+            "effects": {
+              "money": 12,
+              "smarts": 3
+            }
+          },
+          {
+            "id": "flat",
+            "weight": 70,
+            "effects": {
+              "money": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch_lemonade_stand",
+    "category": "childhood",
+    "weight": 3,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 11
+    },
+    "choices": [
+      {
+        "id": "sell",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sold_out",
+            "weight": 45,
+            "effects": {
+              "money": 30,
+              "happiness": 6,
+              "smarts": 3
+            }
+          },
+          {
+            "id": "meh",
+            "weight": 55,
+            "effects": {
+              "money": 8,
+              "happiness": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "free",
+        "effects": {
+          "karma": 8,
+          "happiness": 5
+        }
+      },
+      {
+        "id": "drink",
+        "effects": {
+          "happiness": 3,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_bike",
+    "category": "childhood",
+    "weight": 4,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 8
+    },
+    "choices": [
+      {
+        "id": "ride",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "soar",
+            "weight": 55,
+            "effects": {
+              "happiness": 10,
+              "health": 3
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 45,
+            "effects": {
+              "health": -6,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "careful",
+        "effects": {
+          "health": 2,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_early_reader",
+    "category": "childhood",
+    "weight": 2,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 5,
+      "notFlags": [
+        "early_reader"
+      ]
+    },
+    "choices": [
+      {
+        "id": "devour",
+        "effects": {
+          "smarts": 10,
+          "happiness": 3,
+          "flags": {
+            "early_reader": true
+          }
+        }
+      },
+      {
+        "id": "read_aloud",
+        "effects": {
+          "smarts": 7,
+          "happiness": 4,
+          "looks": -1,
+          "flags": {
+            "early_reader": true
+          }
+        }
+      },
+      {
+        "id": "blocks",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_music_lessons",
+    "category": "childhood",
+    "weight": 2,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 10,
+      "notFlags": [
+        "music_lessons"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sign_up",
+        "effects": {
+          "smarts": 5,
+          "happiness": 2,
+          "money": -5,
+          "flags": {
+            "music_lessons": true
+          }
+        }
+      },
+      {
+        "id": "bang",
+        "effects": {
+          "happiness": 4,
+          "health": -1,
+          "karma": -2
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_first_day_school",
+    "category": "school",
+    "weight": 5,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 7
+    },
+    "choices": [
+      {
+        "id": "wave",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "shaky",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "cling",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -1,
+          "smarts": 1,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_show_and_tell",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 9
+    },
+    "choices": [
+      {
+        "id": "rock",
+        "effects": {
+          "happiness": 3,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "story",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "looks": 2
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 45,
+            "effects": {
+              "happiness": -4,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_library_card",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 12,
+      "flags": [
+        "early_reader"
+      ]
+    },
+    "choices": [
+      {
+        "id": "borrow",
+        "effects": {
+          "smarts": 9,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "series",
+        "effects": {
+          "smarts": 6,
+          "happiness": 6
+        }
+      },
+      {
+        "id": "recess",
+        "effects": {
+          "happiness": 4,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_bully",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12,
+      "notFlags": [
+        "bully_victim"
+      ]
+    },
+    "choices": [
+      {
+        "id": "stand",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wins",
+            "weight": 35,
+            "effects": {
+              "happiness": 8,
+              "karma": 4
+            }
+          },
+          {
+            "id": "loses",
+            "weight": 65,
+            "effects": {
+              "happiness": -7,
+              "health": -4,
+              "flags": {
+                "bully_victim": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pay",
+        "effects": {
+          "happiness": -6,
+          "money": -5,
+          "flags": {
+            "bully_victim": true
+          }
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": 2,
+          "karma": 3,
+          "flags": {
+            "bully_victim": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_bully_followup",
+    "category": "school",
+    "weight": 4,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 12,
+      "flags": [
+        "bully_victim"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "joke",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "laugh",
+            "weight": 50,
+            "effects": {
+              "happiness": 9,
+              "looks": 2,
+              "karma": -2,
+              "flags": {
+                "bully_victim": false
+              }
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "happiness": 5,
+          "karma": 2,
+          "flags": {
+            "bully_victim": false
+          }
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "happiness": 3,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_class_test",
+    "category": "school",
+    "weight": 4,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "study",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 55,
+            "effects": {
+              "smarts": 4,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "fail",
+            "weight": 45,
+            "effects": {
+              "smarts": -1,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "copy",
+        "effects": {
+          "smarts": -2,
+          "karma": -5,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "blank",
+        "effects": {
+          "happiness": -3,
+          "smarts": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_school_play",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 11
+    },
+    "choices": [
+      {
+        "id": "lead",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lead",
+            "weight": 35,
+            "effects": {
+              "happiness": 10,
+              "looks": 3
+            }
+          },
+          {
+            "id": "tree",
+            "weight": 65,
+            "effects": {
+              "happiness": 2,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "prop",
+        "effects": {
+          "happiness": 3,
+          "smarts": 3,
+          "karma": 3
+        }
+      },
+      {
+        "id": "sick",
+        "effects": {
+          "happiness": -2,
+          "karma": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_science_fair",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "volcano",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "prize",
+            "weight": 40,
+            "effects": {
+              "smarts": 6,
+              "happiness": 10,
+              "money": 10
+            }
+          },
+          {
+            "id": "mess",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "honest",
+        "effects": {
+          "smarts": 6,
+          "karma": 4,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "parent",
+        "effects": {
+          "smarts": 1,
+          "karma": -6,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_recital",
+    "category": "school",
+    "weight": 4,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12,
+      "flags": [
+        "music_lessons"
+      ]
+    },
+    "choices": [
+      {
+        "id": "perform",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "standing",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "smarts": 3,
+              "looks": 2
+            }
+          },
+          {
+            "id": "flub",
+            "weight": 55,
+            "effects": {
+              "happiness": -3,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "easy",
+        "effects": {
+          "happiness": 4,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "quit",
+        "effects": {
+          "happiness": -4,
+          "smarts": -1,
+          "flags": {
+            "music_lessons": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_cheating",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "peek",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean",
+            "weight": 40,
+            "effects": {
+              "smarts": -1,
+              "karma": -7,
+              "happiness": -2
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 60,
+            "effects": {
+              "karma": -5,
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "resist",
+        "effects": {
+          "karma": 8,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "karma": 6,
+          "happiness": -1,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_mother_lullaby",
+    "category": "family",
+    "weight": 4,
+    "conditions": {
+      "minAge": 0,
+      "maxAge": 3,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "hum",
+        "effects": {
+          "happiness": 6,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "sleep",
+        "effects": {
+          "health": 4,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_father_shoulders",
+    "category": "family",
+    "weight": 4,
+    "conditions": {
+      "minAge": 2,
+      "maxAge": 6,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "wave",
+        "effects": {
+          "happiness": 8,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "grab_hair",
+        "effects": {
+          "happiness": 4,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "nap",
+        "effects": {
+          "happiness": 5,
+          "relationship": 6,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_sibling_blame",
+    "category": "family",
+    "weight": 4,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 9,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "confess",
+        "effects": {
+          "karma": 8,
+          "happiness": -3,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "deny",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "karma": -4
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "karma": -4,
+              "relationship": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "frame",
+        "effects": {
+          "karma": -7,
+          "relationship": -12,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_sibling_borrow",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "forgive",
+        "effects": {
+          "karma": 5,
+          "relationship": 6,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "revenge",
+        "effects": {
+          "karma": -4,
+          "relationship": -6,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "trade",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fair",
+            "weight": 60,
+            "effects": {
+              "happiness": 5,
+              "relationship": 2
+            }
+          },
+          {
+            "id": "fight",
+            "weight": 40,
+            "effects": {
+              "health": -3,
+              "relationship": -6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch_friend_secret",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "karma": 6,
+          "relationship": 12,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "tell_one",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "safe",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "relationship": 2
+            }
+          },
+          {
+            "id": "spread",
+            "weight": 60,
+            "effects": {
+              "karma": -6,
+              "relationship": -18,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "trade",
+        "effects": {
+          "karma": -5,
+          "money": 2,
+          "relationship": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_friend_fight",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 12,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "sorry",
+        "effects": {
+          "karma": 6,
+          "relationship": 12,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "stubborn",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "respect",
+            "weight": 40,
+            "effects": {
+              "relationship": 6,
+              "happiness": 3
+            }
+          },
+          {
+            "id": "frosty",
+            "weight": 60,
+            "effects": {
+              "relationship": -12,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "third",
+        "effects": {
+          "smarts": 2,
+          "relationship": -3,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_mother_vegetables",
+    "category": "family",
+    "weight": 4,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 8,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "eat",
+        "effects": {
+          "health": 6,
+          "happiness": -2,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "hide",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stealth",
+            "weight": 50,
+            "effects": {
+              "happiness": 3,
+              "karma": -2
+            }
+          },
+          {
+            "id": "spotted",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "relationship": -6,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hold_out",
+        "effects": {
+          "happiness": -3,
+          "health": -1,
+          "relationship": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_father_fishing",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "patient",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "big",
+            "weight": 40,
+            "effects": {
+              "happiness": 10,
+              "relationship": 10,
+              "health": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 60,
+            "effects": {
+              "happiness": 4,
+              "relationship": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip_stones",
+        "effects": {
+          "happiness": 5,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "complain",
+        "effects": {
+          "happiness": -3,
+          "relationship": -6,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_mother_homework",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 12,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "smarts": 2,
+          "relationship": 6,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "argue",
+        "effects": {
+          "smarts": 4,
+          "relationship": -4,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "alone",
+        "effects": {
+          "smarts": 5,
+          "relationship": 2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_road_trip",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "singalong",
+        "effects": {
+          "happiness": 7
+        }
+      },
+      {
+        "id": "are_we",
+        "effects": {
+          "happiness": -2,
+          "karma": -2
+        }
+      },
+      {
+        "id": "games",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hit",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "smarts": 3
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 45,
+            "effects": {
+              "happiness": -1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch_ear_infection",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 0,
+      "maxAge": 4
+    },
+    "choices": [
+      {
+        "id": "doctor",
+        "effects": {
+          "health": 5,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "tough",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 45,
+            "effects": {
+              "health": 2,
+              "happiness": -2
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 55,
+            "effects": {
+              "health": -6,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "cuddle",
+        "effects": {
+          "happiness": 5,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_chickenpox",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 9
+    },
+    "choices": [
+      {
+        "id": "scratch",
+        "effects": {
+          "health": -6,
+          "looks": -6,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "resist",
+        "effects": {
+          "health": 2,
+          "looks": -1,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "movie",
+        "effects": {
+          "happiness": 6,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_peanut_reaction",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 8,
+      "notFlags": [
+        "allergic_peanuts"
+      ]
+    },
+    "choices": [
+      {
+        "id": "er",
+        "effects": {
+          "health": -3,
+          "happiness": -3,
+          "flags": {
+            "allergic_peanuts": true
+          }
+        }
+      },
+      {
+        "id": "panic",
+        "effects": {
+          "health": -2,
+          "smarts": 3,
+          "flags": {
+            "allergic_peanuts": true
+          }
+        }
+      },
+      {
+        "id": "milk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 20,
+            "effects": {
+              "happiness": 4
+            }
+          },
+          {
+            "id": "allergy",
+            "weight": 80,
+            "effects": {
+              "health": -5,
+              "flags": {
+                "allergic_peanuts": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch_broken_arm",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "cast",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "signed",
+            "weight": 60,
+            "effects": {
+              "happiness": 6,
+              "health": -4
+            }
+          },
+          {
+            "id": "itchy",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "health": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "brave",
+        "effects": {
+          "health": -9,
+          "happiness": 1,
+          "karma": -1
+        }
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "health": -5,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_glasses",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 11
+    },
+    "choices": [
+      {
+        "id": "wear",
+        "effects": {
+          "smarts": 4,
+          "looks": -2,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -2,
+          "health": -2
+        }
+      },
+      {
+        "id": "pick",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cool",
+            "weight": 40,
+            "effects": {
+              "looks": 4,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "dorky",
+            "weight": 60,
+            "effects": {
+              "looks": -3,
+              "happiness": -2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch_found_coin",
+    "category": "random",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "money": 2,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "candy",
+        "effects": {
+          "happiness": 6,
+          "health": -2
+        }
+      },
+      {
+        "id": "give",
+        "effects": {
+          "karma": 6,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_lost_at_store",
+    "category": "random",
+    "weight": 3,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 6
+    },
+    "choices": [
+      {
+        "id": "staff",
+        "effects": {
+          "happiness": 2,
+          "smarts": 3,
+          "karma": 2
+        }
+      },
+      {
+        "id": "wander",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "found",
+            "weight": 65,
+            "effects": {
+              "happiness": 2,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "stuck",
+            "weight": 35,
+            "effects": {
+              "happiness": -4,
+              "health": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_thunderstorm",
+    "category": "random",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 8
+    },
+    "choices": [
+      {
+        "id": "blanket",
+        "effects": {
+          "happiness": 3,
+          "health": 1
+        }
+      },
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "bed",
+        "effects": {
+          "happiness": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_neighbor_dog",
+    "category": "random",
+    "weight": 3,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "pet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "friend",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "karma": 3
+            }
+          },
+          {
+            "id": "nip",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "run",
+        "effects": {
+          "happiness": -1,
+          "health": 1
+        }
+      },
+      {
+        "id": "stick",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch_freak_accident",
+    "category": "random",
+    "weight": 0.2,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "climb",
+        "effects": {
+          "death": "freak_accident"
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": 2,
+          "karma": 3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -1,
+          "health": 2
+        }
+      }
+    ]
+  }
+]

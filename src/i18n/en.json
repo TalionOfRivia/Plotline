@@ -1,7 +1,25 @@
 {
   "app": { "name": "Plotline", "tagline": "Every life is a story." },
-  "menu": { "newLife": "Start a new life", "continue": "Continue", "language": "Language" },
+  "menu": { "newLife": "Start a new life", "continue": "Continue", "continueAs": "Continue as {{name}} ({{age}})", "language": "Language" },
   "stats": { "happiness": "Happiness", "health": "Health", "smarts": "Smarts", "looks": "Looks" },
-  "nav": { "job": "Job", "assets": "Assets", "age": "Age", "relationships": "People", "activities": "Activities" },
-  "common": { "ok": "OK", "cancel": "Cancel", "age": "Age {{age}}" }
+  "nav": { "job": "Job", "assets": "Assets", "age": "Age up", "relationships": "People", "activities": "Activities" },
+  "common": { "ok": "OK", "cancel": "Cancel", "age": "Age {{age}}" },
+  "kind": { "mother": "mother", "father": "father", "sibling": "sibling", "friend": "friend", "partner": "partner", "spouse": "spouse", "ex": "ex", "child": "child", "pet": "pet" },
+  "diary": {
+    "born": "You were born in {{city}}, {{country}}.",
+    "parents": "Your parents are {{mother}} and {{father}}.",
+    "birthday": "— Age {{age}} —",
+    "personDied": "Your {{kind}} {{name}} passed away at {{age}}."
+  },
+  "event": { "odds": "{{pct}}% chance: {{outcome}}" },
+  "death": {
+    "restInPeace": "Rest in peace",
+    "lived": "Lived {{years}} years",
+    "netWorth": "Net worth",
+    "events": "Stories",
+    "karma": "Karma",
+    "illness": "Died of a long illness.",
+    "oldAge": "Died peacefully of old age.",
+    "sudden": "Died suddenly."
+  }
 }
