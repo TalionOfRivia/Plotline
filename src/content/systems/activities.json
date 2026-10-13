@@ -1,0 +1,22 @@
+[
+  { "id": "gym", "emoji": "🏋️", "cost": 600, "minAge": 14, "effects": { "health": 6, "looks": 3, "happiness": 2 } },
+  { "id": "doctor_visit", "emoji": "🩺", "cost": 400, "minAge": 0, "effects": { "health": 8 } },
+  { "id": "meditation", "emoji": "🧘", "cost": 0, "minAge": 10, "effects": { "health": 3, "happiness": 4, "smarts": 1 } },
+  { "id": "library", "emoji": "📚", "cost": 20, "minAge": 6, "effects": { "smarts": 3, "happiness": 1 } },
+  { "id": "vacation", "emoji": "🏖️", "cost": 4000, "minAge": 16, "effects": { "happiness": 10, "health": 2 } },
+  { "id": "plastic_surgery", "emoji": "💉", "cost": 25000, "minAge": 18, "effects": { "looks": 15, "health": -5 }, "risky": true },
+  { "id": "lottery_ticket", "emoji": "🎟️", "cost": 5, "minAge": 18, "effects": {}, "special": "lottery" },
+  { "id": "casino", "emoji": "🎰", "cost": 500, "minAge": 18, "effects": {}, "special": "casino" },
+  { "id": "therapy", "emoji": "🛋️", "cost": 2000, "minAge": 16, "effects": { "happiness": 6, "health": 1 } },
+  { "id": "diet", "emoji": "🥗", "cost": 300, "minAge": 14, "effects": { "health": 5, "looks": 4, "happiness": -1 } },
+  { "id": "party", "emoji": "🎉", "cost": 800, "minAge": 16, "effects": { "happiness": 6, "health": -2 } },
+  { "id": "volunteer", "emoji": "🤝", "cost": 0, "minAge": 14, "effects": { "karma": 5, "happiness": 2 } },
+  { "id": "night_class", "emoji": "🌙", "cost": 3000, "minAge": 18, "effects": { "smarts": 5, "happiness": -1 } },
+  { "id": "spa", "emoji": "🧖", "cost": 1000, "minAge": 16, "effects": { "health": 3, "looks": 2, "happiness": 5 } },
+  { "id": "tattoo", "emoji": "🖋️", "cost": 300, "minAge": 18, "effects": { "looks": 1, "happiness": 2 } },
+  { "id": "skydiving", "emoji": "🪂", "cost": 1500, "minAge": 18, "effects": { "happiness": 8 }, "risky": true },
+  { "id": "movie", "emoji": "🎬", "cost": 25, "minAge": 6, "effects": { "happiness": 3 } },
+  { "id": "concert", "emoji": "🎤", "cost": 150, "minAge": 14, "effects": { "happiness": 6 } },
+  { "id": "road_trip", "emoji": "🚗", "cost": 800, "minAge": 16, "effects": { "happiness": 7 } },
+  { "id": "karaoke", "emoji": "🎶", "cost": 60, "minAge": 16, "effects": { "happiness": 4 } }
+]

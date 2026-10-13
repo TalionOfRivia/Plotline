@@ -1,0 +1,657 @@
+{
+  "rm_teen_first_kiss": {
+    "text": "You and {{name}} are alone on the porch steps. The silence is loud, and so is your pulse.",
+    "choices": {
+      "lean_in": "Lean in",
+      "wait": "Wait for them",
+      "joke": "Make a joke instead"
+    },
+    "outcomes": {
+      "sweet": "It is brief, clumsy and perfect. You float home.",
+      "clash": "You misjudge the angle and bump noses. {{name}} laughs, then you both laugh, then it gets awkward."
+    }
+  },
+  "rm_teen_sneak_out": {
+    "text": "{{name}} texts at midnight: come outside, the stars are out. Your parents' bedroom door is thirty feet from the front door.",
+    "choices": {
+      "sneak": "Sneak out",
+      "stay": "Stay in bed"
+    },
+    "outcomes": {
+      "magic": "You sit on a curb and talk until the sky goes grey. Best night of your year.",
+      "caught": "The porch light snaps on. You are grounded until further notice."
+    }
+  },
+  "rm_teen_dance_ask": {
+    "text": "The school dance is in two weeks. {{name}} keeps mentioning it in a way that is not subtle at all.",
+    "choices": {
+      "ask": "Ask {{name}} properly",
+      "skip": "Skip the dance",
+      "group": "Go as a group"
+    },
+    "outcomes": {
+      "yes": "{{name}} says yes before you finish the sentence. You rent a suit that almost fits.",
+      "stage": "You pick a public spot, which turns out to be a mistake. {{name}} says yes, but the audience will remember."
+    }
+  },
+  "rm_date_jealous": {
+    "text": "{{name}} has noticed that you laugh differently around a coworker. You haven't. Probably.",
+    "choices": {
+      "reassure": "Reassure them",
+      "defensive": "Get defensive",
+      "invite": "Invite them to meet"
+    },
+    "outcomes": {
+      "fine": "{{name}} and the coworker bond over hating the same sports team. Crisis dissolved.",
+      "worse": "It goes badly. {{name}} watches you the whole evening like a hawk with a clipboard."
+    }
+  },
+  "rm_date_meet_parents": {
+    "text": "{{name}} wants you to meet the parents. There will be a roast. You will be the roast.",
+    "choices": {
+      "charm": "Bring wine and charm",
+      "casual": "Wear what you have",
+      "cancel": "Fake an illness"
+    },
+    "outcomes": {
+      "loved": "{{name}}'s mother asks if you are staying for dessert. That is the highest honour.",
+      "flop": "You call their father by the wrong name twice. Nobody mentions it, which is worse."
+    }
+  },
+  "rm_date_move_in": {
+    "text": "{{name}} brings up moving in together. Two toothbrushes, one lease, and one very large decision.",
+    "choices": {
+      "yes": "Say yes",
+      "later": "Not yet",
+      "split": "Suggest your own places"
+    },
+    "outcomes": {
+      "bliss": "Boxes, takeout and a couch that does not fit through the door. You are happy.",
+      "friction": "Within a week you've fought about dishes, towels and the thermostat. Love continues, loudly."
+    }
+  },
+  "rm_date_proposal": {
+    "text": "{{name}} cooks your favourite meal and is oddly sweaty. Halfway through dessert, {{name}} drops to one knee and holds out a ring.",
+    "choices": {
+      "yes": "Say yes",
+      "not_yet": "Say not yet",
+      "no": "Say no"
+    }
+  },
+  "rm_date_anniversary": {
+    "text": "Your anniversary with {{name}} is tomorrow. You know this because a calendar alert told you, and you love that alert.",
+    "choices": {
+      "plan": "Plan a big surprise",
+      "home": "Cook at home",
+      "forget": "Hope they forget too"
+    },
+    "outcomes": {
+      "both": "{{name}} forgot as well. You split a pizza and a guilty look.",
+      "oops": "{{name}} did not forget. The silence at dinner is a three-course meal."
+    }
+  },
+  "rm_date_ex_text": {
+    "text": "Your phone buzzes with a message from an old flame. {{name}} is sitting right beside you and has very good eyesight.",
+    "choices": {
+      "show": "Show {{name}} the text",
+      "delete": "Delete it, say nothing",
+      "reply": "Reply, just to be nice"
+    },
+    "outcomes": {
+      "harmless": "It's a polite exchange about a mutual friend's baby. Nothing happens, mostly.",
+      "caught": "{{name}} reads it over your shoulder. The temperature in the room drops ten degrees."
+    }
+  },
+  "rm_date_getaway": {
+    "text": "You and {{name}} get a long weekend. Somewhere with a beach and no deadlines is calling.",
+    "choices": {
+      "beach": "Book the beach trip",
+      "staycation": "Stay home and rest",
+      "work": "Work through it"
+    },
+    "outcomes": {
+      "dream": "Sun, sand, bad umbrella drinks. You come back relaxed and slightly sunburnt.",
+      "rain": "It rains four days straight. You play board games in the hotel and somehow grow closer."
+    }
+  },
+  "rm_date_money_talk": {
+    "text": "{{name}} asks about your finances over breakfast. Spreadsheets have entered the relationship.",
+    "choices": {
+      "open": "Share everything",
+      "vague": "Stay vague",
+      "combine": "Open a joint account"
+    },
+    "outcomes": {
+      "solid": "You get one tidy account and a shared budget. It's mildly romantic.",
+      "bills": "You find out about {{name}}'s subscriptions. All of them. {{name}} finds out about yours too."
+    }
+  },
+  "rm_date_cheat_scare": {
+    "text": "A friend says they saw {{name}} at a restaurant with a stranger. It could be nothing. It could also be everything.",
+    "choices": {
+      "confront": "Ask {{name}} directly",
+      "snoop": "Check their phone",
+      "trust": "Let it go"
+    },
+    "outcomes": {
+      "innocent": "It was a cousin. You were wrong. {{name}} knows you looked.",
+      "guilty": "The messages are real. You pack a bag with shaking hands."
+    }
+  },
+  "rm_mar_dishes_fight": {
+    "text": "{{name}} left the dishes in the sink for the third day. You are not speaking, but your silence is incredibly loud.",
+    "choices": {
+      "wash": "Wash them without a word",
+      "argue": "Argue about it",
+      "talk": "Have a real talk"
+    },
+    "outcomes": {
+      "agree": "You make a chore chart. It is the most romantic piece of paper you have ever made.",
+      "fight": "It turns into a fight about every dish since your wedding."
+    }
+  },
+  "rm_mar_anniversary": {
+    "text": "It's your wedding anniversary. {{name}} remembers the date, the restaurant and the exact dessert you shared that night.",
+    "choices": {
+      "gift": "Give a thoughtful gift",
+      "dinner": "Book the fancy dinner",
+      "forgot": "Admit you forgot"
+    },
+    "outcomes": {
+      "grace": "{{name}} laughs. You are forgiven in exchange for a very long massage.",
+      "hurt": "{{name}} nods slowly. 'All these years,' they say, and leave it there."
+    }
+  },
+  "rm_mar_inlaws": {
+    "text": "The in-laws are coming for two weeks. {{name}} has already warned them about your cooking. Nobody asked them to comment on it.",
+    "choices": {
+      "welcome": "Be the perfect host",
+      "boundaries": "Set some boundaries",
+      "defend": "Stand up to them"
+    },
+    "outcomes": {
+      "respect": "The in-laws grudgingly back down. {{name}} looks at you like you slayed a dragon.",
+      "feud": "A feud begins that will outlive the pickles in the fridge."
+    }
+  },
+  "rm_mar_temptation": {
+    "text": "A charming colleague keeps finding reasons to stand close at the coffee machine. {{name}} is at home, folding laundry, trusting you.",
+    "choices": {
+      "flirt": "Flirt back",
+      "distance": "Keep your distance",
+      "tell": "Tell {{name}} about it"
+    },
+    "outcomes": {
+      "nothing": "Nothing comes of it, except a guilty conscience that goes everywhere with you.",
+      "affair": "It turns into something. Secrets are heavy and cost a lot to carry."
+    }
+  },
+  "rm_mar_ultimatum": {
+    "text": "{{name}} sits you down at the kitchen table. 'We fix this,' they say, 'or I'm done.' They are not smiling.",
+    "choices": {
+      "fix": "Promise to change",
+      "accept": "Accept the divorce",
+      "stall": "Stall for time"
+    },
+    "outcomes": {
+      "saved": "You go to counselling and actually listen. The marriage steadies, slowly.",
+      "hollow": "You promise a lot. Three weeks later, it's clear it's too late. The paperwork arrives."
+    }
+  },
+  "rm_mar_money_fight": {
+    "text": "A credit card statement lands on the table. {{name}} circles one line item with a pen and raises an eyebrow.",
+    "choices": {
+      "confess": "Admit it was a splurge",
+      "defend": "Defend the purchase",
+      "budget": "Propose a strict budget"
+    },
+    "outcomes": {
+      "works": "For a while, it's all coupons and togetherness. It actually saves money.",
+      "rebel": "By week two, you've both hidden snacks from each other."
+    }
+  },
+  "rm_mar_date_night": {
+    "text": "It's been months since you and {{name}} did anything that wasn't chores or logistics. A date night is overdue.",
+    "choices": {
+      "fancy": "Go somewhere fancy",
+      "walk": "Take a long walk",
+      "tired": "Too tired, maybe later"
+    }
+  },
+  "rm_mar_illness": {
+    "text": "{{name}} catches something nasty and looks pitiful under three blankets. You are suddenly nurse, cook and chauffeur.",
+    "choices": {
+      "care": "Take care of {{name}}",
+      "hire": "Hire a helper",
+      "avoid": "Keep your distance"
+    }
+  },
+  "rm_mar_surprise_trip": {
+    "text": "{{name}} hands you a passport and a suitcase. 'Don't ask,' they say. You ask anyway.",
+    "choices": {
+      "go": "Go along with it",
+      "work": "Say work needs you"
+    },
+    "outcomes": {
+      "lovely": "A mountain cabin and a week of nothing. You didn't know how badly you needed it.",
+      "disaster": "The cabin has no heat and one spider. You tell the story for years."
+    }
+  },
+  "rm_mar_midlife": {
+    "text": "You wake at 3 a.m. wondering if this is the life you wanted. {{name}} snores gently beside you, unaware of your existential crisis.",
+    "choices": {
+      "talk": "Talk it over with {{name}}",
+      "sports_car": "Buy something silly",
+      "therapy": "Book a therapist"
+    }
+  },
+  "rm_mar_vow_renewal": {
+    "text": "{{name}} suggests renewing your vows. The thought of a second ceremony makes you tear up before the first hymn.",
+    "choices": {
+      "yes": "Say yes, plan it",
+      "small": "Just the two of you",
+      "skip": "Skip it, too much fuss"
+    }
+  },
+  "rm_mar_job_offer": {
+    "text": "{{name}} gets a dream job offer in a city across the country. Your life is here, but your spouse's dream is there.",
+    "choices": {
+      "move": "Move for {{name}}",
+      "refuse": "Ask {{name}} to stay",
+      "apart": "Try long distance"
+    },
+    "outcomes": {
+      "thrive": "New city, new start. You find a decent bakery and a better life.",
+      "lonely": "The city is expensive and cold. You miss home, but {{name}} is thrilled."
+    }
+  },
+  "fa_kid_first_steps": {
+    "text": "{{name}} lets go of the couch and wobbles toward you. Your phone is in the other room, which is a tragedy.",
+    "choices": {
+      "cheer": "Cheer them on",
+      "catch": "Catch them gently",
+      "film": "Fumble for your phone"
+    }
+  },
+  "fa_kid_school_trouble": {
+    "text": "The school calls. {{name}} was caught passing notes that were, frankly, quite creative, and set off a small fire in the art room.",
+    "choices": {
+      "talk": "Have a calm talk",
+      "ground": "Ground them",
+      "defend": "Defend {{name}}"
+    },
+    "outcomes": {
+      "fair": "The teacher admits the supplies were poorly labelled. The fire gets a footnote.",
+      "unfair": "Turns out the evidence is airtight. You look silly."
+    }
+  },
+  "fa_kid_science_fair": {
+    "text": "{{name}} has a science fair project due tomorrow and a volcano that won't erupt. It's 9 p.m.",
+    "choices": {
+      "help": "Stay up and help",
+      "hands_off": "Let {{name}} figure it out",
+      "buy": "Buy a ready-made one"
+    },
+    "outcomes": {
+      "learns": "{{name}} improvises with a different chemical. The volcano goes off. They get a ribbon.",
+      "fails": "The volcano doesn't erupt. {{name}} cries a little and you feel awful."
+    }
+  },
+  "fa_kid_teen_rebel": {
+    "text": "{{name}} dyes their hair green, comes home late, and tells you that you don't understand. You do. That's the scariest part.",
+    "choices": {
+      "listen": "Listen without lecturing",
+      "rules": "Lay down the law",
+      "compromise": "Offer a deal"
+    },
+    "outcomes": {
+      "deal": "A midnight curfew, in exchange for the hair. You both call it a win.",
+      "rejected": "{{name}} rolls their eyes so hard it echoes. The deal is off."
+    }
+  },
+  "fa_kid_driving": {
+    "text": "{{name}} just got a learner's permit. You are sitting in the passenger seat with your hands pressed on the dashboard.",
+    "choices": {
+      "teach": "Teach them yourself",
+      "instructor": "Pay for driving school",
+      "refuse": "Not until they're older"
+    },
+    "outcomes": {
+      "pass": "After eight parking lots and one traffic cone, {{name}} drives like a pro.",
+      "crash": "There is a small crunch. The mailbox will never be the same."
+    }
+  },
+  "fa_kid_college_money": {
+    "text": "{{name}} got into a good college. The tuition letter arrives the same day and it has more zeros than hope.",
+    "choices": {
+      "pay": "Pay what you can",
+      "loans": "Help them take loans",
+      "earn": "Tell them to earn it"
+    }
+  },
+  "fa_kid_graduation": {
+    "text": "{{name}} walks across the stage in a gown two sizes too big. You clap far too hard and nobody can stop you.",
+    "choices": {
+      "party": "Throw a party",
+      "speech": "Make an embarrassing speech",
+      "quiet": "Quiet dinner together"
+    }
+  },
+  "fa_kid_moves_out": {
+    "text": "{{name}} packs the last box into a car that sounds unwell. Their room is suddenly very quiet, and so are you.",
+    "choices": {
+      "help": "Help them move in",
+      "cry": "Cry in the driveway",
+      "convert": "Convert room into gym"
+    }
+  },
+  "fa_kid_money_ask": {
+    "text": "{{name}} calls with a request. They need a loan, 'just until payday'. You have been through this before, with different lunches.",
+    "choices": {
+      "lend": "Lend them $2,000",
+      "refuse": "Say no kindly",
+      "advice": "Offer advice instead"
+    },
+    "outcomes": {
+      "paid": "They pay you back in full, with a thank-you card. You frame it.",
+      "gone": "The money disappears into a vague plan. You let it go, like most parents."
+    }
+  },
+  "fa_kid_grandchild_hint": {
+    "text": "{{name}} turns up with a nervous grin and an announcement. You'd guess the news before they reach the second sentence.",
+    "choices": {
+      "thrilled": "Be thrilled",
+      "advice": "Offer a hundred tips",
+      "gift": "Buy a crib at once"
+    }
+  },
+  "fa_parent_aging": {
+    "text": "{{name}} forgets a few words and loses the car keys twice in a week. She laughs it off, but the laugh is thin.",
+    "choices": {
+      "visit": "Visit more often",
+      "doctor": "Book a doctor visit",
+      "ignore": "Tell yourself it is fine"
+    }
+  },
+  "fa_parent_hospital": {
+    "text": "The hospital calls: {{name}} had a fall and needs rest. You're listed as the emergency contact, a role you didn't know you'd taken.",
+    "choices": {
+      "rush": "Rush to the bedside",
+      "pay": "Pay for a private room",
+      "later": "Send flowers, visit later"
+    },
+    "outcomes": {
+      "comfort": "{{name}} gets a better recovery and a view of the car park. They are grateful.",
+      "bills": "The invoice is longer than the stay. You frame the final line, then cry."
+    }
+  },
+  "fa_parent_move_in": {
+    "text": "{{name}} can't manage the house alone anymore. There's a spare room, a lot of stairs and no easy answer.",
+    "choices": {
+      "home": "Bring {{name}} home",
+      "facility": "Find a care home",
+      "hire": "Hire a caregiver"
+    },
+    "outcomes": {
+      "warm": "The house fills with her stories and her unrequested organising. You get used to it.",
+      "friction": "Love, yes. Also, a rearranged kitchen and a daily opinion on your laundry."
+    }
+  },
+  "fa_parent_inheritance": {
+    "text": "{{name}}'s will is read. Nobody expected the surprise lines about the fishing cabin or the antique clock.",
+    "choices": {
+      "fair": "Split things fairly",
+      "fight": "Fight for the cabin",
+      "donate": "Give your share to charity"
+    },
+    "outcomes": {
+      "win": "You win the cabin, and lose a few cousins in the process. The lake is lovely.",
+      "lose": "Legal fees swallow the cabin. Everyone is furious, including the lawyer."
+    }
+  },
+  "fa_sib_estranged": {
+    "text": "{{name}} hasn't spoken to you in four years, thanks to one argument about a wedding toast. A message pops up out of nowhere: 'Hi.'",
+    "choices": {
+      "reply": "Reply warmly",
+      "call": "Call them at once",
+      "ignore": "Leave it on read"
+    },
+    "outcomes": {
+      "mend": "You talk for two hours. Both of you apologise. Neither of you remembers why it started.",
+      "cold": "The call is stiff and polite. It could go either way from here."
+    }
+  },
+  "fa_sib_loan": {
+    "text": "{{name}} needs money to cover rent. They swear it's temporary. They swore that last time too.",
+    "choices": {
+      "lend": "Lend $1,500",
+      "refuse": "Say no",
+      "groceries": "Offer groceries instead"
+    },
+    "outcomes": {
+      "repaid": "{{name}} repays you early and buys you dinner. You almost fall off your chair.",
+      "never": "The money vanishes. So does the topic at every family dinner."
+    }
+  },
+  "fa_sib_wedding": {
+    "text": "{{name}} asks you to be best man or maid of honour. There is a speech involved, and a lot of expectations.",
+    "choices": {
+      "speech": "Give a heartfelt speech",
+      "short": "Keep it short",
+      "decline": "Politely decline"
+    },
+    "outcomes": {
+      "tears": "The room cries. {{name}} hugs you so hard your glasses fog.",
+      "bomb": "Your joke about their ex lands badly. The silence is loud and long."
+    }
+  },
+  "fa_sib_reunion": {
+    "text": "You and {{name}} end up in your childhood home, sorting old boxes. A photo falls out of a drawer, and both of you go quiet.",
+    "choices": {
+      "laugh": "Laugh and reminisce",
+      "keep": "Keep the photo",
+      "fight": "Argue over who gets what"
+    }
+  },
+  "fa_friend_loan": {
+    "text": "{{name}} asks to borrow $800 for 'a thing'. You know their thing and its history.",
+    "choices": {
+      "lend": "Lend it",
+      "refuse": "Say no",
+      "half": "Give half, no repayment"
+    },
+    "outcomes": {
+      "repaid": "They repay you in full, plus a bottle of wine. Maybe the thing was real.",
+      "burned": "The money never returns. Neither does the wine, because there was none."
+    }
+  },
+  "fa_friend_wedding": {
+    "text": "{{name}} is getting married and wants you in the front row. The invite says 'black tie.' You own a tie, sort of.",
+    "choices": {
+      "attend": "Attend with a gift",
+      "dance": "Dance all night",
+      "skip": "Skip the wedding"
+    }
+  },
+  "fa_friend_loyalty": {
+    "text": "Someone at a party says awful things about {{name}} behind their back, and everyone's looking at you to join in.",
+    "choices": {
+      "defend": "Defend {{name}}",
+      "silence": "Stay quiet",
+      "join": "Laugh along"
+    },
+    "outcomes": {
+      "unseen": "Nobody tells {{name}}. You feel awful anyway.",
+      "found_out": "Someone tells {{name}}. Your friendship takes a very long, slow breath."
+    }
+  },
+  "fa_friend_betrayal": {
+    "text": "You find out {{name}} took credit for your idea at work. The pitch was yours. Their smile at the meeting was theirs.",
+    "choices": {
+      "confront": "Confront them",
+      "expose": "Tell the boss the truth",
+      "forgive": "Let it go"
+    },
+    "outcomes": {
+      "justice": "The boss believes you. {{name}} is quietly sidelined and your friendship is over.",
+      "backfire": "It turns into a messy he-said she-said. You both lose, and the friendship with it."
+    }
+  },
+  "fa_friend_secret": {
+    "text": "{{name}} tells you a secret in a whisper, then looks at you with huge eyes. 'Don't tell anyone.' Someone else will ask by Friday.",
+    "choices": {
+      "keep": "Keep it safe",
+      "slip": "Let it slip once"
+    },
+    "outcomes": {
+      "small": "You tell one person. They tell no one. Probably.",
+      "spread": "It spreads like a rumour in a small town. {{name}} knows exactly where it started."
+    }
+  },
+  "fa_friend_moves_away": {
+    "text": "{{name}} announces they're moving across the country for a job. Your standing weekly coffee is about to become a weekly video call.",
+    "choices": {
+      "plan": "Plan a visit",
+      "farewell": "Throw a goodbye party",
+      "drift": "Drift apart"
+    }
+  },
+  "fa_friend_road_trip": {
+    "text": "{{name}} swings by with a beat-up car and a plan: a weekend road trip, no destination. The snacks are already packed.",
+    "choices": {
+      "go": "Go on the road trip",
+      "pass": "Pass, too busy"
+    },
+    "outcomes": {
+      "epic": "You sing badly, laugh loudly and get lost twice. The photos are terrible and priceless.",
+      "breakdown": "The car dies in a remote village. You spend the night in a diner learning someone's life story."
+    }
+  },
+  "fa_friend_business": {
+    "text": "{{name}} pitches a business idea: a subscription box for socks. You think it might be good. You're also not sure about the socks.",
+    "choices": {
+      "invest": "Invest $3,000",
+      "advise": "Offer advice only",
+      "pass": "Politely decline"
+    },
+    "outcomes": {
+      "profit": "The socks sell like hotcakes. Weird, but your bank account loves it.",
+      "loss": "Nobody wants subscription socks. The garage is full of them now."
+    }
+  },
+  "rm_single_meet_cute": {
+    "text": "You and a stranger reach for the same last avocado at the market. Eye contact lasts a beat too long.",
+    "choices": {
+      "chat": "Strike up a chat",
+      "yield": "Give them the avocado",
+      "leave": "Walk away quickly"
+    },
+    "outcomes": {
+      "spark": "They laugh at your joke about guacamole. By the time you leave, you have a number and a plan.",
+      "nope": "They're polite, married, and in a hurry. You go home with one avocado and a lesson."
+    }
+  },
+  "rm_single_app_disaster": {
+    "text": "A dating app sets you up with someone whose photos are twelve years old and whose conversation is entirely about their ex.",
+    "choices": {
+      "stay": "Stay for the free meal",
+      "leave": "Slip out the back",
+      "honest": "Be honest and polite"
+    },
+    "outcomes": {
+      "kind": "They shrug, thank you and order dessert for the road.",
+      "scene": "They make a loud scene about 'wasted time.' You leave a tip for the staff."
+    }
+  },
+  "rm_single_blind_date": {
+    "text": "A friend insists you'd adore their cousin. 'Trust me,' they say. This is the sentence that precedes most disasters.",
+    "choices": {
+      "go": "Go on the blind date",
+      "decline": "Politely decline"
+    },
+    "outcomes": {
+      "match": "It's easy and funny and the cousin is wonderful. Your friend gloats for a week.",
+      "bust": "There's no chemistry, just a long talk about tax forms. The cousin leaves with a handshake."
+    }
+  },
+  "rm_single_wedding_plus_one": {
+    "text": "Another wedding invitation arrives. The card has a space for 'plus one', and it's staring at you like an unpaid bill.",
+    "choices": {
+      "solo": "Go solo with confidence",
+      "ask": "Invite a friend along",
+      "skip": "Skip it"
+    },
+    "outcomes": {
+      "spark": "The two of you dance badly and notice each other differently. Something starts.",
+      "fun": "You have a great time. No sparks, but the buffet was lovely."
+    }
+  },
+  "rm_single_cafe_regular": {
+    "text": "There's someone at your regular cafe who orders the same drink and sits in the same corner. You've accidentally memorised their schedule.",
+    "choices": {
+      "hello": "Say hello",
+      "note": "Leave a napkin note",
+      "admire": "Keep admiring from afar"
+    },
+    "outcomes": {
+      "coffee": "You swap names and numbers. A real date follows. The barista tips off the whole staff.",
+      "awkward": "They are wearing headphones and don't hear you. You wave at the wall instead."
+    }
+  },
+  "rm_single_ghosted": {
+    "text": "A promising date turns into three days of silence. Your phone sits face up on the table like a pet awaiting news.",
+    "choices": {
+      "text": "Send a casual text",
+      "move_on": "Move on gracefully",
+      "rant": "Send a long message"
+    },
+    "outcomes": {
+      "reply": "They reply, apologise, and actually explain. You decide to forgive them.",
+      "void": "The message goes unanswered. You realise it was for you, not them."
+    }
+  },
+  "rm_ex_text": {
+    "text": "Your phone lights up: {{name}}, your ex, saying 'Thinking of you'. It's 1 a.m. and you are weak.",
+    "choices": {
+      "ignore": "Ignore it",
+      "reply": "Reply and chat",
+      "block": "Block the number"
+    },
+    "outcomes": {
+      "closure": "You talk for an hour and both feel lighter. Then goodbye, politely.",
+      "messy": "Old wounds pop open like a bad zip. You regret it by morning."
+    }
+  },
+  "rm_ex_wedding_invite": {
+    "text": "An invitation arrives in the mail. {{name}} is getting married and wants you there. It reads like a polite dare.",
+    "choices": {
+      "attend": "Attend with your best smile",
+      "regrets": "Send regrets and a gift",
+      "ignore": "Pretend you never saw it"
+    }
+  },
+  "rm_ex_bump_into": {
+    "text": "You turn a corner at the grocery store and find {{name}} holding a cart full of cereal. You are holding a cart full of cereal too.",
+    "choices": {
+      "chat": "Chat briefly",
+      "duck": "Duck behind the shelves",
+      "coffee": "Offer to get coffee"
+    },
+    "outcomes": {
+      "nice": "The coffee is pleasant. You part as better friends than lovers.",
+      "awkward": "Three sips in, you recall every reason for the breakup. You leave early."
+    }
+  },
+  "rm_ex_returns": {
+    "text": "{{name}} appears at your door with flowers, an apology and a very rehearsed speech. 'I was wrong,' they say.",
+    "choices": {
+      "forgive": "Give them a second chance",
+      "refuse": "Close the door gently",
+      "talk": "Hear them out, nothing more"
+    },
+    "outcomes": {
+      "reunion": "The second time goes better. The old fights stay in the past.",
+      "repeat": "Same patterns, new flowers. You learn that people rarely change on a doorstep."
+    }
+  }
+}

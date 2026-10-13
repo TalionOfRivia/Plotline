@@ -1,0 +1,176 @@
+{
+  "majors": [
+    {
+      "id": "computer_science",
+      "emoji": "💻",
+      "minSmarts": 55
+    },
+    {
+      "id": "engineering",
+      "emoji": "🛠️",
+      "minSmarts": 55
+    },
+    {
+      "id": "math",
+      "emoji": "➗",
+      "minSmarts": 60
+    },
+    {
+      "id": "biology",
+      "emoji": "🧬",
+      "minSmarts": 50
+    },
+    {
+      "id": "chemistry",
+      "emoji": "🧪",
+      "minSmarts": 50
+    },
+    {
+      "id": "physics",
+      "emoji": "⚛️",
+      "minSmarts": 55
+    },
+    {
+      "id": "nursing_prep",
+      "emoji": "🩺",
+      "minSmarts": 40
+    },
+    {
+      "id": "business",
+      "emoji": "💼",
+      "minSmarts": 40
+    },
+    {
+      "id": "economics",
+      "emoji": "📈",
+      "minSmarts": 45
+    },
+    {
+      "id": "psychology",
+      "emoji": "🧠",
+      "minSmarts": 45
+    },
+    {
+      "id": "english",
+      "emoji": "📚",
+      "minSmarts": 35
+    },
+    {
+      "id": "history",
+      "emoji": "🏛️",
+      "minSmarts": 35
+    },
+    {
+      "id": "political_science",
+      "emoji": "🗳️",
+      "minSmarts": 40
+    },
+    {
+      "id": "art",
+      "emoji": "🎨",
+      "minSmarts": 35
+    },
+    {
+      "id": "education",
+      "emoji": "🍎",
+      "minSmarts": 35
+    },
+    {
+      "id": "communications",
+      "emoji": "📰",
+      "minSmarts": 35
+    }
+  ],
+  "gradSchools": [
+    {
+      "id": "grad_law",
+      "emoji": "⚖️",
+      "years": 3,
+      "cost": 120000,
+      "requiresMajors": [
+        "political_science",
+        "history",
+        "english",
+        "economics",
+        "business",
+        "any"
+      ],
+      "minSmarts": 65
+    },
+    {
+      "id": "grad_med",
+      "emoji": "🏥",
+      "years": 4,
+      "cost": 250000,
+      "requiresMajors": [
+        "biology",
+        "chemistry",
+        "physics"
+      ],
+      "minSmarts": 70
+    },
+    {
+      "id": "grad_dental",
+      "emoji": "🦷",
+      "years": 4,
+      "cost": 300000,
+      "requiresMajors": [
+        "biology",
+        "chemistry"
+      ],
+      "minSmarts": 65
+    },
+    {
+      "id": "grad_vet",
+      "emoji": "🐾",
+      "years": 4,
+      "cost": 180000,
+      "requiresMajors": [
+        "biology",
+        "chemistry"
+      ],
+      "minSmarts": 60
+    },
+    {
+      "id": "grad_pharm",
+      "emoji": "💊",
+      "years": 3,
+      "cost": 160000,
+      "requiresMajors": [
+        "chemistry",
+        "biology",
+        "nursing_prep"
+      ],
+      "minSmarts": 60
+    },
+    {
+      "id": "grad_business",
+      "emoji": "💼",
+      "years": 2,
+      "cost": 140000,
+      "requiresMajors": [
+        "business",
+        "economics",
+        "math",
+        "communications"
+      ],
+      "minSmarts": 55
+    },
+    {
+      "id": "grad_nursing",
+      "emoji": "🩺",
+      "years": 2,
+      "cost": 60000,
+      "requiresMajors": [
+        "nursing_prep",
+        "biology",
+        "chemistry",
+        "psychology"
+      ],
+      "minSmarts": 50
+    }
+  ],
+  "universityCost": 90000,
+  "universityYears": 4,
+  "scholarshipMinSmarts": 85
+}

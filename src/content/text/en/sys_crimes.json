@@ -1,0 +1,62 @@
+{
+  "shoplift": {
+    "name": "Shoplifting",
+    "success": "You pocket something small and walk out. Nobody looks up. You net {{money}}.",
+    "caught": "A security guard with nothing else going on in his life tackles you by the door."
+  },
+  "pickpocket": {
+    "name": "Pickpocketing",
+    "success": "A crowded bus, a loose bag, a quick hand. You come away with {{money}}.",
+    "caught": "The wallet was attached to a very observant man. He is also a retired boxer."
+  },
+  "vandalism": {
+    "name": "Vandalism",
+    "success": "You redecorate a bus shelter. It is arguably an improvement. You find {{money}} in change nearby.",
+    "caught": "A passing patrol car illuminates you and your spray can like a stage act."
+  },
+  "burglary": {
+    "name": "Burglary",
+    "success": "Nobody is home and the window was open. You leave with {{money}} of other people's things.",
+    "caught": "The neighbour's dog and the neighbour both had opinions. So did the police."
+  },
+  "car_theft": {
+    "name": "Car Theft",
+    "success": "The car starts on the second try. You sell it to a man who asks no questions for {{money}}.",
+    "caught": "The car had a tracker. Your plan did not include trackers."
+  },
+  "drug_dealing": {
+    "name": "Drug Dealing",
+    "success": "Business is steady, customers are loyal, and you clear {{money}}.",
+    "caught": "Your best customer turns out to be your worst mistake. He was wearing a wire."
+  },
+  "fraud": {
+    "name": "Fraud",
+    "success": "The paperwork is flawless. The money arrives. So does {{money}}, which is the part you were hoping for.",
+    "caught": "Your forged signature was spelled correctly, which is how the auditors knew it was forged."
+  },
+  "bank_robbery": {
+    "name": "Bank Robbery",
+    "success": "The teller stays calm and so do you. You leave with {{money}} and an overdeveloped sense of destiny.",
+    "caught": "The dye pack was the least of your worries. The helicopter was the most."
+  },
+  "train_robbery": {
+    "name": "Train Robbery",
+    "success": "It is the wrong century for this, which is probably why nobody planned for it. You escape with {{money}}.",
+    "caught": "The train had more security than a bank, and a conductor with strong feelings."
+  },
+  "extortion": {
+    "name": "Extortion",
+    "success": "Your politely worded threats are politely paid. You collect {{money}}.",
+    "caught": "He recorded the whole thing. He seemed to enjoy it more than you did."
+  },
+  "arson": {
+    "name": "Arson",
+    "success": "The fire does what fires do. The insurance pays out {{money}} and asks nothing.",
+    "caught": "Investigators found your fingerprints on a petrol can labelled with your name."
+  },
+  "murder": {
+    "name": "Murder",
+    "success": "You get away with it, which is a sentence you will carry longer than any court could give.",
+    "caught": "There is a body, a witness and a very short trial."
+  }
+}

@@ -1,0 +1,653 @@
+{
+ "fm_paparazzi_lunch": {
+  "text": "A man in a bush photographs your salad. He appears to have been in the bush since breakfast.",
+  "choices": {
+   "wave": "Wave and smile",
+   "hide": "Hide behind the menu",
+   "confront": "Confront the bush"
+  },
+  "outcomes": {
+   "flattering": "The photo runs under 'Radiant and Carb-Aware'. You look wonderful, and the bush is thrilled.",
+   "unflattering": "You are caught mid-chew. The headline reads 'Is This Decline?'"
+  }
+ },
+ "fm_talk_show_interview": {
+  "text": "A late-night host offers you the couch and ten minutes of rehearsed spontaneity.",
+  "choices": {
+   "charm": "Be charming",
+   "plug": "Just plug the project",
+   "decline": "Decline the couch"
+  },
+  "outcomes": {
+   "hit": "You land every joke. The host laughs at the right moments, which is his job.",
+   "flop": "Your anecdote has no ending. The audience applauds anyway, out of pity."
+  }
+ },
+ "fm_award_nomination": {
+  "text": "You are nominated for an award with a golden object and a very long speech time limit.",
+  "choices": {
+   "attend": "Attend the ceremony",
+   "skip": "Skip it, stay home",
+   "dress": "Wear something outrageous"
+  },
+  "outcomes": {
+   "win": "They say your name. You thank everyone, including a dentist.",
+   "lose": "You lose to someone you know. You clap with the intensity of a hostage."
+  }
+ },
+ "fm_stalker": {
+  "text": "The same person has been outside your gate for nine days. They have started bringing a folding chair.",
+  "choices": {
+   "police": "Call the authorities",
+   "hire": "Hire private security",
+   "ignore": "Pretend not to notice"
+  },
+  "outcomes": {
+   "resolved": "The authorities remove the chair, and eventually the person. You sleep with the lights on anyway.",
+   "escalates": "It gets worse before it gets better. You hire security with a very small mustache."
+  }
+ },
+ "fm_endorsement_soda": {
+  "text": "A beverage company offers a lot of money for your face next to a drink you have never tasted.",
+  "choices": {
+   "sign": "Sign the contract",
+   "negotiate": "Haggle for more",
+   "refuse": "Refuse on principle"
+  },
+  "outcomes": {
+   "richer": "Your agent says the word 'exclusivity' and the number doubles. Everyone leaves tired and happy.",
+   "walks": "The company finds a younger face for the same bubbles. You are told this is just business."
+  }
+ },
+ "fm_social_storm": {
+  "text": "A joke you posted at 3 a.m. has been reread by several million strangers in the worst possible tone.",
+  "choices": {
+   "apologize": "Post an apology",
+   "doubledown": "Double down",
+   "offline": "Delete the app and vanish"
+  },
+  "outcomes": {
+   "forgiven": "The apology is accepted by lunch and mocked by dinner. Net loss, but tolerable.",
+   "worse": "The apology is called 'not an apology'. A second apology is called 'a hostage video'."
+  }
+ },
+ "fm_tell_all_book": {
+  "text": "A publisher offers you a fortune for a tell-all memoir. They would like names, dates and at least one 'incident'.",
+  "choices": {
+   "write": "Write the tell-all",
+   "ghost": "Let a ghostwriter do it",
+   "refuse": "Keep your secrets"
+  }
+ },
+ "fm_charity_gala": {
+  "text": "A charity gala has a plate of food that costs one thousand dollars, and a speech about hunger.",
+  "choices": {
+   "donate": "Donate generously",
+   "appear": "Just appear and smile",
+   "auction": "Auction a signed hat"
+  },
+  "outcomes": {
+   "noticed": "A photographer catches the check. For once the camera is useful.",
+   "quiet": "No one notices. Somewhere, a small amount of good happens anyway."
+  }
+ },
+ "fm_fan_encounter": {
+  "text": "A fan stops you on the street, shaking, holding a tattered photo of your face.",
+  "choices": {
+   "selfie": "Take a selfie",
+   "sign": "Sign it warmly",
+   "hurry": "Say you're late"
+  },
+  "outcomes": {
+   "lovely": "They cry a little. You feel like a landmark, but a pleasant one.",
+   "viral": "Your blinking face becomes a meme titled 'Dead Inside'. You have never felt more seen."
+  }
+ },
+ "fm_comeback": {
+  "text": "Your career has been quiet for a while. A producer calls with the word 'comeback' and the phrase 'low budget'.",
+  "choices": {
+   "accept": "Take the comeback",
+   "pass": "Pass gracefully",
+   "retire": "Retire for good"
+  },
+  "outcomes": {
+   "triumph": "Critics call it a return to form. You did not know you had left a form.",
+   "flop": "The film opens on a Tuesday to an empty hall and a cleaner."
+  }
+ },
+ "fm_aging_role": {
+  "text": "The roles on offer are now 'Grandfather' and 'Wise Old Mentor'. You stare at the script like it owes you money.",
+  "choices": {
+   "embrace": "Embrace the mentor",
+   "fight": "Fight for a lead",
+   "producing": "Move behind the camera"
+  },
+  "outcomes": {
+   "won": "The director blinks first. You get the lead, plus a lighting crew who adore you.",
+   "lost": "You are told you are 'a bit much'. The mentor role goes to someone else."
+  }
+ },
+ "fm_leaked_photo": {
+  "text": "A photo of you at your most human has been published. It involves a pastry and no pants.",
+  "choices": {
+   "lawyer": "Threaten to sue",
+   "laugh": "Laugh it off publicly",
+   "hide": "Never leave the house again"
+  },
+  "outcomes": {
+   "removed": "The photo vanishes from the major sites and spreads quietly through the minor ones.",
+   "streisand": "Your lawyers have made the photo more famous. It now has its own fan page."
+  }
+ },
+ "fm_fan_mail": {
+  "text": "A sack of fan mail arrives. One envelope contains a drawing of you, a marriage proposal and a lock of unknown hair.",
+  "choices": {
+   "read": "Read all of it",
+   "assistant": "Give it to your assistant",
+   "reply": "Reply to one at random"
+  },
+  "outcomes": {
+   "delight": "The fan will tell this story at every party for forty years.",
+   "trouble": "The fan announces the reply on every platform. Others are now owed letters."
+  }
+ },
+ "fm_reality_offer": {
+  "text": "A network wants to film your daily life. Your daily life consists of waiting, mostly, but they say they will edit it.",
+  "choices": {
+   "sign": "Sign for the show",
+   "decline": "Decline, keep your dignity"
+  },
+  "outcomes": {
+   "ratings": "The show is a hit. A random cousin becomes famous for no reason, which is the genre.",
+   "canceled": "It is canceled after four episodes. You were cast as 'The Difficult One'."
+  }
+ },
+ "fm_agent_dumps": {
+  "text": "Your agent calls to say that 'it isn't a fit anymore'. He is already representing the person you were compared to.",
+  "choices": {
+   "new_agent": "Find a new agent",
+   "beg": "Beg him to stay",
+   "solo": "Manage your own career"
+  },
+  "outcomes": {
+   "stays": "He agrees to stay, citing your 'potential', which is how people describe a leaky boat.",
+   "no": "He pretends the line has gone dead. Then he pretends it for a while."
+  }
+ },
+ "fm_viral_clip": {
+  "text": "A clip of you tripping over a red carpet is going around the world. You are aerodynamic in it.",
+  "choices": {
+   "embrace": "Make a parody of it",
+   "ignore": "Ignore it",
+   "blame_carpet": "Blame the carpet publicly"
+  },
+  "outcomes": {
+   "jackpot": "The parody does better than your work. You decide not to think about that.",
+   "cringe": "The parody is called 'trying too hard'. They are not wrong."
+  }
+ },
+ "fm_signing_autographs": {
+  "text": "A line of two thousand people wants their copy signed. Your hand has already filed a complaint.",
+  "choices": {
+   "sign_all": "Sign every single one",
+   "sign_some": "Sign for an hour",
+   "sell": "Sell signatures at a premium"
+  }
+ },
+ "fm_rival_feud": {
+  "text": "A colleague has told a magazine that you are 'the opposite of talent, in a nice jacket'. Your phone is lit up like a bonfire.",
+  "choices": {
+   "clap_back": "Clap back publicly",
+   "high_road": "Take the high road",
+   "dinner": "Invite them to dinner"
+  },
+  "outcomes": {
+   "won": "Your reply is brutal, precise and, you notice, funnier than their whole career.",
+   "lost": "Their reply is funnier. You are, for the first time, relieved no one reads."
+  }
+ },
+ "fm_first_audition": {
+  "text": "You stand in a corridor with forty people who look exactly like you. A woman with a clipboard calls your name incorrectly.",
+  "choices": {
+   "nail": "Give it everything",
+   "safe": "Play it safe",
+   "improv": "Improvise wildly"
+  },
+  "outcomes": {
+   "booked": "You get the part. The woman with the clipboard learns your name.",
+   "next": "You do not get it. You get a sandwich, which is not nothing."
+  }
+ },
+ "fm_street_recognition": {
+  "text": "A stranger says, 'Aren't you somebody?' You say yes. They look let down.",
+  "choices": {
+   "kind": "Be gracious",
+   "lie": "Say you're a lookalike",
+   "pose": "Pose theatrically"
+  },
+  "outcomes": {
+   "fun": "A small crowd gathers and takes pictures. You are a tourist attraction now.",
+   "awkward": "The stranger says, 'Actually, I meant the other somebody.' Nobody speaks for a while."
+  }
+ },
+ "fm_cel_perfume": {
+  "text": "A fragrance house wants your name on a bottle. The scent will be called 'You', and will smell of regret and bergamot.",
+  "choices": {
+   "launch": "Launch the perfume",
+   "involved": "Insist on helping design it",
+   "pass": "Politely decline"
+  },
+  "outcomes": {
+   "masterpiece": "You pick a smell by accident. It sells out in an afternoon.",
+   "disaster": "It smells faintly of wet carpet. Critics call it 'bold'."
+  }
+ },
+ "fm_cel_biopic": {
+  "text": "Producers want to make a film about your life. They say you will be played by 'someone attractive' and 'much taller'.",
+  "choices": {
+   "approve": "Give your blessing",
+   "veto": "Veto the project",
+   "cameo": "Demand a cameo"
+  },
+  "outcomes": {
+   "acclaimed": "The film is beloved. Your character cries at a piano, which you do not remember doing.",
+   "embarrassing": "The film is accurate in all the ways that hurt. They kept the pastry."
+  }
+ },
+ "fm_cel_hall_of_fame": {
+  "text": "You are invited to join a hall of fame. It is a building, and has recently added a wing for you.",
+  "choices": {
+   "accept": "Accept with a speech",
+   "roast": "Give a daring speech",
+   "decline": "Decline modestly"
+  },
+  "outcomes": {
+   "legend": "The room roars. A donor chokes on a canape, in a respectful way.",
+   "gaffe": "You say something about the chairman's wig. The chairman is not wearing a wig."
+  }
+ },
+ "fm_cel_fan_riot": {
+  "text": "You announce a surprise appearance for fans. Nine thousand arrive, in a space meant for four hundred.",
+  "choices": {
+   "calm": "Calm the crowd",
+   "escape": "Escape via the van",
+   "cancel": "Cancel on the spot"
+  },
+  "outcomes": {
+   "heroic": "You speak softly and everyone sits down. It is the closest thing to magic you have done.",
+   "chaos": "You are carried briefly by the crowd and returned without a shoe."
+  }
+ },
+ "fm_cel_fake_death_rumor": {
+  "text": "A website announces your death. You find out by reading your own tribute, which is mostly positive.",
+  "choices": {
+   "tweet": "Post proof of life",
+   "attend": "Attend your own memorial",
+   "silence": "Stay silent, enjoy the quiet"
+  },
+  "outcomes": {
+   "comedy": "Your reply is the funniest thing you have posted. Mourners return as fans.",
+   "flat": "No one notices you are alive. The tribute is still trending."
+  }
+ },
+ "fm_cel_paparazzi_helicopter": {
+  "text": "A helicopter hovers over your garden. It carries two photographers and, somehow, a drone with lenses.",
+  "choices": {
+   "sue": "Pursue legal action",
+   "wave": "Wave and sunbathe",
+   "move": "Move to a hidden island"
+  },
+  "outcomes": {
+   "win": "A judge awards you damages and a stern letter to the helicopter.",
+   "lose": "The judge points out that sky is public. You pay for the privilege of being told so."
+  }
+ },
+ "fm_cel_statue": {
+  "text": "A city wants to unveil a statue of you. The sculptor has been told to be generous around the middle.",
+  "choices": {
+   "attend": "Attend the unveiling",
+   "pose": "Pose beside it for photos",
+   "modest": "Ask them to cancel it"
+  },
+  "outcomes": {
+   "iconic": "The statue and you appear in postcards. The statue looks less tired.",
+   "pigeon": "A pigeon lands on the statue's head at the exact moment of the photo. It becomes the postcard."
+  }
+ },
+ "fm_cel_political_run": {
+  "text": "A party suggests you run for office. Your qualifications are your face and a high approval rating among strangers.",
+  "choices": {
+   "run": "Run for office",
+   "endorse": "Endorse a candidate",
+   "no": "Stay out of politics"
+  },
+  "outcomes": {
+   "elected": "You win, mostly on name recognition. Governing, you learn, involves more paperwork than glamour.",
+   "lost": "You lose by a margin so wide a pollster sends flowers."
+  }
+ },
+ "fm_cel_retire_early": {
+  "text": "You are exhausted by being a brand. Your manager says retirement is 'a bold move, creatively and financially'.",
+  "choices": {
+   "retire": "Retire to a quiet life",
+   "continue": "Keep going",
+   "sabbatical": "Take a one-year sabbatical"
+  },
+  "outcomes": {
+   "peace": "You grow tomatoes. Nobody asks what you think about anything.",
+   "bored": "By autumn you have drafted three comebacks and sent none of them."
+  }
+ },
+ "fm_cel_roast": {
+  "text": "You are invited to be roasted on stage by your closest friends. They have been taking notes for years.",
+  "choices": {
+   "sport": "Take it like a sport",
+   "revenge": "Prepare a devastating reply",
+   "decline": "Decline politely"
+  },
+  "outcomes": {
+   "beloved": "You laugh at your own flaws. The audience likes you more, which is suspicious.",
+   "wounded": "One joke is too accurate. You smile until you are in the car."
+  }
+ },
+ "ry_tutor_etiquette": {
+  "text": "Your etiquette tutor spends six hours teaching you which fork to use. Neither of you has ever used one.",
+  "choices": {
+   "study": "Study the forks",
+   "rebel": "Eat with your hands",
+   "charm": "Charm the tutor with biscuits"
+  },
+  "outcomes": {
+   "charming": "The tutor is horrified, then writes it down as 'brilliantly eccentric'.",
+   "scolded": "You are sent to your chambers, which are bigger than most houses."
+  }
+ },
+ "ry_school_press": {
+  "text": "Photographers wait outside your school gates, each with a lens longer than your arm.",
+  "choices": {
+   "wave": "Wave like you've been taught",
+   "face": "Pull faces at cameras",
+   "hide": "Go through the kitchens"
+  },
+  "outcomes": {
+   "adored": "The face goes on a mug. Your parents say nothing, loudly.",
+   "scandal": "Editorials ask what is wrong with the youth. You are twelve."
+  }
+ },
+ "ry_portrait_sitting": {
+  "text": "A painter wants you to sit still for four hours so you will look noble. You cannot feel your legs.",
+  "choices": {
+   "sit": "Sit like a statue",
+   "fidget": "Fidget constantly",
+   "bribe": "Bribe the painter with sweets"
+  },
+  "outcomes": {
+   "quirky": "The finished portrait captures a blur. It is declared 'daring' and hung in the hall.",
+   "ruined": "The painter sighs for forty minutes and hangs it in a closet."
+  }
+ },
+ "ry_secret_passage": {
+  "text": "You find a hidden passage behind the library. It smells of dust, secrets and at least one old sandwich.",
+  "choices": {
+   "explore": "Explore it alone",
+   "tell": "Tell the staff",
+   "keep": "Keep it secret forever"
+  },
+  "outcomes": {
+   "treasure": "You find a chest of old jewels the crown forgot. You give most of it back.",
+   "lost": "You wander for hours. Guards find you in the pantry, and everyone pretends it never happened."
+  }
+ },
+ "ry_childhood_parade": {
+  "text": "You must ride in a golden carriage and wave at crowds for three hours. The carriage has no suspension.",
+  "choices": {
+   "wave": "Wave faithfully",
+   "sneak": "Sneak a carriage snack",
+   "sulk": "Sulk visibly"
+  },
+  "outcomes": {
+   "unseen": "No one sees. Crumbs fall in places even the royal cleaner will not find.",
+   "caught": "A camera catches you mid-bite. The caption is unkind to the pie."
+  }
+ },
+ "ry_palace_gossip": {
+  "text": "The palace staff are whispering about you. Not unkindly, just constantly, and in alphabetical order.",
+  "choices": {
+   "listen": "Listen to the gossip",
+   "ignore": "Rise above it",
+   "spread": "Start your own rumour"
+  },
+  "outcomes": {
+   "useful": "You learn two secrets and a better way to the kitchens.",
+   "backfire": "You hear something about yourself that is true. This is worse."
+  }
+ },
+ "ry_ribbon_cutting": {
+  "text": "You are asked to open a bridge, a hospital and a small cheese factory. Scissors are provided.",
+  "choices": {
+   "cheese": "Open the cheese factory",
+   "hospital": "Open the hospital",
+   "delegate": "Send a cousin instead"
+  },
+  "outcomes": {
+   "moving": "People cry in a good way. A nurse hands you a biscuit.",
+   "gaffe": "You call the hospital by the wrong name. The headline writes itself."
+  }
+ },
+ "ry_commoner_romance": {
+  "text": "You fall for someone who has never owned a tiara and finds the whole thing funny. The court finds it less so.",
+  "choices": {
+   "pursue": "Pursue the romance openly",
+   "secret": "Keep it secret",
+   "end": "End it for duty"
+  },
+  "outcomes": {
+   "blessed": "The nation loves a love story. The court acts surprised, then pleased, then relieved.",
+   "scandal": "The papers print 'Palace in Turmoil' over your photo. The commoner proposes anyway."
+  }
+ },
+ "ry_tabloid_scandal": {
+  "text": "A tabloid claims you have been seen at a questionable club with a person of questionable cheekbones.",
+  "choices": {
+   "deny": "Issue a firm denial",
+   "apology": "Apologize publicly",
+   "ignore": "Say nothing at all"
+  },
+  "outcomes": {
+   "believed": "The palace statement uses the word 'categorically'. It works for a week.",
+   "exposed": "A photo of you in sunglasses at 4 a.m. appears and contradicts the word 'categorically'."
+  }
+ },
+ "ry_coup_rumor": {
+  "text": "A guard whispers that some lords are planning a coup. He is nervous, and also holding your coat.",
+  "choices": {
+   "investigate": "Investigate quietly",
+   "tell": "Tell the monarch",
+   "ignore": "Dismiss it as gossip"
+  },
+  "outcomes": {
+   "foiled": "You spot the plot in time and with fine timing. The lords are retired to the countryside.",
+   "trapped": "The plot was real, and you were not invited. You leave the country at dawn."
+  }
+ },
+ "ry_state_dinner": {
+  "text": "A foreign dignitary sits beside you at a state dinner and says nothing for six courses.",
+  "choices": {
+   "converse": "Try to start a conversation",
+   "enjoy": "Enjoy the soup",
+   "early": "Leave early with a headache"
+  },
+  "outcomes": {
+   "friend": "You discover a mutual love of competitive gardening. A treaty feels imminent.",
+   "faux_pas": "You ask about a war the dignitary lost. Dessert is served in silence."
+  }
+ },
+ "ry_arranged_match": {
+  "text": "The court has arranged a marriage to a prince or princess with excellent borders and a mild personality.",
+  "choices": {
+   "accept": "Accept the match",
+   "refuse": "Refuse and run",
+   "negotiate": "Negotiate better terms"
+  },
+  "outcomes": {
+   "fond": "You are surprised to like them. The borders are lovely too.",
+   "cold": "The marriage is stable and dull as a ledger. Your portraits look very good together."
+  }
+ },
+ "ry_royal_tour": {
+  "text": "You must tour six regions in nine days, shake four thousand hands and be photographed with a goat.",
+  "choices": {
+   "full": "Do the whole tour",
+   "goat": "Befriend the goat",
+   "skip": "Fake an illness"
+  },
+  "outcomes": {
+   "viral": "The goat nuzzles you and the crowd melts. A fan club for the goat is founded.",
+   "bitten": "The goat has opinions. The photographers love it too much."
+  }
+ },
+ "ry_charity_patronage": {
+  "text": "A good cause asks you to be its patron. This requires one appearance a year and a sincere face.",
+  "choices": {
+   "commit": "Commit wholeheartedly",
+   "figurehead": "Be a figurehead",
+   "favourite": "Take on a bold cause"
+  },
+  "outcomes": {
+   "praised": "You bring attention to something that needed it. A few sneer; most thank you.",
+   "backlash": "Half the realm cheers, the other half writes letters in capital letters."
+  }
+ },
+ "ry_inheritance_squabble": {
+  "text": "Your siblings are fighting over a castle. It is drafty, haunted and very desirable.",
+  "choices": {
+   "claim": "Claim the castle",
+   "share": "Propose sharing it",
+   "walk": "Walk away"
+  },
+  "outcomes": {
+   "win": "You win the castle. The haunting is included at no extra cost.",
+   "lose": "Your sibling gets the castle, and keeps the ghost, who prefers them."
+  }
+ },
+ "ry_royal_wedding_guest": {
+  "text": "You are seated at a cousin's wedding between a duke who whispers and a countess who hums. The cake is eleven tiers of obligation.",
+  "choices": {
+   "toast": "Give the toast",
+   "dance": "Dance until dawn",
+   "slip": "Slip out through the kitchens"
+  },
+  "outcomes": {
+   "lovely": "Your toast is short, warm and only slightly flammable. The couple weep, kindly.",
+   "blunder": "You use the wrong name for the groom. He answers to it for the rest of the evening."
+  }
+ },
+ "ry_sign_tax_law": {
+  "text": "Your council presents a new tax on candles, because apparently the kingdom is running low on money and light.",
+  "choices": {
+   "sign": "Sign the candle tax",
+   "veto": "Veto it",
+   "amend": "Send it back amended"
+  },
+  "outcomes": {
+   "smart": "The council reworks it into a luxury tax on chandeliers. Nobody cries for chandeliers.",
+   "stall": "The council takes six months to forget they were angry. Candles remain taxed."
+  }
+ },
+ "ry_sign_holiday_law": {
+  "text": "A bill proposes a national holiday in your honour. It is to be called 'Appreciation Day' and to feature a parade.",
+  "choices": {
+   "sign": "Gladly sign",
+   "rename": "Rename it 'Everyone Day'",
+   "veto": "Veto it as vain"
+  },
+  "outcomes": {
+   "admired": "The press calls you humble. The parade goes ahead anyway under a different name.",
+   "ungrateful": "People had planned costumes. You cannot unplan costumes."
+  }
+ },
+ "ry_execute_order": {
+  "text": "A convicted traitor awaits your signature. The law allows execution. Your conscience has asked to be excused from the room.",
+  "choices": {
+   "sign": "Sign the order",
+   "pardon": "Grant a pardon",
+   "exile": "Banish them instead"
+  },
+  "outcomes": {
+   "merciful": "They leave by night. The people say you are fair and, privately, a bit soft.",
+   "returns": "They return in a year with an army of thirteen. The council is not pleased."
+  }
+ },
+ "ry_abdication_pressure": {
+  "text": "Advisors, relatives and one cheeky bishop suggest the throne might be better off with someone younger. You are not sure who they mean.",
+  "choices": {
+   "hold": "Refuse and hold on",
+   "abdicate": "Abdicate gracefully",
+   "regent": "Appoint a regent"
+  },
+  "outcomes": {
+   "steady": "You remain monarch. The bishop learns to like you, or at least how to hide it.",
+   "crisis": "The press smells blood. You smell soup, and nothing else is going well."
+  }
+ },
+ "ry_succession": {
+  "text": "Your parent, the monarch, has died. The court looks at you the way a nervous waiter looks at a final tip.",
+  "choices": {
+   "accept": "Accept the crown",
+   "mourn": "Mourn before ruling",
+   "decline": "Refuse the throne"
+  },
+  "outcomes": {
+   "respected": "The nation sees a ruler who feels. The ministers see a ruler who is slow.",
+   "vacuum": "Rivals use your grief to tidy up the paperwork. You get rid of three of them later."
+  }
+ },
+ "ry_budget_crisis": {
+  "text": "The treasury is empty. The treasurer shows you the ledger, then shows you a second ledger, and you decide to sit down.",
+  "choices": {
+   "austerity": "Impose austerity",
+   "sell": "Sell some palace art",
+   "loan": "Borrow from neighbours"
+  },
+  "outcomes": {
+   "stable": "The books balance. The crowds are unhappy, but ready for soup.",
+   "riot": "Austerity is badly received. A bread riot begins outside the palace gate."
+  }
+ },
+ "ry_peasant_petition": {
+  "text": "A commoner presents a petition about a pothole. It is, to be fair, a very large pothole.",
+  "choices": {
+   "fix": "Fix the pothole personally",
+   "delegate": "Send an official",
+   "visit": "Visit it in person"
+  },
+  "outcomes": {
+   "beloved": "You pose beside the pothole. Soon it is a landmark and a small tourist boom.",
+   "fall": "You fall into the pothole in front of a hundred witnesses. It is fixed within the week."
+  }
+ },
+ "ry_war_council": {
+  "text": "A neighbouring kingdom has insulted your hat. The generals are ready, and the generals are keen.",
+  "choices": {
+   "war": "Declare war",
+   "diplomacy": "Send a stern letter",
+   "laugh": "Laugh it off"
+  },
+  "outcomes": {
+   "victory": "A short, noisy victory. Hat sales surge.",
+   "defeat": "The war is long, expensive and mostly muddy. The hat is lost."
+  }
+ },
+ "ry_jubilee": {
+  "text": "The kingdom plans a jubilee for your reign. There will be flags, fireworks and a small orchestra of unwilling relatives.",
+  "choices": {
+   "grand": "Go all out",
+   "modest": "Keep it modest",
+   "speech": "Give a heartfelt speech"
+  },
+  "outcomes": {
+   "tears": "The crowd weeps. A fireworks technician weeps and also lights something early.",
+   "mumble": "You lose your place and read the speech a second time. Everyone cheers anyway."
+  }
+ }
+}

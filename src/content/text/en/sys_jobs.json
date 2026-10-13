@@ -1,0 +1,377 @@
+{
+  "tracks": {
+    "babysitter": {
+      "name": "Babysitter",
+      "ladder": {
+        "new_sitter": "New Sitter",
+        "sitter": "Babysitter",
+        "lead_sitter": "Lead Sitter"
+      }
+    },
+    "cashier": {
+      "name": "Cashier",
+      "ladder": {
+        "cashier_trainee": "Cashier Trainee",
+        "cashier": "Cashier",
+        "shift_lead": "Shift Lead"
+      }
+    },
+    "dog_walker": {
+      "name": "Dog Walker",
+      "ladder": {
+        "walker": "Dog Walker",
+        "pack_leader": "Pack Leader",
+        "walking_business_owner": "Walking Business Owner"
+      }
+    },
+    "lifeguard": {
+      "name": "Lifeguard",
+      "ladder": {
+        "guard": "Lifeguard",
+        "head_guard": "Head Lifeguard",
+        "aquatics_supervisor": "Aquatics Supervisor"
+      }
+    },
+    "tutor": {
+      "name": "Tutor",
+      "ladder": {
+        "tutor": "Tutor",
+        "senior_tutor": "Senior Tutor",
+        "tutoring_center_owner": "Tutoring Center Owner"
+      }
+    },
+    "fast_food": {
+      "name": "Fast Food Worker",
+      "ladder": {
+        "crew_member": "Crew Member",
+        "crew_trainer": "Crew Trainer",
+        "shift_manager": "Shift Manager",
+        "store_manager": "Store Manager"
+      }
+    },
+    "janitor": {
+      "name": "Janitor",
+      "ladder": {
+        "custodian": "Custodian",
+        "janitor": "Janitor",
+        "lead_custodian": "Lead Custodian",
+        "facilities_supervisor": "Facilities Supervisor"
+      }
+    },
+    "barista": {
+      "name": "Barista",
+      "ladder": {
+        "barista": "Barista",
+        "shift_supervisor": "Shift Supervisor",
+        "cafe_manager": "Cafe Manager"
+      }
+    },
+    "retail": {
+      "name": "Retail Worker",
+      "ladder": {
+        "sales_associate": "Sales Associate",
+        "senior_associate": "Senior Associate",
+        "department_lead": "Department Lead",
+        "store_manager": "Store Manager"
+      }
+    },
+    "delivery_driver": {
+      "name": "Delivery Driver",
+      "ladder": {
+        "courier": "Courier",
+        "driver": "Delivery Driver",
+        "route_lead": "Route Lead",
+        "dispatch_supervisor": "Dispatch Supervisor"
+      }
+    },
+    "construction": {
+      "name": "Construction Worker",
+      "ladder": {
+        "laborer": "Laborer",
+        "skilled_laborer": "Skilled Laborer",
+        "foreman": "Foreman",
+        "site_superintendent": "Site Superintendent"
+      }
+    },
+    "factory": {
+      "name": "Factory Worker",
+      "ladder": {
+        "line_worker": "Line Worker",
+        "line_lead": "Line Lead",
+        "production_supervisor": "Production Supervisor",
+        "plant_manager": "Plant Manager"
+      }
+    },
+    "security_guard": {
+      "name": "Security Guard",
+      "ladder": {
+        "guard": "Security Guard",
+        "senior_guard": "Senior Guard",
+        "security_supervisor": "Security Supervisor",
+        "security_director": "Security Director"
+      }
+    },
+    "mechanic": {
+      "name": "Auto Mechanic",
+      "ladder": {
+        "apprentice": "Apprentice Mechanic",
+        "mechanic": "Mechanic",
+        "master_mechanic": "Master Mechanic",
+        "shop_owner": "Shop Owner"
+      }
+    },
+    "police_officer": {
+      "name": "Police Officer",
+      "ladder": {
+        "patrol_officer": "Patrol Officer",
+        "detective": "Detective",
+        "sergeant": "Sergeant",
+        "lieutenant": "Lieutenant",
+        "police_chief": "Police Chief"
+      }
+    },
+    "firefighter": {
+      "name": "Firefighter",
+      "ladder": {
+        "recruit": "Recruit Firefighter",
+        "firefighter": "Firefighter",
+        "engineer": "Fire Engineer",
+        "captain": "Fire Captain",
+        "battalion_chief": "Battalion Chief"
+      }
+    },
+    "plumber": {
+      "name": "Plumber",
+      "ladder": {
+        "apprentice": "Plumber Apprentice",
+        "journeyman": "Journeyman Plumber",
+        "master_plumber": "Master Plumber",
+        "plumbing_business_owner": "Plumbing Business Owner"
+      }
+    },
+    "electrician": {
+      "name": "Electrician",
+      "ladder": {
+        "apprentice": "Electrician Apprentice",
+        "journeyman": "Journeyman Electrician",
+        "master_electrician": "Master Electrician",
+        "electrical_contractor": "Electrical Contractor"
+      }
+    },
+    "chef": {
+      "name": "Chef",
+      "ladder": {
+        "line_cook": "Line Cook",
+        "sous_chef": "Sous Chef",
+        "head_chef": "Head Chef",
+        "executive_chef": "Executive Chef"
+      }
+    },
+    "real_estate_agent": {
+      "name": "Real Estate Agent",
+      "ladder": {
+        "associate_agent": "Associate Agent",
+        "agent": "Real Estate Agent",
+        "broker": "Broker",
+        "brokerage_owner": "Brokerage Owner"
+      }
+    },
+    "flight_attendant": {
+      "name": "Flight Attendant",
+      "ladder": {
+        "junior_attendant": "Junior Flight Attendant",
+        "flight_attendant": "Flight Attendant",
+        "senior_attendant": "Senior Flight Attendant",
+        "chief_purser": "Chief Purser"
+      }
+    },
+    "military_soldier": {
+      "name": "Military Soldier",
+      "ladder": {
+        "private": "Private",
+        "corporal": "Corporal",
+        "sergeant": "Sergeant",
+        "master_sergeant": "Master Sergeant"
+      }
+    },
+    "software": {
+      "name": "Software Developer",
+      "ladder": {
+        "junior_dev": "Junior Developer",
+        "developer": "Software Developer",
+        "senior_dev": "Senior Developer",
+        "staff_eng": "Staff Engineer",
+        "cto": "CTO"
+      }
+    },
+    "accountant": {
+      "name": "Accountant",
+      "ladder": {
+        "staff_accountant": "Staff Accountant",
+        "senior_accountant": "Senior Accountant",
+        "audit_manager": "Audit Manager",
+        "cfo": "CFO"
+      }
+    },
+    "teacher": {
+      "name": "Teacher",
+      "ladder": {
+        "new_teacher": "First-Year Teacher",
+        "teacher": "Teacher",
+        "department_head": "Department Head",
+        "principal": "Principal"
+      }
+    },
+    "nurse": {
+      "name": "Nurse",
+      "ladder": {
+        "staff_nurse": "Staff Nurse",
+        "charge_nurse": "Charge Nurse",
+        "nurse_manager": "Nurse Manager",
+        "chief_nursing_officer": "Chief Nursing Officer"
+      }
+    },
+    "engineer": {
+      "name": "Engineer",
+      "ladder": {
+        "junior_engineer": "Junior Engineer",
+        "engineer": "Engineer",
+        "senior_engineer": "Senior Engineer",
+        "principal_engineer": "Principal Engineer"
+      }
+    },
+    "marketing": {
+      "name": "Marketing",
+      "ladder": {
+        "coordinator": "Marketing Coordinator",
+        "manager": "Marketing Manager",
+        "director": "Marketing Director",
+        "cmo": "Chief Marketing Officer"
+      }
+    },
+    "journalist": {
+      "name": "Journalist",
+      "ladder": {
+        "reporter": "Reporter",
+        "senior_reporter": "Senior Reporter",
+        "editor": "Editor",
+        "editor_in_chief": "Editor-in-Chief"
+      }
+    },
+    "architect": {
+      "name": "Architect",
+      "ladder": {
+        "junior_architect": "Junior Architect",
+        "architect": "Architect",
+        "senior_architect": "Senior Architect",
+        "principal_architect": "Principal Architect"
+      }
+    },
+    "pilot": {
+      "name": "Pilot",
+      "ladder": {
+        "first_officer": "First Officer",
+        "captain": "Captain",
+        "check_airman": "Check Airman",
+        "chief_pilot": "Chief Pilot"
+      }
+    },
+    "scientist": {
+      "name": "Scientist",
+      "ladder": {
+        "research_assistant": "Research Assistant",
+        "research_scientist": "Research Scientist",
+        "senior_scientist": "Senior Scientist",
+        "principal_investigator": "Principal Investigator"
+      }
+    },
+    "graphic_designer": {
+      "name": "Graphic Designer",
+      "ladder": {
+        "junior_designer": "Junior Designer",
+        "graphic_designer": "Graphic Designer",
+        "senior_designer": "Senior Designer",
+        "creative_director": "Creative Director"
+      }
+    },
+    "social_worker": {
+      "name": "Social Worker",
+      "ladder": {
+        "caseworker": "Caseworker",
+        "social_worker": "Social Worker",
+        "clinical_social_worker": "Clinical Social Worker",
+        "program_director": "Program Director"
+      }
+    },
+    "doctor": {
+      "name": "Doctor",
+      "ladder": {
+        "resident": "Resident Physician",
+        "physician": "Physician",
+        "specialist": "Specialist Physician",
+        "chief_of_medicine": "Chief of Medicine"
+      }
+    },
+    "lawyer": {
+      "name": "Lawyer",
+      "ladder": {
+        "associate": "Associate Attorney",
+        "senior_associate": "Senior Associate",
+        "partner": "Partner"
+      }
+    },
+    "dentist": {
+      "name": "Dentist",
+      "ladder": {
+        "associate_dentist": "Associate Dentist",
+        "dentist": "Dentist",
+        "practice_owner": "Practice Owner"
+      }
+    },
+    "veterinarian": {
+      "name": "Veterinarian",
+      "ladder": {
+        "associate_vet": "Associate Veterinarian",
+        "veterinarian": "Veterinarian",
+        "senior_vet": "Senior Veterinarian",
+        "clinic_owner": "Clinic Owner"
+      }
+    },
+    "pharmacist": {
+      "name": "Pharmacist",
+      "ladder": {
+        "staff_pharmacist": "Staff Pharmacist",
+        "pharmacist_in_charge": "Pharmacist in Charge",
+        "pharmacy_director": "Pharmacy Director"
+      }
+    },
+    "executive": {
+      "name": "Executive",
+      "ladder": {
+        "associate": "Associate",
+        "vice_president": "Vice President",
+        "svp": "Senior Vice President",
+        "ceo": "CEO"
+      }
+    },
+    "politician": {
+      "name": "Politician",
+      "ladder": {
+        "city_council": "City Council Member",
+        "mayor": "Mayor",
+        "governor": "Governor",
+        "senator": "Senator",
+        "president": "President"
+      }
+    },
+    "professional_athlete": {
+      "name": "Professional Athlete",
+      "ladder": {
+        "rookie": "Rookie",
+        "starter": "Starter",
+        "star": "Star",
+        "legend": "Legend"
+      }
+    }
+  }
+}

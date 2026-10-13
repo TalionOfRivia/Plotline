@@ -1,0 +1,186 @@
+[
+  {
+    "id": "shoplift",
+    "emoji": "🛍️",
+    "minAge": 12,
+    "baseSuccess": 0.7,
+    "payout": [
+      20,
+      200
+    ],
+    "sentenceYears": [
+      0,
+      1
+    ],
+    "karma": -5
+  },
+  {
+    "id": "pickpocket",
+    "emoji": "👛",
+    "minAge": 12,
+    "baseSuccess": 0.6,
+    "payout": [
+      30,
+      400
+    ],
+    "sentenceYears": [
+      0,
+      1
+    ],
+    "karma": -6
+  },
+  {
+    "id": "vandalism",
+    "emoji": "🎨",
+    "minAge": 12,
+    "baseSuccess": 0.75,
+    "payout": [
+      0,
+      60
+    ],
+    "sentenceYears": [
+      0,
+      1
+    ],
+    "karma": -4
+  },
+  {
+    "id": "burglary",
+    "emoji": "🏚️",
+    "minAge": 15,
+    "baseSuccess": 0.5,
+    "payout": [
+      500,
+      5000
+    ],
+    "sentenceYears": [
+      1,
+      5
+    ],
+    "karma": -12
+  },
+  {
+    "id": "car_theft",
+    "emoji": "🚗",
+    "minAge": 16,
+    "baseSuccess": 0.45,
+    "payout": [
+      2000,
+      20000
+    ],
+    "sentenceYears": [
+      1,
+      6
+    ],
+    "karma": -14
+  },
+  {
+    "id": "drug_dealing",
+    "emoji": "💊",
+    "minAge": 16,
+    "baseSuccess": 0.55,
+    "payout": [
+      1000,
+      30000
+    ],
+    "sentenceYears": [
+      2,
+      10
+    ],
+    "karma": -15
+  },
+  {
+    "id": "fraud",
+    "emoji": "📑",
+    "minAge": 18,
+    "baseSuccess": 0.4,
+    "payout": [
+      5000,
+      80000
+    ],
+    "sentenceYears": [
+      2,
+      10
+    ],
+    "karma": -14,
+    "minSmarts": 50
+  },
+  {
+    "id": "bank_robbery",
+    "emoji": "🏦",
+    "minAge": 18,
+    "baseSuccess": 0.25,
+    "payout": [
+      50000,
+      400000
+    ],
+    "sentenceYears": [
+      6,
+      15
+    ],
+    "karma": -25
+  },
+  {
+    "id": "train_robbery",
+    "emoji": "🚂",
+    "minAge": 18,
+    "baseSuccess": 0.15,
+    "payout": [
+      100000,
+      1000000
+    ],
+    "sentenceYears": [
+      8,
+      20
+    ],
+    "karma": -28
+  },
+  {
+    "id": "extortion",
+    "emoji": "🕶️",
+    "minAge": 18,
+    "baseSuccess": 0.45,
+    "payout": [
+      3000,
+      60000
+    ],
+    "sentenceYears": [
+      3,
+      12
+    ],
+    "karma": -20
+  },
+  {
+    "id": "arson",
+    "emoji": "🔥",
+    "minAge": 18,
+    "baseSuccess": 0.5,
+    "payout": [
+      0,
+      30000
+    ],
+    "sentenceYears": [
+      3,
+      15
+    ],
+    "karma": -22
+  },
+  {
+    "id": "murder",
+    "emoji": "🔪",
+    "minAge": 18,
+    "baseSuccess": 0.4,
+    "payout": [
+      0,
+      0
+    ],
+    "sentenceYears": [
+      20,
+      60
+    ],
+    "karma": -60,
+    "flags": {
+      "murderer": true
+    }
+  }
+]

@@ -1,0 +1,2814 @@
+[
+ {
+  "id": "fm_paparazzi_lunch",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "wave",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "flattering",
+      "weight": 60,
+      "effects": {
+       "fame": 3,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "unflattering",
+      "weight": 40,
+      "effects": {
+       "fame": 2,
+       "happiness": -6,
+       "looks": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "hide",
+    "effects": {
+     "happiness": -3
+    }
+   },
+   {
+    "id": "confront",
+    "effects": {
+     "fame": 4,
+     "karma": -3,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_talk_show_interview",
+  "category": "work",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "charm",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hit",
+      "weight": 65,
+      "effects": {
+       "fame": 6,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "flop",
+      "weight": 35,
+      "effects": {
+       "fame": -2,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "plug",
+    "effects": {
+     "money": 5000,
+     "fame": 1
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": -2,
+     "fame": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_award_nomination",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "attend",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 35,
+      "effects": {
+       "fame": 12,
+       "happiness": 20,
+       "money": 20000
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 65,
+      "effects": {
+       "fame": 2,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "happiness": 5,
+     "fame": -3
+    }
+   },
+   {
+    "id": "dress",
+    "effects": {
+     "fame": 6,
+     "happiness": 3,
+     "karma": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_stalker",
+  "category": "random",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "police",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "resolved",
+      "weight": 70,
+      "effects": {
+       "happiness": 5,
+       "health": 2
+      }
+     },
+     {
+      "id": "escalates",
+      "weight": 30,
+      "effects": {
+       "happiness": -15,
+       "health": -5,
+       "money": -5000
+      }
+     }
+    ]
+   },
+   {
+    "id": "hire",
+    "effects": {
+     "money": -12000,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": -10,
+     "health": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_endorsement_soda",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "effects": {
+     "money": 80000,
+     "fame": 2,
+     "karma": -3
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "richer",
+      "weight": 50,
+      "effects": {
+       "money": 150000,
+       "fame": 3
+      }
+     },
+     {
+      "id": "walks",
+      "weight": 50,
+      "effects": {
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "karma": 5,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_social_storm",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous",
+    "has_social_media"
+   ]
+  },
+  "choices": [
+   {
+    "id": "apologize",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "forgiven",
+      "weight": 55,
+      "effects": {
+       "fame": -15,
+       "happiness": -4,
+       "karma": 3
+      }
+     },
+     {
+      "id": "worse",
+      "weight": 45,
+      "effects": {
+       "fame": -15,
+       "happiness": -12
+      }
+     }
+    ]
+   },
+   {
+    "id": "doubledown",
+    "effects": {
+     "fame": -15,
+     "happiness": -3,
+     "karma": -4
+    }
+   },
+   {
+    "id": "offline",
+    "effects": {
+     "fame": -15,
+     "happiness": 6
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_tell_all_book",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "write",
+    "effects": {
+     "book_deal": true,
+     "karma": -5,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "ghost",
+    "effects": {
+     "book_deal": true,
+     "fame": 2
+    }
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "karma": 4,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_charity_gala",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "donate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "noticed",
+      "weight": 70,
+      "effects": {
+       "money": -50000,
+       "karma": 10,
+       "fame": 3,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "quiet",
+      "weight": 30,
+      "effects": {
+       "money": -50000,
+       "karma": 12,
+       "happiness": 4
+      }
+     }
+    ]
+   },
+   {
+    "id": "appear",
+    "effects": {
+     "fame": 2,
+     "karma": -1
+    }
+   },
+   {
+    "id": "auction",
+    "effects": {
+     "money": 12000,
+     "karma": 5,
+     "fame": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_fan_encounter",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "selfie",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "lovely",
+      "weight": 75,
+      "effects": {
+       "happiness": 7,
+       "karma": 3,
+       "fame": 1
+      }
+     },
+     {
+      "id": "viral",
+      "weight": 25,
+      "effects": {
+       "happiness": -5,
+       "fame": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "sign",
+    "effects": {
+     "happiness": 4,
+     "karma": 3
+    }
+   },
+   {
+    "id": "hurry",
+    "effects": {
+     "karma": -3,
+     "happiness": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_comeback",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 35,
+   "flags": [
+    "fame_career"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "triumph",
+      "weight": 45,
+      "effects": {
+       "fame": 15,
+       "happiness": 15,
+       "money": 60000
+      }
+     },
+     {
+      "id": "flop",
+      "weight": 55,
+      "effects": {
+       "fame": -5,
+       "happiness": -8,
+       "money": 10000
+      }
+     }
+    ]
+   },
+   {
+    "id": "pass",
+    "effects": {
+     "happiness": 2
+    }
+   },
+   {
+    "id": "retire",
+    "effects": {
+     "fame": -10,
+     "happiness": 5,
+     "health": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_aging_role",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 45,
+   "flags": [
+    "fame_career"
+   ]
+  },
+  "choices": [
+   {
+    "id": "embrace",
+    "effects": {
+     "money": 30000,
+     "happiness": -2,
+     "fame": 2
+    }
+   },
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "won",
+      "weight": 30,
+      "effects": {
+       "fame": 8,
+       "happiness": 12,
+       "money": 50000
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 70,
+      "effects": {
+       "fame": -4,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "producing",
+    "effects": {
+     "money": 20000,
+     "smarts": 3,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_leaked_photo",
+  "category": "random",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "lawyer",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "removed",
+      "weight": 50,
+      "effects": {
+       "money": -8000,
+       "happiness": 2
+      }
+     },
+     {
+      "id": "streisand",
+      "weight": 50,
+      "effects": {
+       "scandal": true,
+       "fame": -5,
+       "money": -8000
+      }
+     }
+    ]
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "fame": 4,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "hide",
+    "effects": {
+     "happiness": -8,
+     "fame": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_fan_mail",
+  "category": "social",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "read",
+    "effects": {
+     "happiness": 6,
+     "karma": 2
+    }
+   },
+   {
+    "id": "assistant",
+    "effects": {
+     "happiness": 1
+    }
+   },
+   {
+    "id": "reply",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "delight",
+      "weight": 80,
+      "effects": {
+       "happiness": 8,
+       "karma": 4,
+       "fame": 2
+      }
+     },
+     {
+      "id": "trouble",
+      "weight": 20,
+      "effects": {
+       "happiness": -5,
+       "fame": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fm_reality_offer",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "ratings",
+      "weight": 55,
+      "effects": {
+       "fame": 12,
+       "money": 70000,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "canceled",
+      "weight": 45,
+      "effects": {
+       "fame": -4,
+       "money": 15000,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "karma": 3,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_agent_dumps",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "fame_career"
+   ]
+  },
+  "choices": [
+   {
+    "id": "new_agent",
+    "effects": {
+     "happiness": -3,
+     "money": -2000
+    }
+   },
+   {
+    "id": "beg",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "stays",
+      "weight": 35,
+      "effects": {
+       "happiness": -4,
+       "fame": 1
+      }
+     },
+     {
+      "id": "no",
+      "weight": 65,
+      "effects": {
+       "happiness": -8,
+       "karma": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "solo",
+    "effects": {
+     "smarts": 3,
+     "money": -3000,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_viral_clip",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "fame_career",
+    "has_social_media"
+   ]
+  },
+  "choices": [
+   {
+    "id": "embrace",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "jackpot",
+      "weight": 60,
+      "effects": {
+       "fame": 10,
+       "happiness": 8,
+       "money": 25000
+      }
+     },
+     {
+      "id": "cringe",
+      "weight": 40,
+      "effects": {
+       "fame": -3,
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": -2
+    }
+   },
+   {
+    "id": "blame_carpet",
+    "effects": {
+     "fame": 3,
+     "karma": -2,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_signing_autographs",
+  "category": "social",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign_all",
+    "effects": {
+     "health": -4,
+     "karma": 5,
+     "happiness": 5,
+     "fame": 3
+    }
+   },
+   {
+    "id": "sign_some",
+    "effects": {
+     "happiness": 1
+    }
+   },
+   {
+    "id": "sell",
+    "effects": {
+     "money": 30000,
+     "karma": -6,
+     "fame": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_rival_feud",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "clap_back",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "won",
+      "weight": 50,
+      "effects": {
+       "fame": 7,
+       "happiness": 7,
+       "karma": -3
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 50,
+      "effects": {
+       "fame": -6,
+       "happiness": -7,
+       "karma": -3
+      }
+     }
+    ]
+   },
+   {
+    "id": "high_road",
+    "effects": {
+     "karma": 5,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "dinner",
+    "effects": {
+     "karma": 4,
+     "fame": 2,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_first_audition",
+  "category": "work",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "fame_career"
+   ],
+   "maxAge": 30
+  },
+  "choices": [
+   {
+    "id": "nail",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "booked",
+      "weight": 35,
+      "effects": {
+       "fame": 8,
+       "money": 15000,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "next",
+      "weight": 65,
+      "effects": {
+       "happiness": -4,
+       "smarts": 2
+      }
+     }
+    ]
+   },
+   {
+    "id": "safe",
+    "effects": {
+     "happiness": -1,
+     "smarts": 1
+    }
+   },
+   {
+    "id": "improv",
+    "effects": {
+     "fame": 2,
+     "karma": -1,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_street_recognition",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "famous"
+   ]
+  },
+  "choices": [
+   {
+    "id": "kind",
+    "effects": {
+     "karma": 3,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "lie",
+    "effects": {
+     "happiness": 2,
+     "karma": -1
+    }
+   },
+   {
+    "id": "pose",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fun",
+      "weight": 55,
+      "effects": {
+       "fame": 3,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "awkward",
+      "weight": 45,
+      "effects": {
+       "happiness": -5,
+       "fame": -1
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_perfume",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "launch",
+    "effects": {
+     "money": 300000,
+     "fame": 3,
+     "karma": -2
+    }
+   },
+   {
+    "id": "involved",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "masterpiece",
+      "weight": 35,
+      "effects": {
+       "money": 500000,
+       "fame": 5,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "disaster",
+      "weight": 65,
+      "effects": {
+       "money": 50000,
+       "fame": -5,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "pass",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_biopic",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 35,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "approve",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "acclaimed",
+      "weight": 40,
+      "effects": {
+       "fame": 12,
+       "money": 250000,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "embarrassing",
+      "weight": 60,
+      "effects": {
+       "fame": -3,
+       "money": 150000,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "veto",
+    "effects": {
+     "money": -20000,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "cameo",
+    "effects": {
+     "money": 50000,
+     "fame": 4,
+     "happiness": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_hall_of_fame",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 50,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "fame": 8,
+     "happiness": 15
+    }
+   },
+   {
+    "id": "roast",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "legend",
+      "weight": 50,
+      "effects": {
+       "fame": 10,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "gaffe",
+      "weight": 50,
+      "effects": {
+       "fame": -6,
+       "happiness": -6,
+       "scandal": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "karma": 3,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_fan_riot",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "calm",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "heroic",
+      "weight": 55,
+      "effects": {
+       "fame": 8,
+       "karma": 5,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "chaos",
+      "weight": 45,
+      "effects": {
+       "health": -12,
+       "fame": -5,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "escape",
+    "effects": {
+     "happiness": -3,
+     "karma": -3
+    }
+   },
+   {
+    "id": "cancel",
+    "effects": {
+     "fame": -4,
+     "happiness": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_fake_death_rumor",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "tweet",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "comedy",
+      "weight": 70,
+      "effects": {
+       "fame": 10,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "flat",
+      "weight": 30,
+      "effects": {
+       "fame": -2,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "attend",
+    "effects": {
+     "fame": 6,
+     "karma": -3,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "silence",
+    "effects": {
+     "happiness": 6,
+     "fame": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_paparazzi_helicopter",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sue",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 50,
+      "effects": {
+       "money": 80000,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 50,
+      "effects": {
+       "money": -25000,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "wave",
+    "effects": {
+     "fame": 4,
+     "looks": 2,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "move",
+    "effects": {
+     "money": -200000,
+     "happiness": 8,
+     "fame": -5
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_statue",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 40,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "attend",
+    "effects": {
+     "fame": 6,
+     "happiness": 10
+    }
+   },
+   {
+    "id": "pose",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "iconic",
+      "weight": 60,
+      "effects": {
+       "fame": 8,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "pigeon",
+      "weight": 40,
+      "effects": {
+       "fame": 2,
+       "happiness": -3
+      }
+     }
+    ]
+   },
+   {
+    "id": "modest",
+    "effects": {
+     "karma": 5,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_political_run",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 35,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "run",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "elected",
+      "weight": 35,
+      "effects": {
+       "fame": 10,
+       "money": 120000,
+       "happiness": 6,
+       "smarts": 2
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 65,
+      "effects": {
+       "fame": -8,
+       "money": -30000,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "endorse",
+    "effects": {
+     "fame": 3,
+     "money": 40000,
+     "karma": -2
+    }
+   },
+   {
+    "id": "no",
+    "effects": {
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_retire_early",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 40,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "retire",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "peace",
+      "weight": 60,
+      "effects": {
+       "happiness": 18,
+       "health": 8,
+       "fame": -15
+      }
+     },
+     {
+      "id": "bored",
+      "weight": 40,
+      "effects": {
+       "happiness": -6,
+       "fame": -15
+      }
+     }
+    ]
+   },
+   {
+    "id": "continue",
+    "effects": {
+     "money": 100000,
+     "health": -4
+    }
+   },
+   {
+    "id": "sabbatical",
+    "effects": {
+     "happiness": 8,
+     "fame": -4,
+     "money": -20000
+    }
+   }
+  ]
+ },
+ {
+  "id": "fm_cel_roast",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 16,
+   "flags": [
+    "celebrity"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sport",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "beloved",
+      "weight": 65,
+      "effects": {
+       "fame": 6,
+       "happiness": 8,
+       "karma": 2
+      }
+     },
+     {
+      "id": "wounded",
+      "weight": 35,
+      "effects": {
+       "happiness": -8,
+       "fame": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "revenge",
+    "effects": {
+     "fame": 4,
+     "karma": -3,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_tutor_etiquette",
+  "category": "childhood",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 5,
+   "maxAge": 10
+  },
+  "choices": [
+   {
+    "id": "study",
+    "effects": {
+     "smarts": 4,
+     "happiness": -3,
+     "royal_popularity": 2
+    }
+   },
+   {
+    "id": "rebel",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "charming",
+      "weight": 40,
+      "effects": {
+       "happiness": 8,
+       "royal_popularity": 3
+      }
+     },
+     {
+      "id": "scolded",
+      "weight": 60,
+      "effects": {
+       "happiness": -6,
+       "royal_popularity": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "charm",
+    "effects": {
+     "happiness": 3,
+     "karma": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_school_press",
+  "category": "childhood",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 6,
+   "maxAge": 15
+  },
+  "choices": [
+   {
+    "id": "wave",
+    "effects": {
+     "royal_popularity": 3,
+     "happiness": -1
+    }
+   },
+   {
+    "id": "face",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "adored",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": 5,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "scandal",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": -4,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "hide",
+    "effects": {
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_portrait_sitting",
+  "category": "childhood",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 5,
+   "maxAge": 12
+  },
+  "choices": [
+   {
+    "id": "sit",
+    "effects": {
+     "smarts": 2,
+     "happiness": -4,
+     "royal_popularity": 2
+    }
+   },
+   {
+    "id": "fidget",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "quirky",
+      "weight": 50,
+      "effects": {
+       "happiness": 4,
+       "royal_popularity": 2
+      }
+     },
+     {
+      "id": "ruined",
+      "weight": 50,
+      "effects": {
+       "happiness": -3,
+       "royal_popularity": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "bribe",
+    "effects": {
+     "happiness": 3,
+     "karma": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_secret_passage",
+  "category": "childhood",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 7,
+   "maxAge": 14
+  },
+  "choices": [
+   {
+    "id": "explore",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "treasure",
+      "weight": 50,
+      "effects": {
+       "happiness": 10,
+       "money": 500,
+       "smarts": 3
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 50,
+      "effects": {
+       "happiness": -5,
+       "health": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "tell",
+    "effects": {
+     "karma": 3,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "keep",
+    "effects": {
+     "happiness": 5,
+     "smarts": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_childhood_parade",
+  "category": "childhood",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 8,
+   "maxAge": 15
+  },
+  "choices": [
+   {
+    "id": "wave",
+    "effects": {
+     "royal_popularity": 4,
+     "health": -2
+    }
+   },
+   {
+    "id": "sneak",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "unseen",
+      "weight": 60,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "caught",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": -3,
+       "happiness": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "sulk",
+    "effects": {
+     "royal_popularity": -3,
+     "happiness": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_palace_gossip",
+  "category": "social",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 16
+  },
+  "choices": [
+   {
+    "id": "listen",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "useful",
+      "weight": 50,
+      "effects": {
+       "smarts": 3,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "backfire",
+      "weight": 50,
+      "effects": {
+       "happiness": -5,
+       "karma": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "karma": 3,
+     "happiness": -1
+    }
+   },
+   {
+    "id": "spread",
+    "effects": {
+     "karma": -5,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_ribbon_cutting",
+  "category": "work",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 16
+  },
+  "choices": [
+   {
+    "id": "cheese",
+    "effects": {
+     "royal_popularity": 4,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "hospital",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "moving",
+      "weight": 65,
+      "effects": {
+       "royal_popularity": 8,
+       "karma": 4
+      }
+     },
+     {
+      "id": "gaffe",
+      "weight": 35,
+      "effects": {
+       "royal_popularity": -5,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "delegate",
+    "effects": {
+     "royal_popularity": -3,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_commoner_romance",
+  "category": "romance",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18,
+   "maxAge": 50
+  },
+  "choices": [
+   {
+    "id": "pursue",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "blessed",
+      "weight": 40,
+      "effects": {
+       "happiness": 20,
+       "royal_popularity": 6,
+       "karma": 3
+      }
+     },
+     {
+      "id": "scandal",
+      "weight": 60,
+      "effects": {
+       "happiness": 6,
+       "royal_popularity": -10,
+       "scandal": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "secret",
+    "effects": {
+     "happiness": 6,
+     "karma": -2
+    }
+   },
+   {
+    "id": "end",
+    "effects": {
+     "happiness": -15,
+     "royal_popularity": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_tabloid_scandal",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "deny",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "believed",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": 3,
+       "happiness": 2
+      }
+     },
+     {
+      "id": "exposed",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": -12,
+       "happiness": -8,
+       "scandal": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "apology",
+    "effects": {
+     "royal_popularity": -4,
+     "karma": 3,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "royal_popularity": -6,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_coup_rumor",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "investigate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "foiled",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": 8,
+       "happiness": 5,
+       "smarts": 3
+      }
+     },
+     {
+      "id": "trapped",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": -8,
+       "happiness": -8,
+       "exiled": true
+      }
+     }
+    ]
+   },
+   {
+    "id": "tell",
+    "effects": {
+     "karma": 3,
+     "royal_popularity": 3
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": 1,
+     "royal_popularity": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_state_dinner",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 16
+  },
+  "choices": [
+   {
+    "id": "converse",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "friend",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": 5,
+       "happiness": 5,
+       "smarts": 2
+      }
+     },
+     {
+      "id": "faux_pas",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": -5,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "enjoy",
+    "effects": {
+     "happiness": 3
+    }
+   },
+   {
+    "id": "early",
+    "effects": {
+     "royal_popularity": -3,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_arranged_match",
+  "category": "romance",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18,
+   "maxAge": 40
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fond",
+      "weight": 45,
+      "effects": {
+       "happiness": 8,
+       "royal_popularity": 6
+      }
+     },
+     {
+      "id": "cold",
+      "weight": 55,
+      "effects": {
+       "happiness": -10,
+       "royal_popularity": 5
+      }
+     }
+    ]
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "happiness": 3,
+     "royal_popularity": -8,
+     "karma": -1
+    }
+   },
+   {
+    "id": "negotiate",
+    "effects": {
+     "smarts": 3,
+     "royal_popularity": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_royal_tour",
+  "category": "work",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "full",
+    "effects": {
+     "royal_popularity": 8,
+     "health": -5,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "goat",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "viral",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": 10,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "bitten",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": -3,
+       "health": -4,
+       "happiness": -3
+      }
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "royal_popularity": -6,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_charity_patronage",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "commit",
+    "effects": {
+     "royal_popularity": 6,
+     "karma": 8,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "figurehead",
+    "effects": {
+     "royal_popularity": 3,
+     "karma": 2
+    }
+   },
+   {
+    "id": "favourite",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "praised",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": 10,
+       "karma": 10,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "backlash",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": -6,
+       "karma": 5,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ry_inheritance_squabble",
+  "category": "family",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 20
+  },
+  "choices": [
+   {
+    "id": "claim",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 40,
+      "effects": {
+       "money": 100000,
+       "happiness": 6,
+       "karma": -3,
+       "royal_popularity": -2
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 60,
+      "effects": {
+       "happiness": -6,
+       "karma": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "share",
+    "effects": {
+     "karma": 6,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "walk",
+    "effects": {
+     "happiness": 3,
+     "karma": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_royal_wedding_guest",
+  "category": "social",
+  "weight": 2,
+  "once": false,
+  "conditions": {
+   "flags": [
+    "royal"
+   ],
+   "minAge": 16
+  },
+  "choices": [
+   {
+    "id": "toast",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "lovely",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": 6,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "blunder",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": -5,
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "dance",
+    "effects": {
+     "happiness": 8,
+     "health": -2
+    }
+   },
+   {
+    "id": "slip",
+    "effects": {
+     "happiness": 2,
+     "royal_popularity": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_sign_tax_law",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "effects": {
+     "royal_popularity": -8,
+     "money": 100000
+    }
+   },
+   {
+    "id": "veto",
+    "effects": {
+     "royal_popularity": 6,
+     "money": -20000
+    }
+   },
+   {
+    "id": "amend",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "smart",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": 4,
+       "money": 40000,
+       "smarts": 2
+      }
+     },
+     {
+      "id": "stall",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": -4,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ry_sign_holiday_law",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "effects": {
+     "royal_popularity": 8,
+     "happiness": 5,
+     "karma": -2
+    }
+   },
+   {
+    "id": "rename",
+    "effects": {
+     "royal_popularity": 10,
+     "karma": 3,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "veto",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "admired",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": 10,
+       "karma": 5
+      }
+     },
+     {
+      "id": "ungrateful",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": -6,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ry_execute_order",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "effects": {
+     "execute_order": true,
+     "karma": -30,
+     "royal_popularity": -5
+    }
+   },
+   {
+    "id": "pardon",
+    "effects": {
+     "karma": 10,
+     "royal_popularity": 6,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "exile",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "merciful",
+      "weight": 60,
+      "effects": {
+       "karma": 5,
+       "royal_popularity": 3
+      }
+     },
+     {
+      "id": "returns",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": -4,
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ry_abdication_pressure",
+  "category": "family",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 40,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "hold",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "steady",
+      "weight": 55,
+      "effects": {
+       "royal_popularity": 5,
+       "happiness": 2
+      }
+     },
+     {
+      "id": "crisis",
+      "weight": 45,
+      "effects": {
+       "royal_popularity": -12,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "abdicate",
+    "effects": {
+     "abdicate": true,
+     "happiness": 10,
+     "royal_popularity": 2
+    }
+   },
+   {
+    "id": "regent",
+    "effects": {
+     "royal_popularity": -3,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_succession",
+  "category": "family",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "royal",
+    "heir"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "royal_popularity": 6,
+     "happiness": -5,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "mourn",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "respected",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": 8,
+       "happiness": -6,
+       "karma": 3
+      }
+     },
+     {
+      "id": "vacuum",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": -6,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "abdicate": true,
+     "karma": -3,
+     "happiness": 5,
+     "royal_popularity": -6
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_budget_crisis",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "austerity",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "stable",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": -6,
+       "money": 200000
+      }
+     },
+     {
+      "id": "riot",
+      "weight": 50,
+      "effects": {
+       "royal_popularity": -14,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "sell",
+    "effects": {
+     "money": 300000,
+     "royal_popularity": -3,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "loan",
+    "effects": {
+     "money": 150000,
+     "royal_popularity": -2,
+     "smarts": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_peasant_petition",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "fix",
+    "effects": {
+     "royal_popularity": 8,
+     "karma": 4,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "delegate",
+    "effects": {
+     "royal_popularity": 2
+    }
+   },
+   {
+    "id": "visit",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "beloved",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": 10,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "fall",
+      "weight": 40,
+      "effects": {
+       "health": -6,
+       "royal_popularity": -2,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ry_war_council",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "war",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "victory",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": 15,
+       "karma": -8,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "defeat",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": -15,
+       "karma": -8,
+       "happiness": -12,
+       "money": -100000
+      }
+     }
+    ]
+   },
+   {
+    "id": "diplomacy",
+    "effects": {
+     "royal_popularity": 4,
+     "karma": 5,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "royal_popularity": 2,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "ry_jubilee",
+  "category": "social",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 40,
+   "flags": [
+    "royal",
+    "monarch"
+   ]
+  },
+  "choices": [
+   {
+    "id": "grand",
+    "effects": {
+     "royal_popularity": 12,
+     "happiness": 10,
+     "money": -100000
+    }
+   },
+   {
+    "id": "modest",
+    "effects": {
+     "royal_popularity": 6,
+     "karma": 3,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "speech",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "tears",
+      "weight": 60,
+      "effects": {
+       "royal_popularity": 14,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "mumble",
+      "weight": 40,
+      "effects": {
+       "royal_popularity": -2,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

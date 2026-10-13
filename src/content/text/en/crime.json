@@ -1,0 +1,455 @@
+{
+  "cr_dare_shoplift": {
+    "text": "Your friends dare you to steal a bag of sweets from the corner shop. The dare is for sweets. The principle is for much more.",
+    "choices": {
+      "do_it": "Take the dare",
+      "refuse": "Roll your eyes",
+      "pay": "Buy them instead"
+    },
+    "outcomes": {
+      "clean": "You walk out with the sweets and a new reputation. The sweets were stale.",
+      "caught": "The shopkeeper knows your mother. You are walked home and the sweets are confiscated."
+    }
+  },
+  "cr_cousin_scheme": {
+    "text": "Your cousin has a plan. It involves a van, a warehouse and a man called Little Pete, who is not little. He needs a \"reliable pair of hands\".",
+    "choices": {
+      "join": "Join the plan",
+      "decline": "Politely decline",
+      "tellmum": "Tell his mother"
+    },
+    "outcomes": {
+      "pay": "The job goes smoothly and Little Pete pays in cash. Your cousin takes credit.",
+      "bust": "The warehouse had a night shift nobody mentioned. You are arrested between two crates."
+    }
+  },
+  "cr_fence_offer": {
+    "text": "A man at a car wash offers to buy \"anything with a serial number, no questions\". He asks several questions about your schedule.",
+    "choices": {
+      "sell": "Sell him something",
+      "walk": "Walk away"
+    },
+    "outcomes": {
+      "easy": "He pays fairly and you both pretend it never happened.",
+      "marked": "He was not a fence. He was a detective with a very good car wash cover."
+    }
+  },
+  "cr_traffic_stop": {
+    "text": "Blue lights fill your mirror. The officer asks if you know why he stopped you. You have several possible answers.",
+    "choices": {
+      "talk": "Be charming",
+      "comply": "Say nothing, smile",
+      "run": "Floor it"
+    },
+    "outcomes": {
+      "warning": "He gives you a warning and a tip about your tail light.",
+      "ticket": "He is immune to charm and writes the ticket slowly.",
+      "lost": "You lose them at a roundabout and your nerves somewhere after.",
+      "pinned": "A helicopter becomes involved. Your day does not recover."
+    }
+  },
+  "cr_cop_knock": {
+    "text": "Two officers knock on your door. They are \"just asking questions\", in the way sharks are just swimming.",
+    "choices": {
+      "cooperate": "Answer politely",
+      "lawyer": "Ask for a lawyer",
+      "lie": "Lie confidently"
+    },
+    "outcomes": {
+      "believed": "They leave with notes and no evidence. You stay up all night anyway.",
+      "caught_lying": "The notes contradicted themselves. Your lie contradicted the notes."
+    }
+  },
+  "cr_getaway_driver": {
+    "text": "A friend asks you to wait outside a jeweller's with the engine running. It is described as \"the easiest money you will ever make\". It is not described accurately.",
+    "choices": {
+      "drive": "Be the driver",
+      "no": "Not today"
+    },
+    "outcomes": {
+      "paid": "They run out, you drive off, and your share is a bag of cash.",
+      "pinched": "The alarm was quicker than your clutch. You are the only one arrested, because the others ran."
+    }
+  },
+  "cr_found_stash": {
+    "text": "Behind a loose panel in your shed you find a duffel bag. It contains cash, a ski mask and a sandwich of uncertain age.",
+    "choices": {
+      "keep": "Keep the cash",
+      "police": "Call the police",
+      "sandwich": "Eat the sandwich"
+    },
+    "outcomes": {
+      "rich": "Nobody ever comes looking. You tell yourself it's an inheritance.",
+      "owner": "The owner comes looking. He is very polite, and also hurts you a little."
+    }
+  },
+  "cr_graffiti_crew": {
+    "text": "A crew of teenagers asks whether you want to paint the underpass. You can bring your own cans or inhale theirs.",
+    "choices": {
+      "paint": "Paint the wall",
+      "watch": "Keep a lookout",
+      "skip": "Go home"
+    },
+    "outcomes": {
+      "masterpiece": "The wall looks great. The council paints over it within a week.",
+      "cops": "A patrol car arrives while you are doing the shading. You are fined and lectured on art history."
+    }
+  },
+  "cr_witness_threat": {
+    "text": "Someone you know is due to testify against you. You could scare them out of it. They could also scare you right back.",
+    "choices": {
+      "threaten": "Pay them a visit",
+      "leave": "Leave them alone"
+    },
+    "outcomes": {
+      "quiet": "They suddenly remember nothing. You remember everything.",
+      "reported": "They tell the police about the visit. The visit is now evidence."
+    }
+  },
+  "cr_snitch_offer": {
+    "text": "A detective offers you a deal. Give up a name and your trouble gets smaller. You have several names and one conscience.",
+    "choices": {
+      "talk": "Name a name",
+      "silence": "Say nothing"
+    },
+    "outcomes": {
+      "deal": "The charges drop. Your phone does not stop ringing with threats.",
+      "burned": "The name you gave was wrong. The detective is not happy, and neither are the people you named."
+    }
+  },
+  "cr_old_accomplice": {
+    "text": "An old accomplice texts you. He has \"one last thing\" and a very clean new haircut.",
+    "choices": {
+      "go": "Hear him out",
+      "block": "Block the number"
+    },
+    "outcomes": {
+      "payday": "It turns out to be small, boring and profitable.",
+      "trap": "The haircut was a disguise. He is working with the police now. Your lawyer is amused."
+    }
+  },
+  "cr_job_with_record": {
+    "text": "The job application asks about your criminal record. The tick box is very small. Your honesty is not.",
+    "choices": {
+      "honest": "Tick the box",
+      "hide": "Leave it blank",
+      "skip": "Don't apply"
+    },
+    "outcomes": {
+      "hired": "The manager shrugs. Everyone has a past, he says, and gives you a start date.",
+      "rejected": "The email arrives within the hour. It uses the phrase \"not a fit\"."
+    }
+  },
+  "cr_neighbourhood_watch": {
+    "text": "The neighbourhood watch hold a meeting about \"suspicious characters\". They look at you more than is natural.",
+    "choices": {
+      "join": "Join the watch",
+      "attend": "Attend with a casserole",
+      "avoid": "Avoid the street"
+    },
+    "outcomes": {}
+  },
+  "cr_pyramid_pitch": {
+    "text": "An old classmate invites you to a \"wealth seminar\". The wealth is the speaker's. The seminar is your cost.",
+    "choices": {
+      "invest": "Sign up",
+      "recruit": "Recruit your friends",
+      "leave": "Walk out"
+    },
+    "outcomes": {
+      "ok": "You break even. The speaker buys a new boat.",
+      "lost": "You lose a few thousand and gain several excellent motivational quotes.",
+      "cash": "You make a quick commission and lose a few friends.",
+      "crash": "The scheme collapses. Your friends remember who invited them."
+    }
+  },
+  "cr_protection_racket": {
+    "text": "Two men in matching jackets suggest the local bakery needs \"protection\". You suggest they could be that protection. They are impressed.",
+    "choices": {
+      "collect": "Collect payments",
+      "pass": "Pass"
+    },
+    "outcomes": {
+      "rich": "The baker pays on time. The bread is excellent.",
+      "tipped": "The baker called the police. Not the friendly kind."
+    }
+  },
+  "cr_record_background_check": {
+    "text": "A landlord runs a background check on you. The report arrives first, the handshake does not.",
+    "choices": {
+      "explain": "Explain yourself",
+      "forge": "Bring a \"reference\"",
+      "move": "Look somewhere else"
+    },
+    "outcomes": {}
+  },
+  "cr_unlocked_car": {
+    "text": "A car sits unlocked on the street, keys in the ignition, engine running. The universe appears to be testing you.",
+    "choices": {
+      "take": "Take it for a spin",
+      "lock": "Report it",
+      "walk": "Keep walking"
+    },
+    "outcomes": {
+      "joyride": "You return it before anyone notices. Your pulse takes longer.",
+      "pulled": "A passing officer notices the stranger driving. The stranger is you."
+    }
+  },
+  "cr_lawyer_discount": {
+    "text": "A lawyer on a billboard promises \"Justice at a price you can afford\". The price is in a font you cannot read.",
+    "choices": {
+      "hire": "Hire him",
+      "self": "Represent yourself"
+    },
+    "outcomes": {
+      "good": "He is surprisingly good. Your case gets a little lighter.",
+      "bad": "He is exactly as advertised."
+    }
+  },
+  "pr_first_night": {
+    "text": "The door shuts behind you. The cell smells of bleach and quiet disappointment. Your bunk is the one nobody else wanted.",
+    "choices": {
+      "sleep": "Sleep with one eye open",
+      "talk": "Introduce yourself",
+      "stare": "Stare at the ceiling"
+    },
+    "outcomes": {}
+  },
+  "pr_cellmate": {
+    "text": "Your cellmate is a quiet man named Dennis who collects breadcrumbs and speaks in prophecy. He asks what you did.",
+    "choices": {
+      "truth": "Tell the truth",
+      "lie": "Make something up",
+      "silent": "Say nothing"
+    },
+    "outcomes": {
+      "bond": "Dennis nods slowly. He has heard worse. You are now friends.",
+      "gossip": "By dinner the entire wing knows. Dennis was not as quiet as advertised."
+    }
+  },
+  "pr_gang_recruit": {
+    "text": "A man with more tattoos than skin leans on your bunk. He says his group takes care of its own. It is not clear what happens to everyone else.",
+    "choices": {
+      "join": "Join the gang",
+      "refuse": "Say no politely",
+      "protect": "Ask a guard for help"
+    },
+    "outcomes": {
+      "safe": "Nobody bothers you now. Everybody else owes someone, and it is now you.",
+      "initiation": "The initiation is a favour that should have stayed unnamed. You can still walk."
+    }
+  },
+  "pr_guard_favor": {
+    "text": "A guard offers to look the other way if you carry a package to the laundry. He says it is \"just laundry\". Laundry has never been this heavy.",
+    "choices": {
+      "carry": "Carry the package",
+      "refuse": "Decline"
+    },
+    "outcomes": {
+      "paid": "You are paid in stamps and silence.",
+      "sting": "It was a test. The guard reported you. Both of you looked very surprised."
+    }
+  },
+  "pr_contraband_phone": {
+    "text": "Somebody on the block sells smuggled phones for the price of a kidney. The kidney is optional.",
+    "choices": {
+      "buy": "Buy one",
+      "skip": "Skip it"
+    },
+    "outcomes": {
+      "call": "You call your family. Everyone cries, mostly you.",
+      "found": "The phone is found in a shake-down. The guards seem pleased with themselves."
+    }
+  },
+  "pr_yard_fight": {
+    "text": "A man in the yard says your face looks like a debt. Several people stop what they are doing to watch.",
+    "choices": {
+      "fight": "Throw a punch",
+      "talk": "Talk it down",
+      "walk": "Walk away"
+    },
+    "outcomes": {
+      "win": "Your punch lands. So does his reputation, in your favour.",
+      "lose": "Your punch lands somewhere in the future. The rest lands on you."
+    }
+  },
+  "pr_riot": {
+    "text": "Something snaps in the dining hall. Trays fly. The alarm sounds like a trumpet that gave up.",
+    "choices": {
+      "join": "Join the chaos",
+      "hide": "Hide under a table",
+      "help": "Help the guards"
+    },
+    "outcomes": {
+      "fine": "You come out with a black eye and a story.",
+      "died": "You are on the wrong side of a door at the wrong time.",
+      "hurt": "You wake up in the infirmary. It is, ironically, the quietest place in the building."
+    }
+  },
+  "pr_shank_threat": {
+    "text": "A rival hands you a note: \"Meet me in the laundry room\". The sentence has an ending you can guess.",
+    "choices": {
+      "go": "Go to the laundry",
+      "guards": "Tell a guard",
+      "ignore": "Ignore the note"
+    },
+    "outcomes": {
+      "peace": "He wanted to apologise. Prison is odd.",
+      "shanked": "The laundry is quiet. You do not see it coming.",
+      "stabbed": "You walk out alive and with fewer organs of your own."
+    }
+  },
+  "pr_parole_hearing": {
+    "text": "A panel of three people in cardigans is going to decide your future in under fifteen minutes. They have already had their coffee.",
+    "choices": {
+      "plead": "Plead your case",
+      "lawyer": "Hire a lawyer",
+      "skip": "Skip the hearing"
+    },
+    "outcomes": {
+      "granted": "The panel nods, then nods again. You are going home.",
+      "denied": "They decline, politely, with a tone that suggests they have done this before."
+    }
+  },
+  "pr_model_parole": {
+    "text": "Your file contains the word \"exemplary\". The warden has asked if you would like to tell the panel yourself.",
+    "choices": {
+      "go": "Attend the hearing",
+      "wait": "Let it ride"
+    },
+    "outcomes": {
+      "early": "The panel is persuaded. You are released on parole, a little bewildered.",
+      "no": "Procedure delays everything. You wait another year with good behaviour."
+    }
+  },
+  "pr_visitor_spouse": {
+    "text": "{{name}} visits you behind the glass. You pick up the receiver and both talk at once.",
+    "choices": {
+      "talk": "Talk about home",
+      "ask": "Ask them to wait",
+      "silent": "Sit in silence"
+    },
+    "outcomes": {
+      "stay": "{{name}} says they will. You choose to believe it.",
+      "leave": "{{name}} says they need time. The glass seems thicker afterward."
+    }
+  },
+  "pr_visitor_mother": {
+    "text": "{{name}} comes to visit and brings a bag of food that security throws away. She says she is not angry. She is lying beautifully.",
+    "choices": {
+      "thank": "Thank her",
+      "ask_money": "Ask for money",
+      "apologise": "Apologise"
+    },
+    "outcomes": {
+      "yes": "She slides you an envelope through the system. Her sigh stays with you.",
+      "no": "She shakes her head. It is a good lesson in motherhood."
+    }
+  },
+  "pr_library": {
+    "text": "The prison library has eleven books, three of them detective novels. You fall for the irony before the plot.",
+    "choices": {
+      "read": "Read everything",
+      "law": "Study law books",
+      "nap": "Nap on the shelves"
+    },
+    "outcomes": {}
+  },
+  "pr_work_detail": {
+    "text": "The prison offers you a job in the kitchen or the laundry. Both pay cents an hour, in a currency of mild dignity.",
+    "choices": {
+      "kitchen": "Take the kitchen",
+      "laundry": "Take the laundry",
+      "refuse": "Refuse to work"
+    },
+    "outcomes": {}
+  },
+  "pr_escape_attempt": {
+    "text": "A loose vent, a night shift, a plan Dennis drew on a napkin. He insists it is foolproof. He is the fool.",
+    "choices": {
+      "go": "Try to escape",
+      "stay": "Stay put"
+    },
+    "outcomes": {
+      "out": "You squeeze through, climb the wall and reach the road. You are free, in a sense that will need a lawyer.",
+      "caught": "The siren is faster than your legs. They take your shoelaces as punishment."
+    }
+  },
+  "pr_snitch_offer": {
+    "text": "A guard offers you a lighter sentence for information about the contraband ring. He mentions your cellmate by first name.",
+    "choices": {
+      "talk": "Inform on them",
+      "refuse": "Refuse"
+    },
+    "outcomes": {
+      "reward": "Your file gets thinner. Nobody speaks to you again.",
+      "revenge": "Word gets out. The infirmary becomes your second home."
+    }
+  },
+  "pr_food_strike": {
+    "text": "The meatloaf has become sentient and it is angry. The inmates organise a hunger strike. They ask you to join.",
+    "choices": {
+      "join": "Join the strike",
+      "eat": "Eat anyway"
+    },
+    "outcomes": {
+      "win": "The kitchen promises to improve. They add salt.",
+      "punished": "Management responds with cold sandwiches and a lecture on solidarity."
+    }
+  },
+  "pr_solitary": {
+    "text": "You are sent to solitary for something that was a misunderstanding by the standards of nobody. The walls are the same colour as time.",
+    "choices": {
+      "think": "Think things over",
+      "sing": "Sing loudly",
+      "meditate": "Try meditating"
+    },
+    "outcomes": {}
+  },
+  "pr_gym": {
+    "text": "The prison gym has a bench, a rusted barbell and a strict hierarchy. You are on the lowest rung and the bench.",
+    "choices": {
+      "lift": "Pump iron",
+      "spar": "Spar with a bruiser",
+      "walk": "Do laps"
+    },
+    "outcomes": {
+      "good": "You hold your own. His respect is physical but real.",
+      "bad": "You learn some humility in the form of a rib."
+    }
+  },
+  "pr_education": {
+    "text": "The prison offers an education programme. The teacher has a PhD and a sign-in sheet.",
+    "choices": {
+      "study": "Enrol in classes",
+      "skip": "Skip it"
+    },
+    "outcomes": {
+      "pass": "You graduate with a certificate nobody on the outside will understand.",
+      "fail": "The exam is invigilated by the person who stole your lunch."
+    }
+  },
+  "pr_appeal": {
+    "text": "A cellmate with the confidence of a barrister reads your case file and says there is \"a technicality\". He pronounces it with relish.",
+    "choices": {
+      "appeal": "File an appeal",
+      "ignore": "Ignore him"
+    },
+    "outcomes": {
+      "win": "The court agrees there is a technicality. You are released.",
+      "lose": "The court agrees that you were guilty and that you wrote badly."
+    }
+  },
+  "pr_commissary_poker": {
+    "text": "There is a game of poker behind the laundry. The stakes are cigarettes, favours and the dignity of your bunk.",
+    "choices": {
+      "play": "Play a hand",
+      "watch": "Watch from afar",
+      "no": "No thanks"
+    },
+    "outcomes": {
+      "won": "You win a month of supplies and a man's grudge.",
+      "lost": "You lose your pudding rights and a favour you hadn't yet earned."
+    }
+  }
+}

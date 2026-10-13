@@ -1,0 +1,1291 @@
+{
+  "tracks": [
+    {
+      "id": "babysitter",
+      "emoji": "👶",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "new_sitter",
+          "salary": 8000,
+          "minYears": 0
+        },
+        {
+          "id": "sitter",
+          "salary": 11000,
+          "minYears": 1
+        },
+        {
+          "id": "lead_sitter",
+          "salary": 14000,
+          "minYears": 3
+        }
+      ]
+    },
+    {
+      "id": "cashier",
+      "emoji": "🛒",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "cashier_trainee",
+          "salary": 17000,
+          "minYears": 0
+        },
+        {
+          "id": "cashier",
+          "salary": 19000,
+          "minYears": 1
+        },
+        {
+          "id": "shift_lead",
+          "salary": 23000,
+          "minYears": 3
+        }
+      ]
+    },
+    {
+      "id": "dog_walker",
+      "emoji": "🦮",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "walker",
+          "salary": 12000,
+          "minYears": 0
+        },
+        {
+          "id": "pack_leader",
+          "salary": 18000,
+          "minYears": 2
+        },
+        {
+          "id": "walking_business_owner",
+          "salary": 32000,
+          "minYears": 5
+        }
+      ]
+    },
+    {
+      "id": "lifeguard",
+      "emoji": "🏊",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "guard",
+          "salary": 13000,
+          "minYears": 0
+        },
+        {
+          "id": "head_guard",
+          "salary": 17000,
+          "minYears": 2
+        },
+        {
+          "id": "aquatics_supervisor",
+          "salary": 24000,
+          "minYears": 4
+        }
+      ]
+    },
+    {
+      "id": "tutor",
+      "emoji": "📖",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "tutor",
+          "salary": 14000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_tutor",
+          "salary": 20000,
+          "minYears": 2
+        },
+        {
+          "id": "tutoring_center_owner",
+          "salary": 32000,
+          "minYears": 5
+        }
+      ]
+    },
+    {
+      "id": "fast_food",
+      "emoji": "🍔",
+      "requires": {
+        "education": "none",
+        "minAge": 14
+      },
+      "ladder": [
+        {
+          "id": "crew_member",
+          "salary": 15000,
+          "minYears": 0
+        },
+        {
+          "id": "crew_trainer",
+          "salary": 18000,
+          "minYears": 1
+        },
+        {
+          "id": "shift_manager",
+          "salary": 26000,
+          "minYears": 3
+        },
+        {
+          "id": "store_manager",
+          "salary": 42000,
+          "minYears": 6
+        }
+      ]
+    },
+    {
+      "id": "janitor",
+      "emoji": "🧹",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "custodian",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "janitor",
+          "salary": 34000,
+          "minYears": 2
+        },
+        {
+          "id": "lead_custodian",
+          "salary": 42000,
+          "minYears": 4
+        },
+        {
+          "id": "facilities_supervisor",
+          "salary": 58000,
+          "minYears": 7
+        }
+      ]
+    },
+    {
+      "id": "barista",
+      "emoji": "☕",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "barista",
+          "salary": 25000,
+          "minYears": 0
+        },
+        {
+          "id": "shift_supervisor",
+          "salary": 31000,
+          "minYears": 2
+        },
+        {
+          "id": "cafe_manager",
+          "salary": 42000,
+          "minYears": 4
+        }
+      ]
+    },
+    {
+      "id": "retail",
+      "emoji": "🛍️",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "sales_associate",
+          "salary": 28000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_associate",
+          "salary": 33000,
+          "minYears": 2
+        },
+        {
+          "id": "department_lead",
+          "salary": 42000,
+          "minYears": 4
+        },
+        {
+          "id": "store_manager",
+          "salary": 58000,
+          "minYears": 7
+        }
+      ]
+    },
+    {
+      "id": "delivery_driver",
+      "emoji": "🚚",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "courier",
+          "salary": 32000,
+          "minYears": 0
+        },
+        {
+          "id": "driver",
+          "salary": 38000,
+          "minYears": 2
+        },
+        {
+          "id": "route_lead",
+          "salary": 46000,
+          "minYears": 4
+        },
+        {
+          "id": "dispatch_supervisor",
+          "salary": 52000,
+          "minYears": 6
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "emoji": "🏗️",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "laborer",
+          "salary": 33000,
+          "minYears": 0
+        },
+        {
+          "id": "skilled_laborer",
+          "salary": 42000,
+          "minYears": 2
+        },
+        {
+          "id": "foreman",
+          "salary": 58000,
+          "minYears": 5
+        },
+        {
+          "id": "site_superintendent",
+          "salary": 85000,
+          "minYears": 9
+        }
+      ]
+    },
+    {
+      "id": "factory",
+      "emoji": "🏭",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "line_worker",
+          "salary": 31000,
+          "minYears": 0
+        },
+        {
+          "id": "line_lead",
+          "salary": 38000,
+          "minYears": 3
+        },
+        {
+          "id": "production_supervisor",
+          "salary": 55000,
+          "minYears": 6
+        },
+        {
+          "id": "plant_manager",
+          "salary": 95000,
+          "minYears": 11
+        }
+      ]
+    },
+    {
+      "id": "security_guard",
+      "emoji": "🛡️",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "guard",
+          "salary": 29000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_guard",
+          "salary": 34000,
+          "minYears": 2
+        },
+        {
+          "id": "security_supervisor",
+          "salary": 48000,
+          "minYears": 5
+        },
+        {
+          "id": "security_director",
+          "salary": 85000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "mechanic",
+      "emoji": "🔧",
+      "requires": {
+        "education": "none"
+      },
+      "ladder": [
+        {
+          "id": "apprentice",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "mechanic",
+          "salary": 45000,
+          "minYears": 2
+        },
+        {
+          "id": "master_mechanic",
+          "salary": 60000,
+          "minYears": 5
+        },
+        {
+          "id": "shop_owner",
+          "salary": 85000,
+          "minYears": 9
+        }
+      ]
+    },
+    {
+      "id": "police_officer",
+      "emoji": "🚔",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "patrol_officer",
+          "salary": 52000,
+          "minYears": 0
+        },
+        {
+          "id": "detective",
+          "salary": 78000,
+          "minYears": 4
+        },
+        {
+          "id": "sergeant",
+          "salary": 92000,
+          "minYears": 8
+        },
+        {
+          "id": "lieutenant",
+          "salary": 115000,
+          "minYears": 12
+        },
+        {
+          "id": "police_chief",
+          "salary": 190000,
+          "minYears": 18
+        }
+      ]
+    },
+    {
+      "id": "firefighter",
+      "emoji": "🚒",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "recruit",
+          "salary": 45000,
+          "minYears": 0
+        },
+        {
+          "id": "firefighter",
+          "salary": 58000,
+          "minYears": 1
+        },
+        {
+          "id": "engineer",
+          "salary": 72000,
+          "minYears": 4
+        },
+        {
+          "id": "captain",
+          "salary": 90000,
+          "minYears": 8
+        },
+        {
+          "id": "battalion_chief",
+          "salary": 125000,
+          "minYears": 14
+        }
+      ]
+    },
+    {
+      "id": "plumber",
+      "emoji": "🚰",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "apprentice",
+          "salary": 36000,
+          "minYears": 0
+        },
+        {
+          "id": "journeyman",
+          "salary": 58000,
+          "minYears": 3
+        },
+        {
+          "id": "master_plumber",
+          "salary": 80000,
+          "minYears": 6
+        },
+        {
+          "id": "plumbing_business_owner",
+          "salary": 115000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "electrician",
+      "emoji": "⚡",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "apprentice",
+          "salary": 38000,
+          "minYears": 0
+        },
+        {
+          "id": "journeyman",
+          "salary": 60000,
+          "minYears": 4
+        },
+        {
+          "id": "master_electrician",
+          "salary": 84000,
+          "minYears": 8
+        },
+        {
+          "id": "electrical_contractor",
+          "salary": 120000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "chef",
+      "emoji": "👨‍🍳",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "line_cook",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "sous_chef",
+          "salary": 48000,
+          "minYears": 3
+        },
+        {
+          "id": "head_chef",
+          "salary": 70000,
+          "minYears": 6
+        },
+        {
+          "id": "executive_chef",
+          "salary": 110000,
+          "minYears": 11
+        }
+      ]
+    },
+    {
+      "id": "real_estate_agent",
+      "emoji": "🏡",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "associate_agent",
+          "salary": 35000,
+          "minYears": 0
+        },
+        {
+          "id": "agent",
+          "salary": 58000,
+          "minYears": 2
+        },
+        {
+          "id": "broker",
+          "salary": 95000,
+          "minYears": 6
+        },
+        {
+          "id": "brokerage_owner",
+          "salary": 180000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "flight_attendant",
+      "emoji": "💺",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "junior_attendant",
+          "salary": 34000,
+          "minYears": 0
+        },
+        {
+          "id": "flight_attendant",
+          "salary": 48000,
+          "minYears": 3
+        },
+        {
+          "id": "senior_attendant",
+          "salary": 62000,
+          "minYears": 8
+        },
+        {
+          "id": "chief_purser",
+          "salary": 75000,
+          "minYears": 15
+        }
+      ]
+    },
+    {
+      "id": "military_soldier",
+      "emoji": "🎖️",
+      "requires": {
+        "education": "high_school"
+      },
+      "ladder": [
+        {
+          "id": "private",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "corporal",
+          "salary": 36000,
+          "minYears": 2
+        },
+        {
+          "id": "sergeant",
+          "salary": 48000,
+          "minYears": 5
+        },
+        {
+          "id": "master_sergeant",
+          "salary": 62000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "emoji": "💻",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "computer_science",
+          "engineering",
+          "math"
+        ],
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "junior_dev",
+          "salary": 62000,
+          "minYears": 0
+        },
+        {
+          "id": "developer",
+          "salary": 88000,
+          "minYears": 2
+        },
+        {
+          "id": "senior_dev",
+          "salary": 125000,
+          "minYears": 5
+        },
+        {
+          "id": "staff_eng",
+          "salary": 170000,
+          "minYears": 9
+        },
+        {
+          "id": "cto",
+          "salary": 260000,
+          "minYears": 14
+        }
+      ]
+    },
+    {
+      "id": "accountant",
+      "emoji": "📊",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "business",
+          "economics",
+          "math"
+        ],
+        "minSmarts": 50
+      },
+      "ladder": [
+        {
+          "id": "staff_accountant",
+          "salary": 52000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_accountant",
+          "salary": 68000,
+          "minYears": 3
+        },
+        {
+          "id": "audit_manager",
+          "salary": 95000,
+          "minYears": 6
+        },
+        {
+          "id": "cfo",
+          "salary": 240000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "teacher",
+      "emoji": "🍎",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "education",
+          "english",
+          "history",
+          "math"
+        ],
+        "minSmarts": 40
+      },
+      "ladder": [
+        {
+          "id": "new_teacher",
+          "salary": 45000,
+          "minYears": 0
+        },
+        {
+          "id": "teacher",
+          "salary": 58000,
+          "minYears": 3
+        },
+        {
+          "id": "department_head",
+          "salary": 72000,
+          "minYears": 7
+        },
+        {
+          "id": "principal",
+          "salary": 105000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "nurse",
+      "emoji": "🩺",
+      "requires": {
+        "education": "grad_nursing",
+        "majors": [
+          "nursing_prep",
+          "biology",
+          "chemistry",
+          "psychology"
+        ],
+        "minSmarts": 50
+      },
+      "ladder": [
+        {
+          "id": "staff_nurse",
+          "salary": 75000,
+          "minYears": 0
+        },
+        {
+          "id": "charge_nurse",
+          "salary": 88000,
+          "minYears": 3
+        },
+        {
+          "id": "nurse_manager",
+          "salary": 105000,
+          "minYears": 6
+        },
+        {
+          "id": "chief_nursing_officer",
+          "salary": 190000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "engineer",
+      "emoji": "🛠️",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "engineering",
+          "physics",
+          "math",
+          "computer_science"
+        ],
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "junior_engineer",
+          "salary": 70000,
+          "minYears": 0
+        },
+        {
+          "id": "engineer",
+          "salary": 92000,
+          "minYears": 3
+        },
+        {
+          "id": "senior_engineer",
+          "salary": 120000,
+          "minYears": 6
+        },
+        {
+          "id": "principal_engineer",
+          "salary": 160000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "emoji": "📣",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "business",
+          "communications",
+          "psychology",
+          "art"
+        ],
+        "minSmarts": 40
+      },
+      "ladder": [
+        {
+          "id": "coordinator",
+          "salary": 48000,
+          "minYears": 0
+        },
+        {
+          "id": "manager",
+          "salary": 72000,
+          "minYears": 3
+        },
+        {
+          "id": "director",
+          "salary": 110000,
+          "minYears": 6
+        },
+        {
+          "id": "cmo",
+          "salary": 230000,
+          "minYears": 11
+        }
+      ]
+    },
+    {
+      "id": "journalist",
+      "emoji": "📰",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "communications",
+          "english",
+          "history",
+          "political_science"
+        ],
+        "minSmarts": 45
+      },
+      "ladder": [
+        {
+          "id": "reporter",
+          "salary": 42000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_reporter",
+          "salary": 62000,
+          "minYears": 4
+        },
+        {
+          "id": "editor",
+          "salary": 85000,
+          "minYears": 8
+        },
+        {
+          "id": "editor_in_chief",
+          "salary": 130000,
+          "minYears": 14
+        }
+      ]
+    },
+    {
+      "id": "architect",
+      "emoji": "📐",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "engineering",
+          "art",
+          "math"
+        ],
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "junior_architect",
+          "salary": 60000,
+          "minYears": 0
+        },
+        {
+          "id": "architect",
+          "salary": 88000,
+          "minYears": 3
+        },
+        {
+          "id": "senior_architect",
+          "salary": 120000,
+          "minYears": 7
+        },
+        {
+          "id": "principal_architect",
+          "salary": 165000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "pilot",
+      "emoji": "🛫",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "engineering",
+          "physics",
+          "math"
+        ],
+        "minSmarts": 50,
+        "minHealth": 70
+      },
+      "ladder": [
+        {
+          "id": "first_officer",
+          "salary": 90000,
+          "minYears": 0
+        },
+        {
+          "id": "captain",
+          "salary": 160000,
+          "minYears": 4
+        },
+        {
+          "id": "check_airman",
+          "salary": 180000,
+          "minYears": 8
+        },
+        {
+          "id": "chief_pilot",
+          "salary": 230000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "scientist",
+      "emoji": "🔬",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "biology",
+          "chemistry",
+          "physics",
+          "math"
+        ],
+        "minSmarts": 60
+      },
+      "ladder": [
+        {
+          "id": "research_assistant",
+          "salary": 52000,
+          "minYears": 0
+        },
+        {
+          "id": "research_scientist",
+          "salary": 78000,
+          "minYears": 3
+        },
+        {
+          "id": "senior_scientist",
+          "salary": 110000,
+          "minYears": 7
+        },
+        {
+          "id": "principal_investigator",
+          "salary": 150000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "graphic_designer",
+      "emoji": "🎨",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "art",
+          "communications",
+          "computer_science"
+        ],
+        "minSmarts": 40
+      },
+      "ladder": [
+        {
+          "id": "junior_designer",
+          "salary": 45000,
+          "minYears": 0
+        },
+        {
+          "id": "graphic_designer",
+          "salary": 60000,
+          "minYears": 2
+        },
+        {
+          "id": "senior_designer",
+          "salary": 85000,
+          "minYears": 5
+        },
+        {
+          "id": "creative_director",
+          "salary": 130000,
+          "minYears": 9
+        }
+      ]
+    },
+    {
+      "id": "social_worker",
+      "emoji": "🤝",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "psychology",
+          "political_science",
+          "education"
+        ],
+        "minSmarts": 40
+      },
+      "ladder": [
+        {
+          "id": "caseworker",
+          "salary": 45000,
+          "minYears": 0
+        },
+        {
+          "id": "social_worker",
+          "salary": 60000,
+          "minYears": 2
+        },
+        {
+          "id": "clinical_social_worker",
+          "salary": 75000,
+          "minYears": 5
+        },
+        {
+          "id": "program_director",
+          "salary": 95000,
+          "minYears": 9
+        }
+      ]
+    },
+    {
+      "id": "doctor",
+      "emoji": "👨‍⚕️",
+      "requires": {
+        "education": "grad_med",
+        "minSmarts": 60
+      },
+      "ladder": [
+        {
+          "id": "resident",
+          "salary": 62000,
+          "minYears": 0
+        },
+        {
+          "id": "physician",
+          "salary": 240000,
+          "minYears": 4
+        },
+        {
+          "id": "specialist",
+          "salary": 320000,
+          "minYears": 8
+        },
+        {
+          "id": "chief_of_medicine",
+          "salary": 390000,
+          "minYears": 14
+        }
+      ]
+    },
+    {
+      "id": "lawyer",
+      "emoji": "⚖️",
+      "requires": {
+        "education": "grad_law",
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "associate",
+          "salary": 180000,
+          "minYears": 0
+        },
+        {
+          "id": "senior_associate",
+          "salary": 230000,
+          "minYears": 3
+        },
+        {
+          "id": "partner",
+          "salary": 350000,
+          "minYears": 7
+        }
+      ]
+    },
+    {
+      "id": "dentist",
+      "emoji": "🦷",
+      "requires": {
+        "education": "grad_dental",
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "associate_dentist",
+          "salary": 120000,
+          "minYears": 0
+        },
+        {
+          "id": "dentist",
+          "salary": 165000,
+          "minYears": 3
+        },
+        {
+          "id": "practice_owner",
+          "salary": 280000,
+          "minYears": 8
+        }
+      ]
+    },
+    {
+      "id": "veterinarian",
+      "emoji": "🐾",
+      "requires": {
+        "education": "grad_vet",
+        "minSmarts": 50
+      },
+      "ladder": [
+        {
+          "id": "associate_vet",
+          "salary": 95000,
+          "minYears": 0
+        },
+        {
+          "id": "veterinarian",
+          "salary": 120000,
+          "minYears": 3
+        },
+        {
+          "id": "senior_vet",
+          "salary": 150000,
+          "minYears": 7
+        },
+        {
+          "id": "clinic_owner",
+          "salary": 220000,
+          "minYears": 12
+        }
+      ]
+    },
+    {
+      "id": "pharmacist",
+      "emoji": "💊",
+      "requires": {
+        "education": "grad_pharm",
+        "minSmarts": 50
+      },
+      "ladder": [
+        {
+          "id": "staff_pharmacist",
+          "salary": 120000,
+          "minYears": 0
+        },
+        {
+          "id": "pharmacist_in_charge",
+          "salary": 135000,
+          "minYears": 4
+        },
+        {
+          "id": "pharmacy_director",
+          "salary": 165000,
+          "minYears": 9
+        }
+      ]
+    },
+    {
+      "id": "executive",
+      "emoji": "👔",
+      "requires": {
+        "education": "grad_business",
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "associate",
+          "salary": 110000,
+          "minYears": 0
+        },
+        {
+          "id": "vice_president",
+          "salary": 180000,
+          "minYears": 5
+        },
+        {
+          "id": "svp",
+          "salary": 260000,
+          "minYears": 9
+        },
+        {
+          "id": "ceo",
+          "salary": 380000,
+          "minYears": 14
+        }
+      ]
+    },
+    {
+      "id": "politician",
+      "emoji": "🗳️",
+      "requires": {
+        "education": "university",
+        "minSmarts": 60
+      },
+      "ladder": [
+        {
+          "id": "city_council",
+          "salary": 45000,
+          "minYears": 0
+        },
+        {
+          "id": "mayor",
+          "salary": 90000,
+          "minYears": 4
+        },
+        {
+          "id": "governor",
+          "salary": 180000,
+          "minYears": 8
+        },
+        {
+          "id": "senator",
+          "salary": 174000,
+          "minYears": 12
+        },
+        {
+          "id": "president",
+          "salary": 400000,
+          "minYears": 16
+        }
+      ]
+    },
+    {
+      "id": "professional_athlete",
+      "emoji": "🏅",
+      "requires": {
+        "education": "none",
+        "minHealth": 80,
+        "minAge": 18
+      },
+      "ladder": [
+        {
+          "id": "rookie",
+          "salary": 60000,
+          "minYears": 0
+        },
+        {
+          "id": "starter",
+          "salary": 350000,
+          "minYears": 2
+        },
+        {
+          "id": "star",
+          "salary": 2000000,
+          "minYears": 5
+        },
+        {
+          "id": "legend",
+          "salary": 5000000,
+          "minYears": 10
+        }
+      ]
+    }
+  ]
+}

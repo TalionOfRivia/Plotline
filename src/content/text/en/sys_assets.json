@@ -1,0 +1,56 @@
+{
+  "houses": {
+    "studio_apartment": "Studio Apartment",
+    "one_bedroom_flat": "One-Bedroom Flat",
+    "two_bedroom_condo": "Two-Bedroom Condo",
+    "townhouse": "Townhouse",
+    "starter_bungalow": "Starter Bungalow",
+    "suburban_family_home": "Suburban Family Home",
+    "craftsman_house": "Craftsman House",
+    "colonial_house": "Colonial House",
+    "lakeside_cottage": "Lakeside Cottage",
+    "modern_villa": "Modern Villa",
+    "hilltop_mansion": "Hilltop Mansion",
+    "beach_mansion": "Beach Mansion",
+    "chateau": "Chateau",
+    "private_island": "Private Island"
+  },
+  "cars": {
+    "used_hatchback": "Used Hatchback",
+    "used_sedan": "Used Sedan",
+    "new_compact": "New Compact",
+    "family_suv": "Family SUV",
+    "pickup_truck": "Pickup Truck",
+    "convertible": "Convertible",
+    "luxury_sedan": "Luxury Sedan",
+    "sports_coupe": "Sports Coupe",
+    "executive_sedan": "Executive Sedan",
+    "luxury_suv": "Luxury SUV",
+    "classic_roadster": "Classic Roadster",
+    "supercar": "Supercar",
+    "exotic_supercar": "Exotic Supercar",
+    "hypercar": "Hypercar"
+  },
+  "pets": {
+    "goldfish": "Goldfish",
+    "hamster": "Hamster",
+    "cat": "Cat",
+    "dog": "Dog",
+    "rabbit": "Rabbit",
+    "parrot": "Parrot",
+    "snake": "Snake",
+    "horse": "Horse",
+    "tortoise": "Tortoise",
+    "pig": "Pig"
+  },
+  "luxury": {
+    "jewelry": "Jewelry",
+    "watch": "Luxury Watch",
+    "boat": "Boat",
+    "jet": "Private Jet",
+    "yacht": "Yacht",
+    "art_collection": "Art Collection",
+    "vineyard": "Vineyard",
+    "sports_team": "Sports Team"
+  }
+}

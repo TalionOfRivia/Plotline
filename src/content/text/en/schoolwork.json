@@ -1,0 +1,781 @@
+{
+  "sc_pop_quiz": {
+    "text": "The teacher announces a pop quiz. You did the reading for roughly one of the three chapters.",
+    "choices": {
+      "guess": "Guess with confidence",
+      "panic": "Visibly panic",
+      "fake_sick": "Fake a stomachache"
+    },
+    "outcomes": {
+      "lucky": "Your confident guessing pays off. You are now suspicious of how easy that was.",
+      "flop": "Confidence did not make the answers correct. The teacher writes 'interesting' next to three of them."
+    }
+  },
+  "sc_cheat_exam": {
+    "text": "The exam is hard. The kid next to you has a clear view of every answer and the posture of someone who studied.",
+    "choices": {
+      "copy": "Copy their answers",
+      "honest": "Do your best alone",
+      "blank": "Leave it half blank"
+    },
+    "outcomes": {
+      "got_away": "You copy flawlessly. Your grade rises and your conscience sends a polite email.",
+      "caught": "The teacher is standing behind you. She says nothing, which is worse, then takes your paper."
+    }
+  },
+  "sc_science_fair": {
+    "text": "The science fair is next week. Your project idea is either brilliant or a baking soda volcano.",
+    "choices": {
+      "ambitious": "Build something ambitious",
+      "volcano": "Do the volcano again",
+      "parent_help": "Let a parent build it"
+    },
+    "outcomes": {
+      "win": "Your project wins a ribbon. You hold it in the car like it's a fragile animal.",
+      "meltdown": "The device smokes, then stops. A judge nods kindly and writes 'effort'."
+    }
+  },
+  "sc_bully_lunch": {
+    "text": "A larger kid has decided your lunch is his lunch. This is the third day running.",
+    "choices": {
+      "stand_up": "Stand up to him",
+      "tell_teacher": "Tell a teacher",
+      "hand_over": "Hand it over again",
+      "avoid": "Eat in the library"
+    },
+    "outcomes": {
+      "respect": "He blinks, shrugs, and leaves. You eat your sandwich shaking, but you eat it.",
+      "bruised": "It does not go well. Your sandwich, however, survives. Small mercies."
+    }
+  },
+  "sc_school_play": {
+    "text": "Auditions are open for the school play. There are many trees available and one lead.",
+    "choices": {
+      "audition": "Audition for the lead",
+      "backstage": "Work backstage",
+      "skip": "Skip it entirely"
+    },
+    "outcomes": {
+      "lead": "You get the lead. Your family attends with a banner and a concerning amount of flowers.",
+      "tree": "You are cast as Tree Number Three. You commit to the role deeply."
+    }
+  },
+  "sc_field_trip": {
+    "text": "The class field trip is to a museum of old machinery. The permission slip needs a signature by tomorrow.",
+    "choices": {
+      "behave": "Be a model student",
+      "wander": "Wander off from the group",
+      "gift_shop": "Spend it all on junk"
+    },
+    "outcomes": {
+      "found": "You find a room nobody else did. It has a giant gear. You consider it yours.",
+      "lost": "You get lost near the gift shop. A guard escorts you back like a minor celebrity."
+    }
+  },
+  "sc_favorite_teacher": {
+    "text": "A teacher takes a real interest in you. They hand you a book and say, 'You might like this.'",
+    "choices": {
+      "read": "Actually read it",
+      "ignore": "Leave it in your bag",
+      "thank": "Thank them sincerely"
+    }
+  },
+  "sc_strict_teacher": {
+    "text": "Your new teacher runs the class like a small, tidy dictatorship. Today's rule concerns pencils.",
+    "choices": {
+      "comply": "Follow every rule",
+      "push_back": "Politely question the rule",
+      "rebel": "Use a pen, defiantly"
+    },
+    "outcomes": {
+      "respect": "She considers it, nods, and amends the rule. You feel like a diplomat.",
+      "detention": "She considers it, nods, and adds your name to a list."
+    }
+  },
+  "sc_homework_dog": {
+    "text": "You didn't do your homework. The classic excuse is right there, waiting.",
+    "choices": {
+      "dog": "Say the dog ate it",
+      "confess": "Admit you forgot",
+      "rush": "Scribble it at recess"
+    },
+    "outcomes": {
+      "bought": "The teacher, who has heard this for years, grants you an extension out of sheer respect.",
+      "denied": "You don't own a dog. The teacher knows this. She has your file."
+    }
+  },
+  "sc_detention_prank": {
+    "text": "Your friends dare you to put a rubber duck in the principal's chair. It seems statistically safe.",
+    "choices": {
+      "do_it": "Place the duck",
+      "decline": "Decline the dare",
+      "snitch": "Warn the principal"
+    },
+    "outcomes": {
+      "legend": "The principal sits, squeaks, and looks directly at nobody. You are a quiet legend.",
+      "suspended": "There are cameras. You are suspended for three days and the duck is confiscated."
+    }
+  },
+  "sc_spelling_bee": {
+    "text": "You've reached the final round of the spelling bee. The word is 'necessary'. It has two rivals inside it.",
+    "choices": {
+      "spell": "Spell it out loud",
+      "bluff": "Ask for the definition twice",
+      "freeze": "Freeze and say nothing"
+    },
+    "outcomes": {
+      "right": "You nail it. The crowd claps. A teacher dabs at her eye with a tissue.",
+      "wrong": "You add an extra 's'. The bell sounds like a verdict."
+    }
+  },
+  "sc_group_project": {
+    "text": "You're assigned a group project with three classmates. One of them is already asleep.",
+    "choices": {
+      "carry": "Do it all yourself",
+      "delegate": "Assign tasks fairly",
+      "slack": "Coast on others' work"
+    },
+    "outcomes": {
+      "works": "Everyone does their part, which is rare enough to deserve a plaque.",
+      "fails": "Two of them 'forgot'. You present alone and sweat politely."
+    }
+  },
+  "sc_final_exams": {
+    "text": "Finals week arrives. Your desk is covered in notes, snacks, and denial.",
+    "choices": {
+      "cram": "Cram all night",
+      "steady": "Review a little daily",
+      "wing": "Wing it entirely"
+    },
+    "outcomes": {
+      "pass": "You pass on caffeine and fear. Your hands shake, but the numbers are good.",
+      "blank": "You fall asleep during the exam. The proctor lets you finish drooling."
+    }
+  },
+  "sc_skip_class": {
+    "text": "It's a sunny day and you're about to be in a math lesson. The back door of the building is unlocked.",
+    "choices": {
+      "skip": "Skip class",
+      "attend": "Go to class anyway",
+      "nap": "Nap in the library"
+    },
+    "outcomes": {
+      "free": "You spend the day at the park. It is an excellent day with no consequences.",
+      "caught": "A teacher spots you by the fountain. Your parents receive a very formal phone call."
+    }
+  },
+  "sc_sports_tryout": {
+    "text": "The school teams are holding tryouts. You have the build of a person who owns many good books.",
+    "choices": {
+      "tryout": "Try out anyway",
+      "manager": "Offer to manage the team",
+      "watch": "Watch from the bleachers"
+    },
+    "outcomes": {
+      "made": "You make the team. Your coach calls you 'scrappy' and means it kindly.",
+      "cut": "You are cut by lunch. You get a free orange slice for your trouble."
+    }
+  },
+  "sc_cafeteria_dare": {
+    "text": "Someone dares you to eat a mystery lunch special in one go. The crowd forms like a flock of gulls.",
+    "choices": {
+      "eat": "Eat it all",
+      "refuse": "Refuse politely"
+    },
+    "outcomes": {
+      "champ": "You finish. The cafeteria erupts. You will taste it for a week.",
+      "sick": "You return it dramatically in the hallway. The nurse suspends you for 'general reasons'."
+    }
+  },
+  "sc_standardized_test": {
+    "text": "The big standardized test is on Saturday. Your future is apparently a bubble sheet.",
+    "choices": {
+      "prep": "Take a prep course",
+      "wing_it": "Sleep and trust fate",
+      "tutor": "Hire a tutor"
+    },
+    "outcomes": {
+      "good": "The test goes surprisingly well. You attribute it to rest and charm.",
+      "bad": "The test goes about as well as you'd expect from a nap."
+    }
+  },
+  "sc_class_clown": {
+    "text": "You have a joke ready that is either legendary or career-ending. The class is quiet. The teacher is turned around.",
+    "choices": {
+      "joke": "Tell the joke",
+      "hold": "Save it for later",
+      "write": "Write it in your notebook"
+    },
+    "outcomes": {
+      "laugh": "The room explodes. You are briefly the funniest person alive.",
+      "silence": "A single cough. The teacher turns around. You assign yourself a grade of F."
+    }
+  },
+  "sc_new_kid": {
+    "text": "A new kid joins your class and sits alone at lunch, holding a lunchbox like a shield.",
+    "choices": {
+      "sit": "Sit with them",
+      "wave": "Wave from a distance",
+      "ignore": "Stay with your group"
+    }
+  },
+  "sc_study_group": {
+    "text": "A friend suggests a study group. It will either be productive or a pizza discussion with textbooks nearby.",
+    "choices": {
+      "join": "Join with real effort",
+      "pizza": "Mostly come for pizza",
+      "alone": "Study alone"
+    }
+  },
+  "un_roommate_mess": {
+    "text": "Your roommate's side of the room has become a geological feature. A bowl of something has achieved sentience.",
+    "choices": {
+      "confront": "Have an honest talk",
+      "clean_self": "Clean it quietly",
+      "move_stuff": "Draw a tape line"
+    },
+    "outcomes": {
+      "clean": "Your roommate apologizes and cleans for an afternoon. The bowl is given a funeral.",
+      "fight": "The talk becomes a fight about a borrowed charger. Both of you sleep poorly."
+    }
+  },
+  "un_all_nighter": {
+    "text": "You have a paper due at nine. It is currently midnight and the paper is a title.",
+    "choices": {
+      "all_nighter": "Pull an all-nighter",
+      "sleep": "Sleep, ask for extension",
+      "energy": "Mainline energy drinks"
+    },
+    "outcomes": {
+      "pass": "You write the paper in a fugue state. It's good. You don't remember writing it.",
+      "flop": "You turn in a paper that ends mid-sentence, which a professor might call a bold choice."
+    }
+  },
+  "un_frat_party": {
+    "text": "A fraternity throws an enormous party. The invitation is a person yelling it at you on the lawn.",
+    "choices": {
+      "go": "Go and dance badly",
+      "study": "Stay in and study",
+      "host": "Host a movie night"
+    },
+    "outcomes": {
+      "fun": "You have a wonderful time and meet three people who will remember you as 'the dancer'.",
+      "rough": "The night ends with a sticky floor, a lost jacket, and a mild existential question."
+    }
+  },
+  "un_midterm": {
+    "text": "Midterms are upon you. The library is full of people whispering their problems to textbooks.",
+    "choices": {
+      "prep": "Prepare methodically",
+      "curve": "Hope for the curve",
+      "review": "Attend the review session"
+    },
+    "outcomes": {
+      "curve": "The class average is so bad that you feel brilliant by comparison.",
+      "no_curve": "The professor does not believe in curves. The grade is perfectly circular."
+    }
+  },
+  "un_student_loan": {
+    "text": "Your loan paperwork arrives. The number at the bottom is large enough to have its own gravity.",
+    "choices": {
+      "accept": "Take the full loan",
+      "partial": "Borrow only what you need",
+      "work": "Work instead of borrowing"
+    }
+  },
+  "un_prof_office_hours": {
+    "text": "A professor invites you to office hours. The sign says 'knock', which feels like both a request and a warning.",
+    "choices": {
+      "go": "Go with real questions",
+      "small_talk": "Discuss the weather",
+      "avoid": "Avoid the building"
+    }
+  },
+  "un_change_major": {
+    "text": "You aren't sure your major is right for you. You aren't sure of much, which is fairly normal at nineteen.",
+    "choices": {
+      "switch": "Switch majors",
+      "stay": "Stay the course",
+      "double": "Add a second major"
+    },
+    "outcomes": {
+      "better": "The new major fits like a good jacket. You wonder why you waited.",
+      "worse": "The new major has extra requirements and a stranger's textbook. You carry on anyway."
+    }
+  },
+  "un_dining_hall": {
+    "text": "The dining hall serves a casserole that may be pasta. Everyone is pretending it's fine.",
+    "choices": {
+      "eat": "Eat it with courage",
+      "cook": "Cook ramen in your room",
+      "order": "Order delivery again"
+    },
+    "outcomes": {
+      "fine": "It was surprisingly edible. You have the aura of a person who took a risk.",
+      "sick": "It was not edible. You get acquainted with the dorm bathroom."
+    }
+  },
+  "un_plagiarism": {
+    "text": "A friend sends you a paper from last year. 'Just change a few words,' he says. The deadline is in three hours.",
+    "choices": {
+      "copy": "Rework it and submit",
+      "write": "Write your own, badly",
+      "extension": "Ask for an extension"
+    },
+    "outcomes": {
+      "pass": "Nobody notices. You feel faintly like a smuggler.",
+      "flagged": "The software flags it in under a minute. The dean's email begins with 'Concerned'."
+    }
+  },
+  "un_thesis": {
+    "text": "Your thesis advisor asks for 'a more compelling thesis'. Your thesis is a very compelling sentence about nothing.",
+    "choices": {
+      "rewrite": "Rewrite the whole thing",
+      "tweak": "Tweak the introduction",
+      "cry": "Thank them, cry quietly"
+    },
+    "outcomes": {
+      "pass": "The advisor approves. You are not sure why, which is common in academia.",
+      "reject": "The advisor suggests you 'start over, but sooner'."
+    }
+  },
+  "un_study_abroad": {
+    "text": "Your school offers a semester abroad. The brochure shows people laughing near a canal.",
+    "choices": {
+      "go": "Go for the semester",
+      "stay": "Stay on campus",
+      "short": "Do a summer program"
+    },
+    "outcomes": {
+      "magic": "You return with a better accent, worse sleep habits, and one perfect memory of bread.",
+      "homesick": "You spend a month homesick and two enjoying it. Overall, still worth it."
+    }
+  },
+  "un_dorm_fire_alarm": {
+    "text": "The fire alarm goes off at 3 a.m. for the fourth time this month. The whole dorm stands outside in pajamas.",
+    "choices": {
+      "shelter": "Hide in a friend's car",
+      "chat": "Chat with the neighbors",
+      "ignore": "Stay in bed"
+    },
+    "outcomes": {
+      "fine": "It was burnt popcorn. You are right and slightly smug.",
+      "fined": "The marshal finds you in bed and writes you a fine."
+    }
+  },
+  "un_part_time_job": {
+    "text": "Your bank account is thin as a lecture handout. A campus job posting offers $12 an hour and free coffee.",
+    "choices": {
+      "take": "Take the job",
+      "tutoring": "Offer to tutor instead",
+      "skip": "Live on noodles"
+    }
+  },
+  "un_dropout_thought": {
+    "text": "You stare at your bank statement, your syllabus, and your reflection. A voice suggests dropping out.",
+    "choices": {
+      "drop": "Drop out",
+      "push": "Push through",
+      "therapy": "Talk to a counselor"
+    }
+  },
+  "un_honors_offer": {
+    "text": "The honors program offers you a spot. It comes with extra work, extra pride, and extra sleeplessness.",
+    "choices": {
+      "accept": "Join the honors program",
+      "decline": "Politely decline"
+    }
+  },
+  "wk_bad_boss": {
+    "text": "Your boss sends a three-line email that begins 'Per my last message' and ends in dread.",
+    "choices": {
+      "confront": "Confront them calmly",
+      "grind": "Keep your head down",
+      "vent": "Vent to a coworker"
+    },
+    "outcomes": {
+      "respect": "Your boss, caught off guard, softens. A rare sunbeam.",
+      "grudge": "Your boss suddenly takes an interest in your every move. You feel observed."
+    }
+  },
+  "wk_promotion_offer": {
+    "text": "Your manager calls you in. A promotion is on the table, with more pay and slightly more fluorescent lighting.",
+    "choices": {
+      "accept": "Accept eagerly",
+      "negotiate": "Negotiate the offer",
+      "decline": "Decline and stay put"
+    },
+    "outcomes": {
+      "win": "You negotiate well. The raise is bigger and the title includes the word 'Senior'.",
+      "offended": "Your manager sighs and offers a tiny raise. The promotion is mysteriously 'under review'."
+    }
+  },
+  "wk_office_romance": {
+    "text": "A coworker keeps stopping by your desk with questions that feel suspiciously like not-work.",
+    "choices": {
+      "date": "Ask them out",
+      "friend": "Keep it friendly",
+      "hr": "Check the HR policy"
+    },
+    "outcomes": {
+      "sweet": "They say yes. You share a quiet lunch and a slightly forbidden smile.",
+      "awkward": "They say no, politely. You both avoid the printer for a month."
+    }
+  },
+  "wk_layoff_rumor": {
+    "text": "Rumors of layoffs spread by the break room. Your name is mentioned, then lowered, then mentioned again.",
+    "choices": {
+      "work_harder": "Work twice as hard",
+      "job_hunt": "Start job hunting",
+      "ignore": "Pretend it isn't happening"
+    },
+    "outcomes": {
+      "safe": "You prove yourself indispensable, or at least visible. The list passes you by.",
+      "fired": "The meeting is short. A box is provided. Your plant is returned to you."
+    }
+  },
+  "wk_overtime": {
+    "text": "A project is behind schedule. Your manager asks, with practiced warmth, for a few extra hours.",
+    "choices": {
+      "stay": "Stay late all week",
+      "negotiate": "Ask for time off back",
+      "refuse": "Politely refuse"
+    },
+    "outcomes": {
+      "deal": "Your manager agrees, nobly. You get a Friday afternoon back.",
+      "no_deal": "Your manager says 'we'll see.' Nobody sees."
+    }
+  },
+  "wk_coworker_drama": {
+    "text": "Two coworkers aren't speaking. Each has asked you to carry messages with the gravity of diplomats.",
+    "choices": {
+      "mediate": "Try to mediate",
+      "gossip": "Enjoy the gossip",
+      "stay_out": "Stay out of it"
+    },
+    "outcomes": {
+      "peace": "They reconcile after a tense, very polite coffee. You are briefly the office hero.",
+      "worse": "Both now blame you. You are a diplomat with no embassy."
+    }
+  },
+  "wk_union_vote": {
+    "text": "A union drive is underway. Posters appear in the break room. So do management's carefully worded emails.",
+    "choices": {
+      "join": "Vote to unionize",
+      "oppose": "Vote against it",
+      "abstain": "Stay out of it"
+    }
+  },
+  "wk_work_injury": {
+    "text": "You tweak your back lifting a box that was labeled 'light'. It was not light.",
+    "choices": {
+      "claim": "File a workers' claim",
+      "tough": "Tough it out",
+      "rest": "Take a few days off"
+    },
+    "outcomes": {
+      "fine": "You walk it off. Your back writes a strongly worded letter for later.",
+      "worse": "It gets worse. A week in a heating-pad pose later, you reconsider heroism."
+    }
+  },
+  "wk_whistleblow": {
+    "text": "You notice the company is quietly dumping something it shouldn't, in a place it shouldn't. Nobody else seems to see it.",
+    "choices": {
+      "report": "Report it to authorities",
+      "quiet": "Keep quiet",
+      "tell_boss": "Tell your boss privately"
+    },
+    "outcomes": {
+      "hero": "Investigators act. You are quietly rewarded and loudly shunned.",
+      "retaliation": "You are fired 'for performance reasons' three days later. The timing is a coincidence, they say."
+    }
+  },
+  "wk_fudge_numbers": {
+    "text": "Your manager asks you to 'smooth out' a quarterly report so the numbers look better than they are.",
+    "choices": {
+      "fudge": "Fudge the numbers",
+      "refuse": "Refuse politely",
+      "report": "Report to compliance"
+    },
+    "outcomes": {
+      "rewarded": "The numbers look lovely. Nobody checks. You check your own conscience and it shrugs.",
+      "caught": "An audit finds the discrepancy. You are fired with the polite speed of a trapdoor."
+    }
+  },
+  "wk_microwave_fish": {
+    "text": "Someone microwaves fish in the office kitchen. The smell has taken hostages.",
+    "choices": {
+      "note": "Leave an anonymous note",
+      "open_window": "Open every window",
+      "eat_out": "Eat lunch outside"
+    }
+  },
+  "wk_team_building": {
+    "text": "Mandatory team-building: a trust fall, a trust sandwich, and a facilitator named Kyle who believes in all of it.",
+    "choices": {
+      "engage": "Throw yourself into it",
+      "fake": "Smile and endure",
+      "skip": "Fake an emergency"
+    }
+  },
+  "wk_stolen_lunch": {
+    "text": "Your lunch has vanished from the office fridge again. The label said 'Not for you'.",
+    "choices": {
+      "note": "Leave a passive-aggressive note",
+      "trap": "Prepare a spicy decoy",
+      "buy": "Buy lunch from now on"
+    },
+    "outcomes": {
+      "gotcha": "Your boss turns out to be the culprit and visibly sweats. You say nothing, delighted.",
+      "backfire": "The thief enjoys the spice. Your decoy was a gift."
+    }
+  },
+  "wk_raise_ask": {
+    "text": "It's been a while since your last raise. You rehearse a speech in the bathroom mirror.",
+    "choices": {
+      "ask": "Ask for a raise",
+      "wait": "Wait for review season",
+      "leverage": "Mention a rival offer"
+    },
+    "outcomes": {
+      "yes": "Your boss agrees. You say thank you six times and then leave before it changes.",
+      "no": "Your boss says the budget is 'tight' and then books a trip."
+    }
+  },
+  "wk_headhunter": {
+    "text": "A recruiter emails you about 'an exciting opportunity'. The email has three emoji and no actual job title.",
+    "choices": {
+      "interview": "Take the interview",
+      "ignore": "Ignore the email",
+      "tell_boss": "Mention it to your boss"
+    },
+    "outcomes": {
+      "offer": "They offer much more money and a slightly unhinged mission statement. You take a day to think.",
+      "nothing": "The interview goes fine and nothing happens. A classic."
+    }
+  },
+  "wk_credit_stealer": {
+    "text": "A coworker presents your idea in a meeting as their own, with a flourish you'd call 'artistic'.",
+    "choices": {
+      "speak_up": "Speak up in the meeting",
+      "private": "Talk to them privately",
+      "let_go": "Let it go"
+    },
+    "outcomes": {
+      "vindicated": "You gently reclaim your idea. Everyone nods and several people take notes.",
+      "awkward": "The moment turns awkward and your coworker plays wounded. You lose a round."
+    }
+  },
+  "wk_late_again": {
+    "text": "You wake up, look at the clock, and say a word you don't repeat at work. You're very late.",
+    "choices": {
+      "rush": "Rush in and apologize",
+      "excuse": "Blame the traffic",
+      "sick_day": "Call in sick"
+    },
+    "outcomes": {
+      "believed": "Your boss nods. Traffic is a universal truth.",
+      "called_out": "Your boss saw you in the parking lot ten minutes earlier."
+    }
+  },
+  "wk_work_party": {
+    "text": "The holiday party features an open bar, a mediocre playlist, and your manager attempting a dance.",
+    "choices": {
+      "mingle": "Mingle responsibly",
+      "overdo": "Go a little overboard",
+      "leave_early": "Leave after one drink"
+    },
+    "outcomes": {
+      "legend": "You become an office legend and nobody mentions it afterward.",
+      "regret": "You tell your boss exactly what you think of the stapler policy."
+    }
+  },
+  "wk_new_hire": {
+    "text": "A new hire joins your team and stares at the coffee machine as if it's a puzzle.",
+    "choices": {
+      "mentor": "Show them the ropes",
+      "ignore": "Let them figure it out",
+      "prank": "Say the elevator is haunted"
+    }
+  },
+  "wk_burnout": {
+    "text": "You catch yourself crying slightly at a spreadsheet. This feels like information.",
+    "choices": {
+      "time_off": "Take real time off",
+      "push_on": "Push through it",
+      "therapy": "Find a therapist"
+    },
+    "outcomes": {
+      "fine": "The feeling passes. You wouldn't call it healed, but it moved.",
+      "crash": "You crash hard at your desk. A coworker brings you tea and says nothing, thankfully."
+    }
+  },
+  "wk_presentation": {
+    "text": "You're asked to give a presentation to executives. The slides are ready. Your stomach is not.",
+    "choices": {
+      "rehearse": "Rehearse thoroughly",
+      "wing": "Wing it with charm",
+      "delegate": "Hand it to a colleague"
+    },
+    "outcomes": {
+      "shine": "You deliver it like a seasoned actor. Someone applauds, which is not allowed.",
+      "flop": "A slide shows the wrong chart. You say 'as you can see' to a blank screen."
+    }
+  },
+  "wk_reply_all": {
+    "text": "You hit 'Reply All' with a message about the CEO's shoes. It was meant for one person.",
+    "choices": {
+      "recall": "Try to recall the email",
+      "own_it": "Send a charming apology",
+      "hide": "Pretend it never happened"
+    },
+    "outcomes": {
+      "saved": "The recall works. Mostly. Several people mention it kindly for years.",
+      "too_late": "The CEO answers three minutes later: 'They're comfortable.' You think about moving countries."
+    }
+  },
+  "wk_remote_day": {
+    "text": "You're working from home. Your pajamas hold a meeting with your dignity.",
+    "choices": {
+      "productive": "Dress and focus",
+      "pajamas": "Stay in pajamas",
+      "nap": "Nap between meetings"
+    },
+    "outcomes": {
+      "rested": "The nap is perfect. Your afternoon output surprises everyone.",
+      "missed": "You wake up forty minutes into a call about you."
+    }
+  },
+  "wk_client_nightmare": {
+    "text": "A client calls with seventeen urgent requests, three contradictory, one invented.",
+    "choices": {
+      "accommodate": "Do everything they ask",
+      "boundaries": "Set clear boundaries",
+      "pass": "Pass them to a colleague"
+    },
+    "outcomes": {
+      "respected": "The client respects clarity, or at least pretends to. You've found a loophole in sanity.",
+      "dropped": "The client escalates to your boss. You look briefly like a villain in an email."
+    }
+  },
+  "wk_secret_santa": {
+    "text": "Secret Santa. You drew the person who is allergic to everything and complains about it.",
+    "choices": {
+      "thoughtful": "Buy something thoughtful",
+      "generic": "Buy a generic mug",
+      "joke": "Buy a joke gift"
+    }
+  },
+  "wk_sick_day": {
+    "text": "You wake up feeling decidedly gloomy. The inbox is full. Your lungs have opinions.",
+    "choices": {
+      "rest": "Stay home and rest",
+      "go_in": "Drag yourself in",
+      "remote": "Work from bed"
+    },
+    "outcomes": {
+      "fine": "You're pale and productive. A coworker leaves soup on your desk anonymously.",
+      "worse": "You spread it to half the office. They remember."
+    }
+  },
+  "wk_mentor": {
+    "text": "A senior colleague offers to mentor you. They mention 'brown-bag lunches' with an unsettling enthusiasm.",
+    "choices": {
+      "accept": "Accept eagerly",
+      "polite": "Stay casual about it",
+      "decline": "Decline and go alone"
+    }
+  },
+  "wk_expense_report": {
+    "text": "You find a $40 dinner receipt that doesn't belong to any work event. It would fit nicely into your expense report.",
+    "choices": {
+      "inflate": "Add it quietly",
+      "honest": "File it honestly",
+      "toss": "Toss the receipt"
+    },
+    "outcomes": {
+      "slip": "Nobody notices. You sleep fine and then don't.",
+      "audit": "An audit spots it. You get a stern email with 'integrity' in it."
+    }
+  },
+  "wk_reorg": {
+    "text": "A reorganization is announced. A new chart replaces the old one. Your boxes have moved.",
+    "choices": {
+      "adapt": "Adapt quickly",
+      "resist": "Complain loudly",
+      "transfer": "Apply for a transfer"
+    },
+    "outcomes": {
+      "new_team": "You land on a team that actually likes meetings with agendas. Bliss.",
+      "stuck": "The transfer is declined, but they like your initiative. Somehow that's the worst news."
+    }
+  },
+  "wk_performance_review": {
+    "text": "Your annual performance review arrives. Your manager uses the phrase 'room to grow' with great confidence.",
+    "choices": {
+      "listen": "Listen and take notes",
+      "argue": "Argue your ratings",
+      "ask_raise": "Ask about a raise"
+    },
+    "outcomes": {
+      "adjust": "Your manager revises your score upward and avoids eye contact.",
+      "no_change": "Your manager notes your defensiveness as a development area."
+    }
+  },
+  "wk_side_hustle": {
+    "text": "A friend proposes a side hustle selling hand-painted rocks online. It's weird. It might work.",
+    "choices": {
+      "try": "Give it a shot",
+      "pass": "Pass on it",
+      "laugh": "Laugh and pour a drink"
+    },
+    "outcomes": {
+      "sells": "The rocks sell. A man in another state buys forty. You don't ask.",
+      "flop": "You now own about two hundred painted rocks."
+    }
+  },
+  "wk_gossip": {
+    "text": "You overhear something juicy about a manager's weekend. It involves a tuba. You should probably not repeat it.",
+    "choices": {
+      "share": "Tell one friend",
+      "keep": "Keep it to yourself",
+      "ask": "Ask about the tuba"
+    },
+    "outcomes": {
+      "spreads": "By noon the entire building knows about the tuba. The manager glares at you, correctly.",
+      "quiet": "Miraculously, it stays between you two. You will treasure it forever."
+    }
+  },
+  "wk_deadline": {
+    "text": "The deadline is tomorrow. The project is a cathedral of loose ends.",
+    "choices": {
+      "crunch": "Crunch overnight",
+      "extension": "Ask for an extension",
+      "cut_scope": "Cut scope and deliver"
+    },
+    "outcomes": {
+      "delivered": "You deliver at dawn, wrinkled and victorious. Your boss calls it 'good hustle'.",
+      "buggy": "You deliver at dawn. Three people notice the mistakes by nine."
+    }
+  },
+  "wk_inventory_theft": {
+    "text": "You see a coworker slipping a box of supplies into their bag. They notice you notice.",
+    "choices": {
+      "report": "Report them",
+      "confront": "Talk to them privately",
+      "look_away": "Look away"
+    },
+    "outcomes": {
+      "handled": "Management quietly handles it. The coworker leaves. No one thanks you, which is fair.",
+      "backlash": "Colleagues call you a snitch. You wear the title and a faint sense of rightness."
+    }
+  },
+  "wk_fire_drill": {
+    "text": "The fire drill sounds mid-meeting. Everyone files out slowly, clutching laptops like newborns.",
+    "choices": {
+      "follow": "Follow the procedure",
+      "snacks": "Grab the snack drawer",
+      "finish": "Finish your email outside"
+    }
+  }
+}

@@ -27,6 +27,8 @@ const KIND_STYLE: Record<DiaryEntry['kind'], string> = {
   info: 'opacity-80',
   event: '',
   death: 'font-bold text-health mt-3',
+  good: 'text-emerald-700',
+  bad: 'text-red-700',
 }
 
 export function Diary({ entries }: { entries: DiaryEntry[]; people: Person[] }) {

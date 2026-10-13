@@ -1,0 +1,29 @@
+{
+  "majors": {
+    "computer_science": "Computer Science",
+    "engineering": "Engineering",
+    "math": "Mathematics",
+    "biology": "Biology",
+    "chemistry": "Chemistry",
+    "physics": "Physics",
+    "nursing_prep": "Nursing Prep",
+    "business": "Business",
+    "economics": "Economics",
+    "psychology": "Psychology",
+    "english": "English",
+    "history": "History",
+    "political_science": "Political Science",
+    "art": "Art",
+    "education": "Education",
+    "communications": "Communications"
+  },
+  "gradSchools": {
+    "grad_law": "Law School",
+    "grad_med": "Medical School",
+    "grad_dental": "Dental School",
+    "grad_vet": "Veterinary School",
+    "grad_pharm": "Pharmacy School",
+    "grad_business": "Business School",
+    "grad_nursing": "Nursing School"
+  }
+}

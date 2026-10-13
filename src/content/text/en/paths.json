@@ -1,0 +1,740 @@
+{
+ "mf_offer": {
+  "text": "A man in a very good coat buys your coffee and mentions that his family is hiring. The benefits are excellent and the exit interview is not.",
+  "choices": {
+   "accept": "Accept the offer",
+   "decline": "Politely decline",
+   "negotiate": "Negotiate terms"
+  },
+  "outcomes": {
+   "in": "He admires the nerve. You are in, with a signing envelope.",
+   "out": "He admires the nerve and stops returning your calls. Probably for the best."
+  }
+ },
+ "mf_first_collection": {
+  "text": "Your first assignment is to collect an envelope from a dry cleaner. The owner is sweating through three shirts at once.",
+  "choices": {
+   "polite": "Collect it politely",
+   "rough": "Lean on him hard",
+   "pay": "Cover it yourself"
+  }
+ },
+ "mf_shop_owner": {
+  "text": "A baker begs for one more month. His daughter is behind the counter, pretending not to listen.",
+  "choices": {
+   "extend": "Grant the extension",
+   "refuse": "Refuse the request",
+   "bluff": "Tell the boss he paid"
+  },
+  "outcomes": {
+   "buy": "The boss never checks. The baker names a pastry after you.",
+   "caught": "The boss checks. You pay the difference, in several ways."
+  }
+ },
+ "mf_sitdown": {
+  "text": "The boss calls a sit-down at the back of a restaurant. Nobody has ordered, which is the worrying part.",
+  "choices": {
+   "silent": "Say nothing",
+   "speak": "Speak your mind",
+   "propose": "Pitch a new racket"
+  },
+  "outcomes": {
+   "liked": "The table likes the idea. Someone else gets the credit and you get the money.",
+   "laughed": "The table laughs for exactly one second too long."
+  }
+ },
+ "mf_betrayal": {
+  "text": "A friend in the crew admits he has been skimming. He asks you not to mention it, then asks again.",
+  "choices": {
+   "report": "Report him",
+   "cover": "Cover for him",
+   "confront": "Confront him quietly"
+  },
+  "outcomes": {
+   "repays": "He repays everything with interest and a sincere hug.",
+   "flees": "He disappears overnight. So does a suspicious amount of your cash."
+  }
+ },
+ "mf_hit_order": {
+  "text": "The boss slides a photo across the table. It is a man you share a barbershop with, and nobody says what is expected, which makes it louder.",
+  "choices": {
+   "refuse": "Refuse the order",
+   "comply": "Take the job",
+   "stall": "Stall for time"
+  },
+  "outcomes": {
+   "tip": "You warn the man to move to another state. He moves to another country.",
+   "found": "Someone else finishes the job and notes your hesitation."
+  }
+ },
+ "mf_feds_deal": {
+  "text": "Two agents in cheap suits find you at a bus stop. They offer a deal: testify, disappear, live. They leave a card and a very patient silence.",
+  "choices": {
+   "inform": "Take the deal",
+   "refuse": "Say nothing",
+   "double": "Play both sides"
+  },
+  "outcomes": {
+   "works": "You feed both parties useful lies. For now.",
+   "fails": "Both parties learn about the other. Neither sends flowers."
+  }
+ },
+ "mf_promotion": {
+  "text": "The captain taps your shoulder after dinner. There is an opening, a ring to kiss, and some paperwork nobody will write down.",
+  "choices": {
+   "accept": "Accept the promotion",
+   "pass": "Stay a soldier"
+  }
+ },
+ "mf_wedding": {
+  "text": "A made man's daughter is getting married and you are on the guest list, which is a polite word for the security detail.",
+  "choices": {
+   "dance": "Dance and behave",
+   "work": "Work the room",
+   "toast": "Give the toast"
+  },
+  "outcomes": {
+   "great": "The room cries. Even the groom's uncle with the shotgun hobby.",
+   "bad": "You say 'sleeps with the fishes' about the cake. Awkward."
+  }
+ },
+ "mf_rival_crew": {
+  "text": "A rival crew has been using your corner for business. The boss wants a message sent that is firm and legally boring.",
+  "choices": {
+   "talk": "Arrange a meeting",
+   "prank": "Slash their delivery tires",
+   "escalate": "Escalate things"
+  },
+  "outcomes": {
+   "win": "They back off. The cost is a broken window and a long month.",
+   "lose": "They answer in kind. You wake up with stitches and a lesson."
+  }
+ },
+ "mf_skim": {
+  "text": "The count room is unsupervised for ten minutes. The cash is right there and the arithmetic is extremely tempting.",
+  "choices": {
+   "honest": "Count it honestly",
+   "skim": "Skim a little"
+  },
+  "outcomes": {
+   "clean": "Nobody notices. You buy a watch you cannot wear in public.",
+   "caught": "They notice. Your fingers are spared, your reputation is not."
+  }
+ },
+ "mf_capo_dinner": {
+  "text": "The captain hosts Sunday dinner. His mother asks you three questions, each one an interrogation with meatballs.",
+  "choices": {
+   "praise": "Praise the sauce",
+   "honest": "Answer honestly",
+   "dodge": "Change the subject"
+  }
+ },
+ "mf_boss_tribute": {
+  "text": "Envelopes arrive every Friday now. Everyone is very respectful and very frightened, and you suspect those are related.",
+  "choices": {
+   "fair": "Take only a fair cut",
+   "greedy": "Raise the tribute",
+   "legit": "Invest in a legit front"
+  },
+  "outcomes": {
+   "good": "The pizza chain does well. Even the laundering is cheerful.",
+   "bad": "The front gets audited. So do you."
+  }
+ },
+ "mf_witness": {
+  "text": "A kid saw something at the wrong dock at the wrong hour. The crew wants a decision before breakfast.",
+  "choices": {
+   "protect": "Protect the kid",
+   "scare": "Scare him silent",
+   "move": "Quietly relocate his family"
+  },
+  "outcomes": {
+   "safe": "They leave by dawn and never ask why. You sleep better.",
+   "found": "Someone notices the van. Your name moves up a list you wanted off."
+  }
+ },
+ "mf_retire": {
+  "text": "Your back hurts and your phone rings less. You consider the strange idea of a quiet life, in a quiet town, with quiet neighbors.",
+  "choices": {
+   "stay": "Stay in the family",
+   "leave": "Ask to leave"
+  },
+  "outcomes": {
+   "blessed": "They give a nod and a ham. You are free.",
+   "refused": "They tell you there is no leaving. A cake is mentioned."
+  }
+ },
+ "bz_investor_pitch": {
+  "text": "A venture investor offers a seven-figure check and a board seat. The term sheet has more clauses than your product has features.",
+  "choices": {
+   "accept": "Take the money",
+   "decline": "Stay independent",
+   "counter": "Counter his terms"
+  },
+  "outcomes": {
+   "win": "He caves on everything but the beanbag chairs.",
+   "walk": "He walks. The beanbags remain unpaid."
+  }
+ },
+ "bz_cfo_embezzle": {
+  "text": "Your CFO has been moving money to a company called 'Totally Real LLC'. His out-of-office reply is now just a boat emoji.",
+  "choices": {
+   "police": "Call the police",
+   "quiet": "Fire him quietly",
+   "hunt": "Hunt him down yourself"
+  },
+  "outcomes": {
+   "recover": "You recover most of it, plus an unregistered boat.",
+   "lose": "He is in a country with no extradition and a great cheese."
+  }
+ },
+ "bz_viral_product": {
+  "text": "A random video makes your product famous overnight. Orders are crashing the servers, the warehouse, and your sense of calm.",
+  "choices": {
+   "scale": "Scale like crazy",
+   "steady": "Keep quality steady",
+   "merch": "Slap on merchandise"
+  },
+  "outcomes": {
+   "hit": "The hoodie sells better than the product. Do not examine this.",
+   "flop": "The hoodie is a brief, soft failure."
+  }
+ },
+ "bz_recall": {
+  "text": "A batch of your product is overheating in a small number of kitchens. Legal says the word 'recall'. Marketing says anything else.",
+  "choices": {
+   "recall": "Recall everything",
+   "hide": "Wait and hope",
+   "patch": "Issue a quiet patch"
+  },
+  "outcomes": {
+   "works": "The patch works. Nobody ever speaks of it again.",
+   "burn": "The news finds out. The headline is not flattering."
+  }
+ },
+ "bz_union": {
+  "text": "Your employees want to unionize. The slogans are catchy and the demands are mostly about chairs.",
+  "choices": {
+   "accept": "Welcome the union",
+   "fight": "Fight it",
+   "negotiate": "Negotiate directly"
+  },
+  "outcomes": {
+   "deal": "Everyone gets better chairs. Productivity oddly improves.",
+   "strike": "A short strike. A very long cold coffee."
+  }
+ },
+ "bz_ipo_offer": {
+  "text": "Bankers in matching vests propose taking your company public. They use the word 'unlock' eleven times in one slide.",
+  "choices": {
+   "ipo": "Go public",
+   "private": "Stay private",
+   "roadshow": "Do the roadshow first"
+  },
+  "outcomes": {
+   "hot": "The market loves you. Your face is briefly on a banner.",
+   "cold": "The market shrugs and so do you."
+  }
+ },
+ "bz_bankruptcy": {
+  "text": "Cash runs short before payroll. The spreadsheet has a cell highlighted red, and then a second one, and then a column.",
+  "choices": {
+   "layoffs": "Lay off a third",
+   "loan": "Take a high-interest loan",
+   "gamble": "Bet on one big client"
+  },
+  "outcomes": {
+   "win": "The client signs. You exhale for the first time in a month.",
+   "lose": "The client ghosts you. The lights go off in order."
+  }
+ },
+ "bz_rival_poach": {
+  "text": "A rival offers your best engineer double her salary. She mentions it to you before replying, as a courtesy and a threat.",
+  "choices": {
+   "match": "Match the offer",
+   "let_go": "Let her go",
+   "equity": "Offer equity instead"
+  },
+  "outcomes": {
+   "stays": "She stays and she is very, very happy about the cap table.",
+   "leaves": "She leaves and takes the cat mug."
+  }
+ },
+ "bz_audit": {
+  "text": "The tax authorities request a lengthy meeting about 'certain expenses'. Your accountant develops a new nervous cough.",
+  "choices": {
+   "honest": "Open the books",
+   "creative": "Get creative",
+   "negotiate": "Negotiate a settlement"
+  },
+  "outcomes": {
+   "fine": "A modest fine and a firm handshake.",
+   "heavy": "A heavy fine and a firm look."
+  }
+ },
+ "bz_acquisition": {
+  "text": "A giant corporation sends a bouquet and an acquisition offer. The bouquet is nicer than the offer.",
+  "choices": {
+   "sell": "Sell the company",
+   "refuse": "Refuse politely",
+   "bid": "Start a bidding war"
+  },
+  "outcomes": {
+   "war": "Two giants fight over you. You do the spreadsheets in a hot tub.",
+   "none": "Both quietly lose interest."
+  }
+ },
+ "bz_scandal": {
+  "text": "A leaked memo shows your company dumped waste in a river whose fish are now unionizing. The board wants a statement.",
+  "choices": {
+   "apologize": "Apologize and clean up",
+   "deny": "Deny everything",
+   "blame": "Blame an intern"
+  },
+  "outcomes": {
+   "works": "The intern is promoted to an unpaid advisory role. The press moves on.",
+   "fails": "The intern speaks to the press. Beautifully."
+  }
+ },
+ "bz_supply_crisis": {
+  "text": "A key supplier folds. Your shelves are empty and your customers are polite in the way that precedes leaving.",
+  "choices": {
+   "premium": "Pay a premium elsewhere",
+   "wait": "Wait it out",
+   "bet": "Build your own supply chain"
+  },
+  "outcomes": {
+   "good": "Eighteen months later you control your own destiny and some forklifts.",
+   "bad": "Eighteen months later you control a warehouse of regret."
+  }
+ },
+ "bz_pivot": {
+  "text": "Your product is not selling, but a side feature is. An advisor suggests pivoting with the confidence of someone who will not be present.",
+  "choices": {
+   "pivot": "Pivot hard",
+   "stay": "Stay the course",
+   "both": "Try both at once"
+  },
+  "outcomes": {
+   "great": "Both lines grow. The whiteboard is full of arrows.",
+   "mess": "Neither line grows. The whiteboard is full of other arrows."
+  }
+ },
+ "bz_patent_suit": {
+  "text": "A competitor claims you copied their patent. Your lawyer describes the case as 'colorful' in an unhelpful voice.",
+  "choices": {
+   "settle": "Settle quickly",
+   "fight": "Fight in court"
+  },
+  "outcomes": {
+   "win": "The judge rules for you and then for lunch.",
+   "lose": "The judge rules for them and also for lunch."
+  }
+ },
+ "sp_knee_injury": {
+  "text": "Mid-play, your knee makes a sound like a snapped pencil. The crowd goes quiet, then gives you a mournful, generous ovation.",
+  "choices": {
+   "surgery": "Get surgery",
+   "push": "Play through it",
+   "rest": "Rest and rehab"
+  },
+  "outcomes": {
+   "full": "Weeks of dull rehab restore you almost entirely.",
+   "partial": "The knee heals, but not the way it used to."
+  }
+ },
+ "sp_sprain": {
+  "text": "You roll your ankle in warm-ups. The team doctor calls it 'minor' in the tone of a man selling you a second opinion.",
+  "choices": {
+   "tape": "Tape it and play",
+   "sit": "Sit out a week",
+   "ice": "Ice and hope"
+  },
+  "outcomes": {
+   "fine": "It heals quickly. You decline to thank the ice.",
+   "worse": "It gets worse. The ice remains smug."
+  }
+ },
+ "sp_trade_rumor": {
+  "text": "Reporters whisper you are about to be traded. You hear this while standing in line at a bakery, which somehow stings more.",
+  "choices": {
+   "ask": "Ask the front office",
+   "ignore": "Ignore the noise",
+   "agent": "Have your agent push"
+  },
+  "outcomes": {
+   "stay": "They keep you and double your locker space.",
+   "traded": "Traded to a city with excellent soup and a weaker team."
+  }
+ },
+ "sp_doping_temptation": {
+  "text": "A trainer offers a 'recovery supplement' with no label. He swears it is mostly vitamins and entirely undetectable.",
+  "choices": {
+   "refuse": "Refuse and report him",
+   "take": "Take it"
+  },
+  "outcomes": {
+   "clean": "You feel unstoppable and the tests agree. For now.",
+   "caught": "The test catches it. The lab technician looks sorry for you."
+  }
+ },
+ "sp_championship": {
+  "text": "It is the championship game, tied, final seconds. Eighty thousand people are holding their breath and some are holding their nachos.",
+  "choices": {
+   "team": "Pass to a teammate",
+   "shot": "Take the winning shot"
+  },
+  "outcomes": {
+   "win": "The ball goes in. The stadium erupts. You do a very modest wave.",
+   "miss": "The ball hits the rim, thinks about it, and leaves."
+  }
+ },
+ "sp_retirement_pressure": {
+  "text": "The coach says 'legacy' a lot. The team physician says 'longevity'. Your own body says nothing and just sighs.",
+  "choices": {
+   "retire": "Retire gracefully",
+   "continue": "One more season",
+   "comeback": "Chase one last title"
+  },
+  "outcomes": {
+   "title": "You win it, quietly the best chapter of your career.",
+   "flop": "You get benched in the second half and the cameras notice."
+  }
+ },
+ "sp_contract": {
+  "text": "Your contract expires. Three teams call, each offering more money and a worse mascot.",
+  "choices": {
+   "loyal": "Re-sign with your team",
+   "highest": "Take the biggest bid",
+   "hold": "Hold out for more"
+  },
+  "outcomes": {
+   "win": "They cave. You win a very public parade of money.",
+   "lose": "They sign someone else and you sit."
+  }
+ },
+ "sp_endorsement": {
+  "text": "A drink company offers you an endorsement. You must hold the bottle with the label out and smile like you love it.",
+  "choices": {
+   "accept": "Sign the deal",
+   "refuse": "Decline politely",
+   "negotiate": "Ask for more"
+  },
+  "outcomes": {
+   "yes": "They agree. You also receive a lifetime supply of the drink.",
+   "no": "They pick a kicker instead."
+  }
+ },
+ "sp_fan_incident": {
+  "text": "A fan tackles you for a selfie after the game. Security reacts like it is a heist film.",
+  "choices": {
+   "selfie": "Take the selfie",
+   "security": "Call security",
+   "ignore": "Walk away"
+  },
+  "outcomes": {
+   "clip": "Someone films it. You look dignified and slightly tragic.",
+   "viral": "The clip goes viral. You look ruder than intended."
+  }
+ },
+ "sp_coach_clash": {
+  "text": "Your coach benches you without explanation. He then explains it for forty minutes using a whiteboard and a sports metaphor.",
+  "choices": {
+   "accept": "Accept the decision",
+   "complain": "Complain to the press",
+   "prove": "Prove him wrong"
+  },
+  "outcomes": {
+   "prove": "You score twice. He pretends he planned it.",
+   "flop": "You trip over a cone. The cone gets a mention."
+  }
+ },
+ "sp_comeback": {
+  "text": "After a long layoff, the team offers a comeback tryout. Your muscles file a formal complaint.",
+  "choices": {
+   "decline": "Take the pundit job",
+   "try": "Try out"
+  },
+  "outcomes": {
+   "make": "You make the roster, sweating like a person in a sauna.",
+   "cut": "You are cut after an elegant, awkward stumble."
+  }
+ },
+ "sp_rival": {
+  "text": "A younger rival keeps outscoring you and says nice things about you in interviews, which is the worst part.",
+  "choices": {
+   "train": "Train harder",
+   "trashtalk": "Trash talk him",
+   "duel": "Challenge him head to head"
+  },
+  "outcomes": {
+   "win": "You win by a nose. The nose is somehow in the highlight reel.",
+   "lose": "You lose and the press prints a haiku about it."
+  }
+ },
+ "as_selection": {
+  "text": "A spokesperson announces the program has ten thousand applicants and room for a dozen. Your folder is stamped with a very polite 'maybe'.",
+  "choices": {
+   "study": "Study every night",
+   "network": "Network with veterans",
+   "gamble": "Interview with a joke"
+  },
+  "outcomes": {
+   "liked": "The panel laughs. You advance with a slightly nervous grin.",
+   "flat": "The panel does not. You advance anyway, by mistake."
+  }
+ },
+ "as_centrifuge": {
+  "text": "The centrifuge spins up to nine g. Your cheeks migrate to the rear of your skull and your lunch makes its own plans.",
+  "choices": {
+   "endure": "Endure it",
+   "breathe": "Breathe and focus",
+   "hold": "Hold on without blacking out"
+  },
+  "outcomes": {
+   "good": "You hold your vision. The instructor nods with the enthusiasm of a statue.",
+   "black": "You black out and wake to cheerful applause."
+  }
+ },
+ "as_washout_exam": {
+  "text": "Final qualification exam: sixty procedures, four systems, one examiner staring at his watch like it owes him money.",
+  "choices": {
+   "exam": "Take the exam",
+   "study": "Review once more"
+  },
+  "outcomes": {
+   "pass": "You pass. The examiner shakes your hand and says 'adequate'.",
+   "fail": "You wash out. The chair feels very large afterward."
+  }
+ },
+ "as_launch_day": {
+  "text": "Launch day. You sit in a seat the size of a recliner, strapped to several thousand tons of controlled optimism.",
+  "choices": {
+   "launch": "Launch"
+  },
+  "outcomes": {
+   "success": "The countdown hits zero. The sky opens, then closes behind you, and everything is quiet.",
+   "abort": "An alarm sounds and the launch scrubs. You climb out, shaky and philosophical.",
+   "death": "A booster fails seconds after liftoff. The radio goes silent."
+  }
+ },
+ "as_spacewalk": {
+  "text": "You float out the airlock. Earth hangs below, enormous, blue, and wildly unconcerned with your repairs.",
+  "choices": {
+   "careful": "Follow the checklist",
+   "improvise": "Improvise a quick fix"
+  },
+  "outcomes": {
+   "fixed": "The fix holds. Mission control cheers in a surprisingly high register.",
+   "tangle": "Your tether tangles, then un-tangles. Your pulse does not.",
+   "drift": "A glove snags and you drift. The rescue is a close thing."
+  }
+ },
+ "as_moon_mission": {
+  "text": "You are chosen for the first crewed lunar landing in decades. The press conference has more flags than people.",
+  "choices": {
+   "decline": "Hand the seat over",
+   "go": "Accept the mission"
+  },
+  "outcomes": {
+   "landing": "You step onto gray dust and say something nearly profound.",
+   "abort": "The landing is scrubbed in orbit. Disappointing, but alive.",
+   "lost": "The lander fails to return. The crew's names go on a wall."
+  }
+ },
+ "as_reentry": {
+  "text": "Re-entry. The capsule glows orange and the window shows only fire. A calm voice reads numbers that are mostly reassuring.",
+  "choices": {
+   "reentry": "Hold on"
+  },
+  "outcomes": {
+   "safe": "The parachutes bloom. You land with a thud and a sunburned grin.",
+   "hard": "The landing is hard. Your back has opinions for a month.",
+   "lost": "The heat shield fails. The calm voice stops."
+  }
+ },
+ "as_docking": {
+  "text": "Docking with the station requires aligning two enormous objects at walking pace. A single sneeze would be a diplomatic incident.",
+  "choices": {
+   "auto": "Let autopilot do it",
+   "manual": "Dock manually"
+  },
+  "outcomes": {
+   "good": "Perfect docking. Applause echoes in your helmet.",
+   "bump": "A small bump. A large embarrassment."
+  }
+ },
+ "as_isolation": {
+  "text": "Month four of the mission. The crew has started naming the dust. You are fond of a speck called Gerald.",
+  "choices": {
+   "exercise": "Exercise daily",
+   "journal": "Write letters home",
+   "prank": "Prank the commander"
+  },
+  "outcomes": {
+   "laugh": "He laughs for a full minute. Morale surges.",
+   "mad": "He does not laugh. Morale holds a funeral."
+  }
+ },
+ "as_fire_alarm": {
+  "text": "A fire alarm sounds at 3 a.m. station time. Someone's laundry is hot, smoky, and apologetic.",
+  "choices": {
+   "extinguish": "Use the extinguisher",
+   "vent": "Vent the module"
+  },
+  "outcomes": {
+   "ok": "The fire dies. You remain alive and slightly embarrassed.",
+   "bad": "The fix works but the cabin loses air. A long night follows.",
+   "worse": "The vent jams. The mission ends in a long silence."
+  }
+ },
+ "as_homecoming_press": {
+  "text": "You land to a mob of cameras. A reporter asks if you are 'a hero'. Another asks if you saw any aliens.",
+  "choices": {
+   "humble": "Stay humble",
+   "tour": "Sign a book deal",
+   "joke": "Joke about aliens"
+  }
+ },
+ "as_call_home": {
+  "text": "You call home from orbit. A kid asks if you can see their house. You say yes, which is almost true.",
+  "choices": {
+   "wave": "Wave at the camera",
+   "tell": "Tell them everything"
+  }
+ },
+ "ag_tail": {
+  "text": "A gray sedan has followed you for three blocks. It has either a very bad driver or a very good one.",
+  "choices": {
+   "ignore": "Ignore it",
+   "shake": "Lose them in traffic",
+   "confront": "Confront the driver"
+  },
+  "outcomes": {
+   "friend": "It is just a delivery driver with excellent taste in music.",
+   "foe": "It is an opposing agent. Both of you pretend to be lost."
+  }
+ },
+ "ag_double_agent": {
+  "text": "A cold-eyed colleague in your own agency has been selling secrets. You discover it while reading his shopping list.",
+  "choices": {
+   "report": "Report him",
+   "trap": "Set a trap"
+  },
+  "outcomes": {
+   "works": "The trap works and he cries into his tea.",
+   "fails": "The trap fails and so does your alias."
+  }
+ },
+ "ag_honeypot": {
+  "text": "A charming stranger at the hotel bar knows your favorite drink and no other details. The candlelight feels engineered.",
+  "choices": {
+   "decline": "Decline and leave",
+   "flirt": "Play along carefully",
+   "extract": "Extract their intel"
+  },
+  "outcomes": {
+   "works": "They are an operative too. You swap cover stories over dessert.",
+   "burnt": "They wake you with a camera. Someone is in trouble, and it is you."
+  }
+ },
+ "ag_interrogation": {
+  "text": "You are in a windowless room with a metal table and an officer who has clearly watched many films.",
+  "choices": {
+   "silent": "Stay silent",
+   "lawyer": "Ask for a diplomat",
+   "bluff": "Bluff your way through"
+  },
+  "outcomes": {
+   "good": "They release you with a bag of snacks and a headache.",
+   "bad": "They see through it. Your file just got louder."
+  }
+ },
+ "ag_extraction": {
+  "text": "An asset must be extracted from a hostile capital in one hour. The only map is a drawing by a child.",
+  "choices": {
+   "abort": "Abort the mission",
+   "extract": "Go in"
+  },
+  "outcomes": {
+   "success": "You exit with the asset and a surprisingly good stew.",
+   "close": "You get out but the asset does not. The debrief is long.",
+   "blown": "A patrol finds you. Your cover cracks like a cheap plate."
+  }
+ },
+ "ag_dead_drop": {
+  "text": "The dead drop is inside a hollow tree in a public park. A man on a bench is feeding pigeons. Both are suspicious.",
+  "choices": {
+   "careful": "Wait and watch",
+   "grab": "Grab the package"
+  },
+  "outcomes": {
+   "clean": "You grab it. The pigeons are unmoved.",
+   "trap": "The package has glitter in it. So do you."
+  }
+ },
+ "ag_safehouse": {
+  "text": "The safehouse is a cheap apartment with a fake bookshelf, a real cat, and an alarm that plays classical music.",
+  "choices": {
+   "rest": "Rest there",
+   "upgrade": "Upgrade the locks",
+   "sweep": "Sweep for bugs"
+  },
+  "outcomes": {
+   "clear": "Nothing. Just a cat watching you pay your bills.",
+   "found": "You find three. Two are yours."
+  }
+ },
+ "ag_gadget": {
+  "text": "Quartermaster issues you a pen that is a camera, a watch that is a laser, and a laser that is a pen.",
+  "choices": {
+   "careful": "Read the manual",
+   "try": "Test it in public"
+  },
+  "outcomes": {
+   "great": "It works perfectly. A passerby claps.",
+   "oops": "It sets a menu on fire. You pay for the menu."
+  }
+ },
+ "ag_promotion": {
+  "text": "The director hands you a folder with no label. Inside is a promotion and a very small plant.",
+  "choices": {
+   "accept": "Accept the promotion",
+   "decline": "Stay in the field"
+  }
+ },
+ "ag_handler_burned": {
+  "text": "Your handler stops answering. His last message reads 'Pizza?' which is not the code word for anything.",
+  "choices": {
+   "wait": "Wait for contact",
+   "search": "Search for him"
+  },
+  "outcomes": {
+   "found": "You find him on a ferry, safe and embarrassed.",
+   "trap": "It was a trap. Your cover gets very warm."
+  }
+ },
+ "ag_gala": {
+  "text": "A black-tie gala hides your target behind eighty candles and a string quartet. You are wearing someone else's shoes.",
+  "choices": {
+   "blend": "Blend with the crowd",
+   "charm": "Charm the target"
+  },
+  "outcomes": {
+   "works": "A charming chat and a convenient napkin.",
+   "spilled": "You spill a tray. The napkin is the least of your worries."
+  }
+ },
+ "ag_slip": {
+  "text": "At a dinner party, you nearly say your real name. The sentence comes out as a long cough.",
+  "choices": {
+   "recover": "Recover smoothly",
+   "laugh": "Laugh it off",
+   "bold": "Pretend you meant it"
+  },
+  "outcomes": {
+   "save": "They assume it's a pet name. Your cover lives.",
+   "bust": "Someone writes it down. Your cover does not live."
+  }
+ }
+}

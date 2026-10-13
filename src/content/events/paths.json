@@ -1,0 +1,3138 @@
+[
+ {
+  "id": "mf_offer",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 40,
+   "notFlags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "flags": {
+      "mafia": true
+     },
+     "money": 2000,
+     "karma": -10,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "karma": 3
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "in",
+      "weight": 45,
+      "effects": {
+       "flags": {
+        "mafia": true
+       },
+       "money": 4000,
+       "karma": -10
+      }
+     },
+     {
+      "id": "out",
+      "weight": 55,
+      "effects": {
+       "happiness": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_first_collection",
+  "category": "crime",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "polite",
+    "effects": {
+     "money": 600,
+     "mafia_respect": 5,
+     "karma": -3
+    }
+   },
+   {
+    "id": "rough",
+    "effects": {
+     "money": 1200,
+     "mafia_respect": 10,
+     "karma": -12
+    }
+   },
+   {
+    "id": "pay",
+    "effects": {
+     "money": -500,
+     "karma": 6,
+     "mafia_respect": -5
+    }
+   }
+  ]
+ },
+ {
+  "id": "mf_shop_owner",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "extend",
+    "effects": {
+     "karma": 8,
+     "mafia_respect": -8,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "money": 800,
+     "mafia_respect": 8,
+     "karma": -10
+    }
+   },
+   {
+    "id": "bluff",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "buy",
+      "weight": 60,
+      "effects": {
+       "karma": 4,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "caught",
+      "weight": 40,
+      "effects": {
+       "money": -1500,
+       "mafia_respect": -15,
+       "health": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_sitdown",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "silent",
+    "effects": {
+     "mafia_respect": 3
+    }
+   },
+   {
+    "id": "speak",
+    "effects": {
+     "mafia_respect": -3,
+     "karma": 2
+    }
+   },
+   {
+    "id": "propose",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "liked",
+      "weight": 40,
+      "effects": {
+       "money": 5000,
+       "mafia_respect": 10
+      }
+     },
+     {
+      "id": "laughed",
+      "weight": 60,
+      "effects": {
+       "mafia_respect": -10,
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_betrayal",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "report",
+    "effects": {
+     "mafia_respect": 12,
+     "karma": -8,
+     "happiness": -6
+    }
+   },
+   {
+    "id": "cover",
+    "effects": {
+     "mafia_respect": -6,
+     "karma": 2,
+     "money": 1000
+    }
+   },
+   {
+    "id": "confront",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "repays",
+      "weight": 55,
+      "effects": {
+       "money": 3000,
+       "karma": 4
+      }
+     },
+     {
+      "id": "flees",
+      "weight": 45,
+      "effects": {
+       "money": -3000,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_hit_order",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 20,
+   "maxAge": 70,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "refuse",
+    "effects": {
+     "mafia_respect": -25,
+     "karma": 10,
+     "happiness": -10
+    }
+   },
+   {
+    "id": "comply",
+    "effects": {
+     "mafia_respect": 30,
+     "karma": -40,
+     "happiness": -25,
+     "money": 15000
+    }
+   },
+   {
+    "id": "stall",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "tip",
+      "weight": 50,
+      "effects": {
+       "karma": 15,
+       "mafia_respect": -10
+      }
+     },
+     {
+      "id": "found",
+      "weight": 50,
+      "effects": {
+       "mafia_respect": -20,
+       "health": -10
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_feds_deal",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 75,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "inform",
+    "effects": {
+     "flags": {
+      "mafia": false
+     },
+     "turn_informant": true,
+     "karma": 5,
+     "happiness": -8
+    }
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "mafia_respect": 8
+    }
+   },
+   {
+    "id": "double",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 35,
+      "effects": {
+       "money": 8000,
+       "mafia_respect": 5
+      }
+     },
+     {
+      "id": "fails",
+      "weight": 65,
+      "effects": {
+       "whacked": true,
+       "death": "mob_hit"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_promotion",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 80,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "mafia_promote": true,
+     "mafia_respect": 15,
+     "money": 10000,
+     "karma": -5
+    }
+   },
+   {
+    "id": "pass",
+    "effects": {
+     "happiness": 3,
+     "mafia_respect": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mf_wedding",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "dance",
+    "effects": {
+     "happiness": 8,
+     "mafia_respect": 4
+    }
+   },
+   {
+    "id": "work",
+    "effects": {
+     "money": 1500,
+     "mafia_respect": 6
+    }
+   },
+   {
+    "id": "toast",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "great",
+      "weight": 50,
+      "effects": {
+       "happiness": 10,
+       "mafia_respect": 8
+      }
+     },
+     {
+      "id": "bad",
+      "weight": 50,
+      "effects": {
+       "happiness": -4,
+       "mafia_respect": -6
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_rival_crew",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "talk",
+    "effects": {
+     "mafia_respect": 5,
+     "karma": 3
+    }
+   },
+   {
+    "id": "prank",
+    "effects": {
+     "mafia_respect": 8,
+     "karma": -6
+    }
+   },
+   {
+    "id": "escalate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 40,
+      "effects": {
+       "mafia_respect": 12,
+       "karma": -12,
+       "health": -5
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 60,
+      "effects": {
+       "health": -18,
+       "mafia_respect": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_skim",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "honest",
+    "effects": {
+     "mafia_respect": 6,
+     "karma": 3
+    }
+   },
+   {
+    "id": "skim",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "clean",
+      "weight": 55,
+      "effects": {
+       "money": 6000,
+       "karma": -6
+      }
+     },
+     {
+      "id": "caught",
+      "weight": 45,
+      "effects": {
+       "mafia_respect": -25,
+       "health": -10,
+       "money": -6000
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_capo_dinner",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "praise",
+    "effects": {
+     "happiness": 6,
+     "mafia_respect": 4
+    }
+   },
+   {
+    "id": "honest",
+    "effects": {
+     "karma": 4,
+     "mafia_respect": 2
+    }
+   },
+   {
+    "id": "dodge",
+    "effects": {
+     "mafia_respect": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mf_boss_tribute",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 30,
+   "maxAge": 90,
+   "flags": [
+    "mafia_boss"
+   ]
+  },
+  "choices": [
+   {
+    "id": "fair",
+    "effects": {
+     "money": 20000,
+     "karma": 4,
+     "mafia_respect": 5
+    }
+   },
+   {
+    "id": "greedy",
+    "effects": {
+     "money": 50000,
+     "karma": -10,
+     "mafia_respect": -8
+    }
+   },
+   {
+    "id": "legit",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "good",
+      "weight": 60,
+      "effects": {
+       "money": 25000,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "bad",
+      "weight": 40,
+      "effects": {
+       "money": -30000,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_witness",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 20,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "protect",
+    "effects": {
+     "karma": 15,
+     "mafia_respect": -18,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "scare",
+    "effects": {
+     "karma": -12,
+     "mafia_respect": 8
+    }
+   },
+   {
+    "id": "move",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "safe",
+      "weight": 60,
+      "effects": {
+       "karma": 12,
+       "money": -3000
+      }
+     },
+     {
+      "id": "found",
+      "weight": 40,
+      "effects": {
+       "mafia_respect": -12,
+       "happiness": -10
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mf_retire",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 45,
+   "maxAge": 90,
+   "flags": [
+    "mafia"
+   ]
+  },
+  "choices": [
+   {
+    "id": "stay",
+    "effects": {
+     "mafia_respect": 5
+    }
+   },
+   {
+    "id": "leave",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "blessed",
+      "weight": 40,
+      "effects": {
+       "flags": {
+        "mafia": false
+       },
+       "happiness": 15,
+       "karma": 5
+      }
+     },
+     {
+      "id": "refused",
+      "weight": 60,
+      "effects": {
+       "mafia_respect": -8,
+       "happiness": -10
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_investor_pitch",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "money": 200000,
+     "business_value": 0.2,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 5,
+     "karma": 2
+    }
+   },
+   {
+    "id": "counter",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 45,
+      "effects": {
+       "money": 300000,
+       "business_value": 0.3
+      }
+     },
+     {
+      "id": "walk",
+      "weight": 55,
+      "effects": {
+       "business_value": -0.05,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_cfo_embezzle",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 21,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "police",
+    "effects": {
+     "business_value": -0.1,
+     "karma": 5,
+     "lawsuit": 20000
+    }
+   },
+   {
+    "id": "quiet",
+    "effects": {
+     "money": -30000,
+     "karma": -3
+    }
+   },
+   {
+    "id": "hunt",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "recover",
+      "weight": 35,
+      "effects": {
+       "money": 60000,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 65,
+      "effects": {
+       "money": -80000,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_viral_product",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "scale",
+    "effects": {
+     "business_value": 0.4,
+     "health": -8,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "steady",
+    "effects": {
+     "business_value": 0.15,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "merch",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hit",
+      "weight": 55,
+      "effects": {
+       "money": 50000,
+       "business_value": 0.2
+      }
+     },
+     {
+      "id": "flop",
+      "weight": 45,
+      "effects": {
+       "money": -20000,
+       "business_value": -0.05
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_recall",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "recall",
+    "effects": {
+     "money": -60000,
+     "karma": 10,
+     "business_value": -0.1
+    }
+   },
+   {
+    "id": "hide",
+    "effects": {
+     "karma": -10
+    }
+   },
+   {
+    "id": "patch",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 50,
+      "effects": {
+       "business_value": 0.02,
+       "karma": -2
+      }
+     },
+     {
+      "id": "burn",
+      "weight": 50,
+      "effects": {
+       "lawsuit": 150000,
+       "business_value": -0.3,
+       "karma": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_union",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "business_value": -0.05,
+     "karma": 8,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "fight",
+    "effects": {
+     "lawsuit": 25000,
+     "karma": -8,
+     "business_value": -0.1
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "deal",
+      "weight": 60,
+      "effects": {
+       "business_value": 0.05,
+       "happiness": 5,
+       "karma": 4
+      }
+     },
+     {
+      "id": "strike",
+      "weight": 40,
+      "effects": {
+       "money": -40000,
+       "happiness": -6
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_ipo_offer",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 30,
+   "maxAge": 90,
+   "flags": [
+    "business_owner",
+    "business_big"
+   ]
+  },
+  "choices": [
+   {
+    "id": "ipo",
+    "effects": {
+     "business_value": 1,
+     "money": 2000000,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "private",
+    "effects": {
+     "happiness": 3,
+     "karma": 2
+    }
+   },
+   {
+    "id": "roadshow",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hot",
+      "weight": 50,
+      "effects": {
+       "business_value": 1,
+       "money": 3000000
+      }
+     },
+     {
+      "id": "cold",
+      "weight": 50,
+      "effects": {
+       "business_value": -0.1,
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_bankruptcy",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "layoffs",
+    "effects": {
+     "business_value": -0.1,
+     "karma": -6,
+     "happiness": -8
+    }
+   },
+   {
+    "id": "loan",
+    "effects": {
+     "money": 100000,
+     "business_value": -0.05
+    }
+   },
+   {
+    "id": "gamble",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 40,
+      "effects": {
+       "business_value": 0.3,
+       "money": 150000,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 60,
+      "effects": {
+       "business_bankrupt": true,
+       "happiness": -20
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_rival_poach",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "match",
+    "effects": {
+     "money": -40000,
+     "business_value": 0.03
+    }
+   },
+   {
+    "id": "let_go",
+    "effects": {
+     "business_value": -0.08,
+     "karma": 2
+    }
+   },
+   {
+    "id": "equity",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "stays",
+      "weight": 60,
+      "effects": {
+       "business_value": 0.08,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "leaves",
+      "weight": 40,
+      "effects": {
+       "business_value": -0.1
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_audit",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "honest",
+    "effects": {
+     "money": -15000,
+     "karma": 5
+    }
+   },
+   {
+    "id": "creative",
+    "effects": {
+     "karma": -8
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fine",
+      "weight": 55,
+      "effects": {
+       "money": -25000
+      }
+     },
+     {
+      "id": "heavy",
+      "weight": 45,
+      "effects": {
+       "lawsuit": 90000,
+       "happiness": -6
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_acquisition",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 28,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sell",
+    "effects": {
+     "money": 800000,
+     "business_value": -0.5,
+     "flags": {
+      "business_owner": false
+     },
+     "happiness": 6
+    }
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "happiness": 3,
+     "business_value": 0.05
+    }
+   },
+   {
+    "id": "bid",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "war",
+      "weight": 40,
+      "effects": {
+       "money": 1500000,
+       "flags": {
+        "business_owner": false
+       },
+       "happiness": 12
+      }
+     },
+     {
+      "id": "none",
+      "weight": 60,
+      "effects": {
+       "business_value": -0.08
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_scandal",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 30,
+   "maxAge": 90,
+   "flags": [
+    "business_owner",
+    "business_big"
+   ]
+  },
+  "choices": [
+   {
+    "id": "apologize",
+    "effects": {
+     "money": -200000,
+     "karma": 10,
+     "business_value": -0.05
+    }
+   },
+   {
+    "id": "deny",
+    "effects": {
+     "karma": -10,
+     "lawsuit": 300000
+    }
+   },
+   {
+    "id": "blame",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 30,
+      "effects": {
+       "karma": -12
+      }
+     },
+     {
+      "id": "fails",
+      "weight": 70,
+      "effects": {
+       "lawsuit": 500000,
+       "business_value": -0.25,
+       "karma": -12
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_supply_crisis",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "premium",
+    "effects": {
+     "money": -50000,
+     "business_value": -0.02
+    }
+   },
+   {
+    "id": "wait",
+    "effects": {
+     "business_value": -0.12
+    }
+   },
+   {
+    "id": "bet",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "good",
+      "weight": 45,
+      "effects": {
+       "business_value": 0.2,
+       "money": -80000
+      }
+     },
+     {
+      "id": "bad",
+      "weight": 55,
+      "effects": {
+       "business_value": -0.15,
+       "money": -120000
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_pivot",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "pivot",
+    "effects": {
+     "business_value": 0.1,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "stay",
+    "effects": {
+     "happiness": -2
+    }
+   },
+   {
+    "id": "both",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "great",
+      "weight": 35,
+      "effects": {
+       "business_value": 0.35
+      }
+     },
+     {
+      "id": "mess",
+      "weight": 65,
+      "effects": {
+       "business_value": -0.1,
+       "health": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bz_patent_suit",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 90,
+   "flags": [
+    "business_owner"
+   ]
+  },
+  "choices": [
+   {
+    "id": "settle",
+    "effects": {
+     "money": -70000
+    }
+   },
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 45,
+      "effects": {
+       "business_value": 0.1,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 55,
+      "effects": {
+       "lawsuit": 180000,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_knee_injury",
+  "category": "health",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "surgery",
+    "effects": {
+     "injury": 20,
+     "money": -8000,
+     "health": -5
+    }
+   },
+   {
+    "id": "push",
+    "effects": {
+     "injury": 30,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "rest",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "full",
+      "weight": 60,
+      "effects": {
+       "health": 8,
+       "happiness": -2
+      }
+     },
+     {
+      "id": "partial",
+      "weight": 40,
+      "effects": {
+       "injury": 15,
+       "happiness": -4
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_sprain",
+  "category": "health",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "tape",
+    "effects": {
+     "injury": 8,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "sit",
+    "effects": {
+     "health": 3,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "ice",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fine",
+      "weight": 65,
+      "effects": {
+       "health": 4
+      }
+     },
+     {
+      "id": "worse",
+      "weight": 35,
+      "effects": {
+       "injury": 15
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_trade_rumor",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "ask",
+    "effects": {
+     "happiness": -1
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": 2
+    }
+   },
+   {
+    "id": "agent",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "stay",
+      "weight": 50,
+      "effects": {
+       "money": 20000,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "traded",
+      "weight": 50,
+      "effects": {
+       "money": 60000,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_doping_temptation",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "refuse",
+    "effects": {
+     "karma": 8,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "take",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "clean",
+      "weight": 55,
+      "effects": {
+       "health": 6,
+       "money": 30000,
+       "karma": -8
+      }
+     },
+     {
+      "id": "caught",
+      "weight": 45,
+      "effects": {
+       "doping_caught": true,
+       "karma": -10,
+       "happiness": -12
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_championship",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 20,
+   "maxAge": 42,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "team",
+    "effects": {
+     "karma": 4,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "shot",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 50,
+      "effects": {
+       "championship": true,
+       "happiness": 25,
+       "money": 200000
+      }
+     },
+     {
+      "id": "miss",
+      "weight": 50,
+      "effects": {
+       "happiness": -12
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_retirement_pressure",
+  "category": "work",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 33,
+   "maxAge": 60,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "retire",
+    "effects": {
+     "flags": {
+      "athlete": false
+     },
+     "happiness": 5,
+     "money": 50000
+    }
+   },
+   {
+    "id": "continue",
+    "effects": {
+     "health": -6,
+     "money": 60000
+    }
+   },
+   {
+    "id": "comeback",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "title",
+      "weight": 25,
+      "effects": {
+       "championship": true,
+       "happiness": 20
+      }
+     },
+     {
+      "id": "flop",
+      "weight": 75,
+      "effects": {
+       "happiness": -10,
+       "health": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_contract",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "loyal",
+    "effects": {
+     "money": 100000,
+     "happiness": 4,
+     "karma": 3
+    }
+   },
+   {
+    "id": "highest",
+    "effects": {
+     "money": 250000,
+     "karma": -3
+    }
+   },
+   {
+    "id": "hold",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 45,
+      "effects": {
+       "money": 400000,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 55,
+      "effects": {
+       "happiness": -8,
+       "money": -20000
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_endorsement",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "money": 90000,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "karma": 3
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "yes",
+      "weight": 50,
+      "effects": {
+       "money": 140000
+      }
+     },
+     {
+      "id": "no",
+      "weight": 50,
+      "effects": {
+       "happiness": -4
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_fan_incident",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "selfie",
+    "effects": {
+     "happiness": 4,
+     "karma": 3
+    }
+   },
+   {
+    "id": "security",
+    "effects": {
+     "karma": -2
+    }
+   },
+   {
+    "id": "ignore",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "clip",
+      "weight": 50,
+      "effects": {
+       "happiness": 2
+      }
+     },
+     {
+      "id": "viral",
+      "weight": 50,
+      "effects": {
+       "happiness": -5,
+       "karma": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_coach_clash",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "happiness": -2,
+     "karma": 2
+    }
+   },
+   {
+    "id": "complain",
+    "effects": {
+     "happiness": 3,
+     "karma": -4
+    }
+   },
+   {
+    "id": "prove",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "prove",
+      "weight": 55,
+      "effects": {
+       "happiness": 10
+      }
+     },
+     {
+      "id": "flop",
+      "weight": 45,
+      "effects": {
+       "happiness": -6
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_comeback",
+  "category": "health",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 40,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "decline",
+    "effects": {
+     "money": 30000,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "try",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "make",
+      "weight": 55,
+      "effects": {
+       "happiness": 12,
+       "money": 50000
+      }
+     },
+     {
+      "id": "cut",
+      "weight": 45,
+      "effects": {
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sp_rival",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 45,
+   "flags": [
+    "athlete"
+   ]
+  },
+  "choices": [
+   {
+    "id": "train",
+    "effects": {
+     "health": -3,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "trashtalk",
+    "effects": {
+     "karma": -4,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "duel",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "win",
+      "weight": 45,
+      "effects": {
+       "happiness": 10
+      }
+     },
+     {
+      "id": "lose",
+      "weight": 55,
+      "effects": {
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_selection",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 21,
+   "maxAge": 65,
+   "flags": [
+    "astronaut_program"
+   ]
+  },
+  "choices": [
+   {
+    "id": "study",
+    "effects": {
+     "smarts": 6,
+     "health": -2
+    }
+   },
+   {
+    "id": "network",
+    "effects": {
+     "happiness": 3
+    }
+   },
+   {
+    "id": "gamble",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "liked",
+      "weight": 45,
+      "effects": {
+       "happiness": 8,
+       "smarts": 2
+      }
+     },
+     {
+      "id": "flat",
+      "weight": 55,
+      "effects": {
+       "happiness": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_centrifuge",
+  "category": "health",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 21,
+   "maxAge": 65,
+   "flags": [
+    "astronaut_program"
+   ]
+  },
+  "choices": [
+   {
+    "id": "endure",
+    "effects": {
+     "health": -4,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "breathe",
+    "effects": {
+     "smarts": 3
+    }
+   },
+   {
+    "id": "hold",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "good",
+      "weight": 60,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "black",
+      "weight": 40,
+      "effects": {
+       "health": -8,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_washout_exam",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 21,
+   "maxAge": 65,
+   "flags": [
+    "astronaut_program"
+   ]
+  },
+  "choices": [
+   {
+    "id": "exam",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "pass",
+      "weight": 70,
+      "effects": {
+       "flags": {
+        "astronaut": true
+       },
+       "happiness": 20
+      }
+     },
+     {
+      "id": "fail",
+      "weight": 30,
+      "effects": {
+       "flags": {
+        "astronaut_program": false
+       },
+       "happiness": -20
+      }
+     }
+    ]
+   },
+   {
+    "id": "study",
+    "effects": {
+     "smarts": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "as_launch_day",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 21,
+   "maxAge": 65,
+   "flags": [
+    "astronaut"
+   ]
+  },
+  "choices": [
+   {
+    "id": "launch",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "success",
+      "weight": 92,
+      "effects": {
+       "mission_success": true,
+       "flags": {
+        "in_space": true
+       },
+       "astronaut_fame": 20,
+       "happiness": 25
+      }
+     },
+     {
+      "id": "abort",
+      "weight": 6,
+      "effects": {
+       "happiness": -8,
+       "health": -3
+      }
+     },
+     {
+      "id": "death",
+      "weight": 2,
+      "effects": {
+       "mission_failure": true,
+       "death": "spaceflight"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_spacewalk",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "careful",
+    "effects": {
+     "astronaut_fame": 5,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "improvise",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fixed",
+      "weight": 65,
+      "effects": {
+       "astronaut_fame": 15,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "tangle",
+      "weight": 30,
+      "effects": {
+       "health": -5,
+       "happiness": -3
+      }
+     },
+     {
+      "id": "drift",
+      "weight": 5,
+      "effects": {
+       "mission_failure": true,
+       "health": -20
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_moon_mission",
+  "category": "work",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 28,
+   "maxAge": 60,
+   "flags": [
+    "astronaut"
+   ]
+  },
+  "choices": [
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": -6
+    }
+   },
+   {
+    "id": "go",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "landing",
+      "weight": 90,
+      "effects": {
+       "mission_success": true,
+       "astronaut_fame": 40,
+       "happiness": 30,
+       "money": 200000
+      }
+     },
+     {
+      "id": "abort",
+      "weight": 8,
+      "effects": {
+       "happiness": -8,
+       "astronaut_fame": 5
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 2,
+      "effects": {
+       "mission_failure": true,
+       "death": "spaceflight"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_reentry",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "reentry",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "safe",
+      "weight": 94,
+      "effects": {
+       "mission_success": true,
+       "flags": {
+        "in_space": false
+       },
+       "happiness": 20,
+       "astronaut_fame": 10
+      }
+     },
+     {
+      "id": "hard",
+      "weight": 5,
+      "effects": {
+       "health": -15,
+       "flags": {
+        "in_space": false
+       }
+      }
+     },
+     {
+      "id": "lost",
+      "weight": 1,
+      "effects": {
+       "mission_failure": true,
+       "death": "spaceflight"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_docking",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "auto",
+    "effects": {
+     "astronaut_fame": 2
+    }
+   },
+   {
+    "id": "manual",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "good",
+      "weight": 70,
+      "effects": {
+       "astronaut_fame": 15,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "bump",
+      "weight": 30,
+      "effects": {
+       "astronaut_fame": -5,
+       "happiness": -4
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_isolation",
+  "category": "health",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "exercise",
+    "effects": {
+     "health": 5,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "journal",
+    "effects": {
+     "happiness": 6,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "prank",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "laugh",
+      "weight": 60,
+      "effects": {
+       "happiness": 8
+      }
+     },
+     {
+      "id": "mad",
+      "weight": 40,
+      "effects": {
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_fire_alarm",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "extinguish",
+    "effects": {
+     "astronaut_fame": 5
+    }
+   },
+   {
+    "id": "vent",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "ok",
+      "weight": 80,
+      "effects": {
+       "astronaut_fame": 10,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "bad",
+      "weight": 17,
+      "effects": {
+       "health": -10,
+       "happiness": -5
+      }
+     },
+     {
+      "id": "worse",
+      "weight": 3,
+      "effects": {
+       "mission_failure": true,
+       "death": "spaceflight"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "as_homecoming_press",
+  "category": "random",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 70,
+   "flags": [
+    "astronaut"
+   ]
+  },
+  "choices": [
+   {
+    "id": "humble",
+    "effects": {
+     "astronaut_fame": 10,
+     "happiness": 6
+    }
+   },
+   {
+    "id": "tour",
+    "effects": {
+     "money": 100000,
+     "astronaut_fame": 15
+    }
+   },
+   {
+    "id": "joke",
+    "effects": {
+     "astronaut_fame": 5,
+     "happiness": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "as_call_home",
+  "category": "family",
+  "weight": 3,
+  "once": false,
+  "conditions": {
+   "minAge": 24,
+   "maxAge": 65,
+   "flags": [
+    "astronaut",
+    "in_space"
+   ]
+  },
+  "choices": [
+   {
+    "id": "wave",
+    "effects": {
+     "happiness": 8
+    }
+   },
+   {
+    "id": "tell",
+    "effects": {
+     "happiness": 5,
+     "smarts": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "ag_tail",
+  "category": "work",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "ignore",
+    "effects": {
+     "health": -2
+    }
+   },
+   {
+    "id": "shake",
+    "effects": {
+     "smarts": 2,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "confront",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "friend",
+      "weight": 40,
+      "effects": {
+       "happiness": 4
+      }
+     },
+     {
+      "id": "foe",
+      "weight": 60,
+      "effects": {
+       "mission_success": true,
+       "karma": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_double_agent",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "report",
+    "effects": {
+     "karma": 5,
+     "happiness": -3,
+     "agent_promote": true
+    }
+   },
+   {
+    "id": "trap",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 50,
+      "effects": {
+       "mission_success": true,
+       "agent_promote": true,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "fails",
+      "weight": 50,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -15
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_honeypot",
+  "category": "romance",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "decline",
+    "effects": {
+     "karma": 3
+    }
+   },
+   {
+    "id": "flirt",
+    "effects": {
+     "mission_success": true,
+     "happiness": 5
+    }
+   },
+   {
+    "id": "extract",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 50,
+      "effects": {
+       "mission_success": true,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "burnt",
+      "weight": 50,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -12
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_interrogation",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "silent",
+    "effects": {
+     "health": -4,
+     "karma": 2
+    }
+   },
+   {
+    "id": "lawyer",
+    "effects": {
+     "happiness": -2
+    }
+   },
+   {
+    "id": "bluff",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "good",
+      "weight": 55,
+      "effects": {
+       "mission_success": true,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "bad",
+      "weight": 45,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -15
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_extraction",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "abort",
+    "effects": {
+     "happiness": -5
+    }
+   },
+   {
+    "id": "extract",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "success",
+      "weight": 65,
+      "effects": {
+       "mission_success": true,
+       "agent_promote": true,
+       "happiness": 18
+      }
+     },
+     {
+      "id": "close",
+      "weight": 20,
+      "effects": {
+       "happiness": -12,
+       "health": -8
+      }
+     },
+     {
+      "id": "blown",
+      "weight": 15,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -18
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_dead_drop",
+  "category": "work",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "careful",
+    "effects": {
+     "smarts": 2
+    }
+   },
+   {
+    "id": "grab",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "clean",
+      "weight": 70,
+      "effects": {
+       "mission_success": true,
+       "money": 2000
+      }
+     },
+     {
+      "id": "trap",
+      "weight": 30,
+      "effects": {
+       "happiness": -4,
+       "cover_blown": true
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_safehouse",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "rest",
+    "effects": {
+     "health": 5,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "upgrade",
+    "effects": {
+     "money": -1000,
+     "smarts": 1
+    }
+   },
+   {
+    "id": "sweep",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "clear",
+      "weight": 60,
+      "effects": {
+       "happiness": 2
+      }
+     },
+     {
+      "id": "found",
+      "weight": 40,
+      "effects": {
+       "mission_success": true,
+       "smarts": 3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_gadget",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "careful",
+    "effects": {
+     "smarts": 2
+    }
+   },
+   {
+    "id": "try",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "great",
+      "weight": 50,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "oops",
+      "weight": 50,
+      "effects": {
+       "money": -200,
+       "happiness": -2
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_promotion",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 28,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "agent_promote": true,
+     "money": 20000,
+     "happiness": 8
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "ag_handler_burned",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "wait",
+    "effects": {
+     "happiness": -3
+    }
+   },
+   {
+    "id": "search",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "found",
+      "weight": 50,
+      "effects": {
+       "mission_success": true,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "trap",
+      "weight": 50,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -15
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_gala",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "blend",
+    "effects": {
+     "smarts": 2
+    }
+   },
+   {
+    "id": "charm",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "works",
+      "weight": 55,
+      "effects": {
+       "mission_success": true,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "spilled",
+      "weight": 45,
+      "effects": {
+       "happiness": -6,
+       "cover_blown": true
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ag_slip",
+  "category": "work",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 22,
+   "maxAge": 65,
+   "flags": [
+    "agent"
+   ]
+  },
+  "choices": [
+   {
+    "id": "recover",
+    "effects": {
+     "smarts": 2
+    }
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "happiness": 2
+    }
+   },
+   {
+    "id": "bold",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "save",
+      "weight": 55,
+      "effects": {
+       "happiness": 4
+      }
+     },
+     {
+      "id": "bust",
+      "weight": 45,
+      "effects": {
+       "cover_blown": true,
+       "happiness": -12
+      }
+     }
+    ]
+   }
+  ]
+ }
+]
