@@ -107,7 +107,8 @@ export function workYear(life: Life, rng: Rng) {
 
   const gross = job.salary
   const net = gross - taxOn(gross)
-  life.money += net
+  // 35% of take-home goes to living expenses that scale with lifestyle
+  life.money += Math.round(net * 0.65)
   job.yearsInTrack++
 
   // performance drifts toward a baseline set by smarts & health, with noise

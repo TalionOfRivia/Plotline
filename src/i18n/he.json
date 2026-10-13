@@ -1,25 +1,107 @@
 {
   "app": { "name": "Plotline", "tagline": "כל חיים הם סיפור." },
-  "menu": { "newLife": "להתחיל חיים חדשים", "continue": "להמשיך", "continueAs": "להמשיך בתור {{name}} ({{age}})", "language": "שפה" },
+  "menu": {
+    "newLife": "להתחיל חיים חדשים", "continue": "להמשיך", "continueAs": "להמשיך בתור {{name}} ({{age}})", "language": "שפה",
+    "title": "תפריט", "tools": "כלים", "undo": "מכונת זמן: לבטל את השנה האחרונה", "undoSub": "חוזרים שנה אחורה. עובד פעם אחת בכל התבגרות.",
+    "godMode": "מצב אלוהים", "on": "פעיל — אפשר לערוך הכול למטה", "off": "כבוי", "save": "קובץ שמירה", "export": "ייצוא שמירה", "exportSub": "להוריד את החיים האלה כקובץ, ליתר ביטחון.",
+    "import": "ייבוא שמירה", "importFailed": "הקובץ הזה הוא לא שמירה של Plotline.", "life": "החיים האלה", "generation": "דור {{n}}", "seed": "זרע",
+    "newLifeSub": "זורק את החיים הנוכחיים.", "confirmNew": "לוחצים שוב כדי לאשר", "toTitle": "חזרה למסך הראשי"
+  },
   "stats": { "happiness": "אושר", "health": "בריאות", "smarts": "חוכמה", "looks": "מראה" },
-  "nav": { "job": "עבודה", "assets": "נכסים", "age": "שנה קדימה", "relationships": "אנשים", "activities": "פעילויות" },
+  "nav": { "job": "עבודה", "assets": "רכוש", "age": "להתבגר", "relationships": "אנשים", "activities": "פעילויות" },
   "common": { "ok": "אישור", "cancel": "ביטול", "age": "גיל {{age}}" },
-  "kind": { "mother": "אמא", "father": "אבא", "sibling": "אח/ות", "friend": "חבר/ה", "partner": "בן/בת זוג", "spouse": "בן/בת הזוג", "ex": "אקס", "child": "ילד/ה", "pet": "חיית מחמד" },
+  "kind": { "mother": "אמא", "father": "אבא", "sibling": "אח/ות", "friend": "חבר/ה", "partner": "בן/בת זוג", "spouse": "בן/בת זוג נשוי/אה", "ex": "אקס/ית", "child": "ילד/ה", "pet": "חיית מחמד" },
   "diary": {
     "born": "נולדת ב{{city}}, {{country}}.",
+    "bornLegacy": "דור {{generation}}: נולדת ב{{city}}, {{country}}, יורש/ת סיפור המשפחה.",
     "parents": "ההורים שלך הם {{mother}} ו{{father}}.",
     "birthday": "— גיל {{age}} —",
-    "personDied": "{{kind}} שלך {{name}} הלך/ה לעולמו/ה בגיל {{age}}."
+    "personDied": "{{kind}} שלך, {{name}}, הלך/ה לעולמו/ה בגיל {{age}}.",
+    "inherited": "{{name}} הוריש/ה לך ${{money}} בצוואה."
   },
   "event": { "odds": "{{pct}}% סיכוי: {{outcome}}" },
   "death": {
-    "restInPeace": "נוח/י על משכבך בשלום",
-    "lived": "חי/ה {{years}} שנים",
-    "netWorth": "שווי נקי",
-    "events": "סיפורים",
-    "karma": "קארמה",
-    "illness": "נפטר/ה ממחלה ממושכת.",
-    "oldAge": "נפטר/ה בשיבה טובה.",
-    "sudden": "נפטר/ה באופן פתאומי."
-  }
+    "restInPeace": "יהי זכרך ברוך", "lived": "חיית {{years}} שנים", "netWorth": "שווי נקי", "events": "סיפורים", "karma": "קארמה", "kids": "ילדים", "marriages": "נישואים",
+    "continueAs": "להמשיך את הסיפור בתור…", "generic": "מת/ה: {{cause}}.",
+    "illness": "מת/ה ממחלה ממושכת.", "oldAge": "מת/ה בשלווה מזקנה.", "sudden": "מת/ה פתאום.",
+    "whacked": "חוסל/ה על ידי המשפחה.", "skydiving": "למצנח היו תוכניות אחרות.", "freak_accident": "תאונה מוזרה.",
+    "reckless_driving": "מת/ה בתאונת דרכים.", "heart_attack": "התקף לב.", "hip_fracture_complications": "סיבוכים אחרי נפילה.",
+    "pneumonia": "דלקת ריאות.", "fall": "נפילה קשה.", "stroke": "שבץ.", "surgery_complications": "סיבוכים בניתוח.",
+    "prison_riot": "נהרג/ה במהומה בכלא.", "shanked": "נדקר/ה בכלא.", "mob_hit": "חיסול של המאפיה.", "spaceflight": "אבד/ה בטיסת חלל."
+  },
+  "school": {
+    "started": "התחלת בית ספר.", "highSchool": "התחלת תיכון.", "graduatedHS": "סיימת תיכון עם ממוצע ציונים {{grades}}.",
+    "failedHS": "לא הצלחת לסיים תיכון.", "flunkedOut": "נזרקת מהאוניברסיטה.", "droppedOut": "נשרת.",
+    "graduatedUni": "סיימת את האוניברסיטה.", "graduatedGrad": "סיימת את {{school}}.", "enrolledUni": "נרשמת לאוניברסיטה.",
+    "enrolledGrad": "נרשמת ל{{school}}.", "loansPaid": "סיימת לשלם את הלוואות הסטודנט.",
+    "toast": { "cantEnroll": "אי אפשר להירשם לזה.", "studied": "פתחת ספרים. ציונים +8, כיף −2." }
+  },
+  "edu": {
+    "none": "בלי תעודה", "high_school": "תעודת בגרות", "university": "תואר ראשון", "grades": "ציונים", "degrees": "תארים", "loans": "הלוואות סטודנט",
+    "study": "ללמוד קשה יותר", "studySub": "ציונים עולים, אושר יורד קצת.", "enrollUni": "להירשם לאוניברסיטה ({{money}})",
+    "fundingHint": "חוכמה {{smarts}}+ מזכה במלגה מלאה. אחרת מזומן אם יש, ואם אין אז הלוואות.",
+    "gradSchools": "לימודים מתקדמים", "years": "שנים",
+    "funding": { "cash": "שולם במזומן", "loan": "הלוואות סטודנט", "scholarship": "מלגה מלאה" },
+    "stage": { "none": "לא לומד/ת", "primary": "בית ספר יסודי", "high_school": "תיכון", "university": "אוניברסיטה", "grad": "לימודים מתקדמים", "done": "סיימת ללמוד" },
+    "grad_law": "לימודי משפטים", "grad_med": "לימודי רפואה", "grad_business": "לימודי עסקים", "grad_dental": "לימודי רפואת שיניים", "grad_vet": "לימודי וטרינריה", "grad_pharm": "לימודי רוקחות", "grad_nursing": "לימודי סיעוד"
+  },
+  "work": {
+    "current": "עבודה נוכחית", "years": "{{n}} שנים כאן", "salary": "שכר", "afterTax": "{{money}} נטו", "performance": "ביצועים", "yr": "שנה",
+    "next": "הבא: {{title}} ב-{{money}}", "harder": "להשקיע יותר", "harderSub": "ביצועים +10, אושר −3.", "retire": "לצאת לפנסיה", "retireSub": "פנסיה של {{money}} לשנה עד סוף החיים.",
+    "quit": "להתפטר", "retiredStatus": "בפנסיה. קצבה: {{money}} לשנה.", "inPrison": "אין עבודה לאסירים.", "unemployed": "מובטל/ת. אפשר לעיין במשרות למטה.",
+    "board": "משרות מבוקשות", "notQualified": "לא מתאים/ה", "quitFirst": "צריך להתפטר מהעבודה הנוכחית כדי להגיש מועמדות למקום אחר.",
+    "hired": "קיבלת את העבודה: {{title}}.", "rejected": "הרסת את הראיון ל{{track}}.", "quit": "התפטרת מהעבודה בתור {{title}}.",
+    "promoted": "קיבלת קידום ל{{title}}!", "raise": "קיבלת העלאה של {{pct}}%.", "fired": "פוטרת מהעבודה בתור {{title}}.",
+    "firedPerformance": "פוטרת בגלל ביצועים חלשים בתור {{title}}.", "laidOff": "פוטרת בקיצוצים מהעבודה בתור {{title}}.",
+    "firedPrison": "איבדת את העבודה כשנכנסת לכלא.", "retired": "יצאת לפנסיה בתור {{title}} עם קצבה של ${{pension}} לשנה.",
+    "toast": { "hired": "התקבלת! 🎉", "rejected": "נדחית. אפשר לנסות שוב בשנה הבאה.", "ineligible": "אתה/את לא זכאי/ת.", "harder": "עשית שעות נוספות." }
+  },
+  "assets": {
+    "cash": "מזומן", "netWorth": "שווי נקי", "none": "עדיין אין לך כלום.", "value": "שווי", "mortgage": "משכנתה", "condition": "מצב", "sell": "למכור",
+    "shop": "למכירה", "adopt": "לאמץ", "upkeep": "אחזקה", "mortgageHint": "או {{money}} מקדמה + משכנתה",
+    "tab": { "owned": "בבעלותך", "houses": "בתים", "cars": "מכוניות", "pets": "חיות", "luxury": "יוקרה" },
+    "bought": "קנית {{item}} ב-${{money}}.", "sold": "מכרת את {{item}} ב-${{money}}.", "adoptedPet": "אימצת {{species}} וקראת לו {{name}}.",
+    "mortgagePaid": "סיימת לשלם את המשכנתה על {{item}}.", "petDied": "חיית המחמד שלך, {{name}}, מתה.",
+    "toast": { "cantAfford": "אין לך מספיק כסף לזה." }
+  },
+  "people": {
+    "interact": "אינטראקציה", "dating": "יוצאים", "findDate": "לחפש דייט", "findDateSub": "לראות מי בסביבה השנה.", "alreadyTaken": "אתה/את כבר עם מישהו/י.",
+    "nobodyAround": "אין אף אחד מעניין בסביבה השנה.", "askOut": "להזמין לדייט", "deceased": "נפטר/ה", "yearsTogether": "נשואים {{n}} שנים",
+    "action": { "spend_time": "לבלות יחד", "gift": "לתת מתנה", "compliment": "לתת מחמאה", "insult": "להעליב", "ask_money": "לבקש כסף", "flirt": "לפלרטט", "propose": "להציע נישואים", "break_up": "להיפרד",
+      "have_child": "לנסות להביא תינוק", "adopt": "לאמץ ילד", "prenup": "לבקש הסכם ממון", "play": "לשחק", "walk": "לצאת לטיול", "movie_night": "ערב סרט", "vacation": "לצאת לחופשה" },
+    "did": { "spend_time": "בילית עם {{name}}.", "compliment": "נתת מחמאה ל{{name}}.", "compliment_flop": "{{name}} לא קנה/תה את המחמאה שלך.", "insult": "העלבת את {{name}}.",
+      "gift": "נתת מתנה ל{{name}}.", "movie_night": "ערב סרט עם {{name}}.", "vacation": "יצאת לחופשה עם {{name}}.", "play": "שיחקת עם {{name}}.", "walk": "יצאת לטיול עם {{name}}.",
+      "ask_money_yes": "{{name}} השאיל/ה לך ${{money}}.", "ask_money_no": "{{name}} אמר/ה לא.", "flirt": "פלרטטת עם {{name}}.", "prenup_yes": "{{name}} חתם/ה על הסכם הממון.", "prenup_no": "{{name}} נעלב/ה מהסכם הממון.",
+      "propose_no": "{{name}} אמר/ה לא.", "have_child_no": "אין תינוק השנה." },
+    "newFriend": "התחברת עם {{name}}.", "lostFriend": "{{name}} כבר לא חבר/ה שלך.", "newPartner": "התחלת לצאת עם {{name}}.", "rejected": "{{name}} סירב/ה לך.",
+    "married": "התחתנת עם {{name}}!", "brokeUp": "נפרדתם, אתה/את ו{{name}}.", "divorced": "התגרשת מ{{name}}. לקח/ה ${{money}}.", "divorcedPrenup": "התגרשת מ{{name}}. הסכם הממון החזיק.",
+    "newChild": "נולד לך תינוק: {{name}}.", "childGrewUp": "{{name}} הגיע/ה לגיל 18.", "gone": "הוא/היא כבר לא איתנו.", "cantAfford": "אין לך מספיק כסף לזה."
+  },
+  "crime": {
+    "hint": "הסיכויים שמוצגים אמיתיים. הרשעות בתיק: {{record}}.", "sentence": "{{a}}–{{b}} שנים אם תיתפסו",
+    "success": "ביצעת {{crime}} והרווחת ${{money}}.", "fined": "נתפסת בזמן {{crime}} ונקנסת ב-${{money}}.", "sentenced": "נגזרו עליך {{years}} שנים על {{crime}}.",
+    "toast": { "success": "{{text}}", "caught": "{{text}} {{years}} שנים." }
+  },
+  "prison": { "status": "בכלא בגלל {{crime}} — נשארו {{years}} שנים.", "short": "נשארו {{years}} שנים", "released": "שוחררת מהכלא.", "paroled": "קיבלת שחרור על תנאי.",
+    "extended": "העונש שלך הוארך ב-{{years}} שנים.", "escaped": "ברחת מהכלא. אתה/את נמלט/ת מהחוק.", "recaptured": "נתפסת שוב." },
+  "act": { "mindBody": "גוף ונפש", "mindBodySub": "חדר כושר, רופא, חופשות, מגרעות.", "education": "השכלה", "crime": "פשע", "crimeSub": "הסיכויים מוצגים מראש.", "special": "תהילה ומסלולים מיוחדים", "specialSub": "תהילה, עסקים, המשפחה, חלל, ריגול.", "paths": "מסלולים", "free": "חינם" },
+  "activity": {
+    "cantAfford": "אין לך מספיק כסף לזה.", "lotteryJackpot": "הפרס הגדול! זכית ב-{{money}}!", "lotteryWin": "זכית ב-{{money}} בלוטו!", "lotterySmall": "זכית ב-{{money}}. יופי טופי.", "lotteryLose": "לא זכית.",
+    "casinoWin": "זכית ב-{{money}} בקזינו.", "casinoLose": "הפסדת {{money}} בקזינו.", "died": "זה השתבש.",
+    "botched": { "plastic_surgery": "הניתוח נכשל.", "skydiving": "נחיתה קשה. נפצעת." },
+    "did": { "gym": "הלכת לחדר כושר.", "doctor_visit": "ביקרת אצל רופא.", "meditation": "עשית מדיטציה.", "library": "העברת את השנה בקריאה.", "vacation": "יצאת לחופשה.", "plastic_surgery": "עברת ניתוח פלסטי.",
+      "therapy": "הלכת לטיפול.", "diet": "עשית דיאטה.", "party": "יצאת למסיבה.", "volunteer": "התנדבת.", "night_class": "למדת בקורס ערב.", "spa": "הלכת לספא.", "tattoo": "עשית קעקוע.",
+      "skydiving": "קפצת בצניחה חופשית.", "movie": "הלכת לסרט.", "concert": "הלכת להופעה.", "road_trip": "יצאת לטיול בדרכים.", "karaoke": "שרת קריוקי." }
+  },
+  "fame": { "title": "תהילה", "level": "תהילה", "post": "לפרסם ברשתות חברתיות", "postSub": "יש סיכוי קטן להתפוצץ.", "viral": "הפוסט שלך הפך לוויראלי!", "posted": "פרסמת. כמה לייקים.", "income": "חסויות והופעות הכניסו ${{money}}.", "bookDeal": "חתמת על עסקת ספר בשווי ${{money}}." },
+  "royal": { "born": "נולדת למשפחת המלוכה.", "crowned": "הוכתרת למלך/ה.", "abdicated": "ויתרת על הכתר.", "exiled": "הוגלית.", "overthrown": "הודחת מהשלטון.", "popularity": "פופולריות",
+    "rank": { "none": "פשוט העם", "royal": "מלוכה", "heir": "יורש/ת העצר", "monarch": "מלך/ה" } },
+  "mafia": { "title": "המשפחה", "join": "להצטרף למשפחה", "joinSub": "כסף, כבוד, ותוחלת חיים קצרה.", "joined": "הפכת לשותף/ה של המשפחה.", "promoted": "עלית בדרגות במשפחה.", "arrested": "הפדרלים סוף סוף תפסו אותך.", "informant": "הפכת למלשין/ה ונכנסת להגנת עדים.", "respect": "כבוד",
+    "rank": { "associate": "שותף/ה", "soldier": "חייל/ת", "capo": "קאפו", "underboss": "סגן הבוס", "consigliere": "יועץ/ת", "boss": "הבוס" } },
+  "biz": { "title": "עסקים", "sub": "להקים חברה.", "namePlaceholder": "שם החברה", "value": "שווי החברה", "years": "פעילה {{n}} שנים", "sell": "למכור ב-{{money}}",
+    "kind": { "food_truck": "פודטראק", "coffee_shop": "בית קפה", "app_startup": "סטארטאפ אפליקציות", "gym_chain": "רשת חדרי כושר", "fashion_label": "מותג אופנה", "real_estate_firm": "חברת נדל״ן", "record_label": "חברת תקליטים", "car_dealership": "סוכנות רכב" } },
+  "business": { "started": "הקמת את {{name}}.", "sold": "מכרת את {{name}} ב-${{money}}.", "bankrupt": "{{name}} פשטה את הרגל.", "lawsuit": "תביעה עלתה לך ${{money}}.", "profit": "{{name}}: ${{money}} (צמיחה של {{growth}}%)." },
+  "sports": { "championship": "זכית באליפות!", "doping": "נתפסת בסימום." },
+  "space": { "title": "אסטרונאוט/ית", "apply": "להגיש מועמדות לתוכנית החלל", "req": "תואר, בריאות 70+, חוכמה 70+, גיל 25–45.", "accepted": "התקבלת לתוכנית החלל!", "rejected": "תוכנית החלל וויתרה עליך.", "qualified": "הוכשרת כאסטרונאוט/ית.", "training": "בהכשרה", "active": "{{n}} משימות בוצעו" },
+  "agent": { "title": "סוכן/ת חשאי/ת", "apply": "להגיש מועמדות לסוכנות", "req": "תואר, חוכמה 65+, תיק נקי, גיל 22–40.", "recruited": "גויסת לסוכנות.", "rejected": "הסוכנות מעולם לא חזרה אליך.", "coverBlown": "הכיסוי שלך נחשף.", "senior": "סוכן/ת בכיר/ה", "field": "סוכן/ת שטח" }
 }

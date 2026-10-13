@@ -1,0 +1,56 @@
+{
+  "houses": {
+    "studio_apartment": "דירת סטודיו",
+    "one_bedroom_flat": "דירת חדר",
+    "two_bedroom_condo": "דירת שלושה חדרים",
+    "townhouse": "בית עירוני",
+    "starter_bungalow": "בונגלו ראשון",
+    "suburban_family_home": "בית משפחתי בפרברים",
+    "craftsman_house": "בית אומנים",
+    "colonial_house": "בית קולוניאלי",
+    "lakeside_cottage": "בקתה ליד האגם",
+    "modern_villa": "וילה מודרנית",
+    "hilltop_mansion": "אחוזה על הגבעה",
+    "beach_mansion": "אחוזה על החוף",
+    "chateau": "שאטו",
+    "private_island": "אי פרטי"
+  },
+  "cars": {
+    "used_hatchback": "האצ׳בק יד שנייה",
+    "used_sedan": "סדאן יד שנייה",
+    "new_compact": "קומפקטית חדשה",
+    "family_suv": "רכב שטח משפחתי",
+    "pickup_truck": "טנדר",
+    "convertible": "קבריולט",
+    "luxury_sedan": "סדאן יוקרה",
+    "sports_coupe": "קופה ספורטיבית",
+    "executive_sedan": "סדאן מנהלים",
+    "luxury_suv": "רכב שטח יוקרתי",
+    "classic_roadster": "רודסטר קלאסי",
+    "supercar": "סופרקאר",
+    "exotic_supercar": "סופרקאר אקזוטי",
+    "hypercar": "היפרקאר"
+  },
+  "pets": {
+    "goldfish": "דג זהב",
+    "hamster": "אוגר",
+    "cat": "חתול",
+    "dog": "כלב",
+    "rabbit": "ארנב",
+    "parrot": "תוכי",
+    "snake": "נחש",
+    "horse": "סוס",
+    "tortoise": "צב",
+    "pig": "חזיר"
+  },
+  "luxury": {
+    "jewelry": "תכשיטים",
+    "watch": "שעון יוקרה",
+    "boat": "סירה",
+    "jet": "מטוס פרטי",
+    "yacht": "יאכטה",
+    "art_collection": "אוסף אמנות",
+    "vineyard": "כרם יין",
+    "sports_team": "קבוצת ספורט"
+  }
+}

@@ -143,8 +143,9 @@ export function ageUp(life: Life) {
   businessYear(life, rng)
   specialCareersYear(life, rng)
   if (life.flags.astronaut) { if (rng.chance(0.5)) life.flags.in_space = true; else delete life.flags.in_space }
-  if (!life.job && !life.retired && life.age >= 18 && life.age < 70 && life.money < 0) {
-    life.money -= 8_000 // cost of living with no income
+  // base cost of living for adults (rent, food, bills); students and inmates are covered
+  if (life.age >= 18 && !life.prison && life.education.stage !== 'university' && life.education.stage !== 'grad') {
+    life.money -= life.assets.some((a) => a.kind === 'house') ? 6_000 : 10_000
   }
   refreshJobBoard(life, rng)
   refreshDateBoard(life, rng)

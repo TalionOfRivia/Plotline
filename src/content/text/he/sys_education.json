@@ -1,0 +1,29 @@
+{
+  "majors": {
+    "computer_science": "מדעי המחשב",
+    "engineering": "הנדסה",
+    "math": "מתמטיקה",
+    "biology": "ביולוגיה",
+    "chemistry": "כימיה",
+    "physics": "פיזיקה",
+    "nursing_prep": "הכנה לסיעוד",
+    "business": "עסקים",
+    "economics": "כלכלה",
+    "psychology": "פסיכולוגיה",
+    "english": "ספרות אנגלית",
+    "history": "היסטוריה",
+    "political_science": "מדעי המדינה",
+    "art": "אמנות",
+    "education": "חינוך",
+    "communications": "תקשורת"
+  },
+  "gradSchools": {
+    "grad_law": "לימודי משפטים",
+    "grad_med": "לימודי רפואה",
+    "grad_dental": "לימודי רפואת שיניים",
+    "grad_vet": "לימודי וטרינריה",
+    "grad_pharm": "לימודי רוקחות",
+    "grad_business": "לימודי עסקים",
+    "grad_nursing": "לימודי סיעוד"
+  }
+}

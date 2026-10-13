@@ -1,32 +1,33 @@
-# React + TypeScript + Vite
+# Plotline 📖
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+*Every life is a story.* An original, ad-free text life simulator — grow from a newborn to old age, one year per tap, through random events, school, careers, money, relationships, crime, and a few wilder paths (fame, royalty, the family, business, space, espionage). Everything is unlocked. Nothing is tracked.
 
-Currently, two official plugins are available:
+Built as a PWA: open it in Safari on an iPhone, **Share → Add to Home Screen**, and it runs like an app, offline.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Play:** https://talionofrivia.github.io/Plotline/
 
-## React Compiler
+## Features
+- English / עברית toggle with full RTL layout
+- ~440 original events with 2–4 choices; risky choices show their real odds up front
+- School → university (16 majors) → 7 graduate schools; scholarships and loans
+- 42 career tracks with ladders, interviews, performance, promotions, firings, retirement and pensions
+- Homes (with mortgages), cars, pets, luxury; net worth tracking
+- Relationships with real interactions, dating, marriage, prenups, kids, divorce, inheritance
+- 12 crimes with transparent odds; prison with gangs, parole, riots and escapes
+- Fame, royalty, mafia, business, pro sports, astronaut and secret-agent paths
+- Ribbons at death, legacy mode (continue as your child), time machine (undo a year), god mode, save export/import
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Development
+```bash
+npm install
+npm run dev      # http://localhost:5173/Plotline/
+npm test         # engine + content integrity + 40-life simulation
+npm run build    # production build in dist/
 ```
+Pushes to `main` deploy to GitHub Pages via Actions.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Content
+All game content is data under `src/content/` — see `schema.md` (events) and `schema-systems.md` (jobs, assets, crimes…). Logic and text live in separate files so translations never touch numbers.
+
+## Credits
+Made with love for one specific player. Mechanics are genre conventions; all writing, art and code are original.
