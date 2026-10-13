@@ -1,0 +1,7 @@
+{
+  "app": { "name": "Plotline", "tagline": "Every life is a story." },
+  "menu": { "newLife": "Start a new life", "continue": "Continue", "language": "Language" },
+  "stats": { "happiness": "Happiness", "health": "Health", "smarts": "Smarts", "looks": "Looks" },
+  "nav": { "job": "Job", "assets": "Assets", "age": "Age", "relationships": "People", "activities": "Activities" },
+  "common": { "ok": "OK", "cancel": "Cancel", "age": "Age {{age}}" }
+}

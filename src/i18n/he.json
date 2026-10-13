@@ -1,0 +1,7 @@
+{
+  "app": { "name": "Plotline", "tagline": "כל חיים הם סיפור." },
+  "menu": { "newLife": "להתחיל חיים חדשים", "continue": "להמשיך", "language": "שפה" },
+  "stats": { "happiness": "אושר", "health": "בריאות", "smarts": "חוכמה", "looks": "מראה" },
+  "nav": { "job": "עבודה", "assets": "נכסים", "age": "גיל", "relationships": "אנשים", "activities": "פעילויות" },
+  "common": { "ok": "אישור", "cancel": "ביטול", "age": "גיל {{age}}" }
+}

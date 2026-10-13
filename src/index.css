@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1b2a41;
+  --color-ink-soft: #2b3f5c;
+  --color-cream: #fbf7ee;
+  --color-paper: #ffffff;
+  --color-accent: #2ec4b6;
+  --color-happy: #f4b942;
+  --color-health: #e4572e;
+  --color-smarts: #4f86f7;
+  --color-looks: #c86bfa;
+  --color-money: #3ccf6a;
+  --font-sans: "Nunito", ui-rounded, system-ui, -apple-system, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+/* Safe areas on notched iPhones */
+.safe-top { padding-top: env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
