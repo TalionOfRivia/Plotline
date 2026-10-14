@@ -4,7 +4,7 @@ import { immer } from 'zustand/middleware/immer'
 import type { Life, Stats } from '../engine/types'
 import type { Rng } from '../engine/rng'
 import { ageUp, chooseOption, continueAsHeir, createLife, migrateLife, withRng, type NewLifeOptions } from '../engine/life'
-import { applyForJob, quitJob, retire, workHarder } from '../engine/jobs'
+import { applyForJob, quitJob, recruiter, retire, workHarder } from '../engine/jobs'
 import { adoptPet, buyAsset, sellAsset } from '../engine/assets'
 import { interact, startDating, type Interaction } from '../engine/relationships'
 import { commitCrime, type CrimeResult } from '../engine/crime'
@@ -81,6 +81,8 @@ interface GameState {
   sue: () => void
   gig: (id: string) => void
   setAttraction: (a: 'opposite' | 'same' | 'both') => void
+  recruiter: () => void
+  godEditPerson: (id: string, relationship: number) => void
   godEdit: (patch: { stats?: Partial<Stats>; money?: number; karma?: number; fame?: number }) => void
 }
 
@@ -177,6 +179,8 @@ export const useGame = create<GameState>()(
         sue: () => get().extra((l, rng) => sue(l, rng)),
         gig: (id) => get().extra((l, rng) => doGig(l, id, rng)),
         setAttraction: (a) => act((l) => { l.flags.attraction = a; l.dateBoard = [] }),
+        recruiter: () => act((l, rng) => { const id = recruiter(l, rng); get().setToast({ key: id ? 'work.recruiterFound' : 'work.recruiterNone', kind: id ? 'good' : 'bad' }) }),
+        godEditPerson: (id, relationship) => set((s) => { const p = s.life?.people.find((x) => x.id === id); if (p) p.relationship = relationship }),
         setGodMode: (on) => set((s) => { s.godMode = on }),
         godEdit: (patch) => set((s) => {
           if (!s.life) return

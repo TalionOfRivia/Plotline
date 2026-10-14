@@ -17,7 +17,7 @@ export function taxOn(income: number) {
   return Math.round(tax)
 }
 
-const FAME_TRACKS = new Set(['actor', 'musician', 'music_producer', 'model', 'movie_director', 'influencer', 'professional_athlete', 'politician'])
+const FAME_TRACKS = new Set(['actor', 'musician', 'music_producer', 'model', 'movie_director', 'influencer', 'professional_athlete', 'politician', 'fighter'])
 
 export function meetsRequirements(track: JobTrack, life: Life): boolean {
   const r = track.requires ?? {}
@@ -57,6 +57,7 @@ export function interviewOdds(track: JobTrack, life: Life): number {
   if (life.convictions > 0) p -= 0.15 * Math.min(life.convictions, 3)
   if (life.flags.just_fired) p -= 0.1
   if (life.education.grades >= 85 && life.education.degrees.length) p += 0.1
+  if (life.flags.recruited_for === track.id) p = Math.min(0.95, p * 2)
   return clamp(p, 0.05, 0.95)
 }
 
@@ -74,6 +75,20 @@ export function applyForJob(life: Life, trackId: string, rng: Rng): 'hired' | 'r
   life.stats.happiness = clamp(life.stats.happiness + 5)
   log(life, 'good', 'work.hired', { title: jobTitleKey(life) })
   return 'hired'
+}
+
+export const RECRUITER_FEE = 800
+/** The recruiter finds a track you qualify for and doubles your interview odds for it this year. */
+export function recruiter(life: Life, rng: Rng): string | null {
+  if (life.age < 18 || life.money < RECRUITER_FEE || life.prison || used(life, 'recruiter') >= 1) return null
+  use(life, 'recruiter')
+  life.money -= RECRUITER_FEE
+  const ok = JOB_TRACKS.filter((t) => meetsRequirements(t, life) && !FAME_TRACKS.has(t.id) && (t.requires?.minAge ?? 18) >= 18)
+  if (!ok.length) return null
+  const pick = ok.sort((a, b) => b.ladder[0].salary - a.ladder[0].salary)[rng.int(0, Math.min(2, ok.length - 1))]
+  if (!life.jobBoard.includes(pick.id)) life.jobBoard.unshift(pick.id)
+  life.flags.recruited_for = pick.id
+  return pick.id
 }
 
 export function quitJob(life: Life) {
@@ -139,6 +154,8 @@ export function workYear(life: Life, rng: Rng) {
     life.job = null
     life.stats.happiness = clamp(life.stats.happiness - 8)
   }
+  // fighters get hurt
+  if (life.job?.trackId === 'fighter' && rng.chance(0.25)) { life.stats.health = clamp(life.stats.health - rng.int(4, 14)); life.stats.looks = clamp(life.stats.looks - rng.int(0, 3)); log(life, 'bad', 'work.fightInjury') }
   // cartel work: the police are always a few steps behind
   if (life.job?.trackId === 'dealer' && rng.chance(0.08 + job.rung * 0.02)) {
     life.convictions++

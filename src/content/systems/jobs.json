@@ -1575,6 +1575,42 @@
           "minYears": 10
         }
       ]
+    },
+    {
+      "id": "fighter",
+      "emoji": "🥊",
+      "requires": {
+        "education": "none",
+        "minAge": 18,
+        "minHealth": 60
+      },
+      "ladder": [
+        {
+          "id": "amateur",
+          "salary": 18000,
+          "minYears": 0
+        },
+        {
+          "id": "pro",
+          "salary": 60000,
+          "minYears": 1
+        },
+        {
+          "id": "contender",
+          "salary": 250000,
+          "minYears": 3
+        },
+        {
+          "id": "champion",
+          "salary": 1200000,
+          "minYears": 6
+        },
+        {
+          "id": "legend_fighter",
+          "salary": 3000000,
+          "minYears": 9
+        }
+      ]
     }
   ]
 }

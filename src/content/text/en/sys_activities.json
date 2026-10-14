@@ -178,5 +178,21 @@
   "shave": {
     "name": "Shave",
     "blurb": "Smooth, mostly. One nick."
+  },
+  "race_track": {
+    "name": "Race Track",
+    "blurb": "A rented car, a helmet, and a lap time you will quote for years."
+  },
+  "hiking": {
+    "name": "Hiking",
+    "blurb": "Up a hill, down a hill, one great photo."
+  },
+  "camping": {
+    "name": "Camping",
+    "blurb": "No signal, a fire, and a sleeping bag that has opinions."
+  },
+  "fishing": {
+    "name": "Fishing",
+    "blurb": "Six hours of nothing, then one fish you will describe as bigger."
   }
 }

@@ -41,7 +41,9 @@
     "snake": "Snake",
     "horse": "Horse",
     "tortoise": "Tortoise",
-    "pig": "Pig"
+    "pig": "Pig",
+    "rescue_dog": "Rescue dog",
+    "rescue_cat": "Rescue cat"
   },
   "luxury": {
     "jewelry": "Jewelry",

@@ -8,6 +8,8 @@ import { formatMoney } from './money'
 import { useState as useS } from 'react'
 import { LOAN_RATE, maxLoan } from '../engine/extras'
 
+const PET_GROUP: Record<string, 'shelter' | 'store' | 'breeder' | 'exotic' | 'ranch'> = { goldfish: 'store', hamster: 'store', rabbit: 'store', rescue_dog: 'shelter', rescue_cat: 'shelter', cat: 'breeder', dog: 'breeder', parrot: 'exotic', snake: 'exotic', pig: 'exotic', tortoise: 'exotic', horse: 'ranch' }
+
 type Tab = 'owned' | 'houses' | 'cars' | 'pets' | 'luxury' | 'money'
 
 export function AssetsSheet() {
@@ -64,12 +66,14 @@ export function AssetsSheet() {
       {tab === 'money' && <MoneyTab />}
 
       {tab === 'pets' && (
-        <Section title={t('assets.adopt')}>
-          {ASSETS.pets.map((a) => (
+        <>{(['shelter', 'store', 'breeder', 'exotic', 'ranch'] as const).map((grp) => (
+        <Section key={grp} title={t(`assets.petGroup.${grp}`)}>
+          {ASSETS.pets.filter((a) => PET_GROUP[a.id] === grp).map((a) => (
             <Row key={a.id} emoji={a.emoji} title={sysText(lang, 'assets', `pets.${a.id}`)} sub={`${t('assets.upkeep')} ${formatMoney(a.upkeep, lang)}/${t('work.yr')}`}
               right={formatMoney(a.price, lang)} onClick={() => adoptPet(a.id)} disabled={life.money < a.price || life.age < 6} />
           ))}
         </Section>
+        ))}</>
       )}
     </Sheet>
   )

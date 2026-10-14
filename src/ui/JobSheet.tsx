@@ -5,11 +5,12 @@ import { JOB_BY_ID, sysText } from '../engine/systems'
 import { interviewOdds, meetsRequirements, taxOn } from '../engine/jobs'
 import { formatMoney } from './money'
 import { gigPay } from '../engine/extras'
+import { RECRUITER_FEE } from '../engine/jobs'
 
 export function JobSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { applyJob, quitJob, workHarder, retire, gig } = useGame()
+  const { applyJob, quitJob, workHarder, retire, gig, recruiter } = useGame()
   const lang = i18n.language
   const job = life.job
   const track = job ? JOB_BY_ID[job.trackId] : null
@@ -50,6 +51,7 @@ export function JobSheet() {
           ))}
         </Section>
       )}
+      {!life.prison && !job && life.age >= 18 && <Row emoji="📞" title={t('work.recruiter')} sub={t('work.recruiterSub', { money: formatMoney(RECRUITER_FEE, lang) })} onClick={recruiter} disabled={life.money < RECRUITER_FEE} />}
       {!life.prison && (
         <Section title={t('work.board')}>
           {life.jobBoard.map((id) => {

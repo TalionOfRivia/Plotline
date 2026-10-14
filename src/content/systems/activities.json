@@ -437,5 +437,45 @@
     "effects": {
       "looks": 1
     }
+  },
+  {
+    "id": "race_track",
+    "emoji": "🏎️",
+    "cost": 250,
+    "minAge": 16,
+    "effects": {
+      "happiness": 6
+    },
+    "risky": true
+  },
+  {
+    "id": "hiking",
+    "emoji": "🥾",
+    "cost": 0,
+    "minAge": 8,
+    "effects": {
+      "health": 4,
+      "happiness": 4
+    }
+  },
+  {
+    "id": "camping",
+    "emoji": "🏕️",
+    "cost": 150,
+    "minAge": 8,
+    "effects": {
+      "happiness": 6,
+      "health": 2
+    }
+  },
+  {
+    "id": "fishing",
+    "emoji": "🎣",
+    "cost": 60,
+    "minAge": 6,
+    "effects": {
+      "happiness": 4,
+      "smarts": 1
+    }
   }
 ]

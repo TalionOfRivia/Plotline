@@ -192,7 +192,12 @@
       "harder": "You put in extra hours."
     },
     "quitLog": "You quit your job as {{title}}.",
-    "busted": "The cartel job ended with a raid. You were arrested."
+    "busted": "The cartel job ended with a raid. You were arrested.",
+    "recruiter": "Job recruiter",
+    "recruiterSub": "For {{money}}, they find you a strong lead and double your interview odds.",
+    "recruiterFound": "The recruiter put a lead at the top of your listings.",
+    "recruiterNone": "The recruiter had nothing for you.",
+    "fightInjury": "You took a beating in the ring this year."
   },
   "assets": {
     "cash": "Cash",
@@ -221,6 +226,14 @@
     "petDied": "Your pet {{name}} died.",
     "toast": {
       "cantAfford": "You can't afford that."
+    },
+    "rent": "Your {{n}} rental home(s) paid ${{money}} in rent.",
+    "petGroup": {
+      "shelter": "Animal shelter",
+      "store": "Pet store",
+      "breeder": "Breeders",
+      "exotic": "Exotic pets",
+      "ranch": "Horse ranch"
     }
   },
   "people": {
@@ -350,7 +363,8 @@
     "died": "It went wrong.",
     "botched": {
       "plastic_surgery": "The surgery was botched.",
-      "skydiving": "Rough landing. You're hurt."
+      "skydiving": "Rough landing. You're hurt.",
+      "race_track": "You spun out at the track. Nothing broken but your pride, and a rib."
     },
     "did": {
       "gym": "You hit the gym.",
@@ -370,7 +384,33 @@
       "movie": "You went to the movies.",
       "concert": "You went to a concert.",
       "road_trip": "You took a road trip.",
-      "karaoke": "You sang karaoke."
+      "karaoke": "You sang karaoke.",
+      "race_track": "You drove laps at the race track.",
+      "hiking": "You went hiking.",
+      "camping": "You went camping.",
+      "fishing": "You went fishing.",
+      "nightlife": "You went out. It got late.",
+      "pray": "You prayed.",
+      "rehab": "You went to rehab.",
+      "shopping": "You went shopping.",
+      "zoo_trip": "You went to the zoo.",
+      "garden": "You tended the garden.",
+      "read_book": "You read a good book.",
+      "walk": "You went for a walk.",
+      "martial_arts": "You trained martial arts.",
+      "voice_lessons": "You took voice lessons.",
+      "acting_lessons": "You took acting lessons.",
+      "modeling_lessons": "You took modeling lessons.",
+      "instrument_practice": "You practiced your instrument.",
+      "memory_test": "You took a memory test.",
+      "barber": "You got a haircut.",
+      "hair_dye": "You dyed your hair.",
+      "massage": "You got a massage.",
+      "nail_salon": "You got your nails done.",
+      "tanning": "You went tanning.",
+      "waxing": "You got waxed.",
+      "space_camp": "You went to space camp.",
+      "shave": "You shaved."
     },
     "limit": "You've done that enough this year."
   },

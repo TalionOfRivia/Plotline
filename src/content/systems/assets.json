@@ -1,56 +1,372 @@
 {
   "houses": [
-    { "id": "studio_apartment", "emoji": "🏢", "price": 120000, "upkeep": 2400, "happiness": 2 },
-    { "id": "one_bedroom_flat", "emoji": "🏢", "price": 180000, "upkeep": 3600, "happiness": 3 },
-    { "id": "two_bedroom_condo", "emoji": "🏬", "price": 250000, "upkeep": 5000, "happiness": 4 },
-    { "id": "townhouse", "emoji": "🏘️", "price": 320000, "upkeep": 6400, "happiness": 5 },
-    { "id": "starter_bungalow", "emoji": "🏠", "price": 380000, "upkeep": 7600, "happiness": 5 },
-    { "id": "suburban_family_home", "emoji": "🏡", "price": 450000, "upkeep": 9000, "happiness": 6 },
-    { "id": "craftsman_house", "emoji": "🏡", "price": 600000, "upkeep": 12000, "happiness": 7 },
-    { "id": "colonial_house", "emoji": "🏛️", "price": 800000, "upkeep": 16000, "happiness": 8 },
-    { "id": "lakeside_cottage", "emoji": "🛖", "price": 1200000, "upkeep": 24000, "happiness": 9 },
-    { "id": "modern_villa", "emoji": "🏡", "price": 2000000, "upkeep": 40000, "happiness": 10 },
-    { "id": "hilltop_mansion", "emoji": "🏰", "price": 4000000, "upkeep": 80000, "happiness": 11 },
-    { "id": "beach_mansion", "emoji": "🏖️", "price": 8000000, "upkeep": 160000, "happiness": 12 },
-    { "id": "chateau", "emoji": "🏰", "price": 15000000, "upkeep": 300000, "happiness": 14 },
-    { "id": "private_island", "emoji": "🏝️", "price": 25000000, "upkeep": 500000, "happiness": 15 }
+    {
+      "id": "studio_apartment",
+      "emoji": "🏢",
+      "price": 120000,
+      "upkeep": 2400,
+      "happiness": 2
+    },
+    {
+      "id": "one_bedroom_flat",
+      "emoji": "🏢",
+      "price": 180000,
+      "upkeep": 3600,
+      "happiness": 3
+    },
+    {
+      "id": "two_bedroom_condo",
+      "emoji": "🏬",
+      "price": 250000,
+      "upkeep": 5000,
+      "happiness": 4
+    },
+    {
+      "id": "townhouse",
+      "emoji": "🏘️",
+      "price": 320000,
+      "upkeep": 6400,
+      "happiness": 5
+    },
+    {
+      "id": "starter_bungalow",
+      "emoji": "🏠",
+      "price": 380000,
+      "upkeep": 7600,
+      "happiness": 5
+    },
+    {
+      "id": "suburban_family_home",
+      "emoji": "🏡",
+      "price": 450000,
+      "upkeep": 9000,
+      "happiness": 6
+    },
+    {
+      "id": "craftsman_house",
+      "emoji": "🏡",
+      "price": 600000,
+      "upkeep": 12000,
+      "happiness": 7
+    },
+    {
+      "id": "colonial_house",
+      "emoji": "🏛️",
+      "price": 800000,
+      "upkeep": 16000,
+      "happiness": 8
+    },
+    {
+      "id": "lakeside_cottage",
+      "emoji": "🛖",
+      "price": 1200000,
+      "upkeep": 24000,
+      "happiness": 9
+    },
+    {
+      "id": "modern_villa",
+      "emoji": "🏡",
+      "price": 2000000,
+      "upkeep": 40000,
+      "happiness": 10
+    },
+    {
+      "id": "hilltop_mansion",
+      "emoji": "🏰",
+      "price": 4000000,
+      "upkeep": 80000,
+      "happiness": 11
+    },
+    {
+      "id": "beach_mansion",
+      "emoji": "🏖️",
+      "price": 8000000,
+      "upkeep": 160000,
+      "happiness": 12
+    },
+    {
+      "id": "chateau",
+      "emoji": "🏰",
+      "price": 15000000,
+      "upkeep": 300000,
+      "happiness": 14
+    },
+    {
+      "id": "private_island",
+      "emoji": "🏝️",
+      "price": 25000000,
+      "upkeep": 500000,
+      "happiness": 15
+    }
   ],
   "cars": [
-    { "id": "used_hatchback", "emoji": "🚗", "price": 6000, "upkeep": 900, "looks": 0, "happiness": 2 },
-    { "id": "used_sedan", "emoji": "🚗", "price": 12000, "upkeep": 1800, "looks": 1, "happiness": 3 },
-    { "id": "new_compact", "emoji": "🚙", "price": 22000, "upkeep": 3000, "looks": 1, "happiness": 3 },
-    { "id": "family_suv", "emoji": "🚙", "price": 35000, "upkeep": 4200, "looks": 2, "happiness": 4 },
-    { "id": "pickup_truck", "emoji": "🛻", "price": 45000, "upkeep": 5400, "looks": 2, "happiness": 4 },
-    { "id": "convertible", "emoji": "🚘", "price": 60000, "upkeep": 7200, "looks": 3, "happiness": 5 },
-    { "id": "luxury_sedan", "emoji": "🚘", "price": 85000, "upkeep": 9500, "looks": 4, "happiness": 5 },
-    { "id": "sports_coupe", "emoji": "🏎️", "price": 120000, "upkeep": 12000, "looks": 5, "happiness": 6 },
-    { "id": "executive_sedan", "emoji": "🚘", "price": 150000, "upkeep": 14000, "looks": 5, "happiness": 6 },
-    { "id": "luxury_suv", "emoji": "🚙", "price": 200000, "upkeep": 18000, "looks": 6, "happiness": 7 },
-    { "id": "classic_roadster", "emoji": "🚗", "price": 350000, "upkeep": 25000, "looks": 7, "happiness": 8 },
-    { "id": "supercar", "emoji": "🏎️", "price": 700000, "upkeep": 45000, "looks": 7, "happiness": 9 },
-    { "id": "exotic_supercar", "emoji": "🏎️", "price": 1100000, "upkeep": 60000, "looks": 8, "happiness": 9 },
-    { "id": "hypercar", "emoji": "🏎️", "price": 2500000, "upkeep": 150000, "looks": 8, "happiness": 10 }
+    {
+      "id": "used_hatchback",
+      "emoji": "🚗",
+      "price": 6000,
+      "upkeep": 900,
+      "looks": 0,
+      "happiness": 2
+    },
+    {
+      "id": "used_sedan",
+      "emoji": "🚗",
+      "price": 12000,
+      "upkeep": 1800,
+      "looks": 1,
+      "happiness": 3
+    },
+    {
+      "id": "new_compact",
+      "emoji": "🚙",
+      "price": 22000,
+      "upkeep": 3000,
+      "looks": 1,
+      "happiness": 3
+    },
+    {
+      "id": "family_suv",
+      "emoji": "🚙",
+      "price": 35000,
+      "upkeep": 4200,
+      "looks": 2,
+      "happiness": 4
+    },
+    {
+      "id": "pickup_truck",
+      "emoji": "🛻",
+      "price": 45000,
+      "upkeep": 5400,
+      "looks": 2,
+      "happiness": 4
+    },
+    {
+      "id": "convertible",
+      "emoji": "🚘",
+      "price": 60000,
+      "upkeep": 7200,
+      "looks": 3,
+      "happiness": 5
+    },
+    {
+      "id": "luxury_sedan",
+      "emoji": "🚘",
+      "price": 85000,
+      "upkeep": 9500,
+      "looks": 4,
+      "happiness": 5
+    },
+    {
+      "id": "sports_coupe",
+      "emoji": "🏎️",
+      "price": 120000,
+      "upkeep": 12000,
+      "looks": 5,
+      "happiness": 6
+    },
+    {
+      "id": "executive_sedan",
+      "emoji": "🚘",
+      "price": 150000,
+      "upkeep": 14000,
+      "looks": 5,
+      "happiness": 6
+    },
+    {
+      "id": "luxury_suv",
+      "emoji": "🚙",
+      "price": 200000,
+      "upkeep": 18000,
+      "looks": 6,
+      "happiness": 7
+    },
+    {
+      "id": "classic_roadster",
+      "emoji": "🚗",
+      "price": 350000,
+      "upkeep": 25000,
+      "looks": 7,
+      "happiness": 8
+    },
+    {
+      "id": "supercar",
+      "emoji": "🏎️",
+      "price": 700000,
+      "upkeep": 45000,
+      "looks": 7,
+      "happiness": 9
+    },
+    {
+      "id": "exotic_supercar",
+      "emoji": "🏎️",
+      "price": 1100000,
+      "upkeep": 60000,
+      "looks": 8,
+      "happiness": 9
+    },
+    {
+      "id": "hypercar",
+      "emoji": "🏎️",
+      "price": 2500000,
+      "upkeep": 150000,
+      "looks": 8,
+      "happiness": 10
+    }
   ],
   "pets": [
-    { "id": "goldfish", "emoji": "🐠", "price": 30, "upkeep": 150, "happiness": 3, "lifespan": 5 },
-    { "id": "hamster", "emoji": "🐹", "price": 40, "upkeep": 200, "happiness": 3, "lifespan": 3 },
-    { "id": "cat", "emoji": "🐈", "price": 150, "upkeep": 900, "happiness": 7, "lifespan": 15 },
-    { "id": "dog", "emoji": "🐕", "price": 800, "upkeep": 1200, "happiness": 8, "lifespan": 13 },
-    { "id": "rabbit", "emoji": "🐇", "price": 100, "upkeep": 500, "happiness": 5, "lifespan": 10 },
-    { "id": "parrot", "emoji": "🦜", "price": 1200, "upkeep": 800, "happiness": 7, "lifespan": 40 },
-    { "id": "snake", "emoji": "🐍", "price": 250, "upkeep": 400, "happiness": 4, "lifespan": 20 },
-    { "id": "horse", "emoji": "🐎", "price": 4000, "upkeep": 6000, "happiness": 9, "lifespan": 30 },
-    { "id": "tortoise", "emoji": "🐢", "price": 300, "upkeep": 200, "happiness": 4, "lifespan": 60 },
-    { "id": "pig", "emoji": "🐖", "price": 500, "upkeep": 1000, "happiness": 6, "lifespan": 18 }
+    {
+      "id": "goldfish",
+      "emoji": "🐠",
+      "price": 30,
+      "upkeep": 150,
+      "happiness": 3,
+      "lifespan": 5
+    },
+    {
+      "id": "hamster",
+      "emoji": "🐹",
+      "price": 40,
+      "upkeep": 200,
+      "happiness": 3,
+      "lifespan": 3
+    },
+    {
+      "id": "cat",
+      "emoji": "🐈",
+      "price": 150,
+      "upkeep": 900,
+      "happiness": 7,
+      "lifespan": 15
+    },
+    {
+      "id": "dog",
+      "emoji": "🐕",
+      "price": 800,
+      "upkeep": 1200,
+      "happiness": 8,
+      "lifespan": 13
+    },
+    {
+      "id": "rabbit",
+      "emoji": "🐇",
+      "price": 100,
+      "upkeep": 500,
+      "happiness": 5,
+      "lifespan": 10
+    },
+    {
+      "id": "parrot",
+      "emoji": "🦜",
+      "price": 1200,
+      "upkeep": 800,
+      "happiness": 7,
+      "lifespan": 40
+    },
+    {
+      "id": "snake",
+      "emoji": "🐍",
+      "price": 250,
+      "upkeep": 400,
+      "happiness": 4,
+      "lifespan": 20
+    },
+    {
+      "id": "horse",
+      "emoji": "🐎",
+      "price": 4000,
+      "upkeep": 6000,
+      "happiness": 9,
+      "lifespan": 30
+    },
+    {
+      "id": "tortoise",
+      "emoji": "🐢",
+      "price": 300,
+      "upkeep": 200,
+      "happiness": 4,
+      "lifespan": 60
+    },
+    {
+      "id": "pig",
+      "emoji": "🐖",
+      "price": 500,
+      "upkeep": 1000,
+      "happiness": 6,
+      "lifespan": 18
+    },
+    {
+      "id": "rescue_dog",
+      "emoji": "🐕‍🦺",
+      "price": 120,
+      "upkeep": 1000,
+      "happiness": 9,
+      "lifespan": 12
+    },
+    {
+      "id": "rescue_cat",
+      "emoji": "🐈‍⬛",
+      "price": 60,
+      "upkeep": 700,
+      "happiness": 7,
+      "lifespan": 14
+    }
   ],
   "luxury": [
-    { "id": "jewelry", "emoji": "💎", "price": 5000, "upkeep": 100, "happiness": 2 },
-    { "id": "watch", "emoji": "⌚", "price": 25000, "upkeep": 250, "happiness": 3 },
-    { "id": "boat", "emoji": "🚤", "price": 150000, "upkeep": 15000, "happiness": 6 },
-    { "id": "jet", "emoji": "✈️", "price": 60000000, "upkeep": 6000000, "happiness": 9 },
-    { "id": "yacht", "emoji": "🛥️", "price": 2500000, "upkeep": 150000, "happiness": 10 },
-    { "id": "art_collection", "emoji": "🖼️", "price": 2000000, "upkeep": 60000, "happiness": 6 },
-    { "id": "vineyard", "emoji": "🍇", "price": 3000000, "upkeep": 120000, "happiness": 7 },
-    { "id": "sports_team", "emoji": "🏈", "price": 500000000, "upkeep": 25000000, "happiness": 10 }
+    {
+      "id": "jewelry",
+      "emoji": "💎",
+      "price": 5000,
+      "upkeep": 100,
+      "happiness": 2
+    },
+    {
+      "id": "watch",
+      "emoji": "⌚",
+      "price": 25000,
+      "upkeep": 250,
+      "happiness": 3
+    },
+    {
+      "id": "boat",
+      "emoji": "🚤",
+      "price": 150000,
+      "upkeep": 15000,
+      "happiness": 6
+    },
+    {
+      "id": "jet",
+      "emoji": "✈️",
+      "price": 60000000,
+      "upkeep": 6000000,
+      "happiness": 9
+    },
+    {
+      "id": "yacht",
+      "emoji": "🛥️",
+      "price": 2500000,
+      "upkeep": 150000,
+      "happiness": 10
+    },
+    {
+      "id": "art_collection",
+      "emoji": "🖼️",
+      "price": 2000000,
+      "upkeep": 60000,
+      "happiness": 6
+    },
+    {
+      "id": "vineyard",
+      "emoji": "🍇",
+      "price": 3000000,
+      "upkeep": 120000,
+      "happiness": 7
+    },
+    {
+      "id": "sports_team",
+      "emoji": "🏈",
+      "price": 500000000,
+      "upkeep": 25000000,
+      "happiness": 10
+    }
   ]
 }

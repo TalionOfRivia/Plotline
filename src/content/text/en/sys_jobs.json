@@ -452,6 +452,16 @@
         "lieutenant": "Lieutenant",
         "cartel_chief": "Cartel Chief"
       }
+    },
+    "fighter": {
+      "name": "Fight League",
+      "ladder": {
+        "amateur": "Amateur Fighter",
+        "pro": "Pro Fighter",
+        "contender": "Contender",
+        "champion": "Champion",
+        "legend_fighter": "Fighting Legend"
+      }
     }
   }
 }

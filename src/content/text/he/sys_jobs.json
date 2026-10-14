@@ -452,6 +452,16 @@
         "lieutenant": "סגן",
         "cartel_chief": "ראש הקרטל"
       }
+    },
+    "fighter": {
+      "name": "ליגת הלחימה",
+      "ladder": {
+        "amateur": "לוחם/ת חובב/ת",
+        "pro": "לוחם/ת מקצועי/ת",
+        "contender": "מתמודד/ת לתואר",
+        "champion": "אלוף/ה",
+        "legend_fighter": "אגדת לחימה"
+      }
     }
   }
 }

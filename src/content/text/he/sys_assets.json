@@ -41,7 +41,9 @@
     "snake": "נחש",
     "horse": "סוס",
     "tortoise": "צב",
-    "pig": "חזיר"
+    "pig": "חזיר",
+    "rescue_dog": "כלב מאומץ",
+    "rescue_cat": "חתול מאומץ"
   },
   "luxury": {
     "jewelry": "תכשיטים",

@@ -34,6 +34,7 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
   }
   if (a.risky && rng.chance(0.12)) {
     if (id === 'skydiving' && rng.chance(0.25)) { kill(life, 'death.skydiving'); return { id, key: 'activity.died', kind: 'bad' } }
+    if (id === 'race_track' && rng.chance(0.1)) { kill(life, 'death.car_crash'); return { id, key: 'activity.died', kind: 'bad' } }
     life.stats.health = clamp(life.stats.health - 15)
     if (id === 'plastic_surgery') { life.stats.looks = clamp(life.stats.looks - 20); life.flags.plastic_surgery = true }
     log(life, 'bad', `activity.botched.${id}`)

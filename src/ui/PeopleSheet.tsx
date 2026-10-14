@@ -18,7 +18,7 @@ const ACTION_EMOJI: Record<Interaction, string> = {
 export function PeopleSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { interact, date } = useGame()
+  const { interact, date, godMode, godEditPerson } = useGame()
   const [selected, setSelected] = useState<string | null>(null)
   const [dating, setDating] = useState(false)
   const lang = i18n.language
@@ -38,6 +38,12 @@ export function PeopleSheet() {
           </div>
           {person.kind !== 'pet' && <div className="mt-1 text-xs opacity-60">✨ {person.looks ?? '?'} · 🧠 {person.smarts ?? '?'}{person.yearsTogether !== undefined && ` · ${t('people.yearsTogether', { n: person.yearsTogether })}`}</div>}
         </div>
+        {godMode && (
+          <div className="bg-card rounded-2xl p-3 mb-3 shadow-sm text-sm">
+            <div className="text-xs uppercase tracking-widest opacity-60 mb-1">⚡ {t('menu.godMode')}</div>
+            <input type="range" min={0} max={100} value={person.relationship} onChange={(e) => godEditPerson(person.id, Number(e.target.value))} className="w-full" />
+          </div>
+        )}
         <Section title={t('people.interact')}>
           {opts.map((k) => (
             <Row key={k} emoji={ACTION_EMOJI[k]} title={t(`people.action.${k}`)} right={INTERACTIONS[k].cost ? formatMoney(INTERACTIONS[k].cost, lang) : undefined}

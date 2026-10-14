@@ -1,7 +1,7 @@
 import type { Life } from './types'
 import { JOB_BY_ID } from './systems'
 
-const FAME_TRACKS = new Set(['actor', 'musician', 'professional_athlete', 'influencer', 'model', 'politician'])
+const FAME_TRACKS = new Set(['actor', 'musician', 'professional_athlete', 'influencer', 'model', 'politician', 'music_producer', 'movie_director', 'fighter'])
 
 /** Recompute flags that content packs rely on. Call every year and after player actions. */
 export function syncDerivedFlags(life: Life) {
@@ -32,7 +32,7 @@ export function syncDerivedFlags(life: Life) {
   set('famous', life.fame >= 50)
   set('celebrity', life.fame >= 80)
   set('fame_career', Boolean(life.job && FAME_TRACKS.has(life.job.trackId)))
-  set('athlete', life.job?.trackId === 'professional_athlete')
+  set('athlete', life.job?.trackId === 'professional_athlete' || life.job?.trackId === 'fighter')
   set('phd', life.education.degrees.some((d) => d.startsWith('grad_')))
   set('pet_owner', life.people.some((p) => p.kind === 'pet'))
   set('owns_private_island', life.assets.some((a) => a.assetId === 'private_island'))

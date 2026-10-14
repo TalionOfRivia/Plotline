@@ -70,6 +70,13 @@ export function assetsYear(life: Life, rng: Rng) {
     else if (a.kind === 'car') { a.value = Math.round(a.value * 0.88); a.condition = clamp(a.condition - rng.int(3, 9)) }
     else a.value = Math.round(a.value * (1 + rng.int(-5, 8) / 100))
   }
+  // landlord: every home beyond the one you live in brings rent (4% of value, minus wear)
+  const homes = life.assets.filter((a) => a.kind === 'house')
+  if (homes.length > 1) {
+    const rent = homes.slice(1).reduce((s, h) => s + Math.round(h.value * 0.04), 0)
+    life.money += rent
+    log(life, 'good', 'assets.rent', { money: rent, n: homes.length - 1 })
+  }
   for (const p of life.people) {
     if (p.kind !== 'pet' || !p.alive) continue
     const def = ASSET_BY_ID[p.species ?? '']
