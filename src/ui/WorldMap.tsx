@@ -72,13 +72,15 @@ export function WorldMap({ value, onChange, label }: Props) {
   // pointer handlers: pan with one finger / mouse, pinch with two
   const pointers = useRef(new Map<number, { x: number; y: number }>())
   const onDown = (e: React.PointerEvent) => {
-    ;(e.currentTarget as Element).setPointerCapture(e.pointerId)
+    try { (e.currentTarget as Element).setPointerCapture(e.pointerId) } catch { /* synthetic or already-released pointer */ }
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
-    if (pointers.current.size === 1) drag.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y, moved: false }
+    const code = (e.target as Element).closest?.('[data-code]')?.getAttribute('data-code') ?? null
+    if (pointers.current.size === 1) { drag.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y, moved: false }; tapTarget.current = code }
     if (pointers.current.size === 2) {
       const [a, b] = [...pointers.current.values()]
       pinch.current = { d: Math.hypot(a.x - b.x, a.y - b.y), k: view.k }
       drag.current = null
+      pinched.current = true
     }
   }
   const scale = () => (svgRef.current ? W / svgRef.current.getBoundingClientRect().width : 1)
@@ -101,13 +103,17 @@ export function WorldMap({ value, onChange, label }: Props) {
   const onUp = (e: React.PointerEvent) => {
     pointers.current.delete(e.pointerId)
     if (pointers.current.size < 2) pinch.current = null
-    if (pointers.current.size === 0) { const moved = drag.current?.moved; drag.current = null; if (moved) suppressClick.current = true }
+    if (pointers.current.size === 0) {
+      const moved = drag.current?.moved
+      drag.current = null
+      // a clean tap (no pan, no pinch) selects the country under the finger
+      if (!moved && tapTarget.current && !pinched.current) onChange(tapTarget.current)
+      tapTarget.current = null
+      pinched.current = false
+    }
   }
-  const suppressClick = useRef(false)
-  const pick = (code: string) => {
-    if (suppressClick.current) { suppressClick.current = false; return }
-    onChange(code)
-  }
+  const tapTarget = useRef<string | null>(null)
+  const pinched = useRef(false)
   const zoomAt = (v: { x: number; y: number; k: number }, k: number, clientX: number, clientY: number) => {
     const rect = svgRef.current!.getBoundingClientRect()
     const px = ((clientX - rect.left) / rect.width) * W, py = ((clientY - rect.top) / rect.height) * H
@@ -151,8 +157,8 @@ export function WorldMap({ value, onChange, label }: Props) {
                 stroke={active ? '#9ff5ec' : '#0b1322'} strokeWidth={(active ? 1.6 : 0.5) / view.k}
                 filter={active ? 'url(#glow)' : undefined}
                 style={{ transition: 'fill .2s', cursor: 'pointer' }}
-                onPointerEnter={() => setHover(s.code)} onPointerLeave={() => setHover(null)}
-                onClick={() => pick(s.code)}>
+                data-code={s.code}
+                onPointerEnter={() => setHover(s.code)} onPointerLeave={() => setHover(null)}>
                 <title>{label(s.code)}</title>
               </path>
             )
@@ -160,7 +166,7 @@ export function WorldMap({ value, onChange, label }: Props) {
           {pins.map((p) => (
             <circle key={p.code} cx={p.x} cy={p.y} r={(p.code === value ? 5 : 3) / view.k}
               fill={p.code === value ? '#2ec4b6' : '#6f8bb5'} stroke="#0b1322" strokeWidth={0.6 / view.k}
-              style={{ cursor: 'pointer' }} onClick={() => pick(p.code)}>
+              data-code={p.code} style={{ cursor: 'pointer' }}>
               <title>{label(p.code)}</title>
             </circle>
           ))}
