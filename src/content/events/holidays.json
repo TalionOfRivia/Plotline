@@ -1,0 +1,1883 @@
+[
+  {
+    "id": "hd_new_year_resolution",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 12,
+      "month": 1
+    },
+    "choices": [
+      {
+        "id": "stick",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 55,
+            "effects": {
+              "health": 5,
+              "smarts": 2,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "quits",
+            "weight": 45,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "happiness": 1,
+          "karma": -1
+        }
+      },
+      {
+        "id": "new",
+        "effects": {
+          "happiness": 3,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_new_years_hangover",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "month": 1
+    },
+    "choices": [
+      {
+        "id": "sleep",
+        "effects": {
+          "health": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "greasy",
+        "effects": {
+          "happiness": 3,
+          "health": -2,
+          "money": -12
+        }
+      },
+      {
+        "id": "run",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 50,
+            "effects": {
+              "health": 5,
+              "happiness": 3
+            }
+          },
+          {
+            "id": "puke",
+            "weight": 50,
+            "effects": {
+              "health": -3,
+              "happiness": -4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hd_snow_day",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 30,
+      "month": 1
+    },
+    "choices": [
+      {
+        "id": "snowman",
+        "effects": {
+          "happiness": 6,
+          "health": 1
+        }
+      },
+      {
+        "id": "fight",
+        "effects": {
+          "happiness": 3,
+          "health": -2
+        }
+      },
+      {
+        "id": "bed",
+        "effects": {
+          "happiness": 3,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_tax_forms",
+    "category": "money",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "employed"
+      ],
+      "month": 1
+    },
+    "choices": [
+      {
+        "id": "honest",
+        "effects": {
+          "karma": 3,
+          "money": -30,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "creative",
+        "effects": {
+          "money": -25,
+          "happiness": -1,
+          "karma": -2
+        }
+      },
+      {
+        "id": "accountant",
+        "effects": {
+          "money": -80,
+          "smarts": 1,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_valentine_dating",
+    "category": "romance",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "flags": [
+        "dating"
+      ],
+      "month": 2
+    },
+    "choices": [
+      {
+        "id": "dinner",
+        "effects": {
+          "happiness": 4,
+          "money": -70,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "homemade",
+        "effects": {
+          "happiness": 5,
+          "money": -20,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "forgot",
+        "effects": {
+          "happiness": -4,
+          "relationship": -12,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_valentine_single",
+    "category": "romance",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "flags": [
+        "single"
+      ],
+      "month": 2
+    },
+    "choices": [
+      {
+        "id": "friends",
+        "effects": {
+          "happiness": 5,
+          "money": -15
+        }
+      },
+      {
+        "id": "swipe",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "spark",
+            "weight": 35,
+            "effects": {
+              "happiness": 6
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 65,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "treat",
+        "effects": {
+          "happiness": 3,
+          "health": -1,
+          "money": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_big_game_party",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 2
+    },
+    "choices": [
+      {
+        "id": "bet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 35,
+            "effects": {
+              "money": 120,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 65,
+            "effects": {
+              "money": -40,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "host",
+        "effects": {
+          "happiness": 4,
+          "money": -30,
+          "karma": 2
+        }
+      },
+      {
+        "id": "nap",
+        "effects": {
+          "happiness": -1,
+          "health": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_leap_day",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 10,
+      "month": 2
+    },
+    "choices": [
+      {
+        "id": "risk",
+        "effects": {
+          "happiness": 3,
+          "money": 22
+        }
+      },
+      {
+        "id": "normal",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "kind",
+        "effects": {
+          "karma": 5,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_purim_party",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 5,
+      "month": 3
+    },
+    "choices": [
+      {
+        "id": "costume",
+        "effects": {
+          "happiness": 7,
+          "money": -25
+        }
+      },
+      {
+        "id": "lastminute",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_spring_cleaning",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 3
+    },
+    "choices": [
+      {
+        "id": "purge",
+        "effects": {
+          "happiness": 4,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "sell",
+        "effects": {
+          "money": 50,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_march_storm",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 3
+    },
+    "choices": [
+      {
+        "id": "inside",
+        "effects": {
+          "happiness": 3,
+          "health": 1
+        }
+      },
+      {
+        "id": "out",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun",
+            "weight": 45,
+            "effects": {
+              "happiness": 5
+            }
+          },
+          {
+            "id": "soaked",
+            "weight": 55,
+            "effects": {
+              "health": -4,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "help",
+        "effects": {
+          "karma": 4,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_purim_mishloach",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 3
+    },
+    "choices": [
+      {
+        "id": "everyone",
+        "effects": {
+          "karma": 4,
+          "happiness": 3,
+          "money": -30
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "karma": -2,
+          "happiness": 1,
+          "money": -15
+        }
+      },
+      {
+        "id": "secret",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "crush",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "karma": 2
+            }
+          },
+          {
+            "id": "mixup",
+            "weight": 60,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hd_april_fools_victim",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 4
+    },
+    "choices": [
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      },
+      {
+        "id": "revenge",
+        "effects": {
+          "happiness": 1,
+          "karma": -1
+        }
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_april_fools_prank",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 10,
+      "month": 4
+    },
+    "choices": [
+      {
+        "id": "fake",
+        "effects": {
+          "happiness": 2,
+          "karma": -1
+        }
+      },
+      {
+        "id": "gentle",
+        "effects": {
+          "happiness": 3,
+          "karma": 1
+        }
+      },
+      {
+        "id": "none",
+        "effects": {
+          "smarts": 1,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_passover_seder",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "requiresPerson": "mother",
+      "month": 4
+    },
+    "choices": [
+      {
+        "id": "fourquestions",
+        "effects": {
+          "happiness": 4,
+          "relationship": 8,
+          "karma": 1
+        }
+      },
+      {
+        "id": "afikoman",
+        "effects": {
+          "money": 22,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "skipahead",
+        "effects": {
+          "happiness": 1,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_spring_break",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 28,
+      "month": 4
+    },
+    "choices": [
+      {
+        "id": "trip",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wild",
+            "weight": 55,
+            "effects": {
+              "happiness": 9,
+              "money": -100,
+              "health": -2
+            }
+          },
+          {
+            "id": "burn",
+            "weight": 45,
+            "effects": {
+              "happiness": 2,
+              "money": -100,
+              "health": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "money": 20,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "day",
+        "effects": {
+          "happiness": 4,
+          "money": -25
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_mothers_day",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "requiresPerson": "mother",
+      "month": 5
+    },
+    "choices": [
+      {
+        "id": "flowers",
+        "effects": {
+          "happiness": 4,
+          "relationship": 12,
+          "money": -25
+        }
+      },
+      {
+        "id": "breakfast",
+        "effects": {
+          "happiness": 5,
+          "relationship": 10,
+          "karma": 2
+        }
+      },
+      {
+        "id": "forget",
+        "effects": {
+          "happiness": -3,
+          "relationship": -12,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_lag_baomer",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "month": 5
+    },
+    "choices": [
+      {
+        "id": "fire",
+        "effects": {
+          "happiness": 5,
+          "karma": 2,
+          "health": -1
+        }
+      },
+      {
+        "id": "potato",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "home",
+        "effects": {
+          "health": -1,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_graduation_season",
+    "category": "school",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "month": 5
+    },
+    "choices": [
+      {
+        "id": "clap",
+        "effects": {
+          "happiness": 4,
+          "karma": 2
+        }
+      },
+      {
+        "id": "speech",
+        "effects": {}
+      },
+      {
+        "id": "reflect",
+        "effects": {
+          "smarts": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_may_heatwave",
+    "category": "health",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 5
+    },
+    "choices": [
+      {
+        "id": "pool",
+        "effects": {
+          "happiness": 5,
+          "health": 2,
+          "money": -10
+        }
+      },
+      {
+        "id": "ac",
+        "effects": {
+          "happiness": 1,
+          "health": 1
+        }
+      },
+      {
+        "id": "run",
+        "effects": {
+          "health": -2,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_fathers_day",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "requiresPerson": "father",
+      "month": 6
+    },
+    "choices": [
+      {
+        "id": "gift",
+        "effects": {
+          "happiness": 3,
+          "relationship": 10,
+          "money": -40
+        }
+      },
+      {
+        "id": "time",
+        "effects": {
+          "happiness": 5,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "text",
+        "effects": {
+          "happiness": -1,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_pride_parade",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 6
+    },
+    "choices": [
+      {
+        "id": "march",
+        "effects": {
+          "happiness": 8,
+          "karma": 3,
+          "health": -1
+        }
+      },
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 4
+        }
+      },
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "calm",
+            "weight": 45,
+            "effects": {
+              "karma": 3,
+              "happiness": 3
+            }
+          },
+          {
+            "id": "heat",
+            "weight": 55,
+            "effects": {
+              "happiness": -3,
+              "karma": -1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hd_summer_wedding",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "month": 6
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "happiness": 6,
+          "money": -60,
+          "health": -1
+        }
+      },
+      {
+        "id": "toast",
+        "effects": {
+          "karma": 1
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "money": -30,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_exam_memories",
+    "category": "school",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "month": 6
+    },
+    "choices": [
+      {
+        "id": "coffee",
+        "effects": {
+          "karma": 3,
+          "happiness": 2,
+          "money": -10
+        }
+      },
+      {
+        "id": "smug",
+        "effects": {
+          "happiness": 3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "study",
+        "effects": {
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_jellyfish",
+    "category": "health",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 7
+    },
+    "choices": [
+      {
+        "id": "vinegar",
+        "effects": {
+          "health": -2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "lifeguard",
+        "effects": {
+          "health": -1,
+          "happiness": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "tough",
+        "effects": {
+          "health": -4,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_bbq_fail",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 7
+    },
+    "choices": [
+      {
+        "id": "grill",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "chef",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "karma": 1
+            }
+          },
+          {
+            "id": "fire",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "health": -2,
+              "money": -25
+            }
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "effects": {
+          "money": -60,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "hand",
+        "effects": {
+          "happiness": 2,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_fireworks",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "month": 7
+    },
+    "choices": [
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 7
+        }
+      },
+      {
+        "id": "own",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun",
+            "weight": 45,
+            "effects": {
+              "happiness": 5
+            }
+          },
+          {
+            "id": "hurt",
+            "weight": 55,
+            "effects": {
+              "health": -6,
+              "happiness": -4,
+              "money": -40
+            }
+          }
+        ]
+      },
+      {
+        "id": "pets",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_heat_stroke",
+    "category": "health",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 10,
+      "month": 7
+    },
+    "choices": [
+      {
+        "id": "shade",
+        "effects": {
+          "health": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "tough",
+        "effects": {
+          "happiness": -2,
+          "health": -4,
+          "money": -18
+        }
+      },
+      {
+        "id": "ice",
+        "effects": {
+          "health": 1,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_vacation_traffic",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 8
+    },
+    "choices": [
+      {
+        "id": "music",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "shortcut",
+        "effects": {
+          "happiness": -1,
+          "money": -13
+        }
+      },
+      {
+        "id": "patience",
+        "effects": {
+          "happiness": 1,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_summer_job_ends",
+    "category": "work",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 26,
+      "month": 8
+    },
+    "choices": [
+      {
+        "id": "save",
+        "effects": {
+          "money": 150,
+          "happiness": 1,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "splurge",
+        "effects": {
+          "money": -20,
+          "happiness": 6
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "smarts": 1,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_back_to_school_shopping",
+    "category": "school",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 18,
+      "month": 8
+    },
+    "choices": [
+      {
+        "id": "basic",
+        "effects": {
+          "money": -15,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "cool",
+        "effects": {
+          "happiness": 5,
+          "money": -45
+        }
+      },
+      {
+        "id": "sale",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "found",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "money": -10
+            }
+          },
+          {
+            "id": "empty",
+            "weight": 50,
+            "effects": {
+              "happiness": -2,
+              "money": -30
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hd_meteor_shower",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "month": 8
+    },
+    "choices": [
+      {
+        "id": "wish",
+        "effects": {
+          "happiness": 6
+        }
+      },
+      {
+        "id": "friends",
+        "effects": {
+          "happiness": 7,
+          "money": -10
+        }
+      },
+      {
+        "id": "late",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "magic",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "tired",
+            "weight": 50,
+            "effects": {
+              "happiness": 2,
+              "health": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hd_rosh_hashanah",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 6,
+      "month": 9
+    },
+    "choices": [
+      {
+        "id": "blessing",
+        "effects": {
+          "happiness": 5,
+          "karma": 2
+        }
+      },
+      {
+        "id": "answer",
+        "effects": {}
+      },
+      {
+        "id": "seconds",
+        "effects": {
+          "happiness": 3,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_new_year_gym",
+    "category": "health",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "month": 9
+    },
+    "choices": [
+      {
+        "id": "sign",
+        "effects": {
+          "health": 2,
+          "happiness": -1,
+          "money": -250
+        }
+      },
+      {
+        "id": "trial",
+        "effects": {
+          "health": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "home",
+        "effects": {
+          "health": 2,
+          "money": -20
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_first_day_nostalgia",
+    "category": "school",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 19,
+      "month": 9
+    },
+    "choices": [
+      {
+        "id": "smile",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "shudder",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_apple_honey",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 5,
+      "month": 9
+    },
+    "choices": [
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "clean",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean",
+            "weight": 40,
+            "effects": {
+              "happiness": 2
+            }
+          },
+          {
+            "id": "sticky",
+            "weight": 60,
+            "effects": {
+              "happiness": -3,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "shift",
+        "effects": {
+          "karma": -2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_yom_kippur",
+    "category": "random",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 13,
+      "month": 10
+    },
+    "choices": [
+      {
+        "id": "fast",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 60,
+            "effects": {
+              "health": -1,
+              "happiness": 4,
+              "karma": 3
+            }
+          },
+          {
+            "id": "faint",
+            "weight": 40,
+            "effects": {
+              "health": -5,
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      },
+      {
+        "id": "snack",
+        "effects": {
+          "happiness": 1,
+          "karma": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_sukkah",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 8,
+      "requiresPerson": "sibling",
+      "month": 10
+    },
+    "choices": [
+      {
+        "id": "build",
+        "effects": {
+          "happiness": 2,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "lead",
+        "effects": {
+          "happiness": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "cheat",
+        "effects": {
+          "money": -50,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_halloween_party",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "month": 10
+    },
+    "choices": [
+      {
+        "id": "scary",
+        "effects": {
+          "happiness": 6,
+          "money": -20
+        }
+      },
+      {
+        "id": "clever",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 2,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_pumpkin_spice",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 10
+    },
+    "choices": [
+      {
+        "id": "love",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "hate",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "taste",
+        "effects": {
+          "money": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_black_friday",
+    "category": "money",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "month": 11
+    },
+    "choices": [
+      {
+        "id": "fight",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "money": -50,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 60,
+            "effects": {
+              "health": -4,
+              "happiness": -3,
+              "money": -40
+            }
+          }
+        ]
+      },
+      {
+        "id": "online",
+        "effects": {
+          "money": -60,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "nothing",
+        "effects": {
+          "happiness": 1,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_family_dinner",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "month": 11
+    },
+    "choices": [
+      {
+        "id": "polite",
+        "effects": {
+          "happiness": -1,
+          "karma": 2
+        }
+      },
+      {
+        "id": "argue",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "point",
+            "weight": 35,
+            "effects": {
+              "happiness": 4,
+              "karma": 1
+            }
+          },
+          {
+            "id": "scene",
+            "weight": 65,
+            "effects": {
+              "happiness": -5,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "escape",
+        "effects": {
+          "happiness": 2,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_charity_drive",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 12,
+      "month": 11
+    },
+    "choices": [
+      {
+        "id": "give",
+        "effects": {
+          "karma": 6,
+          "happiness": 4,
+          "money": -40
+        }
+      },
+      {
+        "id": "volunteer",
+        "effects": {
+          "karma": 6,
+          "happiness": 5,
+          "health": 1
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "karma": -3,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_movember",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "gender": "male",
+      "month": 11
+    },
+    "choices": [
+      {
+        "id": "grow",
+        "effects": {
+          "karma": 3,
+          "money": 20
+        }
+      },
+      {
+        "id": "donate",
+        "effects": {
+          "karma": 4,
+          "money": -25
+        }
+      },
+      {
+        "id": "shave",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_hanukkah",
+    "category": "family",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 5,
+      "requiresPerson": "sibling",
+      "month": 12
+    },
+    "choices": [
+      {
+        "id": "light",
+        "effects": {
+          "happiness": 6,
+          "relationship": 10,
+          "karma": 1
+        }
+      },
+      {
+        "id": "donut",
+        "effects": {
+          "happiness": 2,
+          "relationship": 4,
+          "health": -2
+        }
+      },
+      {
+        "id": "dreidel",
+        "effects": {
+          "happiness": 4,
+          "money": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_nye_kiss_dating",
+    "category": "romance",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "flags": [
+        "dating"
+      ],
+      "month": 12
+    },
+    "choices": [
+      {
+        "id": "kiss",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "movie",
+            "weight": 70,
+            "effects": {
+              "happiness": 8,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "sloppy",
+            "weight": 30,
+            "effects": {
+              "happiness": -1,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "quiet",
+        "effects": {
+          "happiness": 6,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "party",
+        "effects": {
+          "happiness": 4,
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_nye_kiss_single",
+    "category": "romance",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 16,
+      "flags": [
+        "single"
+      ],
+      "month": 12
+    },
+    "choices": [
+      {
+        "id": "stranger",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "spark",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "karma": -1
+            }
+          },
+          {
+            "id": "slap",
+            "weight": 60,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "home",
+        "effects": {
+          "happiness": -2,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hd_gift_exchange",
+    "category": "social",
+    "weight": 4,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "month": 12
+    },
+    "choices": [
+      {
+        "id": "thoughtful",
+        "effects": {
+          "happiness": 1,
+          "karma": 2,
+          "money": -20
+        }
+      },
+      {
+        "id": "gift_card",
+        "effects": {
+          "money": -20
+        }
+      },
+      {
+        "id": "regift",
+        "effects": {
+          "karma": -3,
+          "happiness": 1
+        }
+      }
+    ]
+  }
+]

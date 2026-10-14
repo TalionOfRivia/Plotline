@@ -1,0 +1,1891 @@
+[
+  {
+    "id": "pr2_laundry_shift",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "prison_job"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hustle",
+        "effects": {
+          "smarts": 1,
+          "happiness": 2,
+          "karma": 2,
+          "money": 30
+        }
+      },
+      {
+        "id": "slack",
+        "effects": {
+          "happiness": 4,
+          "karma": -1
+        }
+      },
+      {
+        "id": "wash_contraband",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "paid",
+            "weight": 55,
+            "effects": {
+              "money": 300,
+              "karma": -4,
+              "happiness": 5
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 45,
+            "effects": {
+              "happiness": -12,
+              "karma": -3,
+              "flags": {
+                "solitary": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_kitchen_shift",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "prison_job"
+      ]
+    },
+    "choices": [
+      {
+        "id": "cook",
+        "effects": {
+          "happiness": 6,
+          "karma": 2,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "spit",
+        "effects": {
+          "happiness": 3,
+          "karma": -4
+        }
+      },
+      {
+        "id": "steal_food",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "feast",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "health": 3,
+              "money": 60,
+              "karma": -2
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 40,
+            "effects": {
+              "happiness": -8,
+              "health": -3,
+              "karma": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_library_shift",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "prison_job"
+      ]
+    },
+    "choices": [
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 6,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "lawbooks",
+        "effects": {
+          "smarts": 4,
+          "happiness": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "sell_gossip",
+        "effects": {
+          "money": 40,
+          "happiness": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_gang_initiation",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ],
+      "notFlags": [
+        "gang_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 4,
+          "karma": -6,
+          "money": 50,
+          "flags": {
+            "gang_member": true
+          }
+        }
+      },
+      {
+        "id": "refuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "respect",
+            "weight": 55,
+            "effects": {
+              "happiness": 2,
+              "karma": 3
+            }
+          },
+          {
+            "id": "beaten",
+            "weight": 45,
+            "effects": {
+              "health": -12,
+              "happiness": -8,
+              "flags": {
+                "injury": 10
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask_guard",
+        "effects": {
+          "happiness": -6,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_gang_war",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "gang_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "fight",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "won",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "karma": -5,
+              "health": -4
+            }
+          },
+          {
+            "id": "hurt",
+            "weight": 30,
+            "effects": {
+              "health": -18,
+              "happiness": -8,
+              "flags": {
+                "injury": 15
+              }
+            }
+          },
+          {
+            "id": "hole",
+            "weight": 25,
+            "effects": {
+              "happiness": -10,
+              "karma": -3,
+              "flags": {
+                "solitary": true
+              }
+            }
+          },
+          {
+            "id": "dead",
+            "weight": 5,
+            "effects": {
+              "death": "shanked"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hang_back",
+        "effects": {
+          "happiness": -3,
+          "karma": 1,
+          "flags": {
+            "gang_member": false
+          }
+        }
+      },
+      {
+        "id": "warn",
+        "effects": {
+          "karma": 4,
+          "happiness": -6,
+          "flags": {
+            "gang_member": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_gang_tax",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "gang_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "pay",
+        "effects": {
+          "money": -100,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "stall",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 50,
+            "effects": {
+              "happiness": 2
+            }
+          },
+          {
+            "id": "lesson",
+            "weight": 50,
+            "effects": {
+              "health": -10,
+              "happiness": -6,
+              "flags": {
+                "injury": 8
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_gang_leave",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "gang_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "walk_away",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "free",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "karma": 3,
+              "flags": {
+                "gang_member": false
+              }
+            }
+          },
+          {
+            "id": "beat_out",
+            "weight": 40,
+            "effects": {
+              "health": -15,
+              "happiness": -4,
+              "flags": {
+                "gang_member": false
+              }
+            }
+          },
+          {
+            "id": "refused",
+            "weight": 10,
+            "effects": {
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -2,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_cellmate_confession",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "listen",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 5,
+          "happiness": -4,
+          "money": 40
+        }
+      },
+      {
+        "id": "blackmail",
+        "effects": {
+          "karma": -6,
+          "happiness": 3,
+          "money": 120
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_contraband_phone",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "call_home",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sweet",
+            "weight": 65,
+            "effects": {
+              "happiness": 14,
+              "karma": 1
+            }
+          },
+          {
+            "id": "shakedown",
+            "weight": 35,
+            "effects": {
+              "happiness": -10,
+              "karma": -2,
+              "flags": {
+                "solitary": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sell",
+        "effects": {
+          "money": 220,
+          "karma": -3,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "flush",
+        "effects": {
+          "happiness": -2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_corrupt_guard",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "pay",
+        "effects": {
+          "money": -200,
+          "happiness": 6,
+          "health": 4,
+          "karma": -3
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "karma": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "report",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cleaned",
+            "weight": 35,
+            "effects": {
+              "karma": 8,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "retaliation",
+            "weight": 65,
+            "effects": {
+              "happiness": -10,
+              "health": -6,
+              "karma": 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_visit_no_show_spouse",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ],
+      "requiresPerson": "spouse"
+    },
+    "choices": [
+      {
+        "id": "write",
+        "effects": {
+          "happiness": -6,
+          "relationship": -12
+        }
+      },
+      {
+        "id": "forgive",
+        "effects": {
+          "happiness": -8,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "let_go",
+        "effects": {
+          "happiness": -10,
+          "relationship": -20
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_visit_no_show_child",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ],
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "call",
+        "effects": {
+          "happiness": -4,
+          "relationship": -6
+        }
+      },
+      {
+        "id": "draw",
+        "effects": {
+          "happiness": -6,
+          "relationship": 4,
+          "karma": 1
+        }
+      },
+      {
+        "id": "swallow",
+        "effects": {
+          "happiness": -12,
+          "relationship": -15
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_class_education",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "enrol",
+        "effects": {
+          "smarts": 7,
+          "happiness": 3,
+          "karma": 1
+        }
+      },
+      {
+        "id": "sleep",
+        "effects": {
+          "happiness": 2,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "top_student",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "star",
+            "weight": 50,
+            "effects": {
+              "smarts": 10,
+              "happiness": 7,
+              "karma": 2
+            }
+          },
+          {
+            "id": "mocked",
+            "weight": 50,
+            "effects": {
+              "smarts": 4,
+              "happiness": -4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_appeal_letter",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "file",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "granted",
+            "weight": 30,
+            "effects": {
+              "happiness": 12,
+              "flags": {
+                "prison_time_off": 1
+              }
+            }
+          },
+          {
+            "id": "denied",
+            "weight": 70,
+            "effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "pro_bono",
+        "effects": {
+          "happiness": -1,
+          "smarts": 1,
+          "money": -20
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_hunger_strike",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 8,
+              "health": -5,
+              "karma": 3
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 60,
+            "effects": {
+              "happiness": -8,
+              "health": -12
+            }
+          }
+        ]
+      },
+      {
+        "id": "eat",
+        "effects": {
+          "happiness": 3,
+          "karma": -2
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_transfer",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "calm",
+        "effects": {
+          "happiness": -3,
+          "karma": 1
+        }
+      },
+      {
+        "id": "scheme",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stay",
+            "weight": 35,
+            "effects": {
+              "happiness": 4,
+              "karma": -2
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 65,
+            "effects": {
+              "happiness": -10,
+              "health": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_tattoo",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "get",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 65,
+            "effects": {
+              "happiness": 7,
+              "looks": 2,
+              "karma": -1
+            }
+          },
+          {
+            "id": "infected",
+            "weight": 35,
+            "effects": {
+              "health": -10,
+              "happiness": -4,
+              "looks": -2,
+              "flags": {
+                "ailment": "flu"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -1,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_snitch_dilemma",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "safe",
+            "weight": 55,
+            "effects": {
+              "karma": 6,
+              "happiness": 4,
+              "flags": {
+                "prison_time_off": 1
+              }
+            }
+          },
+          {
+            "id": "marked",
+            "weight": 40,
+            "effects": {
+              "karma": 6,
+              "health": -14,
+              "happiness": -12,
+              "flags": {
+                "injury": 10
+              }
+            }
+          },
+          {
+            "id": "killed",
+            "weight": 5,
+            "effects": {
+              "death": "shanked"
+            }
+          }
+        ]
+      },
+      {
+        "id": "silent",
+        "effects": {
+          "happiness": -3,
+          "karma": -3
+        }
+      },
+      {
+        "id": "anon",
+        "effects": {
+          "karma": 3,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_talent_show",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "perform",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "standing",
+            "weight": 45,
+            "effects": {
+              "happiness": 14,
+              "karma": 1,
+              "looks": 1
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 55,
+            "effects": {
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "judge",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_parole_board",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "plead",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "granted",
+            "weight": 35,
+            "effects": {
+              "happiness": 18,
+              "flags": {
+                "parole": true
+              }
+            }
+          },
+          {
+            "id": "denied",
+            "weight": 65,
+            "effects": {
+              "happiness": -10
+            }
+          }
+        ]
+      },
+      {
+        "id": "lawyer_up",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "granted2",
+            "weight": 45,
+            "effects": {
+              "happiness": 16,
+              "money": -300,
+              "flags": {
+                "parole": true
+              }
+            }
+          },
+          {
+            "id": "denied2",
+            "weight": 55,
+            "effects": {
+              "happiness": -9,
+              "money": -300
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_last_meal",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "death_row"
+      ]
+    },
+    "choices": [
+      {
+        "id": "feast",
+        "effects": {
+          "happiness": 8,
+          "health": 2
+        }
+      },
+      {
+        "id": "mom_cooking",
+        "effects": {
+          "happiness": 10,
+          "karma": 1
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_final_appeal",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "death_row"
+      ]
+    },
+    "choices": [
+      {
+        "id": "appeal",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "commuted",
+            "weight": 35,
+            "effects": {
+              "happiness": 20,
+              "flags": {
+                "commute_sentence": true
+              }
+            }
+          },
+          {
+            "id": "executed",
+            "weight": 35,
+            "effects": {
+              "flags": {
+                "executed": true
+              }
+            }
+          },
+          {
+            "id": "stay",
+            "weight": 30,
+            "effects": {
+              "happiness": -4,
+              "health": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "pray",
+        "effects": {
+          "happiness": 4,
+          "karma": 4,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_pen_pal",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "death_row"
+      ]
+    },
+    "choices": [
+      {
+        "id": "reply",
+        "effects": {
+          "happiness": 10,
+          "karma": 1,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "fall",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "bond",
+            "weight": 60,
+            "effects": {
+              "happiness": 14,
+              "karma": 3
+            }
+          },
+          {
+            "id": "story",
+            "weight": 40,
+            "effects": {
+              "happiness": -8,
+              "karma": -2,
+              "flags": {
+                "scandal": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_chaplain_visit",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison",
+        "death_row"
+      ]
+    },
+    "choices": [
+      {
+        "id": "confess",
+        "effects": {
+          "karma": 8,
+          "happiness": 7
+        }
+      },
+      {
+        "id": "debate",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "silence",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_probation_checkin",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "probation"
+      ]
+    },
+    "choices": [
+      {
+        "id": "cooperate",
+        "effects": {
+          "karma": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "hide",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean",
+            "weight": 55,
+            "effects": {
+              "happiness": 3,
+              "karma": -2
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 45,
+            "effects": {
+              "happiness": -14,
+              "karma": -4,
+              "flags": {
+                "sentence_extra": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_probation_temptation",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "probation"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rich",
+            "weight": 40,
+            "effects": {
+              "money": 2500,
+              "karma": -8,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "violated",
+            "weight": 60,
+            "effects": {
+              "happiness": -18,
+              "karma": -6,
+              "flags": {
+                "sentence_extra": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "karma": 5,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 6,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_probation_job",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "probation"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "effects": {
+          "money": 400,
+          "happiness": 3,
+          "karma": 2
+        }
+      },
+      {
+        "id": "hustle",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "id": "lie",
+        "effects": {
+          "karma": -4,
+          "money": 600,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_commissary",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "save",
+        "effects": {
+          "money": 50,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "treat",
+        "effects": {
+          "money": -30,
+          "happiness": 6
+        }
+      },
+      {
+        "id": "share",
+        "effects": {
+          "money": -20,
+          "karma": 5,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_yard_chess",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 20,
+            "effects": {
+              "smarts": 5,
+              "happiness": 12
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 80,
+            "effects": {
+              "smarts": 3,
+              "happiness": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_lockdown",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 2,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "rage",
+        "effects": {
+          "happiness": -5,
+          "health": -1
+        }
+      },
+      {
+        "id": "workout",
+        "effects": {
+          "health": 4,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_new_fish",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "mentor",
+        "effects": {
+          "karma": 6,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": 0
+        }
+      },
+      {
+        "id": "rob",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 60,
+            "effects": {
+              "money": 40,
+              "karma": -6,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "retaliate",
+            "weight": 40,
+            "effects": {
+              "health": -8,
+              "karma": -6,
+              "happiness": -6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_ex_letter",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ],
+      "requiresPerson": "ex"
+    },
+    "choices": [
+      {
+        "id": "reply",
+        "effects": {
+          "happiness": 4,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "burn",
+        "effects": {
+          "happiness": -3,
+          "relationship": -8
+        }
+      },
+      {
+        "id": "ask_money",
+        "effects": {
+          "money": 50,
+          "relationship": -4,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_mother_letter",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ],
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "write",
+        "effects": {
+          "happiness": 8,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": -3,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -6,
+          "relationship": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_probation_curfew",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "probation"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sneak",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun",
+            "weight": 55,
+            "effects": {
+              "happiness": 10,
+              "karma": -2
+            }
+          },
+          {
+            "id": "check",
+            "weight": 45,
+            "effects": {
+              "happiness": -12,
+              "flags": {
+                "sentence_extra": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_hooch",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "drink",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "night",
+            "weight": 55,
+            "effects": {
+              "happiness": 9,
+              "health": -3,
+              "karma": -1
+            }
+          },
+          {
+            "id": "sick",
+            "weight": 45,
+            "effects": {
+              "health": -14,
+              "happiness": -6,
+              "flags": {
+                "ailment": "migraines"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sell",
+        "effects": {
+          "money": 150,
+          "karma": -3
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": -1,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_guard_beating",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "effects": {
+          "health": -12,
+          "happiness": -8
+        }
+      },
+      {
+        "id": "fight_back",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lucky",
+            "weight": 25,
+            "effects": {
+              "happiness": 6,
+              "karma": 1,
+              "health": -4
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 75,
+            "effects": {
+              "health": -18,
+              "happiness": -10,
+              "flags": {
+                "solitary": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "file",
+        "effects": {
+          "karma": 4,
+          "happiness": -3,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_interview",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sympathy",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "karma": 2,
+              "flags": {
+                "followers": 500
+              }
+            }
+          },
+          {
+            "id": "roasted",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "karma": -2,
+              "flags": {
+                "scandal": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_old_timer",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "listen",
+        "effects": {
+          "smarts": 3,
+          "happiness": 2,
+          "karma": 1
+        }
+      },
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "smarts": 4,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pr2_shakedown",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "calm",
+        "effects": {
+          "happiness": -3,
+          "karma": 1
+        }
+      },
+      {
+        "id": "object",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ignored",
+            "weight": 60,
+            "effects": {
+              "happiness": -5
+            }
+          },
+          {
+            "id": "punished",
+            "weight": 40,
+            "effects": {
+              "happiness": -10,
+              "flags": {
+                "solitary": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pr2_mess_riot",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "in_prison"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -3,
+          "health": -1
+        }
+      },
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "survive",
+            "weight": 50,
+            "effects": {
+              "happiness": 5,
+              "karma": -4,
+              "health": -6
+            }
+          },
+          {
+            "id": "hurt",
+            "weight": 45,
+            "effects": {
+              "health": -18,
+              "happiness": -8,
+              "flags": {
+                "injury": 15
+              }
+            }
+          },
+          {
+            "id": "dead",
+            "weight": 5,
+            "effects": {
+              "death": "stabbing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "help",
+        "effects": {
+          "karma": 4,
+          "health": -4
+        }
+      }
+    ]
+  }
+]

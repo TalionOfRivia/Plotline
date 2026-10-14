@@ -12,10 +12,14 @@ export function ChallengesSheet() {
   const done = useGame((s) => s.completedChallenges)
   const lang = i18n.language
   const tiers = ['easy', 'medium', 'hard', 'legendary', 'achievement'] as const
+  const week = Math.floor((Date.now() - Date.UTC(2026, 0, 1)) / (7 * 86_400_000))
+  const pool = CHALLENGES.filter((c) => c.tier !== 'achievement')
+  const featured = pool.length ? pool[week % pool.length] : null
 
   return (
     <Sheet title={t('challenge.title')} emoji="🏆">
       <p className="text-xs opacity-70 px-1 mb-3">{t('challenge.hint', { done: done.length, total: CHALLENGES.length })}</p>
+      {featured && <div className="bg-accent text-on-accent rounded-2xl p-3 mb-3 shadow-sm"><div className="text-xs uppercase tracking-widest opacity-80">{t('challenge.featured')}</div><div className="font-bold">{featured.emoji} {sysText(lang, 'challenges', `${featured.id}.name`)}</div><div className="text-xs opacity-80">{sysText(lang, 'challenges', `${featured.id}.blurb`)}</div></div>}
       {tiers.map((tier) => {
         const list = CHALLENGES.filter((c) => c.tier === tier)
         if (!list.length) return null

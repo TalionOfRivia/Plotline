@@ -6,11 +6,12 @@ import { interviewOdds, meetsRequirements, taxOn } from '../engine/jobs'
 import { formatMoney } from './money'
 import { gigPay } from '../engine/extras'
 import { RECRUITER_FEE } from '../engine/jobs'
+import { BRANCHES, RANKS, canEnlist } from '../engine/military'
 
 export function JobSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { applyJob, quitJob, workHarder, retire, gig, recruiter, setHours, reportHR, socialize } = useGame()
+  const { applyJob, quitJob, workHarder, retire, gig, recruiter, setHours, reportHR, socialize, enlist, discharge } = useGame()
   const lang = i18n.language
   const job = life.job
   const track = job ? JOB_BY_ID[job.trackId] : null
@@ -61,6 +62,19 @@ export function JobSheet() {
         </div>
       )}
 
+      {life.military ? (
+        <Section title={t('military.title')}>
+          <div className="bg-card rounded-2xl p-4 mb-2 shadow-sm text-sm">
+            <div className="font-bold">🎖️ {t(`military.branch.${life.military.branch}`)} · {t(`military.rank.${RANKS[life.military.rank]}`)}</div>
+            <div className="opacity-70">{t('military.years', { n: life.military.years })}{life.flags.medal ? ` · 🏅 ${t('military.medalBadge')}` : ''}</div>
+          </div>
+          {!life.flags.conscripted && life.military.years >= 2 && <Row emoji="🚪" title={t('military.leave')} sub={t('military.leaveSub')} onClick={discharge} />}
+        </Section>
+      ) : canEnlist(life) && !job ? (
+        <Section title={t('military.enlist')}>
+          {BRANCHES.map((b) => <Row key={b} emoji={{ army: '🪖', navy: '⚓', air_force: '✈️', marines: '🦅' }[b]} title={t(`military.branch.${b}`)} sub={t('military.enlistSub')} onClick={() => enlist(b)} />)}
+        </Section>
+      ) : null}
       {life.gigs.length > 0 && (
         <Section title={t('gig.title')}>
           {life.gigs.map((id) => (

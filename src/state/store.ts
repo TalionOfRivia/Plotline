@@ -13,6 +13,12 @@ import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, s
 import { doActivity, type ActivityResult } from '../engine/activities'
 import { doGig, emigrate, fertilityTreatment, invest, repayLoan, sue, takeLicense, takeLoan, toggleWill, withdraw, type LicenseKey, type Result } from '../engine/extras'
 import { syncDerivedFlags } from '../engine/derived'
+import { appeal, escapeResult, joinGang, takePrisonJob, type PrisonJob } from '../engine/prison'
+import { deploymentResult, discharge, enlist, type Branch } from '../engine/military'
+import { donate, seeDoctor, type DoctorKind } from '../engine/doctors'
+import { popularityAction, switchSchool, takeGED, teacherAction, type PopularityAction, type TeacherAction } from '../engine/school'
+import { renovate, toggleInsurance } from '../engine/assets'
+import { datingApp, surrogacy } from '../engine/relationships'
 import { kill } from '../engine/util'
 import { checkChallenges } from '../engine/challenges'
 import { applyTheme, loadTheme, type Theme } from '../ui/theme'
@@ -27,6 +33,10 @@ interface GameState {
   undo: Life | null
   /** older snapshots, newest first (up to 5 more years back) */
   history: Life[]
+  /** past lives */
+  cemetery: { name: string; age: number; worth: number; ribbon?: string; cause?: string; generation: number; year: number }[]
+  /** mini-game overlay */
+  minigame: null | { kind: 'maze' | 'mines'; seed: number }
   /** people the player defined; they show up in future lives */
   customPeople: { first: string; last: string; gender: 'female' | 'male'; kind: 'friend' | 'partner' }[]
   lastOutcome: { eventId: string; choiceId: string; outcomeId?: string } | null
@@ -49,6 +59,24 @@ interface GameState {
   reportHR: () => void
   socialize: () => void
   wedding: (personId: string, venue: string, honeymoon: string) => void
+  prisonJob: (job: PrisonJob) => void
+  joinGang: () => void
+  appeal: () => void
+  startEscape: () => void
+  finishEscape: (won: boolean) => void
+  enlist: (b: Branch) => void
+  discharge: () => void
+  finishDeployment: (cleared: number, total: number, hitMine: boolean) => void
+  doctor: (k: DoctorKind) => void
+  donate: (w: 'blood' | 'plasma') => void
+  teacher: (id: string, a: TeacherAction) => void
+  popularity: (a: PopularityAction) => void
+  switchSchool: (priv: boolean) => void
+  ged: () => void
+  renovate: (id: string) => void
+  toggleInsurance: (k: 'home' | 'car') => void
+  datingApp: (min: number, max: number) => void
+  surrogacy: () => void
   choose: (choiceId: string) => void
   dismissOutcome: () => void
   toTitle: () => void
@@ -68,8 +96,8 @@ interface GameState {
   adoptPet: (petId: string) => void
   interact: (personId: string, kind: Interaction) => void
   date: (candidateId: string) => void
-  crime: (crimeId: string) => CrimeResult | null
-  enrollUni: (major: string, funding: 'cash' | 'loan' | 'scholarship') => void
+  crime: (crimeId: string, opts?: { target?: string; accompliceId?: string }) => CrimeResult | null
+  enrollUni: (major: string, funding: 'cash' | 'loan' | 'scholarship' | 'parents') => void
   enrollGrad: (gradId: string) => void
   study: () => void
   activity: (id: string) => ActivityResult | null
@@ -101,6 +129,13 @@ interface GameState {
 
 const snapshot = (l: Life): Life => JSON.parse(JSON.stringify(l))
 
+function bury(s: { life: Life | null; cemetery: GameState['cemetery'] }) {
+  const l = s.life
+  if (!l || s.cemetery.some((c) => c.name === `${l.firstName} ${l.lastName}` && c.age === l.age && c.generation === l.generation)) return
+  s.cemetery.unshift({ name: `${l.firstName} ${l.lastName}`, age: l.age, worth: l.money + l.assets.reduce((t, a) => t + a.value - a.mortgage, 0), ribbon: l.ribbon, cause: l.causeOfDeath, generation: l.generation, year: new Date().getFullYear() })
+  s.cemetery = s.cemetery.slice(0, 50)
+}
+
 export const useGame = create<GameState>()(
   persist(
     immer((set, get) => {
@@ -109,7 +144,7 @@ export const useGame = create<GameState>()(
         set((s) => { if (s.life && s.life.alive) withRng(s.life, (rng) => fn(s.life!, rng)) })
 
       return {
-        life: null, undo: null, history: [], customPeople: [], lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false, completedChallenges: [], theme: loadTheme(),
+        life: null, undo: null, history: [], customPeople: [], cemetery: [], minigame: null, lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false, completedChallenges: [], theme: loadTheme(),
 
         newLife: (opts) => set((s) => { s.life = createLife(opts); s.undo = null; s.lastOutcome = null; s.screen = 'game'; s.sheet = null }),
         toSetup: () => set((s) => { s.screen = 'setup' }),
@@ -121,9 +156,10 @@ export const useGame = create<GameState>()(
           ageUp(s.life)
           // custom people drift into your life
           if (s.customPeople.length && s.life.age >= 6) withRng(s.life, (rng) => { for (const cp of s.customPeople) { if (s.life!.people.some((p) => p.firstName === cp.first && p.lastName === cp.last)) continue; if (!rng.chance(0.12)) continue; if (cp.kind === 'friend') { s.life!.people.push({ id: 'cp' + Date.now().toString(36) + rng.int(0, 9999), firstName: cp.first, lastName: cp.last, gender: cp.gender, age: s.life!.age + rng.int(-3, 3), kind: 'friend', relationship: rng.int(55, 85), alive: true, looks: rng.bell(20, 100), smarts: rng.bell(20, 100), craziness: rng.bell(0, 100) }); s.life!.diary.push({ age: s.life!.age, kind: 'good', text: 'people.newFriend', params: { name: cp.first } }) } else if (s.life!.age >= 18 && !s.life!.dateBoard.some((d) => d.firstName === cp.first)) { s.life!.dateBoard.unshift({ id: 'cp' + Date.now().toString(36) + rng.int(0, 9999), firstName: cp.first, lastName: cp.last, gender: cp.gender, age: s.life!.age + rng.int(-4, 4), kind: 'partner', relationship: rng.int(50, 75), alive: true, looks: rng.bell(40, 100), smarts: rng.bell(30, 100), craziness: rng.bell(0, 100), income: rng.int(20_000, 120_000), money: rng.int(0, 100_000) }) } } })
+          if (s.life.flags.deploy_now) { delete s.life.flags.deploy_now; s.minigame = { kind: 'mines', seed: Date.now() % 100000 } }
           const fresh = checkChallenges(s.life, s.completedChallenges)
           if (fresh.length) { s.completedChallenges.push(...fresh); s.toast = { key: 'challenge.toast', params: { id: fresh[0] }, kind: 'good' } }
-          if (!s.life.alive) s.screen = 'tombstone'
+          if (!s.life.alive) { s.screen = 'tombstone'; bury(s) }
         }),
         undoYear: (yearsBack = 1) => set((s) => {
           const chain = [s.undo, ...s.history].filter(Boolean) as Life[]
@@ -136,13 +172,32 @@ export const useGame = create<GameState>()(
         setHours: (h) => act((l) => setHours(l, h)),
         reportHR: () => act((l, rng) => { const r = reportToHR(l, rng); if (r) get().setToast({ key: r === 'win' ? 'work.hrWin' : 'work.hrLose', kind: r === 'win' ? 'good' : 'bad' }) }),
         socialize: () => act((l, rng) => socialize(l, rng)),
+        prisonJob: (job) => act((l) => takePrisonJob(l, job)),
+        joinGang: () => act((l, rng) => joinGang(l, rng)),
+        appeal: () => act((l, rng) => appeal(l, rng)),
+        startEscape: () => set((s) => { if (s.life?.prison) s.minigame = { kind: 'maze', seed: Date.now() % 100000 } }),
+        finishEscape: (won) => set((s) => { s.minigame = null; if (s.life) withRng(s.life, () => escapeResult(s.life!, won)); s.sheet = null }),
+        enlist: (b) => act((l) => { if (!enlist(l, b)) get().setToast({ key: 'military.cant', kind: 'bad' }) }),
+        discharge: () => act((l) => discharge(l, true)),
+        finishDeployment: (cleared, total, hit) => set((s) => { s.minigame = null; if (s.life) { withRng(s.life, (rng) => deploymentResult(s.life!, cleared, total, hit, rng)); if (!s.life.alive) { s.screen = 'tombstone'; bury(s) } } }),
+        doctor: (k) => get().extra((l, rng) => seeDoctor(l, k, rng)),
+        donate: (w) => get().extra((l) => donate(l, w)),
+        teacher: (id, a) => act((l, rng) => get().setToast({ key: teacherAction(l, id, a, rng), kind: 'info' })),
+        popularity: (a) => act((l, rng) => get().setToast({ key: popularityAction(l, a, rng), kind: 'info' })),
+        switchSchool: (priv) => act((l) => { if (!switchSchool(l, priv)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
+        ged: () => act((l, rng) => takeGED(l, rng)),
+        renovate: (id) => act((l) => { if (!renovate(l, id)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
+        toggleInsurance: (k) => act((l) => toggleInsurance(l, k)),
+        datingApp: (min, max) => act((l, rng) => { if (!datingApp(l, rng, min, max)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
+        surrogacy: () => act((l, rng) => { if (!surrogacy(l, rng)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
         wedding: (personId, venue, honeymoon) => act((l) => { if (!holdWedding(l, personId, venue, honeymoon)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
         choose: (choiceId) => set((s) => {
           if (!s.life?.pending) return
           const eventId = s.life.pending.eventId
           const outcomeId = chooseOption(s.life, choiceId)
           s.lastOutcome = { eventId, choiceId, outcomeId }
-          if (!s.life.alive) s.screen = 'tombstone'
+          if (s.life.flags.deploy_now) { delete s.life.flags.deploy_now; s.minigame = { kind: 'mines', seed: Date.now() % 100000 } }
+          if (!s.life.alive) { s.screen = 'tombstone'; bury(s) }
         }),
         dismissOutcome: () => set((s) => { s.lastOutcome = null }),
         toTitle: () => set((s) => { s.screen = 'title'; s.sheet = null }),
@@ -171,9 +226,9 @@ export const useGame = create<GameState>()(
           const c = l.dateBoard.find((x) => x.id === candidateId)
           if (c) { const ok = startDating(l, c, rng); get().setToast({ key: ok ? 'people.newPartner' : 'people.rejected', params: { name: c.firstName }, kind: ok ? 'good' : 'bad' }) }
         }),
-        crime: (crimeId) => {
+        crime: (crimeId, opts) => {
           let result: CrimeResult | null = null
-          act((l, rng) => { result = commitCrime(l, crimeId, rng) })
+          act((l, rng) => { result = commitCrime(l, crimeId, rng, opts) })
           const s = get()
           if (s.life && !s.life.alive) set((st) => { st.screen = 'tombstone' })
           return result
@@ -224,9 +279,9 @@ export const useGame = create<GameState>()(
     {
       name: 'plotline.save.v2',
       version: 2,
-      migrate: (state) => { const s = state as GameState; if (s.life) migrateLife(s.life); if (s.undo) migrateLife(s.undo); s.history ??= []; s.customPeople ??= []; return s },
+      migrate: (state) => { const s = state as GameState; if (s.life) migrateLife(s.life); if (s.undo) migrateLife(s.undo); s.history ??= []; s.customPeople ??= []; s.cemetery ??= []; return s },
       merge: (persisted, current) => { const p = persisted as Partial<GameState>; if (p.life) migrateLife(p.life); if (p.undo) migrateLife(p.undo); return { ...current, ...p } },
-      partialize: (s) => ({ life: s.life, undo: s.undo, history: s.history, customPeople: s.customPeople, screen: s.screen === 'setup' ? 'title' : s.screen, godMode: s.godMode, completedChallenges: s.completedChallenges, theme: s.theme }) as GameState,
+      partialize: (s) => ({ life: s.life, undo: s.undo, history: s.history, customPeople: s.customPeople, cemetery: s.cemetery, screen: s.screen === 'setup' ? 'title' : s.screen, godMode: s.godMode, completedChallenges: s.completedChallenges, theme: s.theme }) as GameState,
     },
   ),
 )

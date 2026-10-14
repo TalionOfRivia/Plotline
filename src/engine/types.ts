@@ -12,7 +12,7 @@ export interface Stats {
 }
 
 export type RelationKind =
-  | 'mother' | 'father' | 'sibling' | 'friend' | 'partner' | 'spouse' | 'ex' | 'child' | 'pet'
+  | 'mother' | 'father' | 'sibling' | 'friend' | 'partner' | 'spouse' | 'ex' | 'child' | 'pet' | 'grandparent' | 'in_law'
 
 export interface Person {
   id: string
@@ -100,6 +100,9 @@ export interface Prison {
   yearsLeft: number
   served: number
   crimeId: string
+  job?: 'laundry' | 'kitchen' | 'library' | 'workshop'
+  gang?: boolean
+  deathRow?: boolean
 }
 
 export interface Business {
@@ -147,6 +150,11 @@ export interface Life {
   prisonYears: number
   royalty: { rank: 'none' | 'royal' | 'heir' | 'monarch'; popularity: number; title?: string }
   mafia: { rank: number; respect: number } | null
+  military: { branch: 'army' | 'navy' | 'air_force' | 'marines'; rank: number; years: number } | null
+  /** teachers at the current school */
+  teachers: { id: string; name: string; subject: string; relationship: number }[]
+  /** past lives (cemetery) live in the store, not here */
+  insurance: { home: boolean; car: boolean }
   business: Business | null
   marriages: number
   /** year-by-year listings cache (job ids) so the board is stable within a year */
@@ -193,6 +201,8 @@ export interface Condition {
   requiresPerson?: RelationKind
   /** the event is about a person of that kind who has died (funerals, wills) */
   requiresPersonDead?: boolean
+  /** real calendar month (1-12) the event is tied to */
+  month?: number
 }
 
 export interface Choice {
@@ -261,5 +271,9 @@ export interface RibbonDef {
     minMoney?: number; maxMoney?: number; minAge?: number; maxAge?: number; minKids?: number; minCrimes?: number
     minPrisonYears?: number; flags?: string[]; notFlags?: string[]; maxEvents?: number; minMarriages?: number
     famous?: boolean; royal?: boolean
+    karmaMin?: number; karmaMax?: number
+    stat?: { name: 'happiness' | 'health' | 'smarts' | 'looks'; min?: number; max?: number }
+    counter?: { name: string; min: number }
+    minFollowers?: number
   }
 }

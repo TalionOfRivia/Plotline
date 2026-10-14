@@ -40,7 +40,9 @@
       "friend": "Friend",
       "partner": "Date"
     },
-    "addPerson": "Add person"
+    "addPerson": "Add person",
+    "cemetery": "Cemetery",
+    "cemeteryEmpty": "No past lives yet."
   },
   "stats": {
     "happiness": "Happiness",
@@ -80,7 +82,9 @@
     "inherited": "{{name}} left you ${{money}} in their will."
   },
   "event": {
-    "odds": "{{pct}}% chance: {{outcome}}"
+    "odds": "{{pct}}% chance: {{outcome}}",
+    "surprise": "Surprise me",
+    "reaction": "{{name}}'s feelings"
   },
   "death": {
     "restInPeace": "Rest in peace",
@@ -113,7 +117,9 @@
     "exposure": "Died of exposure.",
     "overdose": "Overdose.",
     "bar_fight": "Killed in a bar fight.",
-    "surrender": "Gave up on life."
+    "surrender": "Gave up on life.",
+    "executed": "Executed by the state.",
+    "killed_in_action": "Killed in action."
   },
   "school": {
     "started": "You started school.",
@@ -130,7 +136,18 @@
     "toast": {
       "cantEnroll": "You can't enroll in that.",
       "studied": "You hit the books. Grades +8, fun −2."
-    }
+    },
+    "teacherEnough": "That teacher has seen enough of you this year.",
+    "teacherSuckUp": "The teacher warmed to you. Grades nudged up.",
+    "teacherHelp": "Extra help paid off.",
+    "prankWin": "Legendary prank. Everyone laughed.",
+    "prankCaught": "Caught mid-prank. Grades and goodwill down.",
+    "partyHit": "Your party was the talk of the school.",
+    "beNice": "Kindness, oddly, works.",
+    "showOffWin": "You nailed it. Popularity up.",
+    "showOffFlop": "You face-planted. Popularity down.",
+    "gedPassed": "You passed the GED. Diploma earned.",
+    "gedFailed": "You failed the GED."
   },
   "edu": {
     "none": "No diploma",
@@ -148,7 +165,8 @@
     "funding": {
       "cash": "paid in cash",
       "loan": "student loans",
-      "scholarship": "full scholarship"
+      "scholarship": "full scholarship",
+      "parents": "parents pay"
     },
     "stage": {
       "none": "Not in school",
@@ -164,7 +182,30 @@
     "grad_dental": "Dental school",
     "grad_vet": "Veterinary school",
     "grad_pharm": "Pharmacy school",
-    "grad_nursing": "Nursing school"
+    "grad_nursing": "Nursing school",
+    "popularity": "Popularity",
+    "hostParty": "Host a party",
+    "beNice": "Be nice to everyone",
+    "showOff": "Show off",
+    "teachers": "Teachers",
+    "suckUp": "Suck up",
+    "askHelp": "Ask for help",
+    "prankTeacher": "Prank",
+    "toPrivate": "Switch to private school",
+    "toPrivateSub": "{{money}}/yr, better grades.",
+    "toPublic": "Back to public school",
+    "toPublicSub": "Free again.",
+    "ged": "Take the GED",
+    "gedSub": "A second shot at a high-school diploma.",
+    "subject": {
+      "math": "Math teacher",
+      "literature": "Literature teacher",
+      "science": "Science teacher",
+      "history": "History teacher",
+      "pe": "PE teacher",
+      "art": "Art teacher",
+      "music": "Music teacher"
+    }
   },
   "work": {
     "current": "Current job",
@@ -262,7 +303,13 @@
     "repair": "Repair car",
     "repaired": "You repaired your {{item}} for ${{money}}.",
     "giftCar": "Your parents surprised you with a used car.",
-    "giftHome": "Your parents helped you into a small apartment of your own."
+    "giftHome": "Your parents helped you into a small apartment of your own.",
+    "mortgageRejected": "Mortgage rejected: your income is too low.",
+    "renovate": "Renovate",
+    "renovated": "You renovated your {{item}} for ${{money}}; value up 18%.",
+    "homeInsurance": "Home insurance",
+    "carInsurance": "Car insurance",
+    "insurancePaid": "Insurance covered 80% of the damage."
   },
   "people": {
     "interact": "Interact",
@@ -383,7 +430,17 @@
       "city_break": "City break",
       "tropical": "Tropical resort",
       "world_tour": "World tour"
-    }
+    },
+    "datingApp": "Dating app",
+    "ageRange": "Age",
+    "swipe": "Find matches",
+    "surrogacy": "Surrogacy",
+    "surrogacySub": "A guaranteed baby for the price of a car.",
+    "pregnant": "A pregnancy!",
+    "alimony": "The court ordered alimony: ${{money}}/yr for 5 years.",
+    "custodyLost": "The kids live with your ex now. Child support applies.",
+    "notYours": "The test came back. {{name}} is not biologically yours.",
+    "yours": "The test confirmed it: {{name}} is yours."
   },
   "crime": {
     "hint": "Odds shown are real. Convictions on record: {{record}}.",
@@ -393,7 +450,35 @@
     "sentenced": "You were sentenced to {{years}} years for {{crime}}.",
     "toast": {
       "success": "{{text}}",
-      "caught": "{{text}} {{years}} years."
+      "caught": "{{text}} {{years}} years.",
+      "arrested": "{{text}} You were arrested."
+    },
+    "acquitted": "Not guilty of {{crime}}. You walked.",
+    "deathRow": "Sentenced to death.",
+    "accompliceRatted": "{{name}} ratted you out later. Enemies now.",
+    "target": "Pick a target",
+    "odds": "odds",
+    "payout": "payout",
+    "accomplice": "Accomplice",
+    "alone": "Go alone",
+    "accompliceSub": "Crazier friends are bolder — and less loyal.",
+    "go": "Do it",
+    "targets": {
+      "bungalow": "A sleepy bungalow",
+      "suburban_home": "A suburban home",
+      "mansion": "A mansion with cameras",
+      "old_sedan": "An old sedan",
+      "family_suv": "A family SUV",
+      "sports_car": "A sports car",
+      "small_shop": "A small shop",
+      "bank": "A bank",
+      "ex_partner": "An ex's accounts",
+      "credit_union": "A credit union",
+      "downtown_branch": "A downtown branch",
+      "central_vault": "The central vault",
+      "stranger": "A stranger",
+      "enemy": "An enemy",
+      "rival": "A rival"
     }
   },
   "prison": {
@@ -403,7 +488,35 @@
     "paroled": "You were granted parole.",
     "extended": "Your sentence was extended by {{years}} years.",
     "escaped": "You escaped from prison. You're a fugitive.",
-    "recaptured": "You were recaptured."
+    "recaptured": "You were recaptured.",
+    "title": "Prison",
+    "deathRow": "On death row. Appeal while you can.",
+    "served": "{{n}} years served",
+    "inGang": "gang member",
+    "work": "Prison work",
+    "jobSub": "$1,200/yr, a little sanity",
+    "jobs": {
+      "laundry": "Laundry",
+      "kitchen": "Kitchen",
+      "library": "Library",
+      "workshop": "Workshop"
+    },
+    "options": "Options",
+    "joinGang": "Join a gang",
+    "joinGangSub": "Protection from beatings; trouble of its own.",
+    "appeal": "File an appeal",
+    "appealSub": "{{money}}, ~20% to cut your sentence.",
+    "escape": "Attempt escape",
+    "escapeSub": "A mini-game. Fail and it's +2 years.",
+    "gangRejected": "The gang beat you for asking.",
+    "gangJoined": "You were jumped in.",
+    "appealWon": "Appeal granted: {{years}} years off.",
+    "appealLost": "Appeal denied.",
+    "commuted": "Your death sentence was commuted to life.",
+    "escapeFailed": "Caught at the fence. Two more years.",
+    "beaten": "You got beaten up in the yard.",
+    "gangTrouble": "A gang beef added a year to your sentence.",
+    "probationOver": "Your probation ended."
   },
   "act": {
     "mindBody": "Mind & body",
@@ -481,7 +594,8 @@
       "space_camp": "You went to space camp.",
       "shave": "You shaved."
     },
-    "limit": "You've done that enough this year."
+    "limit": "You've done that enough this year.",
+    "illegalHere": "That's illegal where you live."
   },
   "fame": {
     "title": "Fame",
@@ -504,7 +618,12 @@
     "postBtn": "Post",
     "viralOn": "Your post went viral: +{{followers}} followers.",
     "postedOn": "You posted. +{{followers}} followers.",
-    "subsIncome": "Your subscribers paid ${{money}} this year."
+    "subsIncome": "Your subscribers paid ${{money}} this year.",
+    "verified": "You got verified on {{platform}}.",
+    "sponsorPaid": "The sponsorship paid ${{money}}.",
+    "sponsorScandal": "The sponsored product was a scam. Your name is on it.",
+    "awardWon": "You won the award!",
+    "awardLost": "You lost gracefully. The after-party was better anyway."
   },
   "royal": {
     "born": "You were born into the royal family.",
@@ -553,7 +672,11 @@
       "fashion_label": "Fashion label",
       "real_estate_firm": "Real estate firm",
       "record_label": "Record label",
-      "car_dealership": "Car dealership"
+      "car_dealership": "Car dealership",
+      "museum": "Museum",
+      "race_garage": "Race car garage",
+      "zoo": "Zoo",
+      "casino": "Casino"
     }
   },
   "business": {
@@ -615,7 +738,8 @@
       "hard": "Hard",
       "legendary": "Legendary",
       "achievement": "Achievements"
-    }
+    },
+    "featured": "This week's challenge"
   },
   "gig": {
     "title": "Freelance gigs",
@@ -800,5 +924,83 @@
       "anemia": "anemia",
       "insomnia": "insomnia"
     }
+  },
+  "maze": {
+    "title": "Escape",
+    "hint": "Reach the door. The guard moves two steps for your one, sideways first — use the walls to trap him.",
+    "won": "You made it over the wall.",
+    "caught": "Caught. Two more years."
+  },
+  "mines": {
+    "title": "Deployment",
+    "hint": "Clear the field: tap safe cells. {{n}} mines. Numbers count neighbouring mines.",
+    "progress": "{{done}} / {{total}} cleared",
+    "retreat": "Pull back now",
+    "boom": "Boom."
+  },
+  "tutorial": {
+    "0": "These four bars are you: happiness, health, smarts, looks. Keep them out of the red.",
+    "1": "Tap the big + button to live one year. Events pop up — your choices shape the story, and risky ones show their odds.",
+    "2": "The bottom tabs are everything else: jobs, money, people, and activities. Dig around.",
+    "tap": "Tap to continue"
+  },
+  "military": {
+    "title": "Military service",
+    "enlist": "Enlist",
+    "enlistSub": "Steady pay, promotions, deployments.",
+    "enlisted": "You enlisted in the {{branch}}.",
+    "discharged": "Honourable discharge as {{rank}}.",
+    "dishonourable": "Dishonourable discharge.",
+    "promoted": "Promoted to {{rank}}.",
+    "serviceDone": "Your mandatory service is complete. You can leave or stay on.",
+    "wounded": "You were wounded on deployment.",
+    "medal": "You were decorated for valour.",
+    "deploymentOver": "You came home from deployment.",
+    "refused": "You refused deployment and were demoted.",
+    "dodged": "You dodged the draft and nobody noticed. Yet.",
+    "cant": "You can't enlist right now.",
+    "years": "{{n}} years of service",
+    "medalBadge": "Decorated",
+    "leave": "Leave the service",
+    "leaveSub": "Honourable discharge. Veteran status.",
+    "branch": {
+      "army": "Army",
+      "navy": "Navy",
+      "air_force": "Air Force",
+      "marines": "Marines"
+    },
+    "rank": {
+      "private": "Private",
+      "corporal": "Corporal",
+      "sergeant": "Sergeant",
+      "lieutenant": "Lieutenant",
+      "captain": "Captain",
+      "major": "Major",
+      "colonel": "Colonel",
+      "general": "General"
+    }
+  },
+  "doctor": {
+    "title": "Doctors",
+    "sub": "Two clinics, a witch doctor, donations.",
+    "current": "Current illness: {{ailment}}",
+    "depressedHint": "You are depressed. The psychiatrist is under Mind & body.",
+    "reputation": "Reputation",
+    "kind": {
+      "cheap": "Walk-in clinic",
+      "good": "Specialist",
+      "alternative": "Alternative healer"
+    },
+    "donate": "Donate",
+    "blood": "Donate blood",
+    "bloodSub": "Karma up, a cookie.",
+    "plasma": "Sell plasma",
+    "plasmaSub": "A little cash, a little dizzy.",
+    "altMiracle": "The healer's brew worked. Somehow.",
+    "altMess": "The healer's brew did not agree with you.",
+    "checkup": "Clean bill of health.",
+    "cantDonate": "You can't donate right now.",
+    "gaveBlood": "You donated blood.",
+    "soldPlasma": "You sold plasma for ${{money}}."
   }
 }

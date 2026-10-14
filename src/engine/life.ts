@@ -10,7 +10,9 @@ import { schoolYear } from './school'
 import { refreshJobBoard, taxOn, workYear } from './jobs'
 import { assetsYear } from './assets'
 import { refreshDateBoard, relationshipsYear } from './relationships'
-import { prisonYear } from './crime'
+import { prisonYear } from './prison'
+import { militaryYear } from './military'
+import { fameExtrasYear } from './special'
 import { businessYear, fameYear, mafiaYear, maybeBornRoyal, royalYear, specialCareersYear } from './special'
 import { awardRibbon } from './ribbons'
 import type { Gender, Life, Person } from './types'
@@ -34,7 +36,7 @@ export function blankLife(seed: string): Life {
     people: [], diary: [], seenEvents: [], flags: {}, pending: null, rngCalls: 0,
     education: { stage: 'none', grades: 0, yearsIn: 0, degrees: [], loans: 0 },
     job: null, retired: false, pension: 0, assets: [], fame: 0, crimes: 0, convictions: 0,
-    prison: null, prisonYears: 0, royalty: { rank: 'none', popularity: 50 }, mafia: null, business: null,
+    prison: null, prisonYears: 0, royalty: { rank: 'none', popularity: 50 }, mafia: null, business: null, military: null, teachers: [], insurance: { home: false, car: false },
     marriages: 0, jobBoard: [], dateBoard: [], generation: 1,
     loan: 0, investments: { index: 0, crypto: 0 }, will: false, gigs: [], social: {},
   }
@@ -51,6 +53,9 @@ export function migrateLife(life: Life): Life {
   life.investments.crypto ??= 0
   life.gigs ??= []
   life.social ??= {}
+  life.military ??= null
+  life.teachers ??= []
+  life.insurance ??= { home: false, car: false }
   life.royalty ??= { rank: 'none', popularity: 50 }
   life.education ??= base.education
   return life
@@ -90,6 +95,7 @@ export function createLife(opts: NewLifeOptions = {}): Life {
     const mother = makePerson(rng, country.code, 'mother', { gender: 'female', lastName, age: rng.int(19, 42) })
     const father = makePerson(rng, country.code, 'father', { gender: 'male', lastName, age: rng.int(20, 48) })
     life.people.push(mother, father)
+    for (let i = 0; i < rng.int(1, 2); i++) life.people.push(makePerson(rng, country.code, 'grandparent', { age: rng.int(55, 78), relationship: rng.int(60, 90) }))
     const sibs = rng.weighted([0, 1, 2], (n) => [45, 40, 15][n])!
     for (let i = 0; i < sibs; i++) life.people.push(makePerson(rng, country.code, 'sibling', { lastName, age: rng.int(1, 8) }))
     log(life, 'milestone', 'diary.born', { city: life.city, country: life.country })
@@ -157,11 +163,13 @@ export function ageUp(life: Life) {
 
   // systems
   prisonYear(life, rng)
+  militaryYear(life, rng)
   schoolYear(life, rng)
   workYear(life, rng)
   assetsYear(life, rng)
   relationshipsYear(life, rng)
   fameYear(life, rng)
+  fameExtrasYear(life, rng)
   royalYear(life, rng)
   mafiaYear(life, rng)
   businessYear(life, rng)
@@ -171,8 +179,11 @@ export function ageUp(life: Life) {
   // household: base living cost, dependants, and a working spouse's take-home
   if (life.age >= 18 && !life.prison && life.education.stage !== 'university' && life.education.stage !== 'grad') {
     const kids = life.people.filter((p) => p.kind === 'child' && p.alive && p.age < 18 && !p.movedOut).length
-    life.money -= (life.assets.some((a) => a.kind === 'house') ? 12_000 : 16_000) + kids * 10_000
+    const atHome = life.age < 23 && !life.assets.some((a) => a.kind === 'house') && life.people.some((p) => (p.kind === 'mother' || p.kind === 'father') && p.alive)
+    life.money -= (atHome ? 3_000 : life.assets.some((a) => a.kind === 'house') ? 12_000 : 16_000) + kids * 10_000
   }
+  if (Number(life.flags.alimony_years) > 0) { life.money -= Number(life.flags.alimony_amt) || 0; life.flags.alimony_years = Number(life.flags.alimony_years) - 1; if (Number(life.flags.alimony_years) <= 0) { delete life.flags.alimony_years; delete life.flags.alimony_amt } }
+  if (life.flags.child_support && life.people.some((p) => p.kind === 'child' && p.alive && p.age < 18 && p.movedOut)) { life.money -= Math.round(((life.job?.salary ?? 0) + life.pension) * 0.1) }
   const spouse = life.people.find((p) => p.kind === 'spouse' && p.alive)
   if (spouse?.income) {
     const net = spouse.income - taxOn(spouse.income)
@@ -192,6 +203,7 @@ export function ageUp(life: Life) {
       log(life, 'bad', 'money.bankrupt')
     }
   }
+  if (!life.pending && rng.chance(0.03)) { const kid = life.people.find((p) => p.kind === 'child' && p.alive && p.age <= 3 && !p.movedOut); const partner = life.people.find((p) => (p.kind === 'partner' || p.kind === 'spouse') && p.alive); if (kid && partner && (partner.craziness ?? 50) > 60 && life.gender === 'male') { life.pending = { eventId: 'sys_paternity', personId: kid.id }; life.seenEvents.push('sys_paternity') } }
   refreshJobBoard(life, rng)
   refreshDateBoard(life, rng)
   syncDerivedFlags(life)

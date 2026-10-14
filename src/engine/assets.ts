@@ -13,6 +13,7 @@ export function buyAsset(life: Life, assetId: string, withMortgage = false): boo
   if (!def || def.kind === 'pet' || life.prison) return false
   const down = withMortgage && def.kind === 'house' ? Math.round(def.price * 0.2) : def.price
   if (life.money < down) return false
+  if (withMortgage && def.kind === 'house') { const income = (life.job?.salary ?? 0) + life.pension + (life.business ? life.business.value * 0.05 : 0); if (income * 8 < def.price - down) { log(life, 'bad', 'assets.mortgageRejected'); return false } }
   if (life.age < 18 && !(def.kind === 'luxury' && def.price < 5_000 && life.age >= 5)) return false
   life.money -= down
   const asset: OwnedAsset = {
@@ -75,6 +76,7 @@ export function assetsYear(life: Life, rng: Rng) {
     }
     else a.value = Math.round(a.value * (1 + rng.int(-5, 8) / 100))
   }
+  insuranceYear(life)
   life.assets = life.assets.filter((a) => a.condition >= 0)
   // landlord: every home beyond the one you live in brings rent (4% of value, minus wear)
   const homes = life.assets.filter((a) => a.kind === 'house')
@@ -107,4 +109,24 @@ export function repairCar(life: Life, ownedId: string): boolean {
   a.condition = clamp(a.condition + 45)
   log(life, 'info', 'assets.repaired', { item: a.assetId, money: cost })
   return true
+}
+
+export function renovate(life: Life, ownedId: string): boolean {
+  const a = life.assets.find((x) => x.id === ownedId && x.kind === 'house')
+  if (!a) return false
+  const cost = Math.round(a.value * 0.1)
+  if (life.money < cost) return false
+  life.money -= cost
+  a.value = Math.round(a.value * 1.18)
+  a.condition = 100
+  life.stats.happiness = clamp(life.stats.happiness + 4)
+  log(life, 'good', 'assets.renovated', { item: a.assetId, money: cost })
+  return true
+}
+export function toggleInsurance(life: Life, kind: 'home' | 'car') {
+  life.insurance[kind] = !life.insurance[kind]
+}
+export function insuranceYear(life: Life) {
+  if (life.insurance.home) { const v = life.assets.filter((a) => a.kind === 'house').reduce((s, a) => s + a.value, 0); life.money -= Math.round(v * 0.012) }
+  if (life.insurance.car) { const v = life.assets.filter((a) => a.kind === 'car').reduce((s, a) => s + a.value, 0); life.money -= Math.round(v * 0.04) + 200 }
 }

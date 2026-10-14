@@ -13,5 +13,56 @@
       "delegate": "Let a sibling handle it",
       "skip": "Skip the funeral"
     }
+  },
+  "sys_arrest": {
+    "text": "Handcuffs. The charge is {{charge}}, and the prosecutor is asking for {{years}} years. How do you play it?",
+    "choices": {
+      "plead_guilty": "Plead guilty (shorter sentence)",
+      "public_defender": "Public defender (30%)",
+      "hired_lawyer": "Hire a lawyer, $5,000 (50%)",
+      "top_lawyer": "Top lawyer, $25,000 (75%)"
+    }
+  },
+  "sys_pregnancy": {
+    "text": "Two lines on the test. You and {{name}} are expecting.",
+    "choices": {
+      "keep": "Keep the baby",
+      "end": "End the pregnancy"
+    }
+  },
+  "sys_conscription": {
+    "text": "You turned 18 and the draft letter arrived. Two years in uniform, or…",
+    "choices": {
+      "serve": "Report for duty",
+      "dodge": "Dodge the draft"
+    }
+  },
+  "sys_deployment": {
+    "text": "Deployment orders. Your unit ships out next week.",
+    "choices": {
+      "go": "Ship out",
+      "refuse": "Refuse (demotion)"
+    }
+  },
+  "sys_sponsorship": {
+    "text": "A brand slides into your DMs with a sponsorship deal worth ${{pay}}. They'd like you to pretend you've always used their product.",
+    "choices": {
+      "accept": "Take the money",
+      "decline": "Stay authentic"
+    }
+  },
+  "sys_award": {
+    "text": "You're nominated for an award. The gala is black tie and the odds are honest.",
+    "choices": {
+      "attend": "Attend the ceremony",
+      "skip": "Skip it"
+    }
+  },
+  "sys_paternity": {
+    "text": "A cousin makes a comment about {{name}}'s nose. It sticks with you.",
+    "choices": {
+      "test": "Order a paternity test ($400)",
+      "trust": "Let it go"
+    }
   }
 }

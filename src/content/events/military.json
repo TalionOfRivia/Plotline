@@ -1,0 +1,1948 @@
+[
+  {
+    "id": "mi_boot_camp_humiliation",
+    "category": "work",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 30,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "comply",
+        "effects": {
+          "happiness": -3,
+          "karma": 1,
+          "health": 2
+        }
+      },
+      {
+        "id": "smirk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "laughs",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "popularity": 4
+              }
+            }
+          },
+          {
+            "id": "punished",
+            "weight": 60,
+            "effects": {
+              "happiness": -8,
+              "health": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": -5,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_drill_sergeant",
+    "category": "work",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 35,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "perfect",
+        "effects": {
+          "health": 2,
+          "smarts": 1,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "backtalk",
+        "effects": {
+          "happiness": -6,
+          "health": -3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "happiness": 3,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_barracks_prank",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 6,
+          "flags": {
+            "popularity": 3
+          }
+        }
+      },
+      {
+        "id": "accuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fight",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "karma": -2,
+              "health": -4
+            }
+          },
+          {
+            "id": "right",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "karma": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_promotion_board",
+    "category": "work",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ],
+      "notFlags": [
+        "military_officer"
+      ]
+    },
+    "choices": [
+      {
+        "id": "interview",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "promoted",
+            "weight": 40,
+            "effects": {
+              "happiness": 12,
+              "karma": 1,
+              "flags": {
+                "promoted": true
+              }
+            }
+          },
+          {
+            "id": "passed_over",
+            "weight": 60,
+            "effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "bribe",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lucky",
+            "weight": 25,
+            "effects": {
+              "happiness": 8,
+              "karma": -3,
+              "flags": {
+                "promoted": true
+              }
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 75,
+            "effects": {
+              "happiness": -10,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_deployment_orders",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ],
+      "notFlags": [
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "happiness": -4,
+          "karma": 1,
+          "flags": {
+            "deployed": true
+          }
+        }
+      },
+      {
+        "id": "plead",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "exempt",
+            "weight": 25,
+            "effects": {
+              "happiness": 4,
+              "karma": -4
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 75,
+            "effects": {
+              "happiness": -8,
+              "karma": -3,
+              "flags": {
+                "deployed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "say_goodbye",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "deployed": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_ambush",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "return_fire",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hold",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "karma": -2,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "wounded",
+            "weight": 30,
+            "effects": {
+              "health": -20,
+              "happiness": -10,
+              "flags": {
+                "deployment_injury": 2
+              }
+            }
+          },
+          {
+            "id": "serious",
+            "weight": 11,
+            "effects": {
+              "health": -35,
+              "happiness": -18,
+              "flags": {
+                "deployment_injury": 5
+              }
+            }
+          },
+          {
+            "id": "dead",
+            "weight": 4,
+            "effects": {
+              "death": "killed_in_action"
+            }
+          }
+        ]
+      },
+      {
+        "id": "take_cover",
+        "effects": {
+          "happiness": -8,
+          "health": -3
+        }
+      },
+      {
+        "id": "pull_wounded",
+        "effects": {
+          "happiness": -5,
+          "karma": 6,
+          "health": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_mine_scare",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "freeze",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "safe",
+            "weight": 85,
+            "effects": {
+              "happiness": -3,
+              "karma": 2
+            }
+          },
+          {
+            "id": "boom",
+            "weight": 11,
+            "effects": {
+              "health": -30,
+              "happiness": -15,
+              "flags": {
+                "deployment_injury": 4
+              }
+            }
+          },
+          {
+            "id": "dead",
+            "weight": 4,
+            "effects": {
+              "death": "landmine"
+            }
+          }
+        ]
+      },
+      {
+        "id": "retreat",
+        "effects": {
+          "happiness": -4,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_local_kid",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "effects": {
+          "money": -3,
+          "happiness": 6,
+          "karma": 3
+        }
+      },
+      {
+        "id": "give",
+        "effects": {
+          "happiness": 5,
+          "karma": 6,
+          "health": -1
+        }
+      },
+      {
+        "id": "shoo",
+        "effects": {
+          "happiness": -3,
+          "karma": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_mail_spouse",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ],
+      "requiresPerson": "spouse"
+    },
+    "choices": [
+      {
+        "id": "reply",
+        "effects": {
+          "happiness": 12,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "quick",
+        "effects": {
+          "happiness": 4,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "hold",
+        "effects": {
+          "happiness": -3,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_mail_partner",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ],
+      "requiresPerson": "partner"
+    },
+    "choices": [
+      {
+        "id": "reply",
+        "effects": {
+          "happiness": 10,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": 4,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "ghost",
+        "effects": {
+          "happiness": -4,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_mail_mother",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ],
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "share",
+        "effects": {
+          "happiness": 9,
+          "relationship": 6,
+          "karma": 3
+        }
+      },
+      {
+        "id": "hoard",
+        "effects": {
+          "happiness": 6,
+          "relationship": 4,
+          "karma": -2
+        }
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": 8,
+          "relationship": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_medal",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": 10,
+          "karma": 4,
+          "flags": {
+            "medal": true
+          }
+        }
+      },
+      {
+        "id": "modest",
+        "effects": {
+          "happiness": 8,
+          "karma": 8,
+          "flags": {
+            "medal": true
+          }
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -2,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_ptsd_seed",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 55,
+            "effects": {
+              "happiness": -2
+            }
+          },
+          {
+            "id": "depressed",
+            "weight": 45,
+            "effects": {
+              "happiness": -12,
+              "flags": {
+                "depressed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "happiness": 5,
+          "karma": 2
+        }
+      },
+      {
+        "id": "drink",
+        "effects": {
+          "happiness": 3,
+          "health": -3,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_ptsd_nightmares",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "counselor",
+        "effects": {
+          "happiness": 4,
+          "health": 2,
+          "flags": {
+            "depressed": false
+          }
+        }
+      },
+      {
+        "id": "push_on",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 50,
+            "effects": {
+              "happiness": -3
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 50,
+            "effects": {
+              "happiness": -12,
+              "health": -5,
+              "flags": {
+                "depressed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pills",
+        "effects": {
+          "happiness": 3,
+          "health": -4,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_awol_temptation",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "desert",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "free",
+            "weight": 25,
+            "effects": {
+              "happiness": 10,
+              "karma": -4,
+              "money": -100
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 75,
+            "effects": {
+              "happiness": -18,
+              "karma": -6,
+              "flags": {
+                "court_martial": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -4,
+          "karma": 2
+        }
+      },
+      {
+        "id": "request",
+        "effects": {
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_reservist_callup",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "military",
+        "conscripted"
+      ]
+    },
+    "choices": [
+      {
+        "id": "report",
+        "effects": {
+          "happiness": -5,
+          "karma": 2,
+          "money": -200
+        }
+      },
+      {
+        "id": "dodge",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lucky",
+            "weight": 35,
+            "effects": {
+              "happiness": 3,
+              "karma": -3
+            }
+          },
+          {
+            "id": "fined",
+            "weight": 65,
+            "effects": {
+              "happiness": -8,
+              "karma": -3,
+              "money": -800
+            }
+          }
+        ]
+      },
+      {
+        "id": "fake_ill",
+        "effects": {
+          "happiness": -2,
+          "karma": -4,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_unit_buddy",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "bond",
+        "effects": {
+          "happiness": 8,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      },
+      {
+        "id": "keep_distance",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "rivalry",
+        "effects": {
+          "happiness": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_end_of_service",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "discharge",
+        "effects": {
+          "happiness": 8,
+          "karma": 2,
+          "flags": {
+            "discharge": true
+          }
+        }
+      },
+      {
+        "id": "reenlist",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "celebrate",
+        "effects": {
+          "happiness": 12,
+          "health": -2,
+          "money": -100,
+          "flags": {
+            "discharge": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_veteran_benefits",
+    "category": "money",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 100,
+      "flags": [
+        "veteran"
+      ],
+      "notFlags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "use_edu",
+        "effects": {
+          "smarts": 4,
+          "happiness": 4,
+          "money": -200
+        }
+      },
+      {
+        "id": "medical",
+        "effects": {
+          "health": 5,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "stash",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_rifle_inspection",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "own_up",
+        "effects": {
+          "karma": 2,
+          "health": -1,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "bluff",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 40,
+            "effects": {
+              "happiness": 4
+            }
+          },
+          {
+            "id": "extra",
+            "weight": 60,
+            "effects": {
+              "happiness": -6,
+              "health": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mi_field_exercise",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 45,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "endure",
+        "effects": {
+          "health": 4,
+          "happiness": -1,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "shortcut",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lucky",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "karma": -3
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "karma": -2,
+              "health": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "carry",
+        "effects": {
+          "health": -2,
+          "karma": 6,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_leave_home",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "family",
+        "effects": {
+          "happiness": 12,
+          "karma": 2
+        }
+      },
+      {
+        "id": "party",
+        "effects": {
+          "happiness": 10,
+          "health": -3,
+          "money": -100
+        }
+      },
+      {
+        "id": "sleep",
+        "effects": {
+          "happiness": 6,
+          "health": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_fitness_test",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 45,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "top",
+            "weight": 45,
+            "effects": {
+              "health": 5,
+              "happiness": 8
+            }
+          },
+          {
+            "id": "pulled",
+            "weight": 55,
+            "effects": {
+              "health": -6,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "coast",
+        "effects": {
+          "happiness": -2,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_officer_candidate",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 40,
+      "flags": [
+        "military"
+      ],
+      "notFlags": [
+        "military_officer"
+      ]
+    },
+    "choices": [
+      {
+        "id": "apply",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "accepted",
+            "weight": 45,
+            "effects": {
+              "smarts": 3,
+              "happiness": 10,
+              "flags": {
+                "promoted": true
+              }
+            }
+          },
+          {
+            "id": "rejected",
+            "weight": 55,
+            "effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_friendly_fire",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "drop",
+        "effects": {
+          "happiness": -5,
+          "health": -1
+        }
+      },
+      {
+        "id": "radio",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stop",
+            "weight": 70,
+            "effects": {
+              "happiness": 4,
+              "karma": 3
+            }
+          },
+          {
+            "id": "shot",
+            "weight": 25,
+            "effects": {
+              "health": -15,
+              "happiness": -8,
+              "flags": {
+                "deployment_injury": 2
+              }
+            }
+          },
+          {
+            "id": "dead",
+            "weight": 5,
+            "effects": {
+              "death": "killed_in_action"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mi_convoy_breakdown",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "id": "repair",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fixed",
+            "weight": 60,
+            "effects": {
+              "happiness": 6,
+              "smarts": 2,
+              "karma": 2
+            }
+          },
+          {
+            "id": "burn",
+            "weight": 40,
+            "effects": {
+              "happiness": -4,
+              "health": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "scout",
+        "effects": {
+          "happiness": -2,
+          "health": -2,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_field_hospital",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "rest",
+        "effects": {
+          "health": 10,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "return",
+        "effects": {
+          "health": -4,
+          "karma": 2,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "flirt",
+        "effects": {
+          "happiness": 4,
+          "health": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_vet_reunion",
+    "category": "social",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 100,
+      "flags": [
+        "veteran"
+      ],
+      "notFlags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "happiness": 10,
+          "health": -2,
+          "karma": 1
+        }
+      },
+      {
+        "id": "send_card",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_barracks_gambling",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "money": 400,
+              "happiness": 8,
+              "karma": -1
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 60,
+            "effects": {
+              "money": -400,
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 2,
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_moral_order",
+    "category": "crime",
+    "weight": 1,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "obey",
+        "effects": {
+          "karma": -10,
+          "happiness": -12
+        }
+      },
+      {
+        "id": "refuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "honoured",
+            "weight": 35,
+            "effects": {
+              "karma": 10,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "martial",
+            "weight": 65,
+            "effects": {
+              "karma": 10,
+              "happiness": -12,
+              "flags": {
+                "court_martial": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "slow_walk",
+        "effects": {
+          "karma": 4,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_barracks_romance",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "flirt",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fling",
+            "weight": 50,
+            "effects": {
+              "happiness": 10,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "rebuffed",
+            "weight": 50,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_night_watch",
+    "category": "crime",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "think",
+        "effects": {
+          "happiness": 3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "nap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 70,
+            "effects": {
+              "happiness": 3
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 30,
+            "effects": {
+              "happiness": -8,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "alert",
+        "effects": {
+          "smarts": 1,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_supply_theft",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "report",
+        "effects": {
+          "karma": 5,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "cut_in",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rich",
+            "weight": 55,
+            "effects": {
+              "money": 500,
+              "karma": -6,
+              "happiness": 3
+            }
+          },
+          {
+            "id": "court",
+            "weight": 45,
+            "effects": {
+              "karma": -6,
+              "happiness": -14,
+              "flags": {
+                "court_martial": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_conscript_dread",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "military",
+        "conscripted"
+      ]
+    },
+    "choices": [
+      {
+        "id": "adapt",
+        "effects": {
+          "happiness": 4,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "complain",
+        "effects": {
+          "happiness": -3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "learn_skill",
+        "effects": {
+          "smarts": 5,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_officer_orders",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "military",
+        "military_officer"
+      ]
+    },
+    "choices": [
+      {
+        "id": "lead",
+        "effects": {
+          "karma": 3,
+          "happiness": 4,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "delegate",
+        "effects": {
+          "happiness": 3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "micromanage",
+        "effects": {
+          "happiness": -3,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_insubordination",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "punch",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "respect",
+            "weight": 20,
+            "effects": {
+              "happiness": 8,
+              "karma": -2
+            }
+          },
+          {
+            "id": "martial",
+            "weight": 80,
+            "effects": {
+              "happiness": -14,
+              "karma": -4,
+              "flags": {
+                "court_martial": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "swallow",
+        "effects": {
+          "happiness": -6
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_base_party",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 8,
+          "health": -2
+        }
+      },
+      {
+        "id": "dd",
+        "effects": {
+          "karma": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "too_far",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 50,
+            "effects": {
+              "happiness": 12,
+              "health": -3,
+              "flags": {
+                "popularity": 4
+              }
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "health": -4,
+              "karma": -2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mi_survival_course",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 40,
+      "flags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "try",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 60,
+            "effects": {
+              "smarts": 4,
+              "health": 2,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "sick",
+            "weight": 40,
+            "effects": {
+              "health": -10,
+              "happiness": -4,
+              "flags": {
+                "ailment": "flu"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cheat",
+        "effects": {
+          "happiness": 4,
+          "karma": -2
+        }
+      },
+      {
+        "id": "team",
+        "effects": {
+          "happiness": 5,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_dear_john",
+    "category": "crime",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 60,
+      "flags": [
+        "military",
+        "deployed"
+      ],
+      "requiresPerson": "partner"
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": -12,
+          "relationship": -30,
+          "flags": {
+            "breakup": true
+          }
+        }
+      },
+      {
+        "id": "fight",
+        "effects": {
+          "happiness": -8,
+          "relationship": -10
+        }
+      },
+      {
+        "id": "call_it_off",
+        "effects": {
+          "happiness": -8,
+          "karma": 0,
+          "flags": {
+            "breakup": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "mi_veteran_nightmare",
+    "category": "health",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 100,
+      "flags": [
+        "veteran"
+      ],
+      "notFlags": [
+        "military"
+      ]
+    },
+    "choices": [
+      {
+        "id": "therapy",
+        "effects": {
+          "happiness": 5,
+          "health": 2,
+          "flags": {
+            "depressed": false
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 55,
+            "effects": {
+              "happiness": -2
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 45,
+            "effects": {
+              "happiness": -10,
+              "flags": {
+                "depressed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "vet_group",
+        "effects": {
+          "happiness": 7,
+          "karma": 2
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,458 @@
+{
+  "hd_new_year_resolution": {
+    "text": "It's January and you've announced a resolution to anyone who will listen. By day three it already looks tired.",
+    "choices": {
+      "stick": "Stick with it",
+      "shrug": "Pretend you never said it",
+      "new": "Make a smaller one"
+    },
+    "outcomes": {
+      "works": "Weeks later you're still at it. Annoyingly, it's working.",
+      "quits": "You last nine days. The guilt lasts longer."
+    }
+  },
+  "hd_new_years_hangover": {
+    "text": "January 1st. Your head is a drum, your mouth is a carpet, and last night is mostly rumour.",
+    "choices": {
+      "sleep": "Sleep it off",
+      "greasy": "Fix it with greasy food",
+      "run": "Sweat it out with a run"
+    },
+    "outcomes": {
+      "clear": "Somewhere around the second kilometre you feel reborn.",
+      "puke": "The park bin gets the worst of it. Happy new year."
+    }
+  },
+  "hd_snow_day": {
+    "text": "You wake to a white world. Everything is cancelled and the street has become a playground.",
+    "choices": {
+      "snowman": "Build a lopsided snowman",
+      "fight": "Start a snowball fight",
+      "bed": "Stay under the blanket"
+    }
+  },
+  "hd_tax_forms": {
+    "text": "Tax-form season. A pile of paper asks you things about your life that you'd rather not answer.",
+    "choices": {
+      "honest": "Fill it all in honestly",
+      "creative": "Get creative with deductions",
+      "accountant": "Pay an accountant"
+    }
+  },
+  "hd_valentine_dating": {
+    "text": "Valentine's Day. {{name}} has been dropping hints for a week, roughly the size of billboards.",
+    "choices": {
+      "dinner": "Book a fancy dinner",
+      "homemade": "Cook at home",
+      "forgot": "Forget completely"
+    }
+  },
+  "hd_valentine_single": {
+    "text": "Valentine's Day. Every shop window is pink, and every couple on your street is suspiciously holding hands.",
+    "choices": {
+      "friends": "Anti-Valentine night with friends",
+      "swipe": "Swipe like it's a sport",
+      "treat": "Buy yourself chocolate"
+    },
+    "outcomes": {
+      "spark": "One conversation actually goes somewhere.",
+      "nothing": "Forty swipes, zero sparks and a drained battery."
+    }
+  },
+  "hd_big_game_party": {
+    "text": "It's the night of the big game. Friends crowd your living room, the wings are already gone, and nobody can agree on who to root for.",
+    "choices": {
+      "bet": "Bet on the underdog",
+      "host": "Be the perfect host",
+      "nap": "Sneak off to sleep"
+    },
+    "outcomes": {
+      "win": "Against all odds, they win. You collect, loudly.",
+      "lose": "They fold in the second half. Your wallet follows."
+    }
+  },
+  "hd_leap_day": {
+    "text": "It's February 29th, a day that barely exists. It feels like permission to do something you normally wouldn't.",
+    "choices": {
+      "risk": "Take a bold chance",
+      "normal": "Treat it like any day",
+      "kind": "Do something kind"
+    }
+  },
+  "hd_purim_party": {
+    "text": "Purim. Everyone is in costume, there's a noise-maker in every hand, and somebody has already dropped a tray of hamantaschen.",
+    "choices": {
+      "costume": "Go all out on a costume",
+      "lastminute": "Throw a costume together",
+      "skip": "Skip the party"
+    }
+  },
+  "hd_spring_cleaning": {
+    "text": "Spring arrives and the closet has declared war. You open it and a coat from three years ago falls out.",
+    "choices": {
+      "purge": "Throw out half of it",
+      "sell": "Sell the stuff online",
+      "ignore": "Close the closet"
+    }
+  },
+  "hd_march_storm": {
+    "text": "A March storm rolls in with grey sky, hard rain and wind that tries to take your umbrella.",
+    "choices": {
+      "inside": "Stay in with tea",
+      "out": "Go out anyway",
+      "help": "Check on a neighbor"
+    },
+    "outcomes": {
+      "fun": "You splash through puddles like a kid again.",
+      "soaked": "Soaked to the bone. The cold arrives by evening."
+    }
+  },
+  "hd_purim_mishloach": {
+    "text": "Purim again. You have a pile of treat baskets to deliver and a list of people you'd rather not visit.",
+    "choices": {
+      "everyone": "Deliver to everyone",
+      "skip": "Skip the ones you dislike",
+      "secret": "Leave one anonymously"
+    },
+    "outcomes": {
+      "crush": "Your anonymous basket is the talk of the building.",
+      "mixup": "It goes to the wrong door. A stranger thanks you warmly."
+    }
+  },
+  "hd_april_fools_victim": {
+    "text": "It's April 1st and you have a bad feeling. Your coffee tastes slightly of salt and your phone is full of strange messages.",
+    "choices": {
+      "laugh": "Laugh and play along",
+      "revenge": "Plan a revenge prank",
+      "sulk": "Sulk"
+    }
+  },
+  "hd_april_fools_prank": {
+    "text": "April 1st. You have a perfect prank in mind and a victim sleeping peacefully in the next room.",
+    "choices": {
+      "fake": "Fake bad news",
+      "gentle": "Gentle harmless joke",
+      "none": "Rise above it"
+    }
+  },
+  "hd_passover_seder": {
+    "text": "Passover seder. The table is full of relatives, the story is long, and {{name}} keeps glancing at you whenever the questions come around.",
+    "choices": {
+      "fourquestions": "Sing the four questions",
+      "afikoman": "Hunt the afikoman",
+      "skipahead": "Skip ahead to the meal"
+    }
+  },
+  "hd_spring_break": {
+    "text": "Spring break. Everyone you know is heading to the coast. Your bank account says no, but your friends say yes.",
+    "choices": {
+      "trip": "Join the trip",
+      "stay": "Stay home and save",
+      "day": "Do a cheap day trip"
+    },
+    "outcomes": {
+      "wild": "Sun, sand, and one story you'll never tell your mother.",
+      "burn": "Sunburn, a stolen phone, and a decent time anyway."
+    }
+  },
+  "hd_mothers_day": {
+    "text": "It's Mother's Day. {{name}} has put up with you for years, and a card feels small.",
+    "choices": {
+      "flowers": "Flowers and a long hug",
+      "breakfast": "Make breakfast yourself",
+      "forget": "Call her a day late"
+    }
+  },
+  "hd_lag_baomer": {
+    "text": "Lag BaOmer. The hill glows with bonfires, the air smells of smoke and baked potatoes, and every kid is carrying a stick.",
+    "choices": {
+      "fire": "Gather wood for the bonfire",
+      "potato": "Roast a potato in the coals",
+      "home": "Stay inside with allergies"
+    }
+  },
+  "hd_graduation_season": {
+    "text": "Graduation season. Gowns, caps and speeches everywhere. Somebody else's ceremony makes you think about yours.",
+    "choices": {
+      "clap": "Clap proudly for a friend",
+      "speech": "Give an unplanned speech",
+      "reflect": "Reflect on your own path"
+    }
+  },
+  "hd_may_heatwave": {
+    "text": "A May heatwave hits early. The city smells of melting tar and every fan is already sold out.",
+    "choices": {
+      "pool": "Spend the day in a pool",
+      "ac": "Hide in the cold supermarket",
+      "run": "Go for a midday jog anyway"
+    }
+  },
+  "hd_fathers_day": {
+    "text": "It's Father's Day. {{name}} insists he wants nothing, which is the usual trap.",
+    "choices": {
+      "gift": "Buy something he'll use",
+      "time": "Spend the afternoon together",
+      "text": "Send a quick text"
+    }
+  },
+  "hd_pride_parade": {
+    "text": "Pride parade day. Music, glitter and flags everywhere. The whole street feels like a party that makes sense.",
+    "choices": {
+      "march": "March with friends",
+      "watch": "Watch from the sidewalk",
+      "talk": "Argue with a heckler"
+    },
+    "outcomes": {
+      "calm": "Your calm reply ends the shouting.",
+      "heat": "The argument goes nowhere and gets louder."
+    }
+  },
+  "hd_summer_wedding": {
+    "text": "A wedding invitation arrives on thick cream paper. Costly gift, itchy suit, and a seating chart that puts you next to the divorced uncle.",
+    "choices": {
+      "go": "Go and dance all night",
+      "toast": "Volunteer for a toast",
+      "decline": "Send a gift, skip it"
+    }
+  },
+  "hd_exam_memories": {
+    "text": "Exam season again, but you're just a bystander this time. Students look pale, and your own old exams come rushing back.",
+    "choices": {
+      "coffee": "Bring a friend coffee and snacks",
+      "smug": "Feel smug about being done",
+      "study": "Review old notes for fun"
+    }
+  },
+  "hd_jellyfish": {
+    "text": "A perfect beach day. The water is warm, the sky is blue, and something translucent just brushed your leg.",
+    "choices": {
+      "vinegar": "Pour vinegar on the sting",
+      "lifeguard": "Find the lifeguard",
+      "tough": "Shake it off and swim"
+    }
+  },
+  "hd_bbq_fail": {
+    "text": "You volunteer to run the grill. The coals are lit, the guests are hungry, and you have no idea what you are doing.",
+    "choices": {
+      "grill": "Take over the grill",
+      "order": "Order delivery quietly",
+      "hand": "Hand tongs to the expert"
+    },
+    "outcomes": {
+      "chef": "Juicy, smoky, applauded. A grill master is born.",
+      "fire": "A flare-up takes your eyebrows and the sausages."
+    }
+  },
+  "hd_fireworks": {
+    "text": "Summer fireworks light the sky over the water. Every bang makes the whole crowd gasp at once.",
+    "choices": {
+      "watch": "Lie back and watch",
+      "own": "Light your own bangers",
+      "pets": "Stay home with a scared pet"
+    },
+    "outcomes": {
+      "fun": "Loud, bright, stupid, and nobody gets hurt.",
+      "hurt": "A rocket goes sideways. Burns and a fine follow."
+    }
+  },
+  "hd_heat_stroke": {
+    "text": "It's forty degrees in the shade. The world is shimmering, you've sweated through everything, and the dizziness is not a joke.",
+    "choices": {
+      "shade": "Get to shade and drink water",
+      "tough": "Push through the day",
+      "ice": "Dump ice water on your head"
+    }
+  },
+  "hd_vacation_traffic": {
+    "text": "You're finally leaving for vacation, along with everyone else on earth. The highway is a parking lot and the kids in the next car are staring at you.",
+    "choices": {
+      "music": "Crank up the music",
+      "shortcut": "Try a shortcut",
+      "patience": "Breathe and wait"
+    }
+  },
+  "hd_summer_job_ends": {
+    "text": "Your summer job is over. The last shift ended with a handshake, a small envelope, and a vague promise to stay in touch.",
+    "choices": {
+      "save": "Save the pay",
+      "splurge": "Spend it all at once",
+      "ask": "Ask for a reference"
+    }
+  },
+  "hd_back_to_school_shopping": {
+    "text": "Back-to-school shopping. The supply list is long, the crowds are loud, and your favourite pen costs triple.",
+    "choices": {
+      "basic": "Buy only the basics",
+      "cool": "Go for the cool stuff",
+      "sale": "Hunt for sales"
+    },
+    "outcomes": {
+      "found": "A bin of discounted notebooks saves the day.",
+      "empty": "Everything good is gone. You pay full price."
+    }
+  },
+  "hd_meteor_shower": {
+    "text": "It's the night of the meteor shower. The sky is clear, the city lights are far, and streaks of light cross the dark.",
+    "choices": {
+      "wish": "Make a wish",
+      "friends": "Bring friends and a blanket",
+      "late": "Stay up all night"
+    },
+    "outcomes": {
+      "magic": "You see forty shooting stars. You talk until sunrise.",
+      "tired": "Clouds roll in. You see two, and sleep through work."
+    }
+  },
+  "hd_rosh_hashanah": {
+    "text": "Rosh Hashanah dinner. Round challah, a table groaning with food, and relatives who ask about your plans for the coming year.",
+    "choices": {
+      "blessing": "Say a heartfelt blessing",
+      "answer": "Answer the 'plans' question",
+      "seconds": "Go back for seconds"
+    }
+  },
+  "hd_new_year_gym": {
+    "text": "September feels like a second January. You stand in front of the gym with a signup form and a rush of optimism.",
+    "choices": {
+      "sign": "Sign the annual deal",
+      "trial": "Try a free week",
+      "home": "Work out at home"
+    }
+  },
+  "hd_first_day_nostalgia": {
+    "text": "September hits you in the nose: freshly sharpened pencils, new backpacks on the street. You remember your own first day of school.",
+    "choices": {
+      "smile": "Smile at the little ones",
+      "call": "Call an old friend",
+      "shudder": "Shudder and move on"
+    }
+  },
+  "hd_apple_honey": {
+    "text": "The holiday table is set for apples and honey. A small slip, and the entire honey jar tips toward your lap.",
+    "choices": {
+      "laugh": "Laugh it off",
+      "clean": "Try to wipe it up fast",
+      "shift": "Blame the cat"
+    },
+    "outcomes": {
+      "clean": "No stain, no witnesses. Pure luck.",
+      "sticky": "Now the chair, the tablecloth and your sleeve are one sweet mess."
+    }
+  },
+  "hd_yom_kippur": {
+    "text": "Yom Kippur. The streets are empty and silent, kids ride bikes down the middle of the road, and you haven't eaten since yesterday.",
+    "choices": {
+      "fast": "Fast the full day",
+      "walk": "Walk the empty streets",
+      "snack": "Quietly sneak a snack"
+    },
+    "outcomes": {
+      "clear": "Hunger passes into clarity. You think about what you owe.",
+      "faint": "Dizzy by afternoon. You break the fast with a headache."
+    }
+  },
+  "hd_sukkah": {
+    "text": "Sukkot. You and {{name}} are supposed to build the sukkah. It comes with a box of poles, a bag of sticks and a very strong opinion about how it's done.",
+    "choices": {
+      "build": "Follow the instructions",
+      "lead": "Let them lead",
+      "cheat": "Buy a ready-made kit"
+    }
+  },
+  "hd_halloween_party": {
+    "text": "A Halloween party invitation lands on your phone. The theme: 'Come as your worst fear'.",
+    "choices": {
+      "scary": "Go as a terrifying zombie",
+      "clever": "Go as your tax return",
+      "skip": "Stay in with candy"
+    }
+  },
+  "hd_pumpkin_spice": {
+    "text": "A friend swears that pumpkin spice is the taste of autumn. Another friend says it's a crime. Both turn to look at you.",
+    "choices": {
+      "love": "Defend pumpkin spice",
+      "hate": "Condemn it",
+      "taste": "Taste it and decide"
+    }
+  },
+  "hd_black_friday": {
+    "text": "Big sale day. Shoppers stampede through the doors, pushing like it's a rescue operation, and a toaster is the grand prize.",
+    "choices": {
+      "fight": "Fight for the best deal",
+      "online": "Shop online from bed",
+      "nothing": "Buy nothing"
+    },
+    "outcomes": {
+      "win": "You emerge bruised but with a ridiculously cheap TV.",
+      "lose": "An elbow to the ribs, and an expensive impulse buy."
+    }
+  },
+  "hd_family_dinner": {
+    "text": "Thanksgiving-style family dinner. The turkey is dry, the table is crowded, and your awkward uncle starts a 'question for the young generation'.",
+    "choices": {
+      "polite": "Answer politely",
+      "argue": "Argue back",
+      "escape": "Escape to help with dishes"
+    },
+    "outcomes": {
+      "point": "You land a good point. The table stays silent.",
+      "scene": "Voices rise. Someone leaves with a plate of leftovers."
+    }
+  },
+  "hd_charity_drive": {
+    "text": "A charity drive is collecting food and coats for the winter. A box sits in the lobby, mostly empty.",
+    "choices": {
+      "give": "Donate generously",
+      "volunteer": "Volunteer for a shift",
+      "pass": "Walk past"
+    }
+  },
+  "hd_movember": {
+    "text": "November. A friend bets you can't grow a moustache for the month. The money goes to a good cause.",
+    "choices": {
+      "grow": "Take the bet",
+      "donate": "Just donate",
+      "shave": "Refuse and shave"
+    }
+  },
+  "hd_hanukkah": {
+    "text": "Hanukkah. The candles flicker in the window, the kitchen smells of oil, and {{name}} is already eating jelly doughnuts straight from the tray.",
+    "choices": {
+      "light": "Light the candles together",
+      "donut": "Race to eat doughnuts",
+      "dreidel": "Play dreidel for coins"
+    }
+  },
+  "hd_nye_kiss_dating": {
+    "text": "New Year's Eve. The countdown begins, glasses rise, and {{name}} is looking straight at you.",
+    "choices": {
+      "kiss": "Kiss at midnight",
+      "quiet": "Slip away for a quiet toast",
+      "party": "Dance with the crowd"
+    },
+    "outcomes": {
+      "movie": "The street cheers. You both laugh into the kiss.",
+      "sloppy": "Mistimed and clumsy. Fireworks go off over your embarrassment."
+    }
+  },
+  "hd_nye_kiss_single": {
+    "text": "New Year's Eve. The clock hits midnight and you're standing in a crowd of couples, holding a glass and the world's smallest hopes.",
+    "choices": {
+      "stranger": "Kiss a stranger",
+      "friend": "Hug your best friend",
+      "home": "Go home early"
+    },
+    "outcomes": {
+      "spark": "A good kiss and a phone number. The year starts well.",
+      "slap": "Wrong stranger. A drink in the face as a resolution."
+    }
+  },
+  "hd_gift_exchange": {
+    "text": "The gift exchange draw is done and you've got a name. Budget limit: twenty dollars. The person is nearly a stranger.",
+    "choices": {
+      "thoughtful": "Find something thoughtful",
+      "gift_card": "Buy a generic gift card",
+      "regift": "Regift something old"
+    }
+  }
+}

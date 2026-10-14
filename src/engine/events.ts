@@ -13,6 +13,7 @@ export function isEligible(ev: GameEvent, life: Life): boolean {
   if (c.minStats) for (const [k, v] of Object.entries(c.minStats)) if (life.stats[k as keyof typeof life.stats] < v!) return false
   if (c.maxStats) for (const [k, v] of Object.entries(c.maxStats)) if (life.stats[k as keyof typeof life.stats] > v!) return false
   if (c.requiresPerson && !personFor(ev, life)) return false
+  if (c.month !== undefined && new Date().getMonth() + 1 !== c.month) return false
   return true
 }
 

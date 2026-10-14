@@ -21,6 +21,11 @@ export function awardRibbon(life: Life): string {
     if (w.royal && life.royalty.rank === 'none') continue
     if (w.flags && !w.flags.every((f) => Boolean(life.flags[f]))) continue
     if (w.notFlags && w.notFlags.some((f) => Boolean(life.flags[f]))) continue
+    if (w.karmaMin !== undefined && life.karma < w.karmaMin) continue
+    if (w.karmaMax !== undefined && life.karma > w.karmaMax) continue
+    if (w.stat) { const v = life.stats[w.stat.name]; if (w.stat.min !== undefined && v < w.stat.min) continue; if (w.stat.max !== undefined && v > w.stat.max) continue }
+    if (w.counter && (Number(life.flags[w.counter.name]) || 0) < w.counter.min) continue
+    if (w.minFollowers !== undefined && Object.values(life.social).reduce((s, n) => s + n, 0) < w.minFollowers) continue
     return r.id
   }
   return 'mediocre'

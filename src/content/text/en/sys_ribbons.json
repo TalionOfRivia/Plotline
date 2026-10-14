@@ -1,34 +1,206 @@
 {
-  "royal": { "name": "Royal", "blurb": "Born with a crown, died with a state funeral and a lot of paperwork." },
-  "famous": { "name": "Famous", "blurb": "Everybody knew your name, and nobody could remember why." },
-  "houdini": { "name": "Houdini", "blurb": "The prison had a locked door, and you had the only key that mattered: charm." },
-  "deadly": { "name": "Deadly", "blurb": "The coroner's office kept a special file with your name on it." },
-  "loaded": { "name": "Loaded", "blurb": "You died with more money than sense, and your heirs are already fighting about it." },
-  "island_king": { "name": "Island King", "blurb": "You ruled a whole island, which was mostly sand and seagulls." },
-  "jetsetter": { "name": "Jetsetter", "blurb": "You spent more time in the air than on the ground, and your luggage agrees." },
-  "centenarian": { "name": "Centenarian", "blurb": "You outlived everyone who ever bet against you, including the actuaries." },
-  "nonagenarian": { "name": "Nonagenarian", "blurb": "Ninety years of opinions, most of which you held with total confidence." },
-  "rich": { "name": "Rich", "blurb": "Money was never a problem, except the part where you had to spend it." },
-  "lifer": { "name": "Lifer", "blurb": "You were so long in prison that the guards started calling you a neighbour." },
-  "jailbird": { "name": "Jailbird", "blurb": "You served your time and left with a lot of new friends and a shiny plan." },
-  "fertile": { "name": "Fertile", "blurb": "Eight children, zero quiet dinners, and a family tree that needs its own map." },
-  "family_first": { "name": "Family First", "blurb": "You married once, had a crowd, and never once let anyone forget it." },
-  "scholar": { "name": "Scholar", "blurb": "Your diploma outlived your handwriting, and your footnotes outlived both." },
-  "globetrotter": { "name": "Globetrotter", "blurb": "You left home for somewhere better, then kept leaving until home was just a rumour." },
-  "heartbreaker": { "name": "Heartbreaker", "blurb": "Four marriages, four sets of wedding photos, and one very confused wedding planner." },
-  "career_criminal": { "name": "Career Criminal", "blurb": "You had a rap sheet longer than your grocery list and just as organised." },
-  "survivor": { "name": "Survivor", "blurb": "The illness gave you its best shot, and you gave it a very long reply." },
-  "plastic_fantastic": { "name": "Plastic Fantastic", "blurb": "You looked remarkably well for someone with so much work done." },
-  "menagerie": { "name": "Menagerie", "blurb": "Your house had more animals than neighbours, and the neighbours were not complaining." },
-  "serial_monogamist": { "name": "Serial Monogamist", "blurb": "Each partner was the one, right up until the next one arrived." },
-  "gone_too_soon": { "name": "Gone Too Soon", "blurb": "You left the party early, which is a tough act to follow." },
-  "unlucky": { "name": "Unlucky", "blurb": "You were dealt a bad hand at birth and never got a chance to reshuffle." },
-  "hermit": { "name": "Hermit", "blurb": "You preferred a quiet house to a full calendar, and the calendar agreed." },
-  "lazy": { "name": "Lazy", "blurb": "You never worked a day in your life, which is still a sort of achievement." },
-  "wasteful": { "name": "Wasteful", "blurb": "You spent every penny on things that were fun for about a week." },
-  "lone_wolf": { "name": "Lone Wolf", "blurb": "Nobody ever put a ring on it, mostly because you never let anyone get close." },
-  "broke": { "name": "Broke", "blurb": "The funeral was paid for by a crowdfunding page and a very long list of IOUs." },
-  "gearhead": { "name": "Gearhead", "blurb": "You owned a hypercar and talked about its gearbox with the sincerity of a priest." },
-  "art_patron": { "name": "Art Patron", "blurb": "You bought paintings the way other people buy socks: in bulk, and without much looking." },
-  "mediocre": { "name": "Mediocre", "blurb": "You were not great, not terrible, and the headstone is a bit disappointed in you." }
+  "royal": {
+    "name": "Royal",
+    "blurb": "Born with a crown, died with a state funeral and a lot of paperwork."
+  },
+  "famous": {
+    "name": "Famous",
+    "blurb": "Everybody knew your name, and nobody could remember why."
+  },
+  "houdini": {
+    "name": "Houdini",
+    "blurb": "The prison had a locked door, and you had the only key that mattered: charm."
+  },
+  "deadly": {
+    "name": "Deadly",
+    "blurb": "The coroner's office kept a special file with your name on it."
+  },
+  "loaded": {
+    "name": "Loaded",
+    "blurb": "You died with more money than sense, and your heirs are already fighting about it."
+  },
+  "island_king": {
+    "name": "Island King",
+    "blurb": "You ruled a whole island, which was mostly sand and seagulls."
+  },
+  "jetsetter": {
+    "name": "Jetsetter",
+    "blurb": "You spent more time in the air than on the ground, and your luggage agrees."
+  },
+  "centenarian": {
+    "name": "Centenarian",
+    "blurb": "You outlived everyone who ever bet against you, including the actuaries."
+  },
+  "nonagenarian": {
+    "name": "Nonagenarian",
+    "blurb": "Ninety years of opinions, most of which you held with total confidence."
+  },
+  "rich": {
+    "name": "Rich",
+    "blurb": "Money was never a problem, except the part where you had to spend it."
+  },
+  "lifer": {
+    "name": "Lifer",
+    "blurb": "You were so long in prison that the guards started calling you a neighbour."
+  },
+  "jailbird": {
+    "name": "Jailbird",
+    "blurb": "You served your time and left with a lot of new friends and a shiny plan."
+  },
+  "fertile": {
+    "name": "Fertile",
+    "blurb": "Eight children, zero quiet dinners, and a family tree that needs its own map."
+  },
+  "family_first": {
+    "name": "Family First",
+    "blurb": "You married once, had a crowd, and never once let anyone forget it."
+  },
+  "scholar": {
+    "name": "Scholar",
+    "blurb": "Your diploma outlived your handwriting, and your footnotes outlived both."
+  },
+  "globetrotter": {
+    "name": "Globetrotter",
+    "blurb": "You left home for somewhere better, then kept leaving until home was just a rumour."
+  },
+  "heartbreaker": {
+    "name": "Heartbreaker",
+    "blurb": "Four marriages, four sets of wedding photos, and one very confused wedding planner."
+  },
+  "career_criminal": {
+    "name": "Career Criminal",
+    "blurb": "You had a rap sheet longer than your grocery list and just as organised."
+  },
+  "survivor": {
+    "name": "Survivor",
+    "blurb": "The illness gave you its best shot, and you gave it a very long reply."
+  },
+  "plastic_fantastic": {
+    "name": "Plastic Fantastic",
+    "blurb": "You looked remarkably well for someone with so much work done."
+  },
+  "menagerie": {
+    "name": "Menagerie",
+    "blurb": "Your house had more animals than neighbours, and the neighbours were not complaining."
+  },
+  "serial_monogamist": {
+    "name": "Serial Monogamist",
+    "blurb": "Each partner was the one, right up until the next one arrived."
+  },
+  "gone_too_soon": {
+    "name": "Gone Too Soon",
+    "blurb": "You left the party early, which is a tough act to follow."
+  },
+  "unlucky": {
+    "name": "Unlucky",
+    "blurb": "You were dealt a bad hand at birth and never got a chance to reshuffle."
+  },
+  "hermit": {
+    "name": "Hermit",
+    "blurb": "You preferred a quiet house to a full calendar, and the calendar agreed."
+  },
+  "lazy": {
+    "name": "Lazy",
+    "blurb": "You never worked a day in your life, which is still a sort of achievement."
+  },
+  "wasteful": {
+    "name": "Wasteful",
+    "blurb": "You spent every penny on things that were fun for about a week."
+  },
+  "lone_wolf": {
+    "name": "Lone Wolf",
+    "blurb": "Nobody ever put a ring on it, mostly because you never let anyone get close."
+  },
+  "broke": {
+    "name": "Broke",
+    "blurb": "The funeral was paid for by a crowdfunding page and a very long list of IOUs."
+  },
+  "gearhead": {
+    "name": "Gearhead",
+    "blurb": "You owned a hypercar and talked about its gearbox with the sincerity of a priest."
+  },
+  "art_patron": {
+    "name": "Art Patron",
+    "blurb": "You bought paintings the way other people buy socks: in bulk, and without much looking."
+  },
+  "mediocre": {
+    "name": "Mediocre",
+    "blurb": "You were not great, not terrible, and the headstone is a bit disappointed in you."
+  },
+  "hero": {
+    "name": "Hero",
+    "blurb": "You ran toward the thing everyone else ran from."
+  },
+  "wicked": {
+    "name": "Wicked",
+    "blurb": "Karma kept a file on you. It was thick."
+  },
+  "stupid": {
+    "name": "Stupid",
+    "blurb": "You made it this far on vibes alone."
+  },
+  "mooch": {
+    "name": "Mooch",
+    "blurb": "Never worked a day and somehow comfortable."
+  },
+  "rowdy": {
+    "name": "Rowdy",
+    "blurb": "The police knew you by first name."
+  },
+  "thief": {
+    "name": "Thief",
+    "blurb": "If it was not nailed down, it was yours."
+  },
+  "highroller": {
+    "name": "High Roller",
+    "blurb": "The casino sent flowers to your funeral."
+  },
+  "cunning": {
+    "name": "Cunning",
+    "blurb": "Walls were suggestions."
+  },
+  "cat_lady": {
+    "name": "Cat Person",
+    "blurb": "Five cats, one couch, no regrets."
+  },
+  "addict": {
+    "name": "Addict",
+    "blurb": "It never let go. Neither did you."
+  },
+  "tarzan": {
+    "name": "Tarzan",
+    "blurb": "More trail than pavement."
+  },
+  "gold_digger": {
+    "name": "Gold Digger",
+    "blurb": "Love is love, and their income was lovely."
+  },
+  "movie_buff": {
+    "name": "Movie Buff",
+    "blurb": "Twenty years of popcorn and opinions."
+  },
+  "generous": {
+    "name": "Generous",
+    "blurb": "Your wallet was everyone's wallet."
+  },
+  "veteran": {
+    "name": "Veteran",
+    "blurb": "A decade in uniform, a lifetime of stories."
+  },
+  "influencer": {
+    "name": "Influencer",
+    "blurb": "A million people watched you eat breakfast."
+  },
+  "academic": {
+    "name": "Academic",
+    "blurb": "Two graduate degrees and a very specific joke."
+  },
+  "lustful": {
+    "name": "Lustful",
+    "blurb": "Quantity was its own quality."
+  },
+  "scandalous": {
+    "name": "Scandalous",
+    "blurb": "The tabloids wrote your obituary first."
+  }
 }

@@ -105,7 +105,7 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
       bump(-10); happy(-8); key = 'people.did.propose_no'; break
     case 'break_up': breakup(life, p); return p.kind === 'ex' ? 'people.brokeUp' : key
     case 'have_child':
-      if (rng.chance((life.flags.ivf ? 0.85 : 0.5) + (life.stats.health - 50) / 300 - Math.max(0, life.age - 38) * 0.04)) { delete life.flags.ivf; addChild(life, rng, p); return 'people.newChild' }
+      if (rng.chance((life.flags.ivf ? 0.85 : 0.5) + (life.stats.health - 50) / 300 - Math.max(0, life.age - 38) * 0.04)) { delete life.flags.ivf; life.flags.pending_baby = true; life.pending = { eventId: 'sys_pregnancy', personId: p.id }; life.seenEvents.push('sys_pregnancy'); return 'people.pregnant' }
       key = 'people.did.have_child_no'; break
     case 'adopt': addChild(life, rng, p); return 'people.newChild'
     case 'conversation': bump(rng.int(2, 5)); happy(1); break
@@ -120,7 +120,7 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
     case 'spy':
       if ((p.craziness ?? 50) > 65 && rng.chance(0.4)) { bump(-20); key = 'people.did.spy_caught' } else { key = 'people.did.spy_clean' }
       break
-    case 'give_money': bump(rng.int(6, 12)); break
+    case 'give_money': bump(rng.int(6, 12)); life.flags.given_money = (Number(life.flags.given_money) || 0) + 500; break
     case 'elope': marry(life, p); return 'people.married'
     case 'counseling': if (rng.chance(0.7)) { bump(rng.int(10, 20)) } else { bump(-3); key = 'people.did.counseling_flop' } break
     case 'ask_out':
@@ -135,6 +135,7 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
         if (current && rng.chance(0.35)) { current.relationship = clamp(current.relationship - 40); life.flags.cheated = true; key = 'people.did.hook_up_caught'; log(life, 'bad', key, { name: p.firstName, other: current.firstName }); return key }
       }
       bump(rng.int(4, 8)); happy(6)
+      life.flags.count_hookup = (Number(life.flags.count_hookup) || 0) + 1
       if (rng.chance(0.04)) { life.stats.health = clamp(life.stats.health - 8); life.flags.std = true; key = 'people.did.hook_up_std' }
       else if (rng.chance(isPartner ? 0.12 : 0.06) && life.age < 50) { addChild(life, rng, p); return 'people.newChild' }
       break
@@ -214,5 +215,23 @@ export function holdWedding(life: Life, personId: string, venue: string, honeymo
   const joy = venue === 'courthouse' ? 2 : venue === 'private_island' ? 15 : 8
   life.stats.happiness = clamp(life.stats.happiness + joy + (honeymoon === 'none' ? 0 : 4))
   log(life, 'info', 'people.wedding', { venue, honeymoon, money: cost })
+  return true
+}
+
+/** Dating app: six candidates in an age range, for a small fee. */
+export function datingApp(life: Life, rng: Rng, minAge: number, maxAge: number): boolean {
+  if (life.age < 18 || life.money < 30 || life.prison) return false
+  life.money -= 30
+  life.dateBoard = Array.from({ length: 6 }, () => makePerson(rng, life.countryCode, 'partner', {
+    age: clamp(rng.int(minAge, maxAge), 18, 99), gender: dateGender(life, rng), relationship: rng.int(40, 70),
+    income: rng.int(15_000, 150_000), money: rng.int(0, 200_000),
+  }))
+  return true
+}
+/** Surrogacy: an expensive guaranteed baby. */
+export function surrogacy(life: Life, rng: Rng): boolean {
+  if (life.age < 21 || life.money < 80_000) return false
+  life.money -= 80_000
+  addChild(life, rng)
   return true
 }

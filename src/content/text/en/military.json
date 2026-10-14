@@ -1,0 +1,422 @@
+{
+  "mi_boot_camp_humiliation": {
+    "text": "Day three of boot camp. You are made to apologise to a fire hydrant for 'insubordinate posture'. Everyone watches.",
+    "choices": {
+      "comply": "Apologise loudly",
+      "smirk": "Smirk",
+      "cry": "Take it silently"
+    },
+    "outcomes": {
+      "laughs": "The platoon laughs. Even the sergeant's moustache twitches.",
+      "punished": "Fifty push-ups and a lecture on tone."
+    }
+  },
+  "mi_drill_sergeant": {
+    "text": "Sergeant Hale inspects your bunk. A coin bounces off the sheets. Another follows. A third hits your shoe, and a part of you.",
+    "choices": {
+      "perfect": "Redo it perfectly",
+      "backtalk": "Talk back",
+      "ask": "Ask him for tips"
+    }
+  },
+  "mi_barracks_prank": {
+    "text": "Someone stuffs your boots with shaving foam. The barracks goes silent, waiting to see who you pick as culprit.",
+    "choices": {
+      "laugh": "Laugh and retaliate",
+      "accuse": "Accuse the wrong man",
+      "sulk": "Sulk"
+    },
+    "outcomes": {
+      "fight": "A sweaty scuffle. The sergeant breaks it up with delight.",
+      "right": "You nail the culprit. Respect restored."
+    }
+  },
+  "mi_promotion_board": {
+    "text": "Promotion board. Three officers, a clipboard and a question: 'What is your biggest weakness?' You have seventeen answers.",
+    "choices": {
+      "interview": "Pitch yourself",
+      "bribe": "Flatter the colonel",
+      "skip": "Skip the board"
+    },
+    "outcomes": {
+      "promoted": "New stripes. Nobody sews them on right.",
+      "passed_over": "'Next time.' It's always next time.",
+      "lucky": "It works, embarrassingly.",
+      "flop": "He hates flattery. His hobby is exposing it."
+    }
+  },
+  "mi_deployment_orders": {
+    "text": "The envelope is thin but heavy. Deployment. Six months, a country you can't pronounce, and a mandatory video about sunscreen.",
+    "choices": {
+      "go": "Report for duty",
+      "plead": "Plead for medical exemption",
+      "say_goodbye": "Use leave to say goodbyes"
+    },
+    "outcomes": {
+      "exempt": "A doctor signs. Your conscience does not.",
+      "caught": "The doctor sees through you. Off you go."
+    }
+  },
+  "mi_ambush": {
+    "text": "The convoy slows. A road, a ridge, and the sound you'd hoped to never learn the pitch of.",
+    "choices": {
+      "return_fire": "Return fire",
+      "take_cover": "Take cover, wait",
+      "pull_wounded": "Drag a wounded buddy"
+    },
+    "outcomes": {
+      "hold": "You hold. Nobody ever really tells you how long it lasted.",
+      "wounded": "A fragment finds your leg. You hear yourself shouting from far away.",
+      "serious": "Medevac. Three weeks of white ceilings.",
+      "dead": "The road keeps one of you. Today, you."
+    }
+  },
+  "mi_mine_scare": {
+    "text": "You spot a bump in the road and the engineer says 'don't move'. The sound of a boot lifting from a mine is silence.",
+    "choices": {
+      "freeze": "Freeze and let him work",
+      "retreat": "Back away carefully"
+    },
+    "outcomes": {
+      "safe": "Defused. He tips his helmet. You grip a canteen like a lifeline.",
+      "boom": "Not defused. Not good.",
+      "dead": "There isn't even time to be afraid."
+    }
+  },
+  "mi_local_kid": {
+    "text": "A kid with a missing front tooth follows your patrol, selling warm soda. He says the price is 'American'. It is one dollar.",
+    "choices": {
+      "buy": "Buy three",
+      "give": "Give him your rations",
+      "shoo": "Shoo him away"
+    }
+  },
+  "mi_mail_spouse": {
+    "text": "A package from {{name}}: socks, chocolate and a drawing of the dog. Under the chocolate, a letter that smells like home.",
+    "choices": {
+      "reply": "Write back all night",
+      "quick": "Send a postcard",
+      "hold": "Read it, don't reply"
+    }
+  },
+  "mi_mail_partner": {
+    "text": "A letter from {{name}}, scented. Your bunkmates read the first line over your shoulder and start making noises.",
+    "choices": {
+      "reply": "Write something sweet",
+      "hide": "Hide it from the guys",
+      "ghost": "Leave it unanswered"
+    }
+  },
+  "mi_mail_mother": {
+    "text": "{{name}} sends cookies, forty of them, each wrapped in a note that says 'Eat'. Half arrive as crumbs. They taste like Sunday.",
+    "choices": {
+      "share": "Share with the squad",
+      "hoard": "Hoard them",
+      "call": "Call home"
+    }
+  },
+  "mi_medal": {
+    "text": "You carried a wounded soldier across forty metres of open ground. A general with a very shiny chest wants to pin something on yours.",
+    "choices": {
+      "accept": "Accept the medal",
+      "modest": "Share it with the unit",
+      "refuse": "Refuse it"
+    }
+  },
+  "mi_ptsd_seed": {
+    "text": "A door slams in the mess tent and your whole body is on the floor before your mind arrives. You laugh about it, loudly.",
+    "choices": {
+      "ignore": "Ignore it",
+      "talk": "Talk to the chaplain",
+      "drink": "Drink it down"
+    },
+    "outcomes": {
+      "fine": "Nothing. For now.",
+      "depressed": "The nightmares start two weeks later."
+    }
+  },
+  "mi_ptsd_nightmares": {
+    "text": "You wake up swinging for the third night in a row. The kid in the next bunk has taken to sleeping with his boots on.",
+    "choices": {
+      "counselor": "See a counselor",
+      "push_on": "Push through it",
+      "pills": "Take pills from a buddy"
+    },
+    "outcomes": {
+      "ok": "It passes. Mostly.",
+      "worse": "It doesn't pass. It moves in."
+    }
+  },
+  "mi_awol_temptation": {
+    "text": "You've got a bus ticket, a cousin's couch and a very strong feeling you could simply not be here. AWOL is a short word for a long sentence.",
+    "choices": {
+      "desert": "Walk away",
+      "stay": "Stay put, grit teeth",
+      "request": "Request leave instead"
+    },
+    "outcomes": {
+      "free": "Nobody comes looking. Not yet.",
+      "caught": "Military police find you in a diner, mid-pancake."
+    }
+  },
+  "mi_reservist_callup": {
+    "text": "Your reserve unit calls. Thirty days, no pay worth the word, and your boss is delighted to learn you will be absent.",
+    "choices": {
+      "report": "Report on time",
+      "dodge": "Dodge the call",
+      "fake_ill": "Fake a back injury"
+    },
+    "outcomes": {
+      "lucky": "They lose your file. Again.",
+      "fined": "Fine, warning, and a stern letter."
+    }
+  },
+  "mi_unit_buddy": {
+    "text": "A guy named Ortega stole your last cigarette and then your last doubt. You can tell he'll be around for decades.",
+    "choices": {
+      "bond": "Adopt him as a friend",
+      "keep_distance": "Keep your distance",
+      "rivalry": "Make him a rival"
+    }
+  },
+  "mi_end_of_service": {
+    "text": "Your discharge paperwork arrives. Four pages, a handshake and a pin. Strange how heavy a small piece of metal can be.",
+    "choices": {
+      "discharge": "Sign and leave",
+      "reenlist": "Think about re-enlisting",
+      "celebrate": "Leave and celebrate"
+    }
+  },
+  "mi_veteran_benefits": {
+    "text": "The veterans' office mails you a thick envelope: education credit, a medical card and a flag nobody asked you to fold.",
+    "choices": {
+      "use_edu": "Use the education credit",
+      "medical": "Book the checkup",
+      "stash": "Shove it in a drawer"
+    }
+  },
+  "mi_rifle_inspection": {
+    "text": "Rifle inspection. The lieutenant pulls one cleaning rag from your barrel and holds it up like a verdict.",
+    "choices": {
+      "own_up": "Own up",
+      "bluff": "Blame the rag"
+    },
+    "outcomes": {
+      "pass": "He sighs and moves on.",
+      "extra": "Extra duty: cleaning every rifle in the company."
+    }
+  },
+  "mi_field_exercise": {
+    "text": "Twelve-kilometre march in full pack. At kilometre eight your feet file a formal complaint.",
+    "choices": {
+      "endure": "Endure",
+      "shortcut": "Hop in the supply truck",
+      "carry": "Carry a weaker soldier's gear"
+    },
+    "outcomes": {
+      "lucky": "Nobody notices. You wave at the stragglers.",
+      "caught": "A corporal catches you. Midnight latrine duty."
+    }
+  },
+  "mi_leave_home": {
+    "text": "Seventy-two hours of leave. You step off the train and your mother hugs you like you're a casserole she's afraid of dropping.",
+    "choices": {
+      "family": "Spend it with family",
+      "party": "Go out until dawn",
+      "sleep": "Sleep the whole leave"
+    }
+  },
+  "mi_fitness_test": {
+    "text": "Annual fitness test. The instructor holds the clipboard like a hostage. Your run-time is a matter of national pride, or something.",
+    "choices": {
+      "push": "Give it everything",
+      "coast": "Jog it"
+    },
+    "outcomes": {
+      "top": "A personal best. A medic hands you a banana.",
+      "pulled": "A hamstring says no. Loudly."
+    }
+  },
+  "mi_officer_candidate": {
+    "text": "A major takes you aside. 'The army needs leaders. You are not a leader. But you might become something near enough.'",
+    "choices": {
+      "apply": "Apply for officer school",
+      "decline": "Decline"
+    },
+    "outcomes": {
+      "accepted": "Accepted. Your haircut gets stricter.",
+      "rejected": "Rejected. 'Lacks vision', says the form, in pen."
+    }
+  },
+  "mi_friendly_fire": {
+    "text": "A flare, a shout, and rounds hiss past your tent. Someone on the far ridge has a very poor map.",
+    "choices": {
+      "drop": "Drop flat",
+      "radio": "Run for the radio"
+    },
+    "outcomes": {
+      "stop": "You stop it before anyone dies. Your hands shake for an hour.",
+      "shot": "A ricochet takes your shoulder.",
+      "dead": "The radio is still warm."
+    }
+  },
+  "mi_convoy_breakdown": {
+    "text": "Your truck dies in the middle of nowhere. The mechanic swears at it in four languages. The desert is very large and very quiet.",
+    "choices": {
+      "wait": "Wait for help",
+      "repair": "Help fix it",
+      "scout": "Scout ahead"
+    },
+    "outcomes": {
+      "fixed": "The engine coughs awake. You cheer like children.",
+      "burn": "A hose bursts. Your forearm is now an educational burn."
+    }
+  },
+  "mi_field_hospital": {
+    "text": "A field medic stitches you up while telling a long story about a goat. You decide not to ask what the goat did.",
+    "choices": {
+      "rest": "Rest as ordered",
+      "return": "Go back early",
+      "flirt": "Flirt with the nurse"
+    }
+  },
+  "mi_vet_reunion": {
+    "text": "Ten years since discharge. Your old unit meets at a bar that smells like old ammo. Ortega is bald and happy.",
+    "choices": {
+      "go": "Go and drink with them",
+      "send_card": "Send a card",
+      "skip": "Stay home"
+    }
+  },
+  "mi_barracks_gambling": {
+    "text": "A card game starts in the back of the barracks. The stakes are cigarettes, favours and, tonight, your next three paychecks.",
+    "choices": {
+      "play": "Sit down at the table",
+      "watch": "Just watch",
+      "report": "Report the game"
+    },
+    "outcomes": {
+      "win": "You walk away richer and slightly hated.",
+      "lose": "You lose every cent. Your bunkmate sends flowers, as a joke."
+    }
+  },
+  "mi_moral_order": {
+    "text": "An order comes down that makes your stomach turn: clear a village on thin evidence. The captain does not look at you when he says it.",
+    "choices": {
+      "obey": "Obey",
+      "refuse": "Refuse the order",
+      "slow_walk": "Slow-walk the order"
+    },
+    "outcomes": {
+      "honoured": "The captain, quietly, agrees. The order evaporates.",
+      "martial": "A tribunal. Your conscience goes with you."
+    }
+  },
+  "mi_barracks_romance": {
+    "text": "Someone from the signal corps keeps leaving you spare batteries and a very specific look. This is how everything begins here.",
+    "choices": {
+      "flirt": "Flirt back",
+      "pass": "Keep it professional"
+    },
+    "outcomes": {
+      "fling": "A secret romance, discovered by everyone within the week.",
+      "rebuffed": "They only wanted you to have batteries."
+    }
+  },
+  "mi_night_watch": {
+    "text": "Night watch. Four hours, one flask of cold coffee and a sky so full of stars it seems rude to have a rifle under it.",
+    "choices": {
+      "think": "Think about home",
+      "nap": "Doze off",
+      "alert": "Stay alert"
+    },
+    "outcomes": {
+      "ok": "The only thing you miss is half an hour.",
+      "caught": "The officer on rounds files this under: tragic."
+    }
+  },
+  "mi_supply_theft": {
+    "text": "Pallets of ration bars disappear from the depot overnight. Somebody in your squad is suddenly the richest man in the camp.",
+    "choices": {
+      "report": "Report him",
+      "cut_in": "Get a cut",
+      "ignore": "Look away"
+    },
+    "outcomes": {
+      "rich": "You sell chocolate to your own officers.",
+      "court": "The MPs have a spreadsheet. You are on it."
+    }
+  },
+  "mi_conscript_dread": {
+    "text": "You never signed up. The letter had a date and no question mark. Everyone around you seems to remember the oath better than you do.",
+    "choices": {
+      "adapt": "Make the best of it",
+      "complain": "Complain to everyone",
+      "learn_skill": "Learn a trade there"
+    }
+  },
+  "mi_officer_orders": {
+    "text": "As an officer, you now say 'Carry on' with such confidence that people continue to carry on, even when you meant something else.",
+    "choices": {
+      "lead": "Lead by example",
+      "delegate": "Delegate everything",
+      "micromanage": "Micromanage"
+    }
+  },
+  "mi_insubordination": {
+    "text": "Your sergeant calls your grandmother 'a frail excuse for a woman' in front of the platoon. Everyone looks at you.",
+    "choices": {
+      "punch": "Throw the punch",
+      "swallow": "Swallow it",
+      "report": "File a grievance"
+    },
+    "outcomes": {
+      "respect": "The sergeant, bleeding, smiles. Strange men.",
+      "martial": "Charged with striking a superior."
+    }
+  },
+  "mi_base_party": {
+    "text": "A birthday on base, a keg of unknown origin, and a private singing a song about his hometown, which does not exist.",
+    "choices": {
+      "join": "Join in",
+      "dd": "Be the sober one",
+      "too_far": "Go all out"
+    },
+    "outcomes": {
+      "legend": "A legend is born. The hangover too.",
+      "busted": "Dawn arrives with a captain and a clipboard."
+    }
+  },
+  "mi_survival_course": {
+    "text": "Survival course: three days, a knife and a map. The instructor says 'Eat what the earth gives you.' The earth gives you beetles.",
+    "choices": {
+      "try": "Give it everything",
+      "cheat": "Hide a sandwich",
+      "team": "Team up with a buddy"
+    },
+    "outcomes": {
+      "pass": "You come back thin, proud and strangely enlightened.",
+      "sick": "A beetle was not worth it."
+    }
+  },
+  "mi_dear_john": {
+    "text": "A letter from {{name}}, one paragraph long. It starts: 'I need to tell you something and I hope you can forgive me.'",
+    "choices": {
+      "accept": "Accept it",
+      "fight": "Write back desperately",
+      "call_it_off": "Call it off yourself"
+    }
+  },
+  "mi_veteran_nightmare": {
+    "text": "Fireworks in July. You're under the table with the dog before you realise. The dog, to its credit, is also there.",
+    "choices": {
+      "therapy": "Book a session",
+      "ignore": "Pretend it didn't happen",
+      "vet_group": "Join a veterans' group"
+    },
+    "outcomes": {
+      "ok": "You drink some water. It passes.",
+      "worse": "It comes back at night. And in the supermarket."
+    }
+  }
+}

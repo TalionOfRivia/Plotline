@@ -2,11 +2,12 @@ import type { JobTrack, Life } from './types'
 import type { Rng } from './rng'
 import { JOB_BY_ID, JOB_TRACKS } from './systems'
 import { clamp, log, use, used } from './util'
+import { countryTaxFactor } from './military'
 import { jobTitleKey, promote } from './effects'
 
 const TAX_BRACKETS: [number, number][] = [[12_000, 0.1], [45_000, 0.2], [95_000, 0.3], [180_000, 0.4], [Infinity, 0.47]]
 
-export function taxOn(income: number) {
+export function taxOn(income: number, countryCode?: string) {
   let tax = 0, prev = 0
   for (const [cap, rate] of TAX_BRACKETS) {
     const slice = Math.min(income, cap) - prev
@@ -14,7 +15,7 @@ export function taxOn(income: number) {
     tax += slice * rate
     prev = cap
   }
-  return Math.round(tax)
+  return Math.round(tax * (countryCode ? countryTaxFactor(countryCode) : 1))
 }
 
 const FAME_TRACKS = new Set(['actor', 'musician', 'music_producer', 'model', 'movie_director', 'influencer', 'professional_athlete', 'politician', 'fighter'])
@@ -144,7 +145,7 @@ export function workYear(life: Life, rng: Rng) {
 
   const hours = job.hours ?? 40
   const gross = Math.round(job.salary * (hours === 20 ? 0.6 : hours === 50 ? 1.2 : 1))
-  const net = gross - taxOn(gross)
+  const net = gross - taxOn(gross, life.countryCode)
   job.stress = clamp((job.stress ?? 25) + (hours === 50 ? 10 : hours === 20 ? -8 : 0) + rng.int(-6, 6) + (job.performance < 40 ? 6 : 0))
   job.popularity = clamp((job.popularity ?? 50) + rng.int(-5, 5))
   if ((job.stress ?? 0) > 70) { life.stats.happiness = clamp(life.stats.happiness - rng.int(3, 8)); life.stats.health = clamp(life.stats.health - rng.int(0, 3)) }

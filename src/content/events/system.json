@@ -59,5 +59,210 @@
         }
       }
     ]
+  },
+  {
+    "id": "sys_arrest",
+    "category": "crime",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "plead_guilty",
+        "effects": {
+          "flags": {
+            "lawyer": "plead_guilty"
+          }
+        }
+      },
+      {
+        "id": "public_defender",
+        "effects": {
+          "flags": {
+            "lawyer": "public_defender"
+          }
+        }
+      },
+      {
+        "id": "hired_lawyer",
+        "effects": {
+          "flags": {
+            "lawyer": "hired_lawyer"
+          }
+        }
+      },
+      {
+        "id": "top_lawyer",
+        "effects": {
+          "flags": {
+            "lawyer": "top_lawyer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_pregnancy",
+    "category": "family",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "flags": {
+            "keep_baby": true
+          },
+          "happiness": 6
+        }
+      },
+      {
+        "id": "end",
+        "effects": {
+          "flags": {
+            "end_pregnancy": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_conscription",
+    "category": "random",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "serve",
+        "effects": {
+          "flags": {
+            "conscript_serve": true
+          }
+        }
+      },
+      {
+        "id": "dodge",
+        "effects": {
+          "flags": {
+            "conscript_dodge": true
+          },
+          "karma": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_deployment",
+    "category": "random",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "flags": {
+            "deploy": true
+          }
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "flags": {
+            "deploy_refuse": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_sponsorship",
+    "category": "fame",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "flags": {
+            "sponsor_accept": true
+          }
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "flags": {
+            "sponsor_decline": true
+          },
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_award",
+    "category": "fame",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "attend",
+        "effects": {
+          "flags": {
+            "award_attend": true
+          }
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sys_paternity",
+    "category": "family",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "test",
+        "effects": {
+          "flags": {
+            "paternity_test": true
+          }
+        }
+      },
+      {
+        "id": "trust",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
   }
 ]

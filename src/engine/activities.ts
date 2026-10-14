@@ -5,12 +5,15 @@ import { applyEffects } from './effects'
 import { clamp, kill, log, use, used } from './util'
 import { placeBet, sweepstakes } from './extras'
 import { WELFARE_STATES } from './school'
+import { NO_ALCOHOL, NO_GAMBLING } from './military'
 
 export interface ActivityResult { id: string; key: string; money?: number; kind: 'good' | 'bad' | 'info' }
 
 export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | null {
   const a = ACTIVITIES.find((x) => x.id === id)
   if (!a || life.age < a.minAge || life.prison) return null
+  if ((a.special === 'casino' || a.special === 'bet' || a.special === 'lottery') && NO_GAMBLING.has(life.countryCode)) return { id, key: 'activity.illegalHere', kind: 'bad' }
+  if ((id === 'nightlife' || id === 'party') && NO_ALCOHOL.has(life.countryCode)) return { id, key: 'activity.illegalHere', kind: 'bad' }
   const limit = a.special === 'casino' || a.special === 'bet' || a.special === 'lottery' ? 3 : 1
   if (used(life, `act_${id}`) >= limit) return { id, key: 'activity.limit', kind: 'info' }
   const cost = (id === 'doctor_visit' || id === 'psychiatrist' || id === 'emergency_room') && WELFARE_STATES.has(life.countryCode) ? 0 : a.cost
@@ -30,7 +33,7 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
   if (a.special === 'casino') {
     const bet = Math.min(Math.max(100, Math.round(life.money * 0.1)), 50_000)
     if (life.money < bet) return { id, key: 'activity.cantAfford', kind: 'bad' }
-    if (rng.chance(0.45)) { life.money += bet; life.stats.happiness = clamp(life.stats.happiness + 4); return { id, key: 'activity.casinoWin', money: bet, kind: 'good' } }
+    if (rng.chance(0.45)) { life.money += bet; life.flags.casino_won = (Number(life.flags.casino_won) || 0) + bet; life.stats.happiness = clamp(life.stats.happiness + 4); return { id, key: 'activity.casinoWin', money: bet, kind: 'good' } }
     life.money -= bet; life.stats.happiness = clamp(life.stats.happiness - 3)
     return { id, key: 'activity.casinoLose', money: bet, kind: 'bad' }
   }
@@ -43,6 +46,8 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
     return { id, key: `activity.botched.${id}`, kind: 'bad' }
   }
   if (id === 'plastic_surgery') life.flags.plastic_surgery = true
+  if (id === 'movie') life.flags.count_movie = (Number(life.flags.count_movie) || 0) + 1
+  if (['hiking', 'camping', 'fishing', 'garden', 'walk'].includes(id)) life.flags.count_outdoor = (Number(life.flags.count_outdoor) || 0) + 1
   if ((id === 'nightlife' || id === 'party') && !life.flags.addicted && rng.chance(0.06)) { life.flags.addicted = true; log(life, 'bad', 'vice.hooked') }
   if (id === 'rehab') { if (life.flags.addicted && rng.chance(0.7)) { delete life.flags.addicted; log(life, 'good', 'vice.clean') } else if (life.flags.addicted) log(life, 'bad', 'vice.relapse') }
   if (id === 'doctor_visit' || id === 'emergency_room') {

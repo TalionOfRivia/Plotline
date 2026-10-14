@@ -12,6 +12,7 @@ import { ActivitiesSheet } from './ActivitiesSheet'
 import { MenuSheet } from './MenuSheet'
 import { ChallengesSheet } from './ChallengesSheet'
 import { Toast } from './Toast'
+import { Tutorial } from './Tutorial'
 import { formatMoney } from './money'
 import { JOB_BY_ID, sysText } from '../engine/systems'
 
@@ -84,6 +85,7 @@ export function GameScreen() {
       {life.pending && !lastOutcome && <EventModal />}
       {lastOutcome && <OutcomeSheet />}
       <Toast />
+      {life.age === 0 && <Tutorial />}
     </div>
   )
 }

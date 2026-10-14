@@ -15,7 +15,7 @@ type Tab = 'owned' | 'houses' | 'cars' | 'pets' | 'luxury' | 'money'
 export function AssetsSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { buy, sell, adoptPet, repairCar } = useGame()
+  const { buy, sell, adoptPet, repairCar, renovate, toggleInsurance } = useGame()
   const [tab, setTab] = useState<Tab>('owned')
   const lang = i18n.language
   const tabs: Tab[] = ['owned', 'money', 'houses', 'cars', 'pets', 'luxury']
@@ -44,6 +44,15 @@ export function AssetsSheet() {
                 right={t('assets.sell')} onClick={() => sell(a.id)} />
             )
           })}
+          {life.assets.length > 0 && (
+            <div className="bg-card rounded-2xl p-3 mb-2 shadow-sm text-sm flex gap-2">
+              <button onClick={() => toggleInsurance('home')} className={`flex-1 py-2 rounded-xl text-xs font-semibold ${life.insurance.home ? 'bg-chrome text-chrome-fg' : 'bg-fg/5'}`}>🏠 {t('assets.homeInsurance')} {life.insurance.home ? '✓' : ''}</button>
+              <button onClick={() => toggleInsurance('car')} className={`flex-1 py-2 rounded-xl text-xs font-semibold ${life.insurance.car ? 'bg-chrome text-chrome-fg' : 'bg-fg/5'}`}>🚗 {t('assets.carInsurance')} {life.insurance.car ? '✓' : ''}</button>
+            </div>
+          )}
+          {life.assets.filter((a) => a.kind === 'house').map((a) => (
+            <Row key={a.id + 'v'} emoji="🔨" title={t('assets.renovate')} sub={sysText(lang, 'assets', `houses.${a.assetId}`)} right={formatMoney(Math.round(a.value * 0.1), lang)} onClick={() => renovate(a.id)} />
+          ))}
           {life.assets.filter((a) => a.kind === 'car' && a.condition < 60).map((a) => (
             <Row key={a.id + 'r'} emoji="🔧" title={t('assets.repair')} sub={sysText(lang, 'assets', `cars.${a.assetId}`)} right={formatMoney(Math.max(200, Math.round(a.value * 0.12)), lang)} onClick={() => repairCar(a.id)} />
           ))}

@@ -8,7 +8,7 @@ import type { Person } from '../engine/types'
 import { formatMoney } from './money'
 
 const KIND_EMOJI: Record<Person['kind'], string> = {
-  mother: '👩', father: '👨', sibling: '🧑‍🤝‍🧑', friend: '🙂', partner: '💑', spouse: '💍', ex: '💔', child: '🧒', pet: '🐾',
+  mother: '👩', father: '👨', sibling: '🧑‍🤝‍🧑', friend: '🙂', partner: '💑', spouse: '💍', ex: '💔', child: '🧒', pet: '🐾', grandparent: '🧓', in_law: '🧑‍🦳',
 }
 const ACTION_EMOJI: Record<Interaction, string> = {
   spend_time: '⏳', gift: '🎁', compliment: '🌟', insult: '😠', ask_money: '🙏', flirt: '😘', propose: '💍', break_up: '💔',
@@ -19,7 +19,9 @@ const ACTION_EMOJI: Record<Interaction, string> = {
 export function PeopleSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { interact, date, godMode, godEditPerson } = useGame()
+  const { interact, date, godMode, godEditPerson, datingApp, surrogacy } = useGame()
+  const [ageMin, setAgeMin] = useState(18)
+  const [ageMax, setAgeMax] = useState(35)
   const [selected, setSelected] = useState<string | null>(null)
   const [dating, setDating] = useState(false)
   const [venue, setVenue] = useState('backyard')
@@ -74,6 +76,12 @@ export function PeopleSheet() {
   if (dating) {
     return (
       <Sheet title={t('people.dating')} emoji="💘" onBack={() => setDating(false)}>
+        {!hasPartner && life.age >= 18 && (
+          <div className="bg-card rounded-2xl p-3 mb-3 shadow-sm text-sm">
+            <div className="font-semibold mb-1">📱 {t('people.datingApp')}</div>
+            <div className="flex items-center gap-2 text-xs"><span>{t('people.ageRange')}</span><input type="number" value={ageMin} min={18} max={99} onChange={(e) => setAgeMin(Number(e.target.value))} className="w-14 rounded-lg bg-surface px-2 py-1" /><span>–</span><input type="number" value={ageMax} min={18} max={99} onChange={(e) => setAgeMax(Number(e.target.value))} className="w-14 rounded-lg bg-surface px-2 py-1" /><button onClick={() => datingApp(Math.min(ageMin, ageMax), Math.max(ageMin, ageMax))} className="ml-auto px-3 py-1.5 rounded-xl bg-accent text-on-accent font-semibold">{t('people.swipe')} · $30</button></div>
+          </div>
+        )}
         {hasPartner ? <p className="text-sm opacity-70">{t('people.alreadyTaken')}</p> : life.dateBoard.length === 0 ? <p className="text-sm opacity-70">{t('people.nobodyAround')}</p> : null}
         {!hasPartner && life.dateBoard.map((c) => (
           <Row key={c.id} emoji={c.gender === 'female' ? '👩' : '👨'} title={`${c.firstName} ${c.lastName}`}
@@ -84,10 +92,11 @@ export function PeopleSheet() {
     )
   }
 
-  const groups: Person['kind'][] = ['spouse', 'partner', 'child', 'mother', 'father', 'sibling', 'friend', 'pet', 'ex']
+  const groups: Person['kind'][] = ['spouse', 'partner', 'child', 'mother', 'father', 'sibling', 'grandparent', 'in_law', 'friend', 'pet', 'ex']
   return (
     <Sheet title={t('nav.relationships')} emoji="👥">
       {life.age >= 15 && !life.prison && <Row emoji="💘" title={t('people.findDate')} sub={hasPartner ? t('people.alreadyTaken') : t('people.findDateSub')} onClick={() => setDating(true)} />}
+      {life.age >= 21 && <Row emoji="🍼" title={t('people.surrogacy')} sub={t('people.surrogacySub')} right={formatMoney(80_000, lang)} onClick={surrogacy} disabled={life.money < 80_000} />}
       {groups.map((kind) => {
         const list = life.people.filter((p) => p.kind === kind)
         if (!list.length) return null

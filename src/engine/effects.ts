@@ -1,9 +1,11 @@
 import type { Effects, Life, Person, Stats } from './types'
 import { clamp, kill, log, uid } from './util'
-import type { Rng } from './rng'
+import { Rng } from './rng'
 import { JOB_BY_ID } from './systems'
 import { makePerson } from './people'
 import { dateGender } from './relationships'
+import { resolveArrest, imprison, type LawyerChoice } from './prison'
+import { discharge, enlist } from './military'
 
 const STAT_KEYS: (keyof Stats)[] = ['happiness', 'health', 'smarts', 'looks']
 
@@ -63,6 +65,27 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
     }
     case 'funeral_plan': { life.money -= 5_000; life.stats.happiness = clamp(life.stats.happiness + 4); for (const x of life.people) if (x.kind === 'sibling' && x.alive) x.relationship = clamp(x.relationship + 8); return true }
     case 'funeral_skip': { for (const x of life.people) if (x.kind === 'sibling' && x.alive) x.relationship = clamp(x.relationship - 15); life.karma = clamp(life.karma - 4, -100, 100); return true }
+    case 'lawyer': { const r = resolveArrest(life, String(value) as LawyerChoice, rng); life.flags.last_arrest = r; return true }
+    case 'keep_baby': { addChild(life, rng); delete life.flags.pending_baby; return true }
+    case 'end_pregnancy': { delete life.flags.pending_baby; life.stats.happiness = clamp(life.stats.happiness - 6); return true }
+    case 'conscript_serve': { enlist(life, 'army', true); return true }
+    case 'conscript_dodge': { if (rng.chance(0.5)) { life.convictions++; imprison(life, 'draft_dodging', 1) } else log(life, 'info', 'military.dodged'); return true }
+    case 'deploy': { life.flags.deploy_now = true; return true }
+    case 'deploy_refuse': { if (life.military) { life.military.rank = Math.max(0, life.military.rank - 1); life.stats.happiness = clamp(life.stats.happiness - 5); log(life, 'bad', 'military.refused') } return true }
+    case 'sponsor_accept': { const pay = Number(life.flags.sponsor_pay) || 0; life.money += pay; if (rng.chance(0.1)) { life.fame = clamp(life.fame - 10); log(life, 'bad', 'fame.sponsorScandal') } else log(life, 'good', 'fame.sponsorPaid', { money: pay }); delete life.flags.sponsor_pay; return true }
+    case 'sponsor_decline': { delete life.flags.sponsor_pay; return true }
+    case 'award_attend': { if (rng.chance(0.35 + life.fame / 300)) { life.fame = clamp(life.fame + 10); life.money += 100_000; life.flags.count_awards = (Number(life.flags.count_awards) || 0) + 1; log(life, 'good', 'fame.awardWon') } else log(life, 'info', 'fame.awardLost'); return true }
+    case 'paternity_test': { life.money -= 400; if (person && rng.chance(0.12)) { log(life, 'bad', 'people.notYours', { name: person.firstName }); const partner = life.people.find((p) => (p.kind === 'partner' || p.kind === 'spouse') && p.alive); if (partner) partner.relationship = clamp(partner.relationship - 35) } else log(life, 'good', 'people.yours', { name: person?.firstName ?? '' }); return true }
+    case 'prison_time_off': if (life.prison) life.prison.yearsLeft = Math.max(0, life.prison.yearsLeft - n); return true
+    case 'solitary': life.stats.health = clamp(life.stats.health - 6); life.stats.happiness = clamp(life.stats.happiness - 10); return true
+    case 'gang_member': if (life.prison) life.prison.gang = Boolean(value); if (value) life.flags.gang_member = true; else delete life.flags.gang_member; return true
+    case 'deployment_injury': life.stats.health = clamp(life.stats.health - n); return true
+    case 'medal': life.flags.medal = true; life.fame = clamp(life.fame + 4); life.karma = clamp(life.karma + 4, -100, 100); return true
+    case 'discharge': discharge(life, true); return true
+    case 'court_martial': discharge(life, false); life.convictions++; imprison(life, 'desertion', 2); return true
+    case 'commute_sentence': if (life.prison?.deathRow) { life.prison.deathRow = false; life.prison.yearsLeft = 25 } return true
+    case 'executed': kill(life, 'death.executed'); return true
+    case 'hero': life.flags.hero = true; life.karma = clamp(life.karma + 10, -100, 100); return true
     case 'decline_offer':
       delete life.flags.offer_track; delete life.flags.offer_rung; delete life.flags.offer_salary
       return true
@@ -114,8 +137,8 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
     case 'ailment': if (typeof value === 'string') { life.flags.ailment = value; log(life, 'bad', 'health.ailment', { ailment: value }) } return true
     case 'cured': if (life.flags.ailment) { log(life, 'good', 'health.cured', { ailment: String(life.flags.ailment) }); delete life.flags.ailment } return true
     case 'depressed': if (value) life.flags.depressed = true; else delete life.flags.depressed; return true
-    case 'car_damage': { const car = life.assets.find((a) => a.kind === 'car'); if (car) car.condition = clamp(car.condition - n); return true }
-    case 'house_damage': { const h = life.assets.find((a) => a.kind === 'house'); if (h) h.value = Math.round(h.value * (1 - n / 100)); return true }
+    case 'car_damage': { const car = life.assets.find((a) => a.kind === 'car'); if (car) { car.condition = clamp(car.condition - n); if (life.insurance.car) { life.money += Math.round(car.value * n / 100 * 0.8); log(life, 'info', 'assets.insurancePaid') } } return true }
+    case 'house_damage': { const h = life.assets.find((a) => a.kind === 'house'); if (h) { const loss = Math.round(h.value * n / 100); h.value -= loss; if (life.insurance.home && loss > 0) { life.money += Math.round(loss * 0.8); log(life, 'info', 'assets.insurancePaid') } } return true }
     case 'pet_sick': if (person?.kind === 'pet') person.sick = true; return true
     case 'pet_dies': if (person?.kind === 'pet') { person.alive = false; life.stats.happiness = clamp(life.stats.happiness - 25); log(life, 'bad', 'assets.petDied', { name: person.firstName }) } return true
     case 'child_grades': if (person?.kind === 'child') person.smarts = clamp((person.smarts ?? 50) + n); return true
@@ -224,10 +247,17 @@ export function breakup(life: Life, person: Person) {
       log(life, 'bad', 'people.divorced', { name: person.firstName, money: half })
     } else log(life, 'bad', 'people.divorcedPrenup', { name: person.firstName })
     life.flags.divorced = true
+    // alimony to the lower earner, child support if the kids go with them
+    const mine = (life.job?.salary ?? 0) + life.pension
+    const theirs = person.income ?? 0
+    if (mine > theirs * 1.5 && mine > 30_000) { life.flags.alimony_amt = Math.round((mine - theirs) * 0.2); life.flags.alimony_years = 5; log(life, 'bad', 'people.alimony', { money: life.flags.alimony_amt }) }
+    const kids = life.people.filter((p) => p.kind === 'child' && p.alive && p.age < 18)
+    if (kids.length && Math.random() < 0.5) { for (const k of kids) k.movedOut = true; life.flags.child_support = true; log(life, 'bad', 'people.custodyLost') }
+    life.people = life.people.filter((p) => p.kind !== 'in_law')
   } else log(life, 'bad', 'people.brokeUp', { name: person.firstName })
 }
 
-export function marry(life: Life, person: Person) {
+export function marry(life: Life, person: Person, rng: Rng = new Rng(life.seed + 'm' + life.marriages)) {
   person.kind = 'spouse'
   person.yearsTogether = 0
   person.relationship = clamp(person.relationship + 10)
@@ -237,6 +267,8 @@ export function marry(life: Life, person: Person) {
   const wedding = Math.min(8_000, Math.max(1_500, Math.round(life.money * 0.08)))
   const dowry = person.money ?? Math.round((person.income ?? 30_000) * (1.5 + (person.age - 18) * 0.1))
   life.money += dowry - wedding
+  // the in-laws arrive with the marriage
+  for (const g of ['female', 'male'] as const) life.people.push(makePerson(rng, life.countryCode, 'in_law', { gender: g, lastName: person.lastName, age: person.age + rng.int(22, 35), relationship: rng.int(35, 75) }))
   log(life, 'good', 'people.married', { name: person.firstName })
   log(life, 'info', 'people.weddingCost', { money: wedding, dowry })
 }

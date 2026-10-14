@@ -96,6 +96,7 @@ export const BUSINESS_KINDS = [
   { id: 'food_truck', cost: 40_000 }, { id: 'coffee_shop', cost: 120_000 }, { id: 'app_startup', cost: 150_000 },
   { id: 'gym_chain', cost: 400_000 }, { id: 'fashion_label', cost: 300_000 }, { id: 'real_estate_firm', cost: 800_000 },
   { id: 'record_label', cost: 500_000 }, { id: 'car_dealership', cost: 1_200_000 },
+  { id: 'museum', cost: 1_500_000 }, { id: 'race_garage', cost: 2_000_000 }, { id: 'zoo', cost: 3_000_000 }, { id: 'casino', cost: 6_000_000 },
 ]
 
 export function startBusiness(life: Life, kindId: string, name: string) {
@@ -157,4 +158,19 @@ export function specialCareersYear(life: Life, rng: Rng) {
 /** Spawns a heir candidate list etc. Exported for legacy mode. */
 export function newbornFor(life: Life, rng: Rng) {
   return makePerson(rng, life.countryCode, 'child', { age: 0, lastName: life.lastName })
+}
+
+/** Verified badges, sponsorship offers and award seasons. */
+export function fameExtrasYear(life: Life, rng: Rng) {
+  for (const [p, n] of Object.entries(life.social)) {
+    if (n >= 100_000 && !life.flags[`verified_${p}`]) { life.flags[`verified_${p}`] = true; life.fame = clamp(life.fame + 5); log(life, 'good', 'fame.verified', { platform: p }) }
+  }
+  const total = Object.values(life.social).reduce((s, n) => s + n, 0)
+  if (!life.pending && total >= 50_000 && rng.chance(0.35)) {
+    life.flags.sponsor_pay = Math.round(total * 0.25 * (0.5 + rng.float()))
+    life.pending = { eventId: 'sys_sponsorship' }
+    life.seenEvents.push('sys_sponsorship')
+    return
+  }
+  if (!life.pending && life.fame >= 70 && rng.chance(0.3)) { life.pending = { eventId: 'sys_award' }; life.seenEvents.push('sys_award') }
 }

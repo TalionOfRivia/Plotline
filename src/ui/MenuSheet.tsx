@@ -5,6 +5,7 @@ import { Row, Section, Sheet } from './Sheet'
 import { LANGS } from '../i18n'
 import type { Theme } from './theme'
 import type { Life } from '../engine/types'
+import { formatMoney } from './money'
 
 export function MenuSheet() {
   const { t, i18n } = useTranslation()
@@ -56,6 +57,12 @@ export function MenuSheet() {
         </div>
         <Row emoji="⚡" title={t('menu.godMode')} sub={g.godMode ? t('menu.on') : t('menu.off')} onClick={() => g.setGodMode(!g.godMode)} />
         {g.godMode && <GodPanel />}
+      </Section>
+      <Section title={t('menu.cemetery')}>
+        {g.cemetery.length === 0 && <p className="text-xs opacity-60 px-1">{t('menu.cemeteryEmpty')}</p>}
+        {g.cemetery.slice(0, 12).map((c, i) => (
+          <Row key={i} emoji="🪦" title={c.name} sub={`${t('death.lived', { years: c.age })} · ${t('menu.generation', { n: c.generation })}${c.ribbon ? ` · ${c.ribbon}` : ''}`} right={formatMoney(c.worth, i18n.language)} />
+        ))}
       </Section>
       <Section title={t('menu.customPeople')}>
         <p className="text-xs opacity-70 px-1 mb-2">{t('menu.customPeopleSub')}</p>

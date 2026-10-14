@@ -1,34 +1,493 @@
 [
-  { "id": "royal", "emoji": "👑", "priority": 1, "when": { "royal": true } },
-  { "id": "famous", "emoji": "🌟", "priority": 2, "when": { "famous": true } },
-  { "id": "houdini", "emoji": "🔓", "priority": 3, "when": { "flags": ["escaped_prison"] } },
-  { "id": "deadly", "emoji": "☠️", "priority": 4, "when": { "minCrimes": 10, "flags": ["murderer"] } },
-  { "id": "loaded", "emoji": "💎", "priority": 5, "when": { "minMoney": 50000000 } },
-  { "id": "island_king", "emoji": "🏝️", "priority": 6, "when": { "flags": ["owns_private_island"] } },
-  { "id": "jetsetter", "emoji": "✈️", "priority": 7, "when": { "flags": ["owns_jet"] } },
-  { "id": "centenarian", "emoji": "🎂", "priority": 8, "when": { "minAge": 100 } },
-  { "id": "nonagenarian", "emoji": "🧓", "priority": 9, "when": { "minAge": 90, "maxAge": 99 } },
-  { "id": "rich", "emoji": "💰", "priority": 10, "when": { "minMoney": 5000000 } },
-  { "id": "lifer", "emoji": "⛓️", "priority": 11, "when": { "minPrisonYears": 30 } },
-  { "id": "jailbird", "emoji": "🔒", "priority": 12, "when": { "minPrisonYears": 15 } },
-  { "id": "fertile", "emoji": "👶", "priority": 13, "when": { "minKids": 8 } },
-  { "id": "family_first", "emoji": "👨‍👩‍👧‍👦", "priority": 14, "when": { "minKids": 3, "flags": ["married_once"] } },
-  { "id": "scholar", "emoji": "🎓", "priority": 15, "when": { "flags": ["phd"] } },
-  { "id": "globetrotter", "emoji": "🌍", "priority": 16, "when": { "flags": ["emigrated"] } },
-  { "id": "heartbreaker", "emoji": "💔", "priority": 17, "when": { "minMarriages": 4 } },
-  { "id": "career_criminal", "emoji": "🦹", "priority": 18, "when": { "minCrimes": 5 } },
-  { "id": "survivor", "emoji": "🎗️", "priority": 19, "when": { "flags": ["survived_illness"] } },
-  { "id": "plastic_fantastic", "emoji": "💉", "priority": 20, "when": { "flags": ["plastic_surgery"] } },
-  { "id": "menagerie", "emoji": "🐾", "priority": 21, "when": { "flags": ["pet_owner"] } },
-  { "id": "serial_monogamist", "emoji": "💍", "priority": 22, "when": { "minMarriages": 3 } },
-  { "id": "gone_too_soon", "emoji": "🕯️", "priority": 23, "when": { "minAge": 19, "maxAge": 30 } },
-  { "id": "unlucky", "emoji": "🎲", "priority": 24, "when": { "maxAge": 18 } },
-  { "id": "hermit", "emoji": "🏚️", "priority": 25, "when": { "maxEvents": 20, "minAge": 60 } },
-  { "id": "lazy", "emoji": "🛌", "priority": 26, "when": { "flags": ["never_worked"], "minAge": 60 } },
-  { "id": "wasteful", "emoji": "🗑️", "priority": 27, "when": { "flags": ["bankrupt"] } },
-  { "id": "lone_wolf", "emoji": "🐺", "priority": 28, "when": { "flags": ["never_married"], "minAge": 50 } },
-  { "id": "broke", "emoji": "🪙", "priority": 29, "when": { "maxMoney": 1000, "minAge": 40 } },
-  { "id": "gearhead", "emoji": "🔧", "priority": 30, "when": { "flags": ["owns_hypercar"] } },
-  { "id": "art_patron", "emoji": "🖼️", "priority": 31, "when": { "flags": ["owns_art_collection"] } },
-  { "id": "mediocre", "emoji": "😐", "priority": 99, "when": {} }
+  {
+    "id": "royal",
+    "emoji": "👑",
+    "priority": 1,
+    "when": {
+      "royal": true
+    }
+  },
+  {
+    "id": "famous",
+    "emoji": "🌟",
+    "priority": 2,
+    "when": {
+      "famous": true
+    }
+  },
+  {
+    "id": "houdini",
+    "emoji": "🔓",
+    "priority": 3,
+    "when": {
+      "flags": [
+        "escaped_prison"
+      ]
+    }
+  },
+  {
+    "id": "deadly",
+    "emoji": "☠️",
+    "priority": 4,
+    "when": {
+      "minCrimes": 10,
+      "flags": [
+        "murderer"
+      ]
+    }
+  },
+  {
+    "id": "loaded",
+    "emoji": "💎",
+    "priority": 5,
+    "when": {
+      "minMoney": 50000000
+    }
+  },
+  {
+    "id": "island_king",
+    "emoji": "🏝️",
+    "priority": 6,
+    "when": {
+      "flags": [
+        "owns_private_island"
+      ]
+    }
+  },
+  {
+    "id": "jetsetter",
+    "emoji": "✈️",
+    "priority": 7,
+    "when": {
+      "flags": [
+        "owns_jet"
+      ]
+    }
+  },
+  {
+    "id": "centenarian",
+    "emoji": "🎂",
+    "priority": 8,
+    "when": {
+      "minAge": 100
+    }
+  },
+  {
+    "id": "nonagenarian",
+    "emoji": "🧓",
+    "priority": 9,
+    "when": {
+      "minAge": 90,
+      "maxAge": 99
+    }
+  },
+  {
+    "id": "rich",
+    "emoji": "💰",
+    "priority": 10,
+    "when": {
+      "minMoney": 5000000
+    }
+  },
+  {
+    "id": "lifer",
+    "emoji": "⛓️",
+    "priority": 11,
+    "when": {
+      "minPrisonYears": 30
+    }
+  },
+  {
+    "id": "jailbird",
+    "emoji": "🔒",
+    "priority": 12,
+    "when": {
+      "minPrisonYears": 15
+    }
+  },
+  {
+    "id": "fertile",
+    "emoji": "👶",
+    "priority": 13,
+    "when": {
+      "minKids": 8
+    }
+  },
+  {
+    "id": "family_first",
+    "emoji": "👨‍👩‍👧‍👦",
+    "priority": 14,
+    "when": {
+      "minKids": 3,
+      "flags": [
+        "married_once"
+      ]
+    }
+  },
+  {
+    "id": "scholar",
+    "emoji": "🎓",
+    "priority": 15,
+    "when": {
+      "flags": [
+        "phd"
+      ]
+    }
+  },
+  {
+    "id": "globetrotter",
+    "emoji": "🌍",
+    "priority": 16,
+    "when": {
+      "flags": [
+        "emigrated"
+      ]
+    }
+  },
+  {
+    "id": "heartbreaker",
+    "emoji": "💔",
+    "priority": 17,
+    "when": {
+      "minMarriages": 4
+    }
+  },
+  {
+    "id": "career_criminal",
+    "emoji": "🦹",
+    "priority": 18,
+    "when": {
+      "minCrimes": 5
+    }
+  },
+  {
+    "id": "survivor",
+    "emoji": "🎗️",
+    "priority": 19,
+    "when": {
+      "flags": [
+        "survived_illness"
+      ]
+    }
+  },
+  {
+    "id": "plastic_fantastic",
+    "emoji": "💉",
+    "priority": 20,
+    "when": {
+      "flags": [
+        "plastic_surgery"
+      ]
+    }
+  },
+  {
+    "id": "menagerie",
+    "emoji": "🐾",
+    "priority": 21,
+    "when": {
+      "flags": [
+        "pet_owner"
+      ]
+    }
+  },
+  {
+    "id": "serial_monogamist",
+    "emoji": "💍",
+    "priority": 22,
+    "when": {
+      "minMarriages": 3
+    }
+  },
+  {
+    "id": "gone_too_soon",
+    "emoji": "🕯️",
+    "priority": 23,
+    "when": {
+      "minAge": 19,
+      "maxAge": 30
+    }
+  },
+  {
+    "id": "unlucky",
+    "emoji": "🎲",
+    "priority": 24,
+    "when": {
+      "maxAge": 18
+    }
+  },
+  {
+    "id": "hermit",
+    "emoji": "🏚️",
+    "priority": 25,
+    "when": {
+      "maxEvents": 20,
+      "minAge": 60
+    }
+  },
+  {
+    "id": "lazy",
+    "emoji": "🛌",
+    "priority": 26,
+    "when": {
+      "flags": [
+        "never_worked"
+      ],
+      "minAge": 60
+    }
+  },
+  {
+    "id": "wasteful",
+    "emoji": "🗑️",
+    "priority": 27,
+    "when": {
+      "flags": [
+        "bankrupt"
+      ]
+    }
+  },
+  {
+    "id": "lone_wolf",
+    "emoji": "🐺",
+    "priority": 28,
+    "when": {
+      "flags": [
+        "never_married"
+      ],
+      "minAge": 50
+    }
+  },
+  {
+    "id": "broke",
+    "emoji": "🪙",
+    "priority": 29,
+    "when": {
+      "maxMoney": 1000,
+      "minAge": 40
+    }
+  },
+  {
+    "id": "gearhead",
+    "emoji": "🔧",
+    "priority": 30,
+    "when": {
+      "flags": [
+        "owns_hypercar"
+      ]
+    }
+  },
+  {
+    "id": "art_patron",
+    "emoji": "🖼️",
+    "priority": 31,
+    "when": {
+      "flags": [
+        "owns_art_collection"
+      ]
+    }
+  },
+  {
+    "id": "mediocre",
+    "emoji": "😐",
+    "priority": 99,
+    "when": {}
+  },
+  {
+    "id": "hero",
+    "emoji": "🦸",
+    "priority": 6,
+    "when": {
+      "flags": [
+        "hero"
+      ]
+    }
+  },
+  {
+    "id": "wicked",
+    "emoji": "🧟",
+    "priority": 7,
+    "when": {
+      "karmaMax": -60
+    }
+  },
+  {
+    "id": "stupid",
+    "emoji": "🤡",
+    "priority": 20,
+    "when": {
+      "stat": {
+        "name": "smarts",
+        "max": 15
+      },
+      "minAge": 40
+    }
+  },
+  {
+    "id": "mooch",
+    "emoji": "🛋️",
+    "priority": 21,
+    "when": {
+      "flags": [
+        "never_worked"
+      ],
+      "minMoney": 200000,
+      "minAge": 40
+    }
+  },
+  {
+    "id": "rowdy",
+    "emoji": "🥊",
+    "priority": 22,
+    "when": {
+      "minCrimes": 3,
+      "flags": [
+        "convictions_3"
+      ]
+    }
+  },
+  {
+    "id": "thief",
+    "emoji": "🧤",
+    "priority": 23,
+    "when": {
+      "counter": {
+        "name": "count_theft",
+        "min": 8
+      }
+    }
+  },
+  {
+    "id": "highroller",
+    "emoji": "🎰",
+    "priority": 24,
+    "when": {
+      "counter": {
+        "name": "casino_won",
+        "min": 100000
+      }
+    }
+  },
+  {
+    "id": "cunning",
+    "emoji": "🦊",
+    "priority": 25,
+    "when": {
+      "flags": [
+        "escaped_prison"
+      ],
+      "minCrimes": 5
+    }
+  },
+  {
+    "id": "cat_lady",
+    "emoji": "🐈",
+    "priority": 26,
+    "when": {
+      "flags": [
+        "many_cats"
+      ]
+    }
+  },
+  {
+    "id": "addict",
+    "emoji": "💊",
+    "priority": 27,
+    "when": {
+      "flags": [
+        "addicted"
+      ]
+    }
+  },
+  {
+    "id": "tarzan",
+    "emoji": "🌳",
+    "priority": 28,
+    "when": {
+      "counter": {
+        "name": "count_outdoor",
+        "min": 20
+      }
+    }
+  },
+  {
+    "id": "gold_digger",
+    "emoji": "💍",
+    "priority": 29,
+    "when": {
+      "flags": [
+        "gold_digger"
+      ]
+    }
+  },
+  {
+    "id": "movie_buff",
+    "emoji": "🎬",
+    "priority": 30,
+    "when": {
+      "counter": {
+        "name": "count_movie",
+        "min": 20
+      }
+    }
+  },
+  {
+    "id": "generous",
+    "emoji": "🎁",
+    "priority": 31,
+    "when": {
+      "counter": {
+        "name": "given_money",
+        "min": 50000
+      }
+    }
+  },
+  {
+    "id": "veteran",
+    "emoji": "🎖️",
+    "priority": 32,
+    "when": {
+      "flags": [
+        "veteran_long"
+      ]
+    }
+  },
+  {
+    "id": "influencer",
+    "emoji": "📱",
+    "priority": 33,
+    "when": {
+      "minFollowers": 1000000
+    }
+  },
+  {
+    "id": "academic",
+    "emoji": "🎓",
+    "priority": 34,
+    "when": {
+      "flags": [
+        "two_grad_degrees"
+      ]
+    }
+  },
+  {
+    "id": "lustful",
+    "emoji": "🔥",
+    "priority": 35,
+    "when": {
+      "counter": {
+        "name": "count_hookup",
+        "min": 20
+      }
+    }
+  },
+  {
+    "id": "scandalous",
+    "emoji": "📰",
+    "priority": 36,
+    "when": {
+      "flags": [
+        "scandal"
+      ],
+      "famous": true
+    }
+  }
 ]

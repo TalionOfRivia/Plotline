@@ -1,0 +1,432 @@
+{
+  "pr2_laundry_shift": {
+    "text": "Your shift is the laundry. Forty orange jumpsuits, one broken dryer, and a guard who counts the bleach like it's gold.",
+    "choices": {
+      "hustle": "Work fast, earn trust",
+      "slack": "Fold slowly, nap",
+      "wash_contraband": "Hide a package in the wash"
+    },
+    "outcomes": {
+      "paid": "Someone pays you in cigarettes and respect. Both are currency.",
+      "caught": "A guard finds it. You find the hole."
+    }
+  },
+  "pr2_kitchen_shift": {
+    "text": "Kitchen duty. Tonight's menu is a grey stew nobody can name. You are, technically, the chef.",
+    "choices": {
+      "cook": "Season it properly",
+      "spit": "Make it worse on purpose",
+      "steal_food": "Smuggle out extra rations"
+    },
+    "outcomes": {
+      "feast": "Your block eats like kings for one night. You are briefly beloved.",
+      "busted": "The head cook catches you and your ribs meet his ladle."
+    }
+  },
+  "pr2_library_shift": {
+    "text": "You shelve books in the prison library. The true crime section is very popular, which feels like a conflict of interest.",
+    "choices": {
+      "read": "Read everything",
+      "lawbooks": "Study the law section",
+      "sell_gossip": "Trade reading tips for favours"
+    }
+  },
+  "pr2_gang_initiation": {
+    "text": "Three men corner you in the shower block. The tall one says the Crows could use a face like yours. It is not a compliment.",
+    "choices": {
+      "join": "Take the offer",
+      "refuse": "Say no, politely",
+      "ask_guard": "Ask for protective custody"
+    },
+    "outcomes": {
+      "respect": "They shrug. Respect, or maybe just scheduling.",
+      "beaten": "They explain the offer again, slower, with fists."
+    }
+  },
+  "pr2_gang_war": {
+    "text": "Word comes down: the Crows are at war with the block next door. Tonight, in the yard, you are expected to be useful.",
+    "choices": {
+      "fight": "Swing for the Crows",
+      "hang_back": "Hang back, look busy",
+      "warn": "Tip off the guards"
+    },
+    "outcomes": {
+      "won": "You win the yard. Your knuckles lose.",
+      "hurt": "A pipe finds your shoulder. The infirmary finds you.",
+      "hole": "Guards flood the yard. You get thirty days alone with your thoughts.",
+      "dead": "A blade you never saw finds you between the ribs."
+    }
+  },
+  "pr2_gang_tax": {
+    "text": "The Crows collect dues every month. Your share is whatever is in your commissary account, give or take your dignity.",
+    "choices": {
+      "pay": "Pay up",
+      "stall": "Stall them"
+    },
+    "outcomes": {
+      "ok": "They let it slide. This time.",
+      "lesson": "They teach a short lesson in arithmetic."
+    }
+  },
+  "pr2_gang_leave": {
+    "text": "You're tired of the Crows. Leaving is possible, they say. The usual method involves a stretcher.",
+    "choices": {
+      "walk_away": "Ask to leave",
+      "stay": "Stay a Crow"
+    },
+    "outcomes": {
+      "free": "A nod. A debt. You're out, mostly.",
+      "beat_out": "They beat you out the door, an exit interview of sorts.",
+      "refused": "They laugh. You stay."
+    }
+  },
+  "pr2_cellmate_confession": {
+    "text": "At 3 a.m. your cellmate confesses something that makes your own sentence look like a parking ticket.",
+    "choices": {
+      "listen": "Listen, say nothing",
+      "report": "Tell a guard",
+      "blackmail": "Remember it for later"
+    }
+  },
+  "pr2_contraband_phone": {
+    "text": "A phone appears under your pillow, charged, with one bar of signal. Somebody wants a favour in return.",
+    "choices": {
+      "call_home": "Call someone you love",
+      "sell": "Rent it out by the minute",
+      "flush": "Flush it"
+    },
+    "outcomes": {
+      "sweet": "Four minutes of a familiar voice. Better than any meal.",
+      "shakedown": "Raid at dawn. They find it, and they find you."
+    }
+  },
+  "pr2_corrupt_guard": {
+    "text": "Officer Dunmore leans on your cell door. For two hundred dollars a month he can find you better food, a quieter block, and amnesia.",
+    "choices": {
+      "pay": "Pay the man",
+      "decline": "Decline, keep your cash",
+      "report": "Report him"
+    },
+    "outcomes": {
+      "cleaned": "An investigation, a transfer, a cake. Someone cares, briefly.",
+      "retaliation": "Your cell gets searched daily. Your mattress develops opinions."
+    }
+  },
+  "pr2_visit_no_show_spouse": {
+    "text": "Visiting day. You wait in the clean shirt. {{name}} doesn't come. No call, no note.",
+    "choices": {
+      "write": "Write a furious letter",
+      "forgive": "Make excuses for them",
+      "let_go": "Stop expecting visits"
+    }
+  },
+  "pr2_visit_no_show_child": {
+    "text": "Your kid was supposed to visit. The guard shrugs: nobody on the list today. {{name}} is probably busy. Probably.",
+    "choices": {
+      "call": "Call and ask why",
+      "draw": "Mail a drawing, hoping",
+      "swallow": "Say nothing, hurt quietly"
+    }
+  },
+  "pr2_class_education": {
+    "text": "The prison offers a class: Intro to Something. The teacher is a retired accountant who has never been so listened to.",
+    "choices": {
+      "enrol": "Enrol and try",
+      "sleep": "Sleep at the back",
+      "top_student": "Aim for top of the class"
+    },
+    "outcomes": {
+      "star": "A certificate with your name. Your first in years.",
+      "mocked": "Cellmates call you Professor. It is not affectionate."
+    }
+  },
+  "pr2_appeal_letter": {
+    "text": "You draft an appeal. A lawyer you can't afford says there is a thin chance to shave time. Thin, but chances usually are.",
+    "choices": {
+      "file": "File the appeal",
+      "skip": "Don't bother",
+      "pro_bono": "Beg a pro bono lawyer"
+    },
+    "outcomes": {
+      "granted": "A year knocked off. The judge sneezes, you sign.",
+      "denied": "Denied, in two paragraphs and a stamp."
+    }
+  },
+  "pr2_hunger_strike": {
+    "text": "The block is starting a hunger strike over the food. You're asked to join. Your stomach has opinions.",
+    "choices": {
+      "join": "Join the strike",
+      "eat": "Eat in secret",
+      "refuse": "Stay out of it"
+    },
+    "outcomes": {
+      "win": "Menu improved to 'edible'. A victory of sorts.",
+      "lose": "Nothing changes. You are thinner and still in prison."
+    }
+  },
+  "pr2_transfer": {
+    "text": "At dawn they wake you: pack up, you're transferred. Nobody says where. The bus has no windows.",
+    "choices": {
+      "calm": "Go quietly",
+      "scheme": "Try to stay put"
+    },
+    "outcomes": {
+      "stay": "A clerk error saves you. Bureaucracy, ally.",
+      "worse": "You go anyway, and your new block has no heating."
+    }
+  },
+  "pr2_tattoo": {
+    "text": "A man named Gus runs a tattoo operation with a staple, ink from a pen, and a steadier hand than a surgeon.",
+    "choices": {
+      "get": "Get inked",
+      "decline": "Keep your skin clean"
+    },
+    "outcomes": {
+      "good": "Not bad. Slightly crooked. Entirely yours.",
+      "infected": "The skin gets angry. So does the infirmary nurse."
+    }
+  },
+  "pr2_snitch_dilemma": {
+    "text": "You overheard who stabbed the kid in D-block. The warden offers you a better cell for a name. The yard offers a longer life for silence.",
+    "choices": {
+      "talk": "Give the name",
+      "silent": "Keep your mouth shut",
+      "anon": "Slip an anonymous note"
+    },
+    "outcomes": {
+      "safe": "They move you quietly. The warden remembers.",
+      "marked": "Someone calls you a rat in a very loud voice. Then a fist.",
+      "killed": "Rat's rules are simple."
+    }
+  },
+  "pr2_talent_show": {
+    "text": "The chaplain organises a prison talent show. Prize: a pizza. Competition: fierce, and mostly beatboxing.",
+    "choices": {
+      "perform": "Perform something",
+      "judge": "Be a judge",
+      "skip": "Stay in the cell"
+    },
+    "outcomes": {
+      "standing": "The hall goes wild. Even the guards clap, then deny it.",
+      "flop": "Silence. Then a cough. Then someone throws a sock."
+    }
+  },
+  "pr2_parole_board": {
+    "text": "Parole board day. Five tired faces, a folder with your whole life in it, and ten minutes to prove you're changed.",
+    "choices": {
+      "plead": "Plead sincerely",
+      "lawyer_up": "Bring a lawyer",
+      "skip": "Skip it"
+    },
+    "outcomes": {
+      "granted": "Granted. They stamp it and you finally exhale.",
+      "denied": "Denied. Reapply in a year, they say, as though it's a library card.",
+      "granted2": "It cost a fortune. Worth it.",
+      "denied2": "Fortune spent, door still shut."
+    }
+  },
+  "pr2_last_meal": {
+    "text": "The warden asks what you want for your last meal. They've been asking a while. You haven't picked yet.",
+    "choices": {
+      "feast": "Everything on the menu",
+      "mom_cooking": "Something from childhood",
+      "refuse": "Refuse the question"
+    }
+  },
+  "pr2_final_appeal": {
+    "text": "Your lawyer arrives with a clemency file the size of a phone book. One last appeal before the date is set.",
+    "choices": {
+      "appeal": "File the final appeal",
+      "pray": "Make peace instead"
+    },
+    "outcomes": {
+      "commuted": "Life, not death. The word 'life' has never sounded so good.",
+      "executed": "The court declines. They set a morning.",
+      "stay": "A stay, nothing more. You wait."
+    }
+  },
+  "pr2_pen_pal": {
+    "text": "A stranger writes to you from another state. She says she writes to people on death row for fun. You have never felt so seen, awkwardly.",
+    "choices": {
+      "reply": "Write back",
+      "ignore": "Ignore it",
+      "fall": "Confide everything"
+    },
+    "outcomes": {
+      "bond": "A friendship by post. The mailman is jealous.",
+      "story": "She sells your letters to a magazine."
+    }
+  },
+  "pr2_chaplain_visit": {
+    "text": "The chaplain visits twice a week now. He has brought tea and no answers.",
+    "choices": {
+      "confess": "Confess everything",
+      "debate": "Argue theology",
+      "silence": "Sit in silence"
+    }
+  },
+  "pr2_probation_checkin": {
+    "text": "A random check-in. Your officer, Pruitt, turns up unannounced, counts your empty bottles and your full fridge, and nods.",
+    "choices": {
+      "cooperate": "Be polite and open",
+      "hide": "Hide something"
+    },
+    "outcomes": {
+      "clean": "He misses it. You sweat through two shirts.",
+      "caught": "He finds it. Your probation becomes an extension."
+    }
+  },
+  "pr2_probation_temptation": {
+    "text": "An old friend calls with a job that pays in cash and silence. You are on probation. The money is very good.",
+    "choices": {
+      "take": "Take the job",
+      "refuse": "Say no, hang up",
+      "report": "Tell your officer"
+    },
+    "outcomes": {
+      "rich": "Nobody notices. You buy a coat.",
+      "violated": "Violation. The cell remembers your shape."
+    }
+  },
+  "pr2_probation_job": {
+    "text": "Interviews are bleak. Every employer ticks the same box, then your résumé disappears. One diner doesn't tick it.",
+    "choices": {
+      "take": "Take the diner job",
+      "hustle": "Keep looking",
+      "lie": "Lie on the form"
+    }
+  },
+  "pr2_commissary": {
+    "text": "Commissary day: soup packets, instant coffee, toothpaste. In here, a stamp is a salary and a candy bar is a vow.",
+    "choices": {
+      "save": "Save it",
+      "treat": "Buy a treat",
+      "share": "Share with a stranger"
+    }
+  },
+  "pr2_yard_chess": {
+    "text": "An old lifer challenges you to chess. Rumour says he hasn't lost in 22 years.",
+    "choices": {
+      "play": "Accept the game",
+      "decline": "Watch from the side"
+    },
+    "outcomes": {
+      "win": "You win. He buys you tea and a new respect.",
+      "lose": "You lose in nine moves and learn a great deal."
+    }
+  },
+  "pr2_lockdown": {
+    "text": "Lockdown. Somebody smuggled in something, and the whole wing pays for it with 72 hours in the cell and cold sandwiches.",
+    "choices": {
+      "read": "Read and recover",
+      "rage": "Bang on the walls",
+      "workout": "Do 2,000 push-ups"
+    }
+  },
+  "pr2_new_fish": {
+    "text": "A trembling new inmate gets the bunk above yours. He's about nineteen and entirely too clean.",
+    "choices": {
+      "mentor": "Show him the ropes",
+      "ignore": "Mind your own time",
+      "rob": "Take his stuff"
+    },
+    "outcomes": {
+      "ok": "He cries a little. You keep the socks.",
+      "retaliate": "It turns out he has a big brother in the block."
+    }
+  },
+  "pr2_ex_letter": {
+    "text": "A letter from {{name}}. Your ex wants to know whether you've thought about them. Also, they need to send your boxes back.",
+    "choices": {
+      "reply": "Write back, tender",
+      "burn": "Tear it up",
+      "ask_money": "Ask for commissary money"
+    }
+  },
+  "pr2_mother_letter": {
+    "text": "A letter from {{name}}. Your mother's handwriting, with lists of what she has cooked for you and has no way to send.",
+    "choices": {
+      "write": "Write her back",
+      "cry": "Cry into the pillow",
+      "ignore": "Hide the letter"
+    }
+  },
+  "pr2_probation_curfew": {
+    "text": "Your curfew is 9 p.m. A friend just invited you to the one party that mentions no names and no police.",
+    "choices": {
+      "sneak": "Sneak out",
+      "stay": "Stay in"
+    },
+    "outcomes": {
+      "fun": "The best night in years. Nobody checks.",
+      "check": "The officer rings your landline. You are not near it."
+    }
+  },
+  "pr2_hooch": {
+    "text": "Somebody is brewing hooch from fruit cups and bread in a trash bag. It smells like regret in a bottle.",
+    "choices": {
+      "drink": "Take a cup",
+      "sell": "Sell the stuff",
+      "pass": "Pass"
+    },
+    "outcomes": {
+      "night": "Best sleep of your sentence.",
+      "sick": "Your head files a complaint that lasts a week."
+    }
+  },
+  "pr2_guard_beating": {
+    "text": "A guard decides you looked at him wrong. His colleague looks away with the practised ease of a man who has done so before.",
+    "choices": {
+      "take": "Absorb it",
+      "fight_back": "Fight back",
+      "file": "File a complaint"
+    },
+    "outcomes": {
+      "lucky": "The camera happens to be working. He gets suspended.",
+      "worse": "You go to the hole, he goes to lunch."
+    }
+  },
+  "pr2_interview": {
+    "text": "A podcaster wants your story. She's earnest, underpaid, and only a little exploitative.",
+    "choices": {
+      "talk": "Tell it all",
+      "no": "No comment"
+    },
+    "outcomes": {
+      "sympathy": "Listeners write letters. Some even like you.",
+      "roasted": "The episode title: 'Monster Next Door'."
+    }
+  },
+  "pr2_old_timer": {
+    "text": "A lifer shares a rule, free of charge: 'Don't owe anyone. Don't be anyone's favour. Don't be the loudest man in the yard.'",
+    "choices": {
+      "listen": "Take it seriously",
+      "laugh": "Wave it off",
+      "ask": "Ask for more rules"
+    }
+  },
+  "pr2_shakedown": {
+    "text": "Cell search. They toss your mattress, your books and your single photograph. One officer reads your letters aloud in funny voices.",
+    "choices": {
+      "calm": "Stay calm",
+      "object": "Object loudly"
+    },
+    "outcomes": {
+      "ignored": "Nobody cares. Your letters are now crumpled.",
+      "punished": "Objection noted. Along with a cell with no light."
+    }
+  },
+  "pr2_mess_riot": {
+    "text": "A fight in the mess hall becomes a riot. A tray flies over your head like a frisbee with ambitions.",
+    "choices": {
+      "hide": "Hide under a table",
+      "join": "Jump in",
+      "help": "Help the guards"
+    },
+    "outcomes": {
+      "survive": "You live. Your tray does not.",
+      "hurt": "A broken orbital and a story that's bad even by prison standards.",
+      "dead": "Chaos has no preferences."
+    }
+  }
+}
