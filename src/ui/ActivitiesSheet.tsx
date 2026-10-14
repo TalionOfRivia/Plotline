@@ -18,6 +18,7 @@ export function ActivitiesSheet() {
   const g = useGame()
   const [page, setPage] = useState<Page>('hub')
   const [bizName, setBizName] = useState('')
+  const [confirmEnd, setConfirmEnd] = useState(false)
   const lang = i18n.language
   const back = () => setPage('hub')
   const toast = (key: string, kind: 'good' | 'bad' | 'info', params?: Record<string, string | number>) => g.setToast({ key, kind, params })
@@ -63,6 +64,9 @@ export function ActivitiesSheet() {
       </Section>
       <Section title={t('admin.life')}>
         <Row emoji="🌍" title={t('admin.emigrate')} sub={t('admin.emigrateSub', { money: formatMoney(EMIGRATE_COST, lang) })} onClick={() => setPage('emigrate')} disabled={life.age < 18 || life.money < EMIGRATE_COST} />
+        {!confirmEnd
+          ? <Row emoji="🏳️" title={t('admin.surrender')} sub={t('admin.surrenderSub')} onClick={() => setConfirmEnd(true)} />
+          : <Row emoji="⚠️" title={t('admin.surrenderConfirm')} sub={t('admin.surrenderConfirmSub')} onClick={g.surrender} />}
         <Row emoji="🧬" title={t('admin.fertility')} sub={life.flags.ivf ? t('admin.fertilityOn') : t('admin.fertilitySub', { money: formatMoney(IVF_COST, lang) })} onClick={g.ivf} disabled={life.age < 18 || life.money < IVF_COST || Boolean(life.flags.ivf)} />
       </Section>
     </Sheet>

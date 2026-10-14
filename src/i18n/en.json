@@ -104,7 +104,8 @@
     "car_crash": "Died in a car crash.",
     "exposure": "Died of exposure.",
     "overdose": "Overdose.",
-    "bar_fight": "Killed in a bar fight."
+    "bar_fight": "Killed in a bar fight.",
+    "surrender": "Gave up on life."
   },
   "school": {
     "started": "You started school.",
@@ -635,7 +636,11 @@
       "opposite": "Opposite sex",
       "same": "Same sex",
       "both": "Anyone"
-    }
+    },
+    "surrender": "Surrender…",
+    "surrenderSub": "Give up on this life. The time machine can still take it back.",
+    "surrenderConfirm": "Tap again to end this life",
+    "surrenderConfirmSub": "No judgement. The story stops here."
   },
   "license": {
     "already": "You already have that license.",

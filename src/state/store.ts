@@ -13,6 +13,7 @@ import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, s
 import { doActivity, type ActivityResult } from '../engine/activities'
 import { doGig, emigrate, fertilityTreatment, invest, repayLoan, sue, takeLicense, takeLoan, toggleWill, withdraw, type LicenseKey, type Result } from '../engine/extras'
 import { syncDerivedFlags } from '../engine/derived'
+import { kill } from '../engine/util'
 import { checkChallenges } from '../engine/challenges'
 import { applyTheme, loadTheme, type Theme } from '../ui/theme'
 
@@ -82,6 +83,7 @@ interface GameState {
   gig: (id: string) => void
   setAttraction: (a: 'opposite' | 'same' | 'both') => void
   recruiter: () => void
+  surrender: () => void
   godEditPerson: (id: string, relationship: number) => void
   godEdit: (patch: { stats?: Partial<Stats>; money?: number; karma?: number; fame?: number }) => void
 }
@@ -179,6 +181,7 @@ export const useGame = create<GameState>()(
         sue: () => get().extra((l, rng) => sue(l, rng)),
         gig: (id) => get().extra((l, rng) => doGig(l, id, rng)),
         setAttraction: (a) => act((l) => { l.flags.attraction = a; l.dateBoard = [] }),
+        surrender: () => set((s) => { if (!s.life?.alive) return; s.undo = snapshot(s.life); withRng(s.life, () => kill(s.life!, 'death.surrender')); s.screen = 'tombstone'; s.sheet = null }),
         recruiter: () => act((l, rng) => { const id = recruiter(l, rng); get().setToast({ key: id ? 'work.recruiterFound' : 'work.recruiterNone', kind: id ? 'good' : 'bad' }) }),
         godEditPerson: (id, relationship) => set((s) => { const p = s.life?.people.find((x) => x.id === id); if (p) p.relationship = relationship }),
         setGodMode: (on) => set((s) => { s.godMode = on }),
