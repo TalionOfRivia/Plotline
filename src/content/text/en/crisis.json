@@ -299,7 +299,7 @@
     "choices": {
       "return": "Give it back",
       "keep": "Pocket it",
-      "donate": "Slip it in a tip jar"
+      "donate": "Drop it in tips"
     },
     "outcomes": {
       "seen": "A stranger sees. Silent respect, in a queue.",

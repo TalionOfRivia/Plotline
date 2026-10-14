@@ -100,7 +100,9 @@
     "prison_riot": "Killed in a prison riot.",
     "shanked": "Stabbed in prison.",
     "mob_hit": "A mob hit.",
-    "spaceflight": "Lost in spaceflight."
+    "spaceflight": "Lost in spaceflight.",
+    "car_crash": "Died in a car crash.",
+    "exposure": "Died of exposure."
   },
   "school": {
     "started": "You started school.",

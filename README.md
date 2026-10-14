@@ -8,13 +8,15 @@ Built as a PWA: open it in Safari on an iPhone, **Share → Add to Home Screen**
 
 ## Features
 - English / עברית toggle with full RTL layout
-- ~440 original events with 2–4 choices; risky choices show their real odds up front
+- ~650 original events with 2–4 choices; risky choices show their real odds up front
 - School → university (16 majors) → 7 graduate schools; scholarships and loans
 - 42 career tracks with ladders, interviews, performance, promotions, firings, retirement and pensions
 - Homes (with mortgages), cars, pets, luxury; net worth tracking
 - Relationships with real interactions, dating, marriage, prenups, kids, divorce, inheritance
 - 12 crimes with transparent odds; prison with gangs, parole, riots and escapes
 - Fame, royalty, mafia, business, pro sports, astronaut and secret-agent paths
+- 36 challenges with progress tracking across lives
+- Light / dark / auto theme
 - Ribbons at death, legacy mode (continue as your child), time machine (undo a year), god mode, save export/import
 
 ## Development

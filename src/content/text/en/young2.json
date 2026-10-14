@@ -1,0 +1,694 @@
+{
+  "ch2_imaginary_seat": {
+    "text": "Your imaginary friend needs their own seat at the restaurant. The waiter is being very professional about it.",
+    "choices": {
+      "seat": "Pull up a chair",
+      "lap": "Say they sit on you",
+      "order": "Order them fries"
+    }
+  },
+  "ch2_lose_tooth": {
+    "text": "Your first tooth is hanging by a thread, and you have been wiggling it for nine days. It finally comes off in an apple.",
+    "choices": {
+      "show": "Show everyone",
+      "pillow": "Put it under the pillow",
+      "keep": "Keep it in a box"
+    }
+  },
+  "ch2_sleepover": {
+    "text": "{{name}} invites you to a sleepover. The plan is pizza, a movie, and staying up until at least nine.",
+    "choices": {
+      "go": "Stay the whole night",
+      "half": "Go home at bedtime",
+      "decline": "Say no thanks"
+    },
+    "outcomes": {
+      "legend": "You stay up until ten and eat cereal at dawn. It is the best night of your year.",
+      "homesick": "At midnight you get homesick and call home. {{name}} pretends not to notice."
+    }
+  },
+  "ch2_picture_day": {
+    "text": "It is school picture day. Someone cut your bangs yesterday, and that someone was you.",
+    "choices": {
+      "smile": "Give a big smile",
+      "face": "Make a silly face",
+      "hide": "Hide behind the hat"
+    }
+  },
+  "ch2_lost_mall": {
+    "text": "You turn around and {{name}} is gone. There are only knees, shopping bags, and one very loud pretzel stand.",
+    "choices": {
+      "staff": "Find a store worker",
+      "search": "Search on your own",
+      "stay": "Stay put and wait"
+    },
+    "outcomes": {
+      "found": "You find {{name}} by the fountain, looking far more worried than you.",
+      "longer": "It takes twenty minutes and one announcement over the speakers with your full name."
+    }
+  },
+  "ch2_talent_show": {
+    "text": "The school talent show has an open slot. Your act is a card trick you have practiced for a total of two minutes.",
+    "choices": {
+      "perform": "Sign up and perform",
+      "stage": "Help backstage",
+      "audience": "Watch from the audience"
+    },
+    "outcomes": {
+      "wow": "The trick works. The gym goes quiet, then loud, and a first grader asks for your autograph.",
+      "fine": "Half the cards end up on the floor. People clap anyway, mostly out of mercy.",
+      "flop": "The card you promised is not in the deck. You bow slowly and leave."
+    }
+  },
+  "ch2_first_phone": {
+    "text": "{{name}} hands you your first phone and a list of rules that is longer than the phone's manual.",
+    "choices": {
+      "accept": "Accept every rule",
+      "negotiate": "Negotiate the rules",
+      "wait": "Wait another year"
+    }
+  },
+  "ch2_braces": {
+    "text": "The orthodontist says you need braces, and you will be expected to smile about it for two years.",
+    "choices": {
+      "colors": "Pick bright rubber bands",
+      "plain": "Pick the clear ones",
+      "complain": "Complain loudly"
+    }
+  },
+  "ch2_learn_instrument": {
+    "text": "The school music teacher asks which instrument you want to try. Each one looks louder than the last.",
+    "choices": {
+      "trumpet": "Take the trumpet",
+      "flute": "Take the flute",
+      "none": "Take nothing"
+    },
+    "outcomes": {
+      "natural": "You find the right notes by Friday. The neighbors learn to love it.",
+      "squeak": "It makes a sound like a goose in a hallway, but you keep at it."
+    }
+  },
+  "ch2_sports_tryouts": {
+    "text": "Tryouts for the school team are on Thursday. You have never played, but you own the shoes.",
+    "choices": {
+      "try": "Try out",
+      "manager": "Offer to keep score",
+      "skip": "Skip it"
+    },
+    "outcomes": {
+      "made": "You make the team, probably because you ran the fastest away from the ball.",
+      "cut": "You get cut, but the coach says your sneakers had great spirit."
+    }
+  },
+  "ch2_dog_walking": {
+    "text": "A neighbor pays you to walk their dog. The dog has opinions about squirrels, and so does the leash.",
+    "choices": {
+      "walk": "Take the job",
+      "decline": "Say no"
+    },
+    "outcomes": {
+      "great": "Four weeks later you have forty dollars and a very tired dog.",
+      "escape": "The dog escapes into a hedge. You spend an hour retrieving him and your dignity."
+    }
+  },
+  "ch2_learn_cook": {
+    "text": "{{name}} says it is time you learned to cook. Today's lesson is scrambled eggs, which are mostly patience.",
+    "choices": {
+      "follow": "Follow the recipe",
+      "freestyle": "Add your own spices",
+      "watch": "Just watch"
+    }
+  },
+  "ch2_sibling_rivalry": {
+    "text": "{{name}} is given the bigger half of the dessert, and a war of attrition begins at the table.",
+    "choices": {
+      "swap": "Swap plates",
+      "protest": "Protest loudly",
+      "split": "Split it fairly"
+    },
+    "outcomes": {
+      "works": "You cut it carefully with a ruler. {{name}} is oddly impressed.",
+      "crumbs": "It crumbles into twelve pieces and nobody is happy."
+    }
+  },
+  "ch2_elderly_relative": {
+    "text": "An elderly relative visits and pinches your cheek with a professional grip. Then they hand you something wrapped in a napkin.",
+    "choices": {
+      "thank": "Say thank you",
+      "hug": "Give a big hug",
+      "eat": "Eat it, whatever it is"
+    }
+  },
+  "ch2_pet_rock": {
+    "text": "You find a rock that is perfectly round and very sure of itself. You name it and bring it home.",
+    "choices": {
+      "keep": "Keep it on a shelf",
+      "walk": "Take it for walks",
+      "return": "Return it to the park"
+    }
+  },
+  "ch2_science_kit": {
+    "text": "You get a chemistry set for your birthday. The instructions say to ask an adult, in a font that suggests they mean it.",
+    "choices": {
+      "own": "Experiment alone",
+      "adult": "Ask an adult",
+      "read": "Read the manual first"
+    },
+    "outcomes": {
+      "success": "A small, tidy fizz. You write it in your notebook and feel like a professional.",
+      "boom": "The experiment pops and leaves a green stain on the ceiling. You have questions."
+    }
+  },
+  "ch2_snow_day": {
+    "text": "A fresh snowfall cancels school, and the entire neighborhood is outside with a variety of sleds.",
+    "choices": {
+      "sled": "Go sledding",
+      "snowman": "Build a snowman",
+      "cocoa": "Stay in with cocoa"
+    }
+  },
+  "ch2_summer_camp": {
+    "text": "Your parents send you to summer camp. The brochure says friends for life, and the brochure has never met a mosquito.",
+    "choices": {
+      "embrace": "Throw yourself in",
+      "cabin": "Stick to your cabin",
+      "homesick": "Count days until home"
+    }
+  },
+  "ch2_scouts": {
+    "text": "The local scout troop is recruiting. The uniform has more badges than seems physically reasonable.",
+    "choices": {
+      "join": "Join the troop",
+      "visit": "Visit once, see how it goes",
+      "pass": "Pass on it"
+    }
+  },
+  "ch2_bully_intro": {
+    "text": "A bigger kid keeps stealing your seat on the bus, and every day the seat feels smaller.",
+    "choices": {
+      "stand": "Politely ask for it back",
+      "share": "Share the seat",
+      "ignore": "Sit elsewhere"
+    }
+  },
+  "ch2_bully_peace": {
+    "text": "The kid who used to take your bus seat sits at your lunch table and says nothing. Then they offer half a sandwich.",
+    "choices": {
+      "accept": "Take the sandwich",
+      "wary": "Stay careful",
+      "refuse": "Refuse coldly"
+    }
+  },
+  "ch2_fake_sick": {
+    "text": "You have a math test today and a stomachache that appeared at breakfast. {{name}} looks at you with a thermometer and suspicion.",
+    "choices": {
+      "fake": "Stick to the story",
+      "truth": "Admit you are nervous",
+      "go": "Go to school anyway"
+    },
+    "outcomes": {
+      "home": "You get the day off. Cartoons are fine, but the test is still waiting on Monday.",
+      "caught": "The thermometer says 36 degrees. {{name}} drives you to school in meaningful silence."
+    }
+  },
+  "ch2_report_card": {
+    "text": "Report card day. The grades are fine, mostly, with the exception of one teacher's comment that you 'talk during silence'.",
+    "choices": {
+      "show": "Show it right away",
+      "later": "Wait for a good moment",
+      "hide": "Hide it in your backpack"
+    }
+  },
+  "ch2_first_concert": {
+    "text": "{{name}} has two tickets to a concert and an extra pair of ear plugs. Everyone says it will be loud.",
+    "choices": {
+      "go": "Go together",
+      "skip": "Stay home"
+    },
+    "outcomes": {
+      "magic": "You scream the chorus without knowing the words. It is the best noise of your life.",
+      "tired": "You sleep through the quiet parts and wake up for the encore."
+    }
+  },
+  "ch2_a_secret": {
+    "text": "{{name}} tells you a secret that is enormous. You have never been trusted with a secret this size.",
+    "choices": {
+      "keep": "Keep it safe",
+      "tell_parent": "Tell a trusted adult",
+      "whisper": "Whisper it to one other"
+    }
+  },
+  "ch2_swim": {
+    "text": "{{name}} stands in the shallow end with arms spread like a buoy. You hold the side of the pool like a rock star.",
+    "choices": {
+      "let_go": "Let go of the wall",
+      "slow": "Go slowly, step by step",
+      "later": "Try again next summer"
+    },
+    "outcomes": {
+      "float": "You float for three whole seconds. {{name}} cheers like it is a medal race.",
+      "sink": "You sink, swallow some pool, and come up with strong feelings. {{name}} lifts you gently."
+    }
+  },
+  "ch2_dare": {
+    "text": "{{name}} dares you to touch the staff room door and run. It is not even a locked door, which is the worst part.",
+    "choices": {
+      "do": "Do it",
+      "refuse": "Say it is silly",
+      "counter": "Dare them back"
+    },
+    "outcomes": {
+      "clean": "You touch it, run, and no one sees. You are a hero for six minutes.",
+      "busted": "The teacher opens the door as you touch it. Both of you apologize."
+    }
+  },
+  "ch2_bedtime_story": {
+    "text": "{{name}} reads the bedtime story and you demand it be read again, then again. By the fifth time, the dragon has changed.",
+    "choices": {
+      "again": "Demand one more",
+      "sleep": "Fall asleep mid-story",
+      "tell": "Tell your own ending"
+    }
+  },
+  "ch2_crush_friend": {
+    "text": "You like someone, and their best friend stands guard like a tiny, aggressive bodyguard.",
+    "choices": {
+      "befriend": "Befriend the guard first",
+      "ignore": "Pretend not to care",
+      "note": "Pass a note"
+    },
+    "outcomes": {
+      "ally": "The friend turns out to be hilarious. You make two new friends in one week.",
+      "tease": "Everyone teases you for a month about your crush. You survive on snacks."
+    }
+  },
+  "ch2_stranger_game": {
+    "text": "A friendly stranger in an online game asks for your address and wants to move the chat somewhere private. The stranger is very friendly.",
+    "choices": {
+      "tell_adult": "Tell a trusted adult",
+      "block": "Block and report",
+      "chat": "Keep chatting"
+    },
+    "outcomes": {
+      "creepy": "The chat gets odd quickly. You log off, rattled and a little wiser.",
+      "nothing": "Nothing happens this time. That is not a plan."
+    }
+  },
+  "ch2_cheat_temptation": {
+    "text": "During a quiz, the kid beside you has the answers written clearly on their desk. You could read them without turning your head.",
+    "choices": {
+      "peek": "Take a peek",
+      "own": "Use your own brain",
+      "turn": "Turn your paper away"
+    },
+    "outcomes": {
+      "free": "Nobody notices. Your conscience does.",
+      "caught": "The teacher notices and takes your paper. The answers on the desk were wrong anyway."
+    }
+  },
+  "ch2_pancakes": {
+    "text": "{{name}} makes pancakes shaped like animals. Yours is a smooth blob and you decide it is a dog.",
+    "choices": {
+      "eat": "Eat the dog",
+      "name": "Name it first",
+      "syrup": "Drown it in syrup"
+    }
+  },
+  "ch2_toy_share": {
+    "text": "{{name}} wants to play with your favorite toy truck. You have never shared it. You have also never seen anyone else want it.",
+    "choices": {
+      "share": "Share it",
+      "trade": "Trade for their toy",
+      "hold": "Hold it tight"
+    }
+  },
+  "ch2_chores_allowance": {
+    "text": "Your parents introduce a chore chart with a small weekly payment. You study the contract like a lawyer.",
+    "choices": {
+      "work": "Do every chore",
+      "negotiate": "Negotiate a raise",
+      "skip": "Take the unpaid route"
+    }
+  },
+  "ch2_birthday_party": {
+    "text": "It is your birthday party. There are eleven kids, one cake, and a disagreement about the loot bags.",
+    "choices": {
+      "cake": "Blow out the candles",
+      "games": "Run the games",
+      "sulk": "Cry about the loot bags"
+    }
+  },
+  "tn2_group_chat": {
+    "text": "{{name}} adds you to a group chat with forty people. By midnight there are 600 messages and you have understood none of them.",
+    "choices": {
+      "join": "Join the conversation",
+      "mute": "Mute it",
+      "leave": "Leave the group"
+    }
+  },
+  "tn2_online_stranger": {
+    "text": "Someone you only know online has been messaging you for weeks. Now they want to meet and say not to tell anyone, which is the reddest of red flags.",
+    "choices": {
+      "tell": "Tell a parent and block",
+      "report": "Report the account",
+      "meet": "Agree to meet"
+    },
+    "outcomes": {
+      "close": "You change your mind at the last minute and run home. It stays with you for a while.",
+      "safe": "Nobody shows up. You promise yourself a better plan."
+    }
+  },
+  "tn2_retainer": {
+    "text": "The braces are finally off. Your teeth are straight, and you have a retainer you are required to wear and will certainly lose.",
+    "choices": {
+      "wear": "Wear it as told",
+      "lose": "Lose it in a napkin",
+      "flaunt": "Show off your smile"
+    }
+  },
+  "tn2_crush_friend": {
+    "text": "{{name}} knows your crush and says it can be arranged. The way they say it makes you nervous.",
+    "choices": {
+      "arrange": "Let your friend arrange it",
+      "self": "Handle it yourself",
+      "forget": "Drop it entirely"
+    },
+    "outcomes": {
+      "smooth": "{{name}} orchestrates a perfectly casual meeting. You say hello in complete sentences.",
+      "awkward": "{{name}} announces your feelings through a megaphone, almost. It is mortifying."
+    }
+  },
+  "tn2_varsity_tryout": {
+    "text": "Varsity tryouts are in two weeks. You are not the best, but you have a very confident warm-up.",
+    "choices": {
+      "train": "Train hard",
+      "wing": "Wing it",
+      "skip": "Skip the tryouts"
+    },
+    "outcomes": {
+      "made": "You make the team. The coach calls you 'reliable', the nicest word in sports.",
+      "benched": "You make the squad but sit the bench. The bench is very comfortable."
+    }
+  },
+  "tn2_diner_disaster": {
+    "text": "Your first job is at a small diner. By hour three you have dropped a tray, called a customer 'sir' who was not a sir, and put salt in the coffee.",
+    "choices": {
+      "apologize": "Apologize and keep going",
+      "quit": "Quit before lunch",
+      "learn": "Ask for a coach"
+    },
+    "outcomes": {
+      "keep": "The owner laughs and keeps you. You earn your first real paycheck.",
+      "fired": "You are let go on the spot with a pat on the shoulder."
+    }
+  },
+  "tn2_prom": {
+    "text": "Prom is coming. You have a ticket, an outfit that almost fits, and a terrifying number of choices.",
+    "choices": {
+      "date": "Ask someone to go",
+      "friends": "Go with friends",
+      "stay": "Stay home with movies"
+    },
+    "outcomes": {
+      "yes": "They say yes right away. The night includes slow dancing and fast spilling.",
+      "no": "They already have plans. You attend in a group, which is also fine."
+    }
+  },
+  "tn2_cook_dinner": {
+    "text": "{{name}} lets you cook dinner for the whole family. It is the first meal you have planned that has more than one ingredient.",
+    "choices": {
+      "ambitious": "Try a fancy recipe",
+      "simple": "Make something simple"
+    },
+    "outcomes": {
+      "triumph": "The meal is delicious. {{name}} asks for the recipe and a second helping.",
+      "burnt": "The smoke alarm sings. You order pizza and everyone calls it a draw."
+    }
+  },
+  "tn2_sibling_room": {
+    "text": "{{name}} has taken over your half of the room, one sock at a time. There is now a border that is mostly an argument.",
+    "choices": {
+      "tape": "Draw a tape line",
+      "talk": "Talk it through",
+      "war": "Declare war"
+    }
+  },
+  "tn2_relative_advice": {
+    "text": "An elderly relative takes you aside and offers life advice that sounds like a proverb and a threat. It is oddly useful.",
+    "choices": {
+      "listen": "Listen carefully",
+      "nod": "Nod and agree",
+      "ask": "Ask for a story"
+    }
+  },
+  "tn2_camp_counselor": {
+    "text": "The camp invites you back as a junior counselor. Now you are the one holding the clipboard and the whistle.",
+    "choices": {
+      "accept": "Take the job",
+      "decline": "Take a vacation instead"
+    },
+    "outcomes": {
+      "great": "Eight weeks of songs, sunburn, and a small paycheck. You love it more than you will admit.",
+      "chaos": "Your cabin of campers stages a mutiny involving frogs. You survive on lemonade."
+    }
+  },
+  "tn2_scout_rank": {
+    "text": "Your troop leader asks whether you want to lead the next camping trip. It involves tents and responsibility, in that order.",
+    "choices": {
+      "lead": "Lead the trip",
+      "assist": "Assist someone else",
+      "quit": "Quit scouts"
+    },
+    "outcomes": {
+      "good": "Everyone comes back with the same number of limbs they started with. You are awarded a badge.",
+      "wet": "It rains for three days. You build character and a slightly damp shelter."
+    }
+  },
+  "tn2_bully_ally": {
+    "text": "Your old bully-turned-friend spots someone else being picked on and looks at you. You both know the old role is available.",
+    "choices": {
+      "defend": "Stand up for them together",
+      "distract": "Distract the bullies",
+      "walk": "Walk away"
+    }
+  },
+  "tn2_orchestra": {
+    "text": "The school orchestra needs another player. The conductor looks at you as if you are the last door in a hallway.",
+    "choices": {
+      "join": "Join the orchestra",
+      "rest": "Take a break from music"
+    },
+    "outcomes": {
+      "shine": "Your solo lasts four notes and nobody breathes during them. You leave glowing.",
+      "blend": "You blend in perfectly. That is the whole job, and you are proud."
+    }
+  },
+  "tn2_lifeguard": {
+    "text": "The community pool needs a lifeguard, and you can swim. The pay is decent and the chair is very high.",
+    "choices": {
+      "apply": "Apply for the job",
+      "skip": "Spend the summer relaxing"
+    },
+    "outcomes": {
+      "hired": "You are hired. You blow the whistle at someone running for the first time and feel powerful.",
+      "waitlist": "The spots are taken. You are on a waiting list and a very good tan."
+    }
+  },
+  "tn2_fake_sick_exam": {
+    "text": "A history exam is tomorrow. You have a sore throat that arrived exactly twelve hours after you started worrying.",
+    "choices": {
+      "fake": "Fake being sick",
+      "study": "Study all night",
+      "ask": "Ask for an extension"
+    },
+    "outcomes": {
+      "works": "You get a makeup date. You also get a lecture on time management.",
+      "busted": "The school nurse takes your temperature and finds only guilt."
+    }
+  },
+  "tn2_report_card_teen": {
+    "text": "The report card arrives. {{name}} reads it twice and says 'interesting' in a tone that could freeze a lake.",
+    "choices": {
+      "own": "Own it and plan to improve",
+      "excuse": "Offer excuses",
+      "joke": "Make a joke"
+    }
+  },
+  "tn2_concert_friends": {
+    "text": "{{name}} wants to go to a concert across town. It is on a school night and the line is already round the block.",
+    "choices": {
+      "go": "Go, quietly",
+      "skip": "Stay in and study"
+    },
+    "outcomes": {
+      "epic": "The band opens with your favorite song. You scream until tomorrow's voice is gone.",
+      "late": "The concert is great, the bus home is not. You arrive at one in the morning."
+    }
+  },
+  "tn2_curfew": {
+    "text": "{{name}} sets a curfew of ten. Your friends have a curfew of 'whenever'. The math is not in your favor.",
+    "choices": {
+      "obey": "Be home by ten",
+      "ask": "Ask for eleven",
+      "sneak": "Sneak back late"
+    },
+    "outcomes": {
+      "clear": "You make it past the front door like a shadow. The cat sees you and says nothing.",
+      "busted": "The porch light comes on. {{name}} is standing in it, holding a cup of tea."
+    }
+  },
+  "tn2_keep_secret": {
+    "text": "{{name}} tells you something serious in confidence, and asks you not to tell anyone. It is a heavy thing to carry around.",
+    "choices": {
+      "keep": "Stay quiet and supportive",
+      "adult": "Encourage them to tell an adult",
+      "gossip": "Tell another friend"
+    }
+  },
+  "tn2_dare_prank": {
+    "text": "{{name}} dares you to hide a rubber duck in every classroom in the school. It is a very dumb idea with great structure.",
+    "choices": {
+      "do": "Do the duck run",
+      "refuse": "Say it is silly",
+      "help": "Only supply the ducks"
+    },
+    "outcomes": {
+      "legend": "By lunch the entire school is quacking. You are a mysterious legend.",
+      "detention": "The principal collects eleven ducks and a confession. You get a week of detention."
+    }
+  },
+  "tn2_exam_cheat": {
+    "text": "Final exams: a classmate offers you a leaked answer sheet for ten dollars. It looks professionally printed, which is the worst part.",
+    "choices": {
+      "buy": "Buy the sheet",
+      "study": "Study the old way",
+      "report": "Report the seller"
+    },
+    "outcomes": {
+      "pass": "The answers are correct. So is your guilt.",
+      "caught": "The sheet was a trap set by the school. You are called to the office."
+    }
+  },
+  "tn2_college_stress": {
+    "text": "College applications are due. You have written three essays about yourself and are tired of all three.",
+    "choices": {
+      "push": "Push through",
+      "break": "Take a walk first",
+      "help": "Ask a counselor for help"
+    },
+    "outcomes": {
+      "great": "The essays come together. You submit with ten minutes to spare and no eyesight.",
+      "rushed": "You write the last essay at 3 a.m. It is fine, and so is your headache."
+    }
+  },
+  "tn2_talent_teen": {
+    "text": "The school talent show returns, and your friends sign you up without asking. You have until Friday to become talented.",
+    "choices": {
+      "perform": "Do your act",
+      "withdraw": "Withdraw"
+    },
+    "outcomes": {
+      "wow": "You perform an impressive solo and the gym goes wild.",
+      "meh": "The mic stops working halfway through. You finish in a loud whisper."
+    }
+  },
+  "tn2_yearbook": {
+    "text": "In the yearbook photo you are mid-blink. Everyone else looks wonderful and someone has written 'never change' next to you.",
+    "choices": {
+      "laugh": "Laugh and sign it",
+      "retake": "Beg for a retake",
+      "own": "Own the blink"
+    }
+  },
+  "tn2_movie_night": {
+    "text": "{{name}} hosts a movie night. The film is a horror movie and everyone keeps checking whether you are scared.",
+    "choices": {
+      "brave": "Act brave",
+      "admit": "Admit you are scared",
+      "snacks": "Distribute snacks"
+    }
+  },
+  "tn2_lab_fire": {
+    "text": "During chemistry class, your burner makes a small flame. The teacher says 'that is not a small flame' and moves quickly.",
+    "choices": {
+      "calm": "Stay calm and report",
+      "run": "Run out screaming",
+      "laugh": "Laugh nervously"
+    },
+    "outcomes": {
+      "hero": "The teacher extinguishes it and thanks you for not panicking. You get a gold star.",
+      "smoke": "The smoke is dramatic and the class gets evacuated. You are not blamed."
+    }
+  },
+  "tn2_parent_embarrass": {
+    "text": "{{name}} waves at you from the school gate and calls out your childhood nickname. At least forty people hear it.",
+    "choices": {
+      "wave": "Wave back proudly",
+      "ignore": "Pretend not to hear",
+      "talk": "Talk about it at home"
+    }
+  },
+  "tn2_lost_city": {
+    "text": "You get on the wrong train and end up in an unfamiliar part of town. Your phone says three percent battery.",
+    "choices": {
+      "ask": "Ask a station worker",
+      "call": "Call home",
+      "wander": "Wander around"
+    },
+    "outcomes": {
+      "help": "The worker points you to the right platform and lends you a charger.",
+      "slow": "It takes two hours, three trains and a crisp lesson in reading maps."
+    }
+  },
+  "tn2_ghosted": {
+    "text": "{{name}} stops replying to your messages. You can see they were online a minute ago. You are carefully not checking.",
+    "choices": {
+      "ask": "Ask what is wrong",
+      "wait": "Give them space",
+      "sulk": "Post a cryptic quote"
+    }
+  },
+  "tn2_volunteer": {
+    "text": "A weekend shelter needs volunteers. The work is dishes, soup, and a lot of listening.",
+    "choices": {
+      "volunteer": "Sign up",
+      "once": "Try it once",
+      "skip": "Skip it"
+    }
+  },
+  "tn2_allowance": {
+    "text": "You make a case to {{name}} for a higher allowance. You bring a chart. It is a pie chart, and it is mostly pie.",
+    "choices": {
+      "ask": "Present your case",
+      "chores": "Offer extra chores"
+    },
+    "outcomes": {
+      "yes": "{{name}} agrees on a trial basis, impressed by the chart.",
+      "no": "{{name}} says no, kindly, and keeps the chart."
+    }
+  },
+  "tn2_college_tour": {
+    "text": "{{name}} takes you on a college tour. The guide walks backward and is very proud of the library.",
+    "choices": {
+      "engage": "Ask good questions",
+      "snack": "Focus on the cafeteria",
+      "worry": "Panic about the future"
+    }
+  },
+  "tn2_all_nighter_game": {
+    "text": "A new game comes out at midnight, and the first sunrise finds you still playing. It is a school day.",
+    "choices": {
+      "quit": "Stop at two a.m.",
+      "keep": "Play until dawn",
+      "hide": "Play under the blanket"
+    }
+  },
+  "tn2_friend_moves": {
+    "text": "{{name}} says the family is moving across the country in a month. You nod and keep walking, and then stop.",
+    "choices": {
+      "plan": "Plan a farewell day",
+      "promise": "Promise to stay in touch",
+      "sulk": "Pull away early"
+    }
+  }
+}

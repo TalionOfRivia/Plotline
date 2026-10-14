@@ -1,0 +1,2983 @@
+[
+  {
+    "id": "ch2_imaginary_seat",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 6
+    },
+    "choices": [
+      {
+        "id": "seat",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "lap",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "order",
+        "effects": {
+          "happiness": 6,
+          "money": -8,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_lose_tooth",
+    "category": "childhood",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 8
+    },
+    "choices": [
+      {
+        "id": "show",
+        "effects": {
+          "happiness": 6,
+          "looks": -2
+        }
+      },
+      {
+        "id": "pillow",
+        "effects": {
+          "happiness": 4,
+          "money": 5
+        }
+      },
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 3,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_sleepover",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 11,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 60,
+            "effects": {
+              "happiness": 10,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "homesick",
+            "weight": 40,
+            "effects": {
+              "happiness": -4,
+              "relationship": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "half",
+        "effects": {
+          "happiness": 2,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -3,
+          "relationship": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_picture_day",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 11
+    },
+    "choices": [
+      {
+        "id": "smile",
+        "effects": {
+          "happiness": 4,
+          "looks": 2
+        }
+      },
+      {
+        "id": "face",
+        "effects": {
+          "happiness": 6,
+          "looks": -3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -2,
+          "looks": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_lost_mall",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 8,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "staff",
+        "effects": {
+          "happiness": 2,
+          "smarts": 4,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "search",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "found",
+            "weight": 50,
+            "effects": {
+              "happiness": 3,
+              "smarts": 2,
+              "relationship": 4
+            }
+          },
+          {
+            "id": "longer",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "relationship": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "smarts": 5,
+          "happiness": 1,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_talent_show",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "perform",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wow",
+            "weight": 35,
+            "effects": {
+              "happiness": 12,
+              "smarts": 2,
+              "looks": 2
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 35,
+            "effects": {
+              "happiness": 2
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 30,
+            "effects": {
+              "happiness": -8,
+              "looks": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "stage",
+        "effects": {
+          "happiness": 3,
+          "karma": 4
+        }
+      },
+      {
+        "id": "audience",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_first_phone",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 12,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": 7,
+          "karma": 3,
+          "relationship": 6,
+          "flags": {
+            "has_phone": true
+          }
+        }
+      },
+      {
+        "id": "negotiate",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2,
+          "relationship": 1,
+          "flags": {
+            "has_phone": true
+          }
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -3,
+          "smarts": 3,
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_braces",
+    "category": "health",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "colors",
+        "effects": {
+          "happiness": 4,
+          "looks": 2,
+          "money": -10
+        }
+      },
+      {
+        "id": "plain",
+        "effects": {
+          "happiness": 1,
+          "looks": 3
+        }
+      },
+      {
+        "id": "complain",
+        "effects": {
+          "happiness": -4,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_learn_instrument",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 10
+    },
+    "choices": [
+      {
+        "id": "trumpet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "natural",
+            "weight": 45,
+            "effects": {
+              "happiness": 8,
+              "smarts": 4,
+              "flags": {
+                "plays_instrument": true
+              }
+            }
+          },
+          {
+            "id": "squeak",
+            "weight": 55,
+            "effects": {
+              "happiness": 2,
+              "smarts": 2,
+              "health": -1,
+              "flags": {
+                "plays_instrument": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "flute",
+        "effects": {
+          "happiness": 5,
+          "smarts": 5,
+          "flags": {
+            "plays_instrument": true
+          }
+        }
+      },
+      {
+        "id": "none",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_sports_tryouts",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "try",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "made",
+            "weight": 40,
+            "effects": {
+              "happiness": 10,
+              "health": 6,
+              "looks": 2
+            }
+          },
+          {
+            "id": "cut",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "health": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "manager",
+        "effects": {
+          "happiness": 3,
+          "smarts": 3,
+          "karma": 2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 1,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_dog_walking",
+    "category": "money",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "walk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 55,
+            "effects": {
+              "happiness": 6,
+              "health": 4,
+              "money": 40
+            }
+          },
+          {
+            "id": "escape",
+            "weight": 45,
+            "effects": {
+              "happiness": -5,
+              "health": -2,
+              "money": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_learn_cook",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "follow",
+        "effects": {
+          "smarts": 4,
+          "happiness": 5,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "freestyle",
+        "effects": {
+          "happiness": 3,
+          "health": -3,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 1,
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_sibling_rivalry",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "swap",
+        "effects": {
+          "happiness": -1,
+          "karma": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "protest",
+        "effects": {
+          "happiness": -3,
+          "relationship": -6,
+          "karma": -1
+        }
+      },
+      {
+        "id": "split",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 60,
+            "effects": {
+              "happiness": 6,
+              "relationship": 10,
+              "karma": 3
+            }
+          },
+          {
+            "id": "crumbs",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "relationship": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch2_elderly_relative",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "thank",
+        "effects": {
+          "happiness": 5,
+          "karma": 4
+        }
+      },
+      {
+        "id": "hug",
+        "effects": {
+          "happiness": 7,
+          "karma": 5,
+          "health": 1
+        }
+      },
+      {
+        "id": "eat",
+        "effects": {
+          "happiness": 3,
+          "health": -2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_pet_rock",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 9
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 5,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": 6,
+          "health": 2,
+          "looks": -1
+        }
+      },
+      {
+        "id": "return",
+        "effects": {
+          "happiness": 2,
+          "karma": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_science_kit",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "own",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "success",
+            "weight": 40,
+            "effects": {
+              "happiness": 8,
+              "smarts": 8
+            }
+          },
+          {
+            "id": "boom",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "health": -5,
+              "smarts": 3,
+              "karma": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "adult",
+        "effects": {
+          "happiness": 5,
+          "smarts": 6,
+          "karma": 2
+        }
+      },
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 7,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_snow_day",
+    "category": "childhood",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "sled",
+        "effects": {
+          "happiness": 9,
+          "health": 3
+        }
+      },
+      {
+        "id": "snowman",
+        "effects": {
+          "happiness": 7,
+          "looks": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "cocoa",
+        "effects": {
+          "happiness": 6,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_summer_camp",
+    "category": "childhood",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "embrace",
+        "effects": {
+          "happiness": 9,
+          "health": 4,
+          "karma": 2,
+          "flags": {
+            "camp_kid": true
+          }
+        }
+      },
+      {
+        "id": "cabin",
+        "effects": {
+          "happiness": 4,
+          "flags": {
+            "camp_kid": true
+          }
+        }
+      },
+      {
+        "id": "homesick",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_scouts",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 11
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 6,
+          "health": 4,
+          "smarts": 3,
+          "flags": {
+            "scout_member": true
+          }
+        }
+      },
+      {
+        "id": "visit",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_bully_intro",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 10
+    },
+    "choices": [
+      {
+        "id": "stand",
+        "effects": {
+          "happiness": 2,
+          "smarts": 2,
+          "flags": {
+            "met_bully_ch2": true
+          }
+        }
+      },
+      {
+        "id": "share",
+        "effects": {
+          "happiness": -1,
+          "karma": 4,
+          "flags": {
+            "met_bully_ch2": true
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_bully_peace",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 12,
+      "flags": [
+        "met_bully_ch2"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": 5,
+          "karma": 5,
+          "flags": {
+            "bully_ally": true
+          }
+        }
+      },
+      {
+        "id": "wary",
+        "effects": {
+          "smarts": 3
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -2,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_fake_sick",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "fake",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "home",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "smarts": -2,
+              "karma": -3,
+              "relationship": -2
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "karma": -2,
+              "relationship": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "truth",
+        "effects": {
+          "happiness": 3,
+          "karma": 5,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "go",
+        "effects": {
+          "smarts": 2,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_report_card",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "show",
+        "effects": {
+          "happiness": 3,
+          "karma": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "later",
+        "effects": {
+          "happiness": 0,
+          "relationship": -1
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -3,
+          "karma": -2,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_first_concert",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 12,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "magic",
+            "weight": 60,
+            "effects": {
+              "happiness": 12,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "tired",
+            "weight": 40,
+            "effects": {
+              "happiness": 2,
+              "relationship": 3,
+              "health": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2,
+          "relationship": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_a_secret",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 11,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 3,
+          "karma": 5,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "tell_parent",
+        "effects": {
+          "smarts": 3,
+          "karma": 2,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "whisper",
+        "effects": {
+          "happiness": -2,
+          "karma": -5,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_swim",
+    "category": "childhood",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 10,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "let_go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "float",
+            "weight": 60,
+            "effects": {
+              "happiness": 9,
+              "health": 5,
+              "relationship": 6,
+              "flags": {
+                "swim_learned": true
+              }
+            }
+          },
+          {
+            "id": "sink",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "health": -1,
+              "relationship": 3,
+              "flags": {
+                "swim_learned": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "slow",
+        "effects": {
+          "happiness": 3,
+          "health": 3,
+          "smarts": 2,
+          "flags": {
+            "swim_learned": true
+          }
+        }
+      },
+      {
+        "id": "later",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_dare",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 12,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "do",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "relationship": 6,
+              "karma": -1
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "karma": -3,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -1,
+          "smarts": 3,
+          "karma": 3
+        }
+      },
+      {
+        "id": "counter",
+        "effects": {
+          "happiness": 2,
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_bedtime_story",
+    "category": "childhood",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 2,
+      "maxAge": 6,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "again",
+        "effects": {
+          "happiness": 5,
+          "smarts": 3,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "sleep",
+        "effects": {
+          "happiness": 4,
+          "health": 2,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": 3,
+          "smarts": 5,
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_crush_friend",
+    "category": "romance",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "befriend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ally",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "smarts": 2,
+              "karma": 2
+            }
+          },
+          {
+            "id": "tease",
+            "weight": 45,
+            "effects": {
+              "happiness": -4,
+              "looks": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "note",
+        "effects": {
+          "happiness": 2,
+          "looks": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_stranger_game",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "tell_adult",
+        "effects": {
+          "happiness": 3,
+          "smarts": 8,
+          "karma": 5
+        }
+      },
+      {
+        "id": "block",
+        "effects": {
+          "happiness": 2,
+          "smarts": 6,
+          "karma": 3
+        }
+      },
+      {
+        "id": "chat",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "creepy",
+            "weight": 70,
+            "effects": {
+              "happiness": -8,
+              "smarts": 2,
+              "karma": -1
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 30,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ch2_cheat_temptation",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "peek",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "free",
+            "weight": 40,
+            "effects": {
+              "smarts": -2,
+              "karma": -5,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 60,
+            "effects": {
+              "happiness": -8,
+              "karma": -3,
+              "smarts": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "own",
+        "effects": {
+          "smarts": 5,
+          "karma": 4,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "turn",
+        "effects": {
+          "smarts": 3,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_pancakes",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 2,
+      "maxAge": 5,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "eat",
+        "effects": {
+          "happiness": 6,
+          "health": 1,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "name",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "syrup",
+        "effects": {
+          "happiness": 7,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_toy_share",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 7,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "share",
+        "effects": {
+          "happiness": 5,
+          "karma": 5,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "trade",
+        "effects": {
+          "happiness": 3,
+          "smarts": 2,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "hold",
+        "effects": {
+          "happiness": -2,
+          "karma": -3,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_chores_allowance",
+    "category": "money",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 12
+    },
+    "choices": [
+      {
+        "id": "work",
+        "effects": {
+          "money": 25,
+          "karma": 4,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "negotiate",
+        "effects": {
+          "money": 15,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 3,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch2_birthday_party",
+    "category": "childhood",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 4,
+      "maxAge": 10
+    },
+    "choices": [
+      {
+        "id": "cake",
+        "effects": {
+          "happiness": 8,
+          "health": -1
+        }
+      },
+      {
+        "id": "games",
+        "effects": {
+          "happiness": 6,
+          "karma": 2,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -3,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_group_chat",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "flags": [
+        "has_phone"
+      ],
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 5,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "mute",
+        "effects": {
+          "happiness": 1,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -2,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_online_stranger",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "flags": [
+        "has_phone"
+      ]
+    },
+    "choices": [
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": 4,
+          "smarts": 8,
+          "karma": 6
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "happiness": 2,
+          "smarts": 6,
+          "karma": 5
+        }
+      },
+      {
+        "id": "meet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "close",
+            "weight": 60,
+            "effects": {
+              "happiness": -12,
+              "smarts": 3,
+              "health": -3
+            }
+          },
+          {
+            "id": "safe",
+            "weight": 40,
+            "effects": {
+              "happiness": -4,
+              "smarts": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tn2_retainer",
+    "category": "health",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 15
+    },
+    "choices": [
+      {
+        "id": "wear",
+        "effects": {
+          "looks": 5,
+          "happiness": 4
+        }
+      },
+      {
+        "id": "lose",
+        "effects": {
+          "looks": 2,
+          "money": -40,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "flaunt",
+        "effects": {
+          "looks": 4,
+          "happiness": 6,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_crush_friend",
+    "category": "romance",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "arrange",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "smooth",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "looks": 2,
+              "relationship": 5
+            }
+          },
+          {
+            "id": "awkward",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "self",
+        "effects": {
+          "happiness": 2,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "forget",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_varsity_tryout",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "train",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "made",
+            "weight": 55,
+            "effects": {
+              "happiness": 10,
+              "health": 8,
+              "looks": 3
+            }
+          },
+          {
+            "id": "benched",
+            "weight": 45,
+            "effects": {
+              "happiness": -3,
+              "health": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "wing",
+        "effects": {
+          "happiness": -2,
+          "health": 1
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_diner_disaster",
+    "category": "work",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "apologize",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "keep",
+            "weight": 55,
+            "effects": {
+              "happiness": 3,
+              "smarts": 3,
+              "money": 300
+            }
+          },
+          {
+            "id": "fired",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "money": 80
+            }
+          }
+        ]
+      },
+      {
+        "id": "quit",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "id": "learn",
+        "effects": {
+          "smarts": 5,
+          "money": 200,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_prom",
+    "category": "romance",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "date",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "yes",
+            "weight": 55,
+            "effects": {
+              "happiness": 12,
+              "looks": 3,
+              "money": -60
+            }
+          },
+          {
+            "id": "no",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "money": -30
+            }
+          }
+        ]
+      },
+      {
+        "id": "friends",
+        "effects": {
+          "happiness": 8,
+          "money": -40
+        }
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_cook_dinner",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "ambitious",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "triumph",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "smarts": 4,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "burnt",
+            "weight": 60,
+            "effects": {
+              "happiness": -2,
+              "health": -2,
+              "relationship": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "simple",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_sibling_room",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "tape",
+        "effects": {
+          "happiness": 2,
+          "smarts": 2,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "happiness": 5,
+          "karma": 4,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "war",
+        "effects": {
+          "happiness": -4,
+          "karma": -3,
+          "relationship": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_relative_advice",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "listen",
+        "effects": {
+          "smarts": 5,
+          "happiness": 3,
+          "karma": 3
+        }
+      },
+      {
+        "id": "nod",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "happiness": 6,
+          "smarts": 3,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_camp_counselor",
+    "category": "work",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17,
+      "flags": [
+        "camp_kid"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 65,
+            "effects": {
+              "happiness": 9,
+              "smarts": 3,
+              "karma": 4,
+              "money": 700
+            }
+          },
+          {
+            "id": "chaos",
+            "weight": 35,
+            "effects": {
+              "happiness": -3,
+              "health": -3,
+              "money": 500
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_scout_rank",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "scout_member"
+      ]
+    },
+    "choices": [
+      {
+        "id": "lead",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "smarts": 4,
+              "health": 3,
+              "karma": 4
+            }
+          },
+          {
+            "id": "wet",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "health": -3,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "assist",
+        "effects": {
+          "happiness": 3,
+          "karma": 2
+        }
+      },
+      {
+        "id": "quit",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_bully_ally",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "flags": [
+        "bully_ally"
+      ]
+    },
+    "choices": [
+      {
+        "id": "defend",
+        "effects": {
+          "happiness": 8,
+          "karma": 10,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "distract",
+        "effects": {
+          "happiness": 4,
+          "karma": 5,
+          "smarts": 3
+        }
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": -3,
+          "karma": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_orchestra",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "plays_instrument"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shine",
+            "weight": 50,
+            "effects": {
+              "happiness": 10,
+              "smarts": 5,
+              "looks": 2
+            }
+          },
+          {
+            "id": "blend",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "smarts": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "rest",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_lifeguard",
+    "category": "work",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17,
+      "flags": [
+        "swim_learned"
+      ]
+    },
+    "choices": [
+      {
+        "id": "apply",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hired",
+            "weight": 70,
+            "effects": {
+              "happiness": 6,
+              "health": 6,
+              "money": 900,
+              "karma": 3
+            }
+          },
+          {
+            "id": "waitlist",
+            "weight": 30,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_fake_sick_exam",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "fake",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 45,
+            "effects": {
+              "happiness": 4,
+              "karma": -3,
+              "smarts": -2
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "karma": -3,
+              "smarts": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "study",
+        "effects": {
+          "smarts": 5,
+          "health": -3,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "smarts": 2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_report_card_teen",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "own",
+        "effects": {
+          "smarts": 5,
+          "happiness": 2,
+          "karma": 4,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "excuse",
+        "effects": {
+          "happiness": -2,
+          "relationship": -4
+        }
+      },
+      {
+        "id": "joke",
+        "effects": {
+          "happiness": 1,
+          "relationship": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_concert_friends",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "epic",
+            "weight": 60,
+            "effects": {
+              "happiness": 12,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "late",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "smarts": -2,
+              "relationship": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "smarts": 4,
+          "happiness": -2,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_curfew",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "obey",
+        "effects": {
+          "karma": 4,
+          "relationship": 6,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "smarts": 3,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "sneak",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 40,
+            "effects": {
+              "happiness": 5,
+              "karma": -4
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 60,
+            "effects": {
+              "happiness": -6,
+              "karma": -3,
+              "relationship": -8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tn2_keep_secret",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 2,
+          "karma": 6,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "adult",
+        "effects": {
+          "smarts": 4,
+          "karma": 5,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "gossip",
+        "effects": {
+          "happiness": -3,
+          "karma": -8,
+          "relationship": -15
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_dare_prank",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "do",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "relationship": 8,
+              "karma": -1
+            }
+          },
+          {
+            "id": "detention",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "karma": -3,
+              "relationship": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "smarts": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "help",
+        "effects": {
+          "happiness": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_exam_cheat",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 30,
+            "effects": {
+              "smarts": -3,
+              "karma": -8,
+              "happiness": 2,
+              "money": -10
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 70,
+            "effects": {
+              "happiness": -10,
+              "karma": -5,
+              "smarts": -3,
+              "money": -10
+            }
+          }
+        ]
+      },
+      {
+        "id": "study",
+        "effects": {
+          "smarts": 6,
+          "happiness": -1,
+          "karma": 3
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 6,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_college_stress",
+    "category": "school",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 55,
+            "effects": {
+              "smarts": 6,
+              "happiness": 4,
+              "health": -3
+            }
+          },
+          {
+            "id": "rushed",
+            "weight": 45,
+            "effects": {
+              "smarts": 2,
+              "happiness": -4,
+              "health": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "break",
+        "effects": {
+          "happiness": 5,
+          "health": 3
+        }
+      },
+      {
+        "id": "help",
+        "effects": {
+          "smarts": 5,
+          "happiness": 4,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_talent_teen",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "perform",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wow",
+            "weight": 40,
+            "effects": {
+              "happiness": 11,
+              "looks": 3,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "meh",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "looks": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_yearbook",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 5,
+          "karma": 2
+        }
+      },
+      {
+        "id": "retake",
+        "effects": {
+          "happiness": -2,
+          "looks": 1
+        }
+      },
+      {
+        "id": "own",
+        "effects": {
+          "happiness": 3,
+          "looks": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_movie_night",
+    "category": "social",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "brave",
+        "effects": {
+          "happiness": 4,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "admit",
+        "effects": {
+          "happiness": 5,
+          "karma": 2,
+          "relationship": 7
+        }
+      },
+      {
+        "id": "snacks",
+        "effects": {
+          "happiness": 3,
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_lab_fire",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16
+    },
+    "choices": [
+      {
+        "id": "calm",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hero",
+            "weight": 70,
+            "effects": {
+              "happiness": 5,
+              "smarts": 5,
+              "karma": 3
+            }
+          },
+          {
+            "id": "smoke",
+            "weight": 30,
+            "effects": {
+              "happiness": -3,
+              "health": -3,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "run",
+        "effects": {
+          "happiness": -4,
+          "looks": -1
+        }
+      },
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": -2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_parent_embarrass",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "wave",
+        "effects": {
+          "happiness": 3,
+          "karma": 3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "smarts": 3,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_lost_city",
+    "category": "random",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "help",
+            "weight": 75,
+            "effects": {
+              "happiness": 2,
+              "smarts": 5,
+              "karma": 2
+            }
+          },
+          {
+            "id": "slow",
+            "weight": 25,
+            "effects": {
+              "happiness": -3,
+              "smarts": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "call",
+        "effects": {
+          "smarts": 3,
+          "happiness": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "wander",
+        "effects": {
+          "happiness": -2,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_ghosted",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "effects": {
+          "happiness": 3,
+          "karma": 3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -1,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -4,
+          "relationship": -6,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_volunteer",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "volunteer",
+        "effects": {
+          "happiness": 7,
+          "karma": 10,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "once",
+        "effects": {
+          "happiness": 3,
+          "karma": 5
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_allowance",
+    "category": "money",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 16,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "yes",
+            "weight": 50,
+            "effects": {
+              "money": 60,
+              "happiness": 4,
+              "relationship": 4
+            }
+          },
+          {
+            "id": "no",
+            "weight": 50,
+            "effects": {
+              "happiness": -2,
+              "relationship": 1,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "chores",
+        "effects": {
+          "money": 30,
+          "karma": 3,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_college_tour",
+    "category": "school",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "engage",
+        "effects": {
+          "smarts": 5,
+          "happiness": 4,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "snack",
+        "effects": {
+          "happiness": 5,
+          "health": -1,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "worry",
+        "effects": {
+          "happiness": -4,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_all_nighter_game",
+    "category": "random",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17
+    },
+    "choices": [
+      {
+        "id": "quit",
+        "effects": {
+          "happiness": 2,
+          "health": 1
+        }
+      },
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 6,
+          "health": -4,
+          "smarts": -2
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": 3,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tn2_friend_moves",
+    "category": "social",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "plan",
+        "effects": {
+          "happiness": 5,
+          "karma": 4,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "promise",
+        "effects": {
+          "happiness": 2,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -4,
+          "relationship": -8,
+          "karma": -2
+        }
+      }
+    ]
+  }
+]
