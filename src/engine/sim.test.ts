@@ -11,14 +11,17 @@ import { ACTIVITIES, ASSETS, CRIMES, EDUCATION, JOB_TRACKS } from './systems'
 import { doActivity } from './activities'
 import { applyAgent, applyAstronaut, joinMafia, startBusiness, BUSINESS_KINDS } from './special'
 import type { Life } from './types'
+import { checkChallenges, CHALLENGES } from './challenges'
 
 /** Plays a whole life with random choices and random actions; throws on any engine error. */
 function playLife(seed: string) {
   const life = createLife({ seed })
   const pick = new Rng('actions-' + seed)
+  const done: string[] = []
   let guard = 0
   while (life.alive && guard++ < 300) {
     ageUp(life)
+    done.push(...checkChallenges(life, done))
     if (life.pending) {
       const ev = EVENT_BY_ID[life.pending.eventId]
       chooseOption(life, pick.pick(ev.choices).id)
@@ -75,6 +78,10 @@ describe('full simulation', () => {
       }
     }
     throw new Error('no life produced heirs in 20 tries')
+  })
+  it('challenge goals all use supported kinds', () => {
+    const kinds = new Set(['age_min','age_max','money_min','job_track','degree','kids_min','marriages_min','friends_min','pets_min','houses_min','cars_min','asset','crimes_min','convictions_min','prison_years_min','fame_min','karma_min','karma_max','stat_min','stat_max','flag','generation_min','country'])
+    for (const c of CHALLENGES) for (const g of c.goals) expect(kinds.has(g.kind), `${c.id}:${g.kind}`).toBe(true)
   })
   it('every job track is reachable by some requirement set', () => {
     for (const t of JOB_TRACKS) expect(t.ladder.length).toBeGreaterThan(0)

@@ -34,15 +34,15 @@ export function ActivitiesSheet() {
     const ed = life.education
     return (
       <Sheet title={t('act.education')} emoji="🎓" onBack={back}>
-        <div className="bg-paper rounded-2xl p-4 mb-4 shadow-sm text-sm">
+        <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm text-sm">
           <div><b>{t(`edu.stage.${ed.stage}`)}</b>{ed.major && <> · {sysText(lang, 'education', `majors.${ed.major}`)}</>}{ed.gradSchool && ed.stage === 'grad' && <> · {sysText(lang, 'education', `gradSchools.${ed.gradSchool}`)}</>}</div>
           {(ed.stage === 'primary' || ed.stage === 'high_school' || ed.stage === 'university' || ed.stage === 'grad') && (
             <div className="mt-2 flex items-center gap-2"><span>{t('edu.grades')}</span>
-              <div className="flex-1 h-2 rounded-full bg-ink/10 overflow-hidden"><div className="h-full bg-smarts" style={{ width: `${ed.grades}%` }} /></div>
+              <div className="flex-1 h-2 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-smarts" style={{ width: `${ed.grades}%` }} /></div>
               <span className="tabular-nums">{Math.round(ed.grades)}</span></div>
           )}
           {ed.degrees.length > 0 && <div className="mt-2 opacity-70">{t('edu.degrees')}: {ed.degrees.map((d) => d.startsWith('grad_') ? sysText(lang, 'education', `gradSchools.${d}`) : t(`edu.${d}`)).join(', ')}</div>}
-          {ed.loans > 0 && <div className="mt-1 text-red-700">{t('edu.loans')}: {formatMoney(ed.loans, lang)}</div>}
+          {ed.loans > 0 && <div className="mt-1 text-bad">{t('edu.loans')}: {formatMoney(ed.loans, lang)}</div>}
         </div>
         {ed.stage !== 'none' && ed.stage !== 'done' && <Row emoji="📚" title={t('edu.study')} sub={t('edu.studySub')} onClick={g.study} />}
         {canEnrollUniversity(life) && (
@@ -90,7 +90,7 @@ export function ActivitiesSheet() {
     <Sheet title={t('biz.title')} emoji="🏢" onBack={back}>
       {life.business ? (
         <>
-          <div className="bg-paper rounded-2xl p-4 mb-3 shadow-sm">
+          <div className="bg-card rounded-2xl p-4 mb-3 shadow-sm">
             <div className="text-xl font-bold">{life.business.name}</div>
             <div className="text-sm opacity-70">{t(`biz.kind.${life.business.kind}`)} · {t('biz.years', { n: life.business.yearsRunning })}</div>
             <div className="mt-2">{t('biz.value')}: <b>{formatMoney(life.business.value, lang)}</b></div>
@@ -99,7 +99,7 @@ export function ActivitiesSheet() {
         </>
       ) : (
         <>
-          <input value={bizName} onChange={(e) => setBizName(e.target.value)} placeholder={t('biz.namePlaceholder')} className="w-full rounded-2xl bg-paper px-4 py-3 mb-3 shadow-sm outline-none" />
+          <input value={bizName} onChange={(e) => setBizName(e.target.value)} placeholder={t('biz.namePlaceholder')} className="w-full rounded-2xl bg-card px-4 py-3 mb-3 shadow-sm outline-none" />
           {BUSINESS_KINDS.map((b) => (
             <Row key={b.id} emoji="🏢" title={t(`biz.kind.${b.id}`)} right={formatMoney(b.cost, lang)} disabled={life.money < b.cost || life.age < 18} onClick={() => g.startBusiness(b.id, bizName)} />
           ))}
@@ -111,9 +111,9 @@ export function ActivitiesSheet() {
   if (page === 'special') return (
     <Sheet title={t('act.special')} emoji="🌟" onBack={back}>
       <Section title={t('fame.title')}>
-        <div className="bg-paper rounded-2xl p-3 mb-2 shadow-sm text-sm flex items-center gap-2">
+        <div className="bg-card rounded-2xl p-3 mb-2 shadow-sm text-sm flex items-center gap-2">
           <span>⭐ {t('fame.level')}</span>
-          <div className="flex-1 h-2 rounded-full bg-ink/10 overflow-hidden"><div className="h-full bg-happy" style={{ width: `${life.fame}%` }} /></div>
+          <div className="flex-1 h-2 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-happy" style={{ width: `${life.fame}%` }} /></div>
           <span className="tabular-nums">{Math.round(life.fame)}</span>
         </div>
         {life.age >= 13 && <Row emoji="📱" title={t('fame.post')} sub={t('fame.postSub')} onClick={g.post} />}
@@ -148,8 +148,9 @@ export function ActivitiesSheet() {
       <Row emoji="🎓" title={t('act.education')} sub={t(`edu.stage.${life.education.stage}`)} onClick={() => setPage('education')} />
       {life.age >= 12 && <Row emoji="🚔" title={t('act.crime')} sub={t('act.crimeSub')} onClick={() => setPage('crime')} />}
       <Row emoji="🌟" title={t('act.special')} sub={t('act.specialSub')} onClick={() => setPage('special')} />
+      <Row emoji="🏆" title={t('challenge.title')} sub={t('challenge.menuSub', { done: g.completedChallenges.length })} onClick={() => g.openSheet('challenges')} />
       {life.prison && (
-        <div className="bg-paper rounded-2xl p-4 mt-2 shadow-sm text-sm">
+        <div className="bg-card rounded-2xl p-4 mt-2 shadow-sm text-sm">
           🔒 {t('prison.status', { years: life.prison.yearsLeft, crime: sysText(lang, 'crimes', `${life.prison.crimeId}.name`) })}
         </div>
       )}

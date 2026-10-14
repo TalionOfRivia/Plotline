@@ -75,7 +75,7 @@ export function applyForJob(life: Life, trackId: string, rng: Rng): 'hired' | 'r
 
 export function quitJob(life: Life) {
   if (!life.job) return
-  log(life, 'info', 'work.quit', { title: jobTitleKey(life) })
+  log(life, 'info', 'work.quitLog', { title: jobTitleKey(life) })
   life.job = null
 }
 

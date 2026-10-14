@@ -12,8 +12,10 @@ import { enrollGrad, enrollUniversity, studyHarder } from '../engine/school'
 import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, startBusiness } from '../engine/special'
 import { doActivity, type ActivityResult } from '../engine/activities'
 import { syncDerivedFlags } from '../engine/derived'
+import { checkChallenges } from '../engine/challenges'
+import { applyTheme, loadTheme, type Theme } from '../ui/theme'
 
-export type Sheet = null | 'job' | 'assets' | 'people' | 'activities' | 'menu' | 'education' | 'crime' | 'special'
+export type Sheet = null | 'job' | 'assets' | 'people' | 'activities' | 'menu' | 'challenges'
 
 export interface Toast { key: string; params?: Record<string, string | number>; kind: 'good' | 'bad' | 'info' }
 
@@ -22,12 +24,17 @@ interface GameState {
   /** snapshot for the "time machine" (undo last year) */
   undo: Life | null
   lastOutcome: { eventId: string; choiceId: string; outcomeId?: string } | null
-  screen: 'title' | 'game' | 'tombstone'
+  screen: 'title' | 'setup' | 'game' | 'tombstone'
   sheet: Sheet
+  /** challenge ids completed in any life (persists across lives) */
+  completedChallenges: string[]
+  theme: Theme
   toast: Toast | null
   godMode: boolean
 
   newLife: (opts?: NewLifeOptions) => void
+  toSetup: () => void
+  setTheme: (t: Theme) => void
   ageUp: () => void
   undoYear: () => void
   choose: (choiceId: string) => void
@@ -74,13 +81,17 @@ export const useGame = create<GameState>()(
         set((s) => { if (s.life && s.life.alive) withRng(s.life, (rng) => fn(s.life!, rng)) })
 
       return {
-        life: null, undo: null, lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false,
+        life: null, undo: null, lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false, completedChallenges: [], theme: loadTheme(),
 
         newLife: (opts) => set((s) => { s.life = createLife(opts); s.undo = null; s.lastOutcome = null; s.screen = 'game'; s.sheet = null }),
+        toSetup: () => set((s) => { s.screen = 'setup' }),
+        setTheme: (t) => { applyTheme(t); set((s) => { s.theme = t }) },
         ageUp: () => set((s) => {
           if (!s.life || !s.life.alive || s.life.pending) return
           s.undo = snapshot(s.life)
           ageUp(s.life)
+          const fresh = checkChallenges(s.life, s.completedChallenges)
+          if (fresh.length) { s.completedChallenges.push(...fresh); s.toast = { key: 'challenge.toast', params: { id: fresh[0] }, kind: 'good' } }
           if (!s.life.alive) s.screen = 'tombstone'
         }),
         undoYear: () => set((s) => { if (s.undo) { s.life = s.undo; s.undo = null; s.lastOutcome = null; s.screen = 'game' } }),
@@ -154,7 +165,7 @@ export const useGame = create<GameState>()(
     }),
     {
       name: 'plotline.save.v2',
-      partialize: (s) => ({ life: s.life, undo: s.undo, screen: s.screen, godMode: s.godMode }) as GameState,
+      partialize: (s) => ({ life: s.life, undo: s.undo, screen: s.screen === 'setup' ? 'title' : s.screen, godMode: s.godMode, completedChallenges: s.completedChallenges, theme: s.theme }) as GameState,
     },
   ),
 )

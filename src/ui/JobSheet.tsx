@@ -17,7 +17,7 @@ export function JobSheet() {
     <Sheet title={t('nav.job')} emoji="💼">
       {job && track ? (
         <Section title={t('work.current')}>
-          <div className="bg-paper rounded-2xl p-4 mb-2 shadow-sm">
+          <div className="bg-card rounded-2xl p-4 mb-2 shadow-sm">
             <div className="text-2xl">{track.emoji} <b>{sysText(lang, 'jobs', `tracks.${track.id}.ladder.${track.ladder[job.rung].id}`)}</b></div>
             <div className="text-sm opacity-70">{sysText(lang, 'jobs', `tracks.${track.id}.name`)} · {t('work.years', { n: job.yearsInTrack })}</div>
             <div className="mt-2 text-sm">
@@ -25,7 +25,7 @@ export function JobSheet() {
             </div>
             <div className="mt-2 text-sm flex items-center gap-2">
               <span>{t('work.performance')}</span>
-              <div className="flex-1 h-2 rounded-full bg-ink/10 overflow-hidden"><div className="h-full bg-accent" style={{ width: `${job.performance}%` }} /></div>
+              <div className="flex-1 h-2 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-accent" style={{ width: `${job.performance}%` }} /></div>
               <span className="tabular-nums">{Math.round(job.performance)}</span>
             </div>
             {track.ladder[job.rung + 1] && (
@@ -37,7 +37,7 @@ export function JobSheet() {
           <Row emoji="🚪" title={t('work.quit')} onClick={quitJob} />
         </Section>
       ) : (
-        <div className="bg-paper rounded-2xl p-4 mb-4 shadow-sm text-sm">
+        <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm text-sm">
           {life.retired ? t('work.retiredStatus', { money: formatMoney(life.pension, lang) }) : life.prison ? t('work.inPrison') : t('work.unemployed')}
         </div>
       )}

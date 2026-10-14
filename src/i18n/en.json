@@ -26,7 +26,13 @@
     "newLifeSub": "Abandons the current life.",
     "confirmNew": "Tap again to confirm",
     "toTitle": "Back to title",
-    "installHint": "Playing in Safari? Tap Share → “Add to Home Screen” to install Plotline as an app."
+    "installHint": "Playing in Safari? Tap Share → “Add to Home Screen” to install Plotline as an app.",
+    "theme": "Appearance",
+    "themes": {
+      "system": "Auto",
+      "light": "Light",
+      "dark": "Dark"
+    }
   },
   "stats": {
     "happiness": "Happiness",
@@ -159,7 +165,7 @@
     "harderSub": "Performance +10, happiness −3.",
     "retire": "Retire",
     "retireSub": "Pension of {{money}}/yr for life.",
-    "quit": "You quit your job as {{title}}.",
+    "quit": "Quit",
     "retiredStatus": "Retired. Pension: {{money}}/yr.",
     "inPrison": "No jobs for inmates.",
     "unemployed": "Unemployed. Browse the listings below.",
@@ -180,7 +186,8 @@
       "rejected": "Rejected. Try again next year.",
       "ineligible": "You're not eligible.",
       "harder": "You put in extra hours."
-    }
+    },
+    "quitLog": "You quit your job as {{title}}."
   },
   "assets": {
     "cash": "Cash",
@@ -423,5 +430,30 @@
     "coverBlown": "Your cover was blown.",
     "senior": "Senior agent",
     "field": "Field agent"
+  },
+  "setup": {
+    "title": "New life",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "gender": "Gender",
+    "female": "Girl",
+    "male": "Boy",
+    "country": "Country",
+    "start": "Be born",
+    "random": "Surprise me"
+  },
+  "challenge": {
+    "title": "Challenges",
+    "hint": "{{done}} of {{total}} completed. Progress carries across lives.",
+    "menuSub": "{{done}} completed",
+    "done": "Done",
+    "completed": "🏆 Challenge completed: {{id}}",
+    "toast": "🏆 Challenge completed!",
+    "tier": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "legendary": "Legendary"
+    }
   }
 }

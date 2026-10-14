@@ -1,29 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/*
+ * Semantic colour tokens. Components use these (bg-surface, text-fg, bg-card, bg-chrome …)
+ * so the light/dark switch is a single attribute flip on <html data-theme>.
+ */
 @theme {
-  --color-ink: #1b2a41;
-  --color-ink-soft: #2b3f5c;
-  --color-cream: #fbf7ee;
-  --color-paper: #ffffff;
+  --color-chrome: var(--t-chrome);
+  --color-chrome-soft: var(--t-chrome-soft);
+  --color-chrome-fg: var(--t-chrome-fg);
+  --color-surface: var(--t-surface);
+  --color-card: var(--t-card);
+  --color-fg: var(--t-fg);
+  --color-muted: var(--t-muted);
   --color-accent: #2ec4b6;
+  --color-on-accent: #10202f;
   --color-happy: #f4b942;
   --color-health: #e4572e;
   --color-smarts: #4f86f7;
   --color-looks: #c86bfa;
   --color-money: #3ccf6a;
+  --color-good: var(--t-good);
+  --color-bad: var(--t-bad);
   --font-sans: "Nunito", ui-rounded, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  /* "paper" theme: navy chrome, cream page */
+  --t-chrome: #1b2a41;
+  --t-chrome-soft: #2b3f5c;
+  --t-chrome-fg: #fbf7ee;
+  --t-surface: #fbf7ee;
+  --t-card: #ffffff;
+  --t-fg: #1b2a41;
+  --t-muted: #6b7686;
+  --t-good: #1f8a5b;
+  --t-bad: #c23b22;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --t-chrome: #0d1420;
+  --t-chrome-soft: #18233a;
+  --t-chrome-fg: #eef1f6;
+  --t-surface: #121a2b;
+  --t-card: #1b2640;
+  --t-fg: #eef1f6;
+  --t-muted: #93a0b5;
+  --t-good: #3ddc97;
+  --t-bad: #ff7a5c;
+  color-scheme: dark;
 }
 
 html, body, #root {
   height: 100%;
   margin: 0;
-  background: var(--color-ink);
-  color: var(--color-cream);
+  background: var(--t-chrome);
+  color: var(--t-chrome-fg);
   font-family: var(--font-sans);
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Safe areas on notched iPhones */
 .safe-top { padding-top: env(safe-area-inset-top); }
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+
+/* Motion */
+@keyframes rise { from { transform: translateY(24px); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes pop { 0% { transform: scale(.96) } 60% { transform: scale(1.02) } 100% { transform: none } }
+.anim-rise { animation: rise .28s cubic-bezier(.2,.8,.2,1) both; }
+.anim-fade { animation: fade .25s ease-out both; }
+.anim-pop { animation: pop .3s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .anim-rise, .anim-fade, .anim-pop { animation: none } }
+
+/* Subtle paper grain on the page in light mode */
+:root:not([data-theme="dark"]) .page-surface {
+  background-image: radial-gradient(rgba(27,42,65,.035) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Thin scrollbars */
+*::-webkit-scrollbar { width: 6px; height: 6px }
+*::-webkit-scrollbar-thumb { background: rgba(127,127,127,.35); border-radius: 3px }

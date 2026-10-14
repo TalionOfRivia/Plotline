@@ -28,11 +28,11 @@ export function PeopleSheet() {
     const opts = availableInteractions(life, person)
     return (
       <Sheet title={`${person.firstName} ${person.lastName}`} emoji={KIND_EMOJI[person.kind]} onBack={() => setSelected(null)}>
-        <div className="bg-paper rounded-2xl p-4 mb-4 shadow-sm">
+        <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm">
           <div className="text-sm opacity-70">{t(`kind.${person.kind}`)} · {t('common.age', { age: person.age })}{person.income ? ` · ${formatMoney(person.income, lang)}/${t('work.yr')}` : ''}</div>
           <div className="mt-2 flex items-center gap-2 text-sm">
             <span>❤️</span>
-            <div className="flex-1 h-3 rounded-full bg-ink/10 overflow-hidden"><div className="h-full bg-health transition-[width]" style={{ width: `${person.relationship}%` }} /></div>
+            <div className="flex-1 h-3 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-health transition-[width]" style={{ width: `${person.relationship}%` }} /></div>
             <span className="tabular-nums w-8 text-end">{Math.round(person.relationship)}</span>
           </div>
           {person.kind !== 'pet' && <div className="mt-1 text-xs opacity-60">✨ {person.looks ?? '?'} · 🧠 {person.smarts ?? '?'}{person.yearsTogether !== undefined && ` · ${t('people.yearsTogether', { n: person.yearsTogether })}`}</div>}

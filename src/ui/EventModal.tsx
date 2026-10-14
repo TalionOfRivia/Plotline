@@ -23,8 +23,8 @@ export function EventModal() {
   if (!ev || !tx) return null
 
   return (
-    <div className="fixed inset-0 z-20 bg-black/60 flex items-end sm:items-center justify-center p-3">
-      <div className="w-full max-w-md bg-cream text-ink rounded-3xl p-5 shadow-2xl safe-bottom">
+    <div className="fixed inset-0 z-20 bg-black/60 backdrop-blur-[2px] flex items-end sm:items-center justify-center p-3 anim-fade">
+      <div className="w-full max-w-md bg-surface text-fg rounded-3xl p-5 shadow-2xl safe-bottom anim-rise">
         <div className="text-4xl mb-2">{CATEGORY_EMOJI[ev.category] ?? '📌'}</div>
         <p className="text-lg font-semibold leading-snug mb-4">{fill(tx.text)}</p>
         <div className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ export function EventModal() {
               <button
                 key={c.id}
                 onClick={() => choose(c.id)}
-                className="rounded-2xl bg-ink text-cream px-4 py-3 text-start font-semibold active:scale-[0.98] transition"
+                className="rounded-2xl bg-chrome text-chrome-fg px-4 py-3 text-start font-semibold active:scale-[0.98] transition"
               >
                 <div>{fill(tx.choices[c.id] ?? c.id)}</div>
                 {best && (

@@ -19,10 +19,10 @@ export function OutcomeSheet() {
 
   return (
     <div className="fixed inset-0 z-20 bg-black/60 flex items-end sm:items-center justify-center p-3" onClick={dismiss}>
-      <div className="w-full max-w-md bg-cream text-ink rounded-3xl p-5 shadow-2xl safe-bottom">
+      <div className="w-full max-w-md bg-surface text-fg rounded-3xl p-5 shadow-2xl safe-bottom anim-rise">
         <div className="text-4xl mb-2">🎲</div>
         <p className="text-lg font-semibold leading-snug mb-4">{fill(text)}</p>
-        <button className="w-full rounded-2xl bg-accent text-ink font-bold py-3">{t('common.ok')}</button>
+        <button className="w-full rounded-2xl bg-accent text-on-accent font-bold py-3">{t('common.ok')}</button>
       </div>
     </div>
   )

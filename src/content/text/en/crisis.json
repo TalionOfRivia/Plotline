@@ -1,0 +1,602 @@
+{
+  "cx_house_fire": {
+    "text": "The smoke alarm screams at 3 a.m. Orange light is crawling under the bedroom door.",
+    "choices": {
+      "run": "Grab nothing, run",
+      "belongings": "Save the photos first"
+    },
+    "outcomes": {
+      "safe": "You make it out in your socks. The house does not. Insurance covers some of it.",
+      "burned": "The hallway is worse than you thought. You get out with burns and a new respect for smoke alarms.",
+      "lucky": "You get the albums and your lungs pay for it. Worth it, you decide, coughing.",
+      "hurt": "The albums survive. You spend a week in a hospital bed reading their captions."
+    }
+  },
+  "cx_flood": {
+    "text": "The river tops its banks overnight. Brown water is climbing the front steps and the radio says leave.",
+    "choices": {
+      "evacuate": "Evacuate now",
+      "stay": "Sandbag and stay"
+    },
+    "outcomes": {
+      "held": "The sandbags hold. The neighbours bring beer. A flood party, technically.",
+      "swamped": "The water wins. Your carpet is now a swamp and your couch a canoe."
+    }
+  },
+  "cx_earthquake": {
+    "text": "The floor lurches. Dishes sing, the lamp swings, and everything you own is briefly airborne.",
+    "choices": {
+      "doorway": "Duck under the table",
+      "outside": "Sprint outdoors"
+    },
+    "outcomes": {
+      "fine": "You reach the lawn just as the chimney decides to leave. Everyone stands around, pale and alive.",
+      "debris": "Falling bricks have opinions about your route. You limp away with a gash and a story."
+    }
+  },
+  "cx_passenger_crash": {
+    "text": "You are in the passenger seat when the driver looks at their phone for one second too long.",
+    "choices": {
+      "grab_wheel": "Grab the wheel",
+      "brace": "Brace and shout"
+    },
+    "outcomes": {
+      "minor": "Metal crumples, airbags bloom. You walk away sore and permanently opinionated about phones.",
+      "severe": "The ambulance ride is a blur. Rehab is not.",
+      "fatal": "The impact is on your side. The last thing you hear is the radio."
+    }
+  },
+  "cx_mugging": {
+    "text": "A man steps out of an alley, hand in his jacket. \"Wallet. Phone. Now.\"",
+    "choices": {
+      "comply": "Hand it over",
+      "fight": "Fight back"
+    },
+    "outcomes": {
+      "won": "He was bluffing. He runs; you stand there shaking, extremely proud.",
+      "lost": "He was not bluffing about the fists. You lose the wallet and a tooth.",
+      "knife": "There really was a knife. The ER doctor is unimpressed by your heroics."
+    }
+  },
+  "cx_lost_mountains": {
+    "text": "The trail marker vanished three miles ago. The sun is dropping and your phone has no signal.",
+    "choices": {
+      "backtrack": "Backtrack carefully",
+      "downhill": "Follow the stream down"
+    },
+    "outcomes": {
+      "found": "You retrace your steps by headlamp and find the trail. Never leave without a map again.",
+      "cold": "You spend a freezing night under a rock ledge. Rescuers find you at dawn, blue and furious.",
+      "exposure": "The cold arrives politely and never leaves.",
+      "road": "Streams lead to roads. A farmer drives you back, laughing.",
+      "ravine": "The stream ends at a waterfall. You do not, thankfully, but you do slide."
+    }
+  },
+  "cx_wedding_poisoning": {
+    "text": "Forty guests, one buffet, a long afternoon in the sun. By evening half the wedding is in the bathrooms.",
+    "choices": {
+      "hydrate": "Sip water, wait",
+      "er": "Go to the ER"
+    },
+    "outcomes": {
+      "fast": "An IV drip and a bored nurse later, you are fine. The bride is still not speaking to the caterer.",
+      "bad": "It was the bad kind. Three days of hospital soup. You never eat egg salad again."
+    }
+  },
+  "cx_co_scare": {
+    "text": "Headaches, dizziness, a sleepy dread. The detector you never bought would have had something to say.",
+    "choices": {
+      "open_windows": "Open windows, leave",
+      "sleep_it_off": "Sleep it off"
+    },
+    "outcomes": {
+      "woke": "You wake up groggy, wrongly confident, and still alive. A neighbour calls the gas company.",
+      "hospital": "A friend finds you in time. Oxygen mask, dark jokes, one very expensive night."
+    }
+  },
+  "cx_ice_pond": {
+    "text": "The pond looks frozen solid. Your friends are already out in the middle, daring you.",
+    "choices": {
+      "step_out": "Step onto the ice",
+      "stay_shore": "Stay on shore"
+    },
+    "outcomes": {
+      "fine": "It holds. You slide around like a legend and tell nobody at home.",
+      "crack": "The ice cracks. You get wet to the neck and learn physics fast."
+    }
+  },
+  "cx_riptide": {
+    "text": "The beach is gorgeous, the swim is lovely, and the shore is getting further away.",
+    "choices": {
+      "swim_parallel": "Swim parallel to shore",
+      "fight_current": "Fight straight back"
+    },
+    "outcomes": {
+      "escape": "You remember the advice, swim sideways, and crawl out gasping. The lifeguard nods.",
+      "rescued": "A lifeguard drags you in. Everyone on the beach claps. You wish they would not.",
+      "exhausted": "You make it, barely, on pure stubbornness and a surfer's board.",
+      "rescued2": "The lifeguard hauls you in. You drink a surprising amount of ocean."
+    }
+  },
+  "cx_lump": {
+    "text": "You find a lump. It is small, firm, and has your full attention.",
+    "choices": {
+      "doctor_now": "See a doctor today",
+      "wait": "Wait and see"
+    },
+    "outcomes": {
+      "benign": "Benign. The doctor says it in a bored voice, which is the best voice there is.",
+      "caught_early": "Caught early. Surgery, a rough spring, and a clean scan by autumn.",
+      "nothing": "It shrinks and vanishes. You tell no one how scared you were.",
+      "late": "Waiting was the wrong call. Treatment is long and the bills longer."
+    }
+  },
+  "cx_chest_pains": {
+    "text": "A band tightens across your chest. You are sweating in an air-conditioned room.",
+    "choices": {
+      "call_ambulance": "Call an ambulance",
+      "sit_it_out": "Sit it out"
+    },
+    "outcomes": {
+      "stent": "A stent, a lecture, and a pill organizer. You are alive and slightly scolded.",
+      "false_alarm": "Heartburn. The paramedic is very kind about it.",
+      "passed": "It passes. You do not go to the doctor. This is a mistake you are fond of.",
+      "attack": "It was the real thing. You survive on luck, mostly.",
+      "fatal": "Not a false alarm."
+    }
+  },
+  "cx_diagnosis": {
+    "text": "The doctor closes the folder before speaking. \"It is a chronic condition. Manageable, not curable.\"",
+    "choices": {
+      "follow_plan": "Follow the plan",
+      "deny": "Ignore it",
+      "second_opinion": "Seek second opinion"
+    }
+  },
+  "cx_surgery_decision": {
+    "text": "A herniated disc, a bad joint, a decision. Surgery is fast and risky; physiotherapy is slow and boring.",
+    "choices": {
+      "surgery": "Choose surgery",
+      "physio": "Physical therapy",
+      "painkillers": "Just painkillers"
+    },
+    "outcomes": {
+      "success": "You wake up pain-free and hungry. The surgeon is extremely smug.",
+      "complications": "An infection. Two more weeks in a hospital bed.",
+      "died": "The anesthesia was fine. The rest was not."
+    }
+  },
+  "cx_child_fever": {
+    "text": "{{name}} has a fever that will not break. The thermometer shows a number you keep rechecking.",
+    "choices": {
+      "er": "Rush to the ER",
+      "home_care": "Treat at home"
+    },
+    "outcomes": {
+      "treated": "Antibiotics, fluids, a sticker. {{name}} sleeps; you do not.",
+      "admitted": "Three nights on a children's ward. {{name}} recovers; you age ten years.",
+      "fine": "The fever breaks at dawn. You pretend you were never worried.",
+      "worse": "It gets worse, and the ER is where you end up anyway, later and guiltier."
+    }
+  },
+  "cx_mother_dementia": {
+    "text": "{{name}} called you by your grandmother's name, then asked where she parked the car. She has not driven in years.",
+    "choices": {
+      "care_home": "Choose a care home",
+      "move_in": "Care for her yourself",
+      "aide": "Hire a home aide"
+    }
+  },
+  "cx_father_dementia": {
+    "text": "{{name}} left the stove on again, then insisted he did not. He gets lost in the neighbourhood he built.",
+    "choices": {
+      "care_home": "Choose a care home",
+      "move_in": "Care for him yourself",
+      "aide": "Hire a home aide"
+    }
+  },
+  "cx_appendix": {
+    "text": "A stabbing pain on your right side keeps getting worse. Pressing on it makes you see colours.",
+    "choices": {
+      "hospital_fast": "Go to hospital",
+      "tough_it_out": "Tough it out"
+    },
+    "outcomes": {
+      "passes": "It subsides. You were lucky and a bit stupid.",
+      "burst": "It bursts. Emergency surgery, a long recovery, and a doctor who says \"I told you so\" with her eyebrows.",
+      "sepsis": "Sepsis. Three days in ICU. The nurses remember your name; you do not remember theirs."
+    }
+  },
+  "cx_panic_attacks": {
+    "text": "Your heart pounds in a supermarket aisle. The walls lean in. You are fairly sure you are dying, over the cereal.",
+    "choices": {
+      "therapy": "Start therapy",
+      "breathe": "Breathe and carry on",
+      "avoid": "Avoid crowded places"
+    }
+  },
+  "cx_vision_loss": {
+    "text": "A curtain drops over the left side of your vision. Doctors use the word \"urgent\" twice.",
+    "choices": {
+      "laser": "Expensive laser surgery",
+      "eyedrops": "Cheap drops and hope"
+    },
+    "outcomes": {
+      "saved": "Your sight returns, slightly smug.",
+      "partial": "You keep most of it. The world has a permanent blur at the edges.",
+      "lucky": "The drops work. Nobody is more surprised than the optometrist.",
+      "damage": "The damage is permanent. You learn to love large fonts."
+    }
+  },
+  "cx_bag_of_cash": {
+    "text": "Behind a dumpster sits a gym bag stuffed with cash. Nobody is around. A security camera points elsewhere.",
+    "choices": {
+      "keep": "Take it and go",
+      "police": "Hand it to police",
+      "leave": "Walk away"
+    },
+    "outcomes": {
+      "clean": "Nobody ever asks. You spend months checking over your shoulder anyway.",
+      "dirty": "The money was not lost, it was hidden. Some men come looking, and it costs you."
+    }
+  },
+  "cx_hit_and_run": {
+    "text": "A car clips a cyclist at the crossing and keeps going. You got the first three letters of the plate.",
+    "choices": {
+      "report": "Report it, stay",
+      "help_only": "Help the cyclist only",
+      "walk_on": "Walk on"
+    }
+  },
+  "cx_lie_to_police": {
+    "text": "{{name}} turns up at midnight, wired. \"If anyone asks, I was with you tonight. All night. Please.\"",
+    "choices": {
+      "lie": "Give the alibi",
+      "refuse": "Refuse, stay out"
+    },
+    "outcomes": {
+      "works": "The police buy it. {{name}} owes you a favour and a very quiet silence.",
+      "caught": "It unravels in one interview. Obstruction fines and a record. {{name}} stops answering your calls."
+    }
+  },
+  "cx_falsify_report": {
+    "text": "Your boss slides a spreadsheet across the desk. \"Just round these numbers up. Everyone does.\"",
+    "choices": {
+      "comply": "Falsify the numbers",
+      "refuse": "Refuse politely",
+      "document": "Quietly keep copies"
+    },
+    "outcomes": {
+      "bonus": "The quarter looks great. Your bonus lands. Your appetite leaves.",
+      "audit": "An audit finds it. The boss blames \"the numbers person.\" That is you."
+    }
+  },
+  "cx_affair_partner": {
+    "text": "A coworker keeps finding reasons to stand close. Tonight the hotel bar offers a \"quiet drink.\" {{name}} thinks you are working late.",
+    "choices": {
+      "go": "Go for the drink",
+      "decline": "Go home"
+    },
+    "outcomes": {
+      "secret": "Nobody finds out. Yet. Your secret has a weight you did not budget for.",
+      "exposed": "A friend sees you. The photo is in {{name}}'s phone by morning."
+    }
+  },
+  "cx_affair_spouse": {
+    "text": "An old flame sends a message: \"I am in town. Dinner?\" {{name}} is asleep one room away.",
+    "choices": {
+      "meet": "Meet them for dinner",
+      "tell_spouse": "Show them the message",
+      "ignore": "Delete and move on"
+    },
+    "outcomes": {
+      "secret": "It stays a secret and a stone in your shoe.",
+      "exposed": "{{name}} finds the receipts, then the messages. The silence at home is polite and total."
+    }
+  },
+  "cx_extra_change": {
+    "text": "The cashier hands back a fifty instead of a five. She has already turned to the next customer.",
+    "choices": {
+      "return": "Give it back",
+      "keep": "Pocket it",
+      "donate": "Slip it in a tip jar"
+    },
+    "outcomes": {
+      "seen": "A stranger sees. Silent respect, in a queue.",
+      "unseen": "Nobody notices. That is sort of the point."
+    }
+  },
+  "cx_whistleblow": {
+    "text": "You find proof your company has been dumping waste into the river. Management would prefer it stays a rumor.",
+    "choices": {
+      "blow": "Blow the whistle",
+      "silence": "Stay quiet",
+      "anonymous": "Tip off anonymously"
+    },
+    "outcomes": {
+      "hero": "The story breaks. The fine is enormous; so is the applause.",
+      "fired": "You are escorted out with a box. The river is cleaner. Your bank account is not."
+    }
+  },
+  "cx_inheritance_feud_1": {
+    "text": "The will is read. {{name}} gets the house; you get the clock. Neither of you says a word, which is how a feud begins.",
+    "choices": {
+      "contest": "Contest the will",
+      "accept": "Accept it",
+      "negotiate": "Propose a split"
+    }
+  },
+  "cx_inheritance_feud_2": {
+    "text": "Months later, your sibling's lawyer sends a letter. The clock, it turns out, was worth more than the house.",
+    "choices": {
+      "keep_clock": "Keep the clock",
+      "share": "Split it evenly"
+    },
+    "outcomes": {
+      "wins": "The court sides with you. The family dinner becomes a cold war.",
+      "loses": "The court does not. Lawyers eat well that month."
+    }
+  },
+  "cx_investment_scam": {
+    "text": "A smooth voice promises 40% returns \"with zero risk.\" There is a brochure. There is always a brochure.",
+    "choices": {
+      "invest": "Wire the money",
+      "refuse": "Hang up",
+      "report": "Report to authorities"
+    },
+    "outcomes": {
+      "gone": "The website goes dark by Thursday. So does the phone number.",
+      "paid": "You actually get paid. You are insufferable about it for years."
+    }
+  },
+  "cx_market_crash": {
+    "text": "The market falls off a cliff. Your savings statement arrives and you look at it through your fingers.",
+    "choices": {
+      "hold": "Hold and hope",
+      "sell": "Sell everything",
+      "buy_dip": "Buy more"
+    },
+    "outcomes": {
+      "recover": "The market rebounds. You nap through your own hero's arc.",
+      "bleed": "It keeps falling, then falls some more.",
+      "locked": "You lock in the loss. At least you can describe it exactly.",
+      "lucky": "You sell near the bottom, but not at it. Small mercies."
+    }
+  },
+  "cx_lawsuit": {
+    "text": "A man slips on your wet porch, and a letter with a lot of capital letters arrives. \"WE DEMAND COMPENSATION.\"",
+    "choices": {
+      "fight": "Fight in court",
+      "settle": "Settle quietly"
+    },
+    "outcomes": {
+      "win": "The judge dismisses it. Your lawyer bills you for the joy.",
+      "lose": "You lose. The man now owns a lovely new pair of shoes and your porch."
+    }
+  },
+  "cx_identity_theft": {
+    "text": "A credit card you never opened is maxed out in a city you have never visited. Someone is wearing your name.",
+    "choices": {
+      "freeze_credit": "Freeze credit, file report",
+      "ignore": "Hope it goes away"
+    },
+    "outcomes": {
+      "fades": "It quietly fades. Somebody else's problem now.",
+      "grows": "Loans appear. Debt collectors call. You spend a year proving you are you."
+    }
+  },
+  "cx_sibling_bailout": {
+    "text": "{{name}} calls at midnight. Bail, rent, a loan shark: the list changes every time. \"I just need ten grand.\"",
+    "choices": {
+      "bail": "Pay it",
+      "refuse": "Say no, kindly",
+      "help_differently": "Pay the landlord directly"
+    },
+    "outcomes": {
+      "repaid": "{{name}} actually pays you back, in installments and with guilt.",
+      "burned": "The money vanishes. So does {{name}}, for six months."
+    }
+  },
+  "cx_gambling_1": {
+    "text": "A cousin takes you to a casino \"just for the buffet.\" Slot lights blink. You have a hot streak.",
+    "choices": {
+      "keep_playing": "Keep playing",
+      "cash_out": "Cash out and leave"
+    },
+    "outcomes": {
+      "win": "You leave with a stack of chips and a dangerous idea.",
+      "lose": "The streak ends. The hunger does not."
+    }
+  },
+  "cx_gambling_2": {
+    "text": "You are down again. A friend suggests a \"sure thing\" at the track. Rent is due Friday.",
+    "choices": {
+      "double_down": "Double down",
+      "get_help": "Join a support group"
+    },
+    "outcomes": {
+      "wipe": "The horse has other priorities. So do the lenders.",
+      "recoup": "It pays. You swear it was the last time. You say that often."
+    }
+  },
+  "cx_rug_pull": {
+    "text": "A coworker swears a new digital coin \"is the future.\" Everyone in the break room is already in.",
+    "choices": {
+      "buy": "Buy in big",
+      "pass": "Politely pass"
+    },
+    "outcomes": {
+      "moon": "It triples and you cash out like a monk. Rare.",
+      "rug": "The founders vanish with the money and a boat. The coin is now a screensaver."
+    }
+  },
+  "cx_contractor_fraud": {
+    "text": "The contractor takes a 50% deposit for your kitchen. Then he stops answering the phone.",
+    "choices": {
+      "sue": "Take him to court",
+      "hire_new": "Hire someone else"
+    },
+    "outcomes": {
+      "recover": "The judge orders restitution. Your kitchen is still a hole, but a vindicated one.",
+      "nothing": "He has no assets and no shame. You win a piece of paper."
+    }
+  },
+  "cx_tax_audit": {
+    "text": "A formal letter arrives. The tax office would like a word, and also three years of receipts.",
+    "choices": {
+      "cooperate": "Gather documents",
+      "accountant": "Hire an accountant"
+    },
+    "outcomes": {
+      "clean": "Everything checks out. The clerk nearly smiles.",
+      "owe": "A mistake from year two costs you a surprising sum."
+    }
+  },
+  "cx_stalker_1": {
+    "text": "The same stranger appears at your bus stop, your gym, your café. Today he waved. You have never met him.",
+    "choices": {
+      "confront": "Confront him",
+      "ignore": "Ignore it",
+      "tell_friend": "Tell someone"
+    }
+  },
+  "cx_stalker_2": {
+    "text": "Flowers on your doorstep. A note: \"I like your jacket.\" Your window is open a hand's width wider than you left it.",
+    "choices": {
+      "police": "Call the police",
+      "move": "Move apartments",
+      "lock_down": "Install cameras"
+    }
+  },
+  "cx_stalker_3": {
+    "text": "Headlights outside at 2 a.m. A figure walks up your path. The doorbell camera sees everything.",
+    "choices": {
+      "face_him": "Open the door",
+      "call_police": "Call police, stay in",
+      "slip_out": "Slip out the back"
+    },
+    "outcomes": {
+      "arrested": "He steps back and the police are already pulling up. The restraining order lands by Tuesday.",
+      "hurt": "He lunges. A neighbour's dog and a bat end it, but not before you are hurt.",
+      "gone": "By the time you open, he is gone. The silence is the worst part."
+    }
+  },
+  "cx_startup_1": {
+    "text": "{{name}} has an idea, a laptop, and a trembling optimism. \"Be my co-founder. We start Monday.\"",
+    "choices": {
+      "join": "Join the startup",
+      "decline": "Politely decline"
+    },
+    "outcomes": {
+      "pitch_good": "Your pitch lands. An investor says \"interesting.\" You hold on to that word for weeks.",
+      "pitch_bad": "Nobody gets the pitch. A VC checks his watch."
+    }
+  },
+  "cx_startup_2": {
+    "text": "Eight months in, the cash is gone and the deadline is Thursday. {{name}} offers pizza and a motivational speech.",
+    "choices": {
+      "crunch": "Pull all-nighters",
+      "walk_away": "Cash out your share"
+    },
+    "outcomes": {
+      "ship": "You ship at sunrise. The server crashes. The product, miraculously, does not.",
+      "burnout": "You deliver something and collapse. The product is fine; you are not."
+    }
+  },
+  "cx_startup_3": {
+    "text": "A bigger company wants to buy the startup. Or the money runs out. It is genuinely hard to tell which.",
+    "choices": {
+      "sell": "Sell the company",
+      "shut_down": "Wind it down cleanly"
+    },
+    "outcomes": {
+      "exit": "You sell. The check clears. Your friend cries; so do you, in the car.",
+      "bust": "The deal falls through. The servers are shut off on a Tuesday. You keep the hoodies."
+    }
+  },
+  "cx_mystery_illness_1": {
+    "text": "Unexplained fatigue, odd rashes, a pain that moves around. Three doctors have shrugged in three different accents.",
+    "choices": {
+      "keep_looking": "Keep searching doctors",
+      "lifestyle": "Overhaul your lifestyle",
+      "wait": "Wait it out"
+    }
+  },
+  "cx_mystery_illness_2": {
+    "text": "A specialist finally has a theory, and a test that costs more than your couch.",
+    "choices": {
+      "test": "Take the test",
+      "skip": "Skip it, too expensive"
+    },
+    "outcomes": {
+      "answer": "There is a name for it, and a pill. You cry in the parking lot from pure relief.",
+      "inconclusive": "Inconclusive. Everyone looks sorry. The fatigue persists."
+    }
+  },
+  "cx_lost_pet_1": {
+    "text": "Your pet slipped out the door at dawn. The leash is on its hook. The street is quiet in all the wrong ways.",
+    "choices": {
+      "search": "Search all night",
+      "flyers": "Put up flyers",
+      "wait_home": "Wait at home"
+    }
+  },
+  "cx_lost_pet_2": {
+    "text": "The phone rings after three days. A voice says, \"I think I have your pet. It ate my sandwich.\"",
+    "choices": {
+      "reunion": "Go pick it up"
+    },
+    "outcomes": {
+      "joy": "Wet nose, crooked tail, and a full-body wiggle. You cry in front of a stranger.",
+      "wrong": "It is not your pet. The caller is crushed; you are crushed; the sandwich is long gone."
+    }
+  },
+  "cx_lucky_ticket": {
+    "text": "You buy a scratch card with your change. Six symbols line up. Surely you are misreading it.",
+    "choices": {
+      "claim": "Claim the prize",
+      "share": "Share it around"
+    }
+  },
+  "cx_meet_hero": {
+    "text": "Your childhood hero is three tables away, eating soup. Your heart does something athletic.",
+    "choices": {
+      "approach": "Say hello",
+      "stay_seated": "Keep your distance"
+    },
+    "outcomes": {
+      "kind": "They are warm, signed a napkin, and asked about you. You frame the napkin.",
+      "rude": "They are curt. You learn something about heroes, and about soup."
+    }
+  },
+  "cx_viral_kindness": {
+    "text": "You help a stranger carry their groceries up four floors. Someone films it. By morning it has 3 million views.",
+    "choices": {
+      "humble": "Stay humble",
+      "cash_in": "Cash in on it"
+    },
+    "outcomes": {
+      "sponsor": "A grocery chain offers a modest sponsorship. Integrity takes a small nap.",
+      "backlash": "People notice the new sponsor. The internet decides you were never kind, only strategic."
+    }
+  },
+  "cx_time_capsule": {
+    "text": "A construction crew digs up a time capsule from your school. Your name is on one envelope. You were eleven.",
+    "choices": {
+      "read": "Read it aloud",
+      "burn": "Burn it unread",
+      "share": "Share with old classmates"
+    }
+  },
+  "cx_lost_relative_letter": {
+    "text": "A letter arrives from a country you have never visited. It begins, \"I think I am your cousin. Our grandfathers were brothers.\"",
+    "choices": {
+      "reply": "Write back",
+      "ignore": "Ignore it"
+    },
+    "outcomes": {
+      "warm": "Letters become calls, calls become a trip. You have a whole new branch of the family tree.",
+      "awkward": "Politely strange. You exchange holiday cards and nothing else."
+    }
+  }
+}

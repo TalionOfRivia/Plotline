@@ -19,13 +19,13 @@ export function AssetsSheet() {
 
   return (
     <Sheet title={t('nav.assets')} emoji="🏠">
-      <div className="bg-paper rounded-2xl p-3 mb-3 shadow-sm flex justify-between text-sm">
+      <div className="bg-card rounded-2xl p-3 mb-3 shadow-sm flex justify-between text-sm">
         <span>{t('assets.cash')}: <b>{formatMoney(life.money, lang)}</b></span>
         <span>{t('assets.netWorth')}: <b>{formatMoney(netWorth(life), lang)}</b></span>
       </div>
       <div className="flex gap-1 mb-3 overflow-x-auto">
         {tabs.map((k) => (
-          <button key={k} onClick={() => setTab(k)} className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap ${tab === k ? 'bg-ink text-cream' : 'bg-paper'}`}>{t(`assets.tab.${k}`)}</button>
+          <button key={k} onClick={() => setTab(k)} className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap ${tab === k ? 'bg-chrome text-chrome-fg' : 'bg-card'}`}>{t(`assets.tab.${k}`)}</button>
         ))}
       </div>
 
