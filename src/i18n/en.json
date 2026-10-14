@@ -32,7 +32,15 @@
       "system": "Auto",
       "light": "Light",
       "dark": "Dark"
-    }
+    },
+    "yearsBack": "{{n}}y",
+    "customPeople": "Custom people",
+    "customPeopleSub": "Real people who will wander into your lives as friends or dates.",
+    "customKind": {
+      "friend": "Friend",
+      "partner": "Date"
+    },
+    "addPerson": "Add person"
   },
   "stats": {
     "happiness": "Happiness",
@@ -198,7 +206,20 @@
     "recruiterSub": "For {{money}}, they find you a strong lead and double your interview odds.",
     "recruiterFound": "The recruiter put a lead at the top of your listings.",
     "recruiterNone": "The recruiter had nothing for you.",
-    "fightInjury": "You took a beating in the ring this year."
+    "fightInjury": "You took a beating in the ring this year.",
+    "stress": "Stress",
+    "popularity": "Co-workers",
+    "socialize": "Socialize with co-workers",
+    "socializeSub": "Popularity up. Once a year.",
+    "hr": "Report someone to HR",
+    "hrSub": "55% they side with you.",
+    "hrWin": "HR took your side.",
+    "hrLose": "HR did nothing and now everyone knows.",
+    "hours": {
+      "20": "Part-time",
+      "40": "Full-time",
+      "50": "Overtime"
+    }
   },
   "assets": {
     "cash": "Cash",
@@ -279,7 +300,9 @@
       "ask_out": "Ask out",
       "give_money": "Give money",
       "elope": "Elope",
-      "counseling": "Couples counseling"
+      "counseling": "Couples counseling",
+      "best_friend": "Ask to be best friends",
+      "spy": "Spy on them"
     },
     "did": {
       "spend_time": "You spent time with {{name}}.",
@@ -313,7 +336,11 @@
       "ask_out_no": "{{name}} wants to stay friends. Ouch.",
       "give_money": "You gave {{name}} some money.",
       "counseling": "Counseling with {{name}} helped.",
-      "counseling_flop": "Counseling with {{name}} went nowhere."
+      "counseling_flop": "Counseling with {{name}} went nowhere.",
+      "best_friend_yes": "{{name}} is your best friend now.",
+      "best_friend_no": "{{name}} laughed. Awkward.",
+      "spy_caught": "{{name}} caught you snooping.",
+      "spy_clean": "You found nothing on {{name}}. Probably."
     },
     "newFriend": "You became friends with {{name}}.",
     "lostFriend": "{{name}} is no longer your friend.",
@@ -328,7 +355,35 @@
     "gone": "They're gone.",
     "cantAfford": "You can't afford that.",
     "enough": "They've had enough of you this year.",
-    "weddingCost": "The wedding cost ${{money}}; your spouse brought ${{dowry}} into the marriage."
+    "weddingCost": "The wedding cost ${{money}}; your spouse brought ${{dowry}} into the marriage.",
+    "engaged": "You and {{name}} got engaged!",
+    "wedding": "Wedding at the {{venue}}, honeymoon: {{honeymoon}}. Cost ${{money}}.",
+    "childMovedOut": "{{name}} moved out.",
+    "bestFriendBadge": "Best friend",
+    "enemyBadge": "Enemy",
+    "engagedBadge": "Engaged",
+    "movedOutBadge": "Moved out",
+    "sickBadge": "Sick",
+    "prenupInfo": "Your net worth {{yours}} · theirs {{theirs}}",
+    "weddingPlan": "Plan the wedding",
+    "venue": "Venue",
+    "honeymoon": "Honeymoon",
+    "holdWedding": "Get married · {{money}}",
+    "venues": {
+      "courthouse": "Courthouse",
+      "backyard": "Backyard",
+      "beach": "Beach",
+      "banquet_hall": "Banquet hall",
+      "castle": "Castle",
+      "private_island": "Private island"
+    },
+    "honeymoons": {
+      "none": "No honeymoon",
+      "road_trip": "Road trip",
+      "city_break": "City break",
+      "tropical": "Tropical resort",
+      "world_tour": "World tour"
+    }
   },
   "crime": {
     "hint": "Odds shown are real. Convictions on record: {{record}}.",
@@ -544,7 +599,8 @@
     "random": "Surprise me",
     "searchCountry": "Search countries…",
     "noMatch": "No country matches.",
-    "countries": "{{n}} countries to be born in"
+    "countries": "{{n}} countries to be born in",
+    "cityPlaceholder": "City (optional, e.g. {{city}})"
   },
   "challenge": {
     "title": "Challenges",
@@ -557,7 +613,8 @@
       "easy": "Easy",
       "medium": "Medium",
       "hard": "Hard",
-      "legendary": "Legendary"
+      "legendary": "Legendary",
+      "achievement": "Achievements"
     }
   },
   "gig": {

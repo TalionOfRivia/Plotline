@@ -313,6 +313,66 @@
   ],
   "luxury": [
     {
+      "id": "sunglasses",
+      "emoji": "🕶️",
+      "price": 40,
+      "upkeep": 0,
+      "happiness": 2,
+      "looks": 1
+    },
+    {
+      "id": "cap",
+      "emoji": "🧢",
+      "price": 25,
+      "upkeep": 0,
+      "happiness": 2
+    },
+    {
+      "id": "sneakers",
+      "emoji": "👟",
+      "price": 150,
+      "upkeep": 0,
+      "happiness": 3,
+      "looks": 1
+    },
+    {
+      "id": "backpack",
+      "emoji": "🎒",
+      "price": 60,
+      "upkeep": 0,
+      "happiness": 1
+    },
+    {
+      "id": "smartwatch",
+      "emoji": "⌚",
+      "price": 400,
+      "upkeep": 0,
+      "happiness": 3
+    },
+    {
+      "id": "headphones",
+      "emoji": "🎧",
+      "price": 250,
+      "upkeep": 0,
+      "happiness": 3
+    },
+    {
+      "id": "designer_bag",
+      "emoji": "👜",
+      "price": 2500,
+      "upkeep": 0,
+      "happiness": 4,
+      "looks": 2
+    },
+    {
+      "id": "tuxedo",
+      "emoji": "🤵",
+      "price": 1200,
+      "upkeep": 0,
+      "happiness": 2,
+      "looks": 2
+    },
+    {
       "id": "jewelry",
       "emoji": "💎",
       "price": 5000,

@@ -1,0 +1,2516 @@
+[
+  {
+    "id": "fe_parents_fighting",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 17,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "headphones",
+        "effects": {
+          "happiness": -2,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "knock",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "silence",
+            "weight": 55,
+            "effects": {
+              "happiness": 4,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "snap",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "relationship": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "talk_later",
+        "effects": {
+          "happiness": 3,
+          "relationship": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parents_separate",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 20,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": -6,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "blame",
+        "effects": {
+          "happiness": -3,
+          "relationship": -12
+        }
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "happiness": -4,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_affair_found",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 45,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "confront",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "confess",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "karma": 4,
+              "relationship": -8
+            }
+          },
+          {
+            "id": "deny",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "relationship": -14
+            }
+          }
+        ]
+      },
+      {
+        "id": "tell_mom",
+        "effects": {
+          "happiness": -7,
+          "karma": 3,
+          "relationship": -10
+        }
+      },
+      {
+        "id": "secret",
+        "effects": {
+          "happiness": -6,
+          "health": -2,
+          "relationship": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_affair_mother",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 50,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "approach",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "flustered",
+            "weight": 50,
+            "effects": {
+              "happiness": -3,
+              "relationship": -6
+            }
+          },
+          {
+            "id": "honest",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "karma": 3,
+              "relationship": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -4,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "blackmail",
+        "effects": {
+          "money": 400,
+          "karma": -10,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_job_loss",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 35,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "help",
+        "effects": {
+          "money": -300,
+          "happiness": 3,
+          "karma": 6,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "cheer",
+        "effects": {
+          "happiness": 4,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -3,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_job_loss_mother",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 40,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "lend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "repaid",
+            "weight": 55,
+            "effects": {
+              "money": -500,
+              "happiness": 6,
+              "karma": 5,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "gone",
+            "weight": 45,
+            "effects": {
+              "money": -500,
+              "happiness": -3,
+              "relationship": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": "listen",
+        "effects": {
+          "happiness": 2,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "nag",
+        "effects": {
+          "happiness": -2,
+          "relationship": -6,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_remarriage",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 50,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "bless",
+        "effects": {
+          "happiness": 4,
+          "relationship": 12,
+          "karma": 3
+        }
+      },
+      {
+        "id": "object",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wise",
+            "weight": 35,
+            "effects": {
+              "happiness": -2,
+              "relationship": -5,
+              "karma": 2
+            }
+          },
+          {
+            "id": "wrong",
+            "weight": 65,
+            "effects": {
+              "happiness": -6,
+              "relationship": -14
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -4,
+          "relationship": -16
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_remarriage_dad",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 50,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "welcome",
+        "effects": {
+          "happiness": 4,
+          "relationship": 10,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      },
+      {
+        "id": "cold",
+        "effects": {
+          "happiness": -2,
+          "relationship": -10
+        }
+      },
+      {
+        "id": "ask_rules",
+        "effects": {
+          "happiness": 2,
+          "relationship": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_stepsibling_meet",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 26,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 5,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "rival",
+        "effects": {
+          "happiness": -2,
+          "smarts": 2,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_stepsibling_rivalry",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 30,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "fight",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "relationship": -3,
+              "karma": -3
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "relationship": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 3,
+          "karma": 2,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": -1,
+          "karma": -2,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_wedding_gift",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 60,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "big",
+        "effects": {
+          "money": -1500,
+          "happiness": 4,
+          "karma": 5,
+          "relationship": 15
+        }
+      },
+      {
+        "id": "modest",
+        "effects": {
+          "money": -300,
+          "happiness": 2,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "card",
+        "effects": {
+          "happiness": -1,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_wedding_speech",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 60,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "toast",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "killer",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "relationship": 12,
+              "karma": 2
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "relationship": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "script",
+        "effects": {
+          "happiness": 2,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -2,
+          "relationship": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_borrow_norepay",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "lend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "repaid",
+            "weight": 35,
+            "effects": {
+              "money": 0,
+              "happiness": 5,
+              "relationship": 10,
+              "karma": 4
+            }
+          },
+          {
+            "id": "never",
+            "weight": 65,
+            "effects": {
+              "money": -2000,
+              "happiness": -4,
+              "relationship": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "half",
+        "effects": {
+          "money": -500,
+          "happiness": 2,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -3,
+          "relationship": -9
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_borrow_again",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "bring_up",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pays",
+            "weight": 45,
+            "effects": {
+              "money": 1000,
+              "happiness": 3,
+              "relationship": -2
+            }
+          },
+          {
+            "id": "blowup",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "relationship": -14
+            }
+          }
+        ]
+      },
+      {
+        "id": "forgive",
+        "effects": {
+          "happiness": 3,
+          "karma": 5,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "passive",
+        "effects": {
+          "happiness": 1,
+          "karma": -2,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_rivalry_adult",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 65,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "brag",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ahead",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "relationship": -3
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "relationship": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "congrats",
+        "effects": {
+          "happiness": 3,
+          "karma": 3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "leave_early",
+        "effects": {
+          "happiness": -3,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_success_envy",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "celebrate",
+        "effects": {
+          "happiness": 5,
+          "karma": 4,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "envy",
+        "effects": {
+          "happiness": -4,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "ask_tips",
+        "effects": {
+          "smarts": 2,
+          "happiness": 2,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_arrested_bail",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 60,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "pay",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "grateful",
+            "weight": 55,
+            "effects": {
+              "money": -5000,
+              "happiness": -2,
+              "karma": 6,
+              "relationship": 16
+            }
+          },
+          {
+            "id": "skips",
+            "weight": 45,
+            "effects": {
+              "money": -5000,
+              "happiness": -8,
+              "relationship": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "let_sit",
+        "effects": {
+          "happiness": -3,
+          "relationship": -10
+        }
+      },
+      {
+        "id": "lawyer",
+        "effects": {
+          "money": -400,
+          "happiness": 2,
+          "relationship": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_dui_call",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 55,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "cover",
+        "effects": {
+          "karma": -6,
+          "relationship": 12,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "lecture",
+        "effects": {
+          "karma": 4,
+          "relationship": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 2,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_cancer_scare_mom",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 32,
+      "maxAge": 80,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "go_with",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "benign",
+            "weight": 65,
+            "effects": {
+              "happiness": 10,
+              "relationship": 15
+            }
+          },
+          {
+            "id": "serious",
+            "weight": 35,
+            "effects": {
+              "happiness": -10,
+              "health": -3,
+              "relationship": 18,
+              "flags": {
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "call_daily",
+        "effects": {
+          "happiness": -1,
+          "relationship": 10,
+          "karma": 3
+        }
+      },
+      {
+        "id": "avoid",
+        "effects": {
+          "happiness": -4,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_cancer_scare_dad",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 32,
+      "maxAge": 80,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "treat",
+            "weight": 40,
+            "effects": {
+              "happiness": -8,
+              "relationship": 16,
+              "money": -1500
+            }
+          }
+        ]
+      },
+      {
+        "id": "respect",
+        "effects": {
+          "happiness": -3,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "tell_all",
+        "effects": {
+          "happiness": 2,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_move_in",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 75,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "movein",
+        "effects": {
+          "money": -12000,
+          "happiness": -3,
+          "karma": 8,
+          "relationship": 20,
+          "flags": {
+            "stress": 4
+          }
+        }
+      },
+      {
+        "id": "aide",
+        "effects": {
+          "money": -5000,
+          "happiness": 2,
+          "karma": 3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -5,
+          "karma": -5,
+          "relationship": -15
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_care_burden",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 38,
+      "maxAge": 75,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "push_on",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hold",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "health": -3,
+              "karma": 6,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "snap",
+            "weight": 50,
+            "effects": {
+              "happiness": -10,
+              "health": -5,
+              "relationship": -5,
+              "flags": {
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "respite",
+        "effects": {
+          "money": -1500,
+          "happiness": 8,
+          "health": 3,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "siblings",
+        "effects": {
+          "happiness": 2,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_dementia_mom",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 38,
+      "maxAge": 80,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "play_along",
+        "effects": {
+          "happiness": -4,
+          "relationship": 8,
+          "karma": 2
+        }
+      },
+      {
+        "id": "correct",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 35,
+            "effects": {
+              "happiness": 2,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "upset",
+            "weight": 65,
+            "effects": {
+              "happiness": -9,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -6,
+          "karma": -3,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_dementia_dad",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 38,
+      "maxAge": 80,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "photo",
+        "effects": {
+          "happiness": 3,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "doctor",
+        "effects": {
+          "money": -300,
+          "happiness": 2,
+          "karma": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "avoid",
+        "effects": {
+          "happiness": -5,
+          "karma": -5,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_nursing_home",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 40,
+      "maxAge": 80,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "home",
+        "effects": {
+          "money": -9000,
+          "happiness": -2,
+          "karma": 4,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "family",
+        "effects": {
+          "money": -3000,
+          "happiness": -4,
+          "health": -2,
+          "karma": 8,
+          "relationship": 16,
+          "flags": {
+            "stress": 4
+          }
+        }
+      },
+      {
+        "id": "cheap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 50,
+            "effects": {
+              "money": -2500,
+              "happiness": -1
+            }
+          },
+          {
+            "id": "bad",
+            "weight": 50,
+            "effects": {
+              "money": -2500,
+              "happiness": -8,
+              "karma": -5,
+              "relationship": -10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fe_nursing_home_visit",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 40,
+      "maxAge": 80,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "visit_often",
+        "effects": {
+          "happiness": -2,
+          "karma": 6,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "holiday",
+        "effects": {
+          "happiness": -1,
+          "karma": -1,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "bring",
+        "effects": {
+          "money": -30,
+          "happiness": 5,
+          "relationship": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_funeral_planning_mom",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 80,
+      "requiresPerson": "mother",
+      "requiresPersonDead": true
+    },
+    "choices": [
+      {
+        "id": "plan",
+        "effects": {
+          "money": -4000,
+          "happiness": -6,
+          "karma": 5,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "sibling",
+        "effects": {
+          "happiness": -3,
+          "relationship": -4
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -5,
+          "karma": -6,
+          "relationship": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_funeral_planning_dad",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 80,
+      "requiresPerson": "father",
+      "requiresPersonDead": true
+    },
+    "choices": [
+      {
+        "id": "plan",
+        "effects": {
+          "money": -5500,
+          "happiness": -6,
+          "karma": 4,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "sibling",
+        "effects": {
+          "happiness": -3,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -5,
+          "karma": -6,
+          "relationship": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_eulogy",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 80,
+      "requiresPerson": "sibling",
+      "requiresPersonDead": true
+    },
+    "choices": [
+      {
+        "id": "speak",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "moving",
+            "weight": 60,
+            "effects": {
+              "happiness": 6,
+              "karma": 5,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "stumble",
+            "weight": 40,
+            "effects": {
+              "happiness": -5,
+              "relationship": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": "defer",
+        "effects": {
+          "happiness": -1,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "nobody",
+        "effects": {
+          "happiness": -6,
+          "karma": -3,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_will_reading",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 80,
+      "requiresPerson": "father",
+      "requiresPersonDead": true
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "money": 4000,
+          "happiness": 2,
+          "karma": 4,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "contest",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 35,
+            "effects": {
+              "money": 9000,
+              "happiness": 4,
+              "relationship": -12,
+              "karma": -3
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 65,
+            "effects": {
+              "money": -3000,
+              "happiness": -8,
+              "relationship": -16,
+              "karma": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "donate",
+        "effects": {
+          "happiness": 6,
+          "karma": 12,
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_will_squabble",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 80,
+      "requiresPerson": "sibling",
+      "requiresPersonDead": true
+    },
+    "choices": [
+      {
+        "id": "give",
+        "effects": {
+          "happiness": -1,
+          "karma": 6,
+          "relationship": 14
+        }
+      },
+      {
+        "id": "coin",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "you_win",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "relationship": 3
+            }
+          },
+          {
+            "id": "they_win",
+            "weight": 50,
+            "effects": {
+              "happiness": -2,
+              "relationship": 6
+            }
+          }
+        ]
+      },
+      {
+        "id": "sell",
+        "effects": {
+          "money": 1500,
+          "happiness": -2,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_estranged_relative",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 80,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "invite",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "karma": 4,
+              "relationship": 5
+            }
+          },
+          {
+            "id": "bad",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "money": -400,
+              "relationship": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "close_door",
+        "effects": {
+          "happiness": -2,
+          "relationship": -4
+        }
+      },
+      {
+        "id": "ask_dad",
+        "effects": {
+          "happiness": 1,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_estranged_sib_back",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "reply",
+        "effects": {
+          "happiness": 8,
+          "karma": 5,
+          "relationship": 18
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -1,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "ghost",
+        "effects": {
+          "happiness": -3,
+          "karma": -3,
+          "relationship": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_secret_adopted",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 55,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "forgive",
+        "effects": {
+          "happiness": 2,
+          "relationship": 18,
+          "karma": 4
+        }
+      },
+      {
+        "id": "search",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "found",
+            "weight": 40,
+            "effects": {
+              "money": -300,
+              "happiness": 6,
+              "relationship": 4
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 60,
+            "effects": {
+              "money": -300,
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "rage",
+        "effects": {
+          "happiness": -8,
+          "relationship": -18
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_secret_other_father",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 60,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "test",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "confirmed",
+            "weight": 45,
+            "effects": {
+              "money": -150,
+              "happiness": -4,
+              "relationship": -4
+            }
+          },
+          {
+            "id": "bio",
+            "weight": 55,
+            "effects": {
+              "money": -150,
+              "happiness": 4,
+              "relationship": 6
+            }
+          }
+        ]
+      },
+      {
+        "id": "forget",
+        "effects": {
+          "happiness": -3,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "confront_dad",
+        "effects": {
+          "happiness": -5,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_family_reunion",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 80,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "happiness": 6,
+          "relationship": 8,
+          "money": -40
+        }
+      },
+      {
+        "id": "organise",
+        "effects": {
+          "money": -400,
+          "happiness": 4,
+          "karma": 6,
+          "relationship": 14
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_reunion_feud",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 75,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "mediate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "peace",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "karma": 6,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "fail",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "relationship": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "popcorn",
+        "effects": {
+          "happiness": 4,
+          "karma": -2
+        }
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -1,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_elder_stories",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 45,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "listen",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "record",
+        "effects": {
+          "happiness": 6,
+          "smarts": 2,
+          "karma": 4,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "phone",
+        "effects": {
+          "happiness": -1,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_elder_recipe",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 70,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "cook",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "perfect",
+            "weight": 45,
+            "effects": {
+              "happiness": 8,
+              "smarts": 1,
+              "relationship": 6
+            }
+          },
+          {
+            "id": "burnt",
+            "weight": 55,
+            "effects": {
+              "happiness": -2,
+              "relationship": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": "frame",
+        "effects": {
+          "happiness": 4,
+          "karma": 3,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "lose",
+        "effects": {
+          "happiness": -4,
+          "karma": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_home_sold",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 72,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "keep",
+        "effects": {
+          "happiness": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "buy",
+        "effects": {
+          "money": -15000,
+          "happiness": 8,
+          "karma": 4,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "dump",
+        "effects": {
+          "happiness": -4,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_home_clearout",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 75,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "split",
+        "effects": {
+          "money": 400,
+          "happiness": 2,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "grab",
+        "effects": {
+          "money": 900,
+          "karma": -6,
+          "relationship": -12
+        }
+      },
+      {
+        "id": "donate",
+        "effects": {
+          "karma": 8,
+          "happiness": 4,
+          "relationship": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_divorce",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "host",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "brief",
+            "weight": 50,
+            "effects": {
+              "happiness": 2,
+              "karma": 6,
+              "relationship": 15
+            }
+          },
+          {
+            "id": "stays",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "money": -300,
+              "relationship": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": "motel",
+        "effects": {
+          "money": -200,
+          "happiness": -1,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "send_away",
+        "effects": {
+          "happiness": -3,
+          "karma": -5,
+          "relationship": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_divorce_side",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 70,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "neutral",
+        "effects": {
+          "happiness": -2,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "side_sib",
+        "effects": {
+          "happiness": 2,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "side_ex",
+        "effects": {
+          "happiness": -3,
+          "relationship": -15,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_sib_child_guardian",
+    "category": "family",
+    "weight": 1,
+    "once": true,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 60,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "take",
+        "effects": {
+          "money": -6000,
+          "happiness": 8,
+          "karma": 12,
+          "relationship": 12,
+          "flags": {
+            "new_child": true
+          }
+        }
+      },
+      {
+        "id": "relatives",
+        "effects": {
+          "happiness": -4,
+          "karma": -2,
+          "relationship": -6
+        }
+      },
+      {
+        "id": "share",
+        "effects": {
+          "money": -2500,
+          "happiness": 3,
+          "karma": 6,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_70th",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 55,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "speech",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "touching",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "karma": 4,
+              "relationship": 14
+            }
+          },
+          {
+            "id": "awkward",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "relationship": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "gift",
+        "effects": {
+          "money": -800,
+          "happiness": 4,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "late",
+        "effects": {
+          "happiness": -3,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_70th_dad",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 55,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "trip",
+        "effects": {
+          "money": -2500,
+          "happiness": 7,
+          "karma": 5,
+          "relationship": 16
+        }
+      },
+      {
+        "id": "dinner",
+        "effects": {
+          "money": -150,
+          "happiness": 4,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "text",
+        "effects": {
+          "happiness": -1,
+          "relationship": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_mothers_day_guilt",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 80,
+      "requiresPerson": "mother"
+    },
+    "choices": [
+      {
+        "id": "flowers",
+        "effects": {
+          "money": -60,
+          "happiness": 5,
+          "karma": 3,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": 1,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "forget",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "forgiven",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "relationship": -3
+            }
+          },
+          {
+            "id": "sulk",
+            "weight": 60,
+            "effects": {
+              "happiness": -6,
+              "karma": -2,
+              "relationship": -10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fe_fathers_day_guilt",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 80,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "grill",
+        "effects": {
+          "money": -400,
+          "happiness": 6,
+          "karma": 3,
+          "relationship": 12
+        }
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": 1,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "forget",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shrug",
+            "weight": 45,
+            "effects": {
+              "happiness": -2,
+              "relationship": -3
+            }
+          },
+          {
+            "id": "hurt",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "karma": -2,
+              "relationship": -9
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fe_holiday_fight",
+    "category": "family",
+    "weight": 3,
+    "once": true,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 75,
+      "requiresPerson": "sibling"
+    },
+    "choices": [
+      {
+        "id": "peace",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "calm",
+            "weight": 55,
+            "effects": {
+              "happiness": 4,
+              "karma": 5,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "backfire",
+            "weight": 45,
+            "effects": {
+              "happiness": -5,
+              "relationship": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 2,
+          "karma": -2,
+          "relationship": -8
+        }
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": 1,
+          "relationship": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_holiday_politics",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 75,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "argue",
+        "effects": {
+          "happiness": -4,
+          "smarts": 1,
+          "relationship": -6
+        }
+      },
+      {
+        "id": "change",
+        "effects": {
+          "happiness": 3,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "laugh",
+        "effects": {
+          "happiness": 4,
+          "karma": 2,
+          "relationship": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_friend_family_crisis",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 40,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "welcome",
+        "effects": {
+          "money": -200,
+          "happiness": 3,
+          "karma": 8,
+          "relationship": 16
+        }
+      },
+      {
+        "id": "help_find",
+        "effects": {
+          "happiness": 1,
+          "karma": 3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "regret",
+        "effects": {
+          "happiness": -3,
+          "karma": -5,
+          "relationship": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_friend_parent_funeral",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 75,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "attend",
+        "effects": {
+          "happiness": -2,
+          "karma": 6,
+          "relationship": 16
+        }
+      },
+      {
+        "id": "flowers",
+        "effects": {
+          "money": -80,
+          "happiness": -1,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "excuse",
+        "effects": {
+          "happiness": -3,
+          "karma": -5,
+          "relationship": -14
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_ex_in_laws",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 60,
+      "requiresPerson": "ex"
+    },
+    "choices": [
+      {
+        "id": "chat",
+        "effects": {
+          "happiness": 5,
+          "karma": 3,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "escape",
+        "effects": {
+          "happiness": -2,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "gossip",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "relationship": 4
+            }
+          },
+          {
+            "id": "bad",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "relationship": -4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fe_ex_parent_died",
+    "category": "family",
+    "weight": 1.5,
+    "once": true,
+    "conditions": {
+      "minAge": 26,
+      "maxAge": 70,
+      "requiresPerson": "ex"
+    },
+    "choices": [
+      {
+        "id": "condolences",
+        "effects": {
+          "happiness": 2,
+          "karma": 5,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "attend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "warm",
+            "weight": 60,
+            "effects": {
+              "happiness": 3,
+              "karma": 5,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "awkward",
+            "weight": 40,
+            "effects": {
+              "happiness": -5,
+              "relationship": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "nothing",
+        "effects": {
+          "happiness": -1,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "fe_parent_driving_keys",
+    "category": "family",
+    "weight": 2,
+    "once": true,
+    "conditions": {
+      "minAge": 40,
+      "maxAge": 78,
+      "requiresPerson": "father"
+    },
+    "choices": [
+      {
+        "id": "take_keys",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "accepts",
+            "weight": 45,
+            "effects": {
+              "happiness": -2,
+              "karma": 4,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "furious",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "relationship": -14
+            }
+          }
+        ]
+      },
+      {
+        "id": "ride_along",
+        "effects": {
+          "happiness": -1,
+          "relationship": 8,
+          "karma": 2
+        }
+      },
+      {
+        "id": "let_go",
+        "effects": {
+          "happiness": -2,
+          "karma": -3,
+          "relationship": 2
+        }
+      }
+    ]
+  }
+]

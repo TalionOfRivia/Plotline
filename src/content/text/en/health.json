@@ -1,0 +1,658 @@
+{
+  "hs_sym_headache": {
+    "text": "A headache has been camping behind your eyes for three days. Light feels personal.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The ginger-and-mint smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The ginger-and-mint smoothie does nothing except make the kitchen smell.",
+      "diag": "Migraines. The doctor hands you a leaflet and a dark room.",
+      "fine": "Tension, caffeine, and not enough water. You leave with advice and a lighter wallet."
+    }
+  },
+  "hs_sym_rash": {
+    "text": "A red, itchy rash blooms on your forearm. It has opinions about your sleep.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The oatmeal-and-honey paste seems to help. Or you've just stopped noticing.",
+      "nothing": "The oatmeal-and-honey paste does nothing except make the kitchen smell.",
+      "fine": "An allergic reaction to something. Cream, and a list of suspects.",
+      "bad": "A stubborn infection. Antibiotics, and a week of itching in silence."
+    }
+  },
+  "hs_sym_chest": {
+    "text": "Your chest feels tight on the stairs, like someone is sitting on it politely.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The beet-and-garlic smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The beet-and-garlic smoothie does nothing except make the kitchen smell.",
+      "diag": "High blood pressure. Pills, salt rules and a stern look.",
+      "fine": "Anxiety plus a pulled muscle. Relief, and a mild lecture."
+    }
+  },
+  "hs_sym_vision": {
+    "text": "The words on your screen smear at the edges. You blame the screen.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The carrot-and-orange smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The carrot-and-orange smoothie does nothing except make the kitchen smell.",
+      "glasses": "You need glasses. The world sharpens and so does your regret about waiting.",
+      "fine": "Dry eyes and screen fatigue. Drops, and a rule about breaks."
+    }
+  },
+  "hs_sym_numb": {
+    "text": "Your right hand goes numb every morning, fingers fizzing like soda.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The turmeric smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The turmeric smoothie does nothing except make the kitchen smell.",
+      "splint": "Nerve pressure from how you sit and type. A wrist brace and stretching homework.",
+      "fine": "Slept on it wrong, repeatedly. Better pillow, better mornings."
+    }
+  },
+  "hs_sym_cough": {
+    "text": "A dry cough that will not leave. It has outlasted two rounds of small talk.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The honey-lemon-ginger smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The honey-lemon-ginger smoothie does nothing except make the kitchen smell.",
+      "diag": "Bronchitis. Rest, fluids, and an inhaler for good measure.",
+      "viral": "A lingering virus. Rest and patience, and the cough finally packs up."
+    }
+  },
+  "hs_sym_insomnia": {
+    "text": "You lie awake until the birds start. Your brain reviews every embarrassing thing you ever said.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The chamomile-banana smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The chamomile-banana smoothie does nothing except make the kitchen smell.",
+      "diag": "Chronic insomnia. Sleep hygiene rules and a very small pill.",
+      "fine": "Stress and screens. A routine, a curfew for your phone, and some actual sleep."
+    }
+  },
+  "hs_sym_back": {
+    "text": "You bend to tie a shoe and your lower back files a formal complaint.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The anti-inflammatory berry smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The anti-inflammatory berry smoothie does nothing except make the kitchen smell.",
+      "diag": "A bad disc. Physio, a better chair, and a lifelong relationship with stretching.",
+      "strain": "A strained muscle. Heat, rest, and it fades in a week."
+    }
+  },
+  "hs_sym_dizzy": {
+    "text": "The room tilts when you stand up too fast. You steady yourself on a bookshelf.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The spinach-and-iron smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The spinach-and-iron smoothie does nothing except make the kitchen smell.",
+      "diag": "Anemia. Iron tablets and a list of foods that taste like pennies.",
+      "fine": "Low blood pressure and not enough water. Eat, drink, stand slowly."
+    }
+  },
+  "hs_sym_ear": {
+    "text": "Your ear throbs with a hot, deep ache. Everything sounds like it is underwater.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The garlic-oil warm compress seems to help. Or you've just stopped noticing.",
+      "nothing": "The garlic-oil warm compress does nothing except make the kitchen smell.",
+      "diag": "An ear infection. Drops, rest, and a week of shouting everything twice.",
+      "wax": "Wax buildup. A quick flush and the world returns in HD."
+    }
+  },
+  "hs_sym_flu": {
+    "text": "Chills, aches, and a fever that makes your own bed feel like a boat.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The hot lemon-honey-ginger smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The hot lemon-honey-ginger smoothie does nothing except make the kitchen smell.",
+      "diag": "The flu. Fluids and rest, and a note to cancel your plans.",
+      "cold": "A heavy cold. You sleep for two days and wake up humanoid again."
+    }
+  },
+  "hs_sym_stomach": {
+    "text": "Stomach cramps arrive in waves. The bathroom door has become your best friend.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The papaya-and-fiber smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The papaya-and-fiber smoothie does nothing except make the kitchen smell.",
+      "diag": "Chronic constipation. Fiber, water, and a talk about patience.",
+      "fine": "Food poisoning from something you ate. Rest and liquids, and a vow about that sushi."
+    }
+  },
+  "hs_sym_flank": {
+    "text": "A knifing pain in your side doubles you over. You hold the wall and bargain.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The cucumber-and-lemon flush smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The cucumber-and-lemon flush smoothie does nothing except make the kitchen smell.",
+      "diag": "Kidney stones. Everyone who has had them compares it to childbirth.",
+      "fine": "A kidney infection. Antibiotics, rest, and a lot of water."
+    }
+  },
+  "hs_sym_tired": {
+    "text": "You are tired in a way sleep does not touch. Even coffee seems tired.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The green-juice smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The green-juice smoothie does nothing except make the kitchen smell.",
+      "diag": "Anemia. Iron and rest bring the colour back slowly.",
+      "fine": "Overwork and a bad diet. The blood work is clean, the lifestyle is not."
+    }
+  },
+  "hs_sym_mole": {
+    "text": "A mole on your shoulder looks different. Bigger, darker, a little smug.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The aloe-and-vitamin-E rub seems to help. Or you've just stopped noticing.",
+      "nothing": "The aloe-and-vitamin-E rub does nothing except make the kitchen smell.",
+      "benign": "Benign. They check it, say it is fine, and tell you to wear sunscreen.",
+      "removed": "Caught early. They cut it out and it never becomes a story."
+    }
+  },
+  "hs_sym_flutter": {
+    "text": "Your heart skips like a stone on a lake, once, twice, then carries on like nothing happened.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The hibiscus-and-banana smoothie seems to help. Or you've just stopped noticing.",
+      "nothing": "The hibiscus-and-banana smoothie does nothing except make the kitchen smell.",
+      "diag": "Borderline blood pressure. Daily pills and a salt shaker confiscated.",
+      "fine": "Caffeine and stress. Cut the third espresso and the skipping stops."
+    }
+  },
+  "hs_sym_ringing": {
+    "text": "A high thin ringing in your ears, even in silence. Especially in silence.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The ginkgo-and-mint tea seems to help. Or you've just stopped noticing.",
+      "nothing": "The ginkgo-and-mint tea does nothing except make the kitchen smell.",
+      "tinnitus": "Tinnitus. There's no cure, only coping tricks and a white noise machine.",
+      "fine": "Earwax and loud concerts catching up. Rest your ears and it settles."
+    }
+  },
+  "hs_sym_tooth": {
+    "text": "A tooth throbs every time you drink anything cold. You chew on the left now, like a pirate.",
+    "choices": {
+      "ignore": "Ignore it",
+      "search": "Search online",
+      "remedy": "Blend a remedy",
+      "doctor": "See a doctor"
+    },
+    "outcomes": {
+      "helped": "The clove-oil dab seems to help. Or you've just stopped noticing.",
+      "nothing": "The clove-oil dab does nothing except make the kitchen smell.",
+      "filling": "A cavity. Drill, filling, and a judgmental dental hygienist.",
+      "root": "An abscess. Root canal, antibiotics, and a bill with a lot of zeros."
+    }
+  },
+  "hs_ail_flare": {
+    "text": "Your condition flares up without warning, mid-week, mid-plan.",
+    "choices": {
+      "rest": "Rest properly",
+      "push": "Push through",
+      "doctor": "Call the doctor"
+    },
+    "outcomes": {
+      "coped": "You power through. Mostly.",
+      "crash": "You crash hard. Your body sends the bill.",
+      "adjusted": "A new dose, a kinder routine, breathing room.",
+      "same": "Same advice, same pills, new invoice."
+    }
+  },
+  "hs_ail_second_opinion": {
+    "text": "You wonder if the diagnosis was the whole story. A second opinion costs money and nerve.",
+    "choices": {
+      "second": "Get a second opinion",
+      "trust": "Trust the first",
+      "dig": "Research yourself"
+    },
+    "outcomes": {
+      "cured": "A different doctor finds a different answer, and it works. You nearly cry in the parking lot.",
+      "same": "Same diagnosis, same treatment, but now you believe it.",
+      "worse": "The second doctor adds a complication. Great."
+    }
+  },
+  "hs_ail_quack": {
+    "text": "A website promises a miracle cure for your condition. It's $300, with a smiling doctor in a stock photo.",
+    "choices": {
+      "buy": "Buy the miracle",
+      "report": "Report the site",
+      "skip": "Close the tab"
+    },
+    "outcomes": {
+      "scam": "A box of sugar pills arrives. You hold the receipt like a prayer.",
+      "placebo": "The placebo effect is generous. You feel better, and poorer.",
+      "toxic": "Something in it disagrees with you violently."
+    }
+  },
+  "hs_ail_acceptance": {
+    "text": "Years in, the illness is part of the furniture. You can fight it, or learn its habits.",
+    "choices": {
+      "accept": "Make peace",
+      "fight": "Fight it daily",
+      "group": "Join a support group"
+    },
+    "outcomes": {
+      "good": "A circle of folding chairs and people who get it. You didn't know how heavy it was until it was lighter.",
+      "meh": "Awkward biscuits, nothing else. Maybe next time."
+    }
+  },
+  "hs_ail_side_effects": {
+    "text": "The pills help, but they come with a rainbow of side effects. Dry mouth, drowsy eyes, odd dreams.",
+    "choices": {
+      "endure": "Endure it",
+      "adjust": "Ask to adjust",
+      "stop": "Stop taking them"
+    },
+    "outcomes": {
+      "better": "A different brand, fewer symptoms. Why did you wait?",
+      "none": "There isn't a gentler option yet.",
+      "rebound": "The condition rushes back like it's been waiting at the door.",
+      "ok": "You feel fine. This time."
+    }
+  },
+  "hs_ail_insurance": {
+    "text": "The insurer denied your claim for the treatment. Seven pages of reasons, none of them medical.",
+    "choices": {
+      "appeal": "Appeal it",
+      "pay": "Just pay",
+      "skip": "Skip the treatment"
+    },
+    "outcomes": {
+      "won": "They cave after three letters and a phone call that makes a clerk sigh.",
+      "lost": "Denied again. You pay and mutter."
+    }
+  },
+  "hs_ail_sick_day": {
+    "text": "You wake up wrecked. Calling in sick feels like a confession.",
+    "choices": {
+      "sick": "Call in sick",
+      "go": "Go in anyway",
+      "remote": "Work from bed"
+    },
+    "outcomes": {
+      "fine": "You cough through the meeting. The boss nods approvingly.",
+      "worse": "Everyone avoids you for fear of contagion."
+    }
+  },
+  "hs_ail_miracle_diet": {
+    "text": "A relative swears a strict juice diet cured their own ailment. They have a spreadsheet.",
+    "choices": {
+      "try": "Try the diet",
+      "ask": "Ask your doctor",
+      "politely": "Nod politely"
+    },
+    "outcomes": {
+      "helps": "Weight drops, energy lifts, symptoms ease. Anecdote one.",
+      "nothing": "You're hungry, grumpy, and exactly as ill as before.",
+      "worse": "Your body protests the lack of food by getting worse."
+    }
+  },
+  "hs_ail_hospital_bill": {
+    "text": "The hospital bill arrives. It has a line item for a single aspirin that costs more than lunch.",
+    "choices": {
+      "negotiate": "Negotiate it",
+      "pay": "Pay it in full",
+      "ignore": "Pile it with the others"
+    },
+    "outcomes": {
+      "cut": "After a long call you shave off half. Victory, in a way.",
+      "same": "The clerk is sympathetic and immovable."
+    }
+  },
+  "hs_ail_trial": {
+    "text": "A clinic invites you into a drug trial for your condition. Free care, possible placebo.",
+    "choices": {
+      "join": "Join the trial",
+      "pass": "Pass"
+    },
+    "outcomes": {
+      "cured": "You got the real drug. Months later, the symptoms are gone and your pockets slightly fuller.",
+      "placebo": "Sugar pills, free coffee, and a feeling of being useful.",
+      "reaction": "A bad reaction ends your participation and ruins your week."
+    }
+  },
+  "hs_mh_burnout": {
+    "text": "Monday looms like a locked room. You stare at the screen and nothing comes. This isn't tired; it's empty.",
+    "choices": {
+      "push": "Push through",
+      "leave": "Take leave",
+      "talk": "Talk to the boss"
+    },
+    "outcomes": {
+      "ok": "You muddle through. It's grey, but you're upright.",
+      "crash": "The weekend ends and something stays broken.",
+      "kind": "They're surprisingly decent. You lighten your load.",
+      "cold": "They hear you and then give you more work."
+    }
+  },
+  "hs_mh_panic": {
+    "text": "Your hands tingle. The room folds in. You can't breathe, you're sure of it, until you can.",
+    "choices": {
+      "breathe": "Breathe slowly",
+      "er": "Go to the ER",
+      "hide": "Hide and wait"
+    },
+    "outcomes": {
+      "passes": "Four in, four out. It passes like a storm.",
+      "again": "It rolls back in. You manage it, barely."
+    }
+  },
+  "hs_mh_therapy": {
+    "text": "A friend suggests therapy. You like your problems; they keep you company.",
+    "choices": {
+      "start": "Start therapy",
+      "later": "Maybe later",
+      "journal": "Journal instead"
+    },
+    "outcomes": {
+      "helps": "After a few sessions you name things you never named. It feels like lifting a lid.",
+      "mismatch": "The therapist and you do not click. Expensive silence."
+    }
+  },
+  "hs_mh_therapy_depressed": {
+    "text": "The fog has stayed for months. Someone leaves a number on your table without a word.",
+    "choices": {
+      "call": "Call the number",
+      "wait": "Not yet",
+      "walk": "Walk it off"
+    },
+    "outcomes": {
+      "better": "You show up. Slowly, things shift. It is not a miracle, just a Tuesday that feels lighter.",
+      "hard": "The first sessions are hard. You stay anyway."
+    }
+  },
+  "hs_mh_friend_noticed": {
+    "text": "{{name}} stops you mid-sentence. 'You haven't been yourself. What's going on?'",
+    "choices": {
+      "open": "Open up",
+      "deflect": "'I'm fine'",
+      "snap": "Snap at them"
+    },
+    "outcomes": {
+      "lighter": "{{name}} listens without fixing anything. It is exactly what you needed.",
+      "awkward": "It comes out clumsy but it comes out."
+    }
+  },
+  "hs_mh_good_day": {
+    "text": "For no reason, the morning feels okay. The sun is a color you recognize.",
+    "choices": {
+      "hold": "Hold onto it",
+      "distrust": "Don't trust it",
+      "act": "Do something useful"
+    },
+    "outcomes": {
+      "lift": "One good day becomes three. You are climbing out.",
+      "fade": "It fades by evening, but you saw it. You know it exists."
+    }
+  },
+  "hs_mh_sleepless_worry": {
+    "text": "At 3 a.m. your thoughts schedule a meeting. Agenda: everything.",
+    "choices": {
+      "write": "Write it down",
+      "scroll": "Scroll your phone",
+      "talk": "Wake someone up"
+    },
+    "outcomes": {
+      "kind": "They answer groggy and kind. You feel less alone.",
+      "annoyed": "They're furious. You weren't wrong to wonder."
+    }
+  },
+  "hs_mh_loneliness": {
+    "text": "The apartment is very quiet tonight, and your phone is quieter.",
+    "choices": {
+      "reach": "Reach out",
+      "out": "Go out alone",
+      "sit": "Sit with it"
+    },
+    "outcomes": {
+      "reply": "Someone answers fast, as if they were waiting for you to say something first.",
+      "silence": "No reply. The silence is loud tonight."
+    }
+  },
+  "hs_life_diet": {
+    "text": "New year, new diet. Your fridge is already looking at you with suspicion.",
+    "choices": {
+      "commit": "Commit hard",
+      "small": "Small changes",
+      "skip": "Ignore the resolutions"
+    },
+    "outcomes": {
+      "success": "Three months later your clothes fit differently and so does your mood.",
+      "quit": "By week three you are eating cake at midnight. Your fridge wins."
+    }
+  },
+  "hs_life_sleep": {
+    "text": "You've been running on five hours for months. Your body starts leaving notes.",
+    "choices": {
+      "fix": "Fix your schedule",
+      "coffee": "More coffee",
+      "nap": "Take a nap"
+    },
+    "outcomes": {
+      "good": "Lights out at eleven. The world looks inexplicably sharper.",
+      "relapse": "You relapse by Thursday. Old habits sleep lightly."
+    }
+  },
+  "hs_life_fitness_challenge": {
+    "text": "A friend dares you to run a 5K. You haven't run since a bus was involved.",
+    "choices": {
+      "train": "Train for it",
+      "walk": "Walk it instead",
+      "decline": "Laugh it off"
+    },
+    "outcomes": {
+      "finish": "You cross the line wheezing and proud. They give you a banana.",
+      "injury": "A knee tweaks at kilometer two. You limp home."
+    }
+  },
+  "hs_life_checkup50": {
+    "text": "It has been years since a real checkup. The nurse says your name like a verdict.",
+    "choices": {
+      "go": "Get the full workup",
+      "later": "Put it off"
+    },
+    "outcomes": {
+      "clear": "Everything is fine. You buy yourself a pastry out of gratitude.",
+      "caught": "Pressure's high, cholesterol too. Better to know now.",
+      "scare": "A shadow on the scan. They need more tests. The waiting is the worst part."
+    }
+  },
+  "hs_life_screening": {
+    "text": "A reminder letter for screening sits unopened on the table. It sits there like a stern uncle.",
+    "choices": {
+      "go": "Go to the screening",
+      "bin": "Throw the letter away"
+    },
+    "outcomes": {
+      "clear": "Clear. You feel absurdly lucky.",
+      "early": "They find something small and early. It gets removed, and the odds turn in your favor.",
+      "late": "It's further along than hoped. A long road starts here."
+    }
+  },
+  "hs_life_dry_month": {
+    "text": "You try a month without alcohol. Evenings become strangely long.",
+    "choices": {
+      "do": "Do the month",
+      "skip": "Nope",
+      "half": "Cut down a bit"
+    },
+    "outcomes": {
+      "great": "You sleep better, wake clearer, and notice how much you used to spend.",
+      "fail": "Day 11, a friend's birthday, a glass. Day 12, you give up the project."
+    }
+  },
+  "hs_life_hike": {
+    "text": "A friend drags you up a hill 'for the view'. The view is mostly your own knees.",
+    "choices": {
+      "go": "Climb it",
+      "bail": "Wait at the bottom"
+    },
+    "outcomes": {
+      "view": "The summit hits. Wind, sky, a sandwich that tastes like winning.",
+      "sprain": "Your ankle rolls on the way down. The view was still nice."
+    }
+  },
+  "hs_life_cooking": {
+    "text": "A cooking class promises to teach you to make real meals that don't come from a box.",
+    "choices": {
+      "sign": "Sign up",
+      "family": "Learn from family",
+      "takeout": "Keep ordering out"
+    }
+  },
+  "hs_old_hearing": {
+    "text": "Everyone seems to mumble these days. You've started answering the wrong question with confidence.",
+    "choices": {
+      "aids": "Get hearing aids",
+      "bluff": "Keep bluffing",
+      "ask": "Ask them to repeat"
+    }
+  },
+  "hs_old_fall": {
+    "text": "A rug, a slipper, and the floor comes up fast. You lie there counting your limbs.",
+    "choices": {
+      "alarm": "Press the alarm",
+      "rise": "Get up alone",
+      "rug": "Lose the rugs"
+    },
+    "outcomes": {
+      "fine": "You rise, bruised and proud. Nobody needs to know.",
+      "break": "Something snaps, and standing becomes a rumor."
+    }
+  },
+  "hs_old_memory": {
+    "text": "You walk into a room and forget why. Then a name. Then a street you've lived on for forty years.",
+    "choices": {
+      "test": "Get tested",
+      "puzzles": "Do crosswords",
+      "deny": "Pretend it's nothing"
+    },
+    "outcomes": {
+      "normal": "Normal aging. The doctor says so twice.",
+      "early": "Early memory loss. There are things to do, and there is time."
+    }
+  },
+  "hs_old_pacemaker": {
+    "text": "Your heart skips too slow. The cardiologist suggests a pacemaker. You joke about being remote controlled.",
+    "choices": {
+      "implant": "Get the pacemaker",
+      "decline": "Decline it"
+    },
+    "outcomes": {
+      "good": "A small device, a big difference. You climb stairs again.",
+      "complication": "An infection around the device. Painful and costly, but you recover.",
+      "death": "Something goes wrong on the table. The lights dim.",
+      "ok": "You manage with pills and care. For now.",
+      "collapse": "You collapse at the market. They admit you after all."
+    }
+  },
+  "hs_old_cataract": {
+    "text": "The world has a milky film over it. Faces, signs, even the news seem foggy.",
+    "choices": {
+      "surgery": "Cataract surgery",
+      "glasses": "Stronger glasses",
+      "wait": "Wait it out"
+    },
+    "outcomes": {
+      "clear": "Twenty minutes later, colors are brighter than you remembered.",
+      "meh": "The result is only fine, and slow to settle."
+    }
+  },
+  "hs_old_pills": {
+    "text": "Your medicine drawer has become a pharmacy of its own. Last week you took one twice and another never.",
+    "choices": {
+      "organizer": "Buy a pill organizer",
+      "review": "Ask for a medication review",
+      "wing": "Wing it"
+    },
+    "outcomes": {
+      "cut": "The doctor drops three pills nobody remembers starting.",
+      "same": "Everything stays. The drawer stays heavy."
+    }
+  }
+}

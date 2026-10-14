@@ -5,16 +5,17 @@ import { eventText } from '../engine/content'
 /** Shown after a choice with a random outcome, so the result lands before the next year. */
 export function OutcomeSheet() {
   const { t, i18n } = useTranslation()
-  const last = useGame((s) => s.lastOutcome)!
+  const last = useGame((s) => s.lastOutcome)
   const dismiss = useGame((s) => s.dismissOutcome)
-  const life = useGame((s) => s.life)!
-  const tx = eventText(i18n.language, last.eventId)
-  const text = last.outcomeId ? tx?.outcomes?.[last.outcomeId] : undefined
-  const entry = life.diary.at(-1)
+  const life = useGame((s) => s.life)
+  const tx = last ? eventText(i18n.language, last.eventId) : undefined
+  const text = last?.outcomeId ? tx?.outcomes?.[last.outcomeId] : undefined
+  const entry = life?.diary.at(-1)
   const name = String(entry?.params?.name ?? '')
-  const fill = (s: string) => s.replace(/\{\{name\}\}/g, name).replace(/\{\{firstName\}\}/g, life.firstName)
+  const fill = (s: string) => s.replace(/\{\{name\}\}/g, name).replace(/\{\{firstName\}\}/g, life?.firstName ?? '')
 
-  // Nothing to show for a fixed-effect choice: auto-dismiss.
+  // Nothing to show for a fixed-effect choice (or already dismissed): auto-dismiss.
+  if (!last || !life) return null
   if (!text) { queueMicrotask(dismiss); return null }
 
   return (

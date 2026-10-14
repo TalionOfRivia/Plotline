@@ -1,0 +1,1873 @@
+[
+ {
+  "id": "pt_ate_sock",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "surgery",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "surgery_fine",
+      "weight": 70,
+      "effects": {
+       "money": -1800,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "surgery_rough",
+      "weight": 30,
+      "effects": {
+       "money": -2500,
+       "happiness": -4,
+       "flags": {
+        "stress": 2
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "wait",
+    "effects": {
+     "money": -300,
+     "happiness": -3,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   },
+   {
+    "id": "remedy",
+    "effects": {
+     "money": -300,
+     "karma": -2,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_ate_chocolate",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 6,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "emergency",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "emergency_ok",
+      "weight": 75,
+      "effects": {
+       "money": -900,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "emergency_bad",
+      "weight": 25,
+      "effects": {
+       "money": -2200,
+       "happiness": -6,
+       "flags": {
+        "pet_sick": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "phone",
+    "effects": {
+     "money": -300,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": -4,
+     "karma": -3,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_ate_toy",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -1200,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "money": -300,
+     "happiness": 6,
+     "karma": -1
+    }
+   },
+   {
+    "id": "film",
+    "effects": {
+     "money": -600,
+     "happiness": 4,
+     "flags": {
+      "followers": 800
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_ate_pills",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 8,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "rush",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "rush_saved",
+      "weight": 80,
+      "effects": {
+       "money": -2000,
+       "happiness": 2
+      }
+     },
+     {
+      "id": "rush_lost",
+      "weight": 20,
+      "effects": {
+       "money": -1500,
+       "happiness": -18,
+       "flags": {
+        "pet_dies": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "poison",
+    "effects": {
+     "money": -500,
+     "happiness": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_runs_away",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "search",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "search_found",
+      "weight": 65,
+      "effects": {
+       "happiness": 10,
+       "karma": 2
+      }
+     },
+     {
+      "id": "search_gone",
+      "weight": 35,
+      "effects": {
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "posters",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "posters_found",
+      "weight": 75,
+      "effects": {
+       "money": -200,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "posters_gone",
+      "weight": 25,
+      "effects": {
+       "money": -100,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "wait",
+    "effects": {
+     "happiness": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_runs_away_bad",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "run",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "run_fine",
+      "weight": 55,
+      "effects": {
+       "happiness": 8,
+       "money": -400
+      }
+     },
+     {
+      "id": "run_hurt",
+      "weight": 30,
+      "effects": {
+       "happiness": -8,
+       "money": -1800,
+       "flags": {
+        "pet_sick": true
+       }
+      }
+     },
+     {
+      "id": "run_lost",
+      "weight": 15,
+      "effects": {
+       "happiness": -20,
+       "flags": {
+        "pet_dies": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "freeze",
+    "effects": {
+     "happiness": -5,
+     "karma": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_bites_neighbour",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "settle",
+    "effects": {
+     "money": -1200,
+     "happiness": -2,
+     "karma": 3
+    }
+   },
+   {
+    "id": "fight",
+    "effects": {
+     "karma": -3,
+     "happiness": -4,
+     "flags": {
+      "lawsuit": 3000
+     }
+    }
+   },
+   {
+    "id": "apology",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "apology_ok",
+      "weight": 65,
+      "effects": {
+       "money": -60,
+       "karma": 5,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "apology_sue",
+      "weight": 35,
+      "effects": {
+       "money": -60,
+       "happiness": -4,
+       "flags": {
+        "lawsuit": 3000
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pt_bites_kid",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "own",
+    "effects": {
+     "money": -900,
+     "karma": 4,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "blame",
+    "effects": {
+     "karma": -6,
+     "happiness": -2,
+     "flags": {
+      "lawsuit": 3000
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_wins_contest",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 6,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "enter",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "enter_win",
+      "weight": 35,
+      "effects": {
+       "happiness": 14,
+       "money": 300,
+       "karma": 1
+      }
+     },
+     {
+      "id": "enter_place",
+      "weight": 40,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "enter_disaster",
+      "weight": 25,
+      "effects": {
+       "happiness": -2,
+       "money": -100
+      }
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_online_famous",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 80,
+   "requiresPerson": "pet",
+   "flags": [
+    "has_social_media"
+   ]
+  },
+  "choices": [
+   {
+    "id": "lean",
+    "effects": {
+     "happiness": 8,
+     "money": 300,
+     "flags": {
+      "followers": 5000
+     }
+    }
+   },
+   {
+    "id": "mind",
+    "effects": {
+     "happiness": 2,
+     "karma": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_famous_brand",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 15,
+   "maxAge": 80,
+   "requiresPerson": "pet",
+   "flags": [
+    "has_social_media"
+   ]
+  },
+  "choices": [
+   {
+    "id": "sign",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sign_great",
+      "weight": 55,
+      "effects": {
+       "money": 1500,
+       "happiness": 8,
+       "flags": {
+        "followers": 3000
+       }
+      }
+     },
+     {
+      "id": "sign_bad",
+      "weight": 45,
+      "effects": {
+       "money": 200,
+       "happiness": -4,
+       "flags": {
+        "scandal": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "no",
+    "effects": {
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_surgery",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 8,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "operate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "operate_success",
+      "weight": 80,
+      "effects": {
+       "money": -2400,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "operate_fail",
+      "weight": 20,
+      "effects": {
+       "money": -2400,
+       "happiness": -14,
+       "flags": {
+        "pet_dies": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "meds",
+    "effects": {
+     "money": -300,
+     "happiness": -4,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   },
+   {
+    "id": "letgo",
+    "effects": {
+     "happiness": -16,
+     "karma": 2,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_sick",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "vet",
+    "effects": {
+     "money": -700,
+     "happiness": -2,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   },
+   {
+    "id": "home",
+    "effects": {
+     "money": -100,
+     "happiness": -3,
+     "karma": 2,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": -3,
+     "karma": -3,
+     "flags": {
+      "pet_sick": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_fleas",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "bomb",
+    "effects": {
+     "money": -250,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "vet",
+    "effects": {
+     "money": -400,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "natural",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "natural_works",
+      "weight": 40,
+      "effects": {
+       "happiness": 4,
+       "karma": 1
+      }
+     },
+     {
+      "id": "natural_fail",
+      "weight": 60,
+      "effects": {
+       "happiness": -6,
+       "money": -300,
+       "flags": {
+        "stress": 2
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pt_stray_friend",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "adopt",
+    "effects": {
+     "money": -150,
+     "happiness": 10,
+     "karma": 6
+    }
+   },
+   {
+    "id": "feed",
+    "effects": {
+     "money": -20,
+     "happiness": 4,
+     "karma": 3
+    }
+   },
+   {
+    "id": "shoo",
+    "effects": {
+     "happiness": -4,
+     "karma": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_sitting_disaster",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 12,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "clean",
+    "effects": {
+     "happiness": -3,
+     "karma": 2
+    }
+   },
+   {
+    "id": "confess",
+    "effects": {
+     "money": -300,
+     "karma": 4
+    }
+   },
+   {
+    "id": "lie",
+    "effects": {
+     "karma": -4,
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_couch_destroyed",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "buy",
+    "effects": {
+     "money": -900,
+     "happiness": -1
+    }
+   },
+   {
+    "id": "tape",
+    "effects": {
+     "happiness": -3,
+     "karma": 1
+    }
+   },
+   {
+    "id": "train",
+    "effects": {
+     "money": -400,
+     "happiness": 3,
+     "karma": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_snake_escape",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 8,
+   "maxAge": 80,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "hunt",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hunt_found",
+      "weight": 70,
+      "effects": {
+       "happiness": 4,
+       "flags": {
+        "stress": 2
+       }
+      }
+     },
+     {
+      "id": "hunt_neighbour",
+      "weight": 30,
+      "effects": {
+       "happiness": -3,
+       "money": -200,
+       "karma": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "call",
+    "effects": {
+     "money": -250,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "sleep",
+    "effects": {
+     "happiness": -5,
+     "flags": {
+      "stress": 3
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_parrot_swears",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 8,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "laugh",
+    "effects": {
+     "happiness": 8,
+     "karma": -1
+    }
+   },
+   {
+    "id": "cover",
+    "effects": {
+     "happiness": -2,
+     "karma": 1
+    }
+   },
+   {
+    "id": "teach",
+    "effects": {
+     "happiness": 4,
+     "karma": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_horse_race",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 12,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "enter",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "enter_win",
+      "weight": 25,
+      "effects": {
+       "money": 3000,
+       "happiness": 14,
+       "flags": {
+        "followers": 2000
+       }
+      }
+     },
+     {
+      "id": "enter_place",
+      "weight": 35,
+      "effects": {
+       "money": 400,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "enter_lose",
+      "weight": 40,
+      "effects": {
+       "money": -800,
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_hamster_funeral",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 60,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "funeral",
+    "effects": {
+     "happiness": -4,
+     "karma": 4,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   },
+   {
+    "id": "flush",
+    "effects": {
+     "happiness": -8,
+     "karma": -3,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   },
+   {
+    "id": "replace",
+    "effects": {
+     "money": -30,
+     "happiness": -1,
+     "karma": -2,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_old_age",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "mourn",
+    "effects": {
+     "happiness": -6,
+     "karma": 1
+    }
+   },
+   {
+    "id": "treasure",
+    "effects": {
+     "happiness": 8,
+     "money": -100,
+     "karma": 3
+    }
+   },
+   {
+    "id": "bucket",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "bucket_magic",
+      "weight": 70,
+      "effects": {
+       "happiness": 14,
+       "money": -200
+      }
+     },
+     {
+      "id": "bucket_tired",
+      "weight": 30,
+      "effects": {
+       "happiness": 3,
+       "money": -200
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pt_old_dies",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 25,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "bury",
+    "effects": {
+     "happiness": -14,
+     "karma": 3,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   },
+   {
+    "id": "cremate",
+    "effects": {
+     "money": -250,
+     "happiness": -12,
+     "karma": 3,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   },
+   {
+    "id": "vet",
+    "effects": {
+     "money": -100,
+     "happiness": -14,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_saves_fire",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 6,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "thank",
+    "effects": {
+     "health": 4,
+     "happiness": 12,
+     "karma": 3,
+     "relationship": 15,
+     "flags": {
+      "house_damage": 5
+     }
+    }
+   },
+   {
+    "id": "hero",
+    "effects": {
+     "health": 4,
+     "happiness": 10,
+     "relationship": 10,
+     "flags": {
+      "followers": 1500
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_saves_burglar",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "hold",
+    "effects": {
+     "happiness": 4,
+     "relationship": 8
+    }
+   },
+   {
+    "id": "let",
+    "effects": {
+     "happiness": 10,
+     "karma": -1,
+     "relationship": 15
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_trick",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 80,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "teach",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "teach_works",
+      "weight": 65,
+      "effects": {
+       "happiness": 8,
+       "relationship": 10
+      }
+     },
+     {
+      "id": "teach_fails",
+      "weight": 35,
+      "effects": {
+       "happiness": 1,
+       "relationship": 3
+      }
+     }
+    ]
+   },
+   {
+    "id": "quit",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_vet_checkup",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "go",
+    "effects": {
+     "money": -200,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "full",
+    "effects": {
+     "money": -450,
+     "happiness": 3,
+     "karma": 1
+    }
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "karma": -2,
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_new_litter",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 70,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "keep",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "keep_chaos",
+      "weight": 50,
+      "effects": {
+       "money": -600,
+       "happiness": 8,
+       "flags": {
+        "stress": 3
+       }
+      }
+     },
+     {
+      "id": "keep_adopt",
+      "weight": 50,
+      "effects": {
+       "money": -100,
+       "happiness": 8,
+       "karma": 4
+      }
+     }
+    ]
+   },
+   {
+    "id": "sell",
+    "effects": {
+     "money": 600,
+     "karma": -4,
+     "happiness": 1
+    }
+   },
+   {
+    "id": "shelter",
+    "effects": {
+     "karma": 3,
+     "happiness": -2,
+     "money": -50
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_bed_hog",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "share",
+    "effects": {
+     "happiness": 6,
+     "relationship": 8,
+     "health": -1
+    }
+   },
+   {
+    "id": "boundary",
+    "effects": {
+     "happiness": -2,
+     "relationship": -3,
+     "health": 2
+    }
+   },
+   {
+    "id": "buy",
+    "effects": {
+     "money": -800,
+     "happiness": 6
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_vacation",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 15,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "kennel",
+    "effects": {
+     "money": -500,
+     "happiness": 2,
+     "relationship": -3
+    }
+   },
+   {
+    "id": "cancel",
+    "effects": {
+     "happiness": -6,
+     "relationship": 10,
+     "karma": 3
+    }
+   },
+   {
+    "id": "bring",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "bring_fun",
+      "weight": 60,
+      "effects": {
+       "happiness": 10,
+       "money": -250,
+       "relationship": 15
+      }
+     },
+     {
+      "id": "bring_mess",
+      "weight": 40,
+      "effects": {
+       "happiness": -4,
+       "money": -350,
+       "flags": {
+        "stress": 3
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pt_walk_charm",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 8,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "chat",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "chat_date",
+      "weight": 35,
+      "effects": {
+       "happiness": 10,
+       "flags": {
+        "new_partner": true
+       }
+      }
+     },
+     {
+      "id": "chat_friend",
+      "weight": 40,
+      "effects": {
+       "happiness": 6,
+       "flags": {
+        "new_friend": true
+       }
+      }
+     },
+     {
+      "id": "chat_nothing",
+      "weight": 25,
+      "effects": {
+       "happiness": 1
+      }
+     }
+    ]
+   },
+   {
+    "id": "walk",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_trash_dive",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "clean",
+    "effects": {
+     "happiness": -2,
+     "karma": 1
+    }
+   },
+   {
+    "id": "vet",
+    "effects": {
+     "money": -250,
+     "happiness": 1
+    }
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "happiness": 4,
+     "karma": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_thunder",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "comfort",
+    "effects": {
+     "happiness": 6,
+     "relationship": 12,
+     "karma": 2
+    }
+   },
+   {
+    "id": "calm",
+    "effects": {
+     "money": -80,
+     "happiness": 1
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "relationship": -5,
+     "karma": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_cat_gift",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "praise",
+    "effects": {
+     "happiness": 3,
+     "relationship": 6,
+     "karma": -1
+    }
+   },
+   {
+    "id": "bury",
+    "effects": {
+     "karma": 2,
+     "happiness": -1
+    }
+   },
+   {
+    "id": "scold",
+    "effects": {
+     "relationship": -5,
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_lost_collar",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "chip",
+    "effects": {
+     "money": -120,
+     "happiness": 2,
+     "karma": 1
+    }
+   },
+   {
+    "id": "new",
+    "effects": {
+     "money": -30
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_dog_park",
+  "category": "random",
+  "weight": 3,
+  "conditions": {
+   "minAge": 6,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "let",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "let_friends",
+      "weight": 70,
+      "effects": {
+       "happiness": 8,
+       "relationship": 8
+      }
+     },
+     {
+      "id": "let_fight",
+      "weight": 30,
+      "effects": {
+       "happiness": -4,
+       "money": -300,
+       "relationship": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "leash",
+    "effects": {
+     "happiness": -1,
+     "relationship": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_diet",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "diet",
+    "effects": {
+     "happiness": -2,
+     "relationship": -4,
+     "health": 3
+    }
+   },
+   {
+    "id": "exercise",
+    "effects": {
+     "happiness": 5,
+     "health": 5,
+     "relationship": 8
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": 3,
+     "health": -2,
+     "relationship": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_swim_pond",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "bath",
+    "effects": {
+     "happiness": -1
+    }
+   },
+   {
+    "id": "groomer",
+    "effects": {
+     "money": -80,
+     "happiness": 1
+    }
+   },
+   {
+    "id": "jump",
+    "effects": {
+     "happiness": 8,
+     "health": -1,
+     "relationship": 10
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_birthday",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 5,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "party",
+    "effects": {
+     "money": -150,
+     "happiness": 8,
+     "relationship": 10
+    }
+   },
+   {
+    "id": "treat",
+    "effects": {
+     "money": -30,
+     "happiness": 4,
+     "relationship": 4
+    }
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "karma": -2,
+     "happiness": -2,
+     "relationship": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_neighbour_complaint",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "trainer",
+    "effects": {
+     "money": -400,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "toys",
+    "effects": {
+     "money": -40,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "karma": -3,
+     "happiness": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_moving",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 18,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "fight",
+    "effects": {
+     "money": -300,
+     "happiness": 3,
+     "karma": 1
+    }
+   },
+   {
+    "id": "hide",
+    "effects": {
+     "karma": -3,
+     "happiness": -2,
+     "flags": {
+      "stress": 2
+     }
+    }
+   },
+   {
+    "id": "rehome",
+    "effects": {
+     "happiness": -14,
+     "karma": -2,
+     "flags": {
+      "pet_dies": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_pet_therapy",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 15,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "effects": {
+     "happiness": 10,
+     "health": 2,
+     "relationship": 12
+    }
+   },
+   {
+    "id": "talk",
+    "effects": {
+     "happiness": 8,
+     "karma": 1,
+     "relationship": 8
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_social_walk",
+  "category": "random",
+  "weight": 2,
+  "conditions": {
+   "minAge": 10,
+   "maxAge": 85,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "chat",
+    "effects": {
+     "happiness": 4,
+     "flags": {
+      "new_friend": true
+     }
+    }
+   },
+   {
+    "id": "nod",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pt_pet_scandal",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 15,
+   "maxAge": 80,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "replace",
+    "effects": {
+     "money": -300,
+     "karma": 3
+    }
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "karma": -4,
+     "happiness": 2,
+     "flags": {
+      "enemy": true
+     }
+    }
+   },
+   {
+    "id": "deny",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "deny_pass",
+      "weight": 40,
+      "effects": {
+       "happiness": 3
+      }
+     },
+     {
+      "id": "deny_caught",
+      "weight": 60,
+      "effects": {
+       "karma": -4,
+       "happiness": -4,
+       "flags": {
+        "scandal": true
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pt_senior_rescue",
+  "category": "random",
+  "weight": 1,
+  "conditions": {
+   "minAge": 40,
+   "maxAge": 90,
+   "requiresPerson": "pet"
+  },
+  "choices": [
+   {
+    "id": "adopt",
+    "effects": {
+     "money": -120,
+     "happiness": 10,
+     "karma": 8
+    }
+   },
+   {
+    "id": "donate",
+    "effects": {
+     "money": -60,
+     "karma": 4,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "karma": -2,
+     "happiness": -1
+    }
+   }
+  ]
+ }
+]

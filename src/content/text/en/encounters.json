@@ -1,0 +1,714 @@
+{
+  "en_street_hustler": {
+    "text": "A guy on the corner has a friendly smile and a 'special price' on a watch that is clearly a calculator.",
+    "choices": {
+      "pay": "Pay him $40",
+      "argue": "Argue",
+      "attack": "Attack",
+      "ignore": "Ignore it"
+    },
+    "outcomes": {
+      "attack_win": "You shove him and he drops the whole display. You leave with a free watch and a small guilty feeling.",
+      "attack_lose": "His cousin appears from nowhere. You leave lighter, bruised, and wiser."
+    }
+  },
+  "en_directions": {
+    "text": "A stranger asks you for directions. You have no idea where that is, but your pride does.",
+    "choices": {
+      "guess": "Confidently guess",
+      "honest": "Admit you don't know",
+      "phone": "Look it up for them"
+    },
+    "outcomes": {
+      "guess_right": "You were somehow right. You glow for hours.",
+      "guess_wrong": "You sent a person 12 kilometres the wrong way. They waved gratefully."
+    }
+  },
+  "en_lost_wallet": {
+    "text": "A fat wallet sits on a bench. Nobody is looking. The ID inside has a face that looks worried even in a photo.",
+    "choices": {
+      "return": "Hand it to the police",
+      "keep": "Take the cash",
+      "track": "Track down the owner"
+    },
+    "outcomes": {
+      "track_reward": "The owner cried and handed you a reward. You pretend you did not cry too.",
+      "track_rude": "They snatched the wallet and counted the cash in front of you. Rude."
+    }
+  },
+  "en_charity_canvasser": {
+    "text": "A cheerful canvasser with a clipboard steps into your path. 'Got a minute for the whales?'",
+    "choices": {
+      "donate": "Donate $20",
+      "dodge": "Dodge and mumble",
+      "chat": "Chat for ten minutes"
+    }
+  },
+  "en_loud_party_next_door": {
+    "text": "The neighbour's party hits hour five. Your wall is now a speaker.",
+    "choices": {
+      "join": "Go over and join",
+      "complain": "Bang on their door",
+      "earplugs": "Earplugs and suffer"
+    },
+    "outcomes": {
+      "complain_quiet": "They turn it down and apologise. Silence. It's almost eerie.",
+      "complain_worse": "They turn it up and wave. You have made an enemy with a subwoofer."
+    }
+  },
+  "en_line_cutter": {
+    "text": "Someone casually steps in front of you in the queue, like the line is a suggestion.",
+    "choices": {
+      "confront": "Call them out",
+      "let": "Let it go",
+      "cut": "Cut in front of them"
+    },
+    "outcomes": {
+      "confront_sorry": "They mumble sorry and slink to the back. The queue applauds quietly.",
+      "confront_blow": "They tell you where to put your opinion. Loudly."
+    }
+  },
+  "en_highway_flat": {
+    "text": "A tire blows on the highway. You limp to the shoulder as trucks make the whole car shiver.",
+    "choices": {
+      "change": "Change it yourself",
+      "tow": "Call a tow truck",
+      "flag": "Flag down help"
+    },
+    "outcomes": {
+      "flag_kind": "A trucker stops, swaps it in six minutes, and refuses payment. Legend.",
+      "flag_creep": "The 'helper' quotes you $60 for a thing that took him two minutes."
+    }
+  },
+  "en_bar_stranger_drink": {
+    "text": "A stranger at the bar slides a drink in front of you. 'Looked like you needed one.'",
+    "choices": {
+      "drink": "Drink it",
+      "refuse": "Politely refuse",
+      "buy": "Buy them one back"
+    },
+    "outcomes": {
+      "drink_fun": "It's good, and so is the conversation. A fine night.",
+      "drink_rough": "The night goes sideways. You wake up with a headache and a lighter wallet."
+    }
+  },
+  "en_pickpocket": {
+    "text": "You feel a light tug at your pocket. A young man is already two steps away, whistling innocently.",
+    "choices": {
+      "chase": "Chase him",
+      "shout": "Shout thief",
+      "shrug": "Shrug and cancel cards"
+    },
+    "outcomes": {
+      "chase_catch": "You tackle him, recover the wallet, and give a speech. He nods sheepishly.",
+      "chase_lose": "He's faster. You keep a stitch in your side and a cancelled card."
+    }
+  },
+  "en_street_musician": {
+    "text": "A street musician plays a tune that sounds like your whole childhood. The case is open.",
+    "choices": {
+      "tip": "Tip $10",
+      "stay": "Just stay and listen",
+      "jam": "Ask to play along"
+    }
+  },
+  "en_door_salesman": {
+    "text": "A door-to-door salesman has a vacuum cleaner and an unbreakable smile.",
+    "choices": {
+      "buy": "Buy the vacuum",
+      "door": "Close the door",
+      "demo": "Let him demo it"
+    },
+    "outcomes": {
+      "buy_great": "It's a decent vacuum. It does find the missing socks.",
+      "buy_junk": "It dies in nine days. The salesman's number is already disconnected."
+    }
+  },
+  "en_lost_tourist": {
+    "text": "A tourist with a giant backpack and a bigger map asks you for the best place to eat.",
+    "choices": {
+      "good": "Send them to a gem",
+      "trap": "Send them to a tourist trap",
+      "walk": "Walk with them"
+    }
+  },
+  "en_phishing_call": {
+    "text": "Your phone rings: a man claims to be from your bank and needs your PIN, urgently, for your own protection.",
+    "choices": {
+      "comply": "Give the PIN",
+      "hang": "Hang up",
+      "troll": "Troll the scammer for an hour"
+    },
+    "outcomes": {
+      "comply_lost": "Your account empties faster than your dignity.",
+      "comply_fake": "Luckily your card was frozen already. You feel very stupid, but intact."
+    }
+  },
+  "en_wrong_number_friend": {
+    "text": "A text arrives: 'Hey, is this Dave?' It isn't. You reply anyway.",
+    "choices": {
+      "chat": "Keep chatting",
+      "block": "Block the number",
+      "prank": "Pretend to be Dave"
+    }
+  },
+  "en_creepy_follower": {
+    "text": "You notice the same person behind you for three streets running. They stop when you stop.",
+    "choices": {
+      "confront": "Turn and confront",
+      "shop": "Duck into a shop",
+      "call": "Call a friend loudly"
+    },
+    "outcomes": {
+      "confront_nothing": "It was a lost man looking for his bus. Awkward doesn't cover it.",
+      "confront_threat": "It was not a lost man. You lose your wallet and some composure."
+    }
+  },
+  "en_loose_dog": {
+    "text": "A big dog bounds toward you with no leash and no owner in sight, and a very toothy grin.",
+    "choices": {
+      "pet": "Pet it",
+      "freeze": "Stay frozen",
+      "owner": "Find the owner"
+    },
+    "outcomes": {
+      "pet_love": "It melts into your legs. Best encounter of the week.",
+      "pet_bite": "It nips you and trots off. A tetanus talk with the doctor ensues."
+    }
+  },
+  "en_found_phone": {
+    "text": "You find a phone with a cracked screen and forty-seven unread messages.",
+    "choices": {
+      "return": "Return it",
+      "sell": "Sell it",
+      "read": "Read the messages"
+    },
+    "outcomes": {
+      "read_juicy": "A scandal for the ages. You learn more than you ever wanted to.",
+      "read_boring": "Forty messages from a mother: 'Eat something.' You return it with feelings."
+    }
+  },
+  "en_protest_march": {
+    "text": "A protest marches down your street, loud and colourful. Someone hands you a sign.",
+    "choices": {
+      "join": "Join the march",
+      "film": "Film it",
+      "counter": "Argue with them"
+    }
+  },
+  "en_fender_bender": {
+    "text": "A gentle crunch at the red light. Someone has tapped your bumper. They get out, hands up.",
+    "choices": {
+      "exchange": "Exchange details",
+      "argue": "Demand cash now",
+      "wave": "Wave it off"
+    },
+    "outcomes": {
+      "argue_paid": "They pay you $150 to skip the paperwork.",
+      "argue_shouted": "A shouting match about who braked wrong ends with nothing but a wasted lunch."
+    }
+  },
+  "en_sudden_storm": {
+    "text": "The sky goes dark and the rain begins in earnest. You are miles from shelter.",
+    "choices": {
+      "run": "Run for it",
+      "shelter": "Duck into a cafe",
+      "dance": "Dance in the rain"
+    },
+    "outcomes": {
+      "dance_joy": "You are drenched, grinning, and ten years old for a minute.",
+      "dance_cold": "You catch a cold and a stern glare from the neighbours."
+    }
+  },
+  "en_power_cut": {
+    "text": "The power goes out across the neighbourhood. Your fridge hums its last.",
+    "choices": {
+      "candles": "Candlelight evening",
+      "neighbours": "Meet the neighbours",
+      "complain": "Rage at the utility"
+    }
+  },
+  "en_fortune_teller": {
+    "text": "A fortune teller in a velvet booth grabs your hand. 'I see a great change, and a small fee.'",
+    "choices": {
+      "pay": "Pay $30",
+      "laugh": "Laugh and leave",
+      "haggle": "Haggle the fee"
+    },
+    "outcomes": {
+      "pay_hit": "The prediction is eerily specific. You decide to believe it.",
+      "pay_miss": "She predicts 'a journey.' You are already on one: home."
+    }
+  },
+  "en_vending_machine": {
+    "text": "The vending machine takes your coins and sits there, stubbornly, with your snack hanging by a corner.",
+    "choices": {
+      "shake": "Shake it",
+      "kick": "Give up",
+      "staff": "Find the attendant"
+    },
+    "outcomes": {
+      "shake_drop": "Two snacks fall. You take both, solemnly.",
+      "shake_tip": "It tips onto your foot. Your toes remember this for weeks."
+    }
+  },
+  "en_airport_security": {
+    "text": "At airport security you remember there's a full bottle of water in your bag. The agent smiles slowly.",
+    "choices": {
+      "chug": "Chug it",
+      "plead": "Plead innocence",
+      "toss": "Toss it"
+    }
+  },
+  "en_flight_neighbour": {
+    "text": "The passenger next to you wants to talk about their divorce, their cat, and their cat's divorce. Five hours remain.",
+    "choices": {
+      "listen": "Listen politely",
+      "headphones": "Fake sleep",
+      "share": "Swap stories back"
+    },
+    "outcomes": {
+      "share_friend": "You land with a number and a new friend. The cat is fine.",
+      "share_worse": "You get stuck listening to the sequel."
+    }
+  },
+  "en_hotel_mixup": {
+    "text": "The hotel gave your room to someone else. The clerk offers the 'executive suite' in apology.",
+    "choices": {
+      "suite": "Take the suite",
+      "complain": "Demand a refund",
+      "shrug": "Take the cupboard"
+    }
+  },
+  "en_street_mugging": {
+    "text": "A hooded figure steps from a doorway. 'Wallet. Now.' The knife is bored but unambiguous.",
+    "choices": {
+      "give": "Hand it over",
+      "fight": "Fight back",
+      "run": "Run"
+    },
+    "outcomes": {
+      "fight_hurt": "It goes badly. You wake up in the ER with stitches and no wallet.",
+      "fight_die": "The knife was not bored after all.",
+      "fight_win": "You surprise him; he runs. You stand there, shaking, a hero in your own mind."
+    }
+  },
+  "en_kind_stranger_coffee": {
+    "text": "At the cafe register, the person ahead of you smiles and says 'I've got this one.' They pay for your coffee.",
+    "choices": {
+      "pay_forward": "Pay for the next one",
+      "thank": "Thank them warmly",
+      "suspicious": "Wonder what they want"
+    }
+  },
+  "en_train_drama": {
+    "text": "On the train a man has taken two seats for his bag. The carriage is packed. Everybody stares at their phone.",
+    "choices": {
+      "ask": "Ask him to move it",
+      "stand": "Just stand",
+      "sit": "Sit on his bag"
+    },
+    "outcomes": {
+      "ask_move": "He moves it, huffing. Seats open. Applause in silence.",
+      "ask_fight": "An argument erupts. The entire carriage live-streams it in their heads."
+    }
+  },
+  "en_celebrity_sighting": {
+    "text": "You spot someone famous in line at a bakery, wearing sunglasses indoors and a face you know.",
+    "choices": {
+      "approach": "Ask for a selfie",
+      "cool": "Play it cool",
+      "gossip": "Text everyone about it"
+    },
+    "outcomes": {
+      "approach_yes": "They smile, pose, and you walk away with the best photo of the year.",
+      "approach_no": "A bodyguard materialises from a muffin. Sorry, sorry."
+    }
+  },
+  "en_jury_summons": {
+    "text": "A jury summons arrives. Two weeks of your life are about to be donated to the justice system.",
+    "choices": {
+      "serve": "Serve with duty",
+      "dodge": "Try to dodge",
+      "judge": "Be the loudest juror"
+    },
+    "outcomes": {
+      "dodge_success": "A convincing back-pain performance gets you excused.",
+      "dodge_fined": "The clerk is not moved. You are fined for contempt."
+    }
+  },
+  "en_free_sample_gone_wrong": {
+    "text": "A friendly person at the mall hands you a free sample of something they call 'wellness'.",
+    "choices": {
+      "taste": "Taste it",
+      "pass": "Pass",
+      "take_all": "Take a dozen"
+    }
+  },
+  "en_stranger_proposal": {
+    "text": "A stranger on a bench says, 'Do you want to be in my short film?' It's six on a Tuesday.",
+    "choices": {
+      "yes": "Say yes",
+      "no": "Politely decline"
+    },
+    "outcomes": {
+      "yes_good": "The film gets into a festival. You are credited as 'Guy 2'.",
+      "yes_meh": "It was a student film about birds. You were a bird."
+    }
+  },
+  "en_pigeon_attack": {
+    "text": "A pigeon the size of a dog is eyeing your sandwich with a cold, ancient hatred.",
+    "choices": {
+      "share": "Share half",
+      "defend": "Defend your lunch",
+      "run": "Retreat"
+    }
+  },
+  "en_elevator_stuck": {
+    "text": "The elevator jolts to a stop between floors. A stranger and you now have a strange, shared destiny.",
+    "choices": {
+      "talk": "Make small talk",
+      "panic": "Panic",
+      "phone": "Call the building"
+    }
+  },
+  "en_raffle_win": {
+    "text": "A neighbourhood raffle calls your number. First prize: a very large, very ugly teapot.",
+    "choices": {
+      "keep": "Keep it proudly",
+      "sell": "Sell it online",
+      "gift": "Gift it away"
+    }
+  },
+  "en_online_stranger_chat": {
+    "text": "An online stranger starts chatting with you at 2am. They seem kind, funny, and suspiciously available.",
+    "choices": {
+      "open": "Open up",
+      "block": "Block and sleep",
+      "trollchat": "Play along for fun"
+    },
+    "outcomes": {
+      "open_friend": "A genuine friend who loves the same weird videos.",
+      "open_catfish": "Turns out the stranger needs a loan. Surprise!"
+    }
+  },
+  "en_street_race_challenge": {
+    "text": "A driver revs next to you at a light and gives you the look. This is a city street, not a movie.",
+    "choices": {
+      "race": "Race him",
+      "smile": "Smile and wave"
+    },
+    "outcomes": {
+      "race_win": "You win and receive a ticket on the other side.",
+      "race_crash": "The bumper meets a post. You meet your insurance.",
+      "race_cops": "Blue lights. You get a stern lecture and a fine."
+    }
+  },
+  "en_lost_child": {
+    "text": "A small child is crying alone near the fountain, looking for 'Mama'.",
+    "choices": {
+      "help": "Stay with them",
+      "staff": "Find a security guard",
+      "walkpast": "Walk past"
+    }
+  },
+  "en_busy_street_dance": {
+    "text": "A flash mob erupts in the square. Everyone knows the steps but you.",
+    "choices": {
+      "join": "Join in anyway",
+      "film": "Film it",
+      "leave": "Slip away"
+    }
+  },
+  "en_beggar_asks": {
+    "text": "A man sitting on a flattened box asks quietly for spare change. His sign has a joke on it.",
+    "choices": {
+      "give": "Give $5",
+      "chat": "Buy him a meal and chat",
+      "walk": "Walk on"
+    }
+  },
+  "en_shop_theft_witness": {
+    "text": "You see a teenager slip a candy bar into their pocket. They notice you noticing.",
+    "choices": {
+      "report": "Tell the cashier",
+      "pay": "Quietly pay for it",
+      "ignore": "Look away"
+    }
+  },
+  "en_taxi_conversation": {
+    "text": "The taxi driver is deep in a philosophical rant about parking, fate, and your haircut.",
+    "choices": {
+      "agree": "Nod along",
+      "debate": "Debate him",
+      "tip": "Tip him well"
+    }
+  },
+  "en_gym_equipment_hog": {
+    "text": "A man has been sitting on the only bench press for twenty minutes. He is just scrolling.",
+    "choices": {
+      "ask": "Ask to work in",
+      "stare": "Glare silently",
+      "leave": "Do squats instead"
+    }
+  },
+  "en_stranger_wedding": {
+    "text": "You accidentally walk into a wedding. Everyone assumes you're the cousin from Ohio.",
+    "choices": {
+      "stay": "Play the cousin",
+      "confess": "Confess and leave",
+      "dance": "Dance the horah"
+    }
+  },
+  "en_parking_ticket_dispute": {
+    "text": "There's a parking ticket under your wiper. The sign you didn't see is large and clear.",
+    "choices": {
+      "pay": "Pay it",
+      "appeal": "Appeal",
+      "tear": "Tear it up"
+    }
+  },
+  "en_overheard_secret": {
+    "text": "At a cafe you overhear two strangers whispering something that sounds like a very big secret.",
+    "choices": {
+      "listen": "Keep listening",
+      "leave": "Move seats",
+      "act": "Act on it"
+    }
+  },
+  "en_street_prank": {
+    "text": "A prank show host asks you to react on camera to a fake situation. Smile, it's a gag.",
+    "choices": {
+      "laugh": "Laugh it off",
+      "swing": "Throw a punch",
+      "refuse": "Refuse to sign"
+    },
+    "outcomes": {
+      "swing_guilty": "You've just been caught assaulting a host on live TV. Lawyers unite.",
+      "swing_miss": "You miss. The host still gets the clip."
+    }
+  },
+  "en_ride_share_chat": {
+    "text": "Your rideshare driver is a retired professor/magician/sailor, depending on how you phrase the question.",
+    "choices": {
+      "listen": "Listen to the stories",
+      "quiet": "Ask for a quiet ride",
+      "rate": "Five stars and a tip"
+    }
+  },
+  "en_snake_hike": {
+    "text": "On a trail you almost step on a snake that looks very unbothered by your existence.",
+    "choices": {
+      "back": "Back away slowly",
+      "photo": "Take a closer photo",
+      "stick": "Poke it with a stick"
+    },
+    "outcomes": {
+      "photo_great": "The photo is stunning. The snake is unimpressed.",
+      "photo_bite": "It strikes. Your ankle and ego both swell."
+    }
+  },
+  "en_late_night_kebab": {
+    "text": "At 3am the kebab stand calls your name. The line is full of people in similar states.",
+    "choices": {
+      "order": "Order the big one",
+      "home": "Go home",
+      "share": "Share with a stranger"
+    },
+    "outcomes": {
+      "share_bond": "You bond over sauce. Neither of you remembers the name.",
+      "share_regret": "Regret arrives at sunrise, along with the heartburn."
+    }
+  },
+  "en_neighbour_wifi": {
+    "text": "A new neighbour moves in. Their wifi network is named 'Pretty Fly for a Wi-Fi', and it's unsecured.",
+    "choices": {
+      "borrow": "Borrow it silently",
+      "knock": "Knock and ask nicely",
+      "ignore": "Leave it"
+    }
+  },
+  "en_misdirected_package": {
+    "text": "A package arrives at your door addressed to someone else. The box is very heavy and rattles.",
+    "choices": {
+      "return": "Return it",
+      "open": "Open it",
+      "send": "Send it to the sender"
+    },
+    "outcomes": {
+      "open_treasure": "Vintage watches. You are suddenly curious about the law.",
+      "open_junk": "Twelve rubber ducks. You feel exposed."
+    }
+  },
+  "en_old_friend_stranger": {
+    "text": "Someone waves at you across the street with total certainty. You are completely sure you've never seen them.",
+    "choices": {
+      "wave": "Wave back",
+      "chat": "Pretend you remember",
+      "honest": "Say you do not know them"
+    }
+  },
+  "en_street_art": {
+    "text": "A mural is being painted on a wall. The artist hands you a spray can and nods. 'Just a line.'",
+    "choices": {
+      "paint": "Add a line",
+      "graffiti": "Tag your name",
+      "pass": "Just watch"
+    },
+    "outcomes": {
+      "graffiti_ok": "The artist laughs. The wall looks better, weirdly.",
+      "graffiti_cops": "A patrol car disagrees with your vision. You get a fine."
+    }
+  },
+  "en_crowded_festival": {
+    "text": "A street festival is packed shoulder to shoulder. Somewhere a band is playing and somewhere a funnel cake is frying.",
+    "choices": {
+      "dive": "Dive in",
+      "stage": "Dance on a table",
+      "edge": "Watch from the edge"
+    }
+  },
+  "en_airplane_turbulence": {
+    "text": "The plane bucks like an old pony. The pilot says 'a little bumpy' in a voice that's too calm.",
+    "choices": {
+      "breathe": "Breathe slowly",
+      "grip": "Grip the armrest",
+      "drink": "Order a drink"
+    }
+  },
+  "en_stranger_hug": {
+    "text": "A stranger having a bad day asks 'Can I have a hug?' in a very quiet voice.",
+    "choices": {
+      "hug": "Hug them",
+      "words": "Give kind words",
+      "no": "Decline"
+    }
+  },
+  "en_cafe_laptop_thief": {
+    "text": "You step away from your table for a minute. When you return, your laptop looks very, very absent.",
+    "choices": {
+      "chase": "Chase the thief",
+      "police": "Report it",
+      "shrug": "Cloud backup, thank goodness"
+    },
+    "outcomes": {
+      "chase_catch": "A barista stops him with a tray. You owe her a sandwich.",
+      "chase_lost": "Gone. So is a year of unsaved work."
+    }
+  },
+  "en_mysterious_envelope": {
+    "text": "An envelope with your name on it is stuffed beneath your door. Inside is a key and one line: 'Locker 14.'",
+    "choices": {
+      "go": "Go to locker 14",
+      "police": "Hand it to the police",
+      "bin": "Bin it"
+    },
+    "outcomes": {
+      "go_cash": "Cash and a thank-you note. Nobody can explain it.",
+      "go_prank": "A rubber chicken. You laugh despite yourself.",
+      "go_trouble": "Not your locker. Not your problem. Except now it is."
+    }
+  },
+  "en_chatty_barber": {
+    "text": "The barber has opinions about everything: politics, soup, your hairline.",
+    "choices": {
+      "listen": "Listen politely",
+      "trust": "Let him do whatever",
+      "tip": "Tip big"
+    }
+  },
+  "en_elderly_crossing": {
+    "text": "An elderly person at the crossing waits for a gap in the traffic that will never come.",
+    "choices": {
+      "help": "Cross with them",
+      "wave": "Wave down cars",
+      "pass": "Hurry on"
+    }
+  },
+  "en_bad_restaurant_meal": {
+    "text": "The restaurant gives you a plate that looks like a cry for help. The waiter asks 'How is everything?'",
+    "choices": {
+      "lie": "Say it is great",
+      "complain": "Send it back",
+      "review": "Leave a scathing review"
+    }
+  },
+  "en_storm_shelter_stranger": {
+    "text": "The rain strands you under an awning with a stranger. Ten minutes in, it becomes a real conversation.",
+    "choices": {
+      "talk": "Keep talking",
+      "silent": "Stay silent",
+      "share": "Share your umbrella"
+    }
+  },
+  "en_hitchhiker": {
+    "text": "A hitchhiker with a guitar and a smile stands beside the road, thumb out.",
+    "choices": {
+      "pickup": "Pick them up",
+      "pass": "Drive past"
+    },
+    "outcomes": {
+      "pickup_great": "They play you three songs and leave you a friendship bracelet.",
+      "pickup_weird": "They talk about conspiracies for 200km and then ask for gas money.",
+      "pickup_trouble": "They were not what they seemed. Your wallet and your trust take a hit."
+    }
+  },
+  "en_midnight_snack_burglar": {
+    "text": "You wake to a noise in the kitchen at 2am. Someone is in your home, calmly eating your leftovers.",
+    "choices": {
+      "confront": "Confront him",
+      "police": "Call the police silently",
+      "hide": "Hide and wait"
+    },
+    "outcomes": {
+      "confront_flee": "He apologises through a mouthful and leaves. Your lasagne is gone too.",
+      "confront_fight": "He swings a pan. It's a grim fight over lasagne.",
+      "confront_die": "He was not here for the lasagne."
+    }
+  },
+  "en_tourist_photo": {
+    "text": "A tourist hands you a camera: 'One photo, please?' They stand in front of a very ordinary wall.",
+    "choices": {
+      "shoot": "Take a good one",
+      "run": "Run off with it",
+      "creative": "Make it artsy"
+    }
+  },
+  "en_crosswalk_rage": {
+    "text": "A car blares its horn at you for crossing on a green. You are in the right and it still hurts.",
+    "choices": {
+      "stare": "Stare calmly",
+      "yell": "Yell back",
+      "wave": "Wave politely"
+    },
+    "outcomes": {
+      "yell_win": "They apologise sheepishly. Rare victory.",
+      "yell_bad": "The driver gets out. It goes badly for your dignity."
+    }
+  },
+  "en_overbooked_flight": {
+    "text": "The flight is overbooked and the gate agent is offering vouchers to anyone willing to stay behind.",
+    "choices": {
+      "volunteer": "Volunteer for the voucher",
+      "stay": "Stay put",
+      "fight": "Fight for your seat"
+    },
+    "outcomes": {
+      "fight_win": "You keep your seat, glaring at the person who didn't.",
+      "fight_bumped": "You're bumped anyway, with a lame coupon."
+    }
+  },
+  "en_charity_marathon": {
+    "text": "Friends invite you to a charity marathon. It's cold. It's early. It's for puppies.",
+    "choices": {
+      "run": "Run it",
+      "sponsor": "Sponsor instead",
+      "cheer": "Cheer from the sidewalk"
+    },
+    "outcomes": {
+      "run_finish": "You finish with legs like jelly and a medal.",
+      "run_quit": "You walk the last 15 km, eating oranges.",
+      "run_injury": "A twisted ankle costs you the final stretch."
+    }
+  }
+}

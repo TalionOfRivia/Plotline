@@ -19,14 +19,16 @@ export function isEligible(ev: GameEvent, life: Life): boolean {
 export function personFor(ev: GameEvent, life: Life): Person | undefined {
   const kind = ev.conditions?.requiresPerson
   if (!kind) return undefined
-  return life.people.find((p) => p.kind === kind && p.alive)
+  const dead = Boolean(ev.conditions?.requiresPersonDead)
+  return life.people.find((p) => p.kind === kind && p.alive === !dead)
 }
 
 /** Picks a random living person of the event's kind, or undefined. */
 export function pickPerson(ev: GameEvent, life: Life, rng: Rng): Person | undefined {
   const kind = ev.conditions?.requiresPerson
   if (!kind) return undefined
-  const pool = life.people.filter((p) => p.kind === kind && p.alive)
+  const dead = Boolean(ev.conditions?.requiresPersonDead)
+  const pool = life.people.filter((p) => p.kind === kind && p.alive === !dead)
   return pool.length ? rng.pick(pool) : undefined
 }
 

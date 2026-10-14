@@ -1,0 +1,3028 @@
+[
+  {
+    "id": "hs_sym_headache",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 40,
+            "effects": {
+              "health": -2,
+              "money": -120,
+              "flags": {
+                "ailment": "migraines"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 60,
+            "effects": {
+              "health": 3,
+              "happiness": 3,
+              "money": -80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_rash",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -2,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 75,
+            "effects": {
+              "health": 3,
+              "money": -70
+            }
+          },
+          {
+            "id": "bad",
+            "weight": 25,
+            "effects": {
+              "health": -2,
+              "happiness": -2,
+              "money": -110
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_chest",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -4,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 45,
+            "effects": {
+              "health": -2,
+              "smarts": 1,
+              "money": -180,
+              "flags": {
+                "ailment": "high_blood_pressure"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 55,
+            "effects": {
+              "health": 2,
+              "happiness": 5,
+              "money": -150
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_vision",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -2,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "glasses",
+            "weight": 70,
+            "effects": {
+              "health": 3,
+              "happiness": 3,
+              "looks": -2,
+              "money": -200
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 30,
+            "effects": {
+              "health": 2,
+              "happiness": 2,
+              "money": -70
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_numb",
+    "category": "health",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -2,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "splint",
+            "weight": 65,
+            "effects": {
+              "health": 2,
+              "money": -130
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 35,
+            "effects": {
+              "health": 3,
+              "money": -60
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_cough",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 50,
+            "effects": {
+              "health": -2,
+              "money": -100,
+              "flags": {
+                "ailment": "bronchitis"
+              }
+            }
+          },
+          {
+            "id": "viral",
+            "weight": 50,
+            "effects": {
+              "health": 3,
+              "money": -70,
+              "flags": {
+                "cured": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_insomnia",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -5,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 45,
+            "effects": {
+              "happiness": -1,
+              "money": -100,
+              "flags": {
+                "ailment": "insomnia"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 4,
+              "money": -80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_back",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -4,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 50,
+            "effects": {
+              "health": -2,
+              "money": -160,
+              "flags": {
+                "ailment": "back_pain"
+              }
+            }
+          },
+          {
+            "id": "strain",
+            "weight": 50,
+            "effects": {
+              "health": 3,
+              "money": -90,
+              "flags": {
+                "cured": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_dizzy",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 40,
+            "effects": {
+              "health": -1,
+              "money": -120,
+              "flags": {
+                "ailment": "anemia"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 60,
+            "effects": {
+              "health": 3,
+              "happiness": 2,
+              "money": -70
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_ear",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 3,
+      "maxAge": 60,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 70,
+            "effects": {
+              "health": -2,
+              "money": -90,
+              "flags": {
+                "ailment": "ear_infection"
+              }
+            }
+          },
+          {
+            "id": "wax",
+            "weight": 30,
+            "effects": {
+              "health": 3,
+              "happiness": 3,
+              "money": -60,
+              "flags": {
+                "cured": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_flu",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 5,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -4,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 65,
+            "effects": {
+              "health": -1,
+              "money": -70,
+              "flags": {
+                "ailment": "flu"
+              }
+            }
+          },
+          {
+            "id": "cold",
+            "weight": 35,
+            "effects": {
+              "health": 3,
+              "money": -50,
+              "flags": {
+                "cured": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_stomach",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 45,
+            "effects": {
+              "happiness": -1,
+              "money": -80,
+              "flags": {
+                "ailment": "constipation"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 55,
+            "effects": {
+              "health": 2,
+              "money": -60
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_flank",
+    "category": "health",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -5,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 70,
+            "effects": {
+              "health": -3,
+              "happiness": -3,
+              "money": -300,
+              "flags": {
+                "ailment": "kidney_stones"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 30,
+            "effects": {
+              "health": -2,
+              "money": -150
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_tired",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 35,
+            "effects": {
+              "health": -1,
+              "money": -120,
+              "flags": {
+                "ailment": "anemia"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 65,
+            "effects": {
+              "health": 2,
+              "happiness": 2,
+              "smarts": 1,
+              "money": -110
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_mole",
+    "category": "health",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -4,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "benign",
+            "weight": 85,
+            "effects": {
+              "health": 2,
+              "happiness": 8,
+              "money": -130,
+              "flags": {
+                "cured": true
+              }
+            }
+          },
+          {
+            "id": "removed",
+            "weight": 15,
+            "effects": {
+              "health": 1,
+              "happiness": 3,
+              "flags": {
+                "survived_illness": true
+              },
+              "money": -400
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_flutter",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "diag",
+            "weight": 35,
+            "effects": {
+              "money": -160,
+              "flags": {
+                "ailment": "high_blood_pressure"
+              }
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 65,
+            "effects": {
+              "health": 2,
+              "happiness": 3,
+              "money": -120
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_ringing",
+    "category": "health",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -2,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "tinnitus",
+            "weight": 60,
+            "effects": {
+              "happiness": -3,
+              "health": -1,
+              "money": -110
+            }
+          },
+          {
+            "id": "fine",
+            "weight": 40,
+            "effects": {
+              "health": 2,
+              "happiness": 2,
+              "money": -70
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_sym_tooth",
+    "category": "health",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 95,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -3,
+          "happiness": -3,
+          "looks": -1
+        }
+      },
+      {
+        "id": "search",
+        "effects": {
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "remedy",
+        "outcomes": [
+          {
+            "id": "helped",
+            "weight": 55,
+            "effects": {
+              "health": 3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 45,
+            "effects": {
+              "health": -1,
+              "money": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "filling",
+            "weight": 65,
+            "effects": {
+              "health": 3,
+              "happiness": 2,
+              "money": -220
+            }
+          },
+          {
+            "id": "root",
+            "weight": 35,
+            "effects": {
+              "health": -1,
+              "happiness": -2,
+              "money": -600
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_flare",
+    "category": "health",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 8
+    },
+    "choices": [
+      {
+        "id": "rest",
+        "effects": {
+          "health": 3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "coped",
+            "weight": 50,
+            "effects": {
+              "health": -2,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 50,
+            "effects": {
+              "health": -7,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "adjusted",
+            "weight": 65,
+            "effects": {
+              "health": 4,
+              "money": -90
+            }
+          },
+          {
+            "id": "same",
+            "weight": 35,
+            "effects": {
+              "money": -90,
+              "happiness": -2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_second_opinion",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "second",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cured",
+            "weight": 25,
+            "effects": {
+              "health": 8,
+              "happiness": 10,
+              "money": -250,
+              "flags": {
+                "cured": true
+              }
+            }
+          },
+          {
+            "id": "same",
+            "weight": 55,
+            "effects": {
+              "money": -250,
+              "happiness": -2
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 20,
+            "effects": {
+              "health": -4,
+              "money": -250,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "trust",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "dig",
+        "effects": {
+          "smarts": 2,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_quack",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 16
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "scam",
+            "weight": 70,
+            "effects": {
+              "money": -300,
+              "happiness": -5
+            }
+          },
+          {
+            "id": "placebo",
+            "weight": 25,
+            "effects": {
+              "money": -300,
+              "happiness": 6,
+              "health": 2
+            }
+          },
+          {
+            "id": "toxic",
+            "weight": 5,
+            "effects": {
+              "money": -300,
+              "health": -9
+            }
+          }
+        ]
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 4,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_acceptance",
+    "category": "health",
+    "weight": 2,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 25
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "happiness": 8,
+          "health": 1
+        }
+      },
+      {
+        "id": "fight",
+        "effects": {
+          "health": 4,
+          "happiness": -3,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "group",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 70,
+            "effects": {
+              "happiness": 9,
+              "health": 2,
+              "karma": 2
+            }
+          },
+          {
+            "id": "meh",
+            "weight": 30,
+            "effects": {
+              "happiness": -1,
+              "money": -20
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_side_effects",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 12
+    },
+    "choices": [
+      {
+        "id": "endure",
+        "effects": {
+          "health": 1,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "adjust",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "better",
+            "weight": 70,
+            "effects": {
+              "health": 2,
+              "happiness": 4,
+              "money": -60
+            }
+          },
+          {
+            "id": "none",
+            "weight": 30,
+            "effects": {
+              "money": -60
+            }
+          }
+        ]
+      },
+      {
+        "id": "stop",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rebound",
+            "weight": 70,
+            "effects": {
+              "health": -8,
+              "happiness": -4
+            }
+          },
+          {
+            "id": "ok",
+            "weight": 30,
+            "effects": {
+              "happiness": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_insurance",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 22
+    },
+    "choices": [
+      {
+        "id": "appeal",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "won",
+            "weight": 55,
+            "effects": {
+              "money": 300,
+              "happiness": 6,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "lost",
+            "weight": 45,
+            "effects": {
+              "money": -200,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "pay",
+        "effects": {
+          "money": -400,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "health": -6,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_sick_day",
+    "category": "health",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "flags": [
+        "ailment",
+        "employed"
+      ],
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "sick",
+        "effects": {
+          "health": 3,
+          "happiness": 2,
+          "flags": {
+            "performance": -1
+          }
+        }
+      },
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 50,
+            "effects": {
+              "health": -2,
+              "flags": {
+                "performance": 1
+              }
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 50,
+            "effects": {
+              "health": -5,
+              "happiness": -3,
+              "flags": {
+                "coworker_popularity": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "remote",
+        "effects": {
+          "health": 1,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_miracle_diet",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 16
+    },
+    "choices": [
+      {
+        "id": "try",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "helps",
+            "weight": 30,
+            "effects": {
+              "health": 4,
+              "happiness": 3,
+              "money": -80
+            }
+          },
+          {
+            "id": "nothing",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "money": -80
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 20,
+            "effects": {
+              "health": -5,
+              "money": -80
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "smarts": 2,
+          "health": 1
+        }
+      },
+      {
+        "id": "politely",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_hospital_bill",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 20
+    },
+    "choices": [
+      {
+        "id": "negotiate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cut",
+            "weight": 55,
+            "effects": {
+              "money": -250,
+              "happiness": 5
+            }
+          },
+          {
+            "id": "same",
+            "weight": 45,
+            "effects": {
+              "money": -500,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "pay",
+        "effects": {
+          "money": -500,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "money": -50,
+          "happiness": -5,
+          "smarts": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_ail_trial",
+    "category": "health",
+    "weight": 1,
+    "conditions": {
+      "flags": [
+        "ailment"
+      ],
+      "minAge": 20
+    },
+    "choices": [
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cured",
+            "weight": 30,
+            "effects": {
+              "health": 9,
+              "happiness": 8,
+              "money": 200,
+              "flags": {
+                "cured": true
+              }
+            }
+          },
+          {
+            "id": "placebo",
+            "weight": 50,
+            "effects": {
+              "money": 100,
+              "happiness": -1
+            }
+          },
+          {
+            "id": "reaction",
+            "weight": 20,
+            "effects": {
+              "health": -8,
+              "money": 100,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_burnout",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 70,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 35,
+            "effects": {
+              "happiness": -3,
+              "flags": {
+                "performance": 1
+              }
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 65,
+            "effects": {
+              "happiness": -10,
+              "health": -5,
+              "flags": {
+                "depressed": true,
+                "stress": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": 8,
+          "health": 4,
+          "money": -150,
+          "flags": {
+            "performance": -1
+          }
+        }
+      },
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "kind",
+            "weight": 50,
+            "effects": {
+              "happiness": 5,
+              "health": 2,
+              "flags": {
+                "stress": -2
+              }
+            }
+          },
+          {
+            "id": "cold",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "performance": -1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_panic",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14
+    },
+    "choices": [
+      {
+        "id": "breathe",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "passes",
+            "weight": 70,
+            "effects": {
+              "happiness": 2,
+              "health": 1
+            }
+          },
+          {
+            "id": "again",
+            "weight": 30,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "er",
+        "effects": {
+          "money": -400,
+          "happiness": -2,
+          "health": 1
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": -5,
+          "health": -1,
+          "flags": {
+            "depressed": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_therapy",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 80,
+      "notFlags": [
+        "depressed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "start",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "helps",
+            "weight": 65,
+            "effects": {
+              "happiness": 9,
+              "health": 2,
+              "money": -400,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "mismatch",
+            "weight": 35,
+            "effects": {
+              "happiness": -2,
+              "money": -300
+            }
+          }
+        ]
+      },
+      {
+        "id": "later",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "journal",
+        "effects": {
+          "happiness": 3,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_therapy_depressed",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "flags": [
+        "depressed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "call",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "better",
+            "weight": 70,
+            "effects": {
+              "happiness": 12,
+              "health": 3,
+              "money": -200,
+              "flags": {
+                "depressed": false
+              }
+            }
+          },
+          {
+            "id": "hard",
+            "weight": 30,
+            "effects": {
+              "happiness": -2,
+              "money": -200
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -4,
+          "health": -2
+        }
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": 3,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_friend_noticed",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 15,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "open",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lighter",
+            "weight": 70,
+            "effects": {
+              "happiness": 9,
+              "relationship": 15,
+              "flags": {
+                "depressed": false
+              }
+            }
+          },
+          {
+            "id": "awkward",
+            "weight": 30,
+            "effects": {
+              "happiness": -2,
+              "relationship": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "deflect",
+        "effects": {
+          "happiness": -3,
+          "relationship": -5
+        }
+      },
+      {
+        "id": "snap",
+        "effects": {
+          "happiness": -4,
+          "relationship": -12,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_good_day",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 16,
+      "flags": [
+        "depressed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hold",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lift",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "flags": {
+                "depressed": false
+              }
+            }
+          },
+          {
+            "id": "fade",
+            "weight": 55,
+            "effects": {
+              "happiness": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "distrust",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "act",
+        "effects": {
+          "happiness": 5,
+          "health": 2,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_sleepless_worry",
+    "category": "health",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 15,
+      "maxAge": 80
+    },
+    "choices": [
+      {
+        "id": "write",
+        "effects": {
+          "happiness": 4,
+          "smarts": 1,
+          "health": 1
+        }
+      },
+      {
+        "id": "scroll",
+        "effects": {
+          "happiness": -3,
+          "health": -2
+        }
+      },
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "kind",
+            "weight": 55,
+            "effects": {
+              "happiness": 6
+            }
+          },
+          {
+            "id": "annoyed",
+            "weight": 45,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_mh_loneliness",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 85
+    },
+    "choices": [
+      {
+        "id": "reach",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "reply",
+            "weight": 65,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "new_friend": true
+              }
+            }
+          },
+          {
+            "id": "silence",
+            "weight": 35,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "out",
+        "effects": {
+          "happiness": 3,
+          "health": 1
+        }
+      },
+      {
+        "id": "sit",
+        "effects": {
+          "happiness": -4,
+          "flags": {
+            "depressed": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_diet",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 75
+    },
+    "choices": [
+      {
+        "id": "commit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "success",
+            "weight": 35,
+            "effects": {
+              "health": 7,
+              "looks": 5,
+              "happiness": 6,
+              "money": -60
+            }
+          },
+          {
+            "id": "quit",
+            "weight": 65,
+            "effects": {
+              "happiness": -4,
+              "health": -1,
+              "money": -60
+            }
+          }
+        ]
+      },
+      {
+        "id": "small",
+        "effects": {
+          "health": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_sleep",
+    "category": "health",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 80
+    },
+    "choices": [
+      {
+        "id": "fix",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 75,
+            "effects": {
+              "health": 5,
+              "happiness": 6,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "relapse",
+            "weight": 25,
+            "effects": {
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "coffee",
+        "effects": {
+          "health": -3,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "nap",
+        "effects": {
+          "health": 2,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_fitness_challenge",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 65
+    },
+    "choices": [
+      {
+        "id": "train",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "finish",
+            "weight": 65,
+            "effects": {
+              "health": 8,
+              "happiness": 9,
+              "looks": 3
+            }
+          },
+          {
+            "id": "injury",
+            "weight": 35,
+            "effects": {
+              "health": -5,
+              "happiness": -4,
+              "flags": {
+                "injury": 10
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "health": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_checkup50",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 50,
+      "maxAge": 80
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 55,
+            "effects": {
+              "happiness": 9,
+              "health": 2,
+              "money": -250
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 35,
+            "effects": {
+              "happiness": -3,
+              "health": 3,
+              "money": -400,
+              "flags": {
+                "ailment": "high_blood_pressure"
+              }
+            }
+          },
+          {
+            "id": "scare",
+            "weight": 10,
+            "effects": {
+              "happiness": -8,
+              "health": -2,
+              "money": -600
+            }
+          }
+        ]
+      },
+      {
+        "id": "later",
+        "effects": {
+          "happiness": 1,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_screening",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 40,
+      "maxAge": 85,
+      "notFlags": [
+        "ailment"
+      ]
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 70,
+            "effects": {
+              "happiness": 6,
+              "health": 1,
+              "money": -120
+            }
+          },
+          {
+            "id": "early",
+            "weight": 25,
+            "effects": {
+              "health": 4,
+              "happiness": -3,
+              "money": -500,
+              "flags": {
+                "survived_illness": true
+              }
+            }
+          },
+          {
+            "id": "late",
+            "weight": 5,
+            "effects": {
+              "health": -9,
+              "happiness": -8,
+              "money": -1200
+            }
+          }
+        ]
+      },
+      {
+        "id": "bin",
+        "effects": {
+          "health": -2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_dry_month",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 75
+    },
+    "choices": [
+      {
+        "id": "do",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 60,
+            "effects": {
+              "health": 6,
+              "happiness": 6,
+              "looks": 3,
+              "smarts": 2,
+              "money": 60
+            }
+          },
+          {
+            "id": "fail",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "health": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 0
+        }
+      },
+      {
+        "id": "half",
+        "effects": {
+          "health": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_hike",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 70
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "view",
+            "weight": 75,
+            "effects": {
+              "health": 4,
+              "happiness": 8
+            }
+          },
+          {
+            "id": "sprain",
+            "weight": 25,
+            "effects": {
+              "health": -4,
+              "happiness": -2,
+              "flags": {
+                "injury": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bail",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_life_cooking",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 80
+    },
+    "choices": [
+      {
+        "id": "sign",
+        "effects": {
+          "health": 3,
+          "smarts": 2,
+          "happiness": 4,
+          "money": -100
+        }
+      },
+      {
+        "id": "family",
+        "effects": {
+          "health": 2,
+          "happiness": 4
+        }
+      },
+      {
+        "id": "takeout",
+        "effects": {
+          "health": -2,
+          "money": -40,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_old_hearing",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 65,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "aids",
+        "effects": {
+          "happiness": 6,
+          "money": -600,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "bluff",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_old_fall",
+    "category": "health",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 65,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "alarm",
+        "effects": {
+          "health": -1,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "rise",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 65,
+            "effects": {
+              "health": -2,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "break",
+            "weight": 35,
+            "effects": {
+              "health": -12,
+              "happiness": -6,
+              "money": -500,
+              "flags": {
+                "injury": 15
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "rug",
+        "effects": {
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_old_memory",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 65,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "test",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "normal",
+            "weight": 65,
+            "effects": {
+              "happiness": 7,
+              "money": -150
+            }
+          },
+          {
+            "id": "early",
+            "weight": 35,
+            "effects": {
+              "happiness": -6,
+              "smarts": -4,
+              "money": -150
+            }
+          }
+        ]
+      },
+      {
+        "id": "puzzles",
+        "effects": {
+          "smarts": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "deny",
+        "effects": {
+          "smarts": -2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_old_pacemaker",
+    "category": "health",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 70,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "implant",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 86,
+            "effects": {
+              "health": 12,
+              "happiness": 7,
+              "money": -1500
+            }
+          },
+          {
+            "id": "complication",
+            "weight": 8,
+            "effects": {
+              "health": -8,
+              "happiness": -4,
+              "money": -3000
+            }
+          },
+          {
+            "id": "death",
+            "weight": 6,
+            "effects": {
+              "death": "surgery_complications"
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 55,
+            "effects": {
+              "health": -3,
+              "happiness": 2
+            }
+          },
+          {
+            "id": "collapse",
+            "weight": 45,
+            "effects": {
+              "health": -14,
+              "happiness": -6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hs_old_cataract",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 65,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "surgery",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clear",
+            "weight": 90,
+            "effects": {
+              "health": 5,
+              "happiness": 9,
+              "money": -1200
+            }
+          },
+          {
+            "id": "meh",
+            "weight": 10,
+            "effects": {
+              "health": -2,
+              "happiness": 1,
+              "money": -1200
+            }
+          }
+        ]
+      },
+      {
+        "id": "glasses",
+        "effects": {
+          "happiness": 2,
+          "money": -150
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -3,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hs_old_pills",
+    "category": "health",
+    "weight": 3,
+    "conditions": {
+      "minAge": 65,
+      "maxAge": 100
+    },
+    "choices": [
+      {
+        "id": "organizer",
+        "effects": {
+          "health": 3,
+          "happiness": 2,
+          "money": -15
+        }
+      },
+      {
+        "id": "review",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cut",
+            "weight": 60,
+            "effects": {
+              "health": 5,
+              "happiness": 4,
+              "money": -60
+            }
+          },
+          {
+            "id": "same",
+            "weight": 40,
+            "effects": {
+              "money": -60,
+              "happiness": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "wing",
+        "effects": {
+          "health": -4
+        }
+      }
+    ]
+  }
+]

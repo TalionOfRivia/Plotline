@@ -1,0 +1,430 @@
+{
+ "pt_ate_sock": {
+  "text": "{{name}} swallowed a sock. A whole one. Now there is a vet visit and a very serious X-ray.",
+  "choices": {
+   "surgery": "Pay for the procedure",
+   "wait": "Wait it out",
+   "remedy": "Home remedy"
+  },
+  "outcomes": {
+   "surgery_fine": "The sock is out. {{name}} looks embarrassed. The vet keeps it as a trophy.",
+   "surgery_rough": "Complications, extra nights, a bill with a comma in it. {{name}} pulls through."
+  }
+ },
+ "pt_ate_chocolate": {
+  "text": "The chocolate cake you left on the counter is gone. {{name}} has frosting on the face and a guilty tail.",
+  "choices": {
+   "emergency": "Rush to the emergency vet",
+   "phone": "Call the vet hotline",
+   "ignore": "It is fine, probably"
+  },
+  "outcomes": {
+   "emergency_ok": "Charcoal, fluids, a long night. {{name}} is fine and learned nothing.",
+   "emergency_bad": "It was worse than it looked. {{name}} survives, but the bill and the guilt are huge."
+  }
+ },
+ "pt_ate_toy": {
+  "text": "{{name}} ate the squeaky toy. You can still hear it squeak from the inside.",
+  "choices": {
+   "pay": "Pay the vet",
+   "laugh": "Wait, it will pass",
+   "film": "Film it first"
+  }
+ },
+ "pt_ate_pills": {
+  "text": "Your pills were on the nightstand. Now {{name}} is acting strange and the bottle is empty.",
+  "choices": {
+   "rush": "Race to the vet",
+   "poison": "Call poison control"
+  },
+  "outcomes": {
+   "rush_saved": "Quick thinking saves the day. You never leave pills out again.",
+   "rush_lost": "You were too late. The house is very quiet now."
+  }
+ },
+ "pt_runs_away": {
+  "text": "The door was open for ten seconds. {{name}} was gone in nine.",
+  "choices": {
+   "search": "Search the neighborhood",
+   "posters": "Offer a reward",
+   "wait": "Wait by the door"
+  },
+  "outcomes": {
+   "search_found": "You find {{name}} two streets over, happily rolling in something unspeakable.",
+   "search_gone": "Nothing. You post flyers and leave the porch light on.",
+   "posters_found": "A kid returns {{name}} and takes the reward with the confidence of a banker.",
+   "posters_gone": "Three prank calls and no pet."
+  }
+ },
+ "pt_runs_away_bad": {
+  "text": "{{name}} bolted into traffic chasing something. Brakes screech. You cannot look.",
+  "choices": {
+   "run": "Run to {{name}}",
+   "freeze": "Freeze up"
+  },
+  "outcomes": {
+   "run_fine": "A scraped paw and a very scared driver. {{name}} will be fine.",
+   "run_hurt": "Surgery, a cast, and a long recovery.",
+   "run_lost": "{{name}} does not make it. You sit on the curb a long time."
+  }
+ },
+ "pt_bites_neighbour": {
+  "text": "{{name}} bit the neighbour on the calf. The neighbour is now on your porch with a lawyer's number.",
+  "choices": {
+   "settle": "Settle quietly",
+   "fight": "Fight it",
+   "apology": "Bring a pie and apologise"
+  },
+  "outcomes": {
+   "apology_ok": "The neighbour forgives you. The pie helped. So did the dog treat.",
+   "apology_sue": "He ate the pie and sued anyway."
+  }
+ },
+ "pt_bites_kid": {
+  "text": "{{name}} snapped at a visiting kid who pulled its tail. Everyone is shouting.",
+  "choices": {
+   "own": "Own it, pay the clinic",
+   "blame": "Blame the kid"
+  }
+ },
+ "pt_wins_contest": {
+  "text": "The neighbourhood pet show is on. {{name}} is groomed, perfumed and utterly unimpressed.",
+  "choices": {
+   "enter": "Enter {{name}}",
+   "skip": "Stay home"
+  },
+  "outcomes": {
+   "enter_win": "Best in show! There is a ribbon, a cheque, and a smug look on {{name}}'s face.",
+   "enter_place": "Second place. {{name}} acts like they won anyway.",
+   "enter_disaster": "{{name}} chews the judge's clipboard. Disqualified. Legendary."
+  }
+ },
+ "pt_online_famous": {
+  "text": "A video of {{name}} doing something ridiculous gets shared everywhere. Strangers are making fan art.",
+  "choices": {
+   "lean": "Make an account for it",
+   "mind": "Keep it private"
+  }
+ },
+ "pt_famous_brand": {
+  "text": "A company wants {{name}} to star in an ad. They say the pay is 'extremely competitive'.",
+  "choices": {
+   "sign": "Sign the deal",
+   "no": "Refuse"
+  },
+  "outcomes": {
+   "sign_great": "Pay arrives. {{name}} now has an agent and a snack rider.",
+   "sign_bad": "The ad flops and {{name}} is a meme for the wrong reason."
+  }
+ },
+ "pt_surgery": {
+  "text": "{{name}} limps and cries. The vet says a hip operation could fix it. Quote: a lot.",
+  "choices": {
+   "operate": "Pay for surgery",
+   "meds": "Pain meds only",
+   "letgo": "Let {{name}} go peacefully"
+  },
+  "outcomes": {
+   "operate_success": "The operation works. {{name}} is chasing things again within weeks.",
+   "operate_fail": "Complications on the table. Nothing can be done."
+  }
+ },
+ "pt_sick": {
+  "text": "{{name}} is off their food and sleeping all day. Something is wrong.",
+  "choices": {
+   "vet": "Go to the vet",
+   "home": "Care for {{name}} at home",
+   "ignore": "Hope it passes"
+  }
+ },
+ "pt_fleas": {
+  "text": "You are scratching. {{name}} is scratching. The couch is scratching. Fleas.",
+  "choices": {
+   "bomb": "Bomb the whole house",
+   "vet": "Vet treatment",
+   "natural": "Try lemon and prayer"
+  },
+  "outcomes": {
+   "natural_works": "Surprisingly, it works. You smell like a salad.",
+   "natural_fail": "It does not work. The couch is now hostile territory."
+  }
+ },
+ "pt_stray_friend": {
+  "text": "A scruffy stray has been following {{name}} home. They share their food like old friends.",
+  "choices": {
+   "adopt": "Adopt the stray too",
+   "feed": "Leave out food",
+   "shoo": "Shoo it away"
+  }
+ },
+ "pt_sitting_disaster": {
+  "text": "You pet-sit for a friend. By noon the apartment looks like a crime scene.",
+  "choices": {
+   "clean": "Clean it all up",
+   "confess": "Tell them the truth",
+   "lie": "Blame the cat"
+  }
+ },
+ "pt_couch_destroyed": {
+  "text": "You come home to a snowstorm of couch stuffing. {{name}} sits in the middle, calm as a monk.",
+  "choices": {
+   "buy": "Buy a new couch",
+   "tape": "Duct-tape it",
+   "train": "Hire a trainer"
+  }
+ },
+ "pt_snake_escape": {
+  "text": "{{name}} the snake is not in the tank. The lid is on the floor. Sleep tonight will be interesting.",
+  "choices": {
+   "hunt": "Search the house",
+   "call": "Call a snake handler",
+   "sleep": "Sleep with the lights on"
+  },
+  "outcomes": {
+   "hunt_found": "It is in a boot. The boot is now evidence.",
+   "hunt_neighbour": "It turns up in the neighbour's bathtub. You owe a casserole."
+  }
+ },
+ "pt_parrot_swears": {
+  "text": "{{name}} the parrot has learned a new word. It is the word you said when you stubbed your toe. Guests are over.",
+  "choices": {
+   "laugh": "Laugh along",
+   "cover": "Cover the cage with a cloth",
+   "teach": "Teach it a polite word"
+  }
+ },
+ "pt_horse_race": {
+  "text": "{{name}} the horse has the legs for racing. A track owner offers an entry slot and a stern look.",
+  "choices": {
+   "enter": "Enter the race",
+   "decline": "Keep {{name}} as a companion"
+  },
+  "outcomes": {
+   "enter_win": "{{name}} wins by a nose. You cry a little in public.",
+   "enter_place": "A respectable third. {{name}} seems satisfied with the oats.",
+   "enter_lose": "Last place, and a costly lesson about trainers."
+  }
+ },
+ "pt_hamster_funeral": {
+  "text": "{{name}} the hamster has passed on, peacefully, mid wheel-run. The kitchen goes quiet.",
+  "choices": {
+   "funeral": "Hold a small funeral",
+   "flush": "Flush it quietly",
+   "replace": "Buy a lookalike"
+  }
+ },
+ "pt_old_age": {
+  "text": "{{name}} is slowing down. Grey muzzle, long naps, stairs are a problem. Time is the thing now.",
+  "choices": {
+   "mourn": "Mourn ahead of time",
+   "treasure": "Treasure the time",
+   "bucket": "One more big adventure"
+  },
+  "outcomes": {
+   "bucket_magic": "A perfect day at the beach. {{name}} smiles like a puppy.",
+   "bucket_tired": "It is a bit much for {{name}}, but the memories are good."
+  }
+ },
+ "pt_old_dies": {
+  "text": "{{name}} does not wake up. It is quiet and gentle. You hold the collar for a long while.",
+  "choices": {
+   "bury": "Bury in the garden",
+   "cremate": "Cremate and keep the ashes",
+   "vet": "Let the vet handle it"
+  }
+ },
+ "pt_saves_fire": {
+  "text": "Smoke. {{name}} will not stop barking at your bedroom door. You wake up coughing and see the glow.",
+  "choices": {
+   "thank": "Hug {{name}} and run",
+   "hero": "Tell everyone about it"
+  }
+ },
+ "pt_saves_burglar": {
+  "text": "A noise at the window at 3 a.m. {{name}} gets between you and the dark doorway and growls.",
+  "choices": {
+   "hold": "Hold {{name}} back",
+   "let": "Let {{name}} go"
+  }
+ },
+ "pt_trick": {
+  "text": "You teach {{name}} a new trick. It takes forty treats and a lot of patience.",
+  "choices": {
+   "teach": "Keep practising",
+   "quit": "Give up"
+  },
+  "outcomes": {
+   "teach_works": "It works! {{name}} performs it for anyone who looks.",
+   "teach_fails": "{{name}} refuses. They have principles."
+  }
+ },
+ "pt_vet_checkup": {
+  "text": "Annual vet day. {{name}} is hiding under the car.",
+  "choices": {
+   "go": "Drag {{name}} in",
+   "full": "Full panel and vaccines",
+   "skip": "Skip it"
+  }
+ },
+ "pt_new_litter": {
+  "text": "{{name}} has become a parent. Surprise. There are five of them.",
+  "choices": {
+   "keep": "Keep all of them",
+   "sell": "Sell them",
+   "shelter": "Take them to a shelter"
+  },
+  "outcomes": {
+   "keep_chaos": "Chaos. Love. Hair on everything.",
+   "keep_adopt": "Friends take two. The other three charm your neighbours."
+  }
+ },
+ "pt_bed_hog": {
+  "text": "{{name}} has decided your bed is theirs. You are on the edge. The edge is two inches wide.",
+  "choices": {
+   "share": "Share the bed",
+   "boundary": "Set a firm boundary",
+   "buy": "Buy a bigger bed"
+  }
+ },
+ "pt_vacation": {
+  "text": "You have a trip planned. {{name}} watches your suitcase like it owes them money.",
+  "choices": {
+   "kennel": "Pet hotel",
+   "cancel": "Cancel the trip",
+   "bring": "Bring {{name}} along"
+  },
+  "outcomes": {
+   "bring_fun": "An excellent trip. {{name}} insists on the window seat.",
+   "bring_mess": "Hotel cleaning fees and a lost sandal."
+  }
+ },
+ "pt_walk_charm": {
+  "text": "On your walk, {{name}} charms a stranger. The stranger is surprisingly friendly and not hard to look at.",
+  "choices": {
+   "chat": "Start a conversation",
+   "walk": "Keep walking"
+  },
+  "outcomes": {
+   "chat_date": "A phone number, a coffee date, and possibly a good story for later.",
+   "chat_friend": "A new friend, mostly thanks to {{name}}.",
+   "chat_nothing": "Just a nice chat and a sniff."
+  }
+ },
+ "pt_trash_dive": {
+  "text": "The trash can is on its side. {{name}} is inside, eating a feast of leftovers.",
+  "choices": {
+   "clean": "Clean it up",
+   "vet": "Check with the vet",
+   "laugh": "Photograph the mess"
+  }
+ },
+ "pt_thunder": {
+  "text": "A violent thunderstorm. {{name}} is shaking behind the sofa and will not come out.",
+  "choices": {
+   "comfort": "Sit with {{name}}",
+   "calm": "Anxiety meds",
+   "ignore": "Wait it out"
+  }
+ },
+ "pt_cat_gift": {
+  "text": "{{name}} proudly brings you a gift. It is a bird. It is very dead.",
+  "choices": {
+   "praise": "Praise {{name}}",
+   "bury": "Quietly bury it",
+   "scold": "Scold them"
+  }
+ },
+ "pt_lost_collar": {
+  "text": "{{name}} comes home without a collar. You also notice a new scratch on one ear.",
+  "choices": {
+   "chip": "Microchip {{name}}",
+   "new": "Buy a new collar",
+   "ignore": "It will be fine"
+  }
+ },
+ "pt_dog_park": {
+  "text": "At the dog park, {{name}} meets a rival. They circle each other, tails up.",
+  "choices": {
+   "let": "Let them play",
+   "leash": "Keep {{name}} leashed"
+  },
+  "outcomes": {
+   "let_friends": "They become best friends in under a minute.",
+   "let_fight": "A scuffle and a small vet bill."
+  }
+ },
+ "pt_diet": {
+  "text": "{{name}} has gotten round. The vet says 'weight management'. {{name}} says 'treats'.",
+  "choices": {
+   "diet": "Strict diet",
+   "exercise": "Walk more together",
+   "ignore": "Keep the treats coming"
+  }
+ },
+ "pt_swim_pond": {
+  "text": "{{name}} jumps into the pond and comes back covered in mud, weeds and pride.",
+  "choices": {
+   "bath": "Bath time",
+   "groomer": "Send to the groomer",
+   "jump": "Jump in too"
+  }
+ },
+ "pt_birthday": {
+  "text": "It is {{name}}'s birthday, as far as you can tell. You know you are being ridiculous about it.",
+  "choices": {
+   "party": "Throw a party",
+   "treat": "Special treat",
+   "skip": "It is just a pet"
+  }
+ },
+ "pt_neighbour_complaint": {
+  "text": "{{name}} has been howling while you are out. The neighbours slip a note under your door.",
+  "choices": {
+   "trainer": "Hire a trainer",
+   "toys": "Leave toys and music",
+   "ignore": "Ignore the note"
+  }
+ },
+ "pt_moving": {
+  "text": "You are moving. The new place has a 'no pets' clause. {{name}} stares at you.",
+  "choices": {
+   "fight": "Negotiate the lease",
+   "hide": "Hide {{name}}",
+   "rehome": "Find {{name}} a new home"
+  }
+ },
+ "pt_pet_therapy": {
+  "text": "After a bad week, {{name}} sits on your chest and purrs, or breathes loudly. Either way, it helps.",
+  "choices": {
+   "accept": "Accept the comfort",
+   "talk": "Tell {{name}} everything"
+  }
+ },
+ "pt_social_walk": {
+  "text": "A neighbour compliments {{name}} every day on your walks. They are clearly here for the pet.",
+  "choices": {
+   "chat": "Chat for a while",
+   "nod": "Nod and go on"
+  }
+ },
+ "pt_pet_scandal": {
+  "text": "{{name}} dug up the neighbour's prize roses. The neighbour posts a photo with a long caption.",
+  "choices": {
+   "replace": "Replace the roses",
+   "laugh": "Laugh it off",
+   "deny": "Deny everything"
+  },
+  "outcomes": {
+   "deny_pass": "Nobody can prove it. {{name}} is smug.",
+   "deny_caught": "The security camera has a good angle."
+  }
+ },
+ "pt_senior_rescue": {
+  "text": "A shelter calls. An old, tired animal needs a quiet home. {{name}} watches you across the kitchen.",
+  "choices": {
+   "adopt": "Take them in",
+   "donate": "Donate supplies",
+   "decline": "Not now"
+  }
+ }
+}

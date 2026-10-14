@@ -22,7 +22,7 @@ export function dateGender(life: Life, rng: Rng): Gender {
 export type Interaction =
   | 'spend_time' | 'gift' | 'compliment' | 'insult' | 'ask_money' | 'flirt' | 'propose' | 'break_up'
   | 'have_child' | 'adopt' | 'prenup' | 'play' | 'walk' | 'movie_night' | 'vacation'
-  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up' | 'ask_out' | 'give_money' | 'elope' | 'counseling'
+  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up' | 'ask_out' | 'give_money' | 'elope' | 'counseling' | 'best_friend' | 'spy'
 
 export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['kind'][] | 'all'; minAge: number }> = {
   spend_time: { cost: 0, kinds: 'all', minAge: 0 },
@@ -51,6 +51,8 @@ export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['ki
   give_money: { cost: 500, kinds: ['partner', 'spouse', 'child', 'sibling', 'friend', 'mother', 'father'], minAge: 16 },
   elope: { cost: 300, kinds: ['partner'], minAge: 18 },
   counseling: { cost: 900, kinds: ['spouse'], minAge: 18 },
+  best_friend: { cost: 0, kinds: ['friend'], minAge: 6 },
+  spy: { cost: 400, kinds: ['partner', 'spouse'], minAge: 18 },
 }
 
 export function availableInteractions(life: Life, p: Person): Interaction[] {
@@ -62,6 +64,7 @@ export function availableInteractions(life: Life, p: Person): Interaction[] {
     if ((k === 'have_child' || k === 'adopt') && life.age > 55) return false
     if (life.prison && !['spend_time', 'compliment', 'insult', 'break_up', 'conversation'].includes(k)) return false
     if (k === 'conversation' && p.kind === 'pet') return false
+    if (k === 'best_friend' && (p.bestFriend || p.relationship < 70)) return false
     if (k === 'ask_out' && (life.people.some((x) => (x.kind === 'partner' || x.kind === 'spouse') && x.alive) || !attractedTo(life, p.gender))) return false
     return true
   })
@@ -98,7 +101,7 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
       if (rng.chance(0.3 + warm * 0.5)) { life.flags.prenup = true; key = 'people.did.prenup_yes' } else { bump(-10); key = 'people.did.prenup_no' }
       break
     case 'propose':
-      if (rng.chance(0.2 + warm * 0.75)) { marry(life, p); return 'people.married' }
+      if (rng.chance(0.2 + warm * 0.75)) { p.engaged = true; happy(10); log(life, 'good', 'people.engaged', { name: p.firstName }); return 'people.engaged' }
       bump(-10); happy(-8); key = 'people.did.propose_no'; break
     case 'break_up': breakup(life, p); return p.kind === 'ex' ? 'people.brokeUp' : key
     case 'have_child':
@@ -111,6 +114,12 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
     case 'prank': if (rng.chance(0.5)) { bump(rng.int(3, 7)); happy(4) } else { bump(-rng.int(6, 12)); key = 'people.did.prank_flop' } break
     case 'rumor': p.relationship = clamp(p.relationship - rng.int(8, 15)); life.karma = clamp(life.karma - 5, -100, 100); happy(1); break
     case 'deal': { const cash = rng.int(50, 600); if (rng.chance(0.7)) { life.money += cash; bump(-2); key = 'people.did.deal_yes'; log(life, 'info', key, { name: p.firstName, money: cash }); return key } bump(-5); key = 'people.did.deal_no'; break }
+    case 'best_friend':
+      if (rng.chance(0.5 + warm * 0.4)) { for (const x of life.people) x.bestFriend = false; p.bestFriend = true; happy(6); key = 'people.did.best_friend_yes' } else { bump(-4); key = 'people.did.best_friend_no' }
+      break
+    case 'spy':
+      if ((p.craziness ?? 50) > 65 && rng.chance(0.4)) { bump(-20); key = 'people.did.spy_caught' } else { key = 'people.did.spy_clean' }
+      break
     case 'give_money': bump(rng.int(6, 12)); break
     case 'elope': marry(life, p); return 'people.married'
     case 'counseling': if (rng.chance(0.7)) { bump(rng.int(10, 20)) } else { bump(-3); key = 'people.did.counseling_flop' } break
@@ -145,6 +154,7 @@ export function refreshDateBoard(life: Life, rng: Rng) {
       gender: dateGender(life, rng),
       relationship: rng.int(40, 70),
       income: life.age >= 18 ? rng.int(15_000, 120_000) : 0,
+      money: life.age >= 18 ? rng.int(0, 150_000) : 0,
     }))
 }
 
@@ -179,4 +189,30 @@ export function relationshipsYear(life: Life, rng: Rng) {
   // widowhood
   const deadSpouse = life.people.find((p) => p.kind === 'spouse' && !p.alive)
   if (deadSpouse) { deadSpouse.kind = 'ex'; life.flags.widowed = true }
+}
+
+export const VENUES = [
+  { id: 'courthouse', cost: 300 }, { id: 'backyard', cost: 1_500 }, { id: 'beach', cost: 6_000 },
+  { id: 'banquet_hall', cost: 12_000 }, { id: 'castle', cost: 45_000 }, { id: 'private_island', cost: 250_000 },
+]
+export const HONEYMOONS = [
+  { id: 'none', cost: 0 }, { id: 'road_trip', cost: 800 }, { id: 'city_break', cost: 2_500 },
+  { id: 'tropical', cost: 7_000 }, { id: 'world_tour', cost: 40_000 },
+]
+export function weddingCost(venue: string, honeymoon: string) {
+  return (VENUES.find((v) => v.id === venue)?.cost ?? 0) + (HONEYMOONS.find((h) => h.id === honeymoon)?.cost ?? 0)
+}
+/** Marry an engaged partner with a planned wedding. */
+export function holdWedding(life: Life, personId: string, venue: string, honeymoon: string): boolean {
+  const p = life.people.find((x) => x.id === personId && x.alive && x.engaged)
+  if (!p) return false
+  const cost = weddingCost(venue, honeymoon)
+  if (life.money < cost) return false
+  life.money -= cost
+  p.engaged = false
+  marry(life, p)
+  const joy = venue === 'courthouse' ? 2 : venue === 'private_island' ? 15 : 8
+  life.stats.happiness = clamp(life.stats.happiness + joy + (honeymoon === 'none' ? 0 : 4))
+  log(life, 'info', 'people.wedding', { venue, honeymoon, money: cost })
+  return true
 }

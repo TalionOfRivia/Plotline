@@ -1,0 +1,772 @@
+{
+  "wk2_unpaid_ot": {
+    "text": "Your supervisor strolls over at 4:55. 'We need you this weekend. No extra pay, but it shows commitment.'",
+    "choices": {
+      "agree": "Agree and smile",
+      "explain": "Explain your limits",
+      "insult": "Refuse and insult him"
+    },
+    "outcomes": {
+      "respected": "He grunts, nods, and finds someone else. You get a little more respect.",
+      "noted": "He writes something down. You are now 'not a team player'.",
+      "cathartic": "The whole floor heard. You are a legend for about a day.",
+      "fired": "Security arrives before you finish your sentence. Your badge stops working.",
+      "warning": "A formal warning lands in your file."
+    }
+  },
+  "wk2_ot_crunch": {
+    "text": "A launch is slipping. The team is sleeping at the office. Pizza boxes cover every flat surface.",
+    "choices": {
+      "crunch": "Pull the all-nighters",
+      "pace": "Work normal hours",
+      "delegate": "Rally the team"
+    },
+    "outcomes": {
+      "smooth": "You split the work smartly. It ships on time, and nobody cries.",
+      "mess": "The plan collapses at 3 a.m. You end up doing it all anyway."
+    }
+  },
+  "wk2_gossip_war": {
+    "text": "Two coworkers are feuding and both want you on their side. Lunch has become a diplomatic summit.",
+    "choices": {
+      "side_a": "Side with the loud one",
+      "neutral": "Stay neutral",
+      "mediate": "Try to mediate"
+    },
+    "outcomes": {
+      "peace": "They shake hands, grudgingly. You're the office diplomat now.",
+      "both_hate": "They unite against you. Impressive, really."
+    }
+  },
+  "wk2_desk_thief": {
+    "text": "Your good stapler, your good mug, and your good chair have all vanished. Someone is shopping from your desk.",
+    "choices": {
+      "trap": "Set a trap",
+      "lock": "Lock everything up",
+      "shrug": "Let it go"
+    },
+    "outcomes": {
+      "caught": "You catch a coworker red-handed. Awkward, but you get the chair back.",
+      "wrong": "You accuse the wrong person. The apology cake is on you."
+    }
+  },
+  "wk2_office_crush": {
+    "text": "A colleague has been lingering by your desk. You both pretend it's about spreadsheets. It is not about spreadsheets.",
+    "choices": {
+      "ask": "Ask them out",
+      "flirt": "Keep flirting quietly",
+      "ignore": "Keep it professional"
+    },
+    "outcomes": {
+      "yes": "They say yes. You spend the week smiling at nothing.",
+      "no": "A polite no. Now every coffee run is a hostage negotiation."
+    }
+  },
+  "wk2_crush_married": {
+    "text": "After the team dinner, a married coworker walks you to your car and doesn't walk away.",
+    "choices": {
+      "kiss": "Lean in",
+      "leave": "Say goodnight and go"
+    },
+    "outcomes": {
+      "secret": "One night. Then a secret that follows you into every meeting.",
+      "exposed": "Someone saw. By Monday the whole office knows."
+    }
+  },
+  "wk2_crush_aftermath": {
+    "text": "The fling with your coworker ended badly. You still share a printer, a kitchen, and a Tuesday meeting.",
+    "choices": {
+      "transfer": "Ask for a transfer",
+      "tough": "Act normal",
+      "revenge": "Spread rumours"
+    }
+  },
+  "wk2_hr_complaint": {
+    "text": "HR calls you in. A coworker filed a complaint about a joke you made. You remember the joke. It was not good.",
+    "choices": {
+      "apologize": "Apologize sincerely",
+      "defend": "Defend yourself",
+      "quit_cry": "Storm out"
+    },
+    "outcomes": {
+      "cleared": "HR decides it's a misunderstanding. A mandatory training slide deck is your only punishment.",
+      "written": "A written warning, and a very long video about respect."
+    }
+  },
+  "wk2_hr_false": {
+    "text": "A coworker accuses you of something you didn't do. Their story has details that almost fit.",
+    "choices": {
+      "evidence": "Bring emails as proof",
+      "lawyer": "Hire an employment lawyer",
+      "quiet": "Say nothing"
+    },
+    "outcomes": {
+      "vindicated": "Your records clear you in minutes. The accuser is reassigned.",
+      "shrug": "Inconclusive. The cloud hangs over you for months."
+    }
+  },
+  "wk2_report_harass": {
+    "text": "You watch a manager corner a junior coworker at the party. She looks at you across the room, asking silently.",
+    "choices": {
+      "step_in": "Step in and report it",
+      "look_away": "Look away",
+      "text_her": "Text her support"
+    },
+    "outcomes": {
+      "justice": "He's quietly gone within a month. She thanks you at the coffee machine.",
+      "retaliation": "He stays. Your next review is mysteriously harsh."
+    }
+  },
+  "wk2_report_thief": {
+    "text": "You see a coworker pocketing company supplies. Then a laptop. Then, slowly, the whole supply closet.",
+    "choices": {
+      "report": "Report them",
+      "confront": "Confront them",
+      "join": "Take a monitor too"
+    },
+    "outcomes": {
+      "stops": "They go red, return the stuff, and avoid you for a month.",
+      "threat": "They deny it, and now they have a grudge."
+    }
+  },
+  "wk2_union_drive": {
+    "text": "Someone slid a union flyer under your keyboard. Management sent an email about 'a family culture' the same afternoon.",
+    "choices": {
+      "organize": "Help organize",
+      "vote_yes": "Quietly vote yes",
+      "inform": "Tell management"
+    },
+    "outcomes": {
+      "win": "The vote passes. Pay and hours improve for everyone.",
+      "crushed": "Management fights it. Your name ends up on a list."
+    }
+  },
+  "wk2_union_strike": {
+    "text": "The union calls a one-day strike. The picket line is cold, loud, and surprisingly well-catered.",
+    "choices": {
+      "picket": "Join the picket",
+      "cross": "Cross the line",
+      "stay_home": "Stay home"
+    }
+  },
+  "wk2_layoff_rumor": {
+    "text": "Everyone is whispering. The big boss is flying in. Three people have already updated their resumes.",
+    "choices": {
+      "prep": "Quietly job hunt",
+      "shine": "Work twice as hard",
+      "ask": "Ask your boss directly"
+    },
+    "outcomes": {
+      "safe": "Your name stays off the list. The empty desk next to you is not yours.",
+      "cut": "Cut anyway. A box, a hug, a handshake.",
+      "rattled": "Nothing happens. You age five years in the waiting."
+    }
+  },
+  "wk2_layoff_survivor": {
+    "text": "Layoffs happened. You survived. The team shrank by a third and the workload did not.",
+    "choices": {
+      "thank": "Take on extra work",
+      "support": "Check on the laid off",
+      "push": "Demand a raise"
+    },
+    "outcomes": {
+      "granted": "Guilt money. You take it.",
+      "laughed": "They remind you that you are lucky to have a job."
+    }
+  },
+  "wk2_perf_review": {
+    "text": "Annual review day. Your manager has a printed form, a nervous smile, and a speech about 'trajectory'.",
+    "choices": {
+      "sell": "Pitch your wins",
+      "ask_raise": "Ask for a raise",
+      "coast": "Say little"
+    },
+    "outcomes": {
+      "great": "Strong review. A decent raise lands next payroll.",
+      "ok": "'Meets expectations.' The most beige phrase ever invented.",
+      "bad": "He lists every mistake since the last review."
+    }
+  },
+  "wk2_client_free": {
+    "text": "A big client wants 'just a small thing' done for free. It would take you a week. He mentions future contracts.",
+    "choices": {
+      "free": "Do it free",
+      "price": "Quote a price",
+      "discount": "Offer half price"
+    },
+    "outcomes": {
+      "pays": "He grumbles and pays. Respect, of a sort.",
+      "walks": "He leaves in a huff and your boss isn't happy."
+    }
+  },
+  "wk2_client_late": {
+    "text": "A client is ninety days late on a big invoice and answers your emails with emojis only.",
+    "choices": {
+      "call": "Call his boss",
+      "wait": "Keep waiting",
+      "legal": "Send a lawyer letter"
+    },
+    "outcomes": {
+      "paid": "The money arrives within two days.",
+      "lost": "He's furious. The account quietly goes elsewhere."
+    }
+  },
+  "wk2_credit_theft": {
+    "text": "Your boss presents your idea to the executives as his own. You are standing right there holding the slide clicker.",
+    "choices": {
+      "interrupt": "Speak up in the room",
+      "email": "Send a paper-trail email",
+      "swallow": "Swallow it"
+    },
+    "outcomes": {
+      "noticed": "The execs turn and look at you. Suddenly you have a future.",
+      "punished": "He smiles through his teeth. He'll remember this."
+    }
+  },
+  "wk2_idea_meeting": {
+    "text": "In a meeting, a coworker repeats your point with more confidence and gets the applause.",
+    "choices": {
+      "tag": "Say \"as I mentioned\"",
+      "private": "Talk to them later",
+      "payback": "Take their next idea"
+    }
+  },
+  "wk2_retreat": {
+    "text": "The company sends everyone to a retreat in the countryside. There will be trust falls and a ropes course and a very enthusiastic facilitator.",
+    "choices": {
+      "commit": "Go all in",
+      "hide": "Hide in the bar",
+      "network": "Network with execs"
+    },
+    "outcomes": {
+      "noticed": "A director remembers your name. Voluntarily.",
+      "cringe": "You overshoot. 'Desperate' is the word going around."
+    }
+  },
+  "wk2_retreat_fall": {
+    "text": "At the retreat, you're asked to fall backwards into your teammates' arms. Their expressions say 'maybe'.",
+    "choices": {
+      "fall": "Fall back",
+      "refuse": "Politely decline"
+    },
+    "outcomes": {
+      "caught": "They catch you. Somehow it works. You nearly tear up.",
+      "dropped": "The ground catches you instead. Everyone is very sorry."
+    }
+  },
+  "wk2_work_injury": {
+    "text": "A shelf, a ladder, a wet floor. Something goes wrong and you are suddenly on your back looking at the ceiling tiles.",
+    "choices": {
+      "hospital": "Go to the hospital",
+      "shake": "Shake it off",
+      "sue": "File a claim"
+    },
+    "outcomes": {
+      "minor": "A sprain and a week of rest. Workers' comp covers most of it.",
+      "serious": "Broken bone. Months of physio and a lot of paperwork.",
+      "fatal": "It was worse than it looked. The ambulance came too late.",
+      "settle": "They settle quietly. You get paid, and you get stared at.",
+      "lose": "Dismissed. Legal fees stick."
+    }
+  },
+  "wk2_rsi": {
+    "text": "Your wrist has started to hum with a low, expensive pain. The doctor says 'ergonomics' like it's a diagnosis.",
+    "choices": {
+      "chair": "Demand a better setup",
+      "push": "Work through it",
+      "therapy": "Pay for physio"
+    }
+  },
+  "wk2_embezzle_temptation": {
+    "text": "A calculation error in the books leaves $30,000 in an account nobody checks. You are the only one who knows.",
+    "choices": {
+      "take": "Skim a little",
+      "report": "Report the error",
+      "ignore": "Pretend you saw nothing"
+    },
+    "outcomes": {
+      "clean": "No one ever looks. You buy things and sleep badly.",
+      "caught": "The audit finds it. The police call that afternoon."
+    }
+  },
+  "wk2_petty_cash": {
+    "text": "The petty cash drawer is unlocked. It has $200. Rent is due on Friday.",
+    "choices": {
+      "borrow": "Borrow it quietly",
+      "leave": "Lock it",
+      "mention": "Tell the office manager"
+    },
+    "outcomes": {
+      "repay": "You put it back before payday. Your heart is still pounding.",
+      "seen": "A camera behind the plant saw everything."
+    }
+  },
+  "wk2_referral_friend": {
+    "text": "A friend whispers: their company is hiring for a better role. Higher pay, nicer office, real title. They can vouch for you.",
+    "choices": {
+      "accept": "Accept the referral",
+      "stay": "Stay loyal",
+      "tell_boss": "Use it as leverage"
+    },
+    "outcomes": {
+      "in": "You interview well. The offer comes fast.",
+      "out": "They went with someone cheaper. Your friend says sorry.",
+      "counter": "Your boss counters with a raise.",
+      "bluff": "He calls your bluff. Now it's awkward."
+    }
+  },
+  "wk2_referral_give": {
+    "text": "A friend asks you to put in a good word for them at your company. They are charming. They are also late to everything.",
+    "choices": {
+      "vouch": "Vouch for them",
+      "pass": "Politely pass",
+      "help_cv": "Just fix their resume"
+    },
+    "outcomes": {
+      "shines": "They're brilliant. You look wise.",
+      "embarrass": "They are late on day one. And day two."
+    }
+  },
+  "wk2_headhunter": {
+    "text": "A headhunter slides into your inbox with 'an exciting opportunity'. The email has no salary and eleven exclamation marks.",
+    "choices": {
+      "chat": "Take the call",
+      "ghost": "Ignore it",
+      "forward": "Forward it to a friend"
+    }
+  },
+  "wk2_lie_customer": {
+    "text": "A customer asks if the product will arrive by Friday. It will not. Your manager nods at you to say yes.",
+    "choices": {
+      "lie": "Say yes",
+      "truth": "Tell the truth",
+      "vague": "Dodge the question"
+    },
+    "outcomes": {
+      "luck": "It arrives Friday by a miracle.",
+      "blowup": "It does not. The customer is not nice about it."
+    }
+  },
+  "wk2_backdate_doc": {
+    "text": "Your boss asks you to backdate a contract so an audit will pass. 'Everyone does it.'",
+    "choices": {
+      "sign": "Sign it",
+      "decline": "Decline firmly",
+      "copy": "Copy the email trail"
+    },
+    "outcomes": {
+      "fine": "Nothing happens. The knot in your stomach stays.",
+      "audit": "The auditor circles the date twice."
+    }
+  },
+  "wk2_four_day_week": {
+    "text": "The company launches a four-day work week pilot. Management insists productivity must stay the same. Fridays are suddenly yours.",
+    "choices": {
+      "rest": "Rest and recharge",
+      "sidegig": "Use it for a side gig",
+      "squeeze": "Cram 5 days into 4"
+    },
+    "outcomes": {
+      "pace": "You find a rhythm. The pilot becomes permanent.",
+      "burn": "You work the same hours with less sleep."
+    }
+  },
+  "wk2_remote_work": {
+    "text": "Your team goes remote for the season. Your bed is now two metres from your desk. So is your fridge.",
+    "choices": {
+      "routine": "Build a routine",
+      "pajamas": "Stay in pyjamas",
+      "moonlight": "Take a second job"
+    },
+    "outcomes": {
+      "nobody": "Nobody notices. You count the extra money.",
+      "busted": "A coworker sees both of your names on the same call."
+    }
+  },
+  "wk2_printer_war": {
+    "text": "The office printer is jammed again. Notes appear on it: 'Fix it', 'Who broke it', 'I KNOW who broke it'.",
+    "choices": {
+      "fix": "Fix it yourself",
+      "note": "Leave a snarky note",
+      "kick": "Kick it"
+    },
+    "outcomes": {
+      "hero": "You pull out a crumpled sandwich wrapper. You are a hero.",
+      "worse": "It starts smoking. The fire alarm answers."
+    }
+  },
+  "wk2_holiday_disaster": {
+    "text": "The holiday party has an open bar. By 10 p.m., Gary from accounting is on the table and the CEO is crying.",
+    "choices": {
+      "party": "Join the chaos",
+      "leave_early": "Leave at 9",
+      "driver": "Be the designated driver"
+    },
+    "outcomes": {
+      "legend": "You dance like nobody is watching. Everybody is watching. It's a hit.",
+      "shame": "You tell the CEO what you really think. He remembers every word."
+    }
+  },
+  "wk2_holiday_bonus": {
+    "text": "Bonus season. The envelope is thinner than last year's. Someone in marketing got a boat.",
+    "choices": {
+      "take": "Take it graciously",
+      "negotiate": "Ask for more",
+      "complain": "Complain loudly"
+    },
+    "outcomes": {
+      "more": "Surprisingly, they find another $1,500.",
+      "none": "They give you a lecture about 'being a team'."
+    }
+  },
+  "wk2_burnout": {
+    "text": "You stare at your screen and feel nothing. The emails are blurred. The thought of tomorrow is a wall.",
+    "choices": {
+      "leave": "Take medical leave",
+      "push": "Push through",
+      "therapy": "Start therapy"
+    },
+    "outcomes": {
+      "ok": "You limp along. Nothing breaks. Yet.",
+      "crash": "You break in the shower on a Wednesday. It's a long fall."
+    }
+  },
+  "wk2_burnout_vacation": {
+    "text": "You haven't had a day off in eleven months. Your manager says 'whenever works' with a look that means 'never'.",
+    "choices": {
+      "book": "Book a trip anyway",
+      "stay": "Stay and work",
+      "sick": "Call in sick for a week"
+    },
+    "outcomes": {
+      "rested": "A week of nothing. It's glorious.",
+      "suspicious": "HR asks for a doctor's note. You don't have one."
+    }
+  },
+  "wk2_retirement_party": {
+    "text": "They throw you a retirement party. There's a sheet cake with your name misspelled and a card signed by people who don't know you.",
+    "choices": {
+      "speech": "Give a speech",
+      "thanks": "Say a quick thanks",
+      "sneak": "Leave early"
+    },
+    "outcomes": {
+      "tears": "The room gets very quiet. A few people wipe their eyes.",
+      "rambled": "You ramble for twenty minutes. People clap out of mercy."
+    }
+  },
+  "wk2_retirement_push": {
+    "text": "The company offers you early retirement with a modest package. Your boss says 'it's time for fresh blood'.",
+    "choices": {
+      "take": "Take the package",
+      "refuse": "Refuse and stay",
+      "lawyer": "Call a lawyer"
+    },
+    "outcomes": {
+      "stays": "They back off. You keep your desk, and your enemies.",
+      "pushed": "They find a reason soon after. You leave with less."
+    }
+  },
+  "wk2_whistleblow_big": {
+    "text": "You find proof that the company is dumping waste illegally. You have the files on a USB stick. Your hand shakes.",
+    "choices": {
+      "leak": "Go to the press",
+      "internal": "Report internally",
+      "burn": "Delete the files"
+    },
+    "outcomes": {
+      "payout": "The investigation wins. A regulator rewards you with a major payout.",
+      "crushed": "The company buries you. You become 'the one who talked'."
+    }
+  },
+  "wk2_promotion_board": {
+    "text": "A seat opened up. The promotion board has three people in dark suits and a clipboard. They ask: 'Where do you see yourself in five years?'",
+    "choices": {
+      "confident": "Answer with confidence",
+      "joke": "Make a joke",
+      "withdraw": "Withdraw your name"
+    },
+    "outcomes": {
+      "promoted": "Two weeks later: a new title, a new desk, a new type of stress.",
+      "passed_over": "They picked someone with better hair. You aren't bitter.",
+      "liked": "They laugh, and the joke lands you the job.",
+      "flat": "Silence. Someone coughs."
+    }
+  },
+  "wk2_promotion_denied": {
+    "text": "You didn't get the promotion. Your manager says 'next year', with the voice of someone who has said it before.",
+    "choices": {
+      "push": "Ask for feedback",
+      "sulk": "Quietly resent them",
+      "interview": "Update the resume"
+    },
+    "outcomes": {
+      "real": "Useful, honest notes. You write them down.",
+      "fluff": "'Be more visible.' Whatever that means."
+    }
+  },
+  "wk2_new_boss": {
+    "text": "A new manager arrives. She rearranges the seating chart, bans meetings on Fridays and learns everyone's coffee order. Suspicious.",
+    "choices": {
+      "buddy": "Befriend her",
+      "wait": "Wait and see",
+      "resist": "Resist the changes"
+    },
+    "outcomes": {
+      "ally": "She backs you in a tough meeting. Valuable.",
+      "tool": "People say you're the new boss's pet."
+    }
+  },
+  "wk2_parking_war": {
+    "text": "Someone keeps parking in your spot. There are no names on the spots. Everyone knows whose it is.",
+    "choices": {
+      "note": "Leave a polite note",
+      "block": "Block them in",
+      "shrug": "Park elsewhere"
+    },
+    "outcomes": {
+      "win": "The car vanishes by lunch. You enjoy your spot.",
+      "war": "They key your door. This is now a war."
+    }
+  },
+  "wk2_mandatory_fun": {
+    "text": "Mandatory fun day: karaoke at noon. Attendance is voluntary but also tracked.",
+    "choices": {
+      "sing": "Sing your heart out",
+      "dj": "Run the playlist",
+      "bathroom": "Hide in the bathroom"
+    },
+    "outcomes": {
+      "star": "You nail the chorus. They ask for an encore.",
+      "flat": "The notes are not friends with your voice."
+    }
+  },
+  "wk2_mentee": {
+    "text": "A fresh hire asks you to be their mentor. They remind you of yourself at their age, except better dressed.",
+    "choices": {
+      "mentor": "Agree",
+      "decline": "Politely decline",
+      "pass_on": "Introduce someone else"
+    },
+    "outcomes": {
+      "flourish": "They flourish. You feel useful, and old.",
+      "stuck": "They are needy. You spend your afternoons holding hands."
+    }
+  },
+  "wk2_merger": {
+    "text": "Rumours of a merger. The brochures say 'synergy'. The employees say 'layoffs with extra steps'.",
+    "choices": {
+      "embrace": "Embrace the change",
+      "resist": "Grumble",
+      "jump": "Jump before the merger"
+    },
+    "outcomes": {
+      "rise": "The new company needs people who know the old systems. You.",
+      "lost": "You become a duplicate. The new company already has you."
+    }
+  },
+  "wk2_ai_tool": {
+    "text": "The company rolls out a tool that does half your job in four minutes. Management calls it 'empowering'.",
+    "choices": {
+      "master": "Master the tool",
+      "distrust": "Quietly distrust it",
+      "train": "Teach others"
+    },
+    "outcomes": {
+      "valued": "You become the go-to expert.",
+      "replaced": "You trained your replacement. Who thanks you with a muffin."
+    }
+  },
+  "wk2_caught_sleeping": {
+    "text": "You nod off at your desk after lunch. When you wake, a manager is standing there holding a very large coffee.",
+    "choices": {
+      "own": "Own it",
+      "lie": "Say you were thinking",
+      "nap_home": "Nap at home from now on"
+    },
+    "outcomes": {
+      "buys": "'Deep work,' he says, and walks away impressed.",
+      "no": "He gave you a look. A look you will feel for weeks."
+    }
+  },
+  "wk2_boss_affair": {
+    "text": "You walk into a supply closet and find your boss with someone who is definitely not their spouse.",
+    "choices": {
+      "blackmail": "Hint that you saw",
+      "silent": "Forget it happened",
+      "tell": "Tell HR"
+    },
+    "outcomes": {
+      "paid": "You get a raise. And a lifelong nightmare.",
+      "fired": "He fires you first. Politely."
+    }
+  },
+  "wk2_coworker_collapse": {
+    "text": "A coworker collapses in the hallway. The room freezes. Someone shouts for someone to call an ambulance.",
+    "choices": {
+      "cpr": "Do CPR",
+      "call": "Call emergency services",
+      "freeze": "Freeze up"
+    },
+    "outcomes": {
+      "saved": "You keep them alive until the medics come. They send you flowers.",
+      "too_late": "They don't make it. Months later you still hear the compressions."
+    }
+  },
+  "wk2_hire_interview": {
+    "text": "You're asked to interview a candidate. They are overqualified, nervous, and wearing a suit two sizes too small.",
+    "choices": {
+      "hire": "Recommend hiring",
+      "reject": "Reject",
+      "coach": "Coach them kindly"
+    },
+    "outcomes": {
+      "great": "Best hire of the year. They owe you a coffee.",
+      "flop": "They're gone in a month. The blame lands on you."
+    }
+  },
+  "wk2_salary_leak": {
+    "text": "A spreadsheet with everyone's salary goes around by accident. You open it. You wish you hadn't.",
+    "choices": {
+      "confront": "Demand equal pay",
+      "quiet": "Say nothing",
+      "share": "Share it with friends"
+    },
+    "outcomes": {
+      "corrected": "HR 'discovers a discrepancy'. Your pay jumps.",
+      "punished": "They say you have 'poor discretion'. Nothing changes."
+    }
+  },
+  "wk2_lunch_drinks": {
+    "text": "A client lunch turns into a second bottle. Your boss orders a third. Everyone is loosening ties.",
+    "choices": {
+      "match": "Match them drink for drink",
+      "sparkling": "Stay sober",
+      "excuse": "Leave early"
+    },
+    "outcomes": {
+      "bonded": "The client is yours. The hangover is also yours.",
+      "disaster": "You tell the client a trade secret. Then cry."
+    }
+  },
+  "wk2_rival_sabotage": {
+    "text": "A rival coworker 'accidentally' forwarded your draft to the whole department with the typos highlighted.",
+    "choices": {
+      "retort": "Retaliate in kind",
+      "smile": "Smile through it",
+      "hr": "Report it"
+    },
+    "outcomes": {
+      "even": "You win the round. Both of you look petty.",
+      "fail": "Your plan leaks. Now you're the villain."
+    }
+  },
+  "wk2_fire_someone": {
+    "text": "You've been told to let a good person go. The paperwork is on your desk. The call is in an hour.",
+    "choices": {
+      "do": "Do it professionally",
+      "refuse": "Refuse",
+      "help": "Help them find a new job"
+    },
+    "outcomes": {
+      "spared": "Management backs down. The person stays.",
+      "both": "You get fired too. At least you're consistent."
+    }
+  },
+  "wk2_conference_trip": {
+    "text": "A conference abroad. Name tags, keynote speeches and an open bar in the hotel lobby with an interesting stranger.",
+    "choices": {
+      "network": "Network seriously",
+      "fling": "Have a fling",
+      "sightsee": "Skip sessions, sightsee"
+    },
+    "outcomes": {
+      "fun": "A night to remember. Don't leave anything behind.",
+      "caught": "Someone posts a photo. It finds you before your flight."
+    }
+  },
+  "wk2_holiday_shift": {
+    "text": "Your boss offers a flat bonus of $200 for working through the holiday. The holiday is your child's birthday.",
+    "choices": {
+      "work": "Take the shift",
+      "family": "Stay with family",
+      "swap": "Find a swap"
+    },
+    "outcomes": {
+      "works": "A coworker owes you. You owe them a favour.",
+      "none": "Nobody bites. You end up working anyway."
+    }
+  },
+  "wk2_team_lead": {
+    "text": "Your boss offers you a team lead role: more responsibility, a small raise and a mug that says 'Okayest Boss'.",
+    "choices": {
+      "accept": "Accept",
+      "decline": "Decline",
+      "negotiate": "Negotiate pay"
+    },
+    "outcomes": {
+      "shine": "You thrive in the role. Your team is loyal.",
+      "overwhelmed": "Meetings, reports, emotional labour. You miss being a regular worker."
+    }
+  },
+  "wk2_startup_pitch": {
+    "text": "A friend asks you to join a startup. It could be huge. It could be nothing. It would require quitting this job.",
+    "choices": {
+      "quit": "Quit and join",
+      "stay": "Stay safe",
+      "weekends": "Help on weekends"
+    },
+    "outcomes": {
+      "boom": "The startup pops. You cash out.",
+      "bust": "It fails. You're out of both jobs."
+    }
+  },
+  "wk2_deadline_miss": {
+    "text": "You are about to miss a critical deadline. Your phone is lit with messages. Your heart is doing something rhythmic and wrong.",
+    "choices": {
+      "admit": "Admit it early",
+      "crash": "Work through the night",
+      "blame": "Blame a colleague"
+    },
+    "outcomes": {
+      "made": "You make it by five minutes.",
+      "late": "You deliver it at 8:01. It doesn't count."
+    }
+  },
+  "wk2_nepotism_boss": {
+    "text": "The owner's nephew is hired above you. He does not know how to use the printer, and nobody who does is willing to tell him.",
+    "choices": {
+      "train": "Train him",
+      "ignore": "Stay out of the way",
+      "leave": "Start looking elsewhere"
+    },
+    "outcomes": {
+      "ally": "He learns quickly and becomes a useful ally.",
+      "worse": "He takes credit and thinks he's doing great."
+    }
+  },
+  "wk2_quiet_quitting": {
+    "text": "You've hit the point where you do exactly what you're paid for and not a minute more. It feels weirdly peaceful.",
+    "choices": {
+      "continue": "Keep doing minimum",
+      "spark": "Find a new spark",
+      "talk": "Talk to your boss"
+    },
+    "outcomes": {
+      "shift": "He gives you a different project. It helps.",
+      "warning": "He says 'you're replaceable'. Charming."
+    }
+  },
+  "wk2_expense_padding": {
+    "text": "Your manager is padding expense reports. You know because you compiled them.",
+    "choices": {
+      "report": "Report to compliance",
+      "leverage": "Hold it over him",
+      "ignore": "Look away"
+    },
+    "outcomes": {
+      "praised": "The company thanks you with a certificate and some distance.",
+      "retaliated": "He finds a new reason to dislike you every week."
+    }
+  }
+}

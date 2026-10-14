@@ -4,9 +4,9 @@ import { immer } from 'zustand/middleware/immer'
 import type { Life, Stats } from '../engine/types'
 import type { Rng } from '../engine/rng'
 import { ageUp, chooseOption, continueAsHeir, createLife, migrateLife, withRng, type NewLifeOptions } from '../engine/life'
-import { applyForJob, quitJob, recruiter, retire, workHarder } from '../engine/jobs'
+import { applyForJob, quitJob, recruiter, reportToHR, retire, setHours, socialize, workHarder } from '../engine/jobs'
 import { adoptPet, buyAsset, repairCar, sellAsset } from '../engine/assets'
-import { interact, startDating, type Interaction } from '../engine/relationships'
+import { holdWedding, interact, startDating, type Interaction } from '../engine/relationships'
 import { commitCrime, type CrimeResult } from '../engine/crime'
 import { enrollGrad, enrollUniversity, studyHarder } from '../engine/school'
 import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, startBusiness, type Platform } from '../engine/special'
@@ -25,6 +25,10 @@ interface GameState {
   life: Life | null
   /** snapshot for the "time machine" (undo last year) */
   undo: Life | null
+  /** older snapshots, newest first (up to 5 more years back) */
+  history: Life[]
+  /** people the player defined; they show up in future lives */
+  customPeople: { first: string; last: string; gender: 'female' | 'male'; kind: 'friend' | 'partner' }[]
   lastOutcome: { eventId: string; choiceId: string; outcomeId?: string } | null
   screen: 'title' | 'setup' | 'game' | 'tombstone'
   sheet: Sheet
@@ -38,7 +42,13 @@ interface GameState {
   toSetup: () => void
   setTheme: (t: Theme) => void
   ageUp: () => void
-  undoYear: () => void
+  undoYear: (yearsBack?: number) => void
+  addCustomPerson: (p: { first: string; last: string; gender: 'female' | 'male'; kind: 'friend' | 'partner' }) => void
+  removeCustomPerson: (i: number) => void
+  setHours: (h: 20 | 40 | 50) => void
+  reportHR: () => void
+  socialize: () => void
+  wedding: (personId: string, venue: string, honeymoon: string) => void
   choose: (choiceId: string) => void
   dismissOutcome: () => void
   toTitle: () => void
@@ -99,20 +109,34 @@ export const useGame = create<GameState>()(
         set((s) => { if (s.life && s.life.alive) withRng(s.life, (rng) => fn(s.life!, rng)) })
 
       return {
-        life: null, undo: null, lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false, completedChallenges: [], theme: loadTheme(),
+        life: null, undo: null, history: [], customPeople: [], lastOutcome: null, screen: 'title', sheet: null, toast: null, godMode: false, completedChallenges: [], theme: loadTheme(),
 
         newLife: (opts) => set((s) => { s.life = createLife(opts); s.undo = null; s.lastOutcome = null; s.screen = 'game'; s.sheet = null }),
         toSetup: () => set((s) => { s.screen = 'setup' }),
         setTheme: (t) => { applyTheme(t); set((s) => { s.theme = t }) },
         ageUp: () => set((s) => {
           if (!s.life || !s.life.alive || s.life.pending) return
+          if (s.undo) { s.history.unshift(s.undo); s.history = s.history.slice(0, 4) }
           s.undo = snapshot(s.life)
           ageUp(s.life)
+          // custom people drift into your life
+          if (s.customPeople.length && s.life.age >= 6) withRng(s.life, (rng) => { for (const cp of s.customPeople) { if (s.life!.people.some((p) => p.firstName === cp.first && p.lastName === cp.last)) continue; if (!rng.chance(0.12)) continue; if (cp.kind === 'friend') { s.life!.people.push({ id: 'cp' + Date.now().toString(36) + rng.int(0, 9999), firstName: cp.first, lastName: cp.last, gender: cp.gender, age: s.life!.age + rng.int(-3, 3), kind: 'friend', relationship: rng.int(55, 85), alive: true, looks: rng.bell(20, 100), smarts: rng.bell(20, 100), craziness: rng.bell(0, 100) }); s.life!.diary.push({ age: s.life!.age, kind: 'good', text: 'people.newFriend', params: { name: cp.first } }) } else if (s.life!.age >= 18 && !s.life!.dateBoard.some((d) => d.firstName === cp.first)) { s.life!.dateBoard.unshift({ id: 'cp' + Date.now().toString(36) + rng.int(0, 9999), firstName: cp.first, lastName: cp.last, gender: cp.gender, age: s.life!.age + rng.int(-4, 4), kind: 'partner', relationship: rng.int(50, 75), alive: true, looks: rng.bell(40, 100), smarts: rng.bell(30, 100), craziness: rng.bell(0, 100), income: rng.int(20_000, 120_000), money: rng.int(0, 100_000) }) } } })
           const fresh = checkChallenges(s.life, s.completedChallenges)
           if (fresh.length) { s.completedChallenges.push(...fresh); s.toast = { key: 'challenge.toast', params: { id: fresh[0] }, kind: 'good' } }
           if (!s.life.alive) s.screen = 'tombstone'
         }),
-        undoYear: () => set((s) => { if (s.undo) { s.life = s.undo; s.undo = null; s.lastOutcome = null; s.screen = 'game' } }),
+        undoYear: (yearsBack = 1) => set((s) => {
+          const chain = [s.undo, ...s.history].filter(Boolean) as Life[]
+          const target = chain[Math.min(yearsBack, chain.length) - 1]
+          if (!target) return
+          s.life = target; s.undo = null; s.history = chain.slice(yearsBack); s.lastOutcome = null; s.screen = 'game'; s.sheet = null
+        }),
+        addCustomPerson: (p) => set((s) => { if (s.customPeople.length < 20) s.customPeople.push(p) }),
+        removeCustomPerson: (i) => set((s) => { s.customPeople.splice(i, 1) }),
+        setHours: (h) => act((l) => setHours(l, h)),
+        reportHR: () => act((l, rng) => { const r = reportToHR(l, rng); if (r) get().setToast({ key: r === 'win' ? 'work.hrWin' : 'work.hrLose', kind: r === 'win' ? 'good' : 'bad' }) }),
+        socialize: () => act((l, rng) => socialize(l, rng)),
+        wedding: (personId, venue, honeymoon) => act((l) => { if (!holdWedding(l, personId, venue, honeymoon)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
         choose: (choiceId) => set((s) => {
           if (!s.life?.pending) return
           const eventId = s.life.pending.eventId
@@ -200,9 +224,9 @@ export const useGame = create<GameState>()(
     {
       name: 'plotline.save.v2',
       version: 2,
-      migrate: (state) => { const s = state as GameState; if (s.life) migrateLife(s.life); if (s.undo) migrateLife(s.undo); return s },
+      migrate: (state) => { const s = state as GameState; if (s.life) migrateLife(s.life); if (s.undo) migrateLife(s.undo); s.history ??= []; s.customPeople ??= []; return s },
       merge: (persisted, current) => { const p = persisted as Partial<GameState>; if (p.life) migrateLife(p.life); if (p.undo) migrateLife(p.undo); return { ...current, ...p } },
-      partialize: (s) => ({ life: s.life, undo: s.undo, screen: s.screen === 'setup' ? 'title' : s.screen, godMode: s.godMode, completedChallenges: s.completedChallenges, theme: s.theme }) as GameState,
+      partialize: (s) => ({ life: s.life, undo: s.undo, history: s.history, customPeople: s.customPeople, screen: s.screen === 'setup' ? 'title' : s.screen, godMode: s.godMode, completedChallenges: s.completedChallenges, theme: s.theme }) as GameState,
     },
   ),
 )

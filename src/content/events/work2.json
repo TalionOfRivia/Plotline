@@ -1,0 +1,3882 @@
+[
+  {
+    "id": "wk2_unpaid_ot",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 68,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "agree",
+        "effects": {
+          "happiness": -6,
+          "flags": {
+            "performance": 4,
+            "stress": 6
+          }
+        }
+      },
+      {
+        "id": "explain",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "respected",
+            "weight": 55,
+            "effects": {
+              "happiness": 4,
+              "flags": {
+                "performance": 2,
+                "stress": -2
+              }
+            }
+          },
+          {
+            "id": "noted",
+            "weight": 45,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -3,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "insult",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cathartic",
+            "weight": 35,
+            "effects": {
+              "happiness": 10,
+              "flags": {
+                "performance": -5,
+                "coworker_popularity": 6
+              }
+            }
+          },
+          {
+            "id": "fired",
+            "weight": 30,
+            "effects": {
+              "happiness": -12,
+              "flags": {
+                "fired": true
+              }
+            }
+          },
+          {
+            "id": "warning",
+            "weight": 35,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "performance": -6,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_ot_crunch",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "crunch",
+        "effects": {
+          "health": -6,
+          "money": 600,
+          "flags": {
+            "performance": 6,
+            "stress": 8
+          }
+        }
+      },
+      {
+        "id": "pace",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "performance": -3,
+            "coworker_popularity": -4
+          }
+        }
+      },
+      {
+        "id": "delegate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "smooth",
+            "weight": 50,
+            "effects": {
+              "happiness": 5,
+              "money": 300,
+              "flags": {
+                "performance": 5,
+                "coworker_popularity": 5
+              }
+            }
+          },
+          {
+            "id": "mess",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -2,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_gossip_war",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 68,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "side_a",
+        "effects": {
+          "happiness": 2,
+          "karma": -2,
+          "flags": {
+            "coworker_popularity": 5
+          }
+        }
+      },
+      {
+        "id": "neutral",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "coworker_popularity": -2,
+            "stress": -2
+          }
+        }
+      },
+      {
+        "id": "mediate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "peace",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "karma": 4,
+              "flags": {
+                "coworker_popularity": 8
+              }
+            }
+          },
+          {
+            "id": "both_hate",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "coworker_popularity": -7,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_desk_thief",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "trap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "caught",
+            "weight": 60,
+            "effects": {
+              "happiness": 7,
+              "karma": 2,
+              "flags": {
+                "coworker_popularity": -3
+              }
+            }
+          },
+          {
+            "id": "wrong",
+            "weight": 40,
+            "effects": {
+              "happiness": -6,
+              "karma": -3,
+              "flags": {
+                "coworker_popularity": -6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "lock",
+        "effects": {
+          "happiness": -2,
+          "flags": {
+            "stress": 2
+          }
+        }
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "happiness": -3,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_office_crush",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ],
+      "notFlags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "yes",
+            "weight": 50,
+            "effects": {
+              "happiness": 12,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "no",
+            "weight": 50,
+            "effects": {
+              "happiness": -9,
+              "flags": {
+                "coworker_popularity": -3,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "flirt",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2,
+          "karma": 2,
+          "flags": {
+            "performance": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_crush_married",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "kiss",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "secret",
+            "weight": 45,
+            "effects": {
+              "happiness": 9,
+              "karma": -10,
+              "flags": {
+                "affair": true
+              }
+            }
+          },
+          {
+            "id": "exposed",
+            "weight": 55,
+            "effects": {
+              "happiness": -12,
+              "karma": -10,
+              "flags": {
+                "coworker_popularity": -10,
+                "affair": true,
+                "stress": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -2,
+          "karma": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_crush_aftermath",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 60,
+      "flags": [
+        "employed",
+        "single"
+      ]
+    },
+    "choices": [
+      {
+        "id": "transfer",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "performance": -2,
+            "stress": -4
+          }
+        }
+      },
+      {
+        "id": "tough",
+        "effects": {
+          "happiness": -4,
+          "flags": {
+            "stress": 4,
+            "performance": 1
+          }
+        }
+      },
+      {
+        "id": "revenge",
+        "effects": {
+          "happiness": 3,
+          "karma": -7,
+          "flags": {
+            "coworker_popularity": -6,
+            "enemy": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_hr_complaint",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "apologize",
+        "effects": {
+          "happiness": -3,
+          "karma": 5,
+          "flags": {
+            "stress": 2,
+            "performance": -1
+          }
+        }
+      },
+      {
+        "id": "defend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cleared",
+            "weight": 40,
+            "effects": {
+              "happiness": 4,
+              "flags": {
+                "stress": -3
+              }
+            }
+          },
+          {
+            "id": "written",
+            "weight": 60,
+            "effects": {
+              "happiness": -8,
+              "flags": {
+                "performance": -6,
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "quit_cry",
+        "effects": {
+          "happiness": -6,
+          "karma": -2,
+          "flags": {
+            "fired": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_hr_false",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "evidence",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "vindicated",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "karma": 3,
+              "flags": {
+                "coworker_popularity": 3
+              }
+            }
+          },
+          {
+            "id": "shrug",
+            "weight": 40,
+            "effects": {
+              "happiness": -8,
+              "flags": {
+                "performance": -4,
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "lawyer",
+        "effects": {
+          "money": -1500,
+          "happiness": 2,
+          "flags": {
+            "stress": -2
+          }
+        }
+      },
+      {
+        "id": "quiet",
+        "effects": {
+          "happiness": -6,
+          "flags": {
+            "stress": 6
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_report_harass",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "step_in",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "justice",
+            "weight": 55,
+            "effects": {
+              "happiness": 6,
+              "karma": 12,
+              "flags": {
+                "coworker_popularity": 5
+              }
+            }
+          },
+          {
+            "id": "retaliation",
+            "weight": 45,
+            "effects": {
+              "happiness": -7,
+              "karma": 10,
+              "flags": {
+                "performance": -5,
+                "stress": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "look_away",
+        "effects": {
+          "happiness": -5,
+          "karma": -8
+        }
+      },
+      {
+        "id": "text_her",
+        "effects": {
+          "happiness": 2,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_report_thief",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "report",
+        "effects": {
+          "happiness": -1,
+          "karma": 6,
+          "flags": {
+            "coworker_popularity": -5
+          }
+        }
+      },
+      {
+        "id": "confront",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stops",
+            "weight": 50,
+            "effects": {
+              "happiness": 3,
+              "karma": 3
+            }
+          },
+          {
+            "id": "threat",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "karma": 1,
+              "flags": {
+                "enemy": true,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 3,
+          "karma": -8,
+          "money": 150
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_union_drive",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "organize",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "karma": 8,
+              "flags": {
+                "coworker_popularity": 7,
+                "raise": 0.05
+              }
+            }
+          },
+          {
+            "id": "crushed",
+            "weight": 55,
+            "effects": {
+              "happiness": -8,
+              "karma": 6,
+              "flags": {
+                "performance": -5,
+                "coworker_popularity": 2,
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "vote_yes",
+        "effects": {
+          "happiness": 3,
+          "karma": 3
+        }
+      },
+      {
+        "id": "inform",
+        "effects": {
+          "money": 400,
+          "karma": -9,
+          "flags": {
+            "coworker_popularity": -9,
+            "performance": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_union_strike",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "picket",
+        "effects": {
+          "happiness": 6,
+          "karma": 5,
+          "money": -120,
+          "flags": {
+            "coworker_popularity": 6
+          }
+        }
+      },
+      {
+        "id": "cross",
+        "effects": {
+          "happiness": -4,
+          "money": 120,
+          "karma": -6,
+          "flags": {
+            "coworker_popularity": -9,
+            "performance": 2
+          }
+        }
+      },
+      {
+        "id": "stay_home",
+        "effects": {
+          "happiness": 2,
+          "money": -120
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_layoff_rumor",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "prep",
+        "effects": {
+          "happiness": -2,
+          "flags": {
+            "stress": 5,
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "shine",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "safe",
+            "weight": 55,
+            "effects": {
+              "happiness": 5,
+              "flags": {
+                "performance": 6,
+                "stress": 4
+              }
+            }
+          },
+          {
+            "id": "cut",
+            "weight": 25,
+            "effects": {
+              "happiness": -14,
+              "flags": {
+                "fired": true
+              }
+            }
+          },
+          {
+            "id": "rattled",
+            "weight": 20,
+            "effects": {
+              "happiness": -3,
+              "flags": {
+                "stress": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "stress": -2,
+            "performance": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_layoff_survivor",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "thank",
+        "effects": {
+          "happiness": -4,
+          "flags": {
+            "performance": 5,
+            "stress": 8
+          }
+        }
+      },
+      {
+        "id": "support",
+        "effects": {
+          "happiness": 3,
+          "karma": 7,
+          "flags": {
+            "coworker_popularity": 3
+          }
+        }
+      },
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "granted",
+            "weight": 30,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "raise": 0.08
+              }
+            }
+          },
+          {
+            "id": "laughed",
+            "weight": 70,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -3
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_perf_review",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sell",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "performance": 6,
+                "raise": 0.08
+              }
+            }
+          },
+          {
+            "id": "ok",
+            "weight": 40,
+            "effects": {
+              "happiness": 2,
+              "flags": {
+                "performance": 1
+              }
+            }
+          },
+          {
+            "id": "bad",
+            "weight": 20,
+            "effects": {
+              "happiness": -9,
+              "flags": {
+                "performance": -6,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask_raise",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "performance": 1
+          }
+        }
+      },
+      {
+        "id": "coast",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_client_free",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "free",
+        "effects": {
+          "happiness": -4,
+          "flags": {
+            "performance": 3,
+            "stress": 4
+          }
+        }
+      },
+      {
+        "id": "price",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pays",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "money": 800,
+              "flags": {
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "walks",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -4,
+                "stress": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "discount",
+        "effects": {
+          "happiness": 1,
+          "money": 300
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_client_late",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "call",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "paid",
+            "weight": 55,
+            "effects": {
+              "happiness": 7,
+              "money": 1200,
+              "flags": {
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "lost",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -4,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -4,
+          "flags": {
+            "stress": 4
+          }
+        }
+      },
+      {
+        "id": "legal",
+        "effects": {
+          "happiness": 2,
+          "money": -250
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_credit_theft",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "interrupt",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "noticed",
+            "weight": 45,
+            "effects": {
+              "happiness": 8,
+              "karma": 3,
+              "flags": {
+                "performance": 4,
+                "coworker_popularity": 4
+              }
+            }
+          },
+          {
+            "id": "punished",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -5,
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "email",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "performance": 1,
+            "stress": -1
+          }
+        }
+      },
+      {
+        "id": "swallow",
+        "effects": {
+          "happiness": -7,
+          "flags": {
+            "stress": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_idea_meeting",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "tag",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "coworker_popularity": -2,
+            "performance": 2
+          }
+        }
+      },
+      {
+        "id": "private",
+        "effects": {
+          "happiness": 1,
+          "karma": 2
+        }
+      },
+      {
+        "id": "payback",
+        "effects": {
+          "happiness": 4,
+          "karma": -4,
+          "flags": {
+            "enemy": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_retreat",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "commit",
+        "effects": {
+          "happiness": 7,
+          "health": 2,
+          "flags": {
+            "coworker_popularity": 7
+          }
+        }
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "happiness": 4,
+          "health": -2,
+          "karma": -1,
+          "flags": {
+            "coworker_popularity": -1
+          }
+        }
+      },
+      {
+        "id": "network",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "noticed",
+            "weight": 45,
+            "effects": {
+              "happiness": 5,
+              "flags": {
+                "performance": 5
+              }
+            }
+          },
+          {
+            "id": "cringe",
+            "weight": 55,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "coworker_popularity": -4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_retreat_fall",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "fall",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "caught",
+            "weight": 70,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "coworker_popularity": 5
+              }
+            }
+          },
+          {
+            "id": "dropped",
+            "weight": 30,
+            "effects": {
+              "happiness": -6,
+              "health": -4,
+              "flags": {
+                "injury": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "coworker_popularity": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_work_injury",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hospital",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "minor",
+            "weight": 68,
+            "effects": {
+              "happiness": -5,
+              "health": -6,
+              "money": -200,
+              "flags": {
+                "injury": 10
+              }
+            }
+          },
+          {
+            "id": "serious",
+            "weight": 28,
+            "effects": {
+              "happiness": -9,
+              "health": -18,
+              "money": -900,
+              "flags": {
+                "injury": 30
+              }
+            }
+          },
+          {
+            "id": "fatal",
+            "weight": 4,
+            "effects": {
+              "death": "freak_accident"
+            }
+          }
+        ]
+      },
+      {
+        "id": "shake",
+        "effects": {
+          "happiness": -3,
+          "health": -8,
+          "flags": {
+            "injury": 12,
+            "performance": 2
+          }
+        }
+      },
+      {
+        "id": "sue",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "settle",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "money": 3000,
+              "flags": {
+                "lawsuit": 1,
+                "performance": -3
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "money": -700,
+              "flags": {
+                "lawsuit": 1,
+                "performance": -4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_rsi",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "chair",
+        "effects": {
+          "happiness": 3,
+          "health": 3,
+          "flags": {
+            "performance": 1
+          }
+        }
+      },
+      {
+        "id": "push",
+        "effects": {
+          "health": -7,
+          "flags": {
+            "performance": 2,
+            "stress": 3
+          }
+        }
+      },
+      {
+        "id": "therapy",
+        "effects": {
+          "money": -400,
+          "health": 5,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_embezzle_temptation",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "clean",
+            "weight": 45,
+            "effects": {
+              "happiness": 7,
+              "money": 4500,
+              "karma": -12
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 55,
+            "effects": {
+              "happiness": -18,
+              "karma": -12,
+              "money": -1000,
+              "flags": {
+                "fired": true,
+                "criminal_record": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "report",
+        "effects": {
+          "happiness": 2,
+          "karma": 8,
+          "flags": {
+            "performance": 3
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_petty_cash",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "borrow",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "repay",
+            "weight": 55,
+            "effects": {
+              "happiness": 3,
+              "karma": -4
+            }
+          },
+          {
+            "id": "seen",
+            "weight": 45,
+            "effects": {
+              "happiness": -10,
+              "karma": -6,
+              "flags": {
+                "fired": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "karma": 5,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "mention",
+        "effects": {
+          "karma": 3,
+          "flags": {
+            "coworker_popularity": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_referral_friend",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "in",
+            "weight": 55,
+            "effects": {
+              "happiness": 12,
+              "money": 1500,
+              "flags": {
+                "referral": true,
+                "raise": 0.1
+              }
+            }
+          },
+          {
+            "id": "out",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -1,
+          "karma": 3
+        }
+      },
+      {
+        "id": "tell_boss",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "counter",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "raise": 0.07
+              }
+            }
+          },
+          {
+            "id": "bluff",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -4,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_referral_give",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "vouch",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shines",
+            "weight": 50,
+            "effects": {
+              "happiness": 7,
+              "karma": 4,
+              "flags": {
+                "coworker_popularity": 3
+              }
+            }
+          },
+          {
+            "id": "embarrass",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -3,
+                "coworker_popularity": -3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "help_cv",
+        "effects": {
+          "karma": 3,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_headhunter",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "chat",
+        "effects": {
+          "happiness": 4,
+          "flags": {
+            "performance": 1
+          }
+        }
+      },
+      {
+        "id": "ghost",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "forward",
+        "effects": {
+          "karma": 3,
+          "happiness": 2,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_lie_customer",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "lie",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "luck",
+            "weight": 40,
+            "effects": {
+              "happiness": 2,
+              "karma": -5,
+              "flags": {
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "blowup",
+            "weight": 60,
+            "effects": {
+              "happiness": -7,
+              "karma": -5,
+              "flags": {
+                "performance": -4,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "truth",
+        "effects": {
+          "happiness": 3,
+          "karma": 7,
+          "flags": {
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "vague",
+        "effects": {
+          "happiness": -2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_backdate_doc",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sign",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 60,
+            "effects": {
+              "happiness": -2,
+              "karma": -8,
+              "flags": {
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "audit",
+            "weight": 40,
+            "effects": {
+              "happiness": -12,
+              "karma": -8,
+              "flags": {
+                "fired": true,
+                "lawsuit": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 3,
+          "karma": 7,
+          "flags": {
+            "performance": -3
+          }
+        }
+      },
+      {
+        "id": "copy",
+        "effects": {
+          "karma": 3,
+          "flags": {
+            "stress": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_four_day_week",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "rest",
+        "effects": {
+          "happiness": 10,
+          "health": 4,
+          "flags": {
+            "stress": -8,
+            "performance": 1
+          }
+        }
+      },
+      {
+        "id": "sidegig",
+        "effects": {
+          "money": 700,
+          "happiness": 3,
+          "flags": {
+            "stress": 2
+          }
+        }
+      },
+      {
+        "id": "squeeze",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pace",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "performance": 5,
+                "stress": -2
+              }
+            }
+          },
+          {
+            "id": "burn",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -3,
+                "stress": 7
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_remote_work",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "routine",
+        "effects": {
+          "happiness": 6,
+          "flags": {
+            "performance": 4,
+            "stress": -3
+          }
+        }
+      },
+      {
+        "id": "pajamas",
+        "effects": {
+          "happiness": 4,
+          "flags": {
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "moonlight",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "nobody",
+            "weight": 55,
+            "effects": {
+              "happiness": 4,
+              "money": 1500,
+              "karma": -4
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 45,
+            "effects": {
+              "happiness": -10,
+              "karma": -4,
+              "flags": {
+                "fired": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_printer_war",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "fix",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hero",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "coworker_popularity": 7
+              }
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "coworker_popularity": -3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "note",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "coworker_popularity": -3
+          }
+        }
+      },
+      {
+        "id": "kick",
+        "effects": {
+          "happiness": 4,
+          "karma": -1,
+          "flags": {
+            "performance": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_holiday_disaster",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "party",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 50,
+            "effects": {
+              "happiness": 9,
+              "health": -2,
+              "flags": {
+                "coworker_popularity": 8
+              }
+            }
+          },
+          {
+            "id": "shame",
+            "weight": 50,
+            "effects": {
+              "happiness": -9,
+              "karma": -2,
+              "flags": {
+                "coworker_popularity": -9,
+                "performance": -4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave_early",
+        "effects": {
+          "happiness": 1,
+          "flags": {
+            "coworker_popularity": -1
+          }
+        }
+      },
+      {
+        "id": "driver",
+        "effects": {
+          "happiness": 3,
+          "karma": 5,
+          "flags": {
+            "coworker_popularity": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_holiday_bonus",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "effects": {
+          "happiness": -2,
+          "money": 400
+        }
+      },
+      {
+        "id": "negotiate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "more",
+            "weight": 35,
+            "effects": {
+              "happiness": 6,
+              "money": 1500
+            }
+          },
+          {
+            "id": "none",
+            "weight": 65,
+            "effects": {
+              "happiness": -5,
+              "money": 400,
+              "flags": {
+                "performance": -2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "complain",
+        "effects": {
+          "happiness": 2,
+          "money": 400,
+          "flags": {
+            "coworker_popularity": 3,
+            "performance": -3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_burnout",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 65,
+      "flags": [
+        "employed",
+        "stressed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": 6,
+          "health": 3,
+          "money": -500,
+          "flags": {
+            "stress": -10,
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 45,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "stress": 6,
+                "performance": 1
+              }
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 55,
+            "effects": {
+              "happiness": -14,
+              "health": -6,
+              "flags": {
+                "depressed": true,
+                "performance": -5,
+                "stress": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "therapy",
+        "effects": {
+          "happiness": 5,
+          "money": -350,
+          "flags": {
+            "stress": -6
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_burnout_vacation",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "book",
+        "effects": {
+          "happiness": 10,
+          "money": -800,
+          "flags": {
+            "stress": -9,
+            "performance": -1
+          }
+        }
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -6,
+          "flags": {
+            "stress": 6,
+            "performance": 3
+          }
+        }
+      },
+      {
+        "id": "sick",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rested",
+            "weight": 55,
+            "effects": {
+              "happiness": 9,
+              "karma": -2,
+              "flags": {
+                "stress": -8
+              }
+            }
+          },
+          {
+            "id": "suspicious",
+            "weight": 45,
+            "effects": {
+              "happiness": -3,
+              "karma": -2,
+              "flags": {
+                "stress": 3,
+                "performance": -4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_retirement_party",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 60,
+      "maxAge": 70,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "speech",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "tears",
+            "weight": 50,
+            "effects": {
+              "happiness": 12,
+              "karma": 4,
+              "flags": {
+                "coworker_popularity": 8
+              }
+            }
+          },
+          {
+            "id": "rambled",
+            "weight": 50,
+            "effects": {
+              "happiness": 2,
+              "flags": {
+                "coworker_popularity": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "thanks",
+        "effects": {
+          "happiness": 6
+        }
+      },
+      {
+        "id": "sneak",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_retirement_push",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 58,
+      "maxAge": 68,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "take",
+        "effects": {
+          "happiness": 4,
+          "money": 6000
+        }
+      },
+      {
+        "id": "refuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stays",
+            "weight": 55,
+            "effects": {
+              "happiness": 4,
+              "flags": {
+                "performance": -2
+              }
+            }
+          },
+          {
+            "id": "pushed",
+            "weight": 45,
+            "effects": {
+              "happiness": -8,
+              "money": 1000,
+              "flags": {
+                "fired": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "lawyer",
+        "effects": {
+          "money": -600,
+          "happiness": 3,
+          "flags": {
+            "lawsuit": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_whistleblow_big",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "leak",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "payout",
+            "weight": 30,
+            "effects": {
+              "happiness": 14,
+              "money": 9000,
+              "karma": 12,
+              "flags": {
+                "lawsuit": 1,
+                "fame": 3
+              }
+            }
+          },
+          {
+            "id": "crushed",
+            "weight": 70,
+            "effects": {
+              "happiness": -14,
+              "karma": 10,
+              "money": -1000,
+              "flags": {
+                "fired": true,
+                "stress": 10
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "internal",
+        "effects": {
+          "happiness": -3,
+          "karma": 5,
+          "flags": {
+            "performance": -3,
+            "stress": 5
+          }
+        }
+      },
+      {
+        "id": "burn",
+        "effects": {
+          "happiness": -5,
+          "karma": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_promotion_board",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "confident",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "promoted",
+            "weight": 45,
+            "effects": {
+              "happiness": 14,
+              "flags": {
+                "promoted": true,
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "passed_over",
+            "weight": 55,
+            "effects": {
+              "happiness": -8,
+              "flags": {
+                "performance": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "joke",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "liked",
+            "weight": 30,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "promoted": true
+              }
+            }
+          },
+          {
+            "id": "flat",
+            "weight": 70,
+            "effects": {
+              "happiness": -7,
+              "flags": {
+                "performance": -2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "withdraw",
+        "effects": {
+          "happiness": -2,
+          "flags": {
+            "stress": -3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_promotion_denied",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "real",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "smarts": 2,
+              "flags": {
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "fluff",
+            "weight": 50,
+            "effects": {
+              "happiness": -3,
+              "flags": {
+                "stress": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sulk",
+        "effects": {
+          "happiness": -6,
+          "flags": {
+            "performance": -3,
+            "stress": 3
+          }
+        }
+      },
+      {
+        "id": "interview",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "stress": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_new_boss",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "buddy",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ally",
+            "weight": 55,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "performance": 4,
+                "coworker_popularity": 2
+              }
+            }
+          },
+          {
+            "id": "tool",
+            "weight": 45,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "coworker_popularity": -5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "resist",
+        "effects": {
+          "happiness": -3,
+          "flags": {
+            "performance": -4,
+            "stress": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_parking_war",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "note",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "block",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "karma": -2
+            }
+          },
+          {
+            "id": "war",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "karma": -3,
+              "flags": {
+                "enemy": true,
+                "coworker_popularity": -3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_mandatory_fun",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sing",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "star",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "coworker_popularity": 7
+              }
+            }
+          },
+          {
+            "id": "flat",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "coworker_popularity": -3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "dj",
+        "effects": {
+          "happiness": 4,
+          "flags": {
+            "coworker_popularity": 3
+          }
+        }
+      },
+      {
+        "id": "bathroom",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "coworker_popularity": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_mentee",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "mentor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "flourish",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "karma": 6,
+              "flags": {
+                "coworker_popularity": 4
+              }
+            }
+          },
+          {
+            "id": "stuck",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "flags": {
+                "performance": -2,
+                "stress": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "pass_on",
+        "effects": {
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_merger",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "embrace",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rise",
+            "weight": 45,
+            "effects": {
+              "happiness": 7,
+              "flags": {
+                "performance": 5,
+                "raise": 0.06
+              }
+            }
+          },
+          {
+            "id": "lost",
+            "weight": 55,
+            "effects": {
+              "happiness": -7,
+              "flags": {
+                "performance": -2,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "resist",
+        "effects": {
+          "happiness": -3,
+          "flags": {
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "jump",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "stress": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_ai_tool",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "master",
+        "effects": {
+          "happiness": 4,
+          "smarts": 2,
+          "flags": {
+            "performance": 5
+          }
+        }
+      },
+      {
+        "id": "distrust",
+        "effects": {
+          "happiness": -2,
+          "flags": {
+            "performance": -3
+          }
+        }
+      },
+      {
+        "id": "train",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "valued",
+            "weight": 55,
+            "effects": {
+              "happiness": 7,
+              "flags": {
+                "coworker_popularity": 6,
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "replaced",
+            "weight": 45,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -1,
+                "stress": 4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_caught_sleeping",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 65,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "own",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "performance": -1,
+            "coworker_popularity": 2
+          }
+        }
+      },
+      {
+        "id": "lie",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "buys",
+            "weight": 40,
+            "effects": {
+              "happiness": 3
+            }
+          },
+          {
+            "id": "no",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -3,
+                "coworker_popularity": -2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "nap_home",
+        "effects": {
+          "happiness": 1,
+          "flags": {
+            "performance": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_boss_affair",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "blackmail",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "paid",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "karma": -9,
+              "flags": {
+                "raise": 0.12
+              }
+            }
+          },
+          {
+            "id": "fired",
+            "weight": 55,
+            "effects": {
+              "happiness": -12,
+              "karma": -9,
+              "flags": {
+                "fired": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "silent",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": -1,
+          "karma": 3,
+          "flags": {
+            "performance": -3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_coworker_collapse",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "cpr",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "saved",
+            "weight": 55,
+            "effects": {
+              "happiness": 12,
+              "karma": 12,
+              "flags": {
+                "coworker_popularity": 8
+              }
+            }
+          },
+          {
+            "id": "too_late",
+            "weight": 45,
+            "effects": {
+              "happiness": -12,
+              "karma": 6,
+              "flags": {
+                "stress": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": -2,
+          "karma": 4
+        }
+      },
+      {
+        "id": "freeze",
+        "effects": {
+          "happiness": -8,
+          "karma": -2,
+          "flags": {
+            "stress": 6
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_hire_interview",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hire",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 60,
+            "effects": {
+              "happiness": 7,
+              "karma": 5,
+              "flags": {
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 40,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "performance": -3,
+                "stress": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "reject",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "coach",
+        "effects": {
+          "happiness": 3,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_salary_leak",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "confront",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "corrected",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "raise": 0.12,
+                "performance": 1
+              }
+            }
+          },
+          {
+            "id": "punished",
+            "weight": 60,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -4,
+                "stress": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "quiet",
+        "effects": {
+          "happiness": -6
+        }
+      },
+      {
+        "id": "share",
+        "effects": {
+          "happiness": 2,
+          "karma": -3,
+          "flags": {
+            "coworker_popularity": 4
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_lunch_drinks",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "match",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "bonded",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "health": -3,
+              "flags": {
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "disaster",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "health": -3,
+              "karma": -3,
+              "flags": {
+                "performance": -6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sparkling",
+        "effects": {
+          "happiness": 1,
+          "flags": {
+            "performance": 2
+          }
+        }
+      },
+      {
+        "id": "excuse",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "performance": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_rival_sabotage",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "retort",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "even",
+            "weight": 45,
+            "effects": {
+              "happiness": 5,
+              "karma": -4,
+              "flags": {
+                "enemy": true
+              }
+            }
+          },
+          {
+            "id": "fail",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "karma": -4,
+              "flags": {
+                "performance": -3,
+                "enemy": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "smile",
+        "effects": {
+          "happiness": -2,
+          "karma": 3
+        }
+      },
+      {
+        "id": "hr",
+        "effects": {
+          "happiness": 1,
+          "flags": {
+            "performance": 1,
+            "coworker_popularity": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_fire_someone",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "do",
+        "effects": {
+          "happiness": -6,
+          "karma": -3,
+          "flags": {
+            "performance": 3,
+            "stress": 5
+          }
+        }
+      },
+      {
+        "id": "refuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "spared",
+            "weight": 35,
+            "effects": {
+              "happiness": 8,
+              "karma": 8,
+              "flags": {
+                "coworker_popularity": 6
+              }
+            }
+          },
+          {
+            "id": "both",
+            "weight": 65,
+            "effects": {
+              "happiness": -10,
+              "karma": 8,
+              "flags": {
+                "fired": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "help",
+        "effects": {
+          "happiness": -2,
+          "karma": 7,
+          "flags": {
+            "stress": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_conference_trip",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "network",
+        "effects": {
+          "happiness": 5,
+          "smarts": 2,
+          "flags": {
+            "performance": 4
+          }
+        }
+      },
+      {
+        "id": "fling",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun",
+            "weight": 60,
+            "effects": {
+              "happiness": 9,
+              "karma": -4
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 40,
+            "effects": {
+              "happiness": -8,
+              "karma": -6,
+              "flags": {
+                "affair": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sightsee",
+        "effects": {
+          "happiness": 7,
+          "flags": {
+            "performance": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_holiday_shift",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "maxAge": 66,
+      "flags": [
+        "employed",
+        "has_kids"
+      ]
+    },
+    "choices": [
+      {
+        "id": "work",
+        "effects": {
+          "happiness": -7,
+          "money": 200,
+          "flags": {
+            "performance": 4
+          }
+        }
+      },
+      {
+        "id": "family",
+        "effects": {
+          "happiness": 8,
+          "flags": {
+            "performance": -3
+          }
+        }
+      },
+      {
+        "id": "swap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 55,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "coworker_popularity": 2
+              }
+            }
+          },
+          {
+            "id": "none",
+            "weight": 45,
+            "effects": {
+              "happiness": -3,
+              "flags": {
+                "performance": -2
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_team_lead",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 26,
+      "maxAge": 62,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shine",
+            "weight": 55,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "promoted": true,
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "overwhelmed",
+            "weight": 45,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "stress": 9,
+                "performance": -2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 1,
+          "flags": {
+            "stress": -3
+          }
+        }
+      },
+      {
+        "id": "negotiate",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "raise": 0.04
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_startup_pitch",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 60,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "quit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "boom",
+            "weight": 20,
+            "effects": {
+              "happiness": 14,
+              "money": 12000
+            }
+          },
+          {
+            "id": "bust",
+            "weight": 80,
+            "effects": {
+              "happiness": -10,
+              "money": -2000,
+              "flags": {
+                "fired": true,
+                "stress": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "weekends",
+        "effects": {
+          "happiness": 3,
+          "money": 300,
+          "flags": {
+            "stress": 3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_deadline_miss",
+    "category": "work",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 66,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "admit",
+        "effects": {
+          "happiness": 2,
+          "karma": 3,
+          "flags": {
+            "performance": -1
+          }
+        }
+      },
+      {
+        "id": "crash",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "made",
+            "weight": 55,
+            "effects": {
+              "happiness": 5,
+              "health": -3,
+              "flags": {
+                "performance": 5,
+                "stress": 4
+              }
+            }
+          },
+          {
+            "id": "late",
+            "weight": 45,
+            "effects": {
+              "happiness": -8,
+              "health": -3,
+              "flags": {
+                "performance": -5,
+                "stress": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "blame",
+        "effects": {
+          "happiness": 2,
+          "karma": -8,
+          "flags": {
+            "coworker_popularity": -8,
+            "enemy": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_nepotism_boss",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "train",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ally",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "karma": 4,
+              "flags": {
+                "performance": 3
+              }
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "stress": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "stress": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "wk2_quiet_quitting",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 62,
+      "flags": [
+        "employed",
+        "stressed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "continue",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "performance": -4,
+            "stress": -6
+          }
+        }
+      },
+      {
+        "id": "spark",
+        "effects": {
+          "happiness": 3,
+          "smarts": 2,
+          "flags": {
+            "performance": 3
+          }
+        }
+      },
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shift",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "flags": {
+                "performance": 2,
+                "stress": -3
+              }
+            }
+          },
+          {
+            "id": "warning",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "flags": {
+                "performance": -3
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk2_expense_padding",
+    "category": "work",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 64,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "report",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "praised",
+            "weight": 45,
+            "effects": {
+              "happiness": 6,
+              "karma": 9,
+              "flags": {
+                "performance": 4
+              }
+            }
+          },
+          {
+            "id": "retaliated",
+            "weight": 55,
+            "effects": {
+              "happiness": -8,
+              "karma": 9,
+              "flags": {
+                "performance": -6,
+                "stress": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "leverage",
+        "effects": {
+          "happiness": 3,
+          "karma": -8,
+          "flags": {
+            "performance": 3
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -3,
+          "karma": -3
+        }
+      }
+    ]
+  }
+]

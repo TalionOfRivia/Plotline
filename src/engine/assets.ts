@@ -13,7 +13,7 @@ export function buyAsset(life: Life, assetId: string, withMortgage = false): boo
   if (!def || def.kind === 'pet' || life.prison) return false
   const down = withMortgage && def.kind === 'house' ? Math.round(def.price * 0.2) : def.price
   if (life.money < down) return false
-  if (life.age < 18) return false
+  if (life.age < 18 && !(def.kind === 'luxury' && def.price < 5_000 && life.age >= 5)) return false
   life.money -= down
   const asset: OwnedAsset = {
     id: uid('a'),

@@ -1,0 +1,2530 @@
+[
+  {
+    "id": "pa_newborn_nights",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 40,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "walk",
+        "effects": {
+          "health": -4,
+          "happiness": -3,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "rotate",
+        "effects": {
+          "happiness": 2,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "sleeptrain",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "relationship": 3
+            }
+          },
+          {
+            "id": "worse",
+            "weight": 45,
+            "effects": {
+              "happiness": -8,
+              "relationship": -6,
+              "health": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pa_vaccines",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 42,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "full",
+        "effects": {
+          "karma": 3,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "delay",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "karma": -6,
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_first_word",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 40,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "record",
+        "effects": {
+          "happiness": 8,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "cherish",
+        "effects": {
+          "happiness": 10,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "correct",
+        "effects": {
+          "smarts": 1,
+          "relationship": 2,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_daycare",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 40,
+      "requiresPerson": "child",
+      "minMoney": 1000
+    },
+    "choices": [
+      {
+        "id": "daycare",
+        "effects": {
+          "money": -6000,
+          "relationship": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "cheap",
+        "effects": {
+          "money": -2500,
+          "relationship": -2,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "relative",
+        "effects": {
+          "money": -300,
+          "relationship": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_picky_eater",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 42,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "force",
+        "effects": {
+          "relationship": -6,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "hide",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 50,
+            "effects": {
+              "smarts": 2,
+              "relationship": 4
+            }
+          },
+          {
+            "id": "f",
+            "weight": 50,
+            "effects": {
+              "relationship": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "nuggets",
+        "effects": {
+          "happiness": 2,
+          "health": -2,
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_public_tantrum",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 42,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "carry",
+        "effects": {
+          "happiness": -2,
+          "relationship": 3
+        }
+      },
+      {
+        "id": "bribe",
+        "effects": {
+          "money": -5,
+          "relationship": 4,
+          "karma": -1
+        }
+      },
+      {
+        "id": "stern",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "calm",
+            "weight": 50,
+            "effects": {
+              "happiness": 6,
+              "relationship": 6,
+              "karma": 2
+            }
+          },
+          {
+            "id": "meltdown",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "relationship": -4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pa_daycare_bite",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 40,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "scold",
+        "effects": {
+          "karma": 2,
+          "relationship": -2
+        }
+      },
+      {
+        "id": "defend",
+        "effects": {
+          "karma": -3,
+          "relationship": 4
+        }
+      },
+      {
+        "id": "apologize",
+        "effects": {
+          "karma": 4,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_first_steps",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 38,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "catch",
+        "effects": {
+          "happiness": 10,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "film",
+        "effects": {
+          "happiness": 6,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_story_night",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 20,
+      "maxAge": 45,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 2,
+          "relationship": 8,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "relationship": -1,
+          "karma": -1
+        }
+      },
+      {
+        "id": "improvise",
+        "effects": {
+          "relationship": 10,
+          "happiness": 4,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_first_school_day",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 45,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "brave",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 65,
+            "effects": {
+              "happiness": 2,
+              "relationship": 5
+            }
+          },
+          {
+            "id": "f",
+            "weight": 35,
+            "effects": {
+              "happiness": -5,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "relationship": 8,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "sneak",
+        "effects": {
+          "relationship": -4,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_report_card",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 48,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "praise",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "up",
+            "weight": 70,
+            "effects": {
+              "happiness": 4,
+              "relationship": 8,
+              "flags": {
+                "child_grades": 4
+              }
+            }
+          },
+          {
+            "id": "shrug",
+            "weight": 30,
+            "effects": {
+              "relationship": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": "pressure",
+        "effects": {
+          "relationship": -8,
+          "flags": {
+            "child_grades": 3
+          },
+          "happiness": -2
+        }
+      },
+      {
+        "id": "tutor",
+        "effects": {
+          "money": -1500,
+          "flags": {
+            "child_grades": 6
+          },
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_bullied",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 48,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "school",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 60,
+            "effects": {
+              "relationship": 6,
+              "karma": 2
+            }
+          },
+          {
+            "id": "f",
+            "weight": 40,
+            "effects": {
+              "relationship": -3,
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "teach",
+        "effects": {
+          "relationship": 5,
+          "karma": -3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "parents",
+        "effects": {
+          "relationship": 4,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "listen",
+        "effects": {
+          "relationship": 12,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_is_bully",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "consequences",
+        "effects": {
+          "relationship": -6,
+          "karma": 4,
+          "flags": {
+            "child_grades": 1
+          }
+        }
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "relationship": 3,
+          "karma": 6
+        }
+      },
+      {
+        "id": "excuse",
+        "effects": {
+          "karma": -8,
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_talent",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 50,
+      "requiresPerson": "child",
+      "minMoney": 4000
+    },
+    "choices": [
+      {
+        "id": "invest",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "shines",
+            "weight": 45,
+            "effects": {
+              "money": -4000,
+              "happiness": 8,
+              "relationship": 10,
+              "flags": {
+                "child_grades": 3
+              }
+            }
+          },
+          {
+            "id": "quits",
+            "weight": 55,
+            "effects": {
+              "money": -4000,
+              "happiness": -4,
+              "relationship": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "casual",
+        "effects": {
+          "relationship": 5,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "relationship": -8,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_sports_team",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "coach",
+        "effects": {
+          "relationship": 12,
+          "health": 2,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "cheer",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 60,
+            "effects": {
+              "relationship": 8,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "f",
+            "weight": 40,
+            "effects": {
+              "relationship": -3,
+              "happiness": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "shout",
+        "effects": {
+          "relationship": -6,
+          "karma": -4,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_music_lessons",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "endure",
+        "effects": {
+          "relationship": 8,
+          "karma": 2,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "earplugs",
+        "effects": {
+          "money": -20,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "stop",
+        "effects": {
+          "relationship": -5,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_screen_time",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "ban",
+        "effects": {
+          "relationship": -8,
+          "flags": {
+            "child_grades": 2
+          },
+          "happiness": -2
+        }
+      },
+      {
+        "id": "limit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 60,
+            "effects": {
+              "relationship": 3,
+              "flags": {
+                "child_grades": 1
+              }
+            }
+          },
+          {
+            "id": "f",
+            "weight": 40,
+            "effects": {
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "effects": {
+          "relationship": 10,
+          "happiness": 4,
+          "smarts": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_broken_arm",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "er",
+        "effects": {
+          "money": -1800,
+          "relationship": 8,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "calm",
+        "effects": {
+          "money": -1800,
+          "relationship": 10,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "panic",
+        "effects": {
+          "money": -1800,
+          "relationship": 2,
+          "happiness": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_lie_caught",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "laugh",
+        "effects": {
+          "relationship": 4,
+          "karma": 1
+        }
+      },
+      {
+        "id": "punish",
+        "effects": {
+          "relationship": -5,
+          "karma": 1
+        }
+      },
+      {
+        "id": "trap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 55,
+            "effects": {
+              "relationship": 2,
+              "smarts": 1
+            }
+          },
+          {
+            "id": "f",
+            "weight": 45,
+            "effects": {
+              "relationship": -5,
+              "happiness": -3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pa_stole_wallet",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 23,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "confront",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "confess",
+            "weight": 60,
+            "effects": {
+              "relationship": 4,
+              "karma": 3,
+              "money": -40
+            }
+          },
+          {
+            "id": "deny",
+            "weight": 40,
+            "effects": {
+              "relationship": -8,
+              "money": -40,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "hide",
+        "effects": {
+          "money": -40,
+          "karma": -1
+        }
+      },
+      {
+        "id": "lesson",
+        "effects": {
+          "money": -40,
+          "relationship": 2,
+          "karma": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_puberty_talk",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "direct",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 60,
+            "effects": {
+              "relationship": 9,
+              "karma": 2
+            }
+          },
+          {
+            "id": "f",
+            "weight": 40,
+            "effects": {
+              "relationship": -4,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "book",
+        "effects": {
+          "relationship": -1,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "awkward",
+        "effects": {
+          "relationship": -3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "other",
+        "effects": {
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_first_phone",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 24,
+      "maxAge": 50,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 60,
+            "effects": {
+              "money": -300,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "f",
+            "weight": 40,
+            "effects": {
+              "money": -700,
+              "relationship": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "basic",
+        "effects": {
+          "money": -40,
+          "relationship": -2,
+          "flags": {
+            "child_grades": 1
+          }
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "relationship": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_sneak_out",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 52,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "confront",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "caught",
+            "weight": 60,
+            "effects": {
+              "relationship": -4,
+              "karma": 2,
+              "happiness": -2
+            }
+          },
+          {
+            "id": "runs",
+            "weight": 40,
+            "effects": {
+              "relationship": -10,
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "relationship": 3,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "follow",
+        "effects": {
+          "relationship": -8,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_drunk_teen",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 54,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "pickup",
+        "effects": {
+          "relationship": 12,
+          "karma": 3,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "lecture",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 55,
+            "effects": {
+              "relationship": 2,
+              "karma": 3
+            }
+          },
+          {
+            "id": "f",
+            "weight": 45,
+            "effects": {
+              "relationship": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "relationship": -12,
+          "karma": -6,
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_failing_class",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 29,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "sit",
+        "effects": {
+          "flags": {
+            "child_grades": 6
+          },
+          "relationship": 6,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "tutor",
+        "effects": {
+          "money": -2000,
+          "flags": {
+            "child_grades": 5
+          },
+          "relationship": 1
+        }
+      },
+      {
+        "id": "threat",
+        "effects": {
+          "flags": {
+            "child_grades": 2
+          },
+          "relationship": -8
+        }
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "flags": {
+            "child_grades": -5
+          },
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_teen_dating",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 29,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "welcome",
+        "effects": {
+          "relationship": 8,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "grill",
+        "effects": {
+          "relationship": -5,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "rules",
+        "effects": {
+          "relationship": -1,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_diary_snoop",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 29,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "read",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fine",
+            "weight": 35,
+            "effects": {
+              "happiness": 2
+            }
+          },
+          {
+            "id": "secret",
+            "weight": 35,
+            "effects": {
+              "happiness": -6,
+              "karma": -2
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 30,
+            "effects": {
+              "relationship": -15,
+              "karma": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "close",
+        "effects": {
+          "relationship": 4,
+          "karma": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_driving_lessons",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "teach",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "bond",
+            "weight": 55,
+            "effects": {
+              "relationship": 10,
+              "happiness": 3
+            }
+          },
+          {
+            "id": "crash",
+            "weight": 45,
+            "effects": {
+              "relationship": -4,
+              "money": -900,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "school",
+        "effects": {
+          "money": -700,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "deny",
+        "effects": {
+          "relationship": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_curfew_war",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 29,
+      "maxAge": 54,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "ground",
+        "effects": {
+          "relationship": -6,
+          "karma": 1
+        }
+      },
+      {
+        "id": "talk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 55,
+            "effects": {
+              "relationship": 6
+            }
+          },
+          {
+            "id": "f",
+            "weight": 45,
+            "effects": {
+              "relationship": -5,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "relationship": 3,
+          "karma": -2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_tattoo_ask",
+    "category": "family",
+    "weight": 1,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "allow",
+        "effects": {
+          "relationship": 7,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "ban",
+        "effects": {
+          "relationship": -6
+        }
+      },
+      {
+        "id": "deal",
+        "effects": {
+          "relationship": 4,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_college_major",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 60,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "doctor",
+        "effects": {
+          "flags": {
+            "child_grades": 8
+          },
+          "relationship": -6,
+          "money": -2000
+        }
+      },
+      {
+        "id": "engineer",
+        "effects": {
+          "flags": {
+            "child_grades": 6
+          },
+          "relationship": -3
+        }
+      },
+      {
+        "id": "art",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 45,
+            "effects": {
+              "relationship": 14,
+              "happiness": 5,
+              "flags": {
+                "child_grades": 4
+              }
+            }
+          },
+          {
+            "id": "f",
+            "weight": 55,
+            "effects": {
+              "relationship": 8,
+              "happiness": 0,
+              "flags": {
+                "child_grades": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "theirs",
+        "effects": {
+          "relationship": 8,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_tuition_ask",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 60,
+      "requiresPerson": "child",
+      "minMoney": 20000
+    },
+    "choices": [
+      {
+        "id": "full",
+        "effects": {
+          "money": -50000,
+          "relationship": 15,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "half",
+        "effects": {
+          "money": -25000,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "loan",
+        "effects": {
+          "money": -20000,
+          "relationship": 8,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_move_out",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 35,
+      "maxAge": 62,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "help",
+        "effects": {
+          "relationship": 10,
+          "karma": 2,
+          "health": -2,
+          "flags": {
+            "child_leaves": true
+          }
+        }
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "relationship": 8,
+          "happiness": -4,
+          "flags": {
+            "child_leaves": true
+          }
+        }
+      },
+      {
+        "id": "room",
+        "effects": {
+          "relationship": 6,
+          "happiness": -2,
+          "flags": {
+            "child_leaves": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_empty_nest",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 38,
+      "maxAge": 65,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "travel",
+        "effects": {
+          "money": -3000,
+          "happiness": 10
+        }
+      },
+      {
+        "id": "hobby",
+        "effects": {
+          "happiness": 6,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "call",
+        "effects": {
+          "relationship": -4,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_dropout",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 34,
+      "maxAge": 58,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "support",
+        "effects": {
+          "money": -5000,
+          "relationship": 12,
+          "flags": {
+            "child_grades": -2
+          }
+        }
+      },
+      {
+        "id": "rage",
+        "effects": {
+          "relationship": -14,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "deal",
+        "effects": {
+          "relationship": 3,
+          "flags": {
+            "child_grades": -2
+          }
+        }
+      },
+      {
+        "id": "loan",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hit",
+            "weight": 25,
+            "effects": {
+              "money": 40000,
+              "relationship": 15,
+              "happiness": 12
+            }
+          },
+          {
+            "id": "flop",
+            "weight": 75,
+            "effects": {
+              "money": -10000,
+              "relationship": -3,
+              "happiness": -5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pa_coming_out",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 32,
+      "maxAge": 60,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "embrace",
+        "effects": {
+          "relationship": 18,
+          "happiness": 5,
+          "karma": 5
+        }
+      },
+      {
+        "id": "shock",
+        "effects": {
+          "relationship": -4,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "reject",
+        "effects": {
+          "relationship": -18,
+          "karma": -8,
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_adult_loan",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 42,
+      "maxAge": 70,
+      "requiresPerson": "child",
+      "minMoney": 3000
+    },
+    "choices": [
+      {
+        "id": "lend",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "repaid",
+            "weight": 35,
+            "effects": {
+              "money": -5000,
+              "relationship": 10,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "never",
+            "weight": 65,
+            "effects": {
+              "money": -9000,
+              "relationship": -2,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "gift",
+        "effects": {
+          "money": -3000,
+          "relationship": 8
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": -8,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_wedding_child",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 45,
+      "maxAge": 70,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "pay",
+        "effects": {
+          "money": -15000,
+          "relationship": 15,
+          "happiness": 6
+        }
+      },
+      {
+        "id": "speech",
+        "effects": {
+          "relationship": 12,
+          "happiness": 5
+        }
+      },
+      {
+        "id": "drunk",
+        "effects": {
+          "relationship": -10,
+          "happiness": 3,
+          "karma": -3
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "relationship": -25,
+          "karma": -8,
+          "happiness": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_grandchild_news",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 46,
+      "maxAge": 72,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "joy",
+        "effects": {
+          "happiness": 14,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "gifts",
+        "effects": {
+          "money": -1500,
+          "relationship": 8,
+          "happiness": 8
+        }
+      },
+      {
+        "id": "advice",
+        "effects": {
+          "relationship": -5,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_babysit_grand",
+    "category": "family",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 48,
+      "maxAge": 75,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "yes",
+        "effects": {
+          "relationship": 10,
+          "happiness": 6,
+          "health": -4
+        }
+      },
+      {
+        "id": "treats",
+        "effects": {
+          "money": -200,
+          "relationship": 6,
+          "happiness": 8
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": -7,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_money_adult",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 42,
+      "maxAge": 70,
+      "requiresPerson": "child",
+      "minMoney": 5000
+    },
+    "choices": [
+      {
+        "id": "bail",
+        "effects": {
+          "money": -10000,
+          "relationship": 6,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "lesson",
+        "effects": {
+          "relationship": -6,
+          "karma": 2
+        }
+      },
+      {
+        "id": "plan",
+        "effects": {
+          "money": -2000,
+          "relationship": 8,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_rift",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 40,
+      "maxAge": 70,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "pride",
+        "effects": {
+          "relationship": -20,
+          "happiness": -6
+        }
+      },
+      {
+        "id": "write",
+        "effects": {
+          "relationship": 8,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "visit",
+        "effects": {
+          "relationship": 5,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_reconcile",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 42,
+      "maxAge": 75,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "forgive",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "good",
+            "weight": 65,
+            "effects": {
+              "relationship": 25,
+              "happiness": 15,
+              "karma": 3
+            }
+          },
+          {
+            "id": "again",
+            "weight": 35,
+            "effects": {
+              "relationship": 5,
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "apologize",
+        "effects": {
+          "relationship": 20,
+          "happiness": 10,
+          "karma": 4
+        }
+      },
+      {
+        "id": "cold",
+        "effects": {
+          "relationship": -10,
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_old_care",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 62,
+      "maxAge": 95,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "s",
+            "weight": 70,
+            "effects": {
+              "relationship": 10,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "f",
+            "weight": 30,
+            "effects": {
+              "relationship": 2,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "proud",
+        "effects": {
+          "relationship": -3,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "move",
+        "effects": {
+          "relationship": 12,
+          "happiness": 4,
+          "money": -500
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_old_visit",
+    "category": "family",
+    "weight": 3,
+    "once": false,
+    "conditions": {
+      "minAge": 62,
+      "maxAge": 95,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "cook",
+        "effects": {
+          "relationship": 10,
+          "happiness": 8
+        }
+      },
+      {
+        "id": "stories",
+        "effects": {
+          "relationship": 8,
+          "happiness": 6,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "will",
+        "effects": {
+          "relationship": -6,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_old_nursing",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 68,
+      "maxAge": 95,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "home",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "works",
+            "weight": 60,
+            "effects": {
+              "relationship": 12,
+              "happiness": 4
+            }
+          },
+          {
+            "id": "strain",
+            "weight": 40,
+            "effects": {
+              "relationship": -2,
+              "health": -4,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "place",
+        "effects": {
+          "money": -6000,
+          "relationship": 3,
+          "health": 3
+        }
+      },
+      {
+        "id": "fight",
+        "effects": {
+          "relationship": -4,
+          "health": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_apology_old",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 58,
+      "maxAge": 95,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "sorry",
+        "effects": {
+          "relationship": 15,
+          "happiness": 8,
+          "karma": 3
+        }
+      },
+      {
+        "id": "defensive",
+        "effects": {
+          "relationship": -10,
+          "happiness": -3
+        }
+      },
+      {
+        "id": "quiet",
+        "effects": {
+          "relationship": 18,
+          "happiness": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_toddler_nap_strike",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 38,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "quiet",
+        "effects": {
+          "relationship": 1,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "car",
+        "effects": {
+          "money": -20,
+          "health": -2,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "giveup",
+        "effects": {
+          "happiness": -4,
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_stomach_bug",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 19,
+      "maxAge": 40,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "tend",
+        "effects": {
+          "relationship": 10,
+          "health": -3
+        }
+      },
+      {
+        "id": "doctor",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "minor",
+            "weight": 75,
+            "effects": {
+              "money": -200,
+              "relationship": 6
+            }
+          },
+          {
+            "id": "flu",
+            "weight": 25,
+            "effects": {
+              "money": -300,
+              "health": -6,
+              "relationship": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pa_school_play",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 48,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "front",
+        "effects": {
+          "relationship": 9,
+          "happiness": 6
+        }
+      },
+      {
+        "id": "work",
+        "effects": {
+          "relationship": -8,
+          "money": 100
+        }
+      },
+      {
+        "id": "flowers",
+        "effects": {
+          "money": -30,
+          "relationship": 10,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_science_fair",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 48,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "build",
+        "effects": {
+          "relationship": 10,
+          "smarts": 2,
+          "flags": {
+            "child_grades": 2
+          }
+        }
+      },
+      {
+        "id": "alone",
+        "effects": {
+          "relationship": -2,
+          "flags": {
+            "child_grades": 3
+          },
+          "happiness": -3
+        }
+      },
+      {
+        "id": "buy",
+        "effects": {
+          "money": -40,
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_birthday_party",
+    "category": "family",
+    "weight": 3,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 46,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "big",
+        "effects": {
+          "money": -1200,
+          "relationship": 12,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "home",
+        "effects": {
+          "money": -100,
+          "relationship": 7
+        }
+      },
+      {
+        "id": "trip",
+        "effects": {
+          "money": -500,
+          "relationship": 10,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_sleepover_call",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 48,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "pickup",
+        "effects": {
+          "relationship": 10,
+          "health": -1
+        }
+      },
+      {
+        "id": "encourage",
+        "effects": {
+          "relationship": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "sleepy",
+        "effects": {
+          "relationship": -5,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_pet_beg",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 21,
+      "maxAge": 46,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "yes",
+        "effects": {
+          "money": -300,
+          "relationship": 12,
+          "happiness": 5,
+          "flags": {
+            "pet_owner": true
+          }
+        }
+      },
+      {
+        "id": "fish",
+        "effects": {
+          "money": -20,
+          "relationship": 2
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_allowance",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 22,
+      "maxAge": 46,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "chores",
+        "effects": {
+          "money": -300,
+          "smarts": 1,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "flat",
+        "effects": {
+          "money": -200,
+          "relationship": 6
+        }
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_cheating_exam",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 28,
+      "maxAge": 54,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "punish",
+        "effects": {
+          "relationship": -3,
+          "karma": 4,
+          "flags": {
+            "child_grades": 2
+          }
+        }
+      },
+      {
+        "id": "defend",
+        "effects": {
+          "relationship": 8,
+          "karma": -4
+        }
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "relationship": 7,
+          "karma": 2,
+          "flags": {
+            "child_grades": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_graduation",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 58,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "party",
+        "effects": {
+          "money": -2500,
+          "relationship": 10,
+          "happiness": 8
+        }
+      },
+      {
+        "id": "gift",
+        "effects": {
+          "money": -1500,
+          "relationship": 8,
+          "happiness": 5
+        }
+      },
+      {
+        "id": "words",
+        "effects": {
+          "relationship": 12,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_teen_job",
+    "category": "work",
+    "weight": 2,
+    "conditions": {
+      "minAge": 30,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "yes",
+        "effects": {
+          "relationship": 6,
+          "flags": {
+            "child_grades": -1
+          },
+          "karma": 2
+        }
+      },
+      {
+        "id": "studies",
+        "effects": {
+          "relationship": -3,
+          "flags": {
+            "child_grades": 2
+          }
+        }
+      },
+      {
+        "id": "lend",
+        "effects": {
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_vacation_fight",
+    "category": "family",
+    "weight": 2,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "sing",
+        "effects": {
+          "relationship": 8,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "shout",
+        "effects": {
+          "relationship": -5,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "stop",
+        "effects": {
+          "money": -20,
+          "relationship": 8,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "pa_accident",
+    "category": "health",
+    "weight": 0.3,
+    "conditions": {
+      "minAge": 25,
+      "maxAge": 55,
+      "requiresPerson": "child"
+    },
+    "choices": [
+      {
+        "id": "er",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ok",
+            "weight": 95,
+            "effects": {
+              "relationship": 15,
+              "happiness": -10,
+              "health": -3,
+              "money": -1500
+            }
+          },
+          {
+            "id": "tragedy",
+            "weight": 5,
+            "effects": {
+              "happiness": -60,
+              "relationship": -100,
+              "health": -10
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

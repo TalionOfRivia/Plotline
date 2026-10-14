@@ -4,7 +4,7 @@ import { netWorth } from './assets'
 import { log } from './util'
 
 export interface Goal { kind: string; value?: number | string; n?: number }
-export interface ChallengeDef { id: string; emoji: string; tier: 'easy' | 'medium' | 'hard' | 'legendary'; goals: Goal[] }
+export interface ChallengeDef { id: string; emoji: string; tier: 'easy' | 'medium' | 'hard' | 'legendary' | 'achievement'; goals: Goal[] }
 export const CHALLENGES = challengesData as ChallengeDef[]
 
 const stat = (life: Life, k: unknown) => life.stats[k as keyof Life['stats']] ?? 0

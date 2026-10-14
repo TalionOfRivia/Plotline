@@ -1,0 +1,2726 @@
+[
+ {
+  "id": "mh_burst_pipe",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "plumber",
+    "effects": {
+     "money": -3000,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "diy",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "diy_ok",
+      "weight": 45,
+      "effects": {
+       "money": -300,
+       "smarts": 4,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "diy_worse",
+      "weight": 55,
+      "effects": {
+       "money": -9000,
+       "house_damage": 6,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_roof_leak",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "replace",
+    "effects": {
+     "money": -15000,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "patch",
+    "effects": {
+     "money": -3000,
+     "house_damage": 4
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "house_damage": 9,
+     "happiness": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_hoa_fight",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "comply",
+    "effects": {
+     "money": -400,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fight_win",
+      "weight": 40,
+      "effects": {
+       "happiness": 12,
+       "karma": 2
+      }
+     },
+     {
+      "id": "fight_lose",
+      "weight": 60,
+      "effects": {
+       "money": -2500,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "money": -800,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_nosy_neighbour",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "chat",
+    "effects": {
+     "happiness": 3,
+     "karma": 3
+    }
+   },
+   {
+    "id": "shut",
+    "effects": {
+     "karma": -2,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "bait",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "bait_fun",
+      "weight": 60,
+      "effects": {
+       "happiness": 10
+      }
+     },
+     {
+      "id": "bait_caught",
+      "weight": 40,
+      "effects": {
+       "happiness": -5,
+       "karma": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_squatter",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "police",
+    "effects": {
+     "happiness": -3,
+     "money": -500
+    }
+   },
+   {
+    "id": "talk",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "talk_leaves",
+      "weight": 50,
+      "effects": {
+       "happiness": 3,
+       "karma": 3
+      }
+     },
+     {
+      "id": "talk_steals",
+      "weight": 50,
+      "effects": {
+       "money": -2500,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "bat",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "bat_run",
+      "weight": 75,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "bat_hurt",
+      "weight": 25,
+      "effects": {
+       "health": -14,
+       "money": -1500,
+       "karma": -4
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_tree_falls",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "insurance",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "insurance_paid",
+      "weight": 60,
+      "effects": {
+       "money": -800,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "insurance_denied",
+      "weight": 40,
+      "effects": {
+       "money": -7000,
+       "happiness": -7,
+       "house_damage": 3
+      }
+     }
+    ]
+   },
+   {
+    "id": "pay",
+    "effects": {
+     "money": -6000
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_break_in",
+  "category": "crime",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "report",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "report_caught",
+      "weight": 20,
+      "effects": {
+       "money": -300,
+       "happiness": 8,
+       "karma": 2
+      }
+     },
+     {
+      "id": "report_nothing",
+      "weight": 80,
+      "effects": {
+       "money": -2800,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "alarm",
+    "effects": {
+     "money": -3500,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "stakeout",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "stakeout_win",
+      "weight": 30,
+      "effects": {
+       "happiness": 14,
+       "karma": -2
+      }
+     },
+     {
+      "id": "stakeout_lose",
+      "weight": 70,
+      "effects": {
+       "happiness": -5,
+       "money": -1500
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_flood",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "claim",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "claim_covered",
+      "weight": 50,
+      "effects": {
+       "money": -1500,
+       "house_damage": 4,
+       "happiness": -3
+      }
+     },
+     {
+      "id": "claim_not",
+      "weight": 50,
+      "effects": {
+       "money": -14000,
+       "house_damage": 12,
+       "happiness": -12
+      }
+     }
+    ]
+   },
+   {
+    "id": "sandbag",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sandbag_hold",
+      "weight": 35,
+      "effects": {
+       "happiness": 8,
+       "health": -3,
+       "karma": 2
+      }
+     },
+     {
+      "id": "sandbag_fail",
+      "weight": 65,
+      "effects": {
+       "money": -9000,
+       "house_damage": 8,
+       "health": -6
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_reno_pays",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minMoney": 8000,
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "go",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "go_great",
+      "weight": 65,
+      "effects": {
+       "money": -6000,
+       "happiness": 12,
+       "house_damage": -8
+      }
+     },
+     {
+      "id": "go_meh",
+      "weight": 35,
+      "effects": {
+       "money": -11000,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "effects": {
+     "money": -700,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_noisy_reno",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "earplugs",
+    "effects": {
+     "money": -30,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "complain",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "complain_stops",
+      "weight": 45,
+      "effects": {
+       "happiness": 7
+      }
+     },
+     {
+      "id": "complain_feud",
+      "weight": 55,
+      "effects": {
+       "happiness": -5,
+       "karma": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "drill",
+    "effects": {
+     "happiness": 6,
+     "karma": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_haunted_rumour",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "embrace",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "embrace_boom",
+      "weight": 40,
+      "effects": {
+       "money": 4500,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "embrace_flop",
+      "weight": 60,
+      "effects": {
+       "happiness": -4,
+       "money": -300
+      }
+     }
+    ]
+   },
+   {
+    "id": "deny",
+    "effects": {
+     "happiness": -3,
+     "house_damage": 2
+    }
+   },
+   {
+    "id": "sleep",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sleep_fine",
+      "weight": 70,
+      "effects": {
+       "happiness": 4
+      }
+     },
+     {
+      "id": "sleep_scary",
+      "weight": 30,
+      "effects": {
+       "happiness": -6,
+       "smarts": -1
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_wildfire",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "leave",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "leave_saved",
+      "weight": 60,
+      "effects": {
+       "happiness": -4,
+       "money": -1500
+      }
+     },
+     {
+      "id": "leave_lost",
+      "weight": 37,
+      "effects": {
+       "money": -15000,
+       "house_damage": 30,
+       "happiness": -15
+      }
+     },
+     {
+      "id": "leave_died",
+      "weight": 3,
+      "effects": {
+       "death": "freak_accident"
+      }
+     }
+    ]
+   },
+   {
+    "id": "hose",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hose_hero",
+      "weight": 35,
+      "effects": {
+       "happiness": 10,
+       "health": -8,
+       "house_damage": 2
+      }
+     },
+     {
+      "id": "hose_fail",
+      "weight": 65,
+      "effects": {
+       "money": -15000,
+       "house_damage": 25,
+       "health": -15,
+       "happiness": -12
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_termites",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "treat",
+    "effects": {
+     "money": -5000,
+     "happiness": -2
+    }
+   },
+   {
+    "id": "spot",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "spot_ok",
+      "weight": 50,
+      "effects": {
+       "money": -1200
+      }
+     },
+     {
+      "id": "spot_bad",
+      "weight": 50,
+      "effects": {
+       "money": -12000,
+       "house_damage": 10,
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_property_tax",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -4000,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "appeal",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "appeal_win",
+      "weight": 40,
+      "effects": {
+       "money": -500,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "appeal_lose",
+      "weight": 60,
+      "effects": {
+       "money": -5500,
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_garden_gnome_war",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "escalate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "escalate_win",
+      "weight": 50,
+      "effects": {
+       "happiness": 9
+      }
+     },
+     {
+      "id": "escalate_lose",
+      "weight": 50,
+      "effects": {
+       "happiness": -6,
+       "money": -600
+      }
+     }
+    ]
+   },
+   {
+    "id": "tea",
+    "effects": {
+     "happiness": 5,
+     "karma": 4
+    }
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_rats_attic",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "exterminator",
+    "effects": {
+     "money": -900,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "traps",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "traps_ok",
+      "weight": 55,
+      "effects": {
+       "money": -60,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "traps_snap",
+      "weight": 45,
+      "effects": {
+       "health": -4,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "coexist",
+    "effects": {
+     "happiness": -3,
+     "house_damage": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_solar_roof",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minMoney": 10000,
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "buy",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "buy_good",
+      "weight": 60,
+      "effects": {
+       "money": -9000,
+       "happiness": 6,
+       "karma": 2
+      }
+     },
+     {
+      "id": "buy_scam",
+      "weight": 40,
+      "effects": {
+       "money": -12000,
+       "happiness": -10
+      }
+     }
+    ]
+   },
+   {
+    "id": "no",
+    "effects": {
+     "happiness": 0
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_basement_find",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "open",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "open_cash",
+      "weight": 30,
+      "effects": {
+       "money": 5000,
+       "happiness": 12
+      }
+     },
+     {
+      "id": "open_photos",
+      "weight": 45,
+      "effects": {
+       "happiness": 4,
+       "smarts": 2
+      }
+     },
+     {
+      "id": "open_bad",
+      "weight": 25,
+      "effects": {
+       "happiness": -7,
+       "health": -3
+      }
+     }
+    ]
+   },
+   {
+    "id": "leave",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_heat_wave_ac",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "new",
+    "effects": {
+     "money": -3200,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "fan",
+    "effects": {
+     "health": -5,
+     "happiness": -6
+    }
+   },
+   {
+    "id": "friend",
+    "effects": {
+     "happiness": 2,
+     "karma": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_mortgage_refi",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "accept_saves",
+      "weight": 55,
+      "effects": {
+       "money": 3500,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "accept_fees",
+      "weight": 45,
+      "effects": {
+       "money": -3000,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_rent_hike",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -2400,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "negotiate_half",
+      "weight": 50,
+      "effects": {
+       "money": -1000,
+       "happiness": 2
+      }
+     },
+     {
+      "id": "negotiate_no",
+      "weight": 50,
+      "effects": {
+       "money": -2400,
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "move",
+    "effects": {
+     "money": -1500,
+     "happiness": -2,
+     "smarts": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_landlord_enters",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "confront",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "confront_stops",
+      "weight": 55,
+      "effects": {
+       "happiness": 7
+      }
+     },
+     {
+      "id": "confront_anger",
+      "weight": 45,
+      "effects": {
+       "happiness": -5,
+       "money": -600
+      }
+     }
+    ]
+   },
+   {
+    "id": "lock",
+    "effects": {
+     "money": -120,
+     "happiness": 4,
+     "karma": -1
+    }
+   },
+   {
+    "id": "shrug",
+    "effects": {
+     "happiness": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_deposit_theft",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "court",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "court_win",
+      "weight": 55,
+      "effects": {
+       "money": 1200,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "court_lose",
+      "weight": 45,
+      "effects": {
+       "money": -300,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "effects": {
+     "happiness": 4,
+     "karma": -2,
+     "money": -1200
+    }
+   },
+   {
+    "id": "forget",
+    "effects": {
+     "money": -1200,
+     "happiness": -6
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_eviction_notice",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fight_stay",
+      "weight": 45,
+      "effects": {
+       "money": -800,
+       "happiness": 7
+      }
+     },
+     {
+      "id": "fight_lose",
+      "weight": 55,
+      "effects": {
+       "money": -2800,
+       "happiness": -9
+      }
+     }
+    ]
+   },
+   {
+    "id": "leave",
+    "effects": {
+     "money": -1800,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "couch",
+    "effects": {
+     "happiness": -5,
+     "money": -300,
+     "karma": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_roommate_dishes",
+  "category": "social",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "talk",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "talk_fixed",
+      "weight": 50,
+      "effects": {
+       "happiness": 6,
+       "karma": 2
+      }
+     },
+     {
+      "id": "talk_blow",
+      "weight": 50,
+      "effects": {
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "wash",
+    "effects": {
+     "happiness": -3,
+     "karma": 2
+    }
+   },
+   {
+    "id": "revenge",
+    "effects": {
+     "happiness": 4,
+     "karma": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_roommate_rent",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "cover",
+    "effects": {
+     "money": -1100,
+     "karma": 3,
+     "happiness": -3
+    }
+   },
+   {
+    "id": "kick",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "kick_ok",
+      "weight": 55,
+      "effects": {
+       "happiness": 5
+      }
+     },
+     {
+      "id": "kick_revenge",
+      "weight": 45,
+      "effects": {
+       "money": -600,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "chase",
+    "effects": {
+     "happiness": -2,
+     "money": -200,
+     "karma": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_roommate_party",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "join",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "join_fun",
+      "weight": 60,
+      "effects": {
+       "happiness": 12,
+       "health": -3
+      }
+     },
+     {
+      "id": "join_trouble",
+      "weight": 40,
+      "effects": {
+       "happiness": -5,
+       "money": -900
+      }
+     }
+    ]
+   },
+   {
+    "id": "kick",
+    "effects": {
+     "happiness": -3,
+     "karma": 1
+    }
+   },
+   {
+    "id": "sleep",
+    "effects": {
+     "happiness": -4,
+     "health": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_mold_flat",
+  "category": "health",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "landlord",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "landlord_fixed",
+      "weight": 40,
+      "effects": {
+       "happiness": 5,
+       "health": 2
+      }
+     },
+     {
+      "id": "landlord_ignored",
+      "weight": 60,
+      "effects": {
+       "health": -6,
+       "happiness": -5,
+       "flags": {
+        "ailment": "bronchitis"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "clean",
+    "effects": {
+     "money": -60,
+     "health": -2
+    }
+   },
+   {
+    "id": "move",
+    "effects": {
+     "money": -1500,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_noisy_upstairs",
+  "category": "random",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "knock",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "knock_nice",
+      "weight": 55,
+      "effects": {
+       "happiness": 6,
+       "karma": 2
+      }
+     },
+     {
+      "id": "knock_rude",
+      "weight": 45,
+      "effects": {
+       "happiness": -5,
+       "karma": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "broom",
+    "effects": {
+     "happiness": -1
+    }
+   },
+   {
+    "id": "earplug",
+    "effects": {
+     "money": -30,
+     "happiness": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_landlord_sells",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "notFlags": [
+    "has_house"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "buyout",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "buyout_paid",
+      "weight": 45,
+      "effects": {
+       "money": 3500,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "buyout_nothing",
+      "weight": 55,
+      "effects": {
+       "money": -1200,
+       "happiness": -5
+      }
+     }
+    ]
+   },
+   {
+    "id": "buy",
+    "effects": {
+     "money": -2000,
+     "smarts": 3,
+     "happiness": -1
+    }
+   },
+   {
+    "id": "go",
+    "effects": {
+     "money": -1500
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_tax_audit",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minMoney": 3000,
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "honest",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "honest_clean",
+      "weight": 55,
+      "effects": {
+       "happiness": 6,
+       "karma": 3
+      }
+     },
+     {
+      "id": "honest_small",
+      "weight": 35,
+      "effects": {
+       "money": -2000,
+       "happiness": -4
+      }
+     },
+     {
+      "id": "honest_big",
+      "weight": 10,
+      "effects": {
+       "money": -15000,
+       "happiness": -9
+      }
+     }
+    ]
+   },
+   {
+    "id": "hide",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "hide_lucky",
+      "weight": 35,
+      "effects": {
+       "happiness": 4,
+       "karma": -4
+      }
+     },
+     {
+      "id": "hide_caught",
+      "weight": 65,
+      "effects": {
+       "money": -40000,
+       "happiness": -12,
+       "karma": -4,
+       "flags": {
+        "criminal_record": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "lawyer",
+    "effects": {
+     "money": -4000,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_bank_error",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "return",
+    "effects": {
+     "karma": 10,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "keep",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "keep_ok",
+      "weight": 50,
+      "effects": {
+       "money": 9000,
+       "karma": -8,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "keep_caught",
+      "weight": 50,
+      "effects": {
+       "money": -1500,
+       "karma": -8,
+       "happiness": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "spend",
+    "effects": {
+     "money": 3000,
+     "karma": -6,
+     "happiness": 8
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_identity_theft",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fight_cleared",
+      "weight": 60,
+      "effects": {
+       "money": -400,
+       "happiness": -3
+      }
+     },
+     {
+      "id": "fight_stuck",
+      "weight": 40,
+      "effects": {
+       "money": -5000,
+       "happiness": -10,
+       "smarts": 2
+      }
+     }
+    ]
+   },
+   {
+    "id": "pay",
+    "effects": {
+     "money": -3000,
+     "happiness": -6
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_tax_refund",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "employed"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "save",
+    "effects": {
+     "money": 1800,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "treat",
+    "effects": {
+     "money": 300,
+     "happiness": 12
+    }
+   },
+   {
+    "id": "gamble",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "gamble_win",
+      "weight": 40,
+      "effects": {
+       "money": 3600,
+       "happiness": 10
+      }
+     },
+     {
+      "id": "gamble_lose",
+      "weight": 60,
+      "effects": {
+       "happiness": -8
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_crypto_tip",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "requiresPerson": "friend",
+   "minMoney": 1000,
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "invest",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "invest_moon",
+      "weight": 25,
+      "effects": {
+       "money": 3500,
+       "happiness": 10,
+       "relationship": 6
+      }
+     },
+     {
+      "id": "invest_zero",
+      "weight": 75,
+      "effects": {
+       "money": -1000,
+       "happiness": -7,
+       "relationship": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "pass",
+    "effects": {
+     "happiness": 0
+    }
+   },
+   {
+    "id": "warn",
+    "effects": {
+     "relationship": -4,
+     "karma": 2,
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_mlm_pitch",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "join",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "join_small",
+      "weight": 15,
+      "effects": {
+       "money": 1500,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "join_loss",
+      "weight": 85,
+      "effects": {
+       "money": -2500,
+       "happiness": -8,
+       "karma": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 1
+    }
+   },
+   {
+    "id": "expose",
+    "effects": {
+     "karma": 3,
+     "happiness": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_lottery_pool",
+  "category": "work",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "employed"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "join",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "join_win",
+      "weight": 5,
+      "effects": {
+       "money": 20000,
+       "happiness": 15
+      }
+     },
+     {
+      "id": "join_nope",
+      "weight": 95,
+      "effects": {
+       "money": -10,
+       "happiness": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "solo",
+    "effects": {
+     "money": -10
+    }
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_late_paycheck",
+  "category": "work",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "employed"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "wait",
+    "effects": {
+     "money": -500,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "push",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "push_paid",
+      "weight": 70,
+      "effects": {
+       "happiness": 3
+      }
+     },
+     {
+      "id": "push_tense",
+      "weight": 30,
+      "effects": {
+       "happiness": -5,
+       "flags": {
+        "stress": 4
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "quit",
+    "effects": {
+     "happiness": 3,
+     "flags": {
+      "performance": -3
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_inheritance_scam",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -2000,
+     "happiness": -6,
+     "smarts": -2
+    }
+   },
+   {
+    "id": "report",
+    "effects": {
+     "karma": 2,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "troll",
+    "effects": {
+     "happiness": 6,
+     "karma": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_forgotten_sub",
+  "category": "money",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "cancel",
+    "effects": {
+     "money": -600,
+     "happiness": 1
+    }
+   },
+   {
+    "id": "fight",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "fight_refund",
+      "weight": 40,
+      "effects": {
+       "happiness": 6
+      }
+     },
+     {
+      "id": "fight_no",
+      "weight": 60,
+      "effects": {
+       "money": -600,
+       "happiness": -3
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_parking_ticket",
+  "category": "random",
+  "weight": 3,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_license"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -150
+    }
+   },
+   {
+    "id": "appeal",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "appeal_win",
+      "weight": 35,
+      "effects": {
+       "happiness": 5
+      }
+     },
+     {
+      "id": "appeal_lose",
+      "weight": 65,
+      "effects": {
+       "money": -200,
+       "happiness": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "ignore",
+    "effects": {
+     "money": -400,
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_car_impound",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "has_license"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -450,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "argue",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "argue_win",
+      "weight": 25,
+      "effects": {
+       "money": -100,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "argue_lose",
+      "weight": 75,
+      "effects": {
+       "money": -650,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "abandon",
+    "effects": {
+     "money": -300,
+     "happiness": -8,
+     "car_damage": 50
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_investment_pitch",
+  "category": "money",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minMoney": 5000,
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "invest",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "invest_ok",
+      "weight": 30,
+      "effects": {
+       "money": 2400,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "invest_scam",
+      "weight": 70,
+      "effects": {
+       "money": -4000,
+       "happiness": -10
+      }
+     }
+    ]
+   },
+   {
+    "id": "research",
+    "effects": {
+     "smarts": 3,
+     "happiness": 2
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": 0
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_medical_bill",
+  "category": "health",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "pay",
+    "effects": {
+     "money": -4500,
+     "happiness": -6
+    }
+   },
+   {
+    "id": "negotiate",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "negotiate_cut",
+      "weight": 50,
+      "effects": {
+       "money": -1500,
+       "happiness": 3
+      }
+     },
+     {
+      "id": "negotiate_same",
+      "weight": 50,
+      "effects": {
+       "money": -4500,
+       "happiness": -5
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mh_windfall_sale",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "sell",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sell_good",
+      "weight": 55,
+      "effects": {
+       "money": 3000,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "sell_fake",
+      "weight": 45,
+      "effects": {
+       "money": 50,
+       "happiness": -3
+      }
+     }
+    ]
+   },
+   {
+    "id": "keep",
+    "effects": {
+     "happiness": 5
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_gold_digger",
+  "category": "romance",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "test",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "test_stays",
+      "weight": 40,
+      "effects": {
+       "happiness": 14,
+       "karma": 4,
+       "flags": {
+        "new_partner": true
+       }
+      }
+     },
+     {
+      "id": "test_leaves",
+      "weight": 60,
+      "effects": {
+       "happiness": 3
+      }
+     }
+    ]
+   },
+   {
+    "id": "spoil",
+    "effects": {
+     "money": -6000,
+     "happiness": 6,
+     "karma": -1
+    }
+   },
+   {
+    "id": "walk",
+    "effects": {
+     "happiness": 1,
+     "smarts": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_charity_gala",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "donate",
+    "effects": {
+     "money": -10000,
+     "karma": 14,
+     "happiness": 6
+    }
+   },
+   {
+    "id": "attend",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "attend_deal",
+      "weight": 40,
+      "effects": {
+       "money": 5000,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "attend_flop",
+      "weight": 60,
+      "effects": {
+       "money": -3000,
+       "happiness": -2
+      }
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "karma": -2,
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_kidnap_threat",
+  "category": "crime",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "police",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "police_caught",
+      "weight": 65,
+      "effects": {
+       "happiness": 4,
+       "karma": 2
+      }
+     },
+     {
+      "id": "police_real",
+      "weight": 35,
+      "effects": {
+       "money": -12000,
+       "happiness": -12
+      }
+     }
+    ]
+   },
+   {
+    "id": "guards",
+    "effects": {
+     "money": -18000,
+     "happiness": -4
+    }
+   },
+   {
+    "id": "pay",
+    "effects": {
+     "money": -200000,
+     "happiness": -14,
+     "karma": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_advisor_fraud",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "sue",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sue_recover",
+      "weight": 40,
+      "effects": {
+       "money": -5000,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "sue_lost",
+      "weight": 60,
+      "effects": {
+       "money": -100000,
+       "happiness": -12
+      }
+     }
+    ]
+   },
+   {
+    "id": "hunt",
+    "effects": {
+     "money": -12000,
+     "happiness": -4,
+     "smarts": 2
+    }
+   },
+   {
+    "id": "accept",
+    "effects": {
+     "money": -120000,
+     "happiness": -8,
+     "smarts": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_yacht_party",
+  "category": "social",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "party",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "party_great",
+      "weight": 60,
+      "effects": {
+       "happiness": 15,
+       "health": -5,
+       "money": -4000
+      }
+     },
+     {
+      "id": "party_disaster",
+      "weight": 40,
+      "effects": {
+       "happiness": -5,
+       "money": -12000,
+       "health": -8
+      }
+     }
+    ]
+   },
+   {
+    "id": "calm",
+    "effects": {
+     "happiness": 7,
+     "money": -800
+    }
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "happiness": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_tax_haven",
+  "category": "money",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "accept",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "accept_saves",
+      "weight": 60,
+      "effects": {
+       "money": 40000,
+       "karma": -10,
+       "happiness": 5
+      }
+     },
+     {
+      "id": "accept_caught",
+      "weight": 40,
+      "effects": {
+       "money": -50000,
+       "karma": -10,
+       "happiness": -12,
+       "flags": {
+        "scandal": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "decline",
+    "effects": {
+     "karma": 6,
+     "happiness": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_family_house",
+  "category": "family",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "give",
+    "effects": {
+     "money": -60000,
+     "karma": 10,
+     "happiness": 4
+    }
+   },
+   {
+    "id": "loan",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "loan_paid",
+      "weight": 40,
+      "effects": {
+       "money": 8000,
+       "karma": 4,
+       "happiness": 4
+      }
+     },
+     {
+      "id": "loan_never",
+      "weight": 60,
+      "effects": {
+       "money": -30000,
+       "happiness": -6,
+       "karma": 2
+      }
+     }
+    ]
+   },
+   {
+    "id": "refuse",
+    "effects": {
+     "karma": -4,
+     "happiness": -3
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_paparazzi_house",
+  "category": "random",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "sue",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "sue_win",
+      "weight": 50,
+      "effects": {
+       "money": 15000,
+       "happiness": 6
+      }
+     },
+     {
+      "id": "sue_lose",
+      "weight": 50,
+      "effects": {
+       "money": -8000,
+       "happiness": -6
+      }
+     }
+    ]
+   },
+   {
+    "id": "laugh",
+    "effects": {
+     "happiness": 4,
+     "flags": {
+      "fame": 3
+     }
+    }
+   },
+   {
+    "id": "fence",
+    "effects": {
+     "money": -6000,
+     "happiness": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_art_buy",
+  "category": "random",
+  "weight": 2,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "buy",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "buy_grows",
+      "weight": 35,
+      "effects": {
+       "money": 30000,
+       "happiness": 8
+      }
+     },
+     {
+      "id": "buy_flat",
+      "weight": 65,
+      "effects": {
+       "money": -25000,
+       "happiness": -4
+      }
+     }
+    ]
+   },
+   {
+    "id": "skip",
+    "effects": {
+     "happiness": 0
+    }
+   }
+  ]
+ },
+ {
+  "id": "mh_inheritance_fight",
+  "category": "family",
+  "weight": 1,
+  "once": true,
+  "conditions": {
+   "flags": [
+    "rich"
+   ],
+   "minAge": 18
+  },
+  "choices": [
+   {
+    "id": "share",
+    "effects": {
+     "money": -20000,
+     "karma": 8,
+     "happiness": 3
+    }
+   },
+   {
+    "id": "lawyer",
+    "effects": {
+     "money": -5000,
+     "happiness": -2,
+     "karma": -2
+    }
+   },
+   {
+    "id": "party",
+    "showOdds": true,
+    "outcomes": [
+     {
+      "id": "party_good",
+      "weight": 50,
+      "effects": {
+       "happiness": 8,
+       "karma": 4,
+       "money": -1500
+      }
+     },
+     {
+      "id": "party_bad",
+      "weight": 50,
+      "effects": {
+       "happiness": -8,
+       "money": -1500
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

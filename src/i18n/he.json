@@ -32,7 +32,15 @@
       "system": "אוטומטי",
       "light": "בהיר",
       "dark": "כהה"
-    }
+    },
+    "yearsBack": "{{n}} ש׳",
+    "customPeople": "אנשים מותאמים",
+    "customPeopleSub": "אנשים אמיתיים שיופיעו בחיים שלך כחברים או דייטים.",
+    "customKind": {
+      "friend": "חבר/ה",
+      "partner": "דייט"
+    },
+    "addPerson": "להוסיף"
   },
   "stats": {
     "happiness": "אושר",
@@ -198,7 +206,20 @@
     "recruiterSub": "תמורת {{money}} מוצאים לך ליד חזק ומכפילים את הסיכוי בראיון.",
     "recruiterFound": "המגייס/ת שם/ה ליד בראש הרשימה שלך.",
     "recruiterNone": "למגייס/ת לא היה כלום בשבילך.",
-    "fightInjury": "חטפת מכות בזירה השנה."
+    "fightInjury": "חטפת מכות בזירה השנה.",
+    "stress": "לחץ",
+    "popularity": "קולגות",
+    "socialize": "לבלות עם קולגות",
+    "socializeSub": "הפופולריות עולה. פעם בשנה.",
+    "hr": "לדווח למשאבי אנוש",
+    "hrSub": "55% שיעמדו לצדך.",
+    "hrWin": "משאבי אנוש עמדו לצדך.",
+    "hrLose": "משאבי אנוש לא עשו כלום ועכשיו כולם יודעים.",
+    "hours": {
+      "20": "חלקית",
+      "40": "מלאה",
+      "50": "שעות נוספות"
+    }
   },
   "assets": {
     "cash": "מזומן",
@@ -279,7 +300,9 @@
       "ask_out": "להזמין לדייט",
       "give_money": "לתת כסף",
       "elope": "להתחתן בחשאי",
-      "counseling": "ייעוץ זוגי"
+      "counseling": "ייעוץ זוגי",
+      "best_friend": "לבקש להיות חברים הכי טובים",
+      "spy": "לרגל"
     },
     "did": {
       "spend_time": "בילית עם {{name}}.",
@@ -313,7 +336,11 @@
       "ask_out_no": "{{name}} מעדיף/ה להישאר חברים. אאוץ׳.",
       "give_money": "נתת ל{{name}} קצת כסף.",
       "counseling": "הייעוץ הזוגי עם {{name}} עזר.",
-      "counseling_flop": "הייעוץ הזוגי עם {{name}} לא הוביל לשום מקום."
+      "counseling_flop": "הייעוץ הזוגי עם {{name}} לא הוביל לשום מקום.",
+      "best_friend_yes": "{{name}} עכשיו החבר/ה הכי טוב/ה שלך.",
+      "best_friend_no": "{{name}} צחק/ה. מביך.",
+      "spy_caught": "{{name}} תפס/ה אותך מרגל/ת.",
+      "spy_clean": "לא מצאת כלום על {{name}}. כנראה."
     },
     "newFriend": "התחברת עם {{name}}.",
     "lostFriend": "{{name}} כבר לא חבר/ה שלך.",
@@ -328,7 +355,35 @@
     "gone": "הוא/היא כבר לא איתנו.",
     "cantAfford": "אין לך מספיק כסף לזה.",
     "enough": "נמאס להם ממך להשנה.",
-    "weddingCost": "החתונה עלתה ${{money}}; בן/בת הזוג הביא/ה ${{dowry}} לנישואים."
+    "weddingCost": "החתונה עלתה ${{money}}; בן/בת הזוג הביא/ה ${{dowry}} לנישואים.",
+    "engaged": "את/ה ו{{name}} התארסתם!",
+    "wedding": "חתונה ב{{venue}}, ירח דבש: {{honeymoon}}. עלות ${{money}}.",
+    "childMovedOut": "{{name}} עזב/ה את הבית.",
+    "bestFriendBadge": "חבר/ה הכי טוב/ה",
+    "enemyBadge": "אויב/ת",
+    "engagedBadge": "מאורס/ת",
+    "movedOutBadge": "עזב/ה את הבית",
+    "sickBadge": "חולה",
+    "prenupInfo": "השווי שלך {{yours}} · שלו/ה {{theirs}}",
+    "weddingPlan": "לתכנן את החתונה",
+    "venue": "מקום",
+    "honeymoon": "ירח דבש",
+    "holdWedding": "להתחתן · {{money}}",
+    "venues": {
+      "courthouse": "רבנות/עירייה",
+      "backyard": "חצר אחורית",
+      "beach": "חוף",
+      "banquet_hall": "אולם",
+      "castle": "טירה",
+      "private_island": "אי פרטי"
+    },
+    "honeymoons": {
+      "none": "בלי ירח דבש",
+      "road_trip": "טיול כביש",
+      "city_break": "חופשה בעיר",
+      "tropical": "ריזורט טרופי",
+      "world_tour": "סיבוב עולמי"
+    }
   },
   "crime": {
     "hint": "הסיכויים שמוצגים אמיתיים. הרשעות בתיק: {{record}}.",
@@ -544,7 +599,8 @@
     "random": "תפתיעו אותי",
     "searchCountry": "חיפוש מדינה…",
     "noMatch": "אין מדינה שמתאימה.",
-    "countries": "{{n}} מדינות להיוולד בהן"
+    "countries": "{{n}} מדינות להיוולד בהן",
+    "cityPlaceholder": "עיר (לא חובה, למשל {{city}})"
   },
   "challenge": {
     "title": "אתגרים",
@@ -557,7 +613,8 @@
       "easy": "קל",
       "medium": "בינוני",
       "hard": "קשה",
-      "legendary": "אגדי"
+      "legendary": "אגדי",
+      "achievement": "הישגים"
     }
   },
   "gig": {

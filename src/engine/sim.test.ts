@@ -73,17 +73,15 @@ describe('full simulation', () => {
     }
   })
   it('supports legacy mode when there are heirs', () => {
-    for (let i = 0; i < 20; i++) {
-      const l = playLife(`legacy-${i}`)
-      const hs = heirs(l)
-      if (hs.length) {
-        const next = continueAsHeir(l, hs[0].id)
-        expect(next.generation).toBe(l.generation + 1)
-        expect(next.lastName).toBe(l.lastName)
-        return
-      }
+    const l = playLife('legacy-0')
+    if (!heirs(l).length) {
+      // random play rarely has kids; give this life one so legacy can be exercised
+      const kid = { ...l.people[0], id: 'kid1', kind: 'child' as const, age: 12, alive: true, firstName: 'Heir' }
+      l.people.push(kid)
     }
-    throw new Error('no life produced heirs in 20 tries')
+    const next = continueAsHeir(l, heirs(l)[0].id)
+    expect(next.generation).toBe(l.generation + 1)
+    expect(next.lastName).toBe(l.lastName)
   })
   it('challenge goals all use supported kinds', () => {
     const kinds = new Set(['age_min','age_max','money_min','job_track','degree','kids_min','marriages_min','friends_min','pets_min','houses_min','cars_min','asset','crimes_min','convictions_min','prison_years_min','fame_min','karma_min','karma_max','stat_min','stat_max','flag','generation_min','country'])

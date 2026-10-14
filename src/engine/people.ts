@@ -65,6 +65,7 @@ export function makePerson(rng: Rng, countryCode: string, kind: RelationKind, op
     alive: true,
     looks: rng.bell(20, 100),
     smarts: rng.bell(20, 100),
+    craziness: rng.bell(0, 100),
     ...opts,
   }
 }

@@ -61,6 +61,8 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
       delete life.flags.offer_track; delete life.flags.offer_rung; delete life.flags.offer_salary
       return true
     }
+    case 'funeral_plan': { life.money -= 5_000; life.stats.happiness = clamp(life.stats.happiness + 4); for (const x of life.people) if (x.kind === 'sibling' && x.alive) x.relationship = clamp(x.relationship + 8); return true }
+    case 'funeral_skip': { for (const x of life.people) if (x.kind === 'sibling' && x.alive) x.relationship = clamp(x.relationship - 15); life.karma = clamp(life.karma - 4, -100, 100); return true }
     case 'decline_offer':
       delete life.flags.offer_track; delete life.flags.offer_rung; delete life.flags.offer_salary
       return true
@@ -103,6 +105,23 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
     }
     // ---- fame
     case 'fame': life.fame = clamp(life.fame + n); return true
+    case 'followers': { const k = 'photo'; life.social[k] = (life.social[k] ?? 0) + n; return true }
+    case 'stress': if (life.job) life.job.stress = clamp((life.job.stress ?? 25) + n); return true
+    case 'coworker_popularity': if (life.job) life.job.popularity = clamp((life.job.popularity ?? 50) + n); return true
+    case 'popularity': life.flags.school_popularity = clamp(Number(life.flags.school_popularity ?? 40) + n); return true
+    case 'best_friend': if (person?.kind === 'friend') { for (const x of life.people) x.bestFriend = false; person.bestFriend = true } return true
+    case 'enemy': if (person) { person.enemy = Boolean(value); if (value) person.relationship = clamp(person.relationship - 30) } return true
+    case 'ailment': if (typeof value === 'string') { life.flags.ailment = value; log(life, 'bad', 'health.ailment', { ailment: value }) } return true
+    case 'cured': if (life.flags.ailment) { log(life, 'good', 'health.cured', { ailment: String(life.flags.ailment) }); delete life.flags.ailment } return true
+    case 'depressed': if (value) life.flags.depressed = true; else delete life.flags.depressed; return true
+    case 'car_damage': { const car = life.assets.find((a) => a.kind === 'car'); if (car) car.condition = clamp(car.condition - n); return true }
+    case 'house_damage': { const h = life.assets.find((a) => a.kind === 'house'); if (h) h.value = Math.round(h.value * (1 - n / 100)); return true }
+    case 'pet_sick': if (person?.kind === 'pet') person.sick = true; return true
+    case 'pet_dies': if (person?.kind === 'pet') { person.alive = false; life.stats.happiness = clamp(life.stats.happiness - 25); log(life, 'bad', 'assets.petDied', { name: person.firstName }) } return true
+    case 'child_grades': if (person?.kind === 'child') person.smarts = clamp((person.smarts ?? 50) + n); return true
+    case 'child_leaves': if (person?.kind === 'child') { person.movedOut = true; log(life, 'info', 'people.childMovedOut', { name: person.firstName }) } return true
+    case 'survived_illness': life.flags.survived_illness = true; return true
+    case 'referral': life.flags.referral = true; return true
     case 'book_deal': {
       const pay = Math.round(50_000 + (life.fame / 100) * 1_950_000)
       life.money += pay; log(life, 'good', 'fame.bookDeal', { money: pay }); return true
@@ -191,6 +210,7 @@ export function promote(life: Life) {
 }
 
 export function breakup(life: Life, person: Person) {
+  person.engaged = false
   const wasSpouse = person.kind === 'spouse'
   person.kind = 'ex'
   person.relationship = clamp(person.relationship - 30)
@@ -215,7 +235,7 @@ export function marry(life: Life, person: Person) {
   life.stats.happiness = clamp(life.stats.happiness + 15)
   // the wedding costs money; the spouse brings their savings into the marriage
   const wedding = Math.min(8_000, Math.max(1_500, Math.round(life.money * 0.08)))
-  const dowry = Math.round((person.income ?? 30_000) * (1.5 + (person.age - 18) * 0.1))
+  const dowry = person.money ?? Math.round((person.income ?? 30_000) * (1.5 + (person.age - 18) * 0.1))
   life.money += dowry - wedding
   log(life, 'good', 'people.married', { name: person.firstName })
   log(life, 'info', 'people.weddingCost', { money: wedding, dowry })

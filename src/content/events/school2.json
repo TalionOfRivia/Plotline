@@ -1,0 +1,2407 @@
+[
+  {
+    "id": "sc2_join_debate",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "club_debate"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3,
+          "flags": {
+            "club_debate": true,
+            "popularity": -1
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_debate_tournament",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "club_debate"
+      ]
+    },
+    "choices": [
+      {
+        "id": "argue",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 45,
+            "effects": {
+              "happiness": 12,
+              "smarts": 5,
+              "flags": {
+                "popularity": 3
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "prep",
+        "effects": {
+          "smarts": 4,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "forfeit",
+        "effects": {
+          "happiness": -2,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_join_drama",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "club_drama"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "club_drama": true
+          }
+        }
+      },
+      {
+        "id": "crew",
+        "effects": {
+          "smarts": 2,
+          "happiness": 2,
+          "flags": {
+            "club_drama": true
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_drama_lead",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "club_drama"
+      ]
+    },
+    "choices": [
+      {
+        "id": "audition",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lead",
+            "weight": 35,
+            "effects": {
+              "happiness": 14,
+              "looks": 2,
+              "flags": {
+                "popularity": 4
+              }
+            }
+          },
+          {
+            "id": "chorus",
+            "weight": 65,
+            "effects": {
+              "happiness": 3,
+              "smarts": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "understudy",
+        "effects": {
+          "smarts": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_join_robotics",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "club_robotics"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "smarts": 5,
+          "happiness": 2,
+          "flags": {
+            "club_robotics": true,
+            "popularity": -1
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_robot_comp",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "club_robotics"
+      ]
+    },
+    "choices": [
+      {
+        "id": "drive",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 12,
+              "smarts": 5,
+              "flags": {
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "smoke",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "code",
+        "effects": {
+          "smarts": 4
+        }
+      },
+      {
+        "id": "cheer",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_football_tryout",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "team_football"
+      ]
+    },
+    "choices": [
+      {
+        "id": "tryout",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "made",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "health": 3,
+              "flags": {
+                "team_football": true,
+                "popularity": 4
+              }
+            }
+          },
+          {
+            "id": "cut",
+            "weight": 55,
+            "effects": {
+              "happiness": -6,
+              "health": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "manager",
+        "effects": {
+          "happiness": 2,
+          "flags": {
+            "team_football": true
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_football_game",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "team_football"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hero",
+            "weight": 35,
+            "effects": {
+              "happiness": 14,
+              "health": -3,
+              "flags": {
+                "popularity": 5
+              }
+            }
+          },
+          {
+            "id": "fumble",
+            "weight": 45,
+            "effects": {
+              "happiness": -8,
+              "health": -3,
+              "flags": {
+                "popularity": -2
+              }
+            }
+          },
+          {
+            "id": "injury",
+            "weight": 20,
+            "effects": {
+              "health": -10,
+              "happiness": -4,
+              "flags": {
+                "injury": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bench",
+        "effects": {
+          "happiness": -2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_swim_tryout",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "team_swim"
+      ]
+    },
+    "choices": [
+      {
+        "id": "tryout",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "made",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "health": 6,
+              "flags": {
+                "team_swim": true,
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "cut",
+            "weight": 45,
+            "effects": {
+              "happiness": -4,
+              "health": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": 2,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_swim_meet",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "team_swim"
+      ]
+    },
+    "choices": [
+      {
+        "id": "swim",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 12,
+              "health": 4,
+              "flags": {
+                "popularity": 3
+              }
+            }
+          },
+          {
+            "id": "dq",
+            "weight": 60,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": -3,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_join_chess",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "club_chess"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "smarts": 4,
+          "flags": {
+            "club_chess": true
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_chess_match",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "club_chess"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "smarts": 5,
+              "flags": {
+                "popularity": 1
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 55,
+            "effects": {
+              "happiness": -4,
+              "smarts": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "draw",
+        "effects": {
+          "smarts": 1,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_join_band",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "club_band"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "smarts": 2,
+          "happiness": 5,
+          "flags": {
+            "club_band": true
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_band_concert",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "club_band"
+      ]
+    },
+    "choices": [
+      {
+        "id": "solo",
+        "effects": {
+          "happiness": 7,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "blend",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "mime",
+        "effects": {
+          "happiness": 1,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_rival_appears",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "rival_school"
+      ]
+    },
+    "choices": [
+      {
+        "id": "compete",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ahead",
+            "weight": 50,
+            "effects": {
+              "smarts": 4,
+              "happiness": 6,
+              "flags": {
+                "rival_school": true
+              }
+            }
+          },
+          {
+            "id": "behind",
+            "weight": 50,
+            "effects": {
+              "smarts": 2,
+              "happiness": -3,
+              "flags": {
+                "rival_school": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "sabotage",
+        "effects": {
+          "happiness": 3,
+          "karma": -7,
+          "flags": {
+            "rival_school": true
+          }
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_rival_showdown",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "rival_school"
+      ]
+    },
+    "choices": [
+      {
+        "id": "beat",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 50,
+            "effects": {
+              "smarts": 4,
+              "happiness": 10,
+              "karma": 3,
+              "flags": {
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 50,
+            "effects": {
+              "happiness": -5,
+              "karma": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "truce",
+        "effects": {
+          "happiness": 4,
+          "karma": 4,
+          "flags": {
+            "rival_school": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_popular_clique",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sit",
+        "effects": {
+          "happiness": 4,
+          "looks": 1,
+          "karma": -2,
+          "flags": {
+            "popularity": 5
+          }
+        }
+      },
+      {
+        "id": "old",
+        "effects": {
+          "happiness": 3,
+          "karma": 3,
+          "flags": {
+            "popularity": -1
+          }
+        }
+      },
+      {
+        "id": "both",
+        "effects": {
+          "happiness": 5,
+          "karma": 2,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_unpopular_day",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "deny",
+        "effects": {
+          "happiness": -3,
+          "flags": {
+            "popularity": -3
+          }
+        }
+      },
+      {
+        "id": "lean",
+        "effects": {
+          "happiness": 4,
+          "karma": -2,
+          "flags": {
+            "popularity": 3
+          }
+        }
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "popularity": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_believing_teacher",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 10,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "work",
+        "effects": {
+          "smarts": 7,
+          "happiness": 4,
+          "flags": {
+            "grades_boost": 1
+          }
+        }
+      },
+      {
+        "id": "shrug",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "grades_drop": 1
+          }
+        }
+      },
+      {
+        "id": "thank",
+        "effects": {
+          "happiness": 6,
+          "karma": 3,
+          "smarts": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_substitute_chaos",
+    "category": "school",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "swap",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "fun",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "karma": -2
+            }
+          },
+          {
+            "id": "busted",
+            "weight": 40,
+            "effects": {
+              "happiness": -4,
+              "karma": -3,
+              "flags": {
+                "popularity": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "behave",
+        "effects": {
+          "karma": 3,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "help",
+        "effects": {
+          "karma": 4,
+          "smarts": 1,
+          "flags": {
+            "popularity": -1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_detention_hall",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 3,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "doodle",
+        "effects": {
+          "happiness": 2,
+          "karma": -2
+        }
+      },
+      {
+        "id": "talk",
+        "effects": {
+          "happiness": 3,
+          "karma": -1,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_cheating_ring",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 55,
+            "effects": {
+              "smarts": -2,
+              "money": -30,
+              "karma": -5,
+              "flags": {
+                "grades_boost": 1
+              }
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 45,
+            "effects": {
+              "happiness": -10,
+              "karma": -3,
+              "money": -30,
+              "flags": {
+                "suspended": true,
+                "popularity": -3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "karma": 3,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "report",
+        "effects": {
+          "karma": 5,
+          "happiness": -1,
+          "flags": {
+            "popularity": -3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_school_dance",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "dance",
+        "effects": {
+          "happiness": 8,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "wall",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "snacks",
+        "effects": {
+          "happiness": 4,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_yearbook_committee",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 4,
+          "smarts": 2,
+          "flags": {
+            "popularity": 1
+          }
+        }
+      },
+      {
+        "id": "prank",
+        "effects": {
+          "happiness": 5,
+          "karma": -3,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_yearbook_quote",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "deep",
+        "effects": {
+          "smarts": 2,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "joke",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "inside",
+        "effects": {
+          "happiness": 4,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_trip_abroad",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "go",
+        "effects": {
+          "money": -800,
+          "happiness": 14,
+          "smarts": 4,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "fundraise",
+        "effects": {
+          "money": -400,
+          "happiness": 9,
+          "smarts": 2
+        }
+      },
+      {
+        "id": "stay",
+        "effects": {
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_trip_passport",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "search",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "found",
+            "weight": 50,
+            "effects": {
+              "happiness": 6
+            }
+          },
+          {
+            "id": "lost",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "money": -120
+            }
+          }
+        ]
+      },
+      {
+        "id": "call",
+        "effects": {
+          "happiness": -3,
+          "money": -50
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_science_fair_win",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 9,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "present",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 45,
+            "effects": {
+              "happiness": 12,
+              "smarts": 6,
+              "flags": {
+                "grades_boost": 1,
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "honorable",
+            "weight": 55,
+            "effects": {
+              "happiness": 3,
+              "smarts": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "effects": {
+          "happiness": 5,
+          "karma": 3,
+          "smarts": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_fight_hallway",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "fight",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 30,
+            "effects": {
+              "happiness": 4,
+              "karma": -4,
+              "health": -3,
+              "flags": {
+                "popularity": 3,
+                "suspended": true
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 40,
+            "effects": {
+              "health": -8,
+              "happiness": -6,
+              "karma": -3,
+              "flags": {
+                "suspended": true
+              }
+            }
+          },
+          {
+            "id": "pulled",
+            "weight": 30,
+            "effects": {
+              "happiness": -2,
+              "karma": -1,
+              "flags": {
+                "suspended": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "karma": 4,
+          "happiness": -2,
+          "flags": {
+            "popularity": -2
+          }
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "karma": 3,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_crush_class",
+    "category": "school",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "talk",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      },
+      {
+        "id": "stare",
+        "effects": {
+          "happiness": -1,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "happiness": 2,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_crush_note",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "pass",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "smile",
+            "weight": 40,
+            "effects": {
+              "happiness": 10
+            }
+          },
+          {
+            "id": "read_aloud",
+            "weight": 30,
+            "effects": {
+              "happiness": -8,
+              "flags": {
+                "popularity": -3
+              }
+            }
+          },
+          {
+            "id": "no",
+            "weight": 30,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "burn",
+        "effects": {
+          "happiness": -1,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_lunch_extortion",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 15,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "refuse",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "respect",
+            "weight": 35,
+            "effects": {
+              "happiness": 8,
+              "karma": 2,
+              "flags": {
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "bruised",
+            "weight": 65,
+            "effects": {
+              "health": -5,
+              "happiness": -6,
+              "money": -10
+            }
+          }
+        ]
+      },
+      {
+        "id": "pay",
+        "effects": {
+          "money": -20,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "karma": 3,
+          "happiness": 1,
+          "flags": {
+            "popularity": -2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_nurse_visit",
+    "category": "school",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "rest",
+        "effects": {
+          "health": 3,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "check",
+        "effects": {
+          "health": 4
+        }
+      },
+      {
+        "id": "milk",
+        "effects": {
+          "happiness": 4,
+          "karma": -2,
+          "smarts": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_vision_screening",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 12,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "guess",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "pass",
+            "weight": 40,
+            "effects": {
+              "happiness": 2
+            }
+          },
+          {
+            "id": "glasses",
+            "weight": 60,
+            "effects": {
+              "looks": -2,
+              "health": 2,
+              "happiness": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "honest",
+        "effects": {
+          "health": 3,
+          "looks": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_spelling_bee_final",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 13,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "spell",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "right",
+            "weight": 45,
+            "effects": {
+              "happiness": 12,
+              "smarts": 5,
+              "flags": {
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "wrong",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "smarts": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "stall",
+        "effects": {
+          "smarts": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_class_president",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "class_president"
+      ]
+    },
+    "choices": [
+      {
+        "id": "run",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 12,
+              "smarts": 3,
+              "flags": {
+                "class_president": true,
+                "popularity": 5
+              }
+            }
+          },
+          {
+            "id": "lose",
+            "weight": 60,
+            "effects": {
+              "happiness": -5,
+              "flags": {
+                "popularity": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "manager",
+        "effects": {
+          "happiness": 3,
+          "karma": 1
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "sc2_president_duty",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student",
+        "class_president"
+      ]
+    },
+    "choices": [
+      {
+        "id": "vote",
+        "effects": {
+          "happiness": 3,
+          "smarts": 1,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "decide",
+        "effects": {
+          "happiness": -1,
+          "flags": {
+            "popularity": -2
+          }
+        }
+      },
+      {
+        "id": "delegate",
+        "effects": {
+          "happiness": 2,
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_strike_day",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 7,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "chill",
+        "effects": {
+          "happiness": 7,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "study",
+        "effects": {
+          "smarts": 4,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "picket",
+        "effects": {
+          "karma": 3,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_snow_day",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sled",
+        "effects": {
+          "happiness": 9,
+          "health": 2
+        }
+      },
+      {
+        "id": "fort",
+        "effects": {
+          "happiness": 6,
+          "karma": 1
+        }
+      },
+      {
+        "id": "couch",
+        "effects": {
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_graduation_rehearsal",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "rehearse",
+        "effects": {
+          "happiness": 5,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "joke",
+        "effects": {
+          "happiness": 6,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "cry",
+        "effects": {
+          "happiness": 3,
+          "karma": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_scholarship_interview",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ],
+      "notFlags": [
+        "scholarship"
+      ]
+    },
+    "choices": [
+      {
+        "id": "interview",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 35,
+            "effects": {
+              "happiness": 14,
+              "smarts": 3,
+              "flags": {
+                "scholarship": true
+              }
+            }
+          },
+          {
+            "id": "wait",
+            "weight": 65,
+            "effects": {
+              "happiness": -4,
+              "smarts": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_show_and_tell",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 9,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "proud",
+        "effects": {
+          "happiness": 6,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "shy",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "trade",
+        "effects": {
+          "happiness": 3,
+          "karma": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_recess_game",
+    "category": "school",
+    "weight": 3,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 11,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "play",
+        "effects": {
+          "happiness": 6,
+          "health": 3
+        }
+      },
+      {
+        "id": "invent",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "popularity": 1
+          }
+        }
+      },
+      {
+        "id": "sit",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_school_bus_seat",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 14,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "back",
+        "effects": {
+          "happiness": 3,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "front",
+        "effects": {
+          "happiness": 1,
+          "karma": 1
+        }
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_pep_rally",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "mascot",
+        "effects": {
+          "happiness": 7,
+          "flags": {
+            "popularity": 3
+          }
+        }
+      },
+      {
+        "id": "cheer",
+        "effects": {
+          "happiness": 4
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "smarts": 1,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_field_day",
+    "category": "school",
+    "weight": 2.5,
+    "conditions": {
+      "minAge": 6,
+      "maxAge": 11,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "race",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "win",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "health": 3,
+              "flags": {
+                "popularity": 2
+              }
+            }
+          },
+          {
+            "id": "fall",
+            "weight": 60,
+            "effects": {
+              "happiness": -3,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "relay",
+        "effects": {
+          "happiness": 5,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_book_report",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 13,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "read",
+        "effects": {
+          "smarts": 4,
+          "health": -2,
+          "flags": {
+            "grades_boost": 1
+          }
+        }
+      },
+      {
+        "id": "bluff",
+        "effects": {
+          "smarts": -1,
+          "karma": -2,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "summary",
+        "effects": {
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_hall_pass",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 11,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "wander",
+        "effects": {
+          "happiness": 4,
+          "karma": -2
+        }
+      },
+      {
+        "id": "abuse",
+        "effects": {
+          "happiness": 5,
+          "karma": -3,
+          "flags": {
+            "grades_drop": 1
+          }
+        }
+      },
+      {
+        "id": "return",
+        "effects": {
+          "smarts": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_dress_code",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "change",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "protest",
+        "effects": {
+          "happiness": 2,
+          "karma": -1,
+          "flags": {
+            "popularity": 2
+          }
+        }
+      },
+      {
+        "id": "petition",
+        "effects": {
+          "smarts": 2,
+          "happiness": 3,
+          "flags": {
+            "popularity": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_fundraiser_candy",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 8,
+      "maxAge": 14,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "sell",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sold",
+            "weight": 60,
+            "effects": {
+              "money": 25,
+              "happiness": 5,
+              "karma": 3
+            }
+          },
+          {
+            "id": "stuck",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "health": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "buy",
+        "effects": {
+          "money": -30,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_exchange_student",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 13,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "befriend",
+        "effects": {
+          "happiness": 6,
+          "smarts": 2,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      },
+      {
+        "id": "help",
+        "effects": {
+          "happiness": 4,
+          "karma": 4
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "karma": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_lab_partner",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 12,
+      "maxAge": 16,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "trust",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "great",
+            "weight": 50,
+            "effects": {
+              "smarts": 5,
+              "happiness": 5,
+              "flags": {
+                "grades_boost": 1
+              }
+            }
+          },
+          {
+            "id": "mess",
+            "weight": 50,
+            "effects": {
+              "happiness": -2,
+              "smarts": 1,
+              "health": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "solo",
+        "effects": {
+          "smarts": 3,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_college_fair",
+    "category": "school",
+    "weight": 2,
+    "conditions": {
+      "minAge": 16,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "talk",
+        "effects": {
+          "smarts": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "swag",
+        "effects": {
+          "happiness": 3,
+          "karma": -1
+        }
+      },
+      {
+        "id": "undecided",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_senior_prank",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 17,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "legend",
+            "weight": 60,
+            "effects": {
+              "happiness": 12,
+              "flags": {
+                "popularity": 4
+              }
+            }
+          },
+          {
+            "id": "caught",
+            "weight": 40,
+            "effects": {
+              "happiness": -5,
+              "karma": -3,
+              "money": -50,
+              "flags": {
+                "suspended": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "refuse",
+        "effects": {
+          "karma": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "warn",
+        "effects": {
+          "karma": 3,
+          "happiness": -3,
+          "flags": {
+            "popularity": -4
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sc2_tutoring_kid",
+    "category": "school",
+    "weight": 1.5,
+    "conditions": {
+      "minAge": 14,
+      "maxAge": 17,
+      "flags": [
+        "student"
+      ]
+    },
+    "choices": [
+      {
+        "id": "volunteer",
+        "effects": {
+          "karma": 6,
+          "smarts": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "id": "once",
+        "effects": {
+          "karma": 2,
+          "smarts": 1
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {}
+      }
+    ]
+  }
+]

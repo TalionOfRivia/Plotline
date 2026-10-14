@@ -33,6 +33,16 @@ export interface Person {
   smarts?: number
   /** years married (spouse) */
   yearsTogether?: number
+  /** 0–100, how unpredictable they are */
+  craziness?: number
+  /** partner's savings, shown on the prenup card and merged at marriage */
+  money?: number
+  bestFriend?: boolean
+  enemy?: boolean
+  engaged?: boolean
+  /** adult child who no longer lives with you */
+  movedOut?: boolean
+  sick?: boolean
 }
 
 export interface DiaryEntry {
@@ -65,6 +75,12 @@ export interface Job {
   /** 0–100 */
   performance: number
   salary: number
+  /** 0–100 */
+  stress?: number
+  /** 0–100 */
+  popularity?: number
+  /** weekly hours: 20 part-time, 40 normal, 50 overtime */
+  hours?: number
 }
 
 export interface OwnedAsset {
@@ -175,6 +191,8 @@ export interface Condition {
   minStats?: Partial<Stats>
   maxStats?: Partial<Stats>
   requiresPerson?: RelationKind
+  /** the event is about a person of that kind who has died (funerals, wills) */
+  requiresPersonDead?: boolean
 }
 
 export interface Choice {

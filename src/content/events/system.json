@@ -26,5 +26,38 @@
         }
       }
     ]
+  },
+  {
+    "id": "sys_funeral",
+    "category": "family",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "plan",
+        "effects": {
+          "flags": {
+            "funeral_plan": true
+          }
+        }
+      },
+      {
+        "id": "delegate",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "flags": {
+            "funeral_skip": true
+          }
+        }
+      }
+    ]
   }
 ]

@@ -1,0 +1,526 @@
+{
+  "sc2_join_debate": {
+    "text": "A flyer on the hallway wall says the debate club needs bodies. The teacher in charge promises free pizza and the chance to be right out loud.",
+    "choices": {
+      "join": "Join the club",
+      "pass": "Not my thing"
+    }
+  },
+  "sc2_debate_tournament": {
+    "text": "Regional debate tournament. You draw the side you disagree with. The judge looks tired and unimpressed.",
+    "choices": {
+      "argue": "Argue your heart out",
+      "prep": "Over-prepare notes",
+      "forfeit": "Fake a stomachache"
+    },
+    "outcomes": {
+      "win": "You dismantle the other team with a smile. A trophy appears in your hands.",
+      "lose": "You lose on a technicality. You were right, which helps nobody."
+    }
+  },
+  "sc2_join_drama": {
+    "text": "The drama club is holding open auditions for the spring show. Half the school hums show tunes, quietly.",
+    "choices": {
+      "join": "Sign up",
+      "crew": "Join stage crew",
+      "pass": "Watch from the seats"
+    }
+  },
+  "sc2_drama_lead": {
+    "text": "The director posts the cast list. Your name is either at the top or in tiny print near the bottom.",
+    "choices": {
+      "audition": "Go for the lead",
+      "understudy": "Be the understudy"
+    },
+    "outcomes": {
+      "lead": "You get the lead. You forget your lines once and the audience cries anyway.",
+      "chorus": "You're Third Villager. Third Villager steals the show, in your own mind."
+    }
+  },
+  "sc2_join_robotics": {
+    "text": "The robotics club builds a machine that must pick up foam cubes. Nobody has slept well since October.",
+    "choices": {
+      "join": "Join the team",
+      "pass": "Skip it"
+    }
+  },
+  "sc2_robot_comp": {
+    "text": "Competition day. The robot has one job and one flaw: it hates the left side of the table.",
+    "choices": {
+      "drive": "Take the controller",
+      "code": "Fix the code instead",
+      "cheer": "Cheer from the stands"
+    },
+    "outcomes": {
+      "win": "The robot grabs every cube. The team screams in a parking-lot sort of way.",
+      "smoke": "Something sparks. The robot goes up in smoke, taking your Saturdays with it."
+    }
+  },
+  "sc2_football_tryout": {
+    "text": "Football tryouts. The coach reads names off a clipboard like a judge reading verdicts.",
+    "choices": {
+      "tryout": "Give it everything",
+      "manager": "Be team manager",
+      "pass": "Stay out of the mud"
+    },
+    "outcomes": {
+      "made": "Your name is on the list. You get a jersey that smells like old tape.",
+      "cut": "Cut. The coach says 'maybe next year' without making eye contact."
+    }
+  },
+  "sc2_football_game": {
+    "text": "Friday night game. Fourth quarter, tied, and the coach points at you.",
+    "choices": {
+      "play": "Go in",
+      "bench": "Stay on the bench"
+    },
+    "outcomes": {
+      "hero": "You make the play of your life. The bleachers chant a name that is yours.",
+      "fumble": "You fumble. A parent in the third row has opinions about it for years.",
+      "injury": "You go down hard. The ankle swells to the size of a plum."
+    }
+  },
+  "sc2_swim_tryout": {
+    "text": "Swim team tryouts at dawn. The pool smells like chlorine and ambition.",
+    "choices": {
+      "tryout": "Dive in",
+      "pass": "Sleep in"
+    },
+    "outcomes": {
+      "made": "You make the team. Your hair will be green by June.",
+      "cut": "You don't make it. You swim home in spirit."
+    }
+  },
+  "sc2_swim_meet": {
+    "text": "The relay anchor is out sick. The coach looks down the line and lands on you.",
+    "choices": {
+      "swim": "Take the anchor leg",
+      "decline": "Refuse the leg"
+    },
+    "outcomes": {
+      "win": "You touch the wall first. Water in your ears, glory in your chest.",
+      "dq": "You jump early. Disqualified. The team forgives you in about a week."
+    }
+  },
+  "sc2_join_chess": {
+    "text": "Chess club meets in the library at lunch. Nobody talks, and somehow it is still the loudest room in school.",
+    "choices": {
+      "join": "Pull up a chair",
+      "pass": "Eat lunch outside"
+    }
+  },
+  "sc2_chess_match": {
+    "text": "Inter-school chess match. Your opponent is eleven and eats an apple like a threat.",
+    "choices": {
+      "play": "Play your best",
+      "draw": "Offer a draw"
+    },
+    "outcomes": {
+      "win": "Checkmate in 22 moves. The kid finishes his apple and shakes your hand.",
+      "lose": "He sacrifices a queen and wins anyway. You respect it a little."
+    }
+  },
+  "sc2_join_band": {
+    "text": "The school band needs a few more players before the winter show. Instruments are lent out for free, with a lecture attached.",
+    "choices": {
+      "join": "Pick an instrument",
+      "pass": "No thanks"
+    }
+  },
+  "sc2_band_concert": {
+    "text": "The winter concert. Your section starts a bar early and nobody knows who to blame.",
+    "choices": {
+      "solo": "Take the solo",
+      "blend": "Blend in",
+      "mime": "Mime it"
+    }
+  },
+  "sc2_rival_appears": {
+    "text": "A classmate keeps matching your every score, your every joke, and your haircut. You've decided they're a rival.",
+    "choices": {
+      "compete": "Out-do them",
+      "sabotage": "Sabotage their project",
+      "ignore": "Ignore them"
+    },
+    "outcomes": {
+      "ahead": "You edge ahead by two points. It feels like a coronation.",
+      "behind": "They edge past you. You file a grudge, neatly labelled."
+    }
+  },
+  "sc2_rival_showdown": {
+    "text": "The rival again. A class contest, one winner, no refunds. They offer a handshake with too many fingers in it.",
+    "choices": {
+      "beat": "Beat them fair",
+      "truce": "Call a truce"
+    },
+    "outcomes": {
+      "win": "You win fair and square. They nod. It's almost warm.",
+      "lose": "They win. You congratulate them with exactly one muscle in your face."
+    }
+  },
+  "sc2_popular_clique": {
+    "text": "The popular group invites you to their lunch table. The invitation comes with a quick look at your shoes.",
+    "choices": {
+      "sit": "Sit with them",
+      "old": "Stay with your friends",
+      "both": "Bring everyone"
+    }
+  },
+  "sc2_unpopular_day": {
+    "text": "A rumour about you is making the rounds. It's completely wrong, but better written than the truth.",
+    "choices": {
+      "deny": "Deny it loudly",
+      "lean": "Lean into the legend",
+      "wait": "Let it die down"
+    }
+  },
+  "sc2_believing_teacher": {
+    "text": "A teacher stays after class to tell you that you're capable of more, and that they're going to be annoying about it.",
+    "choices": {
+      "work": "Rise to it",
+      "shrug": "Shrug it off",
+      "thank": "Thank them sincerely"
+    }
+  },
+  "sc2_substitute_chaos": {
+    "text": "A substitute teacher walks in with a cheerful voice and no seating chart. The class smells blood.",
+    "choices": {
+      "swap": "Swap names with a classmate",
+      "behave": "Behave",
+      "help": "Help her run it"
+    },
+    "outcomes": {
+      "fun": "The sub spends all period calling the wrong person. It's the best hour of the term.",
+      "busted": "She was a teacher for twenty years. She sees through you, then gives you extra work."
+    }
+  },
+  "sc2_detention_hall": {
+    "text": "Detention. An hour in a quiet room with a clock that clearly runs slow.",
+    "choices": {
+      "read": "Read a book",
+      "doodle": "Doodle on the desk",
+      "talk": "Whisper with the guy beside you"
+    }
+  },
+  "sc2_cheating_ring": {
+    "text": "A group sells quiz answers in the bathroom. It's organised, quiet, and cheaper than a tutor.",
+    "choices": {
+      "buy": "Buy the answers",
+      "refuse": "Say no",
+      "report": "Report the ring"
+    },
+    "outcomes": {
+      "pass": "The answers work. Your conscience goes quiet and sticks around.",
+      "caught": "The principal busts the ring. Your name is on the list. Suspension."
+    }
+  },
+  "sc2_school_dance": {
+    "text": "The school dance. The gym is dim, the music is loud, and everyone's pressed against the wall like paint.",
+    "choices": {
+      "dance": "Hit the floor",
+      "wall": "Join the wall",
+      "snacks": "Guard the snack table"
+    }
+  },
+  "sc2_yearbook_committee": {
+    "text": "The yearbook needs a photo editor. It also needs people to say no to the wrong photos, which is where you come in.",
+    "choices": {
+      "join": "Join the committee",
+      "prank": "Slip in a joke caption",
+      "pass": "Skip it"
+    }
+  },
+  "sc2_yearbook_quote": {
+    "text": "Time to choose your senior yearbook quote. It will live in print forever, next to a photo where your eyes are closed.",
+    "choices": {
+      "deep": "Something profound",
+      "joke": "A joke",
+      "inside": "An inside joke"
+    }
+  },
+  "sc2_trip_abroad": {
+    "text": "The school announces a trip abroad. It's eight hundred dollars and nine days of supervised adventure.",
+    "choices": {
+      "go": "Pay and go",
+      "fundraise": "Fundraise half",
+      "stay": "Stay home"
+    }
+  },
+  "sc2_trip_passport": {
+    "text": "At the airport you open your bag and your passport is not in it. The teacher has a lanyard and a deep sigh.",
+    "choices": {
+      "search": "Search every pocket",
+      "call": "Call a parent"
+    },
+    "outcomes": {
+      "found": "It was in your jacket. The whole group claps ironically.",
+      "lost": "Not found. A rushed replacement costs you and the trip starts a day late."
+    }
+  },
+  "sc2_science_fair_win": {
+    "text": "Your science fair project works. The judge squints at it, then at you, then writes something down.",
+    "choices": {
+      "present": "Present with confidence",
+      "team": "Share credit with a partner"
+    },
+    "outcomes": {
+      "win": "First prize. A ribbon, a handshake, and a photo in the local paper.",
+      "honorable": "Honorable mention. You get a small ribbon and an enormous amount of pride."
+    }
+  },
+  "sc2_fight_hallway": {
+    "text": "Someone shoves you in the hallway and a crowd forms before you can blink. Phones come out.",
+    "choices": {
+      "fight": "Throw a punch",
+      "walk": "Walk away",
+      "tell": "Get a teacher"
+    },
+    "outcomes": {
+      "win": "You land one. A teacher lands you in the office. Suspended.",
+      "lose": "You lose, loudly. The suspension arrives with a pamphlet.",
+      "pulled": "A teacher pulls you both apart. Everyone gets the same punishment."
+    }
+  },
+  "sc2_crush_class": {
+    "text": "There's someone in the third row whose handwriting you've started to study. It's embarrassing and entirely involuntary.",
+    "choices": {
+      "talk": "Start a conversation",
+      "stare": "Stare from afar",
+      "friend": "Tell a friend"
+    }
+  },
+  "sc2_crush_note": {
+    "text": "You write a note to your crush and fold it into a triangle. Someone has to deliver it, and you cannot be that person.",
+    "choices": {
+      "pass": "Pass it along",
+      "burn": "Eat the evidence"
+    },
+    "outcomes": {
+      "smile": "They read it, glance up, and smile. Your face enters a new colour.",
+      "read_aloud": "The note gets read aloud. You decide to become a different person.",
+      "no": "They hand it back, politely. Somehow worse."
+    }
+  },
+  "sc2_lunch_extortion": {
+    "text": "An older kid taxes you every day for the 'protection fee': your lunch money. The price keeps rising.",
+    "choices": {
+      "refuse": "Refuse to pay",
+      "pay": "Pay up",
+      "tell": "Tell a teacher"
+    },
+    "outcomes": {
+      "respect": "They blink first. The tax collector finds someone else.",
+      "bruised": "It goes badly. You lose lunch and some dignity."
+    }
+  },
+  "sc2_nurse_visit": {
+    "text": "You feel dizzy in math and ask for the nurse. The nurse has seen things and doesn't blink.",
+    "choices": {
+      "rest": "Lie down for a while",
+      "check": "Get checked out",
+      "milk": "Milk it for the afternoon"
+    }
+  },
+  "sc2_vision_screening": {
+    "text": "Vision screening day. The chart looks like a deranged ladder. You squint like a legal professional.",
+    "choices": {
+      "guess": "Fake it",
+      "honest": "Read it honestly"
+    },
+    "outcomes": {
+      "pass": "You guess the right letters out of sheer will.",
+      "glasses": "The nurse sends a note home. You need glasses. The world gets sharper."
+    }
+  },
+  "sc2_spelling_bee_final": {
+    "text": "Spelling bee finals. The word is 'chrysanthemum', and the room is quiet enough to hear a pen drop.",
+    "choices": {
+      "spell": "Spell it out",
+      "stall": "Ask for the definition"
+    },
+    "outcomes": {
+      "right": "Every letter lands. You win a trophy shaped like a tiny trumpet.",
+      "wrong": "You miss an 'h' and the bell rings. You will hear that bell forever."
+    }
+  },
+  "sc2_class_president": {
+    "text": "Elections for class president. Posters are up. One of them uses your photo without permission.",
+    "choices": {
+      "run": "Run for president",
+      "manager": "Be a campaign manager",
+      "skip": "Stay out of politics"
+    },
+    "outcomes": {
+      "win": "You win by eleven votes. You immediately start making promises you can't keep.",
+      "lose": "You lose. The winner promises a vending machine, which is the real campaign."
+    }
+  },
+  "sc2_president_duty": {
+    "text": "As class president you must decide the theme of the spring fair. Six hundred opinions arrive in nine minutes.",
+    "choices": {
+      "vote": "Take a poll",
+      "decide": "Decide yourself",
+      "delegate": "Appoint a committee"
+    }
+  },
+  "sc2_strike_day": {
+    "text": "The teachers' union goes on strike and the school locks its doors. Parents groan. You gain a Tuesday.",
+    "choices": {
+      "chill": "Enjoy the free days",
+      "study": "Study at home",
+      "picket": "Join the picket line"
+    }
+  },
+  "sc2_snow_day": {
+    "text": "You wake up to a white world and a school closure announcement. Your parents say 'do not go outside' in the same breath as 'go outside'.",
+    "choices": {
+      "sled": "Sled all day",
+      "fort": "Build a snow fort",
+      "couch": "Stay inside"
+    }
+  },
+  "sc2_graduation_rehearsal": {
+    "text": "Graduation rehearsal. The principal reads names while chairs wobble and everyone hums a half-remembered anthem.",
+    "choices": {
+      "rehearse": "Take it seriously",
+      "joke": "Make everyone laugh",
+      "cry": "Cry a little"
+    }
+  },
+  "sc2_scholarship_interview": {
+    "text": "A foundation interviews you for a scholarship. The panel has three people and a plate of untouched fruit.",
+    "choices": {
+      "interview": "Give it your best",
+      "skip": "Don't go"
+    },
+    "outcomes": {
+      "win": "They shake your hand and say the word 'full'. It's the best word you've ever heard.",
+      "wait": "The panel thanks you politely and does not call back."
+    }
+  },
+  "sc2_show_and_tell": {
+    "text": "It's show and tell. You brought something from home that might be alive, probably not allowed, and certainly a hit.",
+    "choices": {
+      "proud": "Show it off",
+      "shy": "Be shy",
+      "trade": "Trade it for a snack"
+    }
+  },
+  "sc2_recess_game": {
+    "text": "At recess a game of tag turns into a game with rules nobody understands and everybody follows.",
+    "choices": {
+      "play": "Jump in",
+      "invent": "Invent your own rule",
+      "sit": "Watch from the bench"
+    }
+  },
+  "sc2_school_bus_seat": {
+    "text": "The back of the school bus is a political zone. You step on and everyone watches you choose.",
+    "choices": {
+      "back": "Take the back",
+      "front": "Sit up front",
+      "friend": "Sit with a friend"
+    }
+  },
+  "sc2_pep_rally": {
+    "text": "The school holds a pep rally. A mascot costume is warm and smells of other people's effort.",
+    "choices": {
+      "mascot": "Wear the costume",
+      "cheer": "Cheer from the stands",
+      "skip": "Hide in the library"
+    }
+  },
+  "sc2_field_day": {
+    "text": "Field day. The sack race is between you and a kid who has clearly been training in private.",
+    "choices": {
+      "race": "Race",
+      "relay": "Join the relay"
+    },
+    "outcomes": {
+      "win": "You hop to victory. A sticker and a bottle of water are the prizes.",
+      "fall": "You fall face-first into the grass. Everyone cheers anyway."
+    }
+  },
+  "sc2_book_report": {
+    "text": "The book report is due tomorrow and you've read the cover and a review you found upside-down.",
+    "choices": {
+      "read": "Read all night",
+      "bluff": "Bluff it",
+      "summary": "Read a summary"
+    }
+  },
+  "sc2_hall_pass": {
+    "text": "You discover that a hall pass is invisible armor. Nobody questions a person with a laminated card.",
+    "choices": {
+      "wander": "Wander the halls",
+      "abuse": "Take extra long",
+      "return": "Return to class"
+    }
+  },
+  "sc2_dress_code": {
+    "text": "The vice principal sends you home to change your shirt. The shirt has a pun. The pun was the problem.",
+    "choices": {
+      "change": "Change",
+      "protest": "Protest",
+      "petition": "Start a petition"
+    }
+  },
+  "sc2_fundraiser_candy": {
+    "text": "You get a box of chocolate bars to sell for the school. The box is heavier than you thought and so is your conscience.",
+    "choices": {
+      "sell": "Go door to door",
+      "buy": "Buy the box yourself"
+    },
+    "outcomes": {
+      "sold": "You sell every bar. A woman gives you a tip and a hug.",
+      "stuck": "You sell three and eat the rest. Your stomach files a complaint."
+    }
+  },
+  "sc2_exchange_student": {
+    "text": "An exchange student joins your class. Her accent is a mystery and her sandwich is a delight.",
+    "choices": {
+      "befriend": "Befriend her",
+      "help": "Show her around",
+      "ignore": "Ignore her"
+    }
+  },
+  "sc2_lab_partner": {
+    "text": "Your lab partner is either a genius or a hazard. Possibly both, since the beaker is smoking.",
+    "choices": {
+      "trust": "Let them lead",
+      "solo": "Do it yourself"
+    },
+    "outcomes": {
+      "great": "The experiment works perfectly. You nod like you planned it.",
+      "mess": "A yellow cloud fills the room. The class is evacuated for lunch."
+    }
+  },
+  "sc2_college_fair": {
+    "text": "The college fair fills the gym with banners and promises. A recruiter hands you a pen you didn't want to keep.",
+    "choices": {
+      "talk": "Talk to recruiters",
+      "swag": "Grab free stuff",
+      "undecided": "Stay undecided"
+    }
+  },
+  "sc2_senior_prank": {
+    "text": "Senior prank week. Somebody wants to fill the principal's office with balloons and needs someone to hold a door.",
+    "choices": {
+      "join": "Help out",
+      "refuse": "Stay out of it",
+      "warn": "Warn the principal"
+    },
+    "outcomes": {
+      "legend": "The office is a sea of balloons. Your class remembers it forever.",
+      "caught": "The principal arrives mid-prank. Cleanup duty and a suspended send-off."
+    }
+  },
+  "sc2_tutoring_kid": {
+    "text": "The school offers volunteer tutoring hours for younger kids. You'd get service credit and, apparently, a gold star.",
+    "choices": {
+      "volunteer": "Volunteer",
+      "once": "Try it once",
+      "skip": "Pass"
+    }
+  }
+}

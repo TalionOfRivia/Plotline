@@ -1,0 +1,650 @@
+{
+ "mh_burst_pipe": {
+  "text": "You wake up to the sound of a waterfall in your wall. A pipe has burst and the hallway is now a pond.",
+  "choices": {
+   "plumber": "Call a plumber",
+   "diy": "Fix it yourself"
+  },
+  "outcomes": {
+   "diy_ok": "A video tutorial and sheer spite fix it. You are very proud.",
+   "diy_worse": "You make it worse. Much worse. The ceiling downstairs joins the party."
+  }
+ },
+ "mh_roof_leak": {
+  "text": "Rain is dripping into a bucket in your living room. The roof has been lying to you for years.",
+  "choices": {
+   "replace": "Replace the roof",
+   "patch": "Patch it cheaply",
+   "ignore": "Buy more buckets"
+  }
+ },
+ "mh_hoa_fight": {
+  "text": "The homeowners' committee sends a stern letter about the colour of your front door. It is, apparently, a crime.",
+  "choices": {
+   "comply": "Repaint it",
+   "fight": "Fight the committee",
+   "ignore": "Ignore the letters"
+  },
+  "outcomes": {
+   "fight_win": "You win at the meeting with a twelve-minute speech. The door stays. Legends are born.",
+   "fight_lose": "You lose, pay the legal fees, and the door is beige now."
+  }
+ },
+ "mh_nosy_neighbour": {
+  "text": "Your neighbour knows when you leave, when you return, and what was in your recycling. Today they ask about last night.",
+  "choices": {
+   "chat": "Be friendly",
+   "shut": "Tell them off",
+   "bait": "Feed them lies"
+  },
+  "outcomes": {
+   "bait_fun": "By Friday the whole street believes you run an alpaca farm. Worth it.",
+   "bait_caught": "They find out. Now the whole street whispers louder."
+  }
+ },
+ "mh_squatter": {
+  "text": "You find a stranger living in your spare room. He has made himself tea and is wearing your robe.",
+  "choices": {
+   "police": "Call the police",
+   "talk": "Talk to him",
+   "bat": "Grab a bat"
+  },
+  "outcomes": {
+   "talk_leaves": "He cries, apologises, and leaves quietly. You give him a sandwich.",
+   "talk_steals": "He agrees to leave and takes your television as a goodbye gift.",
+   "bat_run": "He runs out through the window. You feel like an action hero.",
+   "bat_hurt": "It goes badly. Someone gets hurt, and it is mostly you."
+  }
+ },
+ "mh_tree_falls": {
+  "text": "A storm drops an old oak across your garage. The car is fine. The garage is now a sunroof.",
+  "choices": {
+   "insurance": "File an insurance claim",
+   "pay": "Pay for it yourself"
+  },
+  "outcomes": {
+   "insurance_paid": "The insurer pays most of it after three months and fourteen forms.",
+   "insurance_denied": "Claim denied: 'act of nature'. You point out that is the whole point of insurance."
+  }
+ },
+ "mh_break_in": {
+  "text": "You come home to an open window and a missing TV. Whoever it was also took the good whisky.",
+  "choices": {
+   "report": "File a police report",
+   "alarm": "Install an alarm system",
+   "stakeout": "Set a trap for next time"
+  },
+  "outcomes": {
+   "report_caught": "Surprisingly, they catch the thief and you get most of it back.",
+   "report_nothing": "The officer nods sadly and writes 'burglary' on a form. That is all.",
+   "stakeout_win": "He comes back. You are waiting with a flashlight and a rolling pin. Neighbours applaud.",
+   "stakeout_lose": "Nobody comes, and you fall asleep. Next night, they take the sofa."
+  }
+ },
+ "mh_flood": {
+  "text": "A river decides your street is its new route. Water is rising up your stairs.",
+  "choices": {
+   "claim": "Claim on your insurance",
+   "sandbag": "Fight it with sandbags"
+  },
+  "outcomes": {
+   "claim_covered": "The policy actually covers flood. You nearly faint from joy.",
+   "claim_not": "The fine print says 'excludes water'. The water read it too.",
+   "sandbag_hold": "The whole street joins in. The water stops at your doorstep.",
+   "sandbag_fail": "The sandbags float away like little regrets."
+  }
+ },
+ "mh_reno_pays": {
+  "text": "You finally gut the kitchen. An agent walks through and whistles at the new price.",
+  "choices": {
+   "go": "Renovate properly",
+   "small": "Just repaint",
+   "skip": "Leave it alone"
+  },
+  "outcomes": {
+   "go_great": "It looks like a magazine. You cook twice in one week to celebrate.",
+   "go_meh": "The contractor vanishes halfway. The tiles are crooked and so is your mood."
+  }
+ },
+ "mh_noisy_reno": {
+  "text": "Next door starts a renovation. Drilling begins at 7 a.m. and apparently never ends.",
+  "choices": {
+   "earplugs": "Buy earplugs",
+   "complain": "Complain to the city",
+   "drill": "Start your own drilling"
+  },
+  "outcomes": {
+   "complain_stops": "Inspectors cut their hours. Quiet afternoons return.",
+   "complain_feud": "The neighbours find out who complained. Cold war begins."
+  }
+ },
+ "mh_haunted_rumour": {
+  "text": "A kid on your street says your house is haunted. By Tuesday strangers are photographing the porch.",
+  "choices": {
+   "embrace": "Run ghost tours",
+   "deny": "Deny everything",
+   "sleep": "Spend a night inside"
+  },
+  "outcomes": {
+   "embrace_boom": "Ten dollars a head. Ghosts have never been this profitable.",
+   "embrace_flop": "Only your aunt buys a ticket, and she wants a refund.",
+   "sleep_fine": "Nothing happens, except the fridge hums in B-flat.",
+   "sleep_scary": "Something knocks. You choose not to investigate and sleep in the car."
+  }
+ },
+ "mh_wildfire": {
+  "text": "The sky turns orange. An evacuation order comes at 3 a.m. You have ten minutes.",
+  "choices": {
+   "leave": "Grab essentials and go",
+   "hose": "Stay and wet the roof"
+  },
+  "outcomes": {
+   "leave_saved": "The house survives with scorched shutters. A hotel bill later, life goes on.",
+   "leave_lost": "The house burns. You watch the news from a stranger's sofa.",
+   "leave_died": "You hesitate too long, and the road is gone.",
+   "hose_hero": "You save the house, and your eyebrows regret it.",
+   "hose_fail": "The wind changes. You barely run out."
+  }
+ },
+ "mh_termites": {
+  "text": "A strange tapping comes from the walls. A pest man cuts into a beam and it crumbles like cake.",
+  "choices": {
+   "treat": "Full fumigation",
+   "spot": "Spot treatment"
+  },
+  "outcomes": {
+   "spot_ok": "It works. The termites move next door.",
+   "spot_bad": "They were only getting started. The floor goes."
+  }
+ },
+ "mh_property_tax": {
+  "text": "The city reassesses your house. The new property tax bill makes you check the zeros twice.",
+  "choices": {
+   "pay": "Pay it",
+   "appeal": "File an appeal"
+  },
+  "outcomes": {
+   "appeal_win": "The board agrees the 'sea view' is a parking lot. Bill reduced.",
+   "appeal_lose": "Appeal rejected, plus a filing fee."
+  }
+ },
+ "mh_garden_gnome_war": {
+  "text": "Someone keeps swapping your garden flowers for plastic ones. A cold war with a retired neighbour begins.",
+  "choices": {
+   "escalate": "Escalate",
+   "tea": "Invite them for tea",
+   "ignore": "Let it go"
+  },
+  "outcomes": {
+   "escalate_win": "You win by planting one perfect rose. They surrender.",
+   "escalate_lose": "They answer with a fountain. You lose by a mile."
+  }
+ },
+ "mh_rats_attic": {
+  "text": "Scratching in the attic. By night you have named the rats.",
+  "choices": {
+   "exterminator": "Hire an exterminator",
+   "traps": "Set traps yourself",
+   "coexist": "Live with them"
+  },
+  "outcomes": {
+   "traps_ok": "You catch two and become a quiet hunter of the night.",
+   "traps_snap": "The trap catches your finger. The rats look unimpressed."
+  }
+ },
+ "mh_solar_roof": {
+  "text": "A salesman offers solar panels. He promises your electric bill will drop to zero and pay you back.",
+  "choices": {
+   "buy": "Install them",
+   "no": "Say no"
+  },
+  "outcomes": {
+   "buy_good": "The bills do shrink. The sun is finally working for you.",
+   "buy_scam": "The company vanishes after the first payment. Three panels sit on your roof, looking sad."
+  }
+ },
+ "mh_basement_find": {
+  "text": "Behind a loose panel in the basement you find an old tin box.",
+  "choices": {
+   "open": "Open it",
+   "leave": "Seal it again"
+  },
+  "outcomes": {
+   "open_cash": "Old banknotes, still good. Someone forgot a fortune.",
+   "open_photos": "Photos of strangers in funny hats. A mystery for another day.",
+   "open_bad": "Mould, mice and one very old sandwich."
+  }
+ },
+ "mh_heat_wave_ac": {
+  "text": "A heat wave hits and your air conditioner dies with a sad sigh. The repair shop quotes you a price.",
+  "choices": {
+   "new": "Buy a new unit",
+   "fan": "Survive with fans",
+   "friend": "Sleep at a friend's"
+  }
+ },
+ "mh_mortgage_refi": {
+  "text": "The bank calls with a 'special offer' to refinance your mortgage. The rate seems too good.",
+  "choices": {
+   "accept": "Refinance",
+   "decline": "Decline"
+  },
+  "outcomes": {
+   "accept_saves": "You do save thousands. Nobody is more surprised than you.",
+   "accept_fees": "Closing costs eat every saving for the next ten years."
+  }
+ },
+ "mh_rent_hike": {
+  "text": "The landlord emails: rent is going up 20 percent. 'Market conditions', he says. He just bought a boat.",
+  "choices": {
+   "pay": "Pay it",
+   "negotiate": "Negotiate",
+   "move": "Find a new place"
+  },
+  "outcomes": {
+   "negotiate_half": "He settles on a smaller rise after you mention the broken heater.",
+   "negotiate_no": "He laughs. The email ends with a smiley face."
+  }
+ },
+ "mh_landlord_enters": {
+  "text": "You come home and find your landlord in your kitchen, 'just checking the pipes'. He is eating your yogurt.",
+  "choices": {
+   "confront": "Confront him",
+   "lock": "Change the lock",
+   "shrug": "Let it slide"
+  },
+  "outcomes": {
+   "confront_stops": "You quote the lease. He apologises and gives you a pie.",
+   "confront_anger": "He says you're 'not a team player' and raises the rent a bit."
+  }
+ },
+ "mh_deposit_theft": {
+  "text": "You move out spotless. The landlord keeps your whole deposit for 'wear and tear', whatever that means.",
+  "choices": {
+   "court": "Take him to small claims",
+   "review": "Leave a nasty review",
+   "forget": "Forget it"
+  },
+  "outcomes": {
+   "court_win": "The judge reads your photos like scripture. You get it all back.",
+   "court_lose": "You lose and pay the fee. The judge shrugs."
+  }
+ },
+ "mh_eviction_notice": {
+  "text": "A paper is taped to your door: you have 30 days to leave. The reason is a typo.",
+  "choices": {
+   "fight": "Fight the eviction",
+   "leave": "Move out calmly",
+   "couch": "Crash with a friend"
+  },
+  "outcomes": {
+   "fight_stay": "The court finds the notice invalid. You stay, and the landlord sulks.",
+   "fight_lose": "The judge gives you thirty days and a sympathetic look."
+  }
+ },
+ "mh_roommate_dishes": {
+  "text": "Your roommate's dishes have formed a culture in the sink. A tiny civilisation has started.",
+  "choices": {
+   "talk": "Have a talk",
+   "wash": "Wash them yourself",
+   "revenge": "Hide their plates"
+  },
+  "outcomes": {
+   "talk_fixed": "They say sorry and wash everything. For a week.",
+   "talk_blow": "The talk becomes a fight about everything since 2019."
+  }
+ },
+ "mh_roommate_rent": {
+  "text": "Your roommate says they'll 'definitely have the rent next week'. This is the third week they say it.",
+  "choices": {
+   "cover": "Cover for them",
+   "kick": "Ask them to leave",
+   "chase": "Demand it today"
+  },
+  "outcomes": {
+   "kick_ok": "They leave quietly and even leave a thank-you note.",
+   "kick_revenge": "They leave and take the toaster and the good lamp."
+  }
+ },
+ "mh_roommate_party": {
+  "text": "You come home from a long shift to find fifty strangers in the living room and your roommate on the table.",
+  "choices": {
+   "join": "Join the party",
+   "kick": "Shut it down",
+   "sleep": "Go to sleep"
+  },
+  "outcomes": {
+   "join_fun": "Best night of the year. You meet a great person in the kitchen.",
+   "join_trouble": "Police arrive. Someone breaks the window and you pay for it."
+  }
+ },
+ "mh_mold_flat": {
+  "text": "There's black mould in your bathroom, and it is starting to look like a map of Europe.",
+  "choices": {
+   "landlord": "Report to the landlord",
+   "clean": "Clean it yourself",
+   "move": "Move out"
+  },
+  "outcomes": {
+   "landlord_fixed": "He sends someone who scrubs it. The mould returns in a month.",
+   "landlord_ignored": "No reply. The cough starts around the second week."
+  }
+ },
+ "mh_noisy_upstairs": {
+  "text": "The people upstairs seem to be practising dance every night at midnight. Plaster rains from your ceiling.",
+  "choices": {
+   "knock": "Knock on their door",
+   "broom": "Bang the ceiling",
+   "earplug": "Buy earplugs"
+  },
+  "outcomes": {
+   "knock_nice": "They are lovely, apologise, and invite you to dinner.",
+   "knock_rude": "They slam the door and play louder out of spite."
+  }
+ },
+ "mh_landlord_sells": {
+  "text": "Your landlord tells you the building is sold. The new owner wants it empty by spring.",
+  "choices": {
+   "buyout": "Ask for a move-out bonus",
+   "buy": "Try to buy a home",
+   "go": "Just move"
+  },
+  "outcomes": {
+   "buyout_paid": "They pay you to go. Your first paycheck for doing nothing.",
+   "buyout_nothing": "They laugh and send a cleaning bill."
+  }
+ },
+ "mh_tax_audit": {
+  "text": "A letter from the tax office: you are being audited. Bring receipts for the last three years.",
+  "choices": {
+   "honest": "Cooperate fully",
+   "hide": "Hide the paperwork",
+   "lawyer": "Hire a tax lawyer"
+  },
+  "outcomes": {
+   "honest_clean": "Everything checks out. The auditor tips his hat.",
+   "honest_small": "They find a small error. You pay, sign, and breathe.",
+   "honest_big": "A big mistake from five years ago. Ouch.",
+   "hide_lucky": "They give up after a month of silence.",
+   "hide_caught": "They find everything, with a fine and a file for the prosecutor."
+  }
+ },
+ "mh_bank_error": {
+  "text": "You check your account. The bank has added $9,000 by mistake. No one has called yet.",
+  "choices": {
+   "return": "Return it",
+   "keep": "Keep it quietly",
+   "spend": "Spend it fast"
+  },
+  "outcomes": {
+   "keep_ok": "Nobody notices. You still feel a tiny itch at night.",
+   "keep_caught": "The bank notices, takes it back, and adds a fee."
+  }
+ },
+ "mh_identity_theft": {
+  "text": "A bank calls: someone just opened three cards in your name. They bought a very expensive blender.",
+  "choices": {
+   "fight": "Fight the fraud",
+   "pay": "Pay and move on"
+  },
+  "outcomes": {
+   "fight_cleared": "Weeks of calls, but the debts are wiped.",
+   "fight_stuck": "The credit damage sticks. You become a security expert out of spite."
+  }
+ },
+ "mh_tax_refund": {
+  "text": "The tax office actually owes YOU money. A refund of $1,800 appears in your account.",
+  "choices": {
+   "save": "Save it",
+   "treat": "Treat yourself",
+   "gamble": "Put it all on a bet"
+  },
+  "outcomes": {
+   "gamble_win": "Double or nothing: double. You walk like a king.",
+   "gamble_lose": "Nothing. The refund was a rumour."
+  }
+ },
+ "mh_crypto_tip": {
+  "text": "{{name}} whispers that a new coin is 'about to explode'. They've already put their rent in.",
+  "choices": {
+   "invest": "Invest $1,000",
+   "pass": "Pass",
+   "warn": "Warn them it's a scam"
+  },
+  "outcomes": {
+   "invest_moon": "It goes to the moon. {{name}} sends a rocket emoji and a fruit basket.",
+   "invest_zero": "The coin collapses overnight. {{name}} stops answering."
+  }
+ },
+ "mh_mlm_pitch": {
+  "text": "An old acquaintance invites you for coffee, then pulls out a whiteboard. It is a pyramid, but 'a friendly one'.",
+  "choices": {
+   "join": "Buy the starter kit",
+   "decline": "Decline politely",
+   "expose": "Call it a scam out loud"
+  },
+  "outcomes": {
+   "join_small": "You sell enough to break even and keep a decade of leggings.",
+   "join_loss": "Your garage is full of unsold shakes. Your friends avoid you."
+  }
+ },
+ "mh_lottery_pool": {
+  "text": "The office starts a lottery pool. Everyone puts in $10. Jackpots have been sad lately.",
+  "choices": {
+   "join": "Join the pool",
+   "solo": "Buy your own ticket",
+   "skip": "Skip it"
+  },
+  "outcomes": {
+   "join_win": "The pool wins! Your share is $20,000 and a new reason to be careful what you say to coworkers.",
+   "join_nope": "Nothing. At least you bonded."
+  }
+ },
+ "mh_late_paycheck": {
+  "text": "Payday comes and nothing arrives. HR sends an email with the subject 'Oops'.",
+  "choices": {
+   "wait": "Wait patiently",
+   "push": "Push hard",
+   "quit": "Threaten to quit"
+  },
+  "outcomes": {
+   "push_paid": "They pay in two days with a small apology bonus.",
+   "push_tense": "They pay, but your manager is cold for a month."
+  }
+ },
+ "mh_inheritance_scam": {
+  "text": "An email: a distant prince in a distant land left you $4 million. They just need a small fee.",
+  "choices": {
+   "pay": "Pay the fee",
+   "report": "Report the email",
+   "troll": "Waste their time"
+  }
+ },
+ "mh_forgotten_sub": {
+  "text": "You find a subscription you forgot about. It has been charging you for years. For a gym in another city.",
+  "choices": {
+   "cancel": "Cancel it",
+   "fight": "Demand a refund"
+  },
+  "outcomes": {
+   "fight_refund": "They refund the whole year. You frame the email.",
+   "fight_no": "Customer service puts you on hold until the heat death of the universe."
+  }
+ },
+ "mh_parking_ticket": {
+  "text": "A parking ticket sits under your wiper. You parked in front of a sign that says, in small letters, 'not here'.",
+  "choices": {
+   "pay": "Pay it",
+   "appeal": "Appeal it",
+   "ignore": "Ignore it"
+  },
+  "outcomes": {
+   "appeal_win": "Cancelled. Your smugness lasts all week.",
+   "appeal_lose": "Rejected, with a late fee."
+  }
+ },
+ "mh_car_impound": {
+  "text": "You walk out and your car is gone. A sign says it was towed to a lot across the city.",
+  "choices": {
+   "pay": "Pay and retrieve",
+   "argue": "Argue with the clerk",
+   "abandon": "Leave the car"
+  },
+  "outcomes": {
+   "argue_win": "You win a discount after a dramatic speech.",
+   "argue_lose": "He adds a 'drama fee'. It is not on the sign."
+  }
+ },
+ "mh_investment_pitch": {
+  "text": "A smooth man in a nice shirt offers you 'guaranteed returns'. He doesn't say the word 'risk'.",
+  "choices": {
+   "invest": "Invest $4,000",
+   "research": "Research him first",
+   "decline": "Decline"
+  },
+  "outcomes": {
+   "invest_ok": "A real return, to your own astonishment.",
+   "invest_scam": "He vanishes. So does the office."
+  }
+ },
+ "mh_medical_bill": {
+  "text": "A surprise medical bill arrives for a visit you thought was covered. The total has commas.",
+  "choices": {
+   "pay": "Pay in full",
+   "negotiate": "Negotiate the bill"
+  },
+  "outcomes": {
+   "negotiate_cut": "They cut it by two thirds after one email. Why not earlier?",
+   "negotiate_same": "No change, but they offer a payment plan."
+  }
+ },
+ "mh_windfall_sale": {
+  "text": "You find an old guitar in the attic. A collector says it is worth real money.",
+  "choices": {
+   "sell": "Sell it",
+   "keep": "Keep it"
+  },
+  "outcomes": {
+   "sell_good": "$3,000 for something you were going to throw away.",
+   "sell_fake": "It's a fake. He still offers $50 for the fun of it."
+  }
+ },
+ "mh_gold_digger": {
+  "text": "A stunning stranger laughs at all your jokes. They ask about your 'portfolio' before your name.",
+  "choices": {
+   "test": "Pretend to be broke",
+   "spoil": "Spoil them",
+   "walk": "Walk away"
+  },
+  "outcomes": {
+   "test_stays": "They stay anyway. You may have found something real.",
+   "test_leaves": "They vanish before dessert. Mystery solved."
+  }
+ },
+ "mh_charity_gala": {
+  "text": "You are invited to a charity gala. The tickets are $10,000. The chicken is awful.",
+  "choices": {
+   "donate": "Donate big",
+   "attend": "Attend and network",
+   "skip": "Skip it"
+  },
+  "outcomes": {
+   "attend_deal": "A tipsy investor hands you a very good business card.",
+   "attend_flop": "You buy a silent-auction painting of a duck for $3,000."
+  }
+ },
+ "mh_kidnap_threat": {
+  "text": "An anonymous note says they know your routine. They want $200,000 or they 'take someone close'.",
+  "choices": {
+   "police": "Go to the police",
+   "guards": "Hire bodyguards",
+   "pay": "Pay quietly"
+  },
+  "outcomes": {
+   "police_caught": "They trace the note to a bitter ex-employee. You sigh in relief.",
+   "police_real": "They threaten again and you pay for round-the-clock guards."
+  }
+ },
+ "mh_advisor_fraud": {
+  "text": "Your financial advisor has been in your accounts for years. He's gone, and so is a big part of your fortune.",
+  "choices": {
+   "sue": "Sue him",
+   "hunt": "Hire a private detective",
+   "accept": "Accept the loss"
+  },
+  "outcomes": {
+   "sue_recover": "The court finds most of it. You pay the lawyers.",
+   "sue_lost": "He is in another country. The money is in another dimension."
+  }
+ },
+ "mh_yacht_party": {
+  "text": "A friend lends you a yacht for the weekend. By Saturday you're hosting fifty people and a DJ.",
+  "choices": {
+   "party": "Go all in",
+   "calm": "Keep it small",
+   "decline": "Refuse the offer"
+  },
+  "outcomes": {
+   "party_great": "Legendary weekend. Photos are never discussed.",
+   "party_disaster": "Someone sinks the dinghy and the friend's lawyers call."
+  }
+ },
+ "mh_tax_haven": {
+  "text": "A smooth lawyer offers to move your money to a sunny island where nobody asks questions. Nobody pays tax, either.",
+  "choices": {
+   "accept": "Move the money",
+   "decline": "Pay your taxes"
+  },
+  "outcomes": {
+   "accept_saves": "Your tax bill shrinks by a huge amount. Your conscience, a little less.",
+   "accept_caught": "A leak names you in a famous list. A fine and a scandal follow."
+  }
+ },
+ "mh_family_house": {
+  "text": "Your cousin asks you for a house. 'You have so many,' they say, kindly. They have never paid anything back.",
+  "choices": {
+   "give": "Buy them a house",
+   "loan": "Offer a loan",
+   "refuse": "Say no"
+  },
+  "outcomes": {
+   "loan_paid": "They actually pay it back, with interest, and a pie.",
+   "loan_never": "The loan becomes a family legend of ingratitude."
+  }
+ },
+ "mh_paparazzi_house": {
+  "text": "A drone hovers over your pool. Your private life is now a headline.",
+  "choices": {
+   "sue": "Sue the outlet",
+   "laugh": "Pose for it",
+   "fence": "Build a taller fence"
+  },
+  "outcomes": {
+   "sue_win": "They settle for a sum and a retraction.",
+   "sue_lose": "A judge calls it 'public interest'. Ouch."
+  }
+ },
+ "mh_art_buy": {
+  "text": "A gallery owner offers you a painting for $25,000. 'It's an investment,' she says, near a painting of a banana.",
+  "choices": {
+   "buy": "Buy it",
+   "skip": "Pass"
+  },
+  "outcomes": {
+   "buy_grows": "The artist becomes famous. Your banana is a masterpiece.",
+   "buy_flat": "It hangs in your hallway. Guests politely look away."
+  }
+ },
+ "mh_inheritance_fight": {
+  "text": "Your relatives suddenly remember you exist. All of them want a share of your 'generous heart'.",
+  "choices": {
+   "share": "Share some",
+   "lawyer": "Lawyer up",
+   "party": "Throw a family dinner"
+  },
+  "outcomes": {
+   "party_good": "The dinner is warm, loud and surprisingly honest.",
+   "party_bad": "Three fights, one thrown pie, and a vow to never meet again."
+  }
+ }
+}

@@ -1,0 +1,589 @@
+{
+  "pa_newborn_nights": {
+    "text": "{{name}} screams every two hours. You have not finished a thought since Tuesday.",
+    "choices": {
+      "walk": "Walk the hallway all night",
+      "rotate": "Take shifts",
+      "sleeptrain": "Let them cry it out"
+    },
+    "outcomes": {
+      "works": "Three rough nights, then silence. Glorious, guilty silence.",
+      "worse": "The crying only gets louder. So does your guilt."
+    }
+  },
+  "pa_vaccines": {
+    "text": "The pediatrician hands you {{name}}'s vaccine schedule. Your feed has opinions. The doctor has a degree.",
+    "choices": {
+      "full": "Follow the schedule",
+      "delay": "Space them out slowly",
+      "skip": "Skip the lot"
+    }
+  },
+  "pa_first_word": {
+    "text": "{{name}} points at you and says a word. It sounds like your name. Or like a sneeze.",
+    "choices": {
+      "record": "Film it, send to everyone",
+      "cherish": "Just soak it in",
+      "correct": "Teach the proper word"
+    }
+  },
+  "pa_daycare": {
+    "text": "Daycare costs more than your rent. {{name}} also needs somewhere to be while you work.",
+    "choices": {
+      "daycare": "Pay for the good one",
+      "cheap": "Take the cheap place",
+      "relative": "Beg a relative"
+    }
+  },
+  "pa_picky_eater": {
+    "text": "{{name}} eats beige food only. A single green pea is treated like a hostile act.",
+    "choices": {
+      "force": "Force the broccoli",
+      "hide": "Hide veg in everything",
+      "nuggets": "Surrender, serve nuggets"
+    },
+    "outcomes": {
+      "s": "{{name}} eats the whole lasagna. You are a genius.",
+      "f": "They find every piece and line them up on the rim like evidence."
+    }
+  },
+  "pa_public_tantrum": {
+    "text": "In the supermarket, {{name}} lies on the floor and screams that you are ruining their life. Strangers watch.",
+    "choices": {
+      "carry": "Carry them out calmly",
+      "bribe": "Buy the candy",
+      "stern": "Ignore it, hold the line"
+    },
+    "outcomes": {
+      "calm": "It ends in ninety seconds. A stranger gives you a nod of respect.",
+      "meltdown": "It escalates. You abandon the cart and leave in shame."
+    }
+  },
+  "pa_daycare_bite": {
+    "text": "The daycare calls. {{name}} bit another kid. Hard.",
+    "choices": {
+      "scold": "Firm talk at home",
+      "defend": "Insist the other kid started it",
+      "apologize": "Apologize to the other parent"
+    }
+  },
+  "pa_first_steps": {
+    "text": "{{name}} lets go of the couch and takes three wobbly steps toward you.",
+    "choices": {
+      "catch": "Catch them at the end",
+      "film": "Film it"
+    }
+  },
+  "pa_story_night": {
+    "text": "{{name}} wants the same book for the fortieth night in a row. You now know it by heart.",
+    "choices": {
+      "read": "Read it again",
+      "skip": "Skip pages, hope they miss it",
+      "improvise": "Make up your own story"
+    }
+  },
+  "pa_first_school_day": {
+    "text": "First day of school. {{name}} clings to your leg like a koala with legal grievances.",
+    "choices": {
+      "brave": "Smile and walk away",
+      "stay": "Stay until they settle",
+      "sneak": "Sneak out mid-hug"
+    },
+    "outcomes": {
+      "s": "{{name}} waves, sniffs, and marches in. You cry in the car.",
+      "f": "The wailing follows you down the corridor for a full minute."
+    }
+  },
+  "pa_report_card": {
+    "text": "{{name}} brings home a report card and hides it behind a cereal box.",
+    "choices": {
+      "praise": "Praise the effort",
+      "pressure": "Demand better",
+      "tutor": "Hire a tutor"
+    },
+    "outcomes": {
+      "up": "{{name}} beams and tries harder next term.",
+      "shrug": "A shrug. The effort is noted, nothing more."
+    }
+  },
+  "pa_bullied": {
+    "text": "{{name}} comes home with a torn backpack and a story about a kid who won't leave them alone.",
+    "choices": {
+      "school": "Go to the principal",
+      "teach": "Teach them to hit back",
+      "parents": "Call the other parents",
+      "listen": "Just listen, hold them"
+    },
+    "outcomes": {
+      "s": "The school acts. The bully is moved to another class.",
+      "f": "The principal shrugs and calls it 'kids being kids'."
+    }
+  },
+  "pa_is_bully": {
+    "text": "A teacher calls. {{name}} has been tormenting a quiet kid. They are not sorry. Yet.",
+    "choices": {
+      "consequences": "Take away everything good",
+      "talk": "Make them face the victim",
+      "excuse": "Blame the teacher"
+    }
+  },
+  "pa_talent": {
+    "text": "{{name}} seems to have an actual gift. A teacher says the word 'prodigy' and looks at your wallet.",
+    "choices": {
+      "invest": "Fund the lessons",
+      "casual": "Keep it a hobby",
+      "ignore": "Say it's not practical"
+    },
+    "outcomes": {
+      "shines": "Years later, you sit in the front row and cry on cue.",
+      "quits": "After a year, {{name}} quits. The instrument gathers dust."
+    }
+  },
+  "pa_sports_team": {
+    "text": "{{name}} wants to join a team. Saturdays will now belong to a damp field.",
+    "choices": {
+      "coach": "Volunteer to coach",
+      "cheer": "Cheer from the sideline",
+      "shout": "Scream at the referee"
+    },
+    "outcomes": {
+      "s": "{{name}} scores. You scream like a lunatic and they pretend not to know you.",
+      "f": "They lose badly, and blame your cheering."
+    }
+  },
+  "pa_music_lessons": {
+    "text": "{{name}} has started the violin. The house now sounds like a cat being negotiated with.",
+    "choices": {
+      "endure": "Endure it with a smile",
+      "earplugs": "Buy earplugs",
+      "stop": "Cancel the lessons"
+    }
+  },
+  "pa_screen_time": {
+    "text": "{{name}} has been on a screen for six hours straight. Their eyes have stopped blinking.",
+    "choices": {
+      "ban": "Confiscate all devices",
+      "limit": "Set sane limits",
+      "join": "Join the game"
+    },
+    "outcomes": {
+      "s": "Some grumbling, then actual outdoor play. Remarkable.",
+      "f": "They bargain like a union rep. You fold."
+    }
+  },
+  "pa_broken_arm": {
+    "text": "{{name}} fell off the monkey bars. The arm bends where arms do not bend.",
+    "choices": {
+      "er": "Rush to the ER",
+      "calm": "Stay calm, drive carefully",
+      "panic": "Panic loudly"
+    }
+  },
+  "pa_lie_caught": {
+    "text": "{{name}} swears the dog ate the homework. You don't own a dog.",
+    "choices": {
+      "laugh": "Laugh, then lecture",
+      "punish": "Ground them",
+      "trap": "Play detective"
+    },
+    "outcomes": {
+      "s": "You catch the lie in two questions. They respect it.",
+      "f": "They out-argue you. A future lawyer, perhaps."
+    }
+  },
+  "pa_stole_wallet": {
+    "text": "Cash is missing from your wallet. {{name}} has suspiciously large amounts of candy.",
+    "choices": {
+      "confront": "Confront them",
+      "hide": "Hide your wallet better",
+      "lesson": "Make them earn it back"
+    },
+    "outcomes": {
+      "confess": "They crumple, confess, and offer you a candy bar as repayment.",
+      "deny": "They deny it with a perfect straight face. You are both impressed and worried."
+    }
+  },
+  "pa_puberty_talk": {
+    "text": "{{name}} is changing. The conversation you have been dreading is three days away. Or already here.",
+    "choices": {
+      "direct": "Be direct and honest",
+      "book": "Hand over a book",
+      "awkward": "Mumble and flee",
+      "other": "Pass it to the other parent"
+    },
+    "outcomes": {
+      "s": "They listen, mortified, and later say thank you.",
+      "f": "They put their fingers in their ears and leave the room."
+    }
+  },
+  "pa_first_phone": {
+    "text": "{{name}} says every kid in their class has a phone. Every single one, allegedly.",
+    "choices": {
+      "buy": "Buy the phone",
+      "basic": "Give a basic one",
+      "wait": "Say wait two more years"
+    },
+    "outcomes": {
+      "s": "{{name}} is overjoyed and mostly well behaved with it.",
+      "f": "Within a week, a cracked screen and a very large data bill."
+    }
+  },
+  "pa_sneak_out": {
+    "text": "At 2 a.m. you hear the window slide open. {{name}} is climbing out in sneakers.",
+    "choices": {
+      "confront": "Block the window",
+      "wait": "Wait up on the couch",
+      "follow": "Follow them in the car"
+    },
+    "outcomes": {
+      "caught": "{{name}} sulks for a week, but they are home and safe.",
+      "runs": "{{name}} shoves past. You spend the night calling every number you have."
+    }
+  },
+  "pa_drunk_teen": {
+    "text": "The phone rings at midnight. {{name}}, fifteen, is drunk at someone's party and wants a ride.",
+    "choices": {
+      "pickup": "Pick up, no questions",
+      "lecture": "Pick up, big lecture",
+      "leave": "Let them find their own way"
+    },
+    "outcomes": {
+      "s": "The lecture lands. They throw up quietly and promise never again.",
+      "f": "Silent drive home. A door slams. Nothing is learned."
+    }
+  },
+  "pa_failing_class": {
+    "text": "{{name}} is failing math and has not told you. The school email says otherwise.",
+    "choices": {
+      "sit": "Study together every night",
+      "tutor": "Pay for a tutor",
+      "threat": "Threaten to take everything",
+      "shrug": "Let them fail"
+    }
+  },
+  "pa_teen_dating": {
+    "text": "{{name}} brings someone home. The two of them stare at the floor. You grill the visitor anyway.",
+    "choices": {
+      "welcome": "Be warm and welcoming",
+      "grill": "Interrogate for an hour",
+      "rules": "State clear rules"
+    }
+  },
+  "pa_diary_snoop": {
+    "text": "{{name}}'s diary sits open on the bed. It would take thirty seconds.",
+    "choices": {
+      "read": "Read it",
+      "close": "Close it and leave"
+    },
+    "outcomes": {
+      "fine": "Nothing alarming. Mostly poems about a pizza place.",
+      "secret": "You learn something you never wanted to know. You cannot unlearn it.",
+      "caught": "{{name}} walks in. The silence is permanent."
+    }
+  },
+  "pa_driving_lessons": {
+    "text": "{{name}} wants to learn to drive. You are the cheapest instructor available.",
+    "choices": {
+      "teach": "Teach them yourself",
+      "school": "Pay for a driving school",
+      "deny": "Not yet"
+    },
+    "outcomes": {
+      "bond": "Sweaty palms, stalled engines, one great memory.",
+      "crash": "A mailbox is lost forever. So is your calm."
+    }
+  },
+  "pa_curfew_war": {
+    "text": "{{name}} comes in at 3 a.m., eyes shining. The curfew was midnight. A war begins.",
+    "choices": {
+      "ground": "Ground them for a month",
+      "talk": "Talk it through",
+      "ignore": "Let it slide"
+    },
+    "outcomes": {
+      "s": "They explain, you explain, a curfew of 1 a.m. is agreed.",
+      "f": "The talk becomes a screaming match. Both slam doors."
+    }
+  },
+  "pa_tattoo_ask": {
+    "text": "{{name}} turns eighteen and announces a tattoo. Of a wolf. On the neck.",
+    "choices": {
+      "allow": "Shrug and allow it",
+      "ban": "Forbid it",
+      "deal": "Negotiate for the shoulder"
+    }
+  },
+  "pa_college_major": {
+    "text": "{{name}} must choose a college major. Their top three are 'art', 'philosophy' and 'ask my parents'.",
+    "choices": {
+      "doctor": "Push medicine",
+      "engineer": "Push engineering",
+      "art": "Back the art",
+      "theirs": "Say it's their life"
+    },
+    "outcomes": {
+      "s": "{{name}} blossoms and sells a piece before graduating.",
+      "f": "Four years later, a degree and a part-time job at a framing shop."
+    }
+  },
+  "pa_tuition_ask": {
+    "text": "{{name}} needs tuition. The number on the page has too many zeros.",
+    "choices": {
+      "full": "Pay it all",
+      "half": "Pay half",
+      "loan": "Co-sign a loan",
+      "no": "They figure it out"
+    }
+  },
+  "pa_move_out": {
+    "text": "{{name}} stands in the hallway holding a lamp. 'I found a place,' they say.",
+    "choices": {
+      "help": "Help them move",
+      "cry": "Cry, then help",
+      "room": "Keep their room as is"
+    }
+  },
+  "pa_empty_nest": {
+    "text": "The house is quiet. Nobody eats your leftovers. You do not know who you are.",
+    "choices": {
+      "travel": "Book a long trip",
+      "hobby": "Start something new",
+      "call": "Call {{name}} every night"
+    }
+  },
+  "pa_dropout": {
+    "text": "{{name}} drops out of college to 'build something'. They will not elaborate.",
+    "choices": {
+      "support": "Back the gamble",
+      "rage": "Explode",
+      "deal": "Give them one year",
+      "loan": "Invest in the idea"
+    },
+    "outcomes": {
+      "hit": "It works. Somehow. You are now the investor who believed first.",
+      "flop": "The idea evaporates. So does the cash."
+    }
+  },
+  "pa_coming_out": {
+    "text": "{{name}} sits you down. 'I need to tell you something about who I love.'",
+    "choices": {
+      "embrace": "Hug them, say you're with them",
+      "shock": "Need time to process",
+      "reject": "Say it is a phase"
+    }
+  },
+  "pa_adult_loan": {
+    "text": "{{name}} asks for a loan. They say 'loan'. The way they say it, you think 'gift'.",
+    "choices": {
+      "lend": "Lend the money",
+      "gift": "Give some, call it a gift",
+      "no": "Say no"
+    },
+    "outcomes": {
+      "repaid": "They pay it all back, with a lasagna.",
+      "never": "The money vanishes. They stop returning your calls for a bit."
+    }
+  },
+  "pa_wedding_child": {
+    "text": "{{name}} is getting married. You get a seat in the second row and a speech slot, maybe.",
+    "choices": {
+      "pay": "Pay for the venue",
+      "speech": "Give a heartfelt speech",
+      "drunk": "Drink too much",
+      "skip": "Skip it"
+    }
+  },
+  "pa_grandchild_news": {
+    "text": "{{name}} says 'sit down'. Then 'you are going to be a grandparent.'",
+    "choices": {
+      "joy": "Cheer and cry",
+      "gifts": "Buy every baby thing",
+      "advice": "Offer unsolicited advice"
+    }
+  },
+  "pa_babysit_grand": {
+    "text": "{{name}} asks you to babysit the grandkids for a weekend. Your knees ask a different question.",
+    "choices": {
+      "yes": "Say yes gladly",
+      "treats": "Spoil them rotten",
+      "no": "Politely refuse"
+    }
+  },
+  "pa_money_adult": {
+    "text": "{{name}} has debts again. They found the one lender worse than you.",
+    "choices": {
+      "bail": "Bail them out",
+      "lesson": "Tough love",
+      "plan": "Build a repayment plan"
+    }
+  },
+  "pa_rift": {
+    "text": "A holiday dinner ends in shouting. {{name}} walks out. Months of silence follow.",
+    "choices": {
+      "pride": "Wait for them to call",
+      "write": "Write a long letter",
+      "visit": "Show up at their door"
+    }
+  },
+  "pa_reconcile": {
+    "text": "{{name}} calls out of nowhere. 'I think we both said things.' The silence hums.",
+    "choices": {
+      "forgive": "Accept the olive branch",
+      "apologize": "Apologize first",
+      "cold": "Stay cold"
+    },
+    "outcomes": {
+      "good": "Two hours on the phone. It is the longest you have talked in years.",
+      "again": "It starts well and ends in an argument. But at least it is a conversation."
+    }
+  },
+  "pa_old_care": {
+    "text": "You have trouble with the stairs. {{name}} arrives with groceries and no warning.",
+    "choices": {
+      "accept": "Accept the help",
+      "proud": "Insist you are fine",
+      "move": "Move in with them"
+    },
+    "outcomes": {
+      "s": "It turns into a weekly habit. Somehow you both look forward to it.",
+      "f": "The helping turns into criticism about your fridge."
+    }
+  },
+  "pa_old_visit": {
+    "text": "{{name}} visits every Sunday now. The visits are short. They are enough.",
+    "choices": {
+      "cook": "Cook their favourite",
+      "stories": "Tell the old stories",
+      "will": "Bring up the inheritance"
+    }
+  },
+  "pa_old_nursing": {
+    "text": "The doctor suggests assisted living. {{name}} goes pale and says 'not yet'.",
+    "choices": {
+      "home": "Stay home with their help",
+      "place": "Choose a nice place",
+      "fight": "Refuse to leave at all"
+    },
+    "outcomes": {
+      "works": "They rearrange their whole week around you. It works.",
+      "strain": "It is harder than anyone admitted. Everyone is tired."
+    }
+  },
+  "pa_apology_old": {
+    "text": "{{name}} says: 'I forgive you for all of it.' You did not know there was an 'all of it'.",
+    "choices": {
+      "sorry": "Say you are sorry",
+      "defensive": "Argue the point",
+      "quiet": "Just hold their hand"
+    }
+  },
+  "pa_toddler_nap_strike": {
+    "text": "{{name}} stops napping. The two quiet hours of your day are now a memory.",
+    "choices": {
+      "quiet": "Enforce quiet time",
+      "car": "Drive around until they sleep",
+      "giveup": "Give up the nap"
+    }
+  },
+  "pa_stomach_bug": {
+    "text": "At 3 a.m., {{name}} is sick in a way that redefines your sheets.",
+    "choices": {
+      "tend": "Clean up, hold their hair",
+      "doctor": "Take them to urgent care"
+    },
+    "outcomes": {
+      "minor": "Just a bug. The doctor's smile costs two hundred.",
+      "flu": "It spreads to you by morning. Solidarity."
+    }
+  },
+  "pa_school_play": {
+    "text": "{{name}} plays a tree in the school play. Nobody has ever been this proud of a tree.",
+    "choices": {
+      "front": "Sit in the front row",
+      "work": "Skip for a work call",
+      "flowers": "Bring flowers"
+    }
+  },
+  "pa_science_fair": {
+    "text": "{{name}} needs a volcano for the science fair by tomorrow. Tomorrow.",
+    "choices": {
+      "build": "Build it together",
+      "alone": "Build it yourself overnight",
+      "buy": "Buy a kit"
+    }
+  },
+  "pa_birthday_party": {
+    "text": "{{name}}'s birthday approaches. They want a party for thirty, a pony and 'something epic'.",
+    "choices": {
+      "big": "Throw the big party",
+      "home": "Cake at home, five friends",
+      "trip": "Take them somewhere special"
+    }
+  },
+  "pa_sleepover_call": {
+    "text": "At 11 p.m., {{name}} calls from a sleepover, crying. They want to come home.",
+    "choices": {
+      "pickup": "Drive over now",
+      "encourage": "Encourage them to stay",
+      "sleepy": "Say 'tomorrow' and hang up"
+    }
+  },
+  "pa_pet_beg": {
+    "text": "{{name}} begs for a pet. They have a binder. There are tabs.",
+    "choices": {
+      "yes": "Adopt a dog",
+      "fish": "Compromise with a goldfish",
+      "no": "Hard no"
+    }
+  },
+  "pa_allowance": {
+    "text": "{{name}} asks for an allowance. 'Fair wages,' they say. 'For existing.'",
+    "choices": {
+      "chores": "Pay for chores",
+      "flat": "Flat weekly sum",
+      "no": "Say life is unpaid"
+    }
+  },
+  "pa_cheating_exam": {
+    "text": "{{name}} got caught copying on an exam. The principal wants to see you.",
+    "choices": {
+      "punish": "Back the school",
+      "defend": "Defend your kid",
+      "talk": "Ask why they did it"
+    }
+  },
+  "pa_graduation": {
+    "text": "{{name}} walks across the stage. You cry. You cry again at the photographer.",
+    "choices": {
+      "party": "Throw a party",
+      "gift": "Give a big gift",
+      "words": "Write them a letter"
+    }
+  },
+  "pa_teen_job": {
+    "text": "{{name}} wants a part-time job. At a burger place, no less.",
+    "choices": {
+      "yes": "Encourage it",
+      "studies": "Studies first",
+      "lend": "Loan them a work shirt"
+    }
+  },
+  "pa_vacation_fight": {
+    "text": "The family road trip is going badly. {{name}} has asked 'are we there yet?' for the ninth time.",
+    "choices": {
+      "sing": "Start a car song",
+      "shout": "Shout 'no'",
+      "stop": "Pull over for ice cream"
+    }
+  },
+  "pa_accident": {
+    "text": "A cyclist hits {{name}} at a crossing. Sirens. A blur. A long hallway.",
+    "choices": {
+      "er": "Ride in the ambulance"
+    },
+    "outcomes": {
+      "ok": "A broken leg and a bruised conscience. They will heal. So will you.",
+      "tragedy": "The hallway ends in a room you never wanted to enter. Nothing is the same."
+    }
+  }
+}

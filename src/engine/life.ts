@@ -21,6 +21,7 @@ export interface NewLifeOptions {
   countryCode?: string
   firstName?: string
   lastName?: string
+  city?: string
   /** legacy mode: inherit from a parent life */
   inherit?: { money: number; lastName: string; countryCode: string; city: string; generation: number; royal: boolean; parent: Person; otherParent?: Person }
 }
@@ -71,7 +72,7 @@ export function createLife(opts: NewLifeOptions = {}): Life {
     gender,
     country: country.name,
     countryCode: country.code,
-    city: inh?.city ?? rng.pick(country.cities),
+    city: opts.city?.trim() || inh?.city || rng.pick(country.cities),
     stats: { happiness: rng.bell(40, 100), health: rng.bell(50, 100), smarts: rng.bell(20, 100), looks: rng.bell(20, 100) },
     generation: inh?.generation ?? 1,
   })
@@ -143,6 +144,7 @@ export function ageUp(life: Life) {
       p.alive = false
       log(life, 'bad', 'diary.personDied', { name: p.firstName, kind: p.kind, age: p.age })
       s.happiness = clamp(s.happiness - (p.relationship > 60 ? 15 : 5))
+      if ((p.kind === 'mother' || p.kind === 'father') && life.age >= 16 && !life.pending) { life.flags.funeral_for = p.firstName; life.pending = { eventId: 'sys_funeral', personId: p.id }; life.seenEvents.push('sys_funeral') }
       // inheritance from parents
       if ((p.kind === 'mother' || p.kind === 'father') && life.age >= 18 && rng.chance(0.6)) {
         const sibs = 1 + life.people.filter((x) => x.kind === 'sibling').length
@@ -168,7 +170,7 @@ export function ageUp(life: Life) {
   if (life.flags.astronaut) { if (rng.chance(0.5)) life.flags.in_space = true; else delete life.flags.in_space }
   // household: base living cost, dependants, and a working spouse's take-home
   if (life.age >= 18 && !life.prison && life.education.stage !== 'university' && life.education.stage !== 'grad') {
-    const kids = life.people.filter((p) => p.kind === 'child' && p.alive && p.age < 18).length
+    const kids = life.people.filter((p) => p.kind === 'child' && p.alive && p.age < 18 && !p.movedOut).length
     life.money -= (life.assets.some((a) => a.kind === 'house') ? 12_000 : 16_000) + kids * 10_000
   }
   const spouse = life.people.find((p) => p.kind === 'spouse' && p.alive)

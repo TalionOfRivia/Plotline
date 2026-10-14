@@ -55,7 +55,7 @@ export function TombstoneScreen() {
 
       <div className="w-full max-w-sm flex flex-col gap-2">
         <button onClick={() => newLife()} className="rounded-2xl bg-accent text-on-accent font-bold text-lg py-4 active:scale-95 transition">{t('menu.newLife')}</button>
-        {undo && <button onClick={undoYear} className="rounded-2xl bg-chrome-soft font-semibold py-3 active:scale-95 transition">⏪ {t('menu.undo')}</button>}
+        {undo && <button onClick={() => undoYear(1)} className="rounded-2xl bg-chrome-soft font-semibold py-3 active:scale-95 transition">⏪ {t('menu.undo')}</button>}
       </div>
     </main>
   )

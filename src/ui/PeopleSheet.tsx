@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useGame } from '../state/store'
 import { Pill, Row, Section, Sheet } from './Sheet'
-import { availableInteractions, INTERACTIONS, type Interaction } from '../engine/relationships'
+import { availableInteractions, HONEYMOONS, INTERACTIONS, VENUES, weddingCost, type Interaction } from '../engine/relationships'
+import { netWorth } from '../engine/assets'
 import type { Person } from '../engine/types'
 import { formatMoney } from './money'
 
@@ -12,7 +13,7 @@ const KIND_EMOJI: Record<Person['kind'], string> = {
 const ACTION_EMOJI: Record<Interaction, string> = {
   spend_time: '⏳', gift: '🎁', compliment: '🌟', insult: '😠', ask_money: '🙏', flirt: '😘', propose: '💍', break_up: '💔',
   have_child: '👶', adopt: '🧸', prenup: '📜', play: '🎾', walk: '🐕', movie_night: '🎬', vacation: '✈️',
-  conversation: '💬', party: '🍾', concert: '🎤', prank: '🤡', rumor: '😈', deal: '🤝', hook_up: '🖤', ask_out: '❤️', give_money: '💸', elope: '💒', counseling: '🛋️',
+  conversation: '💬', party: '🍾', concert: '🎤', prank: '🤡', rumor: '😈', deal: '🤝', hook_up: '🖤', ask_out: '❤️', give_money: '💸', elope: '💒', counseling: '🛋️', best_friend: '🤝', spy: '🔍',
 }
 
 export function PeopleSheet() {
@@ -21,6 +22,9 @@ export function PeopleSheet() {
   const { interact, date, godMode, godEditPerson } = useGame()
   const [selected, setSelected] = useState<string | null>(null)
   const [dating, setDating] = useState(false)
+  const [venue, setVenue] = useState('backyard')
+  const [honeymoon, setHoneymoon] = useState('road_trip')
+  const wedding = useGame((s) => s.wedding)
   const lang = i18n.language
   const person = life.people.find((p) => p.id === selected)
   const hasPartner = life.people.some((p) => (p.kind === 'partner' || p.kind === 'spouse') && p.alive)
@@ -36,13 +40,26 @@ export function PeopleSheet() {
             <div className="flex-1 h-3 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-health transition-[width]" style={{ width: `${person.relationship}%` }} /></div>
             <span className="tabular-nums w-8 text-end">{Math.round(person.relationship)}</span>
           </div>
-          {person.kind !== 'pet' && <div className="mt-1 text-xs opacity-60">✨ {person.looks ?? '?'} · 🧠 {person.smarts ?? '?'}{person.yearsTogether !== undefined && ` · ${t('people.yearsTogether', { n: person.yearsTogether })}`}</div>}
+          {person.kind !== 'pet' && <div className="mt-1 text-xs opacity-60">✨ {person.looks ?? '?'} · 🧠 {person.smarts ?? '?'} · 🤪 {person.craziness ?? '?'}{person.yearsTogether !== undefined && ` · ${t('people.yearsTogether', { n: person.yearsTogether })}`}</div>}
+          <div className="mt-1 flex gap-1 flex-wrap">{person.bestFriend && <Pill tone="good">{t('people.bestFriendBadge')}</Pill>}{person.enemy && <Pill tone="bad">{t('people.enemyBadge')}</Pill>}{person.engaged && <Pill>{t('people.engagedBadge')}</Pill>}{person.movedOut && <Pill>{t('people.movedOutBadge')}</Pill>}{person.sick && <Pill tone="bad">{t('people.sickBadge')}</Pill>}</div>
+          {(person.kind === 'partner') && person.money !== undefined && <div className="mt-1 text-xs opacity-60">{t('people.prenupInfo', { yours: formatMoney(netWorth(life), lang), theirs: formatMoney(person.money, lang) })}</div>}
         </div>
         {godMode && (
           <div className="bg-card rounded-2xl p-3 mb-3 shadow-sm text-sm">
             <div className="text-xs uppercase tracking-widest opacity-60 mb-1">⚡ {t('menu.godMode')}</div>
             <input type="range" min={0} max={100} value={person.relationship} onChange={(e) => godEditPerson(person.id, Number(e.target.value))} className="w-full" />
           </div>
+        )}
+        {person.engaged && (
+          <Section title={t('people.weddingPlan')}>
+            <div className="bg-card rounded-2xl p-3 mb-2 shadow-sm text-sm">
+              <div className="text-xs uppercase tracking-widest opacity-60 mb-1">{t('people.venue')}</div>
+              <div className="flex flex-wrap gap-1 mb-2">{VENUES.map((v) => <button key={v.id} onClick={() => setVenue(v.id)} className={`px-3 py-1.5 rounded-full text-xs font-semibold ${venue === v.id ? 'bg-chrome text-chrome-fg' : 'bg-fg/5'}`}>{t(`people.venues.${v.id}`)} · {formatMoney(v.cost, lang)}</button>)}</div>
+              <div className="text-xs uppercase tracking-widest opacity-60 mb-1">{t('people.honeymoon')}</div>
+              <div className="flex flex-wrap gap-1 mb-2">{HONEYMOONS.map((h) => <button key={h.id} onClick={() => setHoneymoon(h.id)} className={`px-3 py-1.5 rounded-full text-xs font-semibold ${honeymoon === h.id ? 'bg-chrome text-chrome-fg' : 'bg-fg/5'}`}>{t(`people.honeymoons.${h.id}`)} · {formatMoney(h.cost, lang)}</button>)}</div>
+              <button onClick={() => wedding(person.id, venue, honeymoon)} disabled={life.money < weddingCost(venue, honeymoon)} className="w-full rounded-2xl bg-accent text-on-accent font-bold py-3 disabled:opacity-40">{t('people.holdWedding', { money: formatMoney(weddingCost(venue, honeymoon), lang) })}</button>
+            </div>
+          </Section>
         )}
         <Section title={t('people.interact')}>
           {opts.map((k) => (

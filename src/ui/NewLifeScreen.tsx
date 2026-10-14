@@ -19,6 +19,7 @@ export function NewLifeScreen() {
   const [first, setFirst] = useState('')
   const [last, setLast] = useState('')
   const [seed, setSeed] = useState(newSeed)
+  const [city, setCity] = useState('')
   const [query, setQuery] = useState('')
   const [picking, setPicking] = useState(false)
 
@@ -69,7 +70,7 @@ export function NewLifeScreen() {
         <div className="text-center mb-3">
           <div className="text-6xl">{gender === 'female' ? '👶🏻' : '👶🏽'}</div>
           <div className="font-extrabold text-xl mt-1">{firstName} {lastName}</div>
-          <div className="text-sm opacity-70">{c.flag} {c.cities[0]}, {countryName(country, lang)}</div>
+          <div className="text-sm opacity-70">{c.flag} {city.trim() || c.cities[0]}, {countryName(country, lang)}</div>
         </div>
 
         <label className="block text-xs uppercase tracking-widest opacity-60 mb-1">{t('setup.firstName')}</label>
@@ -96,11 +97,13 @@ export function NewLifeScreen() {
           <span className="flex-1 font-semibold">{countryName(country, lang)}</span>
           <span className="opacity-50">›</span>
         </button>
+        <input value={city} onChange={(e) => setCity(e.target.value)} placeholder={t('setup.cityPlaceholder', { city: c.cities[0] })} maxLength={30}
+          className="w-full rounded-2xl bg-card px-4 py-3 mt-2 shadow-sm outline-none focus:ring-2 ring-accent" />
         <div className="text-center text-xs opacity-60 mt-2">{t('setup.countries', { n: COUNTRIES.length })}</div>
       </section>
 
       <div className="flex flex-col gap-2 py-4">
-        <button onClick={() => newLife({ firstName, lastName, gender, countryCode: country, seed })}
+        <button onClick={() => newLife({ firstName, lastName, gender, countryCode: country, seed, city })}
           className="rounded-2xl bg-accent text-on-accent font-bold text-lg py-4 active:scale-95 transition anim-pop">
           {t('setup.start')}
         </button>

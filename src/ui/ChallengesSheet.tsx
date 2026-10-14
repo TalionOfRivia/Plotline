@@ -4,14 +4,14 @@ import { Section, Sheet } from './Sheet'
 import { CHALLENGES, challengeProgress } from '../engine/challenges'
 import { sysText } from '../engine/systems'
 
-const TIER_EMOJI = { easy: '🟢', medium: '🟡', hard: '🔴', legendary: '💎' } as const
+const TIER_EMOJI = { easy: '🟢', medium: '🟡', hard: '🔴', legendary: '💎', achievement: '🏅' } as const
 
 export function ChallengesSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
   const done = useGame((s) => s.completedChallenges)
   const lang = i18n.language
-  const tiers = ['easy', 'medium', 'hard', 'legendary'] as const
+  const tiers = ['easy', 'medium', 'hard', 'legendary', 'achievement'] as const
 
   return (
     <Sheet title={t('challenge.title')} emoji="🏆">

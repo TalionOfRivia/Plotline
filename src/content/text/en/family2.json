@@ -1,0 +1,570 @@
+{
+  "fe_parents_fighting": {
+    "text": "Through your bedroom wall you hear {{name}} and your other parent fighting again. Doors slam. Somebody says the word \"lawyer.\"",
+    "choices": {
+      "headphones": "Headphones, volume up",
+      "knock": "Knock and ask them to stop",
+      "talk_later": "Talk to {{name}} tomorrow"
+    },
+    "outcomes": {
+      "silence": "They go quiet, embarrassed. Dinner is awkward but peaceful.",
+      "snap": "You're told to mind your own business. You do, loudly, with a slammed door of your own."
+    }
+  },
+  "fe_parents_separate": {
+    "text": "Your parents sit you down at the kitchen table. They've been \"growing apart.\" {{name}} is moving out this weekend.",
+    "choices": {
+      "cry": "Let it all out",
+      "blame": "Blame {{name}}",
+      "shrug": "Say you're fine"
+    }
+  },
+  "fe_parent_affair_found": {
+    "text": "You see messages on {{name}}'s phone that were definitely not meant for your mother. The sender has a heart next to their name.",
+    "choices": {
+      "confront": "Confront {{name}}",
+      "tell_mom": "Tell your mother",
+      "secret": "Carry the secret alone"
+    },
+    "outcomes": {
+      "confess": "{{name}} cracks and admits it. A very quiet week follows.",
+      "deny": "{{name}} calls you dramatic and takes the phone away. You know what you saw."
+    }
+  },
+  "fe_parent_affair_mother": {
+    "text": "You spot {{name}} in a corner booth with a man who is not your father. Their hands are doing a lot of talking.",
+    "choices": {
+      "approach": "Walk up to the table",
+      "leave": "Back away quietly",
+      "blackmail": "Quietly cash in on it"
+    },
+    "outcomes": {
+      "flustered": "{{name}} introduces him as a \"colleague.\" Nobody orders dessert.",
+      "honest": "{{name}} walks you outside and tells you everything. You'd rather not know, and also you're glad."
+    }
+  },
+  "fe_parent_job_loss": {
+    "text": "{{name}} got laid off. The house feels different: fewer snacks, more sighing, a suit hanging by the door like an accusation.",
+    "choices": {
+      "help": "Pitch in with your savings",
+      "cheer": "Cook dinner for everyone",
+      "ignore": "Stay out of it"
+    }
+  },
+  "fe_parent_job_loss_mother": {
+    "text": "{{name}} lost her job and is pretending it's a vacation. The pretending is exhausting for everyone.",
+    "choices": {
+      "lend": "Lend her some money",
+      "listen": "Just listen",
+      "nag": "Nag her about résumés"
+    },
+    "outcomes": {
+      "repaid": "She lands a better job within months and pays you back with a hug and a card.",
+      "gone": "The money vanishes into bills. She's grateful. You're lighter."
+    }
+  },
+  "fe_parent_remarriage": {
+    "text": "{{name}} announces she's engaged. You've met him twice. He laughs at his own jokes first.",
+    "choices": {
+      "bless": "Give your blessing",
+      "object": "Object loudly",
+      "skip": "Skip the wedding"
+    },
+    "outcomes": {
+      "wise": "Turns out you were right. He had a gambling habit. She thanks you through gritted teeth.",
+      "wrong": "He's a decent guy and you look like a brat. The wedding happens without you in the front row."
+    }
+  },
+  "fe_parent_remarriage_dad": {
+    "text": "{{name}} introduces a new wife and, as a bonus, two kids you've never met. \"You'll be one big happy family,\" he says.",
+    "choices": {
+      "welcome": "Make an effort",
+      "cold": "Stay cold",
+      "ask_rules": "Ask who gets the big room"
+    }
+  },
+  "fe_stepsibling_meet": {
+    "text": "Your new step-sibling and {{name}} are already best friends. You're the odd one out in your own kitchen.",
+    "choices": {
+      "join": "Join their game",
+      "rival": "Compete with them",
+      "sulk": "Sulk in your room"
+    }
+  },
+  "fe_stepsibling_rivalry": {
+    "text": "Your step-sibling ate the last of your birthday cake and {{name}} thought it was funny.",
+    "choices": {
+      "fight": "Start a fight",
+      "laugh": "Laugh it off",
+      "tell": "Tell on them"
+    },
+    "outcomes": {
+      "win": "You win by volume. Everyone gets sent to their rooms, you in a slightly better mood.",
+      "lose": "You lose in a way that involves frosting in your hair."
+    }
+  },
+  "fe_sib_wedding_gift": {
+    "text": "{{name}} is getting married. The registry has a $2,000 espresso machine on it. Everyone is watching to see what you give.",
+    "choices": {
+      "big": "Give $1,500",
+      "modest": "Give $300",
+      "card": "A card and a hug"
+    }
+  },
+  "fe_sib_wedding_speech": {
+    "text": "{{name}} asks you to give a toast at the wedding. Two hundred guests, an open bar, and your only material is childhood blackmail.",
+    "choices": {
+      "toast": "Wing it",
+      "script": "Read a safe script",
+      "decline": "Politely decline"
+    },
+    "outcomes": {
+      "killer": "The room roars. The bride cries. You're the favourite sibling for at least a year.",
+      "flop": "The joke about the ex lands on the actual ex. Silence. Someone coughs."
+    }
+  },
+  "fe_sib_borrow_norepay": {
+    "text": "{{name}} needs $2,000 \"just until next month.\" That was the first sentence. The third sentence is \"you're the only one I can ask.\"",
+    "choices": {
+      "lend": "Lend the money",
+      "half": "Give $500, no strings",
+      "refuse": "Say no"
+    },
+    "outcomes": {
+      "repaid": "Shockingly, every cent returns, with a coffee on top.",
+      "never": "Next month comes and goes. So does the next year. The topic is now radioactive."
+    }
+  },
+  "fe_sib_borrow_again": {
+    "text": "It's been a year and {{name}} still hasn't mentioned the money. Now they're posting vacation photos.",
+    "choices": {
+      "bring_up": "Bring it up",
+      "forgive": "Write it off",
+      "passive": "Post a pointed meme"
+    },
+    "outcomes": {
+      "pays": "They wince and send a partial payment that night.",
+      "blowup": "It becomes a fight about 1998, the bike, and who Mom loved more."
+    }
+  },
+  "fe_sib_rivalry_adult": {
+    "text": "At the family dinner {{name}} casually mentions a raise. You mention nothing. The silence is a competition.",
+    "choices": {
+      "brag": "Top it with something",
+      "congrats": "Congratulate them sincerely",
+      "leave_early": "Leave early"
+    },
+    "outcomes": {
+      "ahead": "You win the round. Mom looks proud. {{name}} looks at the gravy.",
+      "caught": "Your exaggeration is publicly corrected by someone who remembers everything."
+    }
+  },
+  "fe_sib_success_envy": {
+    "text": "{{name}} bought a house. A real one, with a garden. The family group chat is mostly fireworks emojis.",
+    "choices": {
+      "celebrate": "Celebrate wholeheartedly",
+      "envy": "Seethe privately",
+      "ask_tips": "Ask how they did it"
+    }
+  },
+  "fe_sib_arrested_bail": {
+    "text": "The phone rings at 3 a.m. {{name}} has been arrested. It's a misunderstanding, they say. Bail is $5,000.",
+    "choices": {
+      "pay": "Pay the bail",
+      "let_sit": "Let them sit overnight",
+      "lawyer": "Call a lawyer friend"
+    },
+    "outcomes": {
+      "grateful": "{{name}} walks out, hugs you, and actually shows up to court.",
+      "skips": "{{name}} skips the hearing. The bond is forfeited and your phone goes quiet."
+    }
+  },
+  "fe_sib_dui_call": {
+    "text": "{{name}} totalled a car after \"only two beers.\" Nobody is hurt but the car and the pride.",
+    "choices": {
+      "cover": "Cover for them",
+      "lecture": "Pick them up and lecture",
+      "report": "Tell the family"
+    }
+  },
+  "fe_cancer_scare_mom": {
+    "text": "{{name}} found a lump. She's calling it \"probably nothing\" in the voice she uses when it's something.",
+    "choices": {
+      "go_with": "Go with her to the biopsy",
+      "call_daily": "Call her every day",
+      "avoid": "Avoid thinking about it"
+    },
+    "outcomes": {
+      "benign": "Benign. She cries in the parking lot and buys you lunch.",
+      "serious": "It's cancer, caught early. The treatment calendar becomes your calendar."
+    }
+  },
+  "fe_cancer_scare_dad": {
+    "text": "{{name}} has \"a spot on a scan.\" He wants no fuss and has asked everyone not to tell your aunt.",
+    "choices": {
+      "push": "Push him to see a specialist",
+      "respect": "Respect his wishes",
+      "tell_all": "Tell the whole family"
+    },
+    "outcomes": {
+      "fine": "A scar from an old injury. He grumbles at the bill and at your nagging, but he's fine.",
+      "treat": "It's real. You help pay for the first round of treatment and hold his hand in the waiting room."
+    }
+  },
+  "fe_parent_move_in": {
+    "text": "{{name}} can't manage the stairs anymore. The spare room is empty and your conscience is not.",
+    "choices": {
+      "movein": "Move her in",
+      "aide": "Hire a part-time aide",
+      "decline": "Say it's not possible"
+    }
+  },
+  "fe_parent_care_burden": {
+    "text": "Looking after {{name}} is a full-time job on top of your actual job. Your sleep has been replaced by a pill organiser.",
+    "choices": {
+      "push_on": "Push through",
+      "respite": "Take a week of respite care",
+      "siblings": "Demand your siblings share"
+    },
+    "outcomes": {
+      "hold": "You hold it together, barely. He squeezes your hand and says nothing, which says it all.",
+      "snap": "You snap at him over soup. You apologise for an hour. He forgives you in four seconds."
+    }
+  },
+  "fe_dementia_mom": {
+    "text": "{{name}} looks at you kindly and asks which of the neighbours you are. Then she asks you to say hi to your father, who is no longer with us.",
+    "choices": {
+      "play_along": "Play along",
+      "correct": "Gently correct her",
+      "leave": "Leave the room"
+    },
+    "outcomes": {
+      "clear": "For a second she sees you. Tears, then a joke. Then she's gone again.",
+      "upset": "She gets frightened and you hate yourself. Lesson learned."
+    }
+  },
+  "fe_dementia_dad": {
+    "text": "{{name}} calls you by your grandfather's name and tells you to be home before dark. You're fifty and it's noon.",
+    "choices": {
+      "photo": "Show old photographs",
+      "doctor": "Book a neurologist",
+      "avoid": "Visit less"
+    }
+  },
+  "fe_nursing_home": {
+    "text": "The doctors say {{name}} needs round-the-clock care. A good nursing home costs a fortune. A bad one costs a different kind of fortune.",
+    "choices": {
+      "home": "Pick a good facility",
+      "family": "Care for him at home",
+      "cheap": "Choose the cheap one"
+    },
+    "outcomes": {
+      "ok": "It turns out fine. Clean, staffed, and a surprisingly good bingo night.",
+      "bad": "The place is understaffed and dim. You know it the first visit. You stay up late with guilt."
+    }
+  },
+  "fe_nursing_home_visit": {
+    "text": "{{name}} lives in a care home now. Visiting day is Sunday. The plastic flowers in the lobby have seen worse.",
+    "choices": {
+      "visit_often": "Visit every week",
+      "holiday": "Only on holidays",
+      "bring": "Bring her favourite cake"
+    }
+  },
+  "fe_funeral_planning_mom": {
+    "text": "{{name}} has died. Someone has to choose the casket, the flowers, the order of speeches, and who sits where.",
+    "choices": {
+      "plan": "Plan it yourself",
+      "sibling": "Let a sibling handle it",
+      "skip": "Skip the planning"
+    }
+  },
+  "fe_funeral_planning_dad": {
+    "text": "{{name}} died. The funeral home hands you a brochure with three tiers. The cheapest tier is called \"Dignified.\" The priciest is \"Legacy.\"",
+    "choices": {
+      "plan": "Plan it yourself",
+      "sibling": "Let a sibling handle it",
+      "skip": "Skip the planning"
+    }
+  },
+  "fe_eulogy": {
+    "text": "{{name}} and you are asked who will give the eulogy for your parent. The pause is long enough to park a hearse in.",
+    "choices": {
+      "speak": "You speak",
+      "defer": "Defer to {{name}}",
+      "nobody": "Nobody speaks"
+    },
+    "outcomes": {
+      "moving": "You say the thing you needed to say. Even the cousins cry.",
+      "stumble": "You lose your place and your voice. {{name}} stands next to you and finishes it."
+    }
+  },
+  "fe_will_reading": {
+    "text": "The lawyer reads {{name}}'s will to a room of siblings who suddenly remember every grievance since 1987.",
+    "choices": {
+      "accept": "Accept the split",
+      "contest": "Contest the will",
+      "donate": "Give your share to charity"
+    },
+    "outcomes": {
+      "win": "After a long fight with lawyers you get a bigger share. The holiday cards stop coming.",
+      "lose": "You lose, pay the legal fees, and also lose your sibling."
+    }
+  },
+  "fe_will_squabble": {
+    "text": "{{name}} wants the grandfather clock. You want the grandfather clock. Neither of you wants to say it is about Dad.",
+    "choices": {
+      "give": "Let {{name}} have it",
+      "coin": "Flip a coin",
+      "sell": "Sell it and split"
+    },
+    "outcomes": {
+      "you_win": "Heads. The clock is yours. It does not tick the way you remembered.",
+      "they_win": "Tails. You shake hands. You miss the clock a little."
+    }
+  },
+  "fe_estranged_relative": {
+    "text": "Your father's long-lost brother turns up at the door with a casserole and no explanation. \"We should talk,\" he says. \"Family.\"",
+    "choices": {
+      "invite": "Invite him in",
+      "close_door": "Keep the door closed",
+      "ask_dad": "Call your father first"
+    },
+    "outcomes": {
+      "good": "He tells stories nobody has told you. You end up laughing at the table.",
+      "bad": "By the second hour he needs a loan. The casserole was a down payment."
+    }
+  },
+  "fe_estranged_sib_back": {
+    "text": "{{name}}, who vanished for years, sends a message: \"I'm sorry. Can we talk?\" The cursor blinks.",
+    "choices": {
+      "reply": "Reply warmly",
+      "wait": "Wait a week",
+      "ghost": "Ghost them back"
+    }
+  },
+  "fe_secret_adopted": {
+    "text": "A dusty folder tells you what nobody did: you were adopted. {{name}} has been waiting thirty years to say it.",
+    "choices": {
+      "forgive": "Hug her",
+      "search": "Search for birth parents",
+      "rage": "Storm out"
+    },
+    "outcomes": {
+      "found": "An emotional afternoon with a stranger whose nose is yours.",
+      "nothing": "Closed files, dead ends, and a form letter. You keep the folder."
+    }
+  },
+  "fe_secret_other_father": {
+    "text": "Over wine {{name}} lets slip that your father might not be your biological father. She waits for you to say something.",
+    "choices": {
+      "test": "Take a DNA test",
+      "forget": "Forget she said it",
+      "confront_dad": "Ask your father"
+    },
+    "outcomes": {
+      "confirmed": "The test says what she hinted. The man who raised you is still your dad. It's complicated.",
+      "bio": "Turns out it was a rumour. She shrugs. Everything is somehow warmer."
+    }
+  },
+  "fe_family_reunion": {
+    "text": "The annual family reunion is in a park with a bouncy castle, forty relatives, and one extremely competitive potato salad.",
+    "choices": {
+      "go": "Go and have fun",
+      "organise": "Organise it yourself",
+      "skip": "Make an excuse"
+    }
+  },
+  "fe_reunion_feud": {
+    "text": "Two aunts stop speaking at the reunion over a casserole recipe from 1991. You are caught in the crossfire.",
+    "choices": {
+      "mediate": "Mediate",
+      "popcorn": "Watch with popcorn",
+      "leave": "Take {{name}} and leave"
+    },
+    "outcomes": {
+      "peace": "A truce is declared over cake. You are given a medal made of foil.",
+      "fail": "Both aunts now think you took sides. You did not. You are now their common enemy."
+    }
+  },
+  "fe_elder_stories": {
+    "text": "An elderly relative tells the story of the winter she crossed three borders with a goat and a sewing machine. Nobody knows which parts are true.",
+    "choices": {
+      "listen": "Listen closely",
+      "record": "Record her on your phone",
+      "phone": "Check your phone"
+    }
+  },
+  "fe_elder_recipe": {
+    "text": "An elderly relative hands you a recipe written on a napkin and says it is the only inheritance she has to give.",
+    "choices": {
+      "cook": "Cook it that night",
+      "frame": "Frame it",
+      "lose": "Lose it"
+    },
+    "outcomes": {
+      "perfect": "It tastes exactly like childhood. You eat three plates and call her.",
+      "burnt": "You burn it. She laughs for ten minutes and then teaches you properly."
+    }
+  },
+  "fe_home_sold": {
+    "text": "The family home is being sold. You walk through each room with a roll of tape and a trash bag, finding your whole childhood in drawers.",
+    "choices": {
+      "keep": "Keep a few things",
+      "buy": "Buy it yourself",
+      "dump": "Dump it all"
+    }
+  },
+  "fe_home_clearout": {
+    "text": "{{name}} and you divide the contents of the house. It turns out the ugly lamp is worth $400 and neither of you wants it for the right reasons.",
+    "choices": {
+      "split": "Split it fairly",
+      "grab": "Grab the best stuff",
+      "donate": "Donate it together"
+    }
+  },
+  "fe_sib_divorce": {
+    "text": "{{name}} shows up on your doorstep with a duffel bag. The marriage is over. \"Just a couple of nights,\" they say.",
+    "choices": {
+      "host": "Let them stay",
+      "motel": "Pay for a motel",
+      "send_away": "Send them away"
+    },
+    "outcomes": {
+      "brief": "Two nights, three bottles of wine, and a lot of crying. They find a place and thank you.",
+      "stays": "Two nights turn into two months. You rediscover the word \"boundaries.\""
+    }
+  },
+  "fe_sib_divorce_side": {
+    "text": "Both {{name}} and their ex are asking you to take their side. They each text you at midnight.",
+    "choices": {
+      "neutral": "Stay neutral",
+      "side_sib": "Side with your sibling",
+      "side_ex": "Side with the ex"
+    }
+  },
+  "fe_sib_child_guardian": {
+    "text": "{{name}} once asked you to be guardian of their child if anything ever happened. Then, one terrible winter, something happens.",
+    "choices": {
+      "take": "Take the child in",
+      "relatives": "Help find another family",
+      "share": "Share custody with others"
+    }
+  },
+  "fe_parent_70th": {
+    "text": "{{name}} turns seventy. There's a party in her garden, a banner that says SEVENTY AND FABULOUS, and a cake that is, mostly, whipped cream.",
+    "choices": {
+      "speech": "Give a speech",
+      "gift": "Give a lavish gift",
+      "late": "Show up late"
+    },
+    "outcomes": {
+      "touching": "She cries into her napkin. You've never seen her this proud.",
+      "awkward": "Mid-speech you realise you've been talking about yourself for three minutes."
+    }
+  },
+  "fe_parent_70th_dad": {
+    "text": "{{name}} turns seventy and claims he doesn't want a fuss. There's a fuss. He pretends to be annoyed and secretly takes a second slice.",
+    "choices": {
+      "trip": "Plan a surprise trip",
+      "dinner": "Take him to dinner",
+      "text": "Send a text"
+    }
+  },
+  "fe_mothers_day_guilt": {
+    "text": "It's Mother's Day. {{name}} has not mentioned it three times, which is how you know it matters.",
+    "choices": {
+      "flowers": "Flowers and a visit",
+      "call": "A quick phone call",
+      "forget": "Forget until evening"
+    },
+    "outcomes": {
+      "forgiven": "You call at 9 p.m. She says \"oh, it's fine\" in the voice that is not fine.",
+      "sulk": "She sulks for a week and mentions it at every future holiday."
+    }
+  },
+  "fe_fathers_day_guilt": {
+    "text": "It's Father's Day. {{name}} says he doesn't need anything, then drops hints about a particular grill.",
+    "choices": {
+      "grill": "Buy the grill",
+      "call": "A quick phone call",
+      "forget": "Forget it"
+    },
+    "outcomes": {
+      "shrug": "He shrugs it off. Probably.",
+      "hurt": "He is hurt but pretends to be cheerful. That is worse."
+    }
+  },
+  "fe_holiday_fight": {
+    "text": "The holiday dinner begins with grace and ends with {{name}} shouting about who forgot to bring the ice. Someone's mother-in-law has opinions.",
+    "choices": {
+      "peace": "Play peacemaker",
+      "join": "Join the shouting",
+      "leave": "Take your plate and leave"
+    },
+    "outcomes": {
+      "calm": "You steer the conversation to the dessert. It works. This time.",
+      "backfire": "Both sides turn on you. The peacemaker is always the target."
+    }
+  },
+  "fe_holiday_politics": {
+    "text": "At the table {{name}} says something about politics that makes three people put down their forks.",
+    "choices": {
+      "argue": "Argue back",
+      "change": "Change the subject",
+      "laugh": "Laugh and pass the salt"
+    }
+  },
+  "fe_friend_family_crisis": {
+    "text": "{{name}}'s family fell apart this month. They show up at your door with two bags and a look that says they can't ask.",
+    "choices": {
+      "welcome": "Offer the couch",
+      "help_find": "Help find a place",
+      "regret": "Say it's a bad time"
+    }
+  },
+  "fe_friend_parent_funeral": {
+    "text": "{{name}}'s mother died. They asked, quietly, if you'd come to the funeral. You haven't owned a black suit since the last one.",
+    "choices": {
+      "attend": "Go and stand beside them",
+      "flowers": "Send flowers instead",
+      "excuse": "Say you have a thing"
+    }
+  },
+  "fe_ex_in_laws": {
+    "text": "You run into {{name}}'s mother in the supermarket. She hugs you for a long time and asks, \"How's your... heart?\"",
+    "choices": {
+      "chat": "Have a coffee together",
+      "escape": "Pretend your phone rang",
+      "gossip": "Ask about {{name}}"
+    },
+    "outcomes": {
+      "good": "She says they are well and happy. It hurts less than you expected.",
+      "bad": "She says they are doing wonderfully with someone new. You buy a lot of ice cream."
+    }
+  },
+  "fe_ex_parent_died": {
+    "text": "You hear that {{name}}'s father died. He once taught you how to fold a fitted sheet. It meant more than either of you admitted.",
+    "choices": {
+      "condolences": "Send a thoughtful note",
+      "attend": "Attend the service",
+      "nothing": "Do nothing"
+    },
+    "outcomes": {
+      "warm": "Nobody makes a scene. You stand at the back, then you're hugged. It heals something.",
+      "awkward": "The new partner is there. Everyone smiles too hard. You leave before the cake."
+    }
+  },
+  "fe_parent_driving_keys": {
+    "text": "{{name}} just took out a mailbox. He is eighty-one. He says the mailbox moved.",
+    "choices": {
+      "take_keys": "Take the keys",
+      "ride_along": "Ride along and supervise",
+      "let_go": "Let it slide"
+    },
+    "outcomes": {
+      "accepts": "He argues, then hands them over with great dignity. You drive him to the market every Friday.",
+      "furious": "He barely speaks to you for a month. He also walks to the bakery, which is good for him."
+    }
+  }
+}

@@ -68,7 +68,7 @@ export function applyForJob(life: Life, trackId: string, rng: Rng): 'hired' | 'r
     log(life, 'bad', 'work.rejected', { track: trackId })
     return 'rejected'
   }
-  life.job = { trackId, rung: 0, yearsInTrack: 0, performance: 50 + rng.int(-5, 10), salary: track.ladder[0].salary }
+  life.job = { trackId, rung: 0, yearsInTrack: 0, performance: 50 + rng.int(-5, 10), salary: track.ladder[0].salary, stress: rng.int(15, 35), popularity: rng.int(35, 65), hours: 40 }
   life.flags.ever_worked = true
   delete life.flags.just_fired
   life.retired = false
@@ -100,9 +100,27 @@ export function quitJob(life: Life) {
 export function workHarder(life: Life) {
   if (!life.job || used(life, 'work_harder') >= 1) return
   use(life, 'work_harder')
+  life.job.stress = clamp((life.job.stress ?? 25) + 12)
   life.job.performance = clamp(life.job.performance + 10)
   life.stats.happiness = clamp(life.stats.happiness - 3)
   life.stats.health = clamp(life.stats.health - 1)
+}
+
+export function setHours(life: Life, hours: 20 | 40 | 50) {
+  if (!life.job) return
+  life.job.hours = hours
+}
+export function reportToHR(life: Life, rng: Rng): 'win' | 'lose' | null {
+  if (!life.job || used(life, 'hr') >= 1) return null
+  use(life, 'hr')
+  if (rng.chance(0.55)) { life.job.popularity = clamp((life.job.popularity ?? 50) + 8); life.job.stress = clamp((life.job.stress ?? 25) - 10); log(life, 'good', 'work.hrWin'); return 'win' }
+  life.job.popularity = clamp((life.job.popularity ?? 50) - 12); log(life, 'bad', 'work.hrLose'); return 'lose'
+}
+export function socialize(life: Life, rng: Rng) {
+  if (!life.job || used(life, 'socialize') >= 1) return
+  use(life, 'socialize')
+  life.job.popularity = clamp((life.job.popularity ?? 50) + rng.int(4, 10))
+  life.stats.happiness = clamp(life.stats.happiness + 2)
 }
 
 export function retire(life: Life) {
@@ -124,14 +142,18 @@ export function workYear(life: Life, rng: Rng) {
   if (!track) { life.job = null; return }
   if (life.prison) { log(life, 'bad', 'work.firedPrison'); life.job = null; return }
 
-  const gross = job.salary
+  const hours = job.hours ?? 40
+  const gross = Math.round(job.salary * (hours === 20 ? 0.6 : hours === 50 ? 1.2 : 1))
   const net = gross - taxOn(gross)
+  job.stress = clamp((job.stress ?? 25) + (hours === 50 ? 10 : hours === 20 ? -8 : 0) + rng.int(-6, 6) + (job.performance < 40 ? 6 : 0))
+  job.popularity = clamp((job.popularity ?? 50) + rng.int(-5, 5))
+  if ((job.stress ?? 0) > 70) { life.stats.happiness = clamp(life.stats.happiness - rng.int(3, 8)); life.stats.health = clamp(life.stats.health - rng.int(0, 3)) }
   // half of take-home goes to lifestyle spending that scales with income
   life.money += Math.round(net * 0.5)
   job.yearsInTrack++
 
-  // performance drifts toward a baseline set by smarts & health, with noise
-  const base = 40 + life.stats.smarts * 0.25 + life.stats.health * 0.15
+  // performance drifts toward a baseline set by smarts & health (and hours), with noise
+  const base = 40 + life.stats.smarts * 0.25 + life.stats.health * 0.15 + (hours === 50 ? 8 : hours === 20 ? -8 : 0) + ((job.popularity ?? 50) - 50) / 10
   job.performance = clamp(job.performance + (base - job.performance) * 0.25 + rng.int(-8, 8))
 
   // promotion
