@@ -372,6 +372,76 @@
         "star": "Star",
         "legend": "Legend"
       }
+    },
+    "actor": {
+      "name": "Actor",
+      "ladder": {
+        "extra": "Extra",
+        "bit_part": "Bit-Part Actor",
+        "supporting": "Supporting Actor",
+        "lead": "Lead Actor",
+        "superstar": "Superstar"
+      }
+    },
+    "musician": {
+      "name": "Musician",
+      "ladder": {
+        "busker": "Busker",
+        "session_player": "Session Player",
+        "band_member": "Band Member",
+        "headliner": "Headliner",
+        "icon": "Music Icon"
+      }
+    },
+    "music_producer": {
+      "name": "Music Producer",
+      "ladder": {
+        "assistant_engineer": "Assistant Engineer",
+        "engineer": "Sound Engineer",
+        "producer": "Producer",
+        "hit_producer": "Hit Producer",
+        "mogul": "Music Mogul"
+      }
+    },
+    "model": {
+      "name": "Model",
+      "ladder": {
+        "catalog_model": "Catalog Model",
+        "runway_model": "Runway Model",
+        "campaign_face": "Campaign Face",
+        "cover_star": "Cover Star",
+        "supermodel": "Supermodel"
+      }
+    },
+    "movie_director": {
+      "name": "Film Director",
+      "ladder": {
+        "production_assistant": "Production Assistant",
+        "assistant_director": "Assistant Director",
+        "indie_director": "Indie Director",
+        "studio_director": "Studio Director",
+        "auteur": "Auteur"
+      }
+    },
+    "street_hustler": {
+      "name": "Street Hustler",
+      "ladder": {
+        "corner_seller": "Corner Seller",
+        "fence": "Fence",
+        "crew_lead": "Crew Lead",
+        "kingpin_lite": "Small-Time Kingpin",
+        "legend": "Street Legend"
+      }
+    },
+    "influencer": {
+      "name": "Influencer",
+      "ladder": {
+        "micro_creator": "Micro Creator",
+        "creator": "Content Creator",
+        "partner": "Partnered Creator",
+        "brand": "Brand Owner",
+        "empire": "Media Empire"
+      }
     }
   }
 }

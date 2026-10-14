@@ -3,7 +3,8 @@ import { applyEffects } from './effects'
 import { ALL_EVENTS, EVENT_BY_ID } from './content'
 import { pickEvent, pickPerson } from './events'
 import { NAMES, makePerson, randomName } from './people'
-import { clamp, kill, log } from './util'
+import { clamp, kill, log, resetYearly } from './util'
+import { extrasYear } from './extras'
 import { syncDerivedFlags } from './derived'
 import { schoolYear } from './school'
 import { refreshJobBoard, workYear } from './jobs'
@@ -34,7 +35,23 @@ export function blankLife(seed: string): Life {
     job: null, retired: false, pension: 0, assets: [], fame: 0, crimes: 0, convictions: 0,
     prison: null, prisonYears: 0, royalty: { rank: 'none', popularity: 50 }, mafia: null, business: null,
     marriages: 0, jobBoard: [], dateBoard: [], generation: 1,
+    loan: 0, investments: { index: 0, crypto: 0 }, will: false, gigs: [],
   }
+}
+
+/** Back-fill fields added after a save was written, so old saves keep working. */
+export function migrateLife(life: Life): Life {
+  const base = blankLife(life.seed ?? newSeed())
+  for (const [k, v] of Object.entries(base)) {
+    if ((life as unknown as Record<string, unknown>)[k] === undefined) (life as unknown as Record<string, unknown>)[k] = v
+  }
+  life.investments ??= { index: 0, crypto: 0 }
+  life.investments.index ??= 0
+  life.investments.crypto ??= 0
+  life.gigs ??= []
+  life.royalty ??= { rank: 'none', popularity: 50 }
+  life.education ??= base.education
+  return life
 }
 
 export function createLife(opts: NewLifeOptions = {}): Life {
@@ -101,9 +118,11 @@ export function withRng<T>(life: Life, fn: (rng: Rng) => T): T {
  * `life.pending`; the UI resolves it with `chooseOption`.
  */
 export function ageUp(life: Life) {
+  migrateLife(life)
   if (!life.alive || life.pending) return
   const rng = rngFor(life)
   life.age += 1
+  resetYearly(life)
   for (const p of life.people) if (p.alive) p.age += 1
   log(life, 'milestone', 'diary.birthday', { age: life.age })
 
@@ -125,7 +144,7 @@ export function ageUp(life: Life) {
       s.happiness = clamp(s.happiness - (p.relationship > 60 ? 15 : 5))
       // inheritance from parents
       if ((p.kind === 'mother' || p.kind === 'father') && life.age >= 18 && rng.chance(0.6)) {
-        const inh = rng.int(5_000, 150_000) * (life.royalty.rank !== 'none' ? 50 : 1)
+        const inh = rng.int(5_000, 150_000) * (life.royalty.rank !== 'none' ? 10 : 1)
         life.money += inh
         log(life, 'info', 'diary.inherited', { name: p.firstName, money: inh })
       }
@@ -143,10 +162,25 @@ export function ageUp(life: Life) {
   mafiaYear(life, rng)
   businessYear(life, rng)
   specialCareersYear(life, rng)
+  extrasYear(life, rng)
   if (life.flags.astronaut) { if (rng.chance(0.5)) life.flags.in_space = true; else delete life.flags.in_space }
   // base cost of living for adults (rent, food, bills); students and inmates are covered
   if (life.age >= 18 && !life.prison && life.education.stage !== 'university' && life.education.stage !== 'grad') {
-    life.money -= life.assets.some((a) => a.kind === 'house') ? 6_000 : 10_000
+    life.money -= life.assets.some((a) => a.kind === 'house') ? 8_000 : 14_000
+  }
+  // debt hurts; deep debt ends in bankruptcy (assets sold, slate wiped, big happiness hit)
+  if (life.money < 0 && life.age >= 18) {
+    s.happiness = clamp(s.happiness - 4)
+    if (life.money < -40_000) {
+      for (const a of life.assets) life.money += Math.round(a.value * 0.6 - a.mortgage)
+      life.assets = []
+      life.investments = { index: 0, crypto: 0 }
+      life.loan = 0
+      life.money = 0
+      life.flags.bankrupt = true
+      s.happiness = clamp(s.happiness - 20)
+      log(life, 'bad', 'money.bankrupt')
+    }
   }
   refreshJobBoard(life, rng)
   refreshDateBoard(life, rng)
@@ -227,7 +261,8 @@ export function heirs(life: Life): Person[] {
 export function continueAsHeir(life: Life, heirId: string): Life {
   const heir = life.people.find((p) => p.id === heirId)
   if (!heir) return createLife()
-  const inheritance = Math.round((life.money + life.assets.reduce((s, a) => s + a.value - a.mortgage, 0)) * 0.6)
+  const share = life.will ? 0.85 : 0.5
+  const inheritance = Math.round((life.money + life.investments.index + life.investments.crypto + life.assets.filter((a) => a.kind !== 'luxury').reduce((s, a) => s + a.value - a.mortgage, 0)) * share - life.loan)
   const parentPerson: Person = { ...life as unknown as Person, id: life.id, firstName: life.firstName, lastName: life.lastName, gender: life.gender, age: life.age, kind: 'mother', relationship: 80, alive: false }
   const spouse = life.people.find((p) => p.kind === 'spouse' && p.alive)
   const next = createLife({
@@ -249,5 +284,7 @@ export function continueAsHeir(life: Life, heirId: string): Life {
   // the dead parent is gone for the heir too
   const p = next.people.find((x) => x.id === life.id)
   if (p) p.alive = false
+  // heirlooms: luxury items pass down intact
+  for (const a of life.assets) if (a.kind === 'luxury') next.assets.push({ ...a, id: a.id + 'h', boughtAt: 0 })
   return next
 }

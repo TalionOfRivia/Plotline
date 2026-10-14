@@ -1,12 +1,13 @@
 import type { Life, Person } from './types'
 import type { Rng } from './rng'
 import { makePerson } from './people'
-import { clamp, log } from './util'
+import { clamp, log, use, used } from './util'
 import { addChild, breakup, marry } from './effects'
 
 export type Interaction =
   | 'spend_time' | 'gift' | 'compliment' | 'insult' | 'ask_money' | 'flirt' | 'propose' | 'break_up'
   | 'have_child' | 'adopt' | 'prenup' | 'play' | 'walk' | 'movie_night' | 'vacation'
+  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up'
 
 export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['kind'][] | 'all'; minAge: number }> = {
   spend_time: { cost: 0, kinds: 'all', minAge: 0 },
@@ -24,6 +25,13 @@ export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['ki
   adopt: { cost: 12000, kinds: ['spouse', 'partner'], minAge: 21 },
   play: { cost: 0, kinds: ['pet'], minAge: 0 },
   walk: { cost: 0, kinds: ['pet'], minAge: 5 },
+  conversation: { cost: 0, kinds: 'all', minAge: 3 },
+  party: { cost: 100, kinds: ['friend', 'partner', 'spouse', 'sibling'], minAge: 16 },
+  concert: { cost: 150, kinds: ['friend', 'partner', 'spouse', 'sibling', 'child'], minAge: 12 },
+  prank: { cost: 0, kinds: ['friend', 'sibling', 'partner', 'spouse'], minAge: 6 },
+  rumor: { cost: 0, kinds: ['friend', 'sibling', 'ex'], minAge: 8 },
+  deal: { cost: 0, kinds: ['friend', 'sibling'], minAge: 12 },
+  hook_up: { cost: 0, kinds: ['partner', 'spouse', 'friend', 'ex'], minAge: 18 },
 }
 
 export function availableInteractions(life: Life, p: Person): Interaction[] {
@@ -33,7 +41,8 @@ export function availableInteractions(life: Life, p: Person): Interaction[] {
     if (d.kinds !== 'all' && !d.kinds.includes(p.kind)) return false
     if (k === 'prenup' && life.flags.prenup) return false
     if ((k === 'have_child' || k === 'adopt') && life.age > 55) return false
-    if (life.prison && !['spend_time', 'compliment', 'insult', 'break_up'].includes(k)) return false
+    if (life.prison && !['spend_time', 'compliment', 'insult', 'break_up', 'conversation'].includes(k)) return false
+    if (k === 'conversation' && p.kind === 'pet') return false
     return true
   })
 }
@@ -44,6 +53,8 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
   if (!p) return 'people.gone'
   const d = INTERACTIONS[kind]
   if (life.money < d.cost) return 'people.cantAfford'
+  if (used(life, `talk_${p.id}`) >= 3) return 'people.enough'
+  use(life, `talk_${p.id}`)
   life.money -= d.cost
   const warm = p.relationship / 100
   const bump = (n: number) => { p.relationship = clamp(p.relationship + n) }
@@ -71,9 +82,28 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
       bump(-10); happy(-8); key = 'people.did.propose_no'; break
     case 'break_up': breakup(life, p); return p.kind === 'ex' ? 'people.brokeUp' : key
     case 'have_child':
-      if (rng.chance(0.55 + (life.stats.health - 50) / 300)) { addChild(life, rng, p); return 'people.newChild' }
+      if (rng.chance((life.flags.ivf ? 0.85 : 0.5) + (life.stats.health - 50) / 300 - Math.max(0, life.age - 38) * 0.04)) { delete life.flags.ivf; addChild(life, rng, p); return 'people.newChild' }
       key = 'people.did.have_child_no'; break
     case 'adopt': addChild(life, rng, p); return 'people.newChild'
+    case 'conversation': bump(rng.int(2, 5)); happy(1); break
+    case 'party': bump(rng.int(4, 9)); happy(5); life.stats.health = clamp(life.stats.health - 1); break
+    case 'concert': bump(rng.int(5, 10)); happy(5); break
+    case 'prank': if (rng.chance(0.5)) { bump(rng.int(3, 7)); happy(4) } else { bump(-rng.int(6, 12)); key = 'people.did.prank_flop' } break
+    case 'rumor': p.relationship = clamp(p.relationship - rng.int(8, 15)); life.karma = clamp(life.karma - 5, -100, 100); happy(1); break
+    case 'deal': { const cash = rng.int(50, 600); if (rng.chance(0.7)) { life.money += cash; bump(-2); key = 'people.did.deal_yes'; log(life, 'info', key, { name: p.firstName, money: cash }); return key } bump(-5); key = 'people.did.deal_no'; break }
+    case 'hook_up': {
+      const isPartner = p.kind === 'partner' || p.kind === 'spouse'
+      if (!isPartner) {
+        // cheating on someone? your partner may find out
+        const current = life.people.find((x) => (x.kind === 'partner' || x.kind === 'spouse') && x.alive)
+        if (!rng.chance(0.3 + warm * 0.5)) { bump(-8); key = 'people.did.hook_up_no'; break }
+        if (current && rng.chance(0.35)) { current.relationship = clamp(current.relationship - 40); life.flags.cheated = true; key = 'people.did.hook_up_caught'; log(life, 'bad', key, { name: p.firstName, other: current.firstName }); return key }
+      }
+      bump(rng.int(4, 8)); happy(6)
+      if (rng.chance(0.04)) { life.stats.health = clamp(life.stats.health - 8); life.flags.std = true; key = 'people.did.hook_up_std' }
+      else if (rng.chance(isPartner ? 0.12 : 0.06) && life.age < 50) { addChild(life, rng, p); return 'people.newChild' }
+      break
+    }
   }
   log(life, 'info', key, { name: p.firstName })
   return key

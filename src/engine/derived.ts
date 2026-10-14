@@ -49,5 +49,6 @@ export function syncDerivedFlags(life: Life) {
   set('business_owner', Boolean(life.business))
   set('business_big', Boolean(life.business && life.business.value > 10_000_000))
   set('never_worked', !life.flags.ever_worked)
+  // 'addicted' and 'std' are set directly by events/activities; nothing to derive
   if (life.job && !JOB_BY_ID[life.job.trackId]) life.job = null
 }

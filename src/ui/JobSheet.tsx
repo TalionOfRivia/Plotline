@@ -4,11 +4,12 @@ import { Pill, Row, Section, Sheet } from './Sheet'
 import { JOB_BY_ID, sysText } from '../engine/systems'
 import { interviewOdds, meetsRequirements, taxOn } from '../engine/jobs'
 import { formatMoney } from './money'
+import { gigPay } from '../engine/extras'
 
 export function JobSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { applyJob, quitJob, workHarder, retire } = useGame()
+  const { applyJob, quitJob, workHarder, retire, gig } = useGame()
   const lang = i18n.language
   const job = life.job
   const track = job ? JOB_BY_ID[job.trackId] : null
@@ -42,6 +43,13 @@ export function JobSheet() {
         </div>
       )}
 
+      {life.gigs.length > 0 && (
+        <Section title={t('gig.title')}>
+          {life.gigs.map((id) => (
+            <Row key={id} emoji="🧢" title={t(`gig.name.${id}`)} sub={t('gig.sub')} right={formatMoney(gigPay(id, life), lang)} onClick={() => gig(id)} />
+          ))}
+        </Section>
+      )}
       {!life.prison && (
         <Section title={t('work.board')}>
           {life.jobBoard.map((id) => {

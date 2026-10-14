@@ -139,6 +139,13 @@ export interface Life {
   /** generation number for legacy mode */
   generation: number
   ribbon?: string
+  /** outstanding bank loan */
+  loan: number
+  investments: { index: number; crypto: number }
+  /** leave most of the estate to the heir */
+  will: boolean
+  /** this year's freelance gig offers (ids) */
+  gigs: string[]
 }
 
 // ---- Content: events --------------------------------------------------------

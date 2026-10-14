@@ -7,8 +7,10 @@ import { crimeOdds } from '../engine/crime'
 import { canEnrollUniversity, gradSchoolsAvailable } from '../engine/school'
 import { BUSINESS_KINDS, MAFIA_RANKS, canApplyAgent, canApplyAstronaut } from '../engine/special'
 import { formatMoney } from './money'
+import { EMIGRATE_COST, IVF_COST, LAWSUIT_COST, LICENSES, licenseOdds, type LicenseKey } from '../engine/extras'
+import { CountryPicker } from './CountryPicker'
 
-type Page = 'hub' | 'activities' | 'education' | 'crime' | 'special' | 'business'
+type Page = 'hub' | 'activities' | 'education' | 'crime' | 'special' | 'business' | 'admin' | 'luck' | 'emigrate'
 
 export function ActivitiesSheet() {
   const { t, i18n } = useTranslation()
@@ -20,9 +22,46 @@ export function ActivitiesSheet() {
   const back = () => setPage('hub')
   const toast = (key: string, kind: 'good' | 'bad' | 'info', params?: Record<string, string | number>) => g.setToast({ key, kind, params })
 
+  const LUCK = new Set(['lottery_ticket', 'casino', 'horse_races', 'fight_betting', 'sweepstakes'])
+  if (page === 'emigrate') return (
+    <Sheet title={t('admin.emigrate')} emoji="🌍" onBack={() => setPage('admin')}>
+      <p className="text-xs opacity-70 px-1 mb-2">{t('admin.emigrateHint', { money: formatMoney(EMIGRATE_COST, lang) })}</p>
+      <CountryPicker value={life.countryCode} onPick={(code) => { g.emigrate(code); setPage('admin') }} />
+    </Sheet>
+  )
+  if (page === 'luck') return (
+    <Sheet title={t('act.luck')} emoji="🎰" onBack={back}>
+      <p className="text-xs opacity-70 px-1 mb-3">{t('act.luckHint')}</p>
+      {ACTIVITIES.filter((a) => LUCK.has(a.id) && life.age >= a.minAge).map((a) => (
+        <Row key={a.id} emoji={a.emoji} title={sysText(lang, 'activities', `${a.id}.name`)} sub={sysText(lang, 'activities', `${a.id}.blurb`)}
+          right={a.cost ? formatMoney(a.cost, lang) : t('act.free')} disabled={life.money < a.cost || Boolean(life.prison)}
+          onClick={() => { const r = g.activity(a.id); if (r) toast(r.key, r.kind, { money: r.money ? formatMoney(r.money, lang) : '' }) }} />
+      ))}
+    </Sheet>
+  )
+  if (page === 'admin') return (
+    <Sheet title={t('act.admin')} emoji="🗂️" onBack={back}>
+      <Section title={t('admin.licenses')}>
+        {(Object.keys(LICENSES) as LicenseKey[]).map((k) => (
+          <Row key={k} emoji={k === 'has_license' ? '🚗' : k === 'boat_license' ? '⛵' : '✈️'} title={t(`admin.license.${k}`)}
+            sub={life.flags[k] ? t('admin.licensed') : `${formatMoney(LICENSES[k].cost, lang)} · ${t('admin.minAge', { n: LICENSES[k].minAge })}`}
+            right={life.flags[k] ? '✅' : <Pill tone={licenseOdds(life, k) > 0.5 ? 'good' : 'ink'}>{Math.round(licenseOdds(life, k) * 100)}%</Pill>}
+            onClick={life.flags[k] ? undefined : () => g.license(k)} disabled={life.age < LICENSES[k].minAge || life.money < LICENSES[k].cost} />
+        ))}
+      </Section>
+      <Section title={t('admin.legal')}>
+        <Row emoji="⚖️" title={t('admin.lawsuit')} sub={t('admin.lawsuitSub', { money: formatMoney(LAWSUIT_COST, lang) })} onClick={g.sue} disabled={life.age < 18 || life.money < LAWSUIT_COST} />
+        <Row emoji="📜" title={t('admin.will')} sub={life.will ? t('admin.willOn') : t('admin.willOff')} onClick={g.toggleWill} disabled={life.age < 18} />
+      </Section>
+      <Section title={t('admin.life')}>
+        <Row emoji="🌍" title={t('admin.emigrate')} sub={t('admin.emigrateSub', { money: formatMoney(EMIGRATE_COST, lang) })} onClick={() => setPage('emigrate')} disabled={life.age < 18 || life.money < EMIGRATE_COST} />
+        <Row emoji="🧬" title={t('admin.fertility')} sub={life.flags.ivf ? t('admin.fertilityOn') : t('admin.fertilitySub', { money: formatMoney(IVF_COST, lang) })} onClick={g.ivf} disabled={life.age < 18 || life.money < IVF_COST || Boolean(life.flags.ivf)} />
+      </Section>
+    </Sheet>
+  )
   if (page === 'activities') return (
     <Sheet title={t('act.mindBody')} emoji="🧘" onBack={back}>
-      {ACTIVITIES.filter((a) => life.age >= a.minAge).map((a) => (
+      {ACTIVITIES.filter((a) => !LUCK.has(a.id) && life.age >= a.minAge).map((a) => (
         <Row key={a.id} emoji={a.emoji} title={sysText(lang, 'activities', `${a.id}.name`)} sub={sysText(lang, 'activities', `${a.id}.blurb`)}
           right={a.cost ? formatMoney(a.cost, lang) : t('act.free')} disabled={life.money < a.cost || Boolean(life.prison)}
           onClick={() => { const r = g.activity(a.id); if (r) toast(r.key, r.kind, { money: r.money ? formatMoney(r.money, lang) : '' }) }} />
@@ -145,6 +184,8 @@ export function ActivitiesSheet() {
   return (
     <Sheet title={t('nav.activities')} emoji="🎯">
       <Row emoji="🧘" title={t('act.mindBody')} sub={t('act.mindBodySub')} onClick={() => setPage('activities')} />
+      {life.age >= 18 && <Row emoji="🎰" title={t('act.luck')} sub={t('act.luckSub')} onClick={() => setPage('luck')} />}
+      {life.age >= 16 && <Row emoji="🗂️" title={t('act.admin')} sub={t('act.adminSub')} onClick={() => setPage('admin')} />}
       <Row emoji="🎓" title={t('act.education')} sub={t(`edu.stage.${life.education.stage}`)} onClick={() => setPage('education')} />
       {life.age >= 12 && <Row emoji="🚔" title={t('act.crime')} sub={t('act.crimeSub')} onClick={() => setPage('crime')} />}
       <Row emoji="🌟" title={t('act.special')} sub={t('act.specialSub')} onClick={() => setPage('special')} />

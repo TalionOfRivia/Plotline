@@ -1,22 +1,174 @@
 {
-  "gym": { "name": "Gym Membership", "blurb": "You paid for the membership, so you will go at least twice." },
-  "doctor_visit": { "name": "Doctor's Visit", "blurb": "A stranger poked you, pronounced you mostly fine, and billed you for it." },
-  "meditation": { "name": "Meditation", "blurb": "You sat very still and thought about nothing, which you are told is the point." },
-  "library": { "name": "Library Visit", "blurb": "Free books, a silence you respect, and a reminder that you once meant to read more." },
-  "vacation": { "name": "Vacation", "blurb": "A week somewhere warm, followed by a credit card statement that ruins the glow." },
-  "plastic_surgery": { "name": "Plastic Surgery", "blurb": "You now look like a more expensive version of yourself, give or take a face." },
-  "lottery_ticket": { "name": "Lottery Ticket", "blurb": "A small bet on a future you will not get, bought with the usual optimism." },
-  "casino": { "name": "Casino Night", "blurb": "The house always wins, but tonight you were the house for a few minutes." },
-  "therapy": { "name": "Therapy", "blurb": "You paid a stranger to listen to your childhood, and it was worth every cent." },
-  "diet": { "name": "Diet", "blurb": "Three weeks of salad, one weekend of regret, and a vague sense of self-control." },
-  "party": { "name": "Party", "blurb": "You arrived early, stayed late, and cannot remember who the host was." },
-  "volunteer": { "name": "Volunteer Work", "blurb": "You gave up a free afternoon, which is the most expensive kind of kindness." },
-  "night_class": { "name": "Night Class", "blurb": "Evening lectures on a subject you chose for reasons that seemed good at the time." },
-  "spa": { "name": "Spa Day", "blurb": "Someone rubbed your shoulders for an hour and you briefly forgot your mortgage." },
-  "tattoo": { "name": "Tattoo", "blurb": "A permanent decision made by an excellent sense of humour and a bad sense of timing." },
-  "skydiving": { "name": "Skydiving", "blurb": "You jumped out of a perfectly good plane, which the parachute company is grateful for." },
-  "movie": { "name": "Movie Night", "blurb": "Two hours in the dark, a large popcorn, and a sequel nobody asked for." },
-  "concert": { "name": "Concert", "blurb": "You screamed the lyrics, lost your voice, and will hear a faint ringing till Tuesday." },
-  "road_trip": { "name": "Road Trip", "blurb": "Four hundred miles, one terrible gas station burrito, and a playlist you regret." },
-  "karaoke": { "name": "Karaoke", "blurb": "You sang with total confidence and a complete absence of pitch." }
+  "gym": {
+    "name": "Gym Membership",
+    "blurb": "You paid for the membership, so you will go at least twice."
+  },
+  "doctor_visit": {
+    "name": "Doctor's Visit",
+    "blurb": "A stranger poked you, pronounced you mostly fine, and billed you for it."
+  },
+  "meditation": {
+    "name": "Meditation",
+    "blurb": "You sat very still and thought about nothing, which you are told is the point."
+  },
+  "library": {
+    "name": "Library Visit",
+    "blurb": "Free books, a silence you respect, and a reminder that you once meant to read more."
+  },
+  "vacation": {
+    "name": "Vacation",
+    "blurb": "A week somewhere warm, followed by a credit card statement that ruins the glow."
+  },
+  "plastic_surgery": {
+    "name": "Plastic Surgery",
+    "blurb": "You now look like a more expensive version of yourself, give or take a face."
+  },
+  "lottery_ticket": {
+    "name": "Lottery Ticket",
+    "blurb": "A small bet on a future you will not get, bought with the usual optimism."
+  },
+  "casino": {
+    "name": "Casino Night",
+    "blurb": "The house always wins, but tonight you were the house for a few minutes."
+  },
+  "therapy": {
+    "name": "Therapy",
+    "blurb": "You paid a stranger to listen to your childhood, and it was worth every cent."
+  },
+  "diet": {
+    "name": "Diet",
+    "blurb": "Three weeks of salad, one weekend of regret, and a vague sense of self-control."
+  },
+  "party": {
+    "name": "Party",
+    "blurb": "You arrived early, stayed late, and cannot remember who the host was."
+  },
+  "volunteer": {
+    "name": "Volunteer Work",
+    "blurb": "You gave up a free afternoon, which is the most expensive kind of kindness."
+  },
+  "night_class": {
+    "name": "Night Class",
+    "blurb": "Evening lectures on a subject you chose for reasons that seemed good at the time."
+  },
+  "spa": {
+    "name": "Spa Day",
+    "blurb": "Someone rubbed your shoulders for an hour and you briefly forgot your mortgage."
+  },
+  "tattoo": {
+    "name": "Tattoo",
+    "blurb": "A permanent decision made by an excellent sense of humour and a bad sense of timing."
+  },
+  "skydiving": {
+    "name": "Skydiving",
+    "blurb": "You jumped out of a perfectly good plane, which the parachute company is grateful for."
+  },
+  "movie": {
+    "name": "Movie Night",
+    "blurb": "Two hours in the dark, a large popcorn, and a sequel nobody asked for."
+  },
+  "concert": {
+    "name": "Concert",
+    "blurb": "You screamed the lyrics, lost your voice, and will hear a faint ringing till Tuesday."
+  },
+  "road_trip": {
+    "name": "Road Trip",
+    "blurb": "Four hundred miles, one terrible gas station burrito, and a playlist you regret."
+  },
+  "karaoke": {
+    "name": "Karaoke",
+    "blurb": "You sang with total confidence and a complete absence of pitch."
+  },
+  "nightlife": {
+    "name": "Nightlife",
+    "blurb": "You will be tired for three days and call it a good time."
+  },
+  "pray": {
+    "name": "Pray",
+    "blurb": "Free of charge, and nobody can prove it did not help."
+  },
+  "rehab": {
+    "name": "Rehab",
+    "blurb": "Expensive, unpleasant, and exactly what everyone suggested."
+  },
+  "shopping": {
+    "name": "Shopping",
+    "blurb": "You needed nothing and left with four bags."
+  },
+  "zoo_trip": {
+    "name": "Zoo Trip",
+    "blurb": "The animals looked at you with the same enthusiasm you looked at them."
+  },
+  "garden": {
+    "name": "Gardening",
+    "blurb": "Something grew. Mostly weeds, but it counts."
+  },
+  "read_book": {
+    "name": "Read a Book",
+    "blurb": "You made it past the first chapter, a personal best."
+  },
+  "walk": {
+    "name": "Go for a Walk",
+    "blurb": "You went outside and came back. Nothing happened, which was the point."
+  },
+  "martial_arts": {
+    "name": "Martial Arts",
+    "blurb": "You learned to fall properly, which is most of it."
+  },
+  "voice_lessons": {
+    "name": "Voice Lessons",
+    "blurb": "Your teacher says you have potential. Your neighbors disagree."
+  },
+  "acting_lessons": {
+    "name": "Acting Lessons",
+    "blurb": "You pretended to be a tree and were told you were convincing."
+  },
+  "modeling_lessons": {
+    "name": "Modeling Lessons",
+    "blurb": "You learned to stand still with intent."
+  },
+  "instrument_practice": {
+    "name": "Practice an Instrument",
+    "blurb": "The same eight bars, again, until the family begged you to stop."
+  },
+  "memory_test": {
+    "name": "Memory Test",
+    "blurb": "You forgot your result on the way home."
+  },
+  "barber": {
+    "name": "Haircut",
+    "blurb": "Fifteen minutes, one mirror, and a sincere \"just a trim\"."
+  },
+  "hair_dye": {
+    "name": "Dye Your Hair",
+    "blurb": "A bold new color and a permanent stain on the bathroom towel."
+  },
+  "massage": {
+    "name": "Massage",
+    "blurb": "Someone found the knot you have been carrying around since January."
+  },
+  "nail_salon": {
+    "name": "Nail Salon",
+    "blurb": "Ten small improvements that will chip by Thursday."
+  },
+  "tanning": {
+    "name": "Tanning",
+    "blurb": "You are now a warmer shade of regret."
+  },
+  "waxing": {
+    "name": "Waxing",
+    "blurb": "Brief, smooth, and deeply insulting to your nerves."
+  },
+  "sweepstakes": {
+    "name": "Enter Sweepstakes",
+    "blurb": "You filled out forms for a prize that probably does not exist."
+  },
+  "horse_races": {
+    "name": "Horse Races",
+    "blurb": "You picked the horse with the best name. Statistics were unimpressed."
+  },
+  "fight_betting": {
+    "name": "Fight Betting",
+    "blurb": "You have strong opinions about two strangers hitting each other."
+  }
 }

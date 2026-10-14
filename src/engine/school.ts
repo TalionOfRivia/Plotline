@@ -1,7 +1,7 @@
 import type { Life } from './types'
 import type { Rng } from './rng'
 import { EDUCATION } from './systems'
-import { clamp, log } from './util'
+import { clamp, log, use, used } from './util'
 
 /** Yearly school progression. */
 export function schoolYear(life: Life, rng: Rng) {
@@ -122,6 +122,8 @@ export function enrollGrad(life: Life, gradId: string) {
 }
 
 export function studyHarder(life: Life) {
+  if (used(life, 'study') >= 1) return
+  use(life, 'study')
   life.education.grades = clamp(life.education.grades + 8)
   life.stats.happiness = clamp(life.stats.happiness - 2)
   life.stats.smarts = clamp(life.stats.smarts + 1)

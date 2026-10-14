@@ -102,7 +102,9 @@
     "mob_hit": "A mob hit.",
     "spaceflight": "Lost in spaceflight.",
     "car_crash": "Died in a car crash.",
-    "exposure": "Died of exposure."
+    "exposure": "Died of exposure.",
+    "overdose": "Overdose.",
+    "bar_fight": "Killed in a bar fight."
   },
   "school": {
     "started": "You started school.",
@@ -208,7 +210,8 @@
       "houses": "Homes",
       "cars": "Cars",
       "pets": "Pets",
-      "luxury": "Luxury"
+      "luxury": "Luxury",
+      "money": "Money"
     },
     "bought": "You bought a {{item}} for ${{money}}.",
     "sold": "You sold your {{item}} for ${{money}}.",
@@ -244,7 +247,14 @@
       "play": "Play",
       "walk": "Go for a walk",
       "movie_night": "Movie night",
-      "vacation": "Go on vacation"
+      "vacation": "Go on vacation",
+      "conversation": "Have a conversation",
+      "party": "Party together",
+      "concert": "Go to a concert",
+      "prank": "Prank them",
+      "rumor": "Spread a rumor",
+      "deal": "Sell them something",
+      "hook_up": "Hook up"
     },
     "did": {
       "spend_time": "You spent time with {{name}}.",
@@ -262,7 +272,19 @@
       "prenup_yes": "{{name}} signed the prenup.",
       "prenup_no": "{{name}} was offended by the prenup.",
       "propose_no": "{{name}} said no.",
-      "have_child_no": "No baby this year."
+      "have_child_no": "No baby this year.",
+      "conversation": "You talked with {{name}} for hours.",
+      "party": "You partied with {{name}}.",
+      "concert": "You went to a concert with {{name}}.",
+      "prank": "You pranked {{name}}. They laughed.",
+      "prank_flop": "{{name}} did not find the prank funny.",
+      "rumor": "You spread a rumor about {{name}}.",
+      "deal_yes": "You sold {{name}} something for ${{money}}.",
+      "deal_no": "{{name}} did not want your junk.",
+      "hook_up": "You hooked up with {{name}}.",
+      "hook_up_no": "{{name}} turned you down.",
+      "hook_up_caught": "{{other}} found out about you and {{name}}.",
+      "hook_up_std": "You hooked up with {{name}}. The clinic had news."
     },
     "newFriend": "You became friends with {{name}}.",
     "lostFriend": "{{name}} is no longer your friend.",
@@ -275,7 +297,8 @@
     "newChild": "You had a baby: {{name}}.",
     "childGrewUp": "{{name}} turned 18.",
     "gone": "They're gone.",
-    "cantAfford": "You can't afford that."
+    "cantAfford": "You can't afford that.",
+    "enough": "They've had enough of you this year."
   },
   "crime": {
     "hint": "Odds shown are real. Convictions on record: {{record}}.",
@@ -306,7 +329,12 @@
     "special": "Fame & special paths",
     "specialSub": "Fame, business, the family, space, espionage.",
     "paths": "Paths",
-    "free": "Free"
+    "free": "Free",
+    "luck": "Luck & bets",
+    "luckSub": "Lottery, casino, races, fights. Three tries a year.",
+    "luckHint": "The house always wins eventually.",
+    "admin": "Life admin",
+    "adminSub": "Licenses, lawsuits, moving abroad, your will."
   },
   "activity": {
     "cantAfford": "You can't afford that.",
@@ -340,7 +368,8 @@
       "concert": "You went to a concert.",
       "road_trip": "You took a road trip.",
       "karaoke": "You sang karaoke."
-    }
+    },
+    "limit": "You've done that enough this year."
   },
   "fame": {
     "title": "Fame",
@@ -460,5 +489,157 @@
       "hard": "Hard",
       "legendary": "Legendary"
     }
+  },
+  "gig": {
+    "title": "Freelance gigs",
+    "sub": "One-off cash. 85% it goes fine.",
+    "gone": "That gig is gone.",
+    "flop": "The gig fell through. Nobody paid.",
+    "name": {
+      "dog_sitting": "Dog sitting",
+      "moving_help": "Help someone move",
+      "tutoring": "Tutoring",
+      "web_design": "Build a website",
+      "wedding_dj": "DJ a wedding",
+      "courier": "Courier run",
+      "yard_work": "Yard work",
+      "photo_shoot": "Photo shoot",
+      "translation": "Translation job",
+      "babysitting_gig": "Babysitting",
+      "street_music": "Busking",
+      "car_wash": "Car wash"
+    },
+    "done": {
+      "dog_sitting": "You did a dog sitting gig for ${{money}}.",
+      "moving_help": "You did a moving gig for ${{money}}.",
+      "tutoring": "You did a tutoring gig for ${{money}}.",
+      "web_design": "You did a web design gig for ${{money}}.",
+      "wedding_dj": "You did a wedding dj gig for ${{money}}.",
+      "courier": "You did a courier gig for ${{money}}.",
+      "yard_work": "You did a yard work gig for ${{money}}.",
+      "photo_shoot": "You did a photo shoot gig for ${{money}}.",
+      "translation": "You did a translation gig for ${{money}}.",
+      "babysitting_gig": "You did a babysitting gig for ${{money}}.",
+      "street_music": "You did a busking gig for ${{money}}.",
+      "car_wash": "You did a car wash gig for ${{money}}."
+    }
+  },
+  "fin": {
+    "overview": "Finances",
+    "salary": "Salary",
+    "pension": "Pension",
+    "assets": "Assets",
+    "mortgages": "Mortgages",
+    "loan": "Bank loan",
+    "studentLoans": "Student loans",
+    "investments": "Investments",
+    "amount": "Amount",
+    "investTitle": "Investments",
+    "investHint": "Index fund: slow and mostly up. Crypto: anything can happen.",
+    "index": "Buy index fund",
+    "crypto": "Buy crypto",
+    "held": "Held:",
+    "sellIndex": "Sell index fund",
+    "sellCrypto": "Sell crypto",
+    "loanTitle": "Bank loan",
+    "loanHint": "{{pct}}% interest, 15% repaid each year. You can borrow up to {{max}}.",
+    "borrow": "Borrow",
+    "repay": "Repay",
+    "owed": "Owed:"
+  },
+  "loan": {
+    "denied": "The bank said no.",
+    "taken": "You borrowed ${{money}}.",
+    "repaid": "You repaid ${{money}}.",
+    "nothing": "Nothing to repay."
+  },
+  "invest": {
+    "nothing": "You can't invest that.",
+    "bought": {
+      "index": "Bought ${{money}} of index fund.",
+      "crypto": "Bought ${{money}} of crypto. Good luck."
+    },
+    "sold": {
+      "index": "Sold ${{money}} of index fund.",
+      "crypto": "Cashed out ${{money}} of crypto."
+    }
+  },
+  "admin": {
+    "licenses": "Licenses",
+    "license": {
+      "has_license": "Driver's license",
+      "boat_license": "Boat license",
+      "pilot_license": "Pilot's license"
+    },
+    "licensed": "Licensed",
+    "minAge": "from age {{n}}",
+    "legal": "Legal",
+    "lawsuit": "Sue someone",
+    "lawsuitSub": "Lawyer costs {{money}}. ~35% you win big.",
+    "will": "Will & testament",
+    "willOn": "Everything goes to your heir (85%).",
+    "willOff": "No will. The state takes half.",
+    "life": "Big moves",
+    "emigrate": "Emigrate",
+    "emigrateSub": "Move abroad for {{money}}. You lose your job.",
+    "emigrateHint": "Pick a new home. Costs {{money}} and your current job.",
+    "fertility": "Fertility clinic",
+    "fertilitySub": "IVF for {{money}}: next try almost always works.",
+    "fertilityOn": "Treatment done — try for a baby."
+  },
+  "license": {
+    "already": "You already have that license.",
+    "cant": "You can't take that test yet.",
+    "passed": {
+      "has_license": "You passed your driving test.",
+      "boat_license": "You got your boat license.",
+      "pilot_license": "You earned your pilot's license."
+    },
+    "failed": {
+      "has_license": "You failed the driving test.",
+      "boat_license": "You failed the boat exam.",
+      "pilot_license": "You washed out of flight school."
+    }
+  },
+  "emigrate": {
+    "cant": "You can't move right now.",
+    "moved": "You moved to {{city}}, {{country}}."
+  },
+  "fertility": {
+    "cant": "You can't afford the clinic.",
+    "done": "Treatment complete."
+  },
+  "will": {
+    "on": "Will signed.",
+    "off": "Will torn up."
+  },
+  "lawsuit": {
+    "cant": "You can't afford a lawyer.",
+    "won": "You won the lawsuit: ${{money}}.",
+    "lost": "You lost the lawsuit and the lawyer fees."
+  },
+  "bet": {
+    "won": {
+      "horse_races": "Your horse came in! +{{money}}",
+      "fight_betting": "Your fighter won! +{{money}}"
+    },
+    "lost": {
+      "horse_races": "Your horse is still running. -{{money}}",
+      "fight_betting": "Your fighter went down. -{{money}}"
+    }
+  },
+  "sweep": {
+    "big": "You won the sweepstakes: ${{money}}!",
+    "small": "A small sweepstakes prize: ${{money}}.",
+    "none": "Nothing this time."
+  },
+  "money": {
+    "bankrupt": "You went bankrupt. Everything was sold off to cover your debts."
+  },
+  "vice": {
+    "hooked": "You're hooked. It's not a phase.",
+    "clean": "You got clean.",
+    "relapse": "Rehab did not take this time.",
+    "overdoseScare": "You woke up in an ambulance."
   }
 }

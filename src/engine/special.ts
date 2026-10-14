@@ -1,7 +1,7 @@
 // Fame, royalty, mafia, business, astronaut, secret agent — the "premium" paths, all free here.
 import type { Life } from './types'
 import type { Rng } from './rng'
-import { clamp, kill, log } from './util'
+import { clamp, kill, log, use, used } from './util'
 import { COUNTRY_BY_CODE, makePerson } from './people'
 
 // ---- fame -------------------------------------------------------------------
@@ -9,22 +9,24 @@ import { COUNTRY_BY_CODE, makePerson } from './people'
 export function fameYear(life: Life, rng: Rng) {
   const famousJob = life.flags.fame_career
   if (famousJob && life.job) {
-    life.fame = clamp(life.fame + rng.int(2, 8) + (life.job.rung * 2))
+    life.fame = clamp(life.fame + rng.int(1, 4) + life.job.rung)
   } else {
-    life.fame = clamp(life.fame - rng.int(1, 4))
+    life.fame = clamp(life.fame - rng.int(2, 6))
   }
-  if (life.fame >= 50) {
-    // endorsements / appearance fees scale with fame
-    const income = Math.round((life.fame / 100) ** 2 * 1_500_000 * (0.5 + rng.float()))
+  if (life.fame >= 60 && (famousJob || life.fame >= 80)) {
+    // endorsements scale steeply with fame but stay below a real salary until true celebrity
+    const income = Math.round((life.fame / 100) ** 3 * 400_000 * (0.5 + rng.float()))
     life.money += income
     log(life, 'good', 'fame.income', { money: income })
   }
 }
 
 export function socialMediaPost(life: Life, rng: Rng) {
-  const viral = rng.chance(0.08 + life.stats.looks / 500)
+  if (used(life, 'post') >= 1) return false
+  use(life, 'post')
+  const viral = rng.chance(0.03 + life.stats.looks / 1000 + (life.flags.fame_career ? 0.05 : 0))
   life.flags.has_social_media = true
-  if (viral) { life.fame = clamp(life.fame + rng.int(8, 20)); log(life, 'good', 'fame.viral') }
+  if (viral) { life.fame = clamp(life.fame + rng.int(5, 12)); log(life, 'good', 'fame.viral') }
   else { life.fame = clamp(life.fame + rng.int(0, 2)); log(life, 'info', 'fame.posted') }
   return viral
 }
@@ -32,10 +34,10 @@ export function socialMediaPost(life: Life, rng: Rng) {
 // ---- royalty ----------------------------------------------------------------
 
 export function maybeBornRoyal(life: Life, rng: Rng) {
-  const p = COUNTRY_BY_CODE[life.countryCode]?.monarchy ? 0.06 : 0.004
+  const p = COUNTRY_BY_CODE[life.countryCode]?.monarchy ? 0.015 : 0.0005
   if (rng.chance(p)) {
     life.royalty = { rank: 'heir', popularity: rng.int(50, 85) }
-    life.money += 5_000_000
+    life.money += 250_000
     log(life, 'milestone', 'royal.born')
   }
 }
@@ -44,7 +46,7 @@ export function royalYear(life: Life, rng: Rng) {
   const r = life.royalty
   if (r.rank === 'none') return
   r.popularity = clamp(r.popularity + rng.int(-5, 5) + Math.round(life.karma / 20))
-  const stipend = r.rank === 'monarch' ? 12_000_000 : r.rank === 'heir' ? 2_000_000 : 600_000
+  const stipend = r.rank === 'monarch' ? 1_500_000 : r.rank === 'heir' ? 300_000 : 120_000
   life.money += stipend
   if (r.rank === 'heir' && life.age >= 18) {
     const parent = life.people.find((p) => (p.kind === 'mother' || p.kind === 'father') && p.alive)

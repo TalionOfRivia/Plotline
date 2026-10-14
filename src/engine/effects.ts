@@ -134,6 +134,12 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
     case 'cover_blown':
       life.flags.cover_blown = true; delete life.flags.agent; delete life.flags.agent_senior; life.job = null; log(life, 'bad', 'agent.coverBlown'); return true
     case 'agent_promote': life.flags.agent_senior = true; if (life.job) promote(life); return true
+    // ---- vices
+    case 'addicted':
+      if (value) { if (!life.flags.addicted) log(life, 'bad', 'vice.hooked'); life.flags.addicted = true } else { if (life.flags.addicted) log(life, 'good', 'vice.clean'); delete life.flags.addicted }
+      return true
+    case 'std':
+      life.flags.std = true; life.stats.health = clamp(life.stats.health - 6); return true
     // ---- prison
     case 'parole':
       if (life.prison) { log(life, 'good', 'prison.paroled'); release(life) }

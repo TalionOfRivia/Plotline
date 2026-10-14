@@ -2,19 +2,25 @@ import type { Life } from './types'
 import type { Rng } from './rng'
 import { ACTIVITIES } from './systems'
 import { applyEffects } from './effects'
-import { clamp, kill, log } from './util'
+import { clamp, kill, log, use, used } from './util'
+import { placeBet, sweepstakes } from './extras'
 
 export interface ActivityResult { id: string; key: string; money?: number; kind: 'good' | 'bad' | 'info' }
 
 export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | null {
   const a = ACTIVITIES.find((x) => x.id === id)
   if (!a || life.age < a.minAge || life.prison) return null
+  const limit = a.special === 'casino' || a.special === 'bet' || a.special === 'lottery' ? 3 : 1
+  if (used(life, `act_${id}`) >= limit) return { id, key: 'activity.limit', kind: 'info' }
   if (life.money < a.cost) return { id, key: 'activity.cantAfford', kind: 'bad' }
+  use(life, `act_${id}`)
   life.money -= a.cost
+  if (a.special === 'bet') { const r = placeBet(life, id as 'horse_races' | 'fight_betting', rng); return { id, ...r } }
+  if (a.special === 'sweepstakes') { const r = sweepstakes(life, rng); return { id, ...r } }
 
   if (a.special === 'lottery') {
     const r = rng.float()
-    if (r < 0.000_02) { const w = 10_000_000; life.money += w; life.flags.lottery_winner = true; log(life, 'good', 'activity.lotteryJackpot', { money: w }); return { id, key: 'activity.lotteryJackpot', money: w, kind: 'good' } }
+    if (r < 0.000_005) { const w = 2_000_000; life.money += w; life.flags.lottery_winner = true; log(life, 'good', 'activity.lotteryJackpot', { money: w }); return { id, key: 'activity.lotteryJackpot', money: w, kind: 'good' } }
     if (r < 0.002) { const w = rng.int(1_000, 50_000); life.money += w; log(life, 'good', 'activity.lotteryWin', { money: w }); return { id, key: 'activity.lotteryWin', money: w, kind: 'good' } }
     if (r < 0.08) { const w = rng.int(5, 100); life.money += w; return { id, key: 'activity.lotterySmall', money: w, kind: 'info' } }
     return { id, key: 'activity.lotteryLose', kind: 'info' }
@@ -34,6 +40,8 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
     return { id, key: `activity.botched.${id}`, kind: 'bad' }
   }
   if (id === 'plastic_surgery') life.flags.plastic_surgery = true
+  if ((id === 'nightlife' || id === 'party') && !life.flags.addicted && rng.chance(0.06)) { life.flags.addicted = true; log(life, 'bad', 'vice.hooked') }
+  if (id === 'rehab') { if (life.flags.addicted && rng.chance(0.7)) { delete life.flags.addicted; log(life, 'good', 'vice.clean') } else if (life.flags.addicted) log(life, 'bad', 'vice.relapse') }
   if (id === 'doctor_visit' && life.stats.health < 40) { life.flags.survived_illness = true }
   applyEffects(life, a.effects, undefined, rng)
   log(life, 'info', `activity.did.${id}`)

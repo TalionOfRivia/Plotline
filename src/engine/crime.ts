@@ -1,7 +1,7 @@
 import type { Life } from './types'
 import type { Rng } from './rng'
 import { CRIMES } from './systems'
-import { clamp, log } from './util'
+import { clamp, log, use, used } from './util'
 import { release } from './effects'
 
 export function crimeOdds(crimeId: string, life: Life): number {
@@ -17,7 +17,8 @@ export type CrimeResult = { ok: true; money: number } | { ok: false; years: numb
 
 export function commitCrime(life: Life, crimeId: string, rng: Rng): CrimeResult | null {
   const c = CRIMES.find((x) => x.id === crimeId)
-  if (!c || life.age < c.minAge || life.prison) return null
+  if (!c || life.age < c.minAge || life.prison || used(life, 'crime') >= 2) return null
+  use(life, 'crime')
   life.karma = clamp(life.karma + c.karma, -100, 100)
   if (rng.chance(crimeOdds(crimeId, life))) {
     const money = rng.int(c.payout[0], c.payout[1])
@@ -27,7 +28,7 @@ export function commitCrime(life: Life, crimeId: string, rng: Rng): CrimeResult 
     log(life, 'info', 'crime.success', { crime: crimeId, money })
     return { ok: true, money }
   }
-  const years = rng.int(c.sentenceYears[0], c.sentenceYears[1])
+  const years = rng.int(c.sentenceYears[0], c.sentenceYears[1]) + Math.min(life.convictions, 5)
   life.convictions++
   if (c.flags) Object.assign(life.flags, c.flags)
   if (years <= 0) {

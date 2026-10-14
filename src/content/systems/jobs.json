@@ -1286,6 +1286,260 @@
           "minYears": 10
         }
       ]
+    },
+    {
+      "id": "actor",
+      "emoji": "🎭",
+      "requires": {
+        "education": "none",
+        "minLooks": 45,
+        "minAge": 16
+      },
+      "ladder": [
+        {
+          "id": "extra",
+          "salary": 12000,
+          "minYears": 0
+        },
+        {
+          "id": "bit_part",
+          "salary": 25000,
+          "minYears": 1
+        },
+        {
+          "id": "supporting",
+          "salary": 90000,
+          "minYears": 3
+        },
+        {
+          "id": "lead",
+          "salary": 600000,
+          "minYears": 6
+        },
+        {
+          "id": "superstar",
+          "salary": 4000000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "musician",
+      "emoji": "🎸",
+      "requires": {
+        "education": "none",
+        "minAge": 16
+      },
+      "ladder": [
+        {
+          "id": "busker",
+          "salary": 6000,
+          "minYears": 0
+        },
+        {
+          "id": "session_player",
+          "salary": 30000,
+          "minYears": 1
+        },
+        {
+          "id": "band_member",
+          "salary": 70000,
+          "minYears": 3
+        },
+        {
+          "id": "headliner",
+          "salary": 500000,
+          "minYears": 6
+        },
+        {
+          "id": "icon",
+          "salary": 3000000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "music_producer",
+      "emoji": "🎧",
+      "requires": {
+        "education": "none",
+        "minSmarts": 45,
+        "minAge": 18
+      },
+      "ladder": [
+        {
+          "id": "assistant_engineer",
+          "salary": 28000,
+          "minYears": 0
+        },
+        {
+          "id": "engineer",
+          "salary": 45000,
+          "minYears": 1
+        },
+        {
+          "id": "producer",
+          "salary": 110000,
+          "minYears": 3
+        },
+        {
+          "id": "hit_producer",
+          "salary": 400000,
+          "minYears": 6
+        },
+        {
+          "id": "mogul",
+          "salary": 1500000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "emoji": "📸",
+      "requires": {
+        "education": "none",
+        "minLooks": 70,
+        "minAge": 16
+      },
+      "ladder": [
+        {
+          "id": "catalog_model",
+          "salary": 10000,
+          "minYears": 0
+        },
+        {
+          "id": "runway_model",
+          "salary": 40000,
+          "minYears": 1
+        },
+        {
+          "id": "campaign_face",
+          "salary": 120000,
+          "minYears": 3
+        },
+        {
+          "id": "cover_star",
+          "salary": 500000,
+          "minYears": 6
+        },
+        {
+          "id": "supermodel",
+          "salary": 2000000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "movie_director",
+      "emoji": "🎬",
+      "requires": {
+        "education": "university",
+        "majors": [
+          "art",
+          "communications",
+          "english"
+        ],
+        "minSmarts": 55
+      },
+      "ladder": [
+        {
+          "id": "production_assistant",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "assistant_director",
+          "salary": 55000,
+          "minYears": 1
+        },
+        {
+          "id": "indie_director",
+          "salary": 150000,
+          "minYears": 3
+        },
+        {
+          "id": "studio_director",
+          "salary": 800000,
+          "minYears": 6
+        },
+        {
+          "id": "auteur",
+          "salary": 3000000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "street_hustler",
+      "emoji": "🧢",
+      "requires": {
+        "education": "none",
+        "minAge": 16
+      },
+      "ladder": [
+        {
+          "id": "corner_seller",
+          "salary": 9000,
+          "minYears": 0
+        },
+        {
+          "id": "fence",
+          "salary": 25000,
+          "minYears": 1
+        },
+        {
+          "id": "crew_lead",
+          "salary": 60000,
+          "minYears": 3
+        },
+        {
+          "id": "kingpin_lite",
+          "salary": 150000,
+          "minYears": 6
+        },
+        {
+          "id": "legend",
+          "salary": 400000,
+          "minYears": 10
+        }
+      ]
+    },
+    {
+      "id": "influencer",
+      "emoji": "📱",
+      "requires": {
+        "education": "none",
+        "minLooks": 50,
+        "minAge": 16
+      },
+      "ladder": [
+        {
+          "id": "micro_creator",
+          "salary": 4000,
+          "minYears": 0
+        },
+        {
+          "id": "creator",
+          "salary": 22000,
+          "minYears": 1
+        },
+        {
+          "id": "partner",
+          "salary": 80000,
+          "minYears": 3
+        },
+        {
+          "id": "brand",
+          "salary": 350000,
+          "minYears": 6
+        },
+        {
+          "id": "empire",
+          "salary": 1200000,
+          "minYears": 10
+        }
+      ]
     }
   ]
 }

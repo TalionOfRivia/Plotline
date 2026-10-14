@@ -1,22 +1,419 @@
 [
-  { "id": "gym", "emoji": "🏋️", "cost": 600, "minAge": 14, "effects": { "health": 6, "looks": 3, "happiness": 2 } },
-  { "id": "doctor_visit", "emoji": "🩺", "cost": 400, "minAge": 0, "effects": { "health": 8 } },
-  { "id": "meditation", "emoji": "🧘", "cost": 0, "minAge": 10, "effects": { "health": 3, "happiness": 4, "smarts": 1 } },
-  { "id": "library", "emoji": "📚", "cost": 20, "minAge": 6, "effects": { "smarts": 3, "happiness": 1 } },
-  { "id": "vacation", "emoji": "🏖️", "cost": 4000, "minAge": 16, "effects": { "happiness": 10, "health": 2 } },
-  { "id": "plastic_surgery", "emoji": "💉", "cost": 25000, "minAge": 18, "effects": { "looks": 15, "health": -5 }, "risky": true },
-  { "id": "lottery_ticket", "emoji": "🎟️", "cost": 5, "minAge": 18, "effects": {}, "special": "lottery" },
-  { "id": "casino", "emoji": "🎰", "cost": 500, "minAge": 18, "effects": {}, "special": "casino" },
-  { "id": "therapy", "emoji": "🛋️", "cost": 2000, "minAge": 16, "effects": { "happiness": 6, "health": 1 } },
-  { "id": "diet", "emoji": "🥗", "cost": 300, "minAge": 14, "effects": { "health": 5, "looks": 4, "happiness": -1 } },
-  { "id": "party", "emoji": "🎉", "cost": 800, "minAge": 16, "effects": { "happiness": 6, "health": -2 } },
-  { "id": "volunteer", "emoji": "🤝", "cost": 0, "minAge": 14, "effects": { "karma": 5, "happiness": 2 } },
-  { "id": "night_class", "emoji": "🌙", "cost": 3000, "minAge": 18, "effects": { "smarts": 5, "happiness": -1 } },
-  { "id": "spa", "emoji": "🧖", "cost": 1000, "minAge": 16, "effects": { "health": 3, "looks": 2, "happiness": 5 } },
-  { "id": "tattoo", "emoji": "🖋️", "cost": 300, "minAge": 18, "effects": { "looks": 1, "happiness": 2 } },
-  { "id": "skydiving", "emoji": "🪂", "cost": 1500, "minAge": 18, "effects": { "happiness": 8 }, "risky": true },
-  { "id": "movie", "emoji": "🎬", "cost": 25, "minAge": 6, "effects": { "happiness": 3 } },
-  { "id": "concert", "emoji": "🎤", "cost": 150, "minAge": 14, "effects": { "happiness": 6 } },
-  { "id": "road_trip", "emoji": "🚗", "cost": 800, "minAge": 16, "effects": { "happiness": 7 } },
-  { "id": "karaoke", "emoji": "🎶", "cost": 60, "minAge": 16, "effects": { "happiness": 4 } }
+  {
+    "id": "gym",
+    "emoji": "🏋️",
+    "cost": 600,
+    "minAge": 14,
+    "effects": {
+      "health": 6,
+      "looks": 3,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "doctor_visit",
+    "emoji": "🩺",
+    "cost": 400,
+    "minAge": 0,
+    "effects": {
+      "health": 8
+    }
+  },
+  {
+    "id": "meditation",
+    "emoji": "🧘",
+    "cost": 0,
+    "minAge": 10,
+    "effects": {
+      "health": 3,
+      "happiness": 4,
+      "smarts": 1
+    }
+  },
+  {
+    "id": "library",
+    "emoji": "📚",
+    "cost": 20,
+    "minAge": 6,
+    "effects": {
+      "smarts": 3,
+      "happiness": 1
+    }
+  },
+  {
+    "id": "vacation",
+    "emoji": "🏖️",
+    "cost": 4000,
+    "minAge": 16,
+    "effects": {
+      "happiness": 10,
+      "health": 2
+    }
+  },
+  {
+    "id": "plastic_surgery",
+    "emoji": "💉",
+    "cost": 25000,
+    "minAge": 18,
+    "effects": {
+      "looks": 15,
+      "health": -5
+    },
+    "risky": true
+  },
+  {
+    "id": "lottery_ticket",
+    "emoji": "🎟️",
+    "cost": 5,
+    "minAge": 18,
+    "effects": {},
+    "special": "lottery"
+  },
+  {
+    "id": "casino",
+    "emoji": "🎰",
+    "cost": 500,
+    "minAge": 18,
+    "effects": {},
+    "special": "casino"
+  },
+  {
+    "id": "therapy",
+    "emoji": "🛋️",
+    "cost": 2000,
+    "minAge": 16,
+    "effects": {
+      "happiness": 6,
+      "health": 1
+    }
+  },
+  {
+    "id": "diet",
+    "emoji": "🥗",
+    "cost": 300,
+    "minAge": 14,
+    "effects": {
+      "health": 5,
+      "looks": 4,
+      "happiness": -1
+    }
+  },
+  {
+    "id": "party",
+    "emoji": "🎉",
+    "cost": 800,
+    "minAge": 16,
+    "effects": {
+      "happiness": 6,
+      "health": -2
+    }
+  },
+  {
+    "id": "volunteer",
+    "emoji": "🤝",
+    "cost": 0,
+    "minAge": 14,
+    "effects": {
+      "karma": 5,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "night_class",
+    "emoji": "🌙",
+    "cost": 3000,
+    "minAge": 18,
+    "effects": {
+      "smarts": 5,
+      "happiness": -1
+    }
+  },
+  {
+    "id": "spa",
+    "emoji": "🧖",
+    "cost": 1000,
+    "minAge": 16,
+    "effects": {
+      "health": 3,
+      "looks": 2,
+      "happiness": 5
+    }
+  },
+  {
+    "id": "tattoo",
+    "emoji": "🖋️",
+    "cost": 300,
+    "minAge": 18,
+    "effects": {
+      "looks": 1,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "skydiving",
+    "emoji": "🪂",
+    "cost": 1500,
+    "minAge": 18,
+    "effects": {
+      "happiness": 8
+    },
+    "risky": true
+  },
+  {
+    "id": "movie",
+    "emoji": "🎬",
+    "cost": 25,
+    "minAge": 6,
+    "effects": {
+      "happiness": 3
+    }
+  },
+  {
+    "id": "concert",
+    "emoji": "🎤",
+    "cost": 150,
+    "minAge": 14,
+    "effects": {
+      "happiness": 6
+    }
+  },
+  {
+    "id": "road_trip",
+    "emoji": "🚗",
+    "cost": 800,
+    "minAge": 16,
+    "effects": {
+      "happiness": 7
+    }
+  },
+  {
+    "id": "karaoke",
+    "emoji": "🎶",
+    "cost": 60,
+    "minAge": 16,
+    "effects": {
+      "happiness": 4
+    }
+  },
+  {
+    "id": "nightlife",
+    "emoji": "🪩",
+    "cost": 80,
+    "minAge": 18,
+    "effects": {
+      "happiness": 5,
+      "health": -3,
+      "looks": 1
+    }
+  },
+  {
+    "id": "pray",
+    "emoji": "🙏",
+    "cost": 0,
+    "minAge": 0,
+    "effects": {
+      "happiness": 2,
+      "karma": 3
+    }
+  },
+  {
+    "id": "rehab",
+    "emoji": "🏥",
+    "cost": 8000,
+    "minAge": 16,
+    "effects": {
+      "health": 10,
+      "happiness": -3
+    }
+  },
+  {
+    "id": "shopping",
+    "emoji": "🛍️",
+    "cost": 400,
+    "minAge": 10,
+    "effects": {
+      "happiness": 5,
+      "looks": 2
+    }
+  },
+  {
+    "id": "zoo_trip",
+    "emoji": "🦒",
+    "cost": 60,
+    "minAge": 3,
+    "effects": {
+      "happiness": 4
+    }
+  },
+  {
+    "id": "garden",
+    "emoji": "🌱",
+    "cost": 0,
+    "minAge": 8,
+    "effects": {
+      "happiness": 4,
+      "health": 2
+    }
+  },
+  {
+    "id": "read_book",
+    "emoji": "📖",
+    "cost": 20,
+    "minAge": 6,
+    "effects": {
+      "smarts": 3,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "walk",
+    "emoji": "🚶",
+    "cost": 0,
+    "minAge": 0,
+    "effects": {
+      "health": 3,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "martial_arts",
+    "emoji": "🥋",
+    "cost": 900,
+    "minAge": 8,
+    "effects": {
+      "health": 5,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "voice_lessons",
+    "emoji": "🎤",
+    "cost": 700,
+    "minAge": 8,
+    "effects": {
+      "happiness": 2,
+      "smarts": 1
+    }
+  },
+  {
+    "id": "acting_lessons",
+    "emoji": "🎭",
+    "cost": 800,
+    "minAge": 8,
+    "effects": {
+      "smarts": 1,
+      "looks": 1
+    }
+  },
+  {
+    "id": "modeling_lessons",
+    "emoji": "📸",
+    "cost": 900,
+    "minAge": 14,
+    "effects": {
+      "looks": 4
+    }
+  },
+  {
+    "id": "instrument_practice",
+    "emoji": "🎸",
+    "cost": 0,
+    "minAge": 6,
+    "effects": {
+      "smarts": 2,
+      "happiness": 3
+    }
+  },
+  {
+    "id": "memory_test",
+    "emoji": "🧠",
+    "cost": 150,
+    "minAge": 10,
+    "effects": {
+      "smarts": 1
+    }
+  },
+  {
+    "id": "barber",
+    "emoji": "💈",
+    "cost": 60,
+    "minAge": 5,
+    "effects": {
+      "looks": 3
+    }
+  },
+  {
+    "id": "hair_dye",
+    "emoji": "🎨",
+    "cost": 120,
+    "minAge": 13,
+    "effects": {
+      "looks": 2,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "massage",
+    "emoji": "💆",
+    "cost": 150,
+    "minAge": 16,
+    "effects": {
+      "health": 3,
+      "happiness": 4
+    }
+  },
+  {
+    "id": "nail_salon",
+    "emoji": "💅",
+    "cost": 70,
+    "minAge": 12,
+    "effects": {
+      "looks": 2,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "tanning",
+    "emoji": "☀️",
+    "cost": 50,
+    "minAge": 16,
+    "effects": {
+      "looks": 2,
+      "health": -1
+    }
+  },
+  {
+    "id": "waxing",
+    "emoji": "🕯️",
+    "cost": 90,
+    "minAge": 16,
+    "effects": {
+      "looks": 2,
+      "happiness": -1
+    }
+  },
+  {
+    "id": "sweepstakes",
+    "emoji": "📬",
+    "cost": 0,
+    "minAge": 18,
+    "effects": {},
+    "special": "sweepstakes"
+  },
+  {
+    "id": "horse_races",
+    "emoji": "🏇",
+    "cost": 0,
+    "minAge": 18,
+    "effects": {},
+    "special": "bet"
+  },
+  {
+    "id": "fight_betting",
+    "emoji": "🥊",
+    "cost": 0,
+    "minAge": 18,
+    "effects": {},
+    "special": "bet"
+  }
 ]

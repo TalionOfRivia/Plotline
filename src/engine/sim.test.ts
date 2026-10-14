@@ -12,6 +12,7 @@ import { doActivity } from './activities'
 import { applyAgent, applyAstronaut, joinMafia, startBusiness, BUSINESS_KINDS } from './special'
 import type { Life } from './types'
 import { checkChallenges, CHALLENGES } from './challenges'
+import { doGig, invest, takeLicense, takeLoan, withdraw } from './extras'
 
 /** Plays a whole life with random choices and random actions; throws on any engine error. */
 function playLife(seed: string) {
@@ -42,6 +43,11 @@ function playLife(seed: string) {
       if (life.age === 18 || life.age === 19) enrollUniversity(life, pick.pick(EDUCATION.majors).id, rng, pick.pick(['cash', 'loan', 'scholarship']))
       const gs = gradSchoolsAvailable(life); if (gs.length && pick.chance(0.5)) enrollGrad(life, pick.pick(gs).id)
       if (roll < 0.3) doActivity(life, pick.pick(ACTIVITIES).id, rng)
+      if (life.gigs.length && pick.chance(0.3)) doGig(life, pick.pick(life.gigs), rng)
+      if (life.age === 20) takeLoan(life, 20_000)
+      if (life.age === 28) { invest(life, 'index', 5_000); invest(life, 'crypto', 2_000) }
+      if (life.age === 40) withdraw(life, 'crypto', 100_000)
+      if (life.age === 17) takeLicense(life, 'has_license', rng)
       if (life.age === 25) { applyAstronaut(life, rng); applyAgent(life, rng) }
       if (life.age === 30 && pick.chance(0.3)) joinMafia(life)
       if (life.age === 35 && pick.chance(0.5)) startBusiness(life, pick.pick(BUSINESS_KINDS).id, 'Test Co')

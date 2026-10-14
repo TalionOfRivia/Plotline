@@ -1,7 +1,7 @@
 import type { JobTrack, Life } from './types'
 import type { Rng } from './rng'
 import { JOB_BY_ID, JOB_TRACKS } from './systems'
-import { clamp, log } from './util'
+import { clamp, log, use, used } from './util'
 import { jobTitleKey, promote } from './effects'
 
 const TAX_BRACKETS: [number, number][] = [[10_000, 0], [40_000, 0.12], [90_000, 0.22], [180_000, 0.3], [Infinity, 0.37]]
@@ -16,6 +16,8 @@ export function taxOn(income: number) {
   }
   return Math.round(tax)
 }
+
+const FAME_TRACKS = new Set(['actor', 'musician', 'music_producer', 'model', 'movie_director', 'influencer', 'professional_athlete', 'politician'])
 
 export function meetsRequirements(track: JobTrack, life: Life): boolean {
   const r = track.requires ?? {}
@@ -49,7 +51,8 @@ export function refreshJobBoard(life: Life, rng: Rng) {
 /** Interview odds (0..1), shown to the player before applying. */
 export function interviewOdds(track: JobTrack, life: Life): number {
   if (!meetsRequirements(track, life)) return 0
-  let p = 0.45 + (life.stats.smarts - 50) / 200 + (life.stats.looks - 50) / 400
+  let p = 0.32 + (life.stats.smarts - 50) / 220 + (life.stats.looks - 50) / 500
+  if (FAME_TRACKS.has(track.id)) p *= 0.45
   if (life.flags.ever_worked) p += 0.1
   if (life.convictions > 0) p -= 0.15 * Math.min(life.convictions, 3)
   if (life.flags.just_fired) p -= 0.1
@@ -80,7 +83,8 @@ export function quitJob(life: Life) {
 }
 
 export function workHarder(life: Life) {
-  if (!life.job) return
+  if (!life.job || used(life, 'work_harder') >= 1) return
+  use(life, 'work_harder')
   life.job.performance = clamp(life.job.performance + 10)
   life.stats.happiness = clamp(life.stats.happiness - 3)
   life.stats.health = clamp(life.stats.health - 1)
@@ -107,8 +111,8 @@ export function workYear(life: Life, rng: Rng) {
 
   const gross = job.salary
   const net = gross - taxOn(gross)
-  // 35% of take-home goes to living expenses that scale with lifestyle
-  life.money += Math.round(net * 0.65)
+  // 45% of take-home goes to living expenses that scale with lifestyle
+  life.money += Math.round(net * 0.55)
   job.yearsInTrack++
 
   // performance drifts toward a baseline set by smarts & health, with noise
@@ -118,8 +122,8 @@ export function workYear(life: Life, rng: Rng) {
   // promotion
   const next = track.ladder[job.rung + 1]
   if (next && job.yearsInTrack >= next.minYears - track.ladder[job.rung].minYears) {
-    const p = 0.15 + (job.performance - 50) / 150
-    if (rng.chance(clamp(p, 0.02, 0.8))) promote(life)
+    const p = job.performance < 55 ? 0.02 : 0.1 + (job.performance - 55) / 180
+    if (rng.chance(clamp(p, 0.02, 0.45))) promote(life)
   } else if (rng.chance(0.25) && job.performance > 60) {
     job.salary = Math.round(job.salary * 1.03)
   }
