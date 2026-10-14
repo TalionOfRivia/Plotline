@@ -1,8 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#1b2a41"/>
-  <path d="M128 128h176a48 48 0 0 1 48 48v208H176a48 48 0 0 1-48-48z" fill="#fbf7ee"/>
-  <path d="M176 384h176V176a48 48 0 0 0-48-48" fill="none" stroke="#2ec4b6" stroke-width="24" stroke-linecap="round"/>
-  <circle cx="232" cy="232" r="22" fill="#f4b942"/>
-  <rect x="176" y="280" width="128" height="18" rx="9" fill="#2b3f5c"/>
-  <rect x="176" y="316" width="88" height="18" rx="9" fill="#2b3f5c"/>
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#2b3f5c"/>
+      <stop offset="100%" stop-color="#121d30"/>
+    </radialGradient>
+    <radialGradient id="head" cx="38%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#e9e2d2"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <!-- tile -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- glow behind the head -->
+  <ellipse cx="200" cy="208" rx="120" ry="110" fill="#2ec4b6" opacity=".35" filter="url(#soft)"/>
+  <!-- tail: a wavy stroke, thick near the head, thinning to the tip -->
+  <path d="M258 262 C 300 300, 300 350, 338 372 S 400 392, 420 440" fill="none" stroke="#2ec4b6" stroke-width="30" stroke-linecap="round" opacity=".55"/>
+  <path d="M258 262 C 300 300, 300 350, 338 372 S 400 392, 420 440" fill="none" stroke="#fbf7ee" stroke-width="18" stroke-linecap="round"/>
+  <path d="M338 372 S 400 392, 420 440" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-linecap="round"/>
+  <!-- head -->
+  <ellipse cx="200" cy="208" rx="96" ry="84" fill="url(#head)" transform="rotate(-25 200 208)"/>
+  <ellipse cx="200" cy="208" rx="96" ry="84" fill="none" stroke="#2ec4b6" stroke-width="6" transform="rotate(-25 200 208)" opacity=".9"/>
+  <!-- face -->
+  <circle cx="178" cy="196" r="13" fill="#1b2a41"/>
+  <circle cx="222" cy="190" r="13" fill="#1b2a41"/>
+  <circle cx="183" cy="191" r="4.5" fill="#fff"/>
+  <circle cx="227" cy="185" r="4.5" fill="#fff"/>
+  <path d="M176 226 Q 202 246 228 222" fill="none" stroke="#1b2a41" stroke-width="7" stroke-linecap="round"/>
+  <!-- blush -->
+  <circle cx="156" cy="222" r="9" fill="#f4b942" opacity=".55"/>
+  <circle cx="244" cy="214" r="9" fill="#f4b942" opacity=".55"/>
+  <!-- motion sparkles -->
+  <circle cx="128" cy="120" r="6" fill="#f4b942"/>
+  <circle cx="96" cy="166" r="4" fill="#fbf7ee" opacity=".8"/>
+  <circle cx="150" cy="86" r="3.5" fill="#fbf7ee" opacity=".6"/>
 </svg>
