@@ -4,6 +4,7 @@ import { useGame } from '../state/store'
 import { COUNTRIES, COUNTRY_BY_CODE, countryName, randomName } from '../engine/people'
 import { Rng, newSeed } from '../engine/rng'
 import type { Gender } from '../engine/types'
+import { WorldMap } from './WorldMap'
 
 const randomCountry = () => COUNTRIES[Math.floor(Math.random() * COUNTRIES.length)].code
 
@@ -89,6 +90,7 @@ export function NewLifeScreen() {
         </div>
 
         <label className="block text-xs uppercase tracking-widest opacity-60 mb-1">{t('setup.country')}</label>
+        <div className="mb-2"><WorldMap value={country} onChange={setCountry} label={(code) => countryName(code, lang)} /></div>
         <button onClick={() => setPicking(true)} className="w-full flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-sm text-start active:scale-[0.99] transition">
           <span className="text-2xl">{c.flag}</span>
           <span className="flex-1 font-semibold">{countryName(country, lang)}</span>

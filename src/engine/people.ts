@@ -17,6 +17,9 @@ export interface Country {
   currency: string
   namePool: string
   monarchy: boolean
+  lat?: number
+  lon?: number
+  numeric?: string
 }
 
 export const COUNTRIES = countriesData as Country[]

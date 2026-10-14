@@ -13,7 +13,10 @@
   ],
   "currency": "AFN",
   "namePool": "ps",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 34.53,
+  "lon": 69.17,
+  "numeric": "004"
  },
  {
   "code": "AL",
@@ -29,7 +32,10 @@
   ],
   "currency": "ALL",
   "namePool": "sq",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 41.33,
+  "lon": 19.82,
+  "numeric": "008"
  },
  {
   "code": "DZ",
@@ -45,7 +51,10 @@
   ],
   "currency": "DZD",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 36.75,
+  "lon": 3.06,
+  "numeric": "012"
  },
  {
   "code": "AD",
@@ -61,7 +70,10 @@
   ],
   "currency": "EUR",
   "namePool": "es",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 42.51,
+  "lon": 1.52,
+  "numeric": "020"
  },
  {
   "code": "AO",
@@ -77,7 +89,10 @@
   ],
   "currency": "AOA",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -8.84,
+  "lon": 13.23,
+  "numeric": "024"
  },
  {
   "code": "AG",
@@ -93,7 +108,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 17.12,
+  "lon": -61.85,
+  "numeric": "028"
  },
  {
   "code": "AR",
@@ -109,7 +127,10 @@
   ],
   "currency": "ARS",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -34.6,
+  "lon": -58.38,
+  "numeric": "032"
  },
  {
   "code": "AM",
@@ -125,7 +146,10 @@
   ],
   "currency": "AMD",
   "namePool": "hy",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 40.18,
+  "lon": 44.51,
+  "numeric": "051"
  },
  {
   "code": "AU",
@@ -141,7 +165,10 @@
   ],
   "currency": "AUD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -35.28,
+  "lon": 149.13,
+  "numeric": "036"
  },
  {
   "code": "AT",
@@ -157,7 +184,10 @@
   ],
   "currency": "EUR",
   "namePool": "de",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 48.21,
+  "lon": 16.37,
+  "numeric": "040"
  },
  {
   "code": "AZ",
@@ -173,7 +203,10 @@
   ],
   "currency": "AZN",
   "namePool": "az",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 40.41,
+  "lon": 49.87,
+  "numeric": "031"
  },
  {
   "code": "BS",
@@ -189,7 +222,10 @@
   ],
   "currency": "BSD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 25.05,
+  "lon": -77.35,
+  "numeric": "044"
  },
  {
   "code": "BH",
@@ -205,7 +241,10 @@
   ],
   "currency": "BHD",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 26.23,
+  "lon": 50.59,
+  "numeric": "048"
  },
  {
   "code": "BD",
@@ -221,7 +260,10 @@
   ],
   "currency": "BDT",
   "namePool": "bn",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 23.81,
+  "lon": 90.41,
+  "numeric": "050"
  },
  {
   "code": "BB",
@@ -237,7 +279,10 @@
   ],
   "currency": "BBD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 13.1,
+  "lon": -59.61,
+  "numeric": "052"
  },
  {
   "code": "BY",
@@ -253,7 +298,10 @@
   ],
   "currency": "BYN",
   "namePool": "ru",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 53.9,
+  "lon": 27.57,
+  "numeric": "112"
  },
  {
   "code": "BE",
@@ -269,7 +317,10 @@
   ],
   "currency": "EUR",
   "namePool": "nl",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 50.85,
+  "lon": 4.35,
+  "numeric": "056"
  },
  {
   "code": "BZ",
@@ -285,7 +336,10 @@
   ],
   "currency": "BZD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 17.25,
+  "lon": -88.77,
+  "numeric": "084"
  },
  {
   "code": "BJ",
@@ -301,7 +355,10 @@
   ],
   "currency": "XOF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.5,
+  "lon": 2.63,
+  "numeric": "204"
  },
  {
   "code": "BT",
@@ -317,7 +374,10 @@
   ],
   "currency": "BTN",
   "namePool": "dz",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 27.47,
+  "lon": 89.64,
+  "numeric": "064"
  },
  {
   "code": "BO",
@@ -333,7 +393,10 @@
   ],
   "currency": "BOB",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -16.5,
+  "lon": -68.15,
+  "numeric": "068"
  },
  {
   "code": "BA",
@@ -349,7 +412,10 @@
   ],
   "currency": "BAM",
   "namePool": "sr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 43.86,
+  "lon": 18.41,
+  "numeric": "070"
  },
  {
   "code": "BW",
@@ -365,7 +431,10 @@
   ],
   "currency": "BWP",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -24.65,
+  "lon": 25.91,
+  "numeric": "072"
  },
  {
   "code": "BR",
@@ -381,7 +450,10 @@
   ],
   "currency": "BRL",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -15.79,
+  "lon": -47.88,
+  "numeric": "076"
  },
  {
   "code": "BN",
@@ -397,7 +469,10 @@
   ],
   "currency": "BND",
   "namePool": "ms",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 4.89,
+  "lon": 114.94,
+  "numeric": "096"
  },
  {
   "code": "BG",
@@ -413,7 +488,10 @@
   ],
   "currency": "BGN",
   "namePool": "bg",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 42.7,
+  "lon": 23.32,
+  "numeric": "100"
  },
  {
   "code": "BF",
@@ -429,7 +507,10 @@
   ],
   "currency": "XOF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 12.37,
+  "lon": -1.52,
+  "numeric": "854"
  },
  {
   "code": "BI",
@@ -445,7 +526,10 @@
   ],
   "currency": "BIF",
   "namePool": "rw",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -3.38,
+  "lon": 29.36,
+  "numeric": "108"
  },
  {
   "code": "CV",
@@ -461,7 +545,10 @@
   ],
   "currency": "CVE",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 14.93,
+  "lon": -23.51,
+  "numeric": "132"
  },
  {
   "code": "KH",
@@ -477,7 +564,10 @@
   ],
   "currency": "KHR",
   "namePool": "km",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 11.56,
+  "lon": 104.92,
+  "numeric": "116"
  },
  {
   "code": "CM",
@@ -493,7 +583,10 @@
   ],
   "currency": "XAF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 3.85,
+  "lon": 11.5,
+  "numeric": "120"
  },
  {
   "code": "CA",
@@ -509,7 +602,10 @@
   ],
   "currency": "CAD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 45.42,
+  "lon": -75.7,
+  "numeric": "124"
  },
  {
   "code": "CF",
@@ -525,7 +621,10 @@
   ],
   "currency": "XAF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 4.36,
+  "lon": 18.56,
+  "numeric": "140"
  },
  {
   "code": "TD",
@@ -541,7 +640,10 @@
   ],
   "currency": "XAF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 12.13,
+  "lon": 15.06,
+  "numeric": "148"
  },
  {
   "code": "CL",
@@ -557,7 +659,10 @@
   ],
   "currency": "CLP",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -33.45,
+  "lon": -70.67,
+  "numeric": "152"
  },
  {
   "code": "CN",
@@ -573,7 +678,10 @@
   ],
   "currency": "CNY",
   "namePool": "zh",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 39.9,
+  "lon": 116.41,
+  "numeric": "156"
  },
  {
   "code": "CO",
@@ -589,7 +697,10 @@
   ],
   "currency": "COP",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 4.71,
+  "lon": -74.07,
+  "numeric": "170"
  },
  {
   "code": "KM",
@@ -605,7 +716,10 @@
   ],
   "currency": "KMF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -11.7,
+  "lon": 43.26,
+  "numeric": "174"
  },
  {
   "code": "CG",
@@ -621,7 +735,10 @@
   ],
   "currency": "XAF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -4.27,
+  "lon": 15.28,
+  "numeric": "178"
  },
  {
   "code": "CR",
@@ -637,7 +754,10 @@
   ],
   "currency": "CRC",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 9.93,
+  "lon": -84.08,
+  "numeric": "188"
  },
  {
   "code": "CI",
@@ -653,7 +773,10 @@
   ],
   "currency": "XOF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.82,
+  "lon": -5.28,
+  "numeric": "384"
  },
  {
   "code": "HR",
@@ -669,7 +792,10 @@
   ],
   "currency": "EUR",
   "namePool": "hr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 45.81,
+  "lon": 15.98,
+  "numeric": "191"
  },
  {
   "code": "CU",
@@ -685,7 +811,10 @@
   ],
   "currency": "CUP",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 23.11,
+  "lon": -82.37,
+  "numeric": "192"
  },
  {
   "code": "CY",
@@ -701,7 +830,10 @@
   ],
   "currency": "EUR",
   "namePool": "el",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 35.19,
+  "lon": 33.38,
+  "numeric": "196"
  },
  {
   "code": "CZ",
@@ -717,7 +849,10 @@
   ],
   "currency": "CZK",
   "namePool": "cs",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 50.08,
+  "lon": 14.44,
+  "numeric": "203"
  },
  {
   "code": "DK",
@@ -733,7 +868,10 @@
   ],
   "currency": "DKK",
   "namePool": "da",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 55.68,
+  "lon": 12.57,
+  "numeric": "208"
  },
  {
   "code": "DJ",
@@ -749,7 +887,10 @@
   ],
   "currency": "DJF",
   "namePool": "so",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 11.59,
+  "lon": 43.15,
+  "numeric": "262"
  },
  {
   "code": "DM",
@@ -765,7 +906,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 15.3,
+  "lon": -61.39,
+  "numeric": "212"
  },
  {
   "code": "DO",
@@ -781,7 +925,10 @@
   ],
   "currency": "DOP",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 18.49,
+  "lon": -69.93,
+  "numeric": "214"
  },
  {
   "code": "CD",
@@ -797,7 +944,10 @@
   ],
   "currency": "CDF",
   "namePool": "ln",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -4.44,
+  "lon": 15.27,
+  "numeric": "180"
  },
  {
   "code": "EC",
@@ -813,7 +963,10 @@
   ],
   "currency": "USD",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -0.18,
+  "lon": -78.47,
+  "numeric": "218"
  },
  {
   "code": "EG",
@@ -829,7 +982,10 @@
   ],
   "currency": "EGP",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 30.04,
+  "lon": 31.24,
+  "numeric": "818"
  },
  {
   "code": "SV",
@@ -845,7 +1001,10 @@
   ],
   "currency": "USD",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 13.69,
+  "lon": -89.19,
+  "numeric": "222"
  },
  {
   "code": "GQ",
@@ -861,7 +1020,10 @@
   ],
   "currency": "XAF",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 3.75,
+  "lon": 8.78,
+  "numeric": "226"
  },
  {
   "code": "ER",
@@ -877,7 +1039,10 @@
   ],
   "currency": "ERN",
   "namePool": "ti",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 15.32,
+  "lon": 38.93,
+  "numeric": "232"
  },
  {
   "code": "EE",
@@ -893,7 +1058,10 @@
   ],
   "currency": "EUR",
   "namePool": "et",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 59.44,
+  "lon": 24.75,
+  "numeric": "233"
  },
  {
   "code": "SZ",
@@ -909,7 +1077,10 @@
   ],
   "currency": "SZL",
   "namePool": "zu",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -26.31,
+  "lon": 31.14,
+  "numeric": "748"
  },
  {
   "code": "ET",
@@ -925,7 +1096,10 @@
   ],
   "currency": "ETB",
   "namePool": "am",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 9.03,
+  "lon": 38.74,
+  "numeric": "231"
  },
  {
   "code": "FJ",
@@ -941,7 +1115,10 @@
   ],
   "currency": "FJD",
   "namePool": "fj",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -18.14,
+  "lon": 178.44,
+  "numeric": "242"
  },
  {
   "code": "FI",
@@ -957,7 +1134,10 @@
   ],
   "currency": "EUR",
   "namePool": "fi",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 60.17,
+  "lon": 24.94,
+  "numeric": "246"
  },
  {
   "code": "FR",
@@ -973,7 +1153,10 @@
   ],
   "currency": "EUR",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 48.86,
+  "lon": 2.35,
+  "numeric": "250"
  },
  {
   "code": "GA",
@@ -989,7 +1172,10 @@
   ],
   "currency": "XAF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 0.39,
+  "lon": 9.45,
+  "numeric": "266"
  },
  {
   "code": "GM",
@@ -1005,7 +1191,10 @@
   ],
   "currency": "GMD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 13.45,
+  "lon": -16.58,
+  "numeric": "270"
  },
  {
   "code": "GE",
@@ -1021,7 +1210,10 @@
   ],
   "currency": "GEL",
   "namePool": "ka",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 41.72,
+  "lon": 44.79,
+  "numeric": "268"
  },
  {
   "code": "DE",
@@ -1037,7 +1229,10 @@
   ],
   "currency": "EUR",
   "namePool": "de",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 52.52,
+  "lon": 13.4,
+  "numeric": "276"
  },
  {
   "code": "GH",
@@ -1053,7 +1248,10 @@
   ],
   "currency": "GHS",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 5.6,
+  "lon": -0.19,
+  "numeric": "288"
  },
  {
   "code": "GR",
@@ -1069,7 +1267,10 @@
   ],
   "currency": "EUR",
   "namePool": "el",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 37.98,
+  "lon": 23.73,
+  "numeric": "300"
  },
  {
   "code": "GD",
@@ -1085,7 +1286,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 12.05,
+  "lon": -61.75,
+  "numeric": "308"
  },
  {
   "code": "GT",
@@ -1101,7 +1305,10 @@
   ],
   "currency": "GTQ",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 14.63,
+  "lon": -90.51,
+  "numeric": "320"
  },
  {
   "code": "GN",
@@ -1117,7 +1324,10 @@
   ],
   "currency": "GNF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 9.64,
+  "lon": -13.58,
+  "numeric": "324"
  },
  {
   "code": "GW",
@@ -1133,7 +1343,10 @@
   ],
   "currency": "XOF",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 11.86,
+  "lon": -15.6,
+  "numeric": "624"
  },
  {
   "code": "GY",
@@ -1149,7 +1362,10 @@
   ],
   "currency": "GYD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.8,
+  "lon": -58.16,
+  "numeric": "328"
  },
  {
   "code": "HT",
@@ -1165,7 +1381,10 @@
   ],
   "currency": "HTG",
   "namePool": "ht",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 18.59,
+  "lon": -72.31,
+  "numeric": "332"
  },
  {
   "code": "HN",
@@ -1181,7 +1400,10 @@
   ],
   "currency": "HNL",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 14.07,
+  "lon": -87.19,
+  "numeric": "340"
  },
  {
   "code": "HU",
@@ -1197,7 +1419,10 @@
   ],
   "currency": "HUF",
   "namePool": "hu",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 47.5,
+  "lon": 19.04,
+  "numeric": "348"
  },
  {
   "code": "IS",
@@ -1213,7 +1438,10 @@
   ],
   "currency": "ISK",
   "namePool": "is",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 64.15,
+  "lon": -21.94,
+  "numeric": "352"
  },
  {
   "code": "IN",
@@ -1229,7 +1457,10 @@
   ],
   "currency": "INR",
   "namePool": "hi",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 28.61,
+  "lon": 77.21,
+  "numeric": "356"
  },
  {
   "code": "ID",
@@ -1245,7 +1476,10 @@
   ],
   "currency": "IDR",
   "namePool": "id",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -6.21,
+  "lon": 106.85,
+  "numeric": "360"
  },
  {
   "code": "IR",
@@ -1261,7 +1495,10 @@
   ],
   "currency": "IRR",
   "namePool": "fa",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 35.69,
+  "lon": 51.39,
+  "numeric": "364"
  },
  {
   "code": "IQ",
@@ -1277,7 +1514,10 @@
   ],
   "currency": "IQD",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 33.31,
+  "lon": 44.37,
+  "numeric": "368"
  },
  {
   "code": "IE",
@@ -1293,7 +1533,10 @@
   ],
   "currency": "EUR",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 53.35,
+  "lon": -6.26,
+  "numeric": "372"
  },
  {
   "code": "IL",
@@ -1309,7 +1552,10 @@
   ],
   "currency": "ILS",
   "namePool": "he",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 31.77,
+  "lon": 35.21,
+  "numeric": "376"
  },
  {
   "code": "IT",
@@ -1325,7 +1571,10 @@
   ],
   "currency": "EUR",
   "namePool": "it",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 41.9,
+  "lon": 12.5,
+  "numeric": "380"
  },
  {
   "code": "JM",
@@ -1341,7 +1590,10 @@
   ],
   "currency": "JMD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 18,
+  "lon": -76.79,
+  "numeric": "388"
  },
  {
   "code": "JP",
@@ -1357,7 +1609,10 @@
   ],
   "currency": "JPY",
   "namePool": "ja",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 35.68,
+  "lon": 139.69,
+  "numeric": "392"
  },
  {
   "code": "JO",
@@ -1373,7 +1628,10 @@
   ],
   "currency": "JOD",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 31.95,
+  "lon": 35.93,
+  "numeric": "400"
  },
  {
   "code": "KZ",
@@ -1389,7 +1647,10 @@
   ],
   "currency": "KZT",
   "namePool": "kk",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 51.17,
+  "lon": 71.43,
+  "numeric": "398"
  },
  {
   "code": "KE",
@@ -1405,7 +1666,10 @@
   ],
   "currency": "KES",
   "namePool": "sw",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -1.29,
+  "lon": 36.82,
+  "numeric": "404"
  },
  {
   "code": "KI",
@@ -1421,7 +1685,10 @@
   ],
   "currency": "AUD",
   "namePool": "ki",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 1.45,
+  "lon": 173.03,
+  "numeric": "296"
  },
  {
   "code": "XK",
@@ -1437,7 +1704,10 @@
   ],
   "currency": "EUR",
   "namePool": "sq",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 42.66,
+  "lon": 21.17,
+  "numeric": ""
  },
  {
   "code": "KW",
@@ -1453,7 +1723,10 @@
   ],
   "currency": "KWD",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 29.38,
+  "lon": 47.99,
+  "numeric": "414"
  },
  {
   "code": "KG",
@@ -1469,7 +1742,10 @@
   ],
   "currency": "KGS",
   "namePool": "ky",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 42.87,
+  "lon": 74.59,
+  "numeric": "417"
  },
  {
   "code": "LA",
@@ -1485,7 +1761,10 @@
   ],
   "currency": "LAK",
   "namePool": "lo",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 17.97,
+  "lon": 102.63,
+  "numeric": "418"
  },
  {
   "code": "LV",
@@ -1501,7 +1780,10 @@
   ],
   "currency": "EUR",
   "namePool": "lv",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 56.95,
+  "lon": 24.11,
+  "numeric": "428"
  },
  {
   "code": "LB",
@@ -1517,7 +1799,10 @@
   ],
   "currency": "LBP",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 33.89,
+  "lon": 35.5,
+  "numeric": "422"
  },
  {
   "code": "LS",
@@ -1533,7 +1818,10 @@
   ],
   "currency": "LSL",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -29.31,
+  "lon": 27.48,
+  "numeric": "426"
  },
  {
   "code": "LR",
@@ -1549,7 +1837,10 @@
   ],
   "currency": "LRD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.3,
+  "lon": -10.8,
+  "numeric": "430"
  },
  {
   "code": "LY",
@@ -1565,7 +1856,10 @@
   ],
   "currency": "LYD",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 32.89,
+  "lon": 13.19,
+  "numeric": "434"
  },
  {
   "code": "LI",
@@ -1581,7 +1875,10 @@
   ],
   "currency": "CHF",
   "namePool": "de",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 47.14,
+  "lon": 9.52,
+  "numeric": "438"
  },
  {
   "code": "LT",
@@ -1597,7 +1894,10 @@
   ],
   "currency": "EUR",
   "namePool": "lt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 54.69,
+  "lon": 25.28,
+  "numeric": "440"
  },
  {
   "code": "LU",
@@ -1613,7 +1913,10 @@
   ],
   "currency": "EUR",
   "namePool": "fr",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 49.61,
+  "lon": 6.13,
+  "numeric": "442"
  },
  {
   "code": "MG",
@@ -1629,7 +1932,10 @@
   ],
   "currency": "MGA",
   "namePool": "mg",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -18.88,
+  "lon": 47.51,
+  "numeric": "450"
  },
  {
   "code": "MW",
@@ -1645,7 +1951,10 @@
   ],
   "currency": "MWK",
   "namePool": "ny",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -13.96,
+  "lon": 33.77,
+  "numeric": "454"
  },
  {
   "code": "MY",
@@ -1661,7 +1970,10 @@
   ],
   "currency": "MYR",
   "namePool": "ms",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 3.14,
+  "lon": 101.69,
+  "numeric": "458"
  },
  {
   "code": "MV",
@@ -1677,7 +1989,10 @@
   ],
   "currency": "MVR",
   "namePool": "si",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 4.18,
+  "lon": 73.51,
+  "numeric": "462"
  },
  {
   "code": "ML",
@@ -1693,7 +2008,10 @@
   ],
   "currency": "XOF",
   "namePool": "ff",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 12.64,
+  "lon": -8,
+  "numeric": "466"
  },
  {
   "code": "MT",
@@ -1709,7 +2027,10 @@
   ],
   "currency": "EUR",
   "namePool": "mt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 35.9,
+  "lon": 14.51,
+  "numeric": "470"
  },
  {
   "code": "MH",
@@ -1725,7 +2046,10 @@
   ],
   "currency": "USD",
   "namePool": "mh",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 7.09,
+  "lon": 171.38,
+  "numeric": "584"
  },
  {
   "code": "MR",
@@ -1741,7 +2065,10 @@
   ],
   "currency": "MRU",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 18.09,
+  "lon": -15.98,
+  "numeric": "478"
  },
  {
   "code": "MU",
@@ -1757,7 +2084,10 @@
   ],
   "currency": "MUR",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -20.16,
+  "lon": 57.5,
+  "numeric": "480"
  },
  {
   "code": "MX",
@@ -1773,7 +2103,10 @@
   ],
   "currency": "MXN",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 19.43,
+  "lon": -99.13,
+  "numeric": "484"
  },
  {
   "code": "FM",
@@ -1789,7 +2122,10 @@
   ],
   "currency": "USD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.92,
+  "lon": 158.16,
+  "numeric": "583"
  },
  {
   "code": "MD",
@@ -1805,7 +2141,10 @@
   ],
   "currency": "MDL",
   "namePool": "ro",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 47.01,
+  "lon": 28.86,
+  "numeric": "498"
  },
  {
   "code": "MC",
@@ -1821,7 +2160,10 @@
   ],
   "currency": "EUR",
   "namePool": "fr",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 43.74,
+  "lon": 7.42,
+  "numeric": "492"
  },
  {
   "code": "MN",
@@ -1837,7 +2179,10 @@
   ],
   "currency": "MNT",
   "namePool": "mn",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 47.89,
+  "lon": 106.91,
+  "numeric": "496"
  },
  {
   "code": "ME",
@@ -1853,7 +2198,10 @@
   ],
   "currency": "EUR",
   "namePool": "sr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 42.44,
+  "lon": 19.26,
+  "numeric": "499"
  },
  {
   "code": "MA",
@@ -1869,7 +2217,10 @@
   ],
   "currency": "MAD",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 34.02,
+  "lon": -6.84,
+  "numeric": "504"
  },
  {
   "code": "MZ",
@@ -1885,7 +2236,10 @@
   ],
   "currency": "MZN",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -25.97,
+  "lon": 32.57,
+  "numeric": "508"
  },
  {
   "code": "MM",
@@ -1901,7 +2255,10 @@
   ],
   "currency": "MMK",
   "namePool": "my",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 19.76,
+  "lon": 96.08,
+  "numeric": "104"
  },
  {
   "code": "NA",
@@ -1917,7 +2274,10 @@
   ],
   "currency": "NAD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -22.56,
+  "lon": 17.08,
+  "numeric": "516"
  },
  {
   "code": "NR",
@@ -1933,7 +2293,10 @@
   ],
   "currency": "AUD",
   "namePool": "nr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -0.55,
+  "lon": 166.92,
+  "numeric": "520"
  },
  {
   "code": "NP",
@@ -1949,7 +2312,10 @@
   ],
   "currency": "NPR",
   "namePool": "ne",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 27.72,
+  "lon": 85.32,
+  "numeric": "524"
  },
  {
   "code": "NL",
@@ -1965,7 +2331,10 @@
   ],
   "currency": "EUR",
   "namePool": "nl",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 52.37,
+  "lon": 4.9,
+  "numeric": "528"
  },
  {
   "code": "NZ",
@@ -1981,7 +2350,10 @@
   ],
   "currency": "NZD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -41.29,
+  "lon": 174.78,
+  "numeric": "554"
  },
  {
   "code": "NI",
@@ -1997,7 +2369,10 @@
   ],
   "currency": "NIO",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 12.11,
+  "lon": -86.24,
+  "numeric": "558"
  },
  {
   "code": "NE",
@@ -2013,7 +2388,10 @@
   ],
   "currency": "XOF",
   "namePool": "ha",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 13.51,
+  "lon": 2.11,
+  "numeric": "562"
  },
  {
   "code": "NG",
@@ -2029,7 +2407,10 @@
   ],
   "currency": "NGN",
   "namePool": "yo",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 9.08,
+  "lon": 7.4,
+  "numeric": "566"
  },
  {
   "code": "KP",
@@ -2045,7 +2426,10 @@
   ],
   "currency": "KPW",
   "namePool": "ko",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 39.04,
+  "lon": 125.76,
+  "numeric": "408"
  },
  {
   "code": "MK",
@@ -2061,7 +2445,10 @@
   ],
   "currency": "MKD",
   "namePool": "bg",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 42,
+  "lon": 21.43,
+  "numeric": "807"
  },
  {
   "code": "NO",
@@ -2077,7 +2464,10 @@
   ],
   "currency": "NOK",
   "namePool": "no",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 59.91,
+  "lon": 10.75,
+  "numeric": "578"
  },
  {
   "code": "OM",
@@ -2093,7 +2483,10 @@
   ],
   "currency": "OMR",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 23.59,
+  "lon": 58.41,
+  "numeric": "512"
  },
  {
   "code": "PK",
@@ -2109,7 +2502,10 @@
   ],
   "currency": "PKR",
   "namePool": "ur",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 33.69,
+  "lon": 73.05,
+  "numeric": "586"
  },
  {
   "code": "PW",
@@ -2125,23 +2521,10 @@
   ],
   "currency": "USD",
   "namePool": "pw",
-  "monarchy": false
- },
- {
-  "code": "PS",
-  "name": "Palestine",
-  "nameHe": "פלסטין",
-  "flag": "🇵🇸",
-  "cities": [
-   "Gaza",
-   "Ramallah",
-   "Hebron",
-   "Nablus",
-   "Bethlehem"
-  ],
-  "currency": "ILS",
-  "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 7.5,
+  "lon": 134.62,
+  "numeric": "585"
  },
  {
   "code": "PA",
@@ -2157,7 +2540,10 @@
   ],
   "currency": "PAB",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 8.98,
+  "lon": -79.52,
+  "numeric": "591"
  },
  {
   "code": "PG",
@@ -2173,7 +2559,10 @@
   ],
   "currency": "PGK",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -9.44,
+  "lon": 147.18,
+  "numeric": "598"
  },
  {
   "code": "PY",
@@ -2189,7 +2578,10 @@
   ],
   "currency": "PYG",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -25.26,
+  "lon": -57.58,
+  "numeric": "600"
  },
  {
   "code": "PE",
@@ -2205,7 +2597,10 @@
   ],
   "currency": "PEN",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -12.05,
+  "lon": -77.04,
+  "numeric": "604"
  },
  {
   "code": "PH",
@@ -2221,7 +2616,10 @@
   ],
   "currency": "PHP",
   "namePool": "tl",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 14.6,
+  "lon": 120.98,
+  "numeric": "608"
  },
  {
   "code": "PL",
@@ -2237,7 +2635,10 @@
   ],
   "currency": "PLN",
   "namePool": "pl",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 52.23,
+  "lon": 21.01,
+  "numeric": "616"
  },
  {
   "code": "PT",
@@ -2253,7 +2654,10 @@
   ],
   "currency": "EUR",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 38.72,
+  "lon": -9.14,
+  "numeric": "620"
  },
  {
   "code": "QA",
@@ -2269,7 +2673,10 @@
   ],
   "currency": "QAR",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 25.29,
+  "lon": 51.53,
+  "numeric": "634"
  },
  {
   "code": "RO",
@@ -2285,7 +2692,10 @@
   ],
   "currency": "RON",
   "namePool": "ro",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 44.43,
+  "lon": 26.1,
+  "numeric": "642"
  },
  {
   "code": "RU",
@@ -2301,7 +2711,10 @@
   ],
   "currency": "RUB",
   "namePool": "ru",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 55.76,
+  "lon": 37.62,
+  "numeric": "643"
  },
  {
   "code": "RW",
@@ -2317,7 +2730,10 @@
   ],
   "currency": "RWF",
   "namePool": "rw",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -1.95,
+  "lon": 30.06,
+  "numeric": "646"
  },
  {
   "code": "KN",
@@ -2333,7 +2749,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 17.3,
+  "lon": -62.72,
+  "numeric": "659"
  },
  {
   "code": "LC",
@@ -2349,7 +2768,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 14.01,
+  "lon": -60.99,
+  "numeric": "662"
  },
  {
   "code": "VC",
@@ -2365,7 +2787,10 @@
   ],
   "currency": "XCD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 13.16,
+  "lon": -61.22,
+  "numeric": "670"
  },
  {
   "code": "WS",
@@ -2381,7 +2806,10 @@
   ],
   "currency": "WST",
   "namePool": "sm",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -13.83,
+  "lon": -171.76,
+  "numeric": "882"
  },
  {
   "code": "SM",
@@ -2397,7 +2825,10 @@
   ],
   "currency": "EUR",
   "namePool": "it",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 43.94,
+  "lon": 12.45,
+  "numeric": "674"
  },
  {
   "code": "ST",
@@ -2413,7 +2844,10 @@
   ],
   "currency": "STN",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 0.34,
+  "lon": 6.73,
+  "numeric": "678"
  },
  {
   "code": "SA",
@@ -2429,7 +2863,10 @@
   ],
   "currency": "SAR",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 24.71,
+  "lon": 46.68,
+  "numeric": "682"
  },
  {
   "code": "SN",
@@ -2445,7 +2882,10 @@
   ],
   "currency": "XOF",
   "namePool": "wo",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 14.72,
+  "lon": -17.47,
+  "numeric": "686"
  },
  {
   "code": "RS",
@@ -2461,7 +2901,10 @@
   ],
   "currency": "RSD",
   "namePool": "sr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 44.79,
+  "lon": 20.45,
+  "numeric": "688"
  },
  {
   "code": "SC",
@@ -2477,7 +2920,10 @@
   ],
   "currency": "SCR",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -4.62,
+  "lon": 55.45,
+  "numeric": "690"
  },
  {
   "code": "SL",
@@ -2493,7 +2939,10 @@
   ],
   "currency": "SLE",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 8.48,
+  "lon": -13.23,
+  "numeric": "694"
  },
  {
   "code": "SG",
@@ -2509,7 +2958,10 @@
   ],
   "currency": "SGD",
   "namePool": "zh",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 1.35,
+  "lon": 103.82,
+  "numeric": "702"
  },
  {
   "code": "SK",
@@ -2525,7 +2977,10 @@
   ],
   "currency": "EUR",
   "namePool": "cs",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 48.15,
+  "lon": 17.11,
+  "numeric": "703"
  },
  {
   "code": "SI",
@@ -2541,7 +2996,10 @@
   ],
   "currency": "EUR",
   "namePool": "hr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 46.06,
+  "lon": 14.51,
+  "numeric": "705"
  },
  {
   "code": "SB",
@@ -2557,7 +3015,10 @@
   ],
   "currency": "SBD",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -9.43,
+  "lon": 159.95,
+  "numeric": "090"
  },
  {
   "code": "SO",
@@ -2573,7 +3034,10 @@
   ],
   "currency": "SOS",
   "namePool": "so",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 2.05,
+  "lon": 45.32,
+  "numeric": "706"
  },
  {
   "code": "ZA",
@@ -2589,7 +3053,10 @@
   ],
   "currency": "ZAR",
   "namePool": "zu",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -25.75,
+  "lon": 28.19,
+  "numeric": "710"
  },
  {
   "code": "KR",
@@ -2605,7 +3072,10 @@
   ],
   "currency": "KRW",
   "namePool": "ko",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 37.57,
+  "lon": 126.98,
+  "numeric": "410"
  },
  {
   "code": "SS",
@@ -2621,7 +3091,10 @@
   ],
   "currency": "SSP",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 4.85,
+  "lon": 31.58,
+  "numeric": "728"
  },
  {
   "code": "ES",
@@ -2637,7 +3110,10 @@
   ],
   "currency": "EUR",
   "namePool": "es",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 40.42,
+  "lon": -3.7,
+  "numeric": "724"
  },
  {
   "code": "LK",
@@ -2653,7 +3129,10 @@
   ],
   "currency": "LKR",
   "namePool": "si",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.93,
+  "lon": 79.86,
+  "numeric": "144"
  },
  {
   "code": "SD",
@@ -2669,7 +3148,10 @@
   ],
   "currency": "SDG",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 15.5,
+  "lon": 32.56,
+  "numeric": "729"
  },
  {
   "code": "SR",
@@ -2685,7 +3167,10 @@
   ],
   "currency": "SRD",
   "namePool": "nl",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 5.85,
+  "lon": -55.2,
+  "numeric": "740"
  },
  {
   "code": "SE",
@@ -2701,7 +3186,10 @@
   ],
   "currency": "SEK",
   "namePool": "sv",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 59.33,
+  "lon": 18.07,
+  "numeric": "752"
  },
  {
   "code": "CH",
@@ -2717,7 +3205,10 @@
   ],
   "currency": "CHF",
   "namePool": "de",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 46.95,
+  "lon": 7.45,
+  "numeric": "756"
  },
  {
   "code": "SY",
@@ -2733,7 +3224,10 @@
   ],
   "currency": "SYP",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 33.51,
+  "lon": 36.29,
+  "numeric": "760"
  },
  {
   "code": "TW",
@@ -2749,7 +3243,10 @@
   ],
   "currency": "TWD",
   "namePool": "zh",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 25.03,
+  "lon": 121.57,
+  "numeric": "158"
  },
  {
   "code": "TJ",
@@ -2765,7 +3262,10 @@
   ],
   "currency": "TJS",
   "namePool": "tg",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 38.56,
+  "lon": 68.77,
+  "numeric": "762"
  },
  {
   "code": "TZ",
@@ -2781,7 +3281,10 @@
   ],
   "currency": "TZS",
   "namePool": "sw",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -6.16,
+  "lon": 35.75,
+  "numeric": "834"
  },
  {
   "code": "TH",
@@ -2797,7 +3300,10 @@
   ],
   "currency": "THB",
   "namePool": "th",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 13.76,
+  "lon": 100.5,
+  "numeric": "764"
  },
  {
   "code": "TL",
@@ -2813,7 +3319,10 @@
   ],
   "currency": "USD",
   "namePool": "pt",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -8.56,
+  "lon": 125.57,
+  "numeric": "626"
  },
  {
   "code": "TG",
@@ -2829,7 +3338,10 @@
   ],
   "currency": "XOF",
   "namePool": "fr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 6.13,
+  "lon": 1.22,
+  "numeric": "768"
  },
  {
   "code": "TO",
@@ -2845,7 +3357,10 @@
   ],
   "currency": "TOP",
   "namePool": "to",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -21.14,
+  "lon": -175.2,
+  "numeric": "776"
  },
  {
   "code": "TT",
@@ -2861,7 +3376,10 @@
   ],
   "currency": "TTD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 10.66,
+  "lon": -61.51,
+  "numeric": "780"
  },
  {
   "code": "TN",
@@ -2877,7 +3395,10 @@
   ],
   "currency": "TND",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 36.81,
+  "lon": 10.18,
+  "numeric": "788"
  },
  {
   "code": "TR",
@@ -2893,7 +3414,10 @@
   ],
   "currency": "TRY",
   "namePool": "tr",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 39.93,
+  "lon": 32.86,
+  "numeric": "792"
  },
  {
   "code": "TM",
@@ -2909,7 +3433,10 @@
   ],
   "currency": "TMT",
   "namePool": "tk",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 37.96,
+  "lon": 58.33,
+  "numeric": "795"
  },
  {
   "code": "TV",
@@ -2925,7 +3452,10 @@
   ],
   "currency": "AUD",
   "namePool": "tv",
-  "monarchy": true
+  "monarchy": true,
+  "lat": -8.52,
+  "lon": 179.2,
+  "numeric": "798"
  },
  {
   "code": "UG",
@@ -2941,7 +3471,10 @@
   ],
   "currency": "UGX",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 0.35,
+  "lon": 32.58,
+  "numeric": "800"
  },
  {
   "code": "UA",
@@ -2957,7 +3490,10 @@
   ],
   "currency": "UAH",
   "namePool": "uk",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 50.45,
+  "lon": 30.52,
+  "numeric": "804"
  },
  {
   "code": "AE",
@@ -2973,7 +3509,10 @@
   ],
   "currency": "AED",
   "namePool": "ar",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 24.45,
+  "lon": 54.38,
+  "numeric": "784"
  },
  {
   "code": "GB",
@@ -2989,7 +3528,10 @@
   ],
   "currency": "GBP",
   "namePool": "en",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 51.51,
+  "lon": -0.13,
+  "numeric": "826"
  },
  {
   "code": "US",
@@ -3005,7 +3547,10 @@
   ],
   "currency": "USD",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 38.9,
+  "lon": -77.04,
+  "numeric": "840"
  },
  {
   "code": "UY",
@@ -3021,7 +3566,10 @@
   ],
   "currency": "UYU",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -34.9,
+  "lon": -56.16,
+  "numeric": "858"
  },
  {
   "code": "UZ",
@@ -3037,7 +3585,10 @@
   ],
   "currency": "UZS",
   "namePool": "uz",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 41.3,
+  "lon": 69.24,
+  "numeric": "860"
  },
  {
   "code": "VU",
@@ -3053,7 +3604,10 @@
   ],
   "currency": "VUV",
   "namePool": "bi",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -17.73,
+  "lon": 168.32,
+  "numeric": "548"
  },
  {
   "code": "VA",
@@ -3065,7 +3619,10 @@
   ],
   "currency": "EUR",
   "namePool": "it",
-  "monarchy": true
+  "monarchy": true,
+  "lat": 41.9,
+  "lon": 12.45,
+  "numeric": "336"
  },
  {
   "code": "VE",
@@ -3081,7 +3638,10 @@
   ],
   "currency": "VES",
   "namePool": "es",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 10.48,
+  "lon": -66.9,
+  "numeric": "862"
  },
  {
   "code": "VN",
@@ -3097,7 +3657,10 @@
   ],
   "currency": "VND",
   "namePool": "vi",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 21.03,
+  "lon": 105.85,
+  "numeric": "704"
  },
  {
   "code": "YE",
@@ -3113,7 +3676,10 @@
   ],
   "currency": "YER",
   "namePool": "ar",
-  "monarchy": false
+  "monarchy": false,
+  "lat": 15.37,
+  "lon": 44.19,
+  "numeric": "887"
  },
  {
   "code": "ZM",
@@ -3129,7 +3695,10 @@
   ],
   "currency": "ZMW",
   "namePool": "en",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -15.39,
+  "lon": 28.32,
+  "numeric": "894"
  },
  {
   "code": "ZW",
@@ -3145,6 +3714,9 @@
   ],
   "currency": "ZWL",
   "namePool": "sn",
-  "monarchy": false
+  "monarchy": false,
+  "lat": -17.83,
+  "lon": 31.05,
+  "numeric": "716"
  }
 ]
