@@ -1540,6 +1540,41 @@
           "minYears": 10
         }
       ]
+    },
+    {
+      "id": "dealer",
+      "emoji": "🌿",
+      "requires": {
+        "education": "none",
+        "minAge": 18
+      },
+      "ladder": [
+        {
+          "id": "runner",
+          "salary": 30000,
+          "minYears": 0
+        },
+        {
+          "id": "corner_boss",
+          "salary": 70000,
+          "minYears": 1
+        },
+        {
+          "id": "distributor",
+          "salary": 180000,
+          "minYears": 3
+        },
+        {
+          "id": "lieutenant",
+          "salary": 450000,
+          "minYears": 6
+        },
+        {
+          "id": "cartel_chief",
+          "salary": 1500000,
+          "minYears": 10
+        }
+      ]
     }
   ]
 }

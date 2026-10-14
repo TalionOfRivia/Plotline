@@ -125,7 +125,7 @@ export function canApplyAstronaut(life: Life) {
 }
 export function applyAstronaut(life: Life, rng: Rng) {
   if (!canApplyAstronaut(life)) return false
-  if (rng.chance(0.4)) { life.flags.astronaut_program = true; log(life, 'good', 'space.accepted'); return true }
+  if (rng.chance(life.flags.space_camp ? 0.6 : 0.4)) { life.flags.astronaut_program = true; log(life, 'good', 'space.accepted'); return true }
   log(life, 'bad', 'space.rejected'); return false
 }
 export function canApplyAgent(life: Life) {

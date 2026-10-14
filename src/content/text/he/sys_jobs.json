@@ -442,6 +442,16 @@
         "brand": "בעל/ת מותג",
         "empire": "אימפריית מדיה"
       }
+    },
+    "dealer": {
+      "name": "קרטל",
+      "ladder": {
+        "runner": "שליח",
+        "corner_boss": "בוס של פינה",
+        "distributor": "מפיץ",
+        "lieutenant": "סגן",
+        "cartel_chief": "ראש הקרטל"
+      }
     }
   }
 }

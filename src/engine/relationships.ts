@@ -1,13 +1,28 @@
-import type { Life, Person } from './types'
+import type { Gender, Life, Person } from './types'
 import type { Rng } from './rng'
 import { makePerson } from './people'
 import { clamp, log, use, used } from './util'
 import { addChild, breakup, marry } from './effects'
 
+export type Attraction = 'opposite' | 'same' | 'both'
+export function attraction(life: Life): Attraction {
+  const a = life.flags.attraction
+  return a === 'same' || a === 'both' ? a : 'opposite'
+}
+export function attractedTo(life: Life, g: Gender) {
+  const a = attraction(life)
+  return a === 'both' || (a === 'same' ? g === life.gender : g !== life.gender)
+}
+export function dateGender(life: Life, rng: Rng): Gender {
+  const a = attraction(life)
+  if (a === 'both') return rng.chance(0.5) ? 'female' : 'male'
+  return a === 'same' ? life.gender : life.gender === 'female' ? 'male' : 'female'
+}
+
 export type Interaction =
   | 'spend_time' | 'gift' | 'compliment' | 'insult' | 'ask_money' | 'flirt' | 'propose' | 'break_up'
   | 'have_child' | 'adopt' | 'prenup' | 'play' | 'walk' | 'movie_night' | 'vacation'
-  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up'
+  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up' | 'ask_out'
 
 export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['kind'][] | 'all'; minAge: number }> = {
   spend_time: { cost: 0, kinds: 'all', minAge: 0 },
@@ -32,6 +47,7 @@ export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['ki
   rumor: { cost: 0, kinds: ['friend', 'sibling', 'ex'], minAge: 8 },
   deal: { cost: 0, kinds: ['friend', 'sibling'], minAge: 12 },
   hook_up: { cost: 0, kinds: ['partner', 'spouse', 'friend', 'ex'], minAge: 18 },
+  ask_out: { cost: 0, kinds: ['friend', 'ex'], minAge: 15 },
 }
 
 export function availableInteractions(life: Life, p: Person): Interaction[] {
@@ -43,6 +59,7 @@ export function availableInteractions(life: Life, p: Person): Interaction[] {
     if ((k === 'have_child' || k === 'adopt') && life.age > 55) return false
     if (life.prison && !['spend_time', 'compliment', 'insult', 'break_up', 'conversation'].includes(k)) return false
     if (k === 'conversation' && p.kind === 'pet') return false
+    if (k === 'ask_out' && (life.people.some((x) => (x.kind === 'partner' || x.kind === 'spouse') && x.alive) || !attractedTo(life, p.gender))) return false
     return true
   })
 }
@@ -91,6 +108,9 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
     case 'prank': if (rng.chance(0.5)) { bump(rng.int(3, 7)); happy(4) } else { bump(-rng.int(6, 12)); key = 'people.did.prank_flop' } break
     case 'rumor': p.relationship = clamp(p.relationship - rng.int(8, 15)); life.karma = clamp(life.karma - 5, -100, 100); happy(1); break
     case 'deal': { const cash = rng.int(50, 600); if (rng.chance(0.7)) { life.money += cash; bump(-2); key = 'people.did.deal_yes'; log(life, 'info', key, { name: p.firstName, money: cash }); return key } bump(-5); key = 'people.did.deal_no'; break }
+    case 'ask_out':
+      if (rng.chance(0.25 + warm * 0.6)) { p.kind = 'partner'; p.relationship = clamp(p.relationship + 10); happy(8); log(life, 'good', 'people.newPartner', { name: p.firstName }); return 'people.newPartner' }
+      bump(-6); key = 'people.did.ask_out_no'; break
     case 'hook_up': {
       const isPartner = p.kind === 'partner' || p.kind === 'spouse'
       if (!isPartner) {
@@ -112,12 +132,11 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
 /** Candidate partners for the date board. */
 export function refreshDateBoard(life: Life, rng: Rng) {
   if (life.age < 15) { life.dateBoard = []; return }
-  const gender = life.flags.prefers_same_gender ? life.gender : life.gender === 'female' ? 'male' : 'female'
   const spread = life.age < 18 ? 1 : 6
   life.dateBoard = Array.from({ length: 4 }, () =>
     makePerson(rng, life.countryCode, 'partner', {
       age: clamp(life.age + rng.int(-spread, spread), life.age < 18 ? 15 : 18, 99),
-      gender,
+      gender: dateGender(life, rng),
       relationship: rng.int(40, 70),
       income: life.age >= 18 ? rng.int(15_000, 120_000) : 0,
     }))

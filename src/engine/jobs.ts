@@ -139,6 +139,15 @@ export function workYear(life: Life, rng: Rng) {
     life.job = null
     life.stats.happiness = clamp(life.stats.happiness - 8)
   }
+  // cartel work: the police are always a few steps behind
+  if (life.job?.trackId === 'dealer' && rng.chance(0.08 + job.rung * 0.02)) {
+    life.convictions++
+    life.job = null
+    life.prison = { yearsLeft: rng.int(2, 6) + job.rung * 2, served: 0, crimeId: 'drug_dealing' }
+    life.stats.happiness = clamp(life.stats.happiness - 20)
+    log(life, 'bad', 'work.busted')
+    return
+  }
   // forced retirement
   if (life.job && life.age >= 70 && rng.chance(0.3)) retire(life)
 }

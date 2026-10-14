@@ -1,0 +1,617 @@
+{
+  "vc_club_night": {
+    "text": "The club has a line around the block and a bass line you can feel in your teeth. Your friends are already inside.",
+    "choices": {
+      "dance": "Dance until sunrise",
+      "vip": "Splurge on a VIP table",
+      "early": "Leave after one drink"
+    },
+    "outcomes": {
+      "dance_epic": "The DJ reads your mind. You leave at dawn, hoarse and glowing.",
+      "dance_ankle": "Someone stomps your foot and you hobble home on one heel."
+    }
+  },
+  "vc_bouncer": {
+    "text": "The bouncer looks at your shoes, then your face, then shakes his head. \"Not tonight.\"",
+    "choices": {
+      "charm": "Charm your way in",
+      "argue": "Argue with the bouncer",
+      "bar": "Find another bar"
+    },
+    "outcomes": {
+      "charm_in": "He smirks, unhooks the rope and mutters \"behave.\"",
+      "charm_no": "Your charm bounces off him like rain off a truck.",
+      "argue_thrown": "You get a shove and a lecture on your dress code, mostly the shove.",
+      "argue_bribe": "A folded bill ends the debate. You are in, and $100 poorer."
+    }
+  },
+  "vc_bar_fight": {
+    "text": "A guy knocks your drink out of your hand and does not apologize. His friends are drifting closer.",
+    "choices": {
+      "punch": "Throw the first punch",
+      "walk": "Walk away",
+      "separate": "Break it up"
+    },
+    "outcomes": {
+      "punch_win": "You land one clean and the other guy folds. Your knuckles will remember this.",
+      "punch_beat": "You wake up with a split lip, a black eye, and a very personal ER bill.",
+      "punch_arrest": "Police arrive. You spend the night in a cell and a morning in front of a judge.",
+      "punch_dead": "A broken bottle changes everything. It is over before the ambulance turns the corner.",
+      "separate_hero": "The two goons shake hands. Someone buys you a drink.",
+      "separate_elbow": "You take an elbow to the eye for your trouble."
+    }
+  },
+  "vc_drunk_text_ex": {
+    "text": "It is 2am, the bar is closing, and your thumb hovers over {{name}}'s name. You wrote a really good paragraph.",
+    "choices": {
+      "send": "Send the 2am text",
+      "delete": "Delete the draft",
+      "friend": "Give your phone to a friend"
+    },
+    "outcomes": {
+      "send_warm": "{{name}} replies with a heart. The conversation is tender, brief, and a terrible idea.",
+      "send_left": "Read at 2:03. No reply. You stare at the ceiling until morning.",
+      "send_blocked": "The message will not deliver. {{name}} blocked you at some point and you never noticed."
+    }
+  },
+  "vc_wake_up_strange": {
+    "text": "You wake up on a couch you have never seen before. There is a traffic cone on the coffee table. Your phone is at 3%.",
+    "choices": {
+      "look": "Look around",
+      "sneak": "Sneak out quietly",
+      "uber": "Call a ride and go home"
+    },
+    "outcomes": {
+      "look_kind": "A stranger hands you toast and a glass of water. Nobody judges. You make a friend.",
+      "look_robbed": "Your wallet and your left shoe are gone. Both a mystery.",
+      "look_roof": "You are on a rooftop with six strangers, a speaker, and the best view in town."
+    }
+  },
+  "vc_bartender_likes": {
+    "text": "The bartender remembers your drink, laughs at your jokes, and keeps refilling your water for free. Interesting.",
+    "choices": {
+      "ask": "Ask them out",
+      "tip": "Just tip big",
+      "regular": "Become a regular"
+    },
+    "outcomes": {
+      "ask_yes": "They slide their number across the bar with the receipt. It starts with a drink and ends with a date.",
+      "ask_no": "They smile politely. \"I don't date customers.\" You tip well anyway."
+    }
+  },
+  "vc_afterparty": {
+    "text": "The club lights come on. A stranger waves a house key. \"Penthouse. Fifteen minutes. Bring ice.\"",
+    "choices": {
+      "stay": "Stay for the afterparty",
+      "home": "Call it a night"
+    },
+    "outcomes": {
+      "stay_legend": "Someone plays piano at 5am. You will talk about this night for years.",
+      "stay_mess": "You break a lamp that was not yours. Strangers split the cost. You still owe an apology.",
+      "stay_hook": "You talk on the balcony until the sun comes up. Their number is already in your phone."
+    }
+  },
+  "vc_karaoke": {
+    "text": "It is karaoke night, you are three drinks deep, and the host calls your name. Somebody signed you up.",
+    "choices": {
+      "sing": "Grab the mic",
+      "duet": "Pull a friend up",
+      "watch": "Cheer from the booth"
+    },
+    "outcomes": {
+      "sing_star": "You hit the high note by accident. The room loses its mind.",
+      "sing_cringe": "Nobody told you the lyrics were that long. Someone films it."
+    }
+  },
+  "vc_bar_tab": {
+    "text": "The bill lands: $780. Twelve people, one card, and a creative round of tequila nobody remembers ordering.",
+    "choices": {
+      "split": "Split it evenly",
+      "cover": "Cover the whole table",
+      "dash": "Dine and dash"
+    },
+    "outcomes": {
+      "dash_clean": "You vanish into the night like a ghost. A free evening, with a small knot of guilt.",
+      "dash_caught": "The owner is faster than he looks. You pay the tab, a fine, and a lot of dignity."
+    }
+  },
+  "vc_dj_booth": {
+    "text": "You squeeze up to the DJ booth. The playlist is great. The one song you want is not on it.",
+    "choices": {
+      "request": "Request your song",
+      "dance": "Dance up front",
+      "tab": "Buy the DJ a drink"
+    },
+    "outcomes": {
+      "request_drop": "The DJ nods and plays it. The crowd explodes. You feel briefly famous.",
+      "request_nope": "\"This isn't a jukebox.\" You get a look worse than the bouncer's."
+    }
+  },
+  "vc_walk_home": {
+    "text": "It is 3am, the buses stopped an hour ago, and your shoes have given up. Home is forty minutes away.",
+    "choices": {
+      "taxi": "Take a cab home",
+      "walk": "Walk home alone",
+      "friend": "Share a ride with a friend"
+    },
+    "outcomes": {
+      "walk_peace": "The city is empty and soft. You get home with a kebab and a clear head.",
+      "walk_trouble": "Two guys shake you down in an alley. You lose your phone and some faith in the night."
+    }
+  },
+  "vc_dive_regular": {
+    "text": "The dive bar on the corner has sticky floors, a broken jukebox, and cheaper drinks than anywhere else. People already nod at you.",
+    "choices": {
+      "join": "Become a regular",
+      "rarely": "Keep it occasional",
+      "bet": "Join the pool tournament"
+    },
+    "outcomes": {
+      "bet_win": "You clear the table and a retired plumber named Walt calls you \"kid\" with respect.",
+      "bet_lose": "You lose by three balls and $80 on a bet you made while overconfident."
+    }
+  },
+  "vc_peer_shots": {
+    "text": "Somebody is lining up shots and your name keeps coming up in the chant. The circle looks at you.",
+    "choices": {
+      "take": "Take the shot",
+      "decline": "Say no, smiling",
+      "water": "Pretend it is vodka"
+    },
+    "outcomes": {
+      "take_fun": "One shot becomes four. Everyone is your best friend for an hour.",
+      "take_sick": "The fourth one lands badly. You meet the bathroom floor."
+    }
+  },
+  "vc_bender": {
+    "text": "The week was brutal and the weekend is a blank door. Your phone lights up with a group chat called \"no rules.\"",
+    "choices": {
+      "go": "Go on the bender",
+      "one": "Stick to a single night",
+      "skip": "Skip the weekend"
+    },
+    "outcomes": {
+      "go_wild": "Three days of the best and worst decisions. You surface thinner and poorer.",
+      "go_addict": "On day four you realise you can't stop. It is not funny anymore.",
+      "go_bounce": "You pay for it with a week of hangovers, but you come out laughing."
+    }
+  },
+  "vc_dui": {
+    "text": "You have had far more than you planned. The car is close, the night is quiet, and a voice says you are fine.",
+    "choices": {
+      "drive": "Drive home anyway",
+      "cab": "Call a cab",
+      "sleep": "Sleep it off in the car"
+    },
+    "outcomes": {
+      "drive_fine": "You make it home on pure luck. You know it was luck.",
+      "drive_stop": "Red and blue lights. A breathalyser. Fines, a suspended licence and a lawyer.",
+      "drive_crash": "You scrape a lamppost and the car is totalled. You walk away, shaking, to a world of paperwork."
+    }
+  },
+  "vc_intervention": {
+    "text": "{{name}} and two other friends are sitting in your living room with a plate of cookies and a letter. This is not a surprise party.",
+    "choices": {
+      "listen": "Hear them out",
+      "storm": "Storm out",
+      "deny": "Deny everything"
+    },
+    "outcomes": {
+      "listen_clean": "You cry in {{name}}'s kitchen and agree to get help. It is the first honest night in years.",
+      "listen_relapse": "You nod and promise things. The urge is louder than the promise."
+    }
+  },
+  "vc_relapse": {
+    "text": "It is Thursday and you are bored, stressed and in front of an open cupboard. The old habit knows exactly where to find you.",
+    "choices": {
+      "use": "Use again",
+      "call": "Call someone",
+      "gym": "Go for a run"
+    },
+    "outcomes": {
+      "call_saved": "Your phone call lasts an hour. The craving passes. Barely.",
+      "call_voicemail": "Straight to voicemail. You sit on the edge of the bed and wait it out alone."
+    }
+  },
+  "vc_get_clean": {
+    "text": "You looked at yourself in the bathroom mirror and did not recognise the person. A leaflet for a clinic has been on your fridge for a month.",
+    "choices": {
+      "rehab": "Check into rehab",
+      "cold": "Go cold turkey alone",
+      "wait": "Not today"
+    },
+    "outcomes": {
+      "rehab_works": "Six weeks of group chairs and bad coffee. You come out lighter and sharper.",
+      "rehab_slip": "You finish the program but the road is longer than the brochure said.",
+      "cold_pass": "Ten days of shaking, sweating and clock watching. Then, slowly, you feel human.",
+      "cold_fail": "On day three you give up and the shame is worse than the symptoms."
+    }
+  },
+  "vc_pills_party": {
+    "text": "A friend of a friend opens his palm. Four little pills. \"Trust me, it's clean.\" Everyone nods.",
+    "choices": {
+      "take": "Take the pill",
+      "pass": "Pass",
+      "water": "Drink water and watch"
+    },
+    "outcomes": {
+      "take_float": "The room turns gold and everyone is beautiful. The comedown is a different story.",
+      "take_hospital": "You black out and wake up in the ER with an IV. The nurse is not impressed.",
+      "take_dead": "It was not what the guy said it was. The music keeps playing.",
+      "take_hooked": "You chase the feeling again and again. By the new year, you need it."
+    }
+  },
+  "vc_hangover_work": {
+    "text": "Your alarm sounds like a jackhammer. Last night's decisions are loud in your skull and there is a 9:30 meeting.",
+    "choices": {
+      "push": "Push through the day",
+      "sick": "Call in sick",
+      "cure": "Eat fries and pray"
+    },
+    "outcomes": {
+      "push_okay": "Coffee and sunglasses. Nobody smells the vodka. You nap in the stairwell.",
+      "push_caught": "You mix up two clients and your boss sniffs the air for a long second."
+    }
+  },
+  "vc_edible_festival": {
+    "text": "The festival sun is cooking you. A woman selling gummy bears out of a cooler says they are \"special.\"",
+    "choices": {
+      "eat": "Try the edible",
+      "skip": "Say pass",
+      "share": "Split one with a friend"
+    },
+    "outcomes": {
+      "eat_chill": "The stage turns to jelly and the sunset lasts four hours. Best nap of your life.",
+      "eat_paranoid": "Two hours later you are convinced the security guard is your dad. He is not."
+    }
+  },
+  "vc_dry_month": {
+    "text": "A coworker challenges you to a month off alcohol. Your liver files a motion to support.",
+    "choices": {
+      "commit": "Do a dry month",
+      "no": "Absolutely not",
+      "half": "Do half a dry month"
+    },
+    "outcomes": {
+      "commit_good": "You sleep, think, and save money. You also bore your friends senseless.",
+      "commit_crack": "Day nineteen, a friend's birthday. You manage a heroic nine hours of restraint."
+    }
+  },
+  "vc_one_night": {
+    "text": "The conversation has been electric all night. They lean in close and whisper an address and a number.",
+    "choices": {
+      "go": "Go home with them",
+      "number": "Take their number only",
+      "bye": "Say goodnight"
+    },
+    "outcomes": {
+      "go_great": "The night is fun, uncomplicated and honest. You part with a smile.",
+      "go_awkward": "Their cat watches you the whole time. You forget their name by morning.",
+      "go_std": "A week later something burns. The clinic visit is humbling."
+    }
+  },
+  "vc_fwb": {
+    "text": "After one too many, {{name}} says it out loud: \"We'd be so good at this, no strings.\" You both laugh. Then neither of you does.",
+    "choices": {
+      "agree": "Try friends with benefits",
+      "no": "Keep it platonic",
+      "laugh": "Laugh and change the subject"
+    },
+    "outcomes": {
+      "agree_easy": "No labels, no drama, great timing. For a few months it works beautifully.",
+      "agree_feelings": "Someone catches feelings. It is you. It is always you."
+    }
+  },
+  "vc_partner_jealous": {
+    "text": "{{name}} has gone quiet at dinner. Eventually: \"Who is Dani?\" Dani is a barista. You think.",
+    "choices": {
+      "reassure": "Reassure them",
+      "defend": "Get defensive",
+      "pwd": "Show them your phone"
+    },
+    "outcomes": {
+      "reassure_calm": "You hold their hand and tell the truth. The storm passes.",
+      "reassure_fight": "It turns into a fight about everything since 2019."
+    }
+  },
+  "vc_pregnancy_scare": {
+    "text": "Your period is late. Or you counted wrong. Or the one you slept with did. The bathroom shelf has a fresh test, and no one else knows.",
+    "choices": {
+      "test": "Take the test",
+      "wait": "Wait and panic",
+      "clinic": "Go to a clinic"
+    },
+    "outcomes": {
+      "test_neg": "One line. You laugh like a lunatic and order pizza.",
+      "test_pos": "Two lines. You sit very still. This is a conversation for tomorrow."
+    }
+  },
+  "vc_ex_wants_back": {
+    "text": "{{name}} shows up at your door with flowers and a speech. It is a good speech. You have heard half of it before.",
+    "choices": {
+      "accept": "Give them another try",
+      "no": "Turn them down",
+      "friends": "Offer friendship"
+    },
+    "outcomes": {
+      "accept_happy": "This time you both communicate like adults. For about three weeks.",
+      "accept_same": "Same fights, new apartment. You remember exactly why you broke up."
+    }
+  },
+  "vc_caught_cheating": {
+    "text": "{{name}} found the thread. The one with the winks. They are sitting calmly, which is worse than shouting.",
+    "choices": {
+      "confess": "Confess",
+      "lie": "Deny everything",
+      "blame": "Blame them"
+    },
+    "outcomes": {
+      "lie_fine": "The lie holds. You hate yourself a little extra today.",
+      "lie_exposed": "{{name}} has screenshots. The relationship is over before dessert."
+    }
+  },
+  "vc_catfish": {
+    "text": "The dating app match has great photos, great jokes and a weird habit of dodging video calls.",
+    "choices": {
+      "meet": "Meet them anyway",
+      "block": "Swipe left and move on"
+    },
+    "outcomes": {
+      "meet_cute": "They look nothing like the photos, and somehow that's a good thing.",
+      "meet_scam": "They ask for \"a loan, just until Friday.\" Friday never comes.",
+      "meet_bad": "Awkward is not the word. You split the check and leave."
+    }
+  },
+  "vc_clinic_test": {
+    "text": "The nurse reads your results with an expression you can't read. She says: \"Sit down.\"",
+    "choices": {
+      "treat": "Get it treated",
+      "ignore": "Ignore it",
+      "tell": "Tell your partners"
+    },
+    "outcomes": {
+      "treat_cured": "Antibiotics, a lecture, and a tiny bandage on your pride. You're cleared.",
+      "treat_stubborn": "The first round does little. You go back, still embarrassed, and finish it."
+    }
+  },
+  "vc_wrong_chat": {
+    "text": "You send a very detailed message about last night to what you thought was your best friend. It was the family group.",
+    "choices": {
+      "own": "Own it",
+      "delete": "Try to delete it",
+      "phone": "Throw the phone in the sea"
+    },
+    "outcomes": {
+      "delete_fast": "You delete it in time. Mom is \"typing...\" for six minutes and then stops.",
+      "delete_late": "It was already seen by three aunts and the neighbour. Family dinner will be great."
+    }
+  },
+  "vc_morning_after": {
+    "text": "Morning light on someone else's wall. They're already awake, smiling at you with the smug gentleness of a person who slept well.",
+    "choices": {
+      "stay": "Stay for breakfast",
+      "leave": "Get dressed and go",
+      "note": "Leave a note"
+    },
+    "outcomes": {
+      "stay_sweet": "They make eggs. You talk about everything. Something starts.",
+      "stay_weird": "Their roommate walks in and gives you a very long look."
+    }
+  },
+  "vc_mar_boredom": {
+    "text": "You and {{name}} now say \"fine\" to every question. The couch has two dents in it. Something has to give.",
+    "choices": {
+      "date": "Plan a date night",
+      "trip": "Book a surprise trip",
+      "drift": "Let it ride"
+    },
+    "outcomes": {
+      "date_spark": "Dinner, a dumb movie, a long walk. {{name}} laughs the way they did in the beginning.",
+      "date_flat": "You both check your phones between courses. The tiramisu is the best part."
+    }
+  },
+  "vc_mar_open_prop": {
+    "text": "{{name}} sets down their fork. \"Hear me out. Open marriage. Honestly.\" You look for the hidden camera.",
+    "choices": {
+      "agree": "Agree to try",
+      "no": "Say a firm no",
+      "therapy": "Suggest counselling instead"
+    },
+    "outcomes": {
+      "agree_works": "Rules, check-ins and honest talk. Surprisingly, it works.",
+      "agree_jealous": "First week is exciting. By the fourth you are doing the dishes with murderous energy."
+    }
+  },
+  "vc_mar_found_text": {
+    "text": "A message pops up on {{name}}'s phone while it's charging: \"Last night was incredible. Same time next week?\"",
+    "choices": {
+      "ask": "Ask calmly",
+      "snoop": "Read their entire phone",
+      "ignore": "Pretend you never saw it"
+    },
+    "outcomes": {
+      "ask_innocent": "It was a surprise-party planner. You owe them an apology and a very nice dinner.",
+      "ask_guilty": "{{name}} goes pale. You know. You both know."
+    }
+  },
+  "vc_mar_therapy": {
+    "text": "{{name}} drops a pamphlet on the table. \"Couples therapy. Tuesday. I already booked.\" It is not a question.",
+    "choices": {
+      "commit": "Commit to counselling",
+      "skip": "\"We're fine.\""
+    },
+    "outcomes": {
+      "commit_better": "The therapist says \"I hear you\" eleven times. It works anyway.",
+      "commit_split": "Week six, the truth comes out. It's ugly, but at least it is out.",
+      "commit_meh": "Nothing changes, but you learn the therapist's dog is called Noodle."
+    }
+  },
+  "vc_mar_wild_anniv": {
+    "text": "Anniversary night. {{name}} wants \"something unforgettable.\" You have one night and an open credit line.",
+    "choices": {
+      "wild": "Go all out",
+      "quiet": "A quiet dinner",
+      "forget": "Forget the date"
+    },
+    "outcomes": {
+      "wild_legend": "Champagne, a hot tub, a regrettable dance routine. You are twenty-five again.",
+      "wild_mess": "A noise complaint, a broken glass table, and a stolen bathrobe. {{name}} loves it anyway."
+    }
+  },
+  "vc_mar_secret_card": {
+    "text": "You have a credit card {{name}} does not know about. The bill has finally gotten big enough to have a personality.",
+    "choices": {
+      "confess": "Confess the card",
+      "hide": "Hide the statements",
+      "cut": "Cut up the card"
+    },
+    "outcomes": {
+      "hide_clear": "You pay it off over the year, quietly, and tell no one.",
+      "hide_found": "{{name}} finds the pile in the garage. The conversation is long and cold."
+    }
+  },
+  "vc_mar_tempted": {
+    "text": "A coworker has been brushing your arm, laughing a beat too long and texting after hours. The signals are getting loud.",
+    "choices": {
+      "resist": "Shut it down",
+      "flirt": "Flirt back a little",
+      "tell": "Tell {{name}} about it"
+    },
+    "outcomes": {
+      "flirt_harmless": "It is harmless. It is also a little not.",
+      "flirt_spiral": "One drink becomes a hotel room. The guilt arrives before the sunrise."
+    }
+  },
+  "vc_mar_vegas": {
+    "text": "{{name}} found a flight deal and a chapel with a neon sign. \"Let's do it again. Properly stupid this time.\"",
+    "choices": {
+      "vows": "Renew vows in Vegas",
+      "home": "Stay home and cook"
+    },
+    "outcomes": {
+      "vows_fun": "An impersonator officiates. You laugh through the whole thing and cry at the end.",
+      "vows_cheap": "The chapel was tacky, the hotel was worse, and the bill was larger than the vows."
+    }
+  },
+  "vc_tattoo_ex": {
+    "text": "You are at the tattoo parlour at midnight with a fresh bottle of confidence. The design: your ex's name in cursive.",
+    "choices": {
+      "do": "Get the tattoo",
+      "wait": "Sleep on it",
+      "small": "Get something smaller"
+    },
+    "outcomes": {
+      "do_love": "It looks sharp. You tell yourself that this time is different.",
+      "do_regret": "Six months later you pay a fortune to turn it into a vaguely shaped rose."
+    }
+  },
+  "vc_three_am_buy": {
+    "text": "It is 3am. You are on your seventh tab of a site that sells inflatable kayaks and handmade ceramic crocodiles.",
+    "choices": {
+      "buy": "Click \"Buy Now\"",
+      "cart": "Leave it in the cart",
+      "return": "Buy it, return it later"
+    },
+    "outcomes": {
+      "return_ok": "You return it. The restocking fee stings, but you keep the dignity.",
+      "return_stuck": "Final sale. The espresso-machine-shaped canoe is yours forever."
+    }
+  },
+  "vc_pyramid_pitch": {
+    "text": "{{name}} invites you to a \"business opportunity\" with free coffee, a man in a vest, and a lot of talk about being your own boss.",
+    "choices": {
+      "join": "Buy in with $2,000",
+      "decline": "Politely decline",
+      "expose": "Tell them it's a scam"
+    },
+    "outcomes": {
+      "join_win": "You get lucky and flip it before the whole thing collapses. You never tell anyone.",
+      "join_lose": "The \"starter kit\" is thirty protein bars and a lanyard. {{name}} stops answering."
+    }
+  },
+  "vc_fake_id_casino": {
+    "text": "Tonight the casino is playing a song only you can hear. The doorman wants ID, and the card in your wallet is a very good fake.",
+    "choices": {
+      "try": "Use the fake ID",
+      "real": "Use your real ID",
+      "home": "Go home"
+    },
+    "outcomes": {
+      "try_in": "The doorman squints, shrugs, and waves you in. You lose $300 at roulette.",
+      "try_busted": "Security calls the police. Fake ID is a felony and you suddenly remember that."
+    }
+  },
+  "vc_bet_cant_pay": {
+    "text": "You bet on a \"sure thing\" and lost $3,000 to a man who writes IOUs on napkins. You have until Friday.",
+    "choices": {
+      "pay": "Pay up somehow",
+      "stall": "Stall them",
+      "run": "Disappear for a month"
+    },
+    "outcomes": {
+      "stall_ok": "You negotiate a payment plan with a man named Gary. Gary will remember you.",
+      "stall_beat": "Gary's friends find you at the parking lot. They explain interest rates."
+    }
+  },
+  "vc_sell_plasma": {
+    "text": "Rent is due and the account says $42. A flyer says: \"Earn $300 a month. Just give a little.\"",
+    "choices": {
+      "sell": "Sell your plasma",
+      "gig": "Pick up odd jobs",
+      "borrow": "Borrow from family"
+    },
+    "outcomes": {
+      "sell_ok": "Twenty-five bucks a visit, free cookies, and a chair that smells like iodine.",
+      "sell_faint": "You faint on the way out. The nurse sighs and hands you a juice."
+    }
+  },
+  "vc_sub_site": {
+    "text": "A friend shows you their income from a subscription site where people pay for exclusive adult content. Your rent is looming.",
+    "choices": {
+      "start": "Start a subscription page",
+      "pass": "Not for me"
+    },
+    "outcomes": {
+      "start_boom": "The subscribers pour in. You make more in a month than your last job paid in a quarter.",
+      "start_slow": "A trickle of subscribers, a lot of work, and a good camera you now own.",
+      "start_family": "Your cousin finds you. The family group chat goes silent for a week, then loud."
+    }
+  },
+  "vc_drunk_wedding": {
+    "text": "You are four drinks in, in a city you do not live in, and a chapel is lit up like a Christmas tree. A stranger says: \"Why not?\"",
+    "choices": {
+      "marry": "Say \"I do\" to a stranger",
+      "decline": "Laugh and leave",
+      "witness": "Be the witness instead"
+    },
+    "outcomes": {
+      "marry_annul": "The annulment costs more than the dress. You meet for coffee, once, to laugh.",
+      "marry_love": "You wake up next to a stranger who turns out to be good. Against all odds.",
+      "marry_mess": "The chapel was a scam. The \"officiant\" is a guy named Todd. You're not married and you're poorer."
+    }
+  },
+  "vc_loan_shark": {
+    "text": "Your funds are thin and a man in a tracksuit offers cash, no paperwork, no questions. His smile is a little too white.",
+    "choices": {
+      "borrow": "Take the loan",
+      "bank": "Ask the bank",
+      "skip": "Tighten your belt"
+    },
+    "outcomes": {
+      "borrow_ok": "You pay it back with a ridiculous rate and a tight smile.",
+      "borrow_trouble": "Collections get physical. You pay, bleed and learn a lot about compound interest."
+    }
+  },
+  "vc_viral_prank": {
+    "text": "Your friends dare you to stage a ridiculous prank in a supermarket and post it online. Someone is already holding a phone.",
+    "choices": {
+      "film": "Film the prank",
+      "skip": "Think it through"
+    },
+    "outcomes": {
+      "film_viral": "The clip hits a million views. Strangers recognise you at the supermarket.",
+      "film_flop": "Eleven likes, mostly from your cousin.",
+      "film_sued": "The \"victim\" has a lawyer and a very good memory. You settle."
+    }
+  }
+}

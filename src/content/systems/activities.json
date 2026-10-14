@@ -415,5 +415,27 @@
     "minAge": 18,
     "effects": {},
     "special": "bet"
+  },
+  {
+    "id": "space_camp",
+    "emoji": "🚀",
+    "cost": 3000,
+    "minAge": 10,
+    "effects": {
+      "smarts": 4,
+      "happiness": 3,
+      "flags": {
+        "space_camp": true
+      }
+    }
+  },
+  {
+    "id": "shave",
+    "emoji": "🪒",
+    "cost": 20,
+    "minAge": 14,
+    "effects": {
+      "looks": 1
+    }
   }
 ]

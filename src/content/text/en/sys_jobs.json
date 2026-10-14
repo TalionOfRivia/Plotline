@@ -442,6 +442,16 @@
         "brand": "Brand Owner",
         "empire": "Media Empire"
       }
+    },
+    "dealer": {
+      "name": "Cartel",
+      "ladder": {
+        "runner": "Runner",
+        "corner_boss": "Corner Boss",
+        "distributor": "Distributor",
+        "lieutenant": "Lieutenant",
+        "cartel_chief": "Cartel Chief"
+      }
     }
   }
 }

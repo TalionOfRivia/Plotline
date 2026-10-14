@@ -53,6 +53,14 @@ export function ActivitiesSheet() {
         <Row emoji="⚖️" title={t('admin.lawsuit')} sub={t('admin.lawsuitSub', { money: formatMoney(LAWSUIT_COST, lang) })} onClick={g.sue} disabled={life.age < 18 || life.money < LAWSUIT_COST} />
         <Row emoji="📜" title={t('admin.will')} sub={life.will ? t('admin.willOn') : t('admin.willOff')} onClick={g.toggleWill} disabled={life.age < 18} />
       </Section>
+      <Section title={t('admin.identity')}>
+        <div className="flex gap-1 mb-2">
+          {(['opposite', 'same', 'both'] as const).map((a) => (
+            <button key={a} onClick={() => g.setAttraction(a)} className={`flex-1 py-2 rounded-xl text-sm font-semibold ${(life.flags.attraction ?? 'opposite') === a ? 'bg-chrome text-chrome-fg' : 'bg-card'}`}>{t(`admin.attraction.${a}`)}</button>
+          ))}
+        </div>
+        <p className="text-xs opacity-70 px-1 mb-2">{t('admin.identityHint')}</p>
+      </Section>
       <Section title={t('admin.life')}>
         <Row emoji="🌍" title={t('admin.emigrate')} sub={t('admin.emigrateSub', { money: formatMoney(EMIGRATE_COST, lang) })} onClick={() => setPage('emigrate')} disabled={life.age < 18 || life.money < EMIGRATE_COST} />
         <Row emoji="🧬" title={t('admin.fertility')} sub={life.flags.ivf ? t('admin.fertilityOn') : t('admin.fertilitySub', { money: formatMoney(IVF_COST, lang) })} onClick={g.ivf} disabled={life.age < 18 || life.money < IVF_COST || Boolean(life.flags.ivf)} />

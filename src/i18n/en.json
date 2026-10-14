@@ -191,7 +191,8 @@
       "ineligible": "You're not eligible.",
       "harder": "You put in extra hours."
     },
-    "quitLog": "You quit your job as {{title}}."
+    "quitLog": "You quit your job as {{title}}.",
+    "busted": "The cartel job ended with a raid. You were arrested."
   },
   "assets": {
     "cash": "Cash",
@@ -254,7 +255,8 @@
       "prank": "Prank them",
       "rumor": "Spread a rumor",
       "deal": "Sell them something",
-      "hook_up": "Hook up"
+      "hook_up": "Hook up",
+      "ask_out": "Ask out"
     },
     "did": {
       "spend_time": "You spent time with {{name}}.",
@@ -284,7 +286,8 @@
       "hook_up": "You hooked up with {{name}}.",
       "hook_up_no": "{{name}} turned you down.",
       "hook_up_caught": "{{other}} found out about you and {{name}}.",
-      "hook_up_std": "You hooked up with {{name}}. The clinic had news."
+      "hook_up_std": "You hooked up with {{name}}. The clinic had news.",
+      "ask_out_no": "{{name}} wants to stay friends. Ouch."
     },
     "newFriend": "You became friends with {{name}}.",
     "lostFriend": "{{name}} is no longer your friend.",
@@ -585,7 +588,14 @@
     "emigrateHint": "Pick a new home. Costs {{money}} and your current job.",
     "fertility": "Fertility clinic",
     "fertilitySub": "IVF for {{money}}: next try almost always works.",
-    "fertilityOn": "Treatment done — try for a baby."
+    "fertilityOn": "Treatment done — try for a baby.",
+    "identity": "Identity",
+    "identityHint": "Who you date. Changes who shows up on the dating board.",
+    "attraction": {
+      "opposite": "Opposite sex",
+      "same": "Same sex",
+      "both": "Anyone"
+    }
   },
   "license": {
     "already": "You already have that license.",

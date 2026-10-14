@@ -3,6 +3,7 @@ import { clamp, kill, log, uid } from './util'
 import type { Rng } from './rng'
 import { JOB_BY_ID } from './systems'
 import { makePerson } from './people'
+import { dateGender } from './relationships'
 
 const STAT_KEYS: (keyof Stats)[] = ['happiness', 'health', 'smarts', 'looks']
 
@@ -83,7 +84,7 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
       return true
     case 'new_partner': {
       if (life.people.some((p) => (p.kind === 'partner' || p.kind === 'spouse') && p.alive)) return true
-      const p = makePerson(rng, life.countryCode, 'partner', { age: life.age + rng.int(-4, 4), relationship: rng.int(55, 80), gender: life.flags.prefers_same_gender ? life.gender : life.gender === 'female' ? 'male' : 'female' })
+      const p = makePerson(rng, life.countryCode, 'partner', { age: life.age + rng.int(-4, 4), relationship: rng.int(55, 80), gender: dateGender(life, rng) })
       life.people.push(p); log(life, 'good', 'people.newPartner', { name: p.firstName }); return true
     }
     // ---- fame

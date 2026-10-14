@@ -170,5 +170,13 @@
   "fight_betting": {
     "name": "Fight Betting",
     "blurb": "You have strong opinions about two strangers hitting each other."
+  },
+  "space_camp": {
+    "name": "Space Camp",
+    "blurb": "A week of freeze-dried food and real rocket science. Helps if you ever apply to the program."
+  },
+  "shave": {
+    "name": "Shave",
+    "blurb": "Smooth, mostly. One nick."
   }
 }

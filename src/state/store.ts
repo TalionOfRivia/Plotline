@@ -80,6 +80,7 @@ interface GameState {
   toggleWill: () => void
   sue: () => void
   gig: (id: string) => void
+  setAttraction: (a: 'opposite' | 'same' | 'both') => void
   godEdit: (patch: { stats?: Partial<Stats>; money?: number; karma?: number; fame?: number }) => void
 }
 
@@ -175,6 +176,7 @@ export const useGame = create<GameState>()(
         toggleWill: () => get().extra((l) => toggleWill(l)),
         sue: () => get().extra((l, rng) => sue(l, rng)),
         gig: (id) => get().extra((l, rng) => doGig(l, id, rng)),
+        setAttraction: (a) => act((l) => { l.flags.attraction = a; l.dateBoard = [] }),
         setGodMode: (on) => set((s) => { s.godMode = on }),
         godEdit: (patch) => set((s) => {
           if (!s.life) return

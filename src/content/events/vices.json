@@ -1,0 +1,2621 @@
+[
+  {
+    "id": "vc_club_night",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "dance",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "dance_epic",
+            "weight": 70,
+            "effects": {
+              "happiness": 12,
+              "health": -3
+            }
+          },
+          {
+            "id": "dance_ankle",
+            "weight": 30,
+            "effects": {
+              "happiness": -4,
+              "health": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "vip",
+        "effects": {
+          "happiness": 8,
+          "money": -400,
+          "looks": 2
+        }
+      },
+      {
+        "id": "early",
+        "effects": {
+          "happiness": -2,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bouncer",
+    "category": "social",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "charm",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "charm_in",
+            "weight": 50,
+            "effects": {
+              "happiness": 7
+            }
+          },
+          {
+            "id": "charm_no",
+            "weight": 50,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "argue",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "argue_thrown",
+            "weight": 60,
+            "effects": {
+              "happiness": -6,
+              "karma": -3
+            }
+          },
+          {
+            "id": "argue_bribe",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "money": -100
+            }
+          }
+        ]
+      },
+      {
+        "id": "bar",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bar_fight",
+    "category": "crime",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "punch",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "punch_win",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "karma": -4
+            }
+          },
+          {
+            "id": "punch_beat",
+            "weight": 45,
+            "effects": {
+              "health": -15,
+              "looks": -6,
+              "happiness": -8,
+              "money": -300
+            }
+          },
+          {
+            "id": "punch_arrest",
+            "weight": 11,
+            "effects": {
+              "health": -8,
+              "money": -1000,
+              "karma": -4,
+              "flags": {
+                "criminal_record": true
+              }
+            }
+          },
+          {
+            "id": "punch_dead",
+            "weight": 4,
+            "effects": {
+              "death": "bar_fight"
+            }
+          }
+        ]
+      },
+      {
+        "id": "walk",
+        "effects": {
+          "happiness": -2,
+          "karma": 4
+        }
+      },
+      {
+        "id": "separate",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "separate_hero",
+            "weight": 60,
+            "effects": {
+              "happiness": 5,
+              "karma": 8
+            }
+          },
+          {
+            "id": "separate_elbow",
+            "weight": 40,
+            "effects": {
+              "health": -8,
+              "karma": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vc_drunk_text_ex",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "ex"
+    },
+    "choices": [
+      {
+        "id": "send",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "send_warm",
+            "weight": 30,
+            "effects": {
+              "happiness": 6,
+              "relationship": 12
+            }
+          },
+          {
+            "id": "send_left",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "relationship": -5
+            }
+          },
+          {
+            "id": "send_blocked",
+            "weight": 20,
+            "effects": {
+              "happiness": -12,
+              "relationship": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "delete",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "happiness": 3,
+          "relationship": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_wake_up_strange",
+    "category": "random",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "look",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "look_kind",
+            "weight": 45,
+            "effects": {
+              "happiness": 5
+            }
+          },
+          {
+            "id": "look_robbed",
+            "weight": 25,
+            "effects": {
+              "money": -200,
+              "happiness": -6
+            }
+          },
+          {
+            "id": "look_roof",
+            "weight": 30,
+            "effects": {
+              "happiness": 6,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "sneak",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "id": "uber",
+        "effects": {
+          "money": -30,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bartender_likes",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "single"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ask_yes",
+            "weight": 55,
+            "effects": {
+              "happiness": 12,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "ask_no",
+            "weight": 45,
+            "effects": {
+              "happiness": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "tip",
+        "effects": {
+          "money": -50,
+          "happiness": 2
+        }
+      },
+      {
+        "id": "regular",
+        "effects": {
+          "happiness": 3,
+          "money": -200,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_afterparty",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "stay",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stay_legend",
+            "weight": 50,
+            "effects": {
+              "happiness": 10,
+              "health": -5
+            }
+          },
+          {
+            "id": "stay_mess",
+            "weight": 35,
+            "effects": {
+              "happiness": -4,
+              "health": -6,
+              "money": -100
+            }
+          },
+          {
+            "id": "stay_hook",
+            "weight": 15,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "home",
+        "effects": {
+          "health": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_karaoke",
+    "category": "social",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "sing",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sing_star",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "flags": {
+                "fame": 1
+              }
+            }
+          },
+          {
+            "id": "sing_cringe",
+            "weight": 55,
+            "effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "duet",
+        "effects": {
+          "happiness": 7
+        }
+      },
+      {
+        "id": "watch",
+        "effects": {
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bar_tab",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "minMoney": 300
+    },
+    "choices": [
+      {
+        "id": "split",
+        "effects": {
+          "money": -120,
+          "happiness": -2
+        }
+      },
+      {
+        "id": "cover",
+        "effects": {
+          "money": -600,
+          "happiness": 8,
+          "karma": 5
+        }
+      },
+      {
+        "id": "dash",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "dash_clean",
+            "weight": 55,
+            "effects": {
+              "money": 350,
+              "karma": -8,
+              "happiness": 6
+            }
+          },
+          {
+            "id": "dash_caught",
+            "weight": 45,
+            "effects": {
+              "money": -900,
+              "karma": -8,
+              "happiness": -8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vc_dj_booth",
+    "category": "social",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "request",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "request_drop",
+            "weight": 50,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "fame": 1
+              }
+            }
+          },
+          {
+            "id": "request_nope",
+            "weight": 50,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "dance",
+        "effects": {
+          "happiness": 5
+        }
+      },
+      {
+        "id": "tab",
+        "effects": {
+          "money": -25,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_walk_home",
+    "category": "random",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "taxi",
+        "effects": {
+          "money": -35,
+          "health": 1
+        }
+      },
+      {
+        "id": "walk",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "walk_peace",
+            "weight": 70,
+            "effects": {
+              "happiness": 3
+            }
+          },
+          {
+            "id": "walk_trouble",
+            "weight": 30,
+            "effects": {
+              "health": -10,
+              "money": -150,
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "friend",
+        "effects": {
+          "money": -15,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_dive_regular",
+    "category": "social",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "join",
+        "effects": {
+          "happiness": 5,
+          "money": -250,
+          "health": -3,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      },
+      {
+        "id": "rarely",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "bet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "bet_win",
+            "weight": 35,
+            "effects": {
+              "happiness": 8,
+              "money": 150
+            }
+          },
+          {
+            "id": "bet_lose",
+            "weight": 65,
+            "effects": {
+              "happiness": -2,
+              "money": -80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vc_peer_shots",
+    "category": "social",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "take",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "take_fun",
+            "weight": 60,
+            "effects": {
+              "happiness": 6,
+              "health": -2
+            }
+          },
+          {
+            "id": "take_sick",
+            "weight": 40,
+            "effects": {
+              "happiness": -5,
+              "health": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "water",
+        "effects": {
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bender",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "go_wild",
+            "weight": 50,
+            "effects": {
+              "happiness": 5,
+              "health": -12,
+              "money": -500
+            }
+          },
+          {
+            "id": "go_addict",
+            "weight": 25,
+            "effects": {
+              "health": -15,
+              "money": -600,
+              "flags": {
+                "addicted": true
+              },
+              "happiness": -6
+            }
+          },
+          {
+            "id": "go_bounce",
+            "weight": 25,
+            "effects": {
+              "happiness": 6,
+              "health": -6,
+              "money": -250
+            }
+          }
+        ]
+      },
+      {
+        "id": "one",
+        "effects": {
+          "happiness": 3,
+          "health": -3,
+          "money": -80
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "health": 3,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_dui",
+    "category": "crime",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "minMoney": 500
+    },
+    "choices": [
+      {
+        "id": "drive",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "drive_fine",
+            "weight": 55,
+            "effects": {
+              "happiness": 2,
+              "karma": -4
+            }
+          },
+          {
+            "id": "drive_stop",
+            "weight": 35,
+            "effects": {
+              "money": -3000,
+              "karma": -6,
+              "happiness": -10,
+              "flags": {
+                "dui": true
+              }
+            }
+          },
+          {
+            "id": "drive_crash",
+            "weight": 10,
+            "effects": {
+              "health": -18,
+              "money": -4000,
+              "karma": -8,
+              "flags": {
+                "dui": true,
+                "criminal_record": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cab",
+        "effects": {
+          "money": -40,
+          "karma": 3
+        }
+      },
+      {
+        "id": "sleep",
+        "effects": {
+          "happiness": -2,
+          "health": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_intervention",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "addicted"
+      ],
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "listen",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "listen_clean",
+            "weight": 45,
+            "effects": {
+              "happiness": 4,
+              "health": 5,
+              "relationship": 12,
+              "flags": {
+                "addicted": false
+              }
+            }
+          },
+          {
+            "id": "listen_relapse",
+            "weight": 55,
+            "effects": {
+              "happiness": -4,
+              "relationship": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "storm",
+        "effects": {
+          "happiness": -8,
+          "relationship": -20
+        }
+      },
+      {
+        "id": "deny",
+        "effects": {
+          "happiness": -3,
+          "relationship": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_relapse",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "addicted"
+      ]
+    },
+    "choices": [
+      {
+        "id": "use",
+        "effects": {
+          "health": -10,
+          "money": -300,
+          "happiness": -4,
+          "karma": -2
+        }
+      },
+      {
+        "id": "call",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "call_saved",
+            "weight": 60,
+            "effects": {
+              "happiness": 5,
+              "health": 3,
+              "karma": 4
+            }
+          },
+          {
+            "id": "call_voicemail",
+            "weight": 40,
+            "effects": {
+              "happiness": -6,
+              "health": -6
+            }
+          }
+        ]
+      },
+      {
+        "id": "gym",
+        "effects": {
+          "health": 5,
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_get_clean",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "addicted"
+      ],
+      "minMoney": 1500
+    },
+    "choices": [
+      {
+        "id": "rehab",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "rehab_works",
+            "weight": 65,
+            "effects": {
+              "happiness": 8,
+              "health": 12,
+              "money": -4000,
+              "flags": {
+                "addicted": false
+              }
+            }
+          },
+          {
+            "id": "rehab_slip",
+            "weight": 35,
+            "effects": {
+              "happiness": -2,
+              "health": 4,
+              "money": -4000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cold",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "cold_pass",
+            "weight": 40,
+            "effects": {
+              "happiness": 6,
+              "health": 8,
+              "flags": {
+                "addicted": false
+              }
+            }
+          },
+          {
+            "id": "cold_fail",
+            "weight": 60,
+            "effects": {
+              "happiness": -8,
+              "health": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_pills_party",
+    "category": "crime",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "take",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "take_float",
+            "weight": 55,
+            "effects": {
+              "happiness": 12,
+              "health": -6
+            }
+          },
+          {
+            "id": "take_hospital",
+            "weight": 30,
+            "effects": {
+              "health": -18,
+              "money": -1500,
+              "happiness": -8
+            }
+          },
+          {
+            "id": "take_dead",
+            "weight": 3,
+            "effects": {
+              "death": "overdose"
+            }
+          },
+          {
+            "id": "take_hooked",
+            "weight": 12,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "addicted": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": 1,
+          "karma": 3
+        }
+      },
+      {
+        "id": "water",
+        "effects": {
+          "health": 2,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_hangover_work",
+    "category": "work",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "employed"
+      ]
+    },
+    "choices": [
+      {
+        "id": "push",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "push_okay",
+            "weight": 50,
+            "effects": {
+              "happiness": -3,
+              "health": -2
+            }
+          },
+          {
+            "id": "push_caught",
+            "weight": 50,
+            "effects": {
+              "happiness": -6,
+              "flags": {
+                "performance": -5
+              },
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "sick",
+        "effects": {
+          "happiness": 2,
+          "karma": -3,
+          "flags": {
+            "performance": -2
+          }
+        }
+      },
+      {
+        "id": "cure",
+        "effects": {
+          "happiness": 3,
+          "health": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_edible_festival",
+    "category": "random",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "eat",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "eat_chill",
+            "weight": 50,
+            "effects": {
+              "happiness": 10,
+              "health": -1
+            }
+          },
+          {
+            "id": "eat_paranoid",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "health": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "share",
+        "effects": {
+          "happiness": 5,
+          "flags": {
+            "new_friend": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_dry_month",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "commit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "commit_good",
+            "weight": 70,
+            "effects": {
+              "health": 8,
+              "happiness": 4,
+              "looks": 2,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "commit_crack",
+            "weight": 30,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "no",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "half",
+        "effects": {
+          "health": 3,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_one_night",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "single"
+      ]
+    },
+    "choices": [
+      {
+        "id": "go",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "go_great",
+            "weight": 50,
+            "effects": {
+              "happiness": 10
+            }
+          },
+          {
+            "id": "go_awkward",
+            "weight": 30,
+            "effects": {
+              "happiness": -3,
+              "karma": -1
+            }
+          },
+          {
+            "id": "go_std",
+            "weight": 20,
+            "effects": {
+              "happiness": -8,
+              "health": -8,
+              "flags": {
+                "std": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "number",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "id": "bye",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_fwb",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "friend",
+      "flags": [
+        "single"
+      ]
+    },
+    "choices": [
+      {
+        "id": "agree",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "agree_easy",
+            "weight": 45,
+            "effects": {
+              "happiness": 8,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "agree_feelings",
+            "weight": 55,
+            "effects": {
+              "happiness": -5,
+              "relationship": -12
+            }
+          }
+        ]
+      },
+      {
+        "id": "no",
+        "effects": {
+          "relationship": 6,
+          "happiness": 1
+        }
+      },
+      {
+        "id": "laugh",
+        "effects": {
+          "relationship": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_partner_jealous",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "partner",
+      "flags": [
+        "dating"
+      ]
+    },
+    "choices": [
+      {
+        "id": "reassure",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "reassure_calm",
+            "weight": 60,
+            "effects": {
+              "happiness": 4,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "reassure_fight",
+            "weight": 40,
+            "effects": {
+              "happiness": -6,
+              "relationship": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "defend",
+        "effects": {
+          "happiness": -5,
+          "relationship": -12
+        }
+      },
+      {
+        "id": "pwd",
+        "effects": {
+          "happiness": -2,
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_pregnancy_scare",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "test",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "test_neg",
+            "weight": 75,
+            "effects": {
+              "happiness": 10
+            }
+          },
+          {
+            "id": "test_pos",
+            "weight": 25,
+            "effects": {
+              "happiness": -6,
+              "smarts": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": -8,
+          "health": -3
+        }
+      },
+      {
+        "id": "clinic",
+        "effects": {
+          "happiness": 2,
+          "money": -80
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_ex_wants_back",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "ex"
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "accept_happy",
+            "weight": 45,
+            "effects": {
+              "happiness": 10,
+              "relationship": 15,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "accept_same",
+            "weight": 55,
+            "effects": {
+              "happiness": -8,
+              "relationship": -10
+            }
+          }
+        ]
+      },
+      {
+        "id": "no",
+        "effects": {
+          "happiness": 2,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "friends",
+        "effects": {
+          "happiness": 1,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_caught_cheating",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "partner",
+      "flags": [
+        "dating"
+      ]
+    },
+    "choices": [
+      {
+        "id": "confess",
+        "effects": {
+          "happiness": -12,
+          "karma": 6,
+          "relationship": -15,
+          "flags": {
+            "breakup": true
+          }
+        }
+      },
+      {
+        "id": "lie",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "lie_fine",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "karma": -6,
+              "relationship": -5
+            }
+          },
+          {
+            "id": "lie_exposed",
+            "weight": 60,
+            "effects": {
+              "happiness": -15,
+              "karma": -10,
+              "relationship": -30,
+              "flags": {
+                "breakup": true,
+                "cheated": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "blame",
+        "effects": {
+          "happiness": -8,
+          "karma": -8,
+          "relationship": -25,
+          "flags": {
+            "breakup": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_catfish",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "single"
+      ]
+    },
+    "choices": [
+      {
+        "id": "meet",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "meet_cute",
+            "weight": 40,
+            "effects": {
+              "happiness": 9,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "meet_scam",
+            "weight": 30,
+            "effects": {
+              "money": -400,
+              "happiness": -8
+            }
+          },
+          {
+            "id": "meet_bad",
+            "weight": 30,
+            "effects": {
+              "happiness": -4
+            }
+          }
+        ]
+      },
+      {
+        "id": "block",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_clinic_test",
+    "category": "health",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "flags": [
+        "std"
+      ]
+    },
+    "choices": [
+      {
+        "id": "treat",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "treat_cured",
+            "weight": 80,
+            "effects": {
+              "health": 6,
+              "happiness": 3,
+              "money": -200,
+              "flags": {
+                "std": false
+              }
+            }
+          },
+          {
+            "id": "treat_stubborn",
+            "weight": 20,
+            "effects": {
+              "health": -3,
+              "money": -400
+            }
+          }
+        ]
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "health": -10,
+          "happiness": -4
+        }
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": -4,
+          "karma": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_wrong_chat",
+    "category": "random",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "own",
+        "effects": {
+          "happiness": -2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "delete",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "delete_fast",
+            "weight": 40,
+            "effects": {
+              "happiness": 4
+            }
+          },
+          {
+            "id": "delete_late",
+            "weight": 60,
+            "effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "phone",
+        "effects": {
+          "happiness": -1,
+          "money": -300
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_morning_after",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "stay",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stay_sweet",
+            "weight": 50,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "stay_weird",
+            "weight": 50,
+            "effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "leave",
+        "effects": {
+          "happiness": -1
+        }
+      },
+      {
+        "id": "note",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_boredom",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "date",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "date_spark",
+            "weight": 60,
+            "effects": {
+              "happiness": 8,
+              "relationship": 12,
+              "money": -150
+            }
+          },
+          {
+            "id": "date_flat",
+            "weight": 40,
+            "effects": {
+              "happiness": -2,
+              "money": -150,
+              "relationship": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "trip",
+        "effects": {
+          "happiness": 7,
+          "money": -1200,
+          "relationship": 10
+        }
+      },
+      {
+        "id": "drift",
+        "effects": {
+          "happiness": -5,
+          "relationship": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_open_prop",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "agree",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "agree_works",
+            "weight": 35,
+            "effects": {
+              "happiness": 9,
+              "relationship": 10
+            }
+          },
+          {
+            "id": "agree_jealous",
+            "weight": 65,
+            "effects": {
+              "happiness": -10,
+              "relationship": -15
+            }
+          }
+        ]
+      },
+      {
+        "id": "no",
+        "effects": {
+          "happiness": -3,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "therapy",
+        "effects": {
+          "happiness": 2,
+          "relationship": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_found_text",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "ask",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "ask_innocent",
+            "weight": 45,
+            "effects": {
+              "happiness": 5,
+              "relationship": 8
+            }
+          },
+          {
+            "id": "ask_guilty",
+            "weight": 55,
+            "effects": {
+              "happiness": -15,
+              "relationship": -20,
+              "flags": {
+                "cheated": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "snoop",
+        "effects": {
+          "happiness": -8,
+          "karma": -4,
+          "relationship": -12
+        }
+      },
+      {
+        "id": "ignore",
+        "effects": {
+          "happiness": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_therapy",
+    "category": "romance",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "commit",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "commit_better",
+            "weight": 55,
+            "effects": {
+              "happiness": 8,
+              "relationship": 18,
+              "money": -1000,
+              "smarts": 2
+            }
+          },
+          {
+            "id": "commit_split",
+            "weight": 25,
+            "effects": {
+              "happiness": -8,
+              "relationship": -12,
+              "money": -1000
+            }
+          },
+          {
+            "id": "commit_meh",
+            "weight": 20,
+            "effects": {
+              "happiness": 1,
+              "money": -1000
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -3,
+          "relationship": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_wild_anniv",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ],
+      "minMoney": 800
+    },
+    "choices": [
+      {
+        "id": "wild",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "wild_legend",
+            "weight": 60,
+            "effects": {
+              "happiness": 12,
+              "relationship": 15,
+              "money": -800,
+              "health": -3
+            }
+          },
+          {
+            "id": "wild_mess",
+            "weight": 40,
+            "effects": {
+              "happiness": -3,
+              "health": -8,
+              "money": -1000,
+              "relationship": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "quiet",
+        "effects": {
+          "happiness": 4,
+          "relationship": 6,
+          "money": -120
+        }
+      },
+      {
+        "id": "forget",
+        "effects": {
+          "happiness": -8,
+          "relationship": -15,
+          "karma": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_secret_card",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "confess",
+        "effects": {
+          "happiness": -4,
+          "karma": 5,
+          "relationship": -6,
+          "money": -300
+        }
+      },
+      {
+        "id": "hide",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "hide_clear",
+            "weight": 45,
+            "effects": {
+              "happiness": 2,
+              "money": -1500
+            }
+          },
+          {
+            "id": "hide_found",
+            "weight": 55,
+            "effects": {
+              "happiness": -10,
+              "relationship": -15,
+              "money": -1500,
+              "karma": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "cut",
+        "effects": {
+          "happiness": 3,
+          "money": -100
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_tempted",
+    "category": "romance",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ]
+    },
+    "choices": [
+      {
+        "id": "resist",
+        "effects": {
+          "happiness": 3,
+          "karma": 8,
+          "relationship": 5
+        }
+      },
+      {
+        "id": "flirt",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "flirt_harmless",
+            "weight": 50,
+            "effects": {
+              "happiness": 4,
+              "relationship": -3,
+              "karma": -2
+            }
+          },
+          {
+            "id": "flirt_spiral",
+            "weight": 50,
+            "effects": {
+              "happiness": -8,
+              "relationship": -12,
+              "karma": -8,
+              "flags": {
+                "cheated": true,
+                "affair": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "tell",
+        "effects": {
+          "happiness": 2,
+          "relationship": 10,
+          "karma": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_mar_vegas",
+    "category": "romance",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "spouse",
+      "flags": [
+        "married"
+      ],
+      "minMoney": 1000
+    },
+    "choices": [
+      {
+        "id": "vows",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "vows_fun",
+            "weight": 70,
+            "effects": {
+              "happiness": 12,
+              "relationship": 15,
+              "money": -1000
+            }
+          },
+          {
+            "id": "vows_cheap",
+            "weight": 30,
+            "effects": {
+              "happiness": 3,
+              "money": -1800,
+              "relationship": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "home",
+        "effects": {
+          "happiness": 3,
+          "relationship": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_tattoo_ex",
+    "category": "random",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "minMoney": 200
+    },
+    "choices": [
+      {
+        "id": "do",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "do_love",
+            "weight": 30,
+            "effects": {
+              "happiness": 6,
+              "money": -250
+            }
+          },
+          {
+            "id": "do_regret",
+            "weight": 70,
+            "effects": {
+              "happiness": -8,
+              "looks": -3,
+              "money": -250
+            }
+          }
+        ]
+      },
+      {
+        "id": "wait",
+        "effects": {
+          "happiness": 2,
+          "karma": 2
+        }
+      },
+      {
+        "id": "small",
+        "effects": {
+          "money": -80,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_three_am_buy",
+    "category": "money",
+    "weight": 3,
+    "conditions": {
+      "minAge": 18,
+      "minMoney": 2000
+    },
+    "choices": [
+      {
+        "id": "buy",
+        "effects": {
+          "happiness": 5,
+          "money": -2000,
+          "smarts": -1
+        }
+      },
+      {
+        "id": "cart",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "return",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "return_ok",
+            "weight": 50,
+            "effects": {
+              "happiness": 2,
+              "money": -80
+            }
+          },
+          {
+            "id": "return_stuck",
+            "weight": 50,
+            "effects": {
+              "happiness": -4,
+              "money": -2000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vc_pyramid_pitch",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18,
+      "requiresPerson": "friend"
+    },
+    "choices": [
+      {
+        "id": "join",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "join_win",
+            "weight": 15,
+            "effects": {
+              "happiness": 8,
+              "money": 2500
+            }
+          },
+          {
+            "id": "join_lose",
+            "weight": 85,
+            "effects": {
+              "happiness": -8,
+              "money": -2000,
+              "smarts": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 1,
+          "relationship": -3
+        }
+      },
+      {
+        "id": "expose",
+        "effects": {
+          "happiness": -2,
+          "karma": 5,
+          "relationship": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_fake_id_casino",
+    "category": "crime",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "try",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "try_in",
+            "weight": 50,
+            "effects": {
+              "happiness": 7,
+              "money": -300
+            }
+          },
+          {
+            "id": "try_busted",
+            "weight": 50,
+            "effects": {
+              "money": -1500,
+              "karma": -5,
+              "happiness": -8,
+              "flags": {
+                "criminal_record": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "real",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "id": "home",
+        "effects": {
+          "happiness": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_bet_cant_pay",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "pay",
+        "effects": {
+          "happiness": -5,
+          "money": -1500,
+          "karma": 3
+        }
+      },
+      {
+        "id": "stall",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "stall_ok",
+            "weight": 50,
+            "effects": {
+              "happiness": -2,
+              "money": -500
+            }
+          },
+          {
+            "id": "stall_beat",
+            "weight": 50,
+            "effects": {
+              "health": -12,
+              "money": -2000,
+              "happiness": -8
+            }
+          }
+        ]
+      },
+      {
+        "id": "run",
+        "effects": {
+          "happiness": -8,
+          "karma": -4,
+          "money": -300
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_sell_plasma",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "sell",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "sell_ok",
+            "weight": 80,
+            "effects": {
+              "money": 300,
+              "health": -3,
+              "happiness": -1
+            }
+          },
+          {
+            "id": "sell_faint",
+            "weight": 20,
+            "effects": {
+              "money": 150,
+              "health": -6,
+              "happiness": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "gig",
+        "effects": {
+          "money": 200,
+          "happiness": -1
+        }
+      },
+      {
+        "id": "borrow",
+        "effects": {
+          "money": 300,
+          "karma": -1,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_sub_site",
+    "category": "money",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "start",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "start_boom",
+            "weight": 30,
+            "effects": {
+              "happiness": 6,
+              "money": 5000,
+              "flags": {
+                "fame": 2
+              }
+            }
+          },
+          {
+            "id": "start_slow",
+            "weight": 45,
+            "effects": {
+              "happiness": -1,
+              "money": 600
+            }
+          },
+          {
+            "id": "start_family",
+            "weight": 25,
+            "effects": {
+              "happiness": -8,
+              "money": 2500,
+              "karma": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "pass",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_drunk_wedding",
+    "category": "romance",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18,
+      "minMoney": 500
+    },
+    "choices": [
+      {
+        "id": "marry",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "marry_annul",
+            "weight": 60,
+            "effects": {
+              "happiness": -4,
+              "money": -800
+            }
+          },
+          {
+            "id": "marry_love",
+            "weight": 15,
+            "effects": {
+              "happiness": 10,
+              "flags": {
+                "new_partner": true
+              }
+            }
+          },
+          {
+            "id": "marry_mess",
+            "weight": 25,
+            "effects": {
+              "happiness": -8,
+              "money": -1500,
+              "karma": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "id": "witness",
+        "effects": {
+          "happiness": 5,
+          "money": -100
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_loan_shark",
+    "category": "money",
+    "weight": 1,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "borrow",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "borrow_ok",
+            "weight": 40,
+            "effects": {
+              "happiness": 3,
+              "money": 3000
+            }
+          },
+          {
+            "id": "borrow_trouble",
+            "weight": 60,
+            "effects": {
+              "health": -14,
+              "happiness": -8,
+              "money": -1500,
+              "karma": -3
+            }
+          }
+        ]
+      },
+      {
+        "id": "bank",
+        "effects": {
+          "happiness": -2,
+          "money": 500
+        }
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": -4,
+          "health": -2,
+          "money": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": "vc_viral_prank",
+    "category": "random",
+    "weight": 2,
+    "conditions": {
+      "minAge": 18
+    },
+    "choices": [
+      {
+        "id": "film",
+        "showOdds": true,
+        "outcomes": [
+          {
+            "id": "film_viral",
+            "weight": 35,
+            "effects": {
+              "happiness": 8,
+              "flags": {
+                "fame": 2
+              },
+              "money": 400
+            }
+          },
+          {
+            "id": "film_flop",
+            "weight": 40,
+            "effects": {
+              "happiness": -2
+            }
+          },
+          {
+            "id": "film_sued",
+            "weight": 25,
+            "effects": {
+              "happiness": -8,
+              "money": -2000,
+              "karma": -5
+            }
+          }
+        ]
+      },
+      {
+        "id": "skip",
+        "effects": {
+          "happiness": 1,
+          "smarts": 1
+        }
+      }
+    ]
+  }
+]
