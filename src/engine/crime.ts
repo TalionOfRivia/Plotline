@@ -18,6 +18,7 @@ export type CrimeResult = { ok: true; money: number } | { ok: false; years: numb
 export function commitCrime(life: Life, crimeId: string, rng: Rng): CrimeResult | null {
   const c = CRIMES.find((x) => x.id === crimeId)
   if (!c || life.age < c.minAge || life.prison || used(life, 'crime') >= 2) return null
+  if (crimeId === 'embezzle' && !life.job) return null
   use(life, 'crime')
   life.karma = clamp(life.karma + c.karma, -100, 100)
   if (rng.chance(crimeOdds(crimeId, life))) {

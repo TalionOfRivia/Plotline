@@ -194,5 +194,13 @@
   "fishing": {
     "name": "Fishing",
     "blurb": "Six hours of nothing, then one fish you will describe as bigger."
+  },
+  "psychiatrist": {
+    "name": "Psychiatrist",
+    "blurb": "Talk it through. Treats depression; the couch is comfortable."
+  },
+  "emergency_room": {
+    "name": "Emergency room",
+    "blurb": "Expensive, fast, and they fix almost anything."
   }
 }

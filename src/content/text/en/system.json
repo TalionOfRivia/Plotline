@@ -1,0 +1,9 @@
+{
+  "sys_job_offer": {
+    "text": "A recruiter calls with an offer: {{offer}}. Your current gig would be history.",
+    "choices": {
+      "accept": "Take the offer",
+      "decline": "Stay put"
+    }
+  }
+}

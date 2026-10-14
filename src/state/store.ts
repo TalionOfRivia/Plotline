@@ -5,11 +5,11 @@ import type { Life, Stats } from '../engine/types'
 import type { Rng } from '../engine/rng'
 import { ageUp, chooseOption, continueAsHeir, createLife, migrateLife, withRng, type NewLifeOptions } from '../engine/life'
 import { applyForJob, quitJob, recruiter, retire, workHarder } from '../engine/jobs'
-import { adoptPet, buyAsset, sellAsset } from '../engine/assets'
+import { adoptPet, buyAsset, repairCar, sellAsset } from '../engine/assets'
 import { interact, startDating, type Interaction } from '../engine/relationships'
 import { commitCrime, type CrimeResult } from '../engine/crime'
 import { enrollGrad, enrollUniversity, studyHarder } from '../engine/school'
-import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, startBusiness } from '../engine/special'
+import { applyAgent, applyAstronaut, joinMafia, sellBusiness, socialMediaPost, startBusiness, type Platform } from '../engine/special'
 import { doActivity, type ActivityResult } from '../engine/activities'
 import { doGig, emigrate, fertilityTreatment, invest, repayLoan, sue, takeLicense, takeLoan, toggleWill, withdraw, type LicenseKey, type Result } from '../engine/extras'
 import { syncDerivedFlags } from '../engine/derived'
@@ -63,7 +63,7 @@ interface GameState {
   enrollGrad: (gradId: string) => void
   study: () => void
   activity: (id: string) => ActivityResult | null
-  post: () => void
+  post: (platform?: Platform) => void
   joinMafia: () => void
   startBusiness: (kind: string, name: string) => void
   sellBusiness: () => void
@@ -83,6 +83,7 @@ interface GameState {
   gig: (id: string) => void
   setAttraction: (a: 'opposite' | 'same' | 'both') => void
   recruiter: () => void
+  repairCar: (id: string) => void
   surrender: () => void
   godEditPerson: (id: string, relationship: number) => void
   godEdit: (patch: { stats?: Partial<Stats>; money?: number; karma?: number; fame?: number }) => void
@@ -163,7 +164,7 @@ export const useGame = create<GameState>()(
           if (s.life && !s.life.alive) set((st) => { st.screen = 'tombstone' })
           return result
         },
-        post: () => act((l, rng) => { const viral = socialMediaPost(l, rng); get().setToast({ key: viral ? 'fame.viral' : 'fame.posted', kind: viral ? 'good' : 'info' }) }),
+        post: (platform = 'photo') => act((l, rng) => { const viral = socialMediaPost(l, rng, platform); get().setToast({ key: viral ? 'fame.viral' : 'fame.posted', kind: viral ? 'good' : 'info' }) }),
         joinMafia: () => act((l) => joinMafia(l)),
         startBusiness: (kind, name) => act((l) => { if (!startBusiness(l, kind, name)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
         sellBusiness: () => act((l) => sellBusiness(l)),
@@ -182,6 +183,7 @@ export const useGame = create<GameState>()(
         gig: (id) => get().extra((l, rng) => doGig(l, id, rng)),
         setAttraction: (a) => act((l) => { l.flags.attraction = a; l.dateBoard = [] }),
         surrender: () => set((s) => { if (!s.life?.alive) return; s.undo = snapshot(s.life); withRng(s.life, () => kill(s.life!, 'death.surrender')); s.screen = 'tombstone'; s.sheet = null }),
+        repairCar: (id) => act((l) => { if (!repairCar(l, id)) get().setToast({ key: 'assets.toast.cantAfford', kind: 'bad' }) }),
         recruiter: () => act((l, rng) => { const id = recruiter(l, rng); get().setToast({ key: id ? 'work.recruiterFound' : 'work.recruiterNone', kind: id ? 'good' : 'bad' }) }),
         godEditPerson: (id, relationship) => set((s) => { const p = s.life?.people.find((x) => x.id === id); if (p) p.relationship = relationship }),
         setGodMode: (on) => set((s) => { s.godMode = on }),

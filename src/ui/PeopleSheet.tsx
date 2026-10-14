@@ -12,7 +12,7 @@ const KIND_EMOJI: Record<Person['kind'], string> = {
 const ACTION_EMOJI: Record<Interaction, string> = {
   spend_time: '⏳', gift: '🎁', compliment: '🌟', insult: '😠', ask_money: '🙏', flirt: '😘', propose: '💍', break_up: '💔',
   have_child: '👶', adopt: '🧸', prenup: '📜', play: '🎾', walk: '🐕', movie_night: '🎬', vacation: '✈️',
-  conversation: '💬', party: '🍾', concert: '🎤', prank: '🤡', rumor: '😈', deal: '🤝', hook_up: '🖤', ask_out: '❤️',
+  conversation: '💬', party: '🍾', concert: '🎤', prank: '🤡', rumor: '😈', deal: '🤝', hook_up: '🖤', ask_out: '❤️', give_money: '💸', elope: '💒', counseling: '🛋️',
 }
 
 export function PeopleSheet() {

@@ -4,7 +4,7 @@ import { JOB_BY_ID, JOB_TRACKS } from './systems'
 import { clamp, log, use, used } from './util'
 import { jobTitleKey, promote } from './effects'
 
-const TAX_BRACKETS: [number, number][] = [[10_000, 0], [40_000, 0.12], [90_000, 0.22], [180_000, 0.3], [Infinity, 0.37]]
+const TAX_BRACKETS: [number, number][] = [[12_000, 0.1], [45_000, 0.2], [95_000, 0.3], [180_000, 0.4], [Infinity, 0.47]]
 
 export function taxOn(income: number) {
   let tax = 0, prev = 0
@@ -77,7 +77,7 @@ export function applyForJob(life: Life, trackId: string, rng: Rng): 'hired' | 'r
   return 'hired'
 }
 
-export const RECRUITER_FEE = 800
+export const RECRUITER_FEE = 1_600
 /** The recruiter finds a track you qualify for and doubles your interview odds for it this year. */
 export function recruiter(life: Life, rng: Rng): string | null {
   if (life.age < 18 || life.money < RECRUITER_FEE || life.prison || used(life, 'recruiter') >= 1) return null
@@ -126,8 +126,8 @@ export function workYear(life: Life, rng: Rng) {
 
   const gross = job.salary
   const net = gross - taxOn(gross)
-  // 45% of take-home goes to living expenses that scale with lifestyle
-  life.money += Math.round(net * 0.55)
+  // half of take-home goes to lifestyle spending that scales with income
+  life.money += Math.round(net * 0.5)
   job.yearsInTrack++
 
   // performance drifts toward a baseline set by smarts & health, with noise
@@ -149,10 +149,23 @@ export function workYear(life: Life, rng: Rng) {
     life.job = null
     life.flags.just_fired = true
     life.stats.happiness = clamp(life.stats.happiness - 12)
-  } else if (rng.chance(0.02)) {
+  } else if (rng.chance(0.03)) {
     log(life, 'bad', 'work.laidOff', { title: jobTitleKey(life) })
     life.job = null
     life.stats.happiness = clamp(life.stats.happiness - 8)
+  }
+  // headhunters and referrals: a better (or worse) offer lands on your desk
+  if (life.age >= 20 && rng.chance(0.08)) {
+    const options = JOB_TRACKS.filter((t) => meetsRequirements(t, life) && t.id !== job.trackId && !FAME_TRACKS.has(t.id) && (t.requires?.minAge ?? 18) >= 18)
+    if (options.length) {
+      const t = rng.pick(options)
+      const rung = Math.min(t.ladder.length - 1, rng.int(0, 1))
+      life.flags.offer_track = t.id
+      life.flags.offer_rung = rung
+      life.flags.offer_salary = Math.round(t.ladder[rung].salary * (0.9 + rng.float() * 0.4))
+      life.pending = { eventId: 'sys_job_offer' }
+      life.seenEvents.push('sys_job_offer')
+    }
   }
   // fighters get hurt
   if (life.job?.trackId === 'fighter' && rng.chance(0.25)) { life.stats.health = clamp(life.stats.health - rng.int(4, 14)); life.stats.looks = clamp(life.stats.looks - rng.int(0, 3)); log(life, 'bad', 'work.fightInjury') }

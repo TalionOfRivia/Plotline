@@ -22,7 +22,7 @@ export function dateGender(life: Life, rng: Rng): Gender {
 export type Interaction =
   | 'spend_time' | 'gift' | 'compliment' | 'insult' | 'ask_money' | 'flirt' | 'propose' | 'break_up'
   | 'have_child' | 'adopt' | 'prenup' | 'play' | 'walk' | 'movie_night' | 'vacation'
-  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up' | 'ask_out'
+  | 'conversation' | 'party' | 'concert' | 'prank' | 'rumor' | 'deal' | 'hook_up' | 'ask_out' | 'give_money' | 'elope' | 'counseling'
 
 export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['kind'][] | 'all'; minAge: number }> = {
   spend_time: { cost: 0, kinds: 'all', minAge: 0 },
@@ -48,6 +48,9 @@ export const INTERACTIONS: Record<Interaction, { cost: number; kinds: Person['ki
   deal: { cost: 0, kinds: ['friend', 'sibling'], minAge: 12 },
   hook_up: { cost: 0, kinds: ['partner', 'spouse', 'friend', 'ex'], minAge: 18 },
   ask_out: { cost: 0, kinds: ['friend', 'ex'], minAge: 15 },
+  give_money: { cost: 500, kinds: ['partner', 'spouse', 'child', 'sibling', 'friend', 'mother', 'father'], minAge: 16 },
+  elope: { cost: 300, kinds: ['partner'], minAge: 18 },
+  counseling: { cost: 900, kinds: ['spouse'], minAge: 18 },
 }
 
 export function availableInteractions(life: Life, p: Person): Interaction[] {
@@ -108,6 +111,9 @@ export function interact(life: Life, personId: string, kind: Interaction, rng: R
     case 'prank': if (rng.chance(0.5)) { bump(rng.int(3, 7)); happy(4) } else { bump(-rng.int(6, 12)); key = 'people.did.prank_flop' } break
     case 'rumor': p.relationship = clamp(p.relationship - rng.int(8, 15)); life.karma = clamp(life.karma - 5, -100, 100); happy(1); break
     case 'deal': { const cash = rng.int(50, 600); if (rng.chance(0.7)) { life.money += cash; bump(-2); key = 'people.did.deal_yes'; log(life, 'info', key, { name: p.firstName, money: cash }); return key } bump(-5); key = 'people.did.deal_no'; break }
+    case 'give_money': bump(rng.int(6, 12)); break
+    case 'elope': marry(life, p); return 'people.married'
+    case 'counseling': if (rng.chance(0.7)) { bump(rng.int(10, 20)) } else { bump(-3); key = 'people.did.counseling_flop' } break
     case 'ask_out':
       if (rng.chance(0.25 + warm * 0.6)) { p.kind = 'partner'; p.relationship = clamp(p.relationship + 10); happy(8); log(life, 'good', 'people.newPartner', { name: p.firstName }); return 'people.newPartner' }
       bump(-6); key = 'people.did.ask_out_no'; break

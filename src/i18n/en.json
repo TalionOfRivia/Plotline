@@ -235,7 +235,13 @@
       "breeder": "Breeders",
       "exotic": "Exotic pets",
       "ranch": "Horse ranch"
-    }
+    },
+    "carRepair": "Your {{item}} needed a ${{money}} repair.",
+    "carScrapped": "Your {{item}} was beyond repair and got scrapped.",
+    "repair": "Repair car",
+    "repaired": "You repaired your {{item}} for ${{money}}.",
+    "giftCar": "Your parents surprised you with a used car.",
+    "giftHome": "Your parents helped you into a small apartment of your own."
   },
   "people": {
     "interact": "Interact",
@@ -270,7 +276,10 @@
       "rumor": "Spread a rumor",
       "deal": "Sell them something",
       "hook_up": "Hook up",
-      "ask_out": "Ask out"
+      "ask_out": "Ask out",
+      "give_money": "Give money",
+      "elope": "Elope",
+      "counseling": "Couples counseling"
     },
     "did": {
       "spend_time": "You spent time with {{name}}.",
@@ -301,7 +310,10 @@
       "hook_up_no": "{{name}} turned you down.",
       "hook_up_caught": "{{other}} found out about you and {{name}}.",
       "hook_up_std": "You hooked up with {{name}}. The clinic had news.",
-      "ask_out_no": "{{name}} wants to stay friends. Ouch."
+      "ask_out_no": "{{name}} wants to stay friends. Ouch.",
+      "give_money": "You gave {{name}} some money.",
+      "counseling": "Counseling with {{name}} helped.",
+      "counseling_flop": "Counseling with {{name}} went nowhere."
     },
     "newFriend": "You became friends with {{name}}.",
     "lostFriend": "{{name}} is no longer your friend.",
@@ -315,7 +327,8 @@
     "childGrewUp": "{{name}} turned 18.",
     "gone": "They're gone.",
     "cantAfford": "You can't afford that.",
-    "enough": "They've had enough of you this year."
+    "enough": "They've had enough of you this year.",
+    "weddingCost": "The wedding cost ${{money}}; your spouse brought ${{dowry}} into the marriage."
   },
   "crime": {
     "hint": "Odds shown are real. Convictions on record: {{record}}.",
@@ -423,7 +436,20 @@
     "viral": "Your post went viral!",
     "posted": "You posted. A few likes.",
     "income": "Endorsements and appearances paid ${{money}}.",
-    "bookDeal": "You signed a book deal worth ${{money}}."
+    "bookDeal": "You signed a book deal worth ${{money}}.",
+    "platform": {
+      "photo": "Photo feed",
+      "video": "Short videos",
+      "stream": "Streaming",
+      "micro": "Microblog",
+      "podcast": "Podcast",
+      "subs": "Subscription site"
+    },
+    "followers": "{{n}} followers",
+    "postBtn": "Post",
+    "viralOn": "Your post went viral: +{{followers}} followers.",
+    "postedOn": "You posted. +{{followers}} followers.",
+    "subsIncome": "Your subscribers paid ${{money}} this year."
   },
   "royal": {
     "born": "You were born into the royal family.",
@@ -696,5 +722,26 @@
     "clean": "You got clean.",
     "relapse": "Rehab did not take this time.",
     "overdoseScare": "You woke up in an ambulance."
+  },
+  "health": {
+    "ailment": "You came down with {{ailment}}.",
+    "recovered": "Your {{ailment}} cleared up on its own.",
+    "cured": "The doctor treated your {{ailment}}.",
+    "treatmentFailed": "The treatment for your {{ailment}} did not work.",
+    "depressed": "You slid into depression.",
+    "depressionCured": "Therapy worked. You feel like yourself again.",
+    "depressionOngoing": "Therapy is slow. Keep going.",
+    "name": {
+      "ear_infection": "an ear infection",
+      "flu": "the flu",
+      "constipation": "constipation",
+      "migraines": "migraines",
+      "high_blood_pressure": "high blood pressure",
+      "back_pain": "back pain",
+      "bronchitis": "bronchitis",
+      "kidney_stones": "kidney stones",
+      "anemia": "anemia",
+      "insomnia": "insomnia"
+    }
   }
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "sys_job_offer",
+    "category": "work",
+    "once": false,
+    "weight": 0,
+    "conditions": {
+      "minAge": 200
+    },
+    "choices": [
+      {
+        "id": "accept",
+        "effects": {
+          "flags": {
+            "accept_offer": true
+          },
+          "happiness": 4
+        }
+      },
+      {
+        "id": "decline",
+        "effects": {
+          "flags": {
+            "decline_offer": true
+          }
+        }
+      }
+    ]
+  }
+]

@@ -58,5 +58,25 @@
     "name": "Murder",
     "success": "You get away with it, which is a sentence you will carry longer than any court could give.",
     "caught": "There is a body, a witness and a very short trial."
+  },
+  "mischief": {
+    "name": "Mischief",
+    "success": "You caused some trouble and got away with it.",
+    "caught": "Caught being a menace. A stern talking-to."
+  },
+  "porch_pirate": {
+    "name": "Porch piracy",
+    "success": "You stole a neighbour's package: ${{money}} of stuff.",
+    "caught": "A doorbell camera saw the whole thing."
+  },
+  "hacking": {
+    "name": "Hacking",
+    "success": "You got into someone's accounts and walked off with ${{money}}.",
+    "caught": "Traced in an afternoon. Cybercrime unit."
+  },
+  "embezzle": {
+    "name": "Embezzlement",
+    "success": "You skimmed ${{money}} from work and nobody noticed.",
+    "caught": "The audit found it. Handcuffs in the lobby."
   }
 }

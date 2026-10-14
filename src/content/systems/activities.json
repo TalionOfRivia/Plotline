@@ -477,5 +477,23 @@
       "happiness": 4,
       "smarts": 1
     }
+  },
+  {
+    "id": "psychiatrist",
+    "emoji": "🧠",
+    "cost": 800,
+    "minAge": 10,
+    "effects": {
+      "happiness": 3
+    }
+  },
+  {
+    "id": "emergency_room",
+    "emoji": "🚑",
+    "cost": 2500,
+    "minAge": 0,
+    "effects": {
+      "health": 4
+    }
   }
 ]

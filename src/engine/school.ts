@@ -3,6 +3,9 @@ import type { Rng } from './rng'
 import { EDUCATION } from './systems'
 import { clamp, log, use, used } from './util'
 
+/** Countries where public university (and healthcare) is free or near-free. */
+export const WELFARE_STATES = new Set(["DK", "SE", "NO", "FI", "IS", "DE", "AT", "FR", "NL", "BE", "GB", "IE", "CA", "AU", "NZ", "IL", "ES", "IT", "PT", "CZ", "PL", "EE", "LV", "LT", "SI", "SK", "HU", "GR", "JP", "KR", "TW", "LU", "CH"])
+
 /** Yearly school progression. */
 export function schoolYear(life: Life, rng: Rng) {
   const ed = life.education
@@ -39,7 +42,7 @@ export function schoolYear(life: Life, rng: Rng) {
     ed.yearsIn++
     const target = clamp(s.smarts * 0.9 + 5)
     ed.grades = clamp(ed.grades + (target - ed.grades) * 0.35 + rng.int(-8, 8))
-    if (!life.flags.scholarship) {
+    if (!life.flags.scholarship && !WELFARE_STATES.has(life.countryCode)) {
       const yearly = EDUCATION.universityCost / EDUCATION.universityYears
       if (life.money >= yearly) life.money -= yearly
       else ed.loans += yearly

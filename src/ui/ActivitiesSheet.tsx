@@ -5,7 +5,7 @@ import { Pill, Row, Section, Sheet } from './Sheet'
 import { ACTIVITIES, CRIMES, EDUCATION, sysText } from '../engine/systems'
 import { crimeOdds } from '../engine/crime'
 import { canEnrollUniversity, gradSchoolsAvailable } from '../engine/school'
-import { BUSINESS_KINDS, MAFIA_RANKS, canApplyAgent, canApplyAstronaut } from '../engine/special'
+import { BUSINESS_KINDS, MAFIA_RANKS, PLATFORMS, canApplyAgent, canApplyAstronaut } from '../engine/special'
 import { formatMoney } from './money'
 import { EMIGRATE_COST, IVF_COST, LAWSUIT_COST, LICENSES, licenseOdds, type LicenseKey } from '../engine/extras'
 import { CountryPicker } from './CountryPicker'
@@ -167,7 +167,9 @@ export function ActivitiesSheet() {
           <div className="flex-1 h-2 rounded-full bg-fg/10 overflow-hidden"><div className="h-full bg-happy" style={{ width: `${life.fame}%` }} /></div>
           <span className="tabular-nums">{Math.round(life.fame)}</span>
         </div>
-        {life.age >= 13 && <Row emoji="📱" title={t('fame.post')} sub={t('fame.postSub')} onClick={g.post} />}
+        {life.age >= 13 && PLATFORMS.map((p) => (
+          <Row key={p} emoji={{ photo: '📷', video: '🎬', stream: '🎮', micro: '🐦', podcast: '🎙️', subs: '🔞' }[p]} title={t(`fame.platform.${p}`)} sub={t('fame.followers', { n: (life.social[p] ?? 0).toLocaleString() })} right={t('fame.postBtn')} onClick={() => g.post(p)} disabled={p === 'subs' && life.age < 18} />
+        ))}
       </Section>
       <Section title={t('act.paths')}>
         <Row emoji="🏢" title={t('biz.title')} sub={life.business ? life.business.name : t('biz.sub')} onClick={() => setPage('business')} />

@@ -7,7 +7,7 @@ import { clamp, kill, log, resetYearly } from './util'
 import { extrasYear } from './extras'
 import { syncDerivedFlags } from './derived'
 import { schoolYear } from './school'
-import { refreshJobBoard, workYear } from './jobs'
+import { refreshJobBoard, taxOn, workYear } from './jobs'
 import { assetsYear } from './assets'
 import { refreshDateBoard, relationshipsYear } from './relationships'
 import { prisonYear } from './crime'
@@ -35,7 +35,7 @@ export function blankLife(seed: string): Life {
     job: null, retired: false, pension: 0, assets: [], fame: 0, crimes: 0, convictions: 0,
     prison: null, prisonYears: 0, royalty: { rank: 'none', popularity: 50 }, mafia: null, business: null,
     marriages: 0, jobBoard: [], dateBoard: [], generation: 1,
-    loan: 0, investments: { index: 0, crypto: 0 }, will: false, gigs: [],
+    loan: 0, investments: { index: 0, crypto: 0 }, will: false, gigs: [], social: {},
   }
 }
 
@@ -49,6 +49,7 @@ export function migrateLife(life: Life): Life {
   life.investments.index ??= 0
   life.investments.crypto ??= 0
   life.gigs ??= []
+  life.social ??= {}
   life.royalty ??= { rank: 'none', popularity: 50 }
   life.education ??= base.education
   return life
@@ -128,7 +129,7 @@ export function ageUp(life: Life) {
 
   // natural drift
   const s = life.stats
-  if (life.age > 45) s.health = clamp(s.health - rng.int(0, 2) - Math.floor((life.age - 45) / 12))
+  if (life.age > 50) s.health = clamp(s.health - rng.int(0, 1) - Math.floor((life.age - 50) / 15))
   if (life.age > 30) s.looks = clamp(s.looks - rng.int(0, 1) - Math.floor((life.age - 30) / 15))
   if (life.age < 18) s.smarts = clamp(s.smarts + rng.int(0, 1))
   s.happiness = clamp(s.happiness + rng.int(-3, 3))
@@ -144,7 +145,8 @@ export function ageUp(life: Life) {
       s.happiness = clamp(s.happiness - (p.relationship > 60 ? 15 : 5))
       // inheritance from parents
       if ((p.kind === 'mother' || p.kind === 'father') && life.age >= 18 && rng.chance(0.6)) {
-        const inh = rng.int(5_000, 150_000) * (life.royalty.rank !== 'none' ? 10 : 1)
+        const sibs = 1 + life.people.filter((x) => x.kind === 'sibling').length
+        const inh = Math.round(rng.int(20_000, 600_000) / sibs) * (life.royalty.rank !== 'none' ? 10 : 1)
         life.money += inh
         log(life, 'info', 'diary.inherited', { name: p.firstName, money: inh })
       }
@@ -164,14 +166,20 @@ export function ageUp(life: Life) {
   specialCareersYear(life, rng)
   extrasYear(life, rng)
   if (life.flags.astronaut) { if (rng.chance(0.5)) life.flags.in_space = true; else delete life.flags.in_space }
-  // base cost of living for adults (rent, food, bills); students and inmates are covered
+  // household: base living cost, dependants, and a working spouse's take-home
   if (life.age >= 18 && !life.prison && life.education.stage !== 'university' && life.education.stage !== 'grad') {
-    life.money -= life.assets.some((a) => a.kind === 'house') ? 8_000 : 14_000
+    const kids = life.people.filter((p) => p.kind === 'child' && p.alive && p.age < 18).length
+    life.money -= (life.assets.some((a) => a.kind === 'house') ? 12_000 : 16_000) + kids * 10_000
+  }
+  const spouse = life.people.find((p) => p.kind === 'spouse' && p.alive)
+  if (spouse?.income) {
+    const net = spouse.income - taxOn(spouse.income)
+    life.money += Math.round(net * 0.5) - 8_000
   }
   // debt hurts; deep debt ends in bankruptcy (assets sold, slate wiped, big happiness hit)
   if (life.money < 0 && life.age >= 18) {
     s.happiness = clamp(s.happiness - 4)
-    if (life.money < -40_000) {
+    if (life.money < -80_000) {
       for (const a of life.assets) life.money += Math.round(a.value * 0.6 - a.mortgage)
       life.assets = []
       life.investments = { index: 0, crypto: 0 }
@@ -189,7 +197,7 @@ export function ageUp(life: Life) {
   if (!life.alive) { finish(life); life.rngCalls = rng.calls; return }
 
   // own mortality
-  const base = life.age < 50 ? 0.001 : life.age < 70 ? 0.01 : life.age < 85 ? 0.05 : 0.15
+  const base = life.age < 50 ? 0.001 : life.age < 70 ? 0.006 : life.age < 85 ? 0.035 : 0.12
   const healthMod = (100 - s.health) / 100
   if (rng.chance(base * (0.5 + healthMod * 1.5)) || (s.health <= 0 && rng.chance(0.6))) {
     kill(life, s.health < 30 ? 'death.illness' : life.age > 80 ? 'death.oldAge' : 'death.sudden')
@@ -199,7 +207,7 @@ export function ageUp(life: Life) {
   }
 
   // event roll
-  const roll = life.age < 18 ? 1 : rng.chance(0.8) ? 1 : 0
+  const roll = life.pending ? 0 : life.age < 18 ? 1 : rng.chance(0.8) ? 1 : 0
   if (roll) {
     const ev = pickEvent(ALL_EVENTS, life, rng)
     if (ev) {
@@ -236,7 +244,7 @@ export function chooseOption(life: Life, choiceId: string): string | undefined {
     age: life.age,
     kind: 'event',
     text: `event:${ev.id}:${choiceId}${outcomeId ? ':' + outcomeId : ''}`,
-    params: { name: person?.firstName ?? '' },
+    params: { name: person?.firstName ?? '', offer: String(life.flags.offer_track ?? '') },
   })
   life.pending = null
   if (!life.alive) finish(life)

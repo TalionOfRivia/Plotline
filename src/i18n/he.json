@@ -235,7 +235,13 @@
       "breeder": "מגדלים",
       "exotic": "חיות אקזוטיות",
       "ranch": "חוות סוסים"
-    }
+    },
+    "carRepair": "ה{{item}} שלך היה צריך תיקון של ${{money}}.",
+    "carScrapped": "ה{{item}} שלך לא היה ניתן לתיקון ונגרט.",
+    "repair": "לתקן את הרכב",
+    "repaired": "תיקנת את ה{{item}} ב-${{money}}.",
+    "giftCar": "ההורים הפתיעו אותך ברכב משומש.",
+    "giftHome": "ההורים עזרו לך להיכנס לדירה קטנה משלך."
   },
   "people": {
     "interact": "אינטראקציה",
@@ -270,7 +276,10 @@
       "rumor": "להפיץ שמועה",
       "deal": "למכור משהו",
       "hook_up": "להתמזמז",
-      "ask_out": "להזמין לדייט"
+      "ask_out": "להזמין לדייט",
+      "give_money": "לתת כסף",
+      "elope": "להתחתן בחשאי",
+      "counseling": "ייעוץ זוגי"
     },
     "did": {
       "spend_time": "בילית עם {{name}}.",
@@ -301,7 +310,10 @@
       "hook_up_no": "{{name}} סירב/ה לך.",
       "hook_up_caught": "{{other}} גילה/תה עליך ועל {{name}}.",
       "hook_up_std": "התמזמזת עם {{name}}. למרפאה היו חדשות.",
-      "ask_out_no": "{{name}} מעדיף/ה להישאר חברים. אאוץ׳."
+      "ask_out_no": "{{name}} מעדיף/ה להישאר חברים. אאוץ׳.",
+      "give_money": "נתת ל{{name}} קצת כסף.",
+      "counseling": "הייעוץ הזוגי עם {{name}} עזר.",
+      "counseling_flop": "הייעוץ הזוגי עם {{name}} לא הוביל לשום מקום."
     },
     "newFriend": "התחברת עם {{name}}.",
     "lostFriend": "{{name}} כבר לא חבר/ה שלך.",
@@ -315,7 +327,8 @@
     "childGrewUp": "{{name}} הגיע/ה לגיל 18.",
     "gone": "הוא/היא כבר לא איתנו.",
     "cantAfford": "אין לך מספיק כסף לזה.",
-    "enough": "נמאס להם ממך להשנה."
+    "enough": "נמאס להם ממך להשנה.",
+    "weddingCost": "החתונה עלתה ${{money}}; בן/בת הזוג הביא/ה ${{dowry}} לנישואים."
   },
   "crime": {
     "hint": "הסיכויים שמוצגים אמיתיים. הרשעות בתיק: {{record}}.",
@@ -423,7 +436,20 @@
     "viral": "הפוסט שלך הפך לוויראלי!",
     "posted": "פרסמת. כמה לייקים.",
     "income": "חסויות והופעות הכניסו ${{money}}.",
-    "bookDeal": "חתמת על עסקת ספר בשווי ${{money}}."
+    "bookDeal": "חתמת על עסקת ספר בשווי ${{money}}.",
+    "platform": {
+      "photo": "פיד תמונות",
+      "video": "סרטונים קצרים",
+      "stream": "סטרימינג",
+      "micro": "מיקרו-בלוג",
+      "podcast": "פודקאסט",
+      "subs": "אתר מנויים"
+    },
+    "followers": "{{n}} עוקבים",
+    "postBtn": "לפרסם",
+    "viralOn": "הפוסט שלך הפך ויראלי: +{{followers}} עוקבים.",
+    "postedOn": "פרסמת. +{{followers}} עוקבים.",
+    "subsIncome": "המנויים שלך שילמו ${{money}} השנה."
   },
   "royal": {
     "born": "נולדת למשפחת המלוכה.",
@@ -696,5 +722,26 @@
     "clean": "נגמלת.",
     "relapse": "הגמילה לא תפסה הפעם.",
     "overdoseScare": "התעוררת באמבולנס."
+  },
+  "health": {
+    "ailment": "חטפת {{ailment}}.",
+    "recovered": "{{ailment}} עבר מעצמו.",
+    "cured": "הרופא/ה טיפל/ה ב{{ailment}}.",
+    "treatmentFailed": "הטיפול ב{{ailment}} לא עבד.",
+    "depressed": "שקעת בדיכאון.",
+    "depressionCured": "הטיפול עבד. חזרת להיות את/ה.",
+    "depressionOngoing": "הטיפול איטי. ממשיכים.",
+    "name": {
+      "ear_infection": "דלקת אוזניים",
+      "flu": "שפעת",
+      "constipation": "עצירות",
+      "migraines": "מיגרנות",
+      "high_blood_pressure": "לחץ דם גבוה",
+      "back_pain": "כאבי גב",
+      "bronchitis": "ברונכיטיס",
+      "kidney_stones": "אבנים בכליות",
+      "anemia": "אנמיה",
+      "insomnia": "נדודי שינה"
+    }
   }
 }

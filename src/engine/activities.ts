@@ -4,6 +4,7 @@ import { ACTIVITIES } from './systems'
 import { applyEffects } from './effects'
 import { clamp, kill, log, use, used } from './util'
 import { placeBet, sweepstakes } from './extras'
+import { WELFARE_STATES } from './school'
 
 export interface ActivityResult { id: string; key: string; money?: number; kind: 'good' | 'bad' | 'info' }
 
@@ -12,9 +13,10 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
   if (!a || life.age < a.minAge || life.prison) return null
   const limit = a.special === 'casino' || a.special === 'bet' || a.special === 'lottery' ? 3 : 1
   if (used(life, `act_${id}`) >= limit) return { id, key: 'activity.limit', kind: 'info' }
-  if (life.money < a.cost) return { id, key: 'activity.cantAfford', kind: 'bad' }
+  const cost = (id === 'doctor_visit' || id === 'psychiatrist' || id === 'emergency_room') && WELFARE_STATES.has(life.countryCode) ? 0 : a.cost
+  if (life.money < cost) return { id, key: 'activity.cantAfford', kind: 'bad' }
   use(life, `act_${id}`)
-  life.money -= a.cost
+  life.money -= cost
   if (a.special === 'bet') { const r = placeBet(life, id as 'horse_races' | 'fight_betting', rng); return { id, ...r } }
   if (a.special === 'sweepstakes') { const r = sweepstakes(life, rng); return { id, ...r } }
 
@@ -43,7 +45,20 @@ export function doActivity(life: Life, id: string, rng: Rng): ActivityResult | n
   if (id === 'plastic_surgery') life.flags.plastic_surgery = true
   if ((id === 'nightlife' || id === 'party') && !life.flags.addicted && rng.chance(0.06)) { life.flags.addicted = true; log(life, 'bad', 'vice.hooked') }
   if (id === 'rehab') { if (life.flags.addicted && rng.chance(0.7)) { delete life.flags.addicted; log(life, 'good', 'vice.clean') } else if (life.flags.addicted) log(life, 'bad', 'vice.relapse') }
-  if (id === 'doctor_visit' && life.stats.health < 40) { life.flags.survived_illness = true }
+  if (id === 'doctor_visit' || id === 'emergency_room') {
+    if (life.stats.health < 40) life.flags.survived_illness = true
+    const ail = life.flags.ailment
+    if (ail) {
+      if (rng.chance(id === 'emergency_room' ? 0.95 : 0.8)) { delete life.flags.ailment; life.stats.health = clamp(life.stats.health + 8); life.stats.happiness = clamp(life.stats.happiness + 10); log(life, 'good', 'health.cured', { ailment: String(ail) }); return { id, key: 'health.cured', kind: 'good' } }
+      log(life, 'bad', 'health.treatmentFailed', { ailment: String(ail) }); return { id, key: 'health.treatmentFailed', kind: 'bad' }
+    }
+  }
+  if (id === 'psychiatrist') {
+    if (life.flags.depressed) {
+      if (rng.chance(0.6)) { delete life.flags.depressed; life.stats.happiness = clamp(life.stats.happiness + 60); log(life, 'good', 'health.depressionCured'); return { id, key: 'health.depressionCured', kind: 'good' } }
+      return { id, key: 'health.depressionOngoing', kind: 'info' }
+    }
+  }
   applyEffects(life, a.effects, undefined, rng)
   log(life, 'info', `activity.did.${id}`)
   return { id, key: `activity.did.${id}`, kind: 'info' }

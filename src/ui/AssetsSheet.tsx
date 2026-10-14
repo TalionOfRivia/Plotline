@@ -15,7 +15,7 @@ type Tab = 'owned' | 'houses' | 'cars' | 'pets' | 'luxury' | 'money'
 export function AssetsSheet() {
   const { t, i18n } = useTranslation()
   const life = useGame((s) => s.life)!
-  const { buy, sell, adoptPet } = useGame()
+  const { buy, sell, adoptPet, repairCar } = useGame()
   const [tab, setTab] = useState<Tab>('owned')
   const lang = i18n.language
   const tabs: Tab[] = ['owned', 'money', 'houses', 'cars', 'pets', 'luxury']
@@ -44,6 +44,9 @@ export function AssetsSheet() {
                 right={t('assets.sell')} onClick={() => sell(a.id)} />
             )
           })}
+          {life.assets.filter((a) => a.kind === 'car' && a.condition < 60).map((a) => (
+            <Row key={a.id + 'r'} emoji="🔧" title={t('assets.repair')} sub={sysText(lang, 'assets', `cars.${a.assetId}`)} right={formatMoney(Math.max(200, Math.round(a.value * 0.12)), lang)} onClick={() => repairCar(a.id)} />
+          ))}
           {pets.map((p) => {
             const def = ASSET_BY_ID[p.species ?? '']
             return <Row key={p.id} emoji={def?.emoji ?? '🐾'} title={p.firstName} sub={`${sysText(lang, 'assets', `pets.${p.species}`)} · ${t('common.age', { age: p.age })}`} />

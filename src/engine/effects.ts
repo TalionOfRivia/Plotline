@@ -50,6 +50,20 @@ function handleSpecialFlag(life: Life, key: string, value: boolean | number | st
     case 'promoted':
       if (life.job) promote(life)
       return true
+    case 'accept_offer': {
+      const trackId = String(life.flags.offer_track ?? '')
+      const track = JOB_BY_ID[trackId]
+      if (track) {
+        life.job = { trackId, rung: Number(life.flags.offer_rung) || 0, yearsInTrack: 0, performance: 55, salary: Number(life.flags.offer_salary) || track.ladder[0].salary }
+        life.flags.ever_worked = true; life.retired = false
+        log(life, 'good', 'work.hired', { title: jobTitleKey(life) })
+      }
+      delete life.flags.offer_track; delete life.flags.offer_rung; delete life.flags.offer_salary
+      return true
+    }
+    case 'decline_offer':
+      delete life.flags.offer_track; delete life.flags.offer_rung; delete life.flags.offer_salary
+      return true
     // ---- school
     case 'grades_boost': life.education.grades = clamp(life.education.grades + 10 * (n || 1)); return true
     case 'grades_drop': life.education.grades = clamp(life.education.grades - 10 * (n || 1)); return true
@@ -182,9 +196,10 @@ export function breakup(life: Life, person: Person) {
   person.relationship = clamp(person.relationship - 30)
   life.stats.happiness = clamp(life.stats.happiness - (wasSpouse ? 15 : 8))
   if (wasSpouse) {
-    // divorce splits liquid money if no prenup
-    if (!life.flags.prenup && life.money > 0) {
-      const half = Math.round(life.money / 2)
+    // divorce splits net worth (cash + assets) if no prenup
+    const worth = life.money + life.assets.reduce((s, a) => s + a.value - a.mortgage, 0)
+    if (!life.flags.prenup && worth > 0) {
+      const half = Math.round(worth / 2)
       life.money -= half
       log(life, 'bad', 'people.divorced', { name: person.firstName, money: half })
     } else log(life, 'bad', 'people.divorcedPrenup', { name: person.firstName })
@@ -198,7 +213,12 @@ export function marry(life: Life, person: Person) {
   person.relationship = clamp(person.relationship + 10)
   life.marriages++
   life.stats.happiness = clamp(life.stats.happiness + 15)
+  // the wedding costs money; the spouse brings their savings into the marriage
+  const wedding = Math.min(8_000, Math.max(1_500, Math.round(life.money * 0.08)))
+  const dowry = Math.round((person.income ?? 30_000) * (1.5 + (person.age - 18) * 0.1))
+  life.money += dowry - wedding
   log(life, 'good', 'people.married', { name: person.firstName })
+  log(life, 'info', 'people.weddingCost', { money: wedding, dowry })
 }
 
 export function addChild(life: Life, rng: Rng, partner?: Person) {

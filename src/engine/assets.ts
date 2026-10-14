@@ -67,9 +67,15 @@ export function assetsYear(life: Life, rng: Rng) {
       if (a.mortgage <= 0) { a.mortgage = 0; log(life, 'good', 'assets.mortgagePaid', { item: a.assetId }) }
     }
     if (a.kind === 'house') a.value = Math.round(a.value * (1 + rng.int(-2, 7) / 100))
-    else if (a.kind === 'car') { a.value = Math.round(a.value * 0.88); a.condition = clamp(a.condition - rng.int(3, 9)) }
+    else if (a.kind === 'car') {
+      a.value = Math.round(a.value * 0.88)
+      a.condition = clamp(a.condition - rng.int(3, 9))
+      if (a.condition < 40 && rng.chance(0.35)) { const bill = rng.int(150, 900); life.money -= bill; log(life, 'bad', 'assets.carRepair', { item: a.assetId, money: bill }) }
+      if (a.condition <= 5 || life.age - a.boughtAt > 25) { log(life, 'bad', 'assets.carScrapped', { item: a.assetId }); a.value = 0; a.condition = -1 }
+    }
     else a.value = Math.round(a.value * (1 + rng.int(-5, 8) / 100))
   }
+  life.assets = life.assets.filter((a) => a.condition >= 0)
   // landlord: every home beyond the one you live in brings rent (4% of value, minus wear)
   const homes = life.assets.filter((a) => a.kind === 'house')
   if (homes.length > 1) {
@@ -84,10 +90,21 @@ export function assetsYear(life: Life, rng: Rng) {
     if (def) life.money -= def.upkeep
     if (p.age >= lifespan * 0.7 && rng.chance((p.age - lifespan * 0.7) / lifespan + 0.1)) {
       p.alive = false
-      life.stats.happiness = clamp(life.stats.happiness - 10)
+      life.stats.happiness = clamp(life.stats.happiness - 30)
       log(life, 'bad', 'assets.petDied', { name: p.firstName })
     }
   }
   // bankruptcy flag for ribbons
   if (life.money < -50_000) life.flags.bankrupt = true
+}
+
+export function repairCar(life: Life, ownedId: string): boolean {
+  const a = life.assets.find((x) => x.id === ownedId && x.kind === 'car')
+  if (!a) return false
+  const cost = Math.max(200, Math.round(a.value * 0.12))
+  if (life.money < cost) return false
+  life.money -= cost
+  a.condition = clamp(a.condition + 45)
+  log(life, 'info', 'assets.repaired', { item: a.assetId, money: cost })
+  return true
 }

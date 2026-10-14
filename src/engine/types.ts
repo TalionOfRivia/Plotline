@@ -146,6 +146,8 @@ export interface Life {
   will: boolean
   /** this year's freelance gig offers (ids) */
   gigs: string[]
+  /** followers per platform */
+  social: Record<string, number>
 }
 
 // ---- Content: events --------------------------------------------------------

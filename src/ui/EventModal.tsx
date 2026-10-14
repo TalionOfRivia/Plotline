@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { useGame } from '../state/store'
 import { EVENT_BY_ID, eventText } from '../engine/content'
 import { choiceOdds } from '../engine/life'
+import { JOB_BY_ID, sysText } from '../engine/systems'
+import { formatMoney } from './money'
 
 const CATEGORY_EMOJI: Record<string, string> = {
   childhood: '🧸', school: '🏫', family: '👨‍👩‍👧', social: '🎉', health: '🩺', money: '💵',
@@ -18,7 +20,13 @@ export function EventModal() {
   const person = life.people.find((p) => p.id === pend.personId)
   const fill = (s: string) =>
     s.replace(/\{\{(\w+)\}\}/g, (_, k) =>
-      k === 'name' ? person?.firstName ?? '' : k === 'firstName' ? life.firstName : k === 'money' ? String(life.money) : '')
+      k === 'name' ? person?.firstName ?? '' : k === 'firstName' ? life.firstName : k === 'money' ? String(life.money) : k === 'offer' ? offerText() : '')
+  function offerText() {
+    const tr = JOB_BY_ID[String(life.flags.offer_track ?? '')]
+    if (!tr) return ''
+    const rung = tr.ladder[Number(life.flags.offer_rung) || 0]
+    return `${sysText(i18n.language, 'jobs', `tracks.${tr.id}.ladder.${rung.id}`)} · ${formatMoney(Number(life.flags.offer_salary) || rung.salary, i18n.language)}/${t('work.yr')}`
+  }
 
   if (!ev || !tx) return null
 

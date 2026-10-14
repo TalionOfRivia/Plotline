@@ -182,5 +182,67 @@
     "flags": {
       "murderer": true
     }
+  },
+  {
+    "id": "mischief",
+    "emoji": "😈",
+    "minAge": 6,
+    "baseSuccess": 0.85,
+    "payout": [
+      0,
+      20
+    ],
+    "sentenceYears": [
+      0,
+      0
+    ],
+    "karma": -2
+  },
+  {
+    "id": "porch_pirate",
+    "emoji": "📦",
+    "minAge": 9,
+    "baseSuccess": 0.7,
+    "payout": [
+      10,
+      300
+    ],
+    "sentenceYears": [
+      0,
+      1
+    ],
+    "karma": -4
+  },
+  {
+    "id": "hacking",
+    "emoji": "💻",
+    "minAge": 14,
+    "baseSuccess": 0.45,
+    "payout": [
+      500,
+      40000
+    ],
+    "sentenceYears": [
+      1,
+      6
+    ],
+    "karma": -8,
+    "minSmarts": 60
+  },
+  {
+    "id": "embezzle",
+    "emoji": "🧾",
+    "minAge": 18,
+    "baseSuccess": 0.4,
+    "payout": [
+      5000,
+      150000
+    ],
+    "sentenceYears": [
+      2,
+      8
+    ],
+    "karma": -15,
+    "minSmarts": 50
   }
 ]

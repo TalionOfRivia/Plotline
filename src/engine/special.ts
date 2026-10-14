@@ -21,13 +21,23 @@ export function fameYear(life: Life, rng: Rng) {
   }
 }
 
-export function socialMediaPost(life: Life, rng: Rng) {
-  if (used(life, 'post') >= 1) return false
-  use(life, 'post')
-  const viral = rng.chance(0.03 + life.stats.looks / 1000 + (life.flags.fame_career ? 0.05 : 0))
+export const PLATFORMS = ['photo', 'video', 'stream', 'micro', 'podcast', 'subs'] as const
+export type Platform = (typeof PLATFORMS)[number]
+
+/** One post per platform per year. Followers compound; fame follows followers. */
+export function socialMediaPost(life: Life, rng: Rng, platform: Platform = 'photo') {
+  if (used(life, `post_${platform}`) >= 1) return false
+  use(life, `post_${platform}`)
   life.flags.has_social_media = true
-  if (viral) { life.fame = clamp(life.fame + rng.int(5, 12)); log(life, 'good', 'fame.viral') }
-  else { life.fame = clamp(life.fame + rng.int(0, 2)); log(life, 'info', 'fame.posted') }
+  const f = life.social[platform] ?? 0
+  const viral = rng.chance(0.03 + life.stats.looks / 1000 + (life.flags.fame_career ? 0.05 : 0) + Math.min(0.1, f / 2_000_000))
+  const gain = viral ? Math.round(5_000 + f * rng.int(30, 120) / 100 + rng.int(0, 50_000)) : Math.round(50 + f * rng.int(2, 12) / 100 + rng.int(0, 400))
+  life.social[platform] = f + gain
+  const total = Object.values(life.social).reduce((s, n) => s + n, 0)
+  const fameFloor = clamp(Math.log10(Math.max(1, total)) * 12 - 20)
+  life.fame = clamp(Math.max(life.fame + (viral ? rng.int(4, 10) : rng.int(0, 1)), fameFloor))
+  if (platform === 'subs' && total > 20_000) { const pay = Math.round(total * 0.05); life.money += pay; log(life, 'good', 'fame.subsIncome', { money: pay }) }
+  log(life, viral ? 'good' : 'info', viral ? 'fame.viralOn' : 'fame.postedOn', { platform, followers: gain })
   return viral
 }
 

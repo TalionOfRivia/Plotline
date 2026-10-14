@@ -15,12 +15,14 @@ export function renderEntry(e: DiaryEntry, lang: string, t: (k: string, p?: Reco
     if (!tx) return id
     const params = { ...(e.params ?? {}) }
     const fill = (s: string) => s.replace(/\{\{(\w+)\}\}/g, (_, k) => String(params[k] ?? ''))
-    const parts = [fill(tx.text), `→ ${fill(tx.choices[choiceId] ?? choiceId)}`]
+    const parts = [fill(tx.text).replace('{{offer}}', String(params.offer ?? '')), `→ ${fill(tx.choices[choiceId] ?? choiceId)}`]
     if (outcomeId && tx.outcomes?.[outcomeId]) parts.push(fill(tx.outcomes[outcomeId]))
     return parts.join(' ')
   }
   const params = { ...(e.params ?? {}) }
   if (typeof params.kind === 'string') params.kind = t(`kind.${params.kind}`)
+  if (typeof params.offer === 'string' && params.offer) params.offer = sysText(lang, 'jobs', `tracks.${params.offer}.name`)
+  if (typeof params.ailment === 'string') params.ailment = t(`health.name.${params.ailment}`)
   if (countryCode && typeof params.country === 'string') params.country = countryName(countryCode, lang)
   if (e.text === 'challenge.completed' && typeof params.id === 'string') params.id = sysText(lang, 'challenges', `${params.id}.name`)
   return t(e.text, params)

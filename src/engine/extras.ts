@@ -4,6 +4,7 @@ import type { Life } from './types'
 import type { Rng } from './rng'
 import { clamp, log } from './util'
 import { COUNTRY_BY_CODE } from './people'
+import { uid } from './util'
 
 export type Result = { key: string; money?: number; kind: 'good' | 'bad' | 'info' }
 
@@ -162,7 +163,38 @@ export function doGig(life: Life, id: string, rng: Rng): Result {
 
 // ---- yearly tick --------------------------------------------------------------
 
+export const AILMENTS = ['ear_infection', 'flu', 'constipation', 'migraines', 'high_blood_pressure', 'back_pain', 'bronchitis', 'kidney_stones', 'anemia', 'insomnia']
+
 export function extrasYear(life: Life, rng: Rng) {
+  // ailments: appear at random, drain health until treated; some clear on their own
+  if (!life.flags.ailment && rng.chance(0.05 + (life.age > 60 ? 0.05 : 0))) {
+    life.flags.ailment = rng.pick(AILMENTS)
+    log(life, 'bad', 'health.ailment', { ailment: String(life.flags.ailment) })
+  } else if (life.flags.ailment) {
+    life.stats.health = clamp(life.stats.health - rng.int(1, 4))
+    life.stats.happiness = clamp(life.stats.happiness - rng.int(0, 2))
+    if (rng.chance(0.4)) { log(life, 'good', 'health.recovered', { ailment: String(life.flags.ailment) }); delete life.flags.ailment }
+  }
+  // depression: triggered by rock-bottom happiness, drains health until a psychiatrist treats it
+  if (!life.flags.depressed && life.stats.happiness <= 3 && life.age >= 12 && rng.chance(0.6)) { life.flags.depressed = true; log(life, 'bad', 'health.depressed') }
+  if (life.flags.depressed) {
+    life.stats.health = clamp(life.stats.health - rng.int(2, 5))
+    if (life.job) life.job.performance = clamp(life.job.performance - 5)
+    // some people climb out on their own
+    if (life.stats.happiness > 40 || rng.chance(0.15)) { delete life.flags.depressed; log(life, 'good', 'health.depressionCured') }
+  }
+  // parents' gifts: a used car after the license, a starter home at the first full-time job
+  const parentAlive = life.people.some((p) => (p.kind === 'mother' || p.kind === 'father') && p.alive)
+  if (parentAlive && life.flags.has_license && !life.flags.gift_car && life.age <= 19 && !life.assets.some((a) => a.kind === 'car') && rng.chance(0.5)) {
+    life.flags.gift_car = true
+    life.assets.push({ id: uid('a'), assetId: 'used_hatchback', kind: 'car', value: 6_000, condition: 70, mortgage: 0, boughtAt: life.age - 8 })
+    log(life, 'good', 'assets.giftCar')
+  }
+  if (parentAlive && life.job && !life.flags.gift_home && life.age <= 26 && !life.assets.some((a) => a.kind === 'house') && rng.chance(0.3)) {
+    life.flags.gift_home = true
+    life.assets.push({ id: uid('a'), assetId: 'studio_apartment', kind: 'house', value: 120_000, condition: 60, mortgage: 0, boughtAt: life.age })
+    log(life, 'good', 'assets.giftHome')
+  }
   // addiction drains health, happiness and cash until rehab
   if (life.flags.addicted) {
     life.stats.health = clamp(life.stats.health - rng.int(3, 8))
