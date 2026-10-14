@@ -39,7 +39,7 @@ export function NewLifeScreen() {
     return (
       <main className="h-full flex flex-col safe-top safe-bottom anim-rise">
         <header className="flex items-center gap-2 px-3 py-3">
-          <button onClick={() => setPicking(false)} className="text-2xl px-2 active:opacity-60">‹</button>
+          <button onClick={() => setPicking(false)} className="text-2xl px-2 active:opacity-60 rtl:-scale-x-100">‹</button>
           <input autoFocus value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t('setup.searchCountry')}
             className="flex-1 rounded-2xl bg-chrome-soft px-4 py-2 outline-none focus:ring-2 ring-accent" />
         </header>
@@ -61,7 +61,7 @@ export function NewLifeScreen() {
   return (
     <main className="h-full overflow-y-auto flex flex-col px-5 safe-top safe-bottom anim-fade">
       <header className="flex items-center gap-2 py-3">
-        <button onClick={toTitle} className="text-2xl px-2 active:opacity-60">‹</button>
+        <button onClick={toTitle} className="text-2xl px-2 active:opacity-60 rtl:-scale-x-100">‹</button>
         <h1 className="font-extrabold text-xl flex-1">{t('setup.title')}</h1>
       </header>
 

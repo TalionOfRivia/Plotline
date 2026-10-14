@@ -7,7 +7,7 @@ export function Sheet({ title, emoji, children, onBack }: { title: string; emoji
   return (
     <div className="fixed inset-0 z-10 bg-surface text-fg flex flex-col anim-rise">
       <header className="safe-top bg-chrome text-chrome-fg px-3 pt-2 pb-3 flex items-center gap-2">
-        <button onClick={onBack ?? (() => close(null))} className="text-2xl px-2 active:opacity-60">{onBack ? '‹' : '✕'}</button>
+        <button onClick={onBack ?? (() => close(null))} className="text-2xl px-2 active:opacity-60 rtl:-scale-x-100 inline-block">{onBack ? '‹' : '✕'}</button>
         <h2 className="font-extrabold text-lg flex-1">{emoji} {title}</h2>
       </header>
       <div className="flex-1 overflow-y-auto px-4 py-3 safe-bottom">{children}</div>
