@@ -1,18 +1,46 @@
 import namesData from '../content/names.json'
+import poolsA from '../content/pools-a.json'
+import poolsB from '../content/pools-b.json'
+import countriesData from '../content/countries.json'
 import type { Rng } from './rng'
 import type { Gender, Person, RelationKind } from './types'
 import { uid } from './util'
 
 type NameEntry = string | { latin: string; native: string }
 export interface Pool { female: NameEntry[]; male: NameEntry[]; last: NameEntry[] }
-export interface Country { code: string; name: string; cities: string[]; currency: string; namePool: string }
-export const NAMES = namesData as unknown as { countries: Country[]; pools: Record<string, Pool> }
+export interface Country {
+  code: string
+  name: string
+  nameHe: string
+  flag: string
+  cities: string[]
+  currency: string
+  namePool: string
+  monarchy: boolean
+}
+
+export const COUNTRIES = countriesData as Country[]
+export const COUNTRY_BY_CODE: Record<string, Country> = Object.fromEntries(COUNTRIES.map((c) => [c.code, c]))
+export const POOLS: Record<string, Pool> = {
+  ...(namesData as unknown as { pools: Record<string, Pool> }).pools,
+  ...(poolsA as Record<string, Pool>),
+  ...(poolsB as Record<string, Pool>),
+}
+
+/** Kept for older imports; countries now live in countries.json. */
+export const NAMES = { countries: COUNTRIES, pools: POOLS }
 
 export const latin = (n: NameEntry) => (typeof n === 'string' ? n : n.latin)
 
+export function countryName(code: string, lang: string) {
+  const c = COUNTRY_BY_CODE[code]
+  if (!c) return code
+  return lang === 'he' ? c.nameHe || c.name : c.name
+}
+
 export function poolFor(countryCode: string): Pool {
-  const c = NAMES.countries.find((c) => c.code === countryCode)
-  return NAMES.pools[c?.namePool ?? 'en'] ?? NAMES.pools.en
+  const c = COUNTRY_BY_CODE[countryCode]
+  return POOLS[c?.namePool ?? 'en'] ?? POOLS.en
 }
 
 export function randomName(rng: Rng, countryCode: string, gender: Gender) {

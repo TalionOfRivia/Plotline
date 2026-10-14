@@ -54,7 +54,7 @@ export function GameScreen() {
       </header>
 
       <div ref={diaryRef} className="flex-1 overflow-y-auto bg-surface text-fg px-4 py-3 page-surface">
-        <Diary entries={life.diary} people={life.people} />
+        <Diary entries={life.diary} people={life.people} countryCode={life.countryCode} />
       </div>
 
       <section className="bg-chrome-soft/60 px-4 py-3 flex flex-col gap-1.5">

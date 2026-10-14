@@ -2,12 +2,13 @@ import { useTranslation } from 'react-i18next'
 import type { DiaryEntry, Person } from '../engine/types'
 import { eventText } from '../engine/content'
 import { sysText } from '../engine/systems'
+import { countryName } from '../engine/people'
 
 /**
  * Diary entries store either an i18n key ("diary.born") or an event reference
  * ("event:<id>:<choice>[:<outcome>]"); both are rendered in the current language.
  */
-export function renderEntry(e: DiaryEntry, lang: string, t: (k: string, p?: Record<string, unknown>) => string): string {
+export function renderEntry(e: DiaryEntry, lang: string, t: (k: string, p?: Record<string, unknown>) => string, countryCode?: string): string {
   if (e.text.startsWith('event:')) {
     const [, id, choiceId, outcomeId] = e.text.split(':')
     const tx = eventText(lang, id)
@@ -20,6 +21,7 @@ export function renderEntry(e: DiaryEntry, lang: string, t: (k: string, p?: Reco
   }
   const params = { ...(e.params ?? {}) }
   if (typeof params.kind === 'string') params.kind = t(`kind.${params.kind}`)
+  if (countryCode && typeof params.country === 'string') params.country = countryName(countryCode, lang)
   if (e.text === 'challenge.completed' && typeof params.id === 'string') params.id = sysText(lang, 'challenges', `${params.id}.name`)
   return t(e.text, params)
 }
@@ -33,7 +35,7 @@ const KIND_STYLE: Record<DiaryEntry['kind'], string> = {
   bad: 'text-bad',
 }
 
-export function Diary({ entries }: { entries: DiaryEntry[]; people: Person[] }) {
+export function Diary({ entries, countryCode }: { entries: DiaryEntry[]; people: Person[]; countryCode: string }) {
   const { t, i18n } = useTranslation()
   return (
     <div className="flex flex-col gap-1.5 text-[15px] leading-snug">
@@ -46,7 +48,7 @@ export function Diary({ entries }: { entries: DiaryEntry[]; people: Person[] }) 
           </div>
         ) : (
         <p key={i} className={`${KIND_STYLE[e.kind]} ${i === entries.length - 1 ? 'anim-fade' : ''}`}>
-          {renderEntry(e, i18n.language, t)}
+          {renderEntry(e, i18n.language, t, countryCode)}
         </p>
         )
       ))}

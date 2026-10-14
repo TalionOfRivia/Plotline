@@ -2,7 +2,7 @@
 import type { Life } from './types'
 import type { Rng } from './rng'
 import { clamp, kill, log } from './util'
-import { makePerson } from './people'
+import { COUNTRY_BY_CODE, makePerson } from './people'
 
 // ---- fame -------------------------------------------------------------------
 
@@ -31,10 +31,8 @@ export function socialMediaPost(life: Life, rng: Rng) {
 
 // ---- royalty ----------------------------------------------------------------
 
-export const ROYAL_COUNTRIES = new Set(['GB', 'NL', 'SE', 'ES', 'JP'])
-
 export function maybeBornRoyal(life: Life, rng: Rng) {
-  const p = ROYAL_COUNTRIES.has(life.countryCode) ? 0.06 : 0.01
+  const p = COUNTRY_BY_CODE[life.countryCode]?.monarchy ? 0.06 : 0.004
   if (rng.chance(p)) {
     life.royalty = { rank: 'heir', popularity: rng.int(50, 85) }
     life.money += 5_000_000

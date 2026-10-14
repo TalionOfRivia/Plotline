@@ -442,7 +442,10 @@
     "male": "Boy",
     "country": "Country",
     "start": "Be born",
-    "random": "Surprise me"
+    "random": "Surprise me",
+    "searchCountry": "Search countries…",
+    "noMatch": "No country matches.",
+    "countries": "{{n}} countries to be born in"
   },
   "challenge": {
     "title": "Challenges",

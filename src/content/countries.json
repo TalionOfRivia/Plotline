@@ -1,0 +1,3150 @@
+[
+ {
+  "code": "AF",
+  "name": "Afghanistan",
+  "nameHe": "אפגניסטן",
+  "flag": "🇦🇫",
+  "cities": [
+   "Kabul",
+   "Kandahar",
+   "Herat",
+   "Mazar-i-Sharif",
+   "Jalalabad"
+  ],
+  "currency": "AFN",
+  "namePool": "ps",
+  "monarchy": false
+ },
+ {
+  "code": "AL",
+  "name": "Albania",
+  "nameHe": "אלבניה",
+  "flag": "🇦🇱",
+  "cities": [
+   "Tirana",
+   "Durres",
+   "Vlore",
+   "Elbasan",
+   "Shkoder"
+  ],
+  "currency": "ALL",
+  "namePool": "sq",
+  "monarchy": false
+ },
+ {
+  "code": "DZ",
+  "name": "Algeria",
+  "nameHe": "אלג'יריה",
+  "flag": "🇩🇿",
+  "cities": [
+   "Algiers",
+   "Oran",
+   "Constantine",
+   "Annaba",
+   "Blida"
+  ],
+  "currency": "DZD",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "AD",
+  "name": "Andorra",
+  "nameHe": "אנדורה",
+  "flag": "🇦🇩",
+  "cities": [
+   "Andorra la Vella",
+   "Escaldes-Engordany",
+   "Encamp",
+   "Sant Julia de Loria",
+   "La Massana"
+  ],
+  "currency": "EUR",
+  "namePool": "es",
+  "monarchy": true
+ },
+ {
+  "code": "AO",
+  "name": "Angola",
+  "nameHe": "אנגולה",
+  "flag": "🇦🇴",
+  "cities": [
+   "Luanda",
+   "Huambo",
+   "Lobito",
+   "Benguela",
+   "Lubango"
+  ],
+  "currency": "AOA",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "AG",
+  "name": "Antigua and Barbuda",
+  "nameHe": "אנטיגואה וברבודה",
+  "flag": "🇦🇬",
+  "cities": [
+   "St. John's",
+   "All Saints",
+   "Liberta",
+   "Bolans",
+   "Parham"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "AR",
+  "name": "Argentina",
+  "nameHe": "ארגנטינה",
+  "flag": "🇦🇷",
+  "cities": [
+   "Buenos Aires",
+   "Cordoba",
+   "Rosario",
+   "Mendoza",
+   "La Plata"
+  ],
+  "currency": "ARS",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "AM",
+  "name": "Armenia",
+  "nameHe": "ארמניה",
+  "flag": "🇦🇲",
+  "cities": [
+   "Yerevan",
+   "Gyumri",
+   "Vanadzor",
+   "Vagharshapat",
+   "Hrazdan"
+  ],
+  "currency": "AMD",
+  "namePool": "hy",
+  "monarchy": false
+ },
+ {
+  "code": "AU",
+  "name": "Australia",
+  "nameHe": "אוסטרליה",
+  "flag": "🇦🇺",
+  "cities": [
+   "Sydney",
+   "Melbourne",
+   "Brisbane",
+   "Perth",
+   "Adelaide"
+  ],
+  "currency": "AUD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "AT",
+  "name": "Austria",
+  "nameHe": "אוסטריה",
+  "flag": "🇦🇹",
+  "cities": [
+   "Vienna",
+   "Graz",
+   "Linz",
+   "Salzburg",
+   "Innsbruck"
+  ],
+  "currency": "EUR",
+  "namePool": "de",
+  "monarchy": false
+ },
+ {
+  "code": "AZ",
+  "name": "Azerbaijan",
+  "nameHe": "אזרבייג'ן",
+  "flag": "🇦🇿",
+  "cities": [
+   "Baku",
+   "Ganja",
+   "Sumqayit",
+   "Mingachevir",
+   "Lankaran"
+  ],
+  "currency": "AZN",
+  "namePool": "az",
+  "monarchy": false
+ },
+ {
+  "code": "BS",
+  "name": "Bahamas",
+  "nameHe": "איי בהאמה",
+  "flag": "🇧🇸",
+  "cities": [
+   "Nassau",
+   "Freeport",
+   "West End",
+   "Cooper's Town",
+   "Marsh Harbour"
+  ],
+  "currency": "BSD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "BH",
+  "name": "Bahrain",
+  "nameHe": "בחריין",
+  "flag": "🇧🇭",
+  "cities": [
+   "Manama",
+   "Riffa",
+   "Muharraq",
+   "Hamad Town",
+   "Isa Town"
+  ],
+  "currency": "BHD",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "BD",
+  "name": "Bangladesh",
+  "nameHe": "בנגלדש",
+  "flag": "🇧🇩",
+  "cities": [
+   "Dhaka",
+   "Chittagong",
+   "Khulna",
+   "Rajshahi",
+   "Sylhet"
+  ],
+  "currency": "BDT",
+  "namePool": "bn",
+  "monarchy": false
+ },
+ {
+  "code": "BB",
+  "name": "Barbados",
+  "nameHe": "ברבדוס",
+  "flag": "🇧🇧",
+  "cities": [
+   "Bridgetown",
+   "Speightstown",
+   "Oistins",
+   "Bathsheba",
+   "Holetown"
+  ],
+  "currency": "BBD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "BY",
+  "name": "Belarus",
+  "nameHe": "בלארוס",
+  "flag": "🇧🇾",
+  "cities": [
+   "Minsk",
+   "Gomel",
+   "Mogilev",
+   "Vitebsk",
+   "Grodno"
+  ],
+  "currency": "BYN",
+  "namePool": "ru",
+  "monarchy": false
+ },
+ {
+  "code": "BE",
+  "name": "Belgium",
+  "nameHe": "בלגיה",
+  "flag": "🇧🇪",
+  "cities": [
+   "Brussels",
+   "Antwerp",
+   "Ghent",
+   "Charleroi",
+   "Liege"
+  ],
+  "currency": "EUR",
+  "namePool": "nl",
+  "monarchy": true
+ },
+ {
+  "code": "BZ",
+  "name": "Belize",
+  "nameHe": "בליז",
+  "flag": "🇧🇿",
+  "cities": [
+   "Belize City",
+   "San Ignacio",
+   "Orange Walk",
+   "Belmopan",
+   "Dangriga"
+  ],
+  "currency": "BZD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "BJ",
+  "name": "Benin",
+  "nameHe": "בנין",
+  "flag": "🇧🇯",
+  "cities": [
+   "Cotonou",
+   "Porto-Novo",
+   "Parakou",
+   "Abomey-Calavi",
+   "Djougou"
+  ],
+  "currency": "XOF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "BT",
+  "name": "Bhutan",
+  "nameHe": "בהוטן",
+  "flag": "🇧🇹",
+  "cities": [
+   "Thimphu",
+   "Phuntsholing",
+   "Paro",
+   "Punakha",
+   "Gelephu"
+  ],
+  "currency": "BTN",
+  "namePool": "dz",
+  "monarchy": true
+ },
+ {
+  "code": "BO",
+  "name": "Bolivia",
+  "nameHe": "בוליביה",
+  "flag": "🇧🇴",
+  "cities": [
+   "La Paz",
+   "Santa Cruz de la Sierra",
+   "Cochabamba",
+   "Sucre",
+   "Oruro"
+  ],
+  "currency": "BOB",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "BA",
+  "name": "Bosnia and Herzegovina",
+  "nameHe": "בוסניה והרצגובינה",
+  "flag": "🇧🇦",
+  "cities": [
+   "Sarajevo",
+   "Banja Luka",
+   "Tuzla",
+   "Zenica",
+   "Mostar"
+  ],
+  "currency": "BAM",
+  "namePool": "sr",
+  "monarchy": false
+ },
+ {
+  "code": "BW",
+  "name": "Botswana",
+  "nameHe": "בוטסואנה",
+  "flag": "🇧🇼",
+  "cities": [
+   "Gaborone",
+   "Francistown",
+   "Molepolole",
+   "Maun",
+   "Serowe"
+  ],
+  "currency": "BWP",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "BR",
+  "name": "Brazil",
+  "nameHe": "ברזיל",
+  "flag": "🇧🇷",
+  "cities": [
+   "Sao Paulo",
+   "Rio de Janeiro",
+   "Brasilia",
+   "Salvador",
+   "Fortaleza"
+  ],
+  "currency": "BRL",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "BN",
+  "name": "Brunei",
+  "nameHe": "ברוניי",
+  "flag": "🇧🇳",
+  "cities": [
+   "Bandar Seri Begawan",
+   "Kuala Belait",
+   "Seria",
+   "Tutong",
+   "Bangar"
+  ],
+  "currency": "BND",
+  "namePool": "ms",
+  "monarchy": true
+ },
+ {
+  "code": "BG",
+  "name": "Bulgaria",
+  "nameHe": "בולגריה",
+  "flag": "🇧🇬",
+  "cities": [
+   "Sofia",
+   "Plovdiv",
+   "Varna",
+   "Burgas",
+   "Ruse"
+  ],
+  "currency": "BGN",
+  "namePool": "bg",
+  "monarchy": false
+ },
+ {
+  "code": "BF",
+  "name": "Burkina Faso",
+  "nameHe": "בורקינה פאסו",
+  "flag": "🇧🇫",
+  "cities": [
+   "Ouagadougou",
+   "Bobo-Dioulasso",
+   "Koudougou",
+   "Ouahigouya",
+   "Banfora"
+  ],
+  "currency": "XOF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "BI",
+  "name": "Burundi",
+  "nameHe": "בורונדי",
+  "flag": "🇧🇮",
+  "cities": [
+   "Gitega",
+   "Bujumbura",
+   "Muyinga",
+   "Ngozi",
+   "Ruyigi"
+  ],
+  "currency": "BIF",
+  "namePool": "rw",
+  "monarchy": false
+ },
+ {
+  "code": "CV",
+  "name": "Cabo Verde",
+  "nameHe": "כף ורדה",
+  "flag": "🇨🇻",
+  "cities": [
+   "Praia",
+   "Mindelo",
+   "Santa Maria",
+   "Assomada",
+   "Pedra Badejo"
+  ],
+  "currency": "CVE",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "KH",
+  "name": "Cambodia",
+  "nameHe": "קמבודיה",
+  "flag": "🇰🇭",
+  "cities": [
+   "Phnom Penh",
+   "Siem Reap",
+   "Battambang",
+   "Sihanoukville",
+   "Kampong Cham"
+  ],
+  "currency": "KHR",
+  "namePool": "km",
+  "monarchy": true
+ },
+ {
+  "code": "CM",
+  "name": "Cameroon",
+  "nameHe": "קמרון",
+  "flag": "🇨🇲",
+  "cities": [
+   "Douala",
+   "Yaounde",
+   "Garoua",
+   "Bamenda",
+   "Maroua"
+  ],
+  "currency": "XAF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "CA",
+  "name": "Canada",
+  "nameHe": "קנדה",
+  "flag": "🇨🇦",
+  "cities": [
+   "Toronto",
+   "Montreal",
+   "Vancouver",
+   "Calgary",
+   "Ottawa"
+  ],
+  "currency": "CAD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "CF",
+  "name": "Central African Republic",
+  "nameHe": "הרפובליקה המרכז-אפריקאית",
+  "flag": "🇨🇫",
+  "cities": [
+   "Bangui",
+   "Bimbo",
+   "Berberati",
+   "Carnot",
+   "Bambari"
+  ],
+  "currency": "XAF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "TD",
+  "name": "Chad",
+  "nameHe": "צ'אד",
+  "flag": "🇹🇩",
+  "cities": [
+   "N'Djamena",
+   "Moundou",
+   "Sarh",
+   "Abeche",
+   "Kelo"
+  ],
+  "currency": "XAF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "CL",
+  "name": "Chile",
+  "nameHe": "צ'ילה",
+  "flag": "🇨🇱",
+  "cities": [
+   "Santiago",
+   "Valparaiso",
+   "Concepcion",
+   "La Serena",
+   "Antofagasta"
+  ],
+  "currency": "CLP",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "CN",
+  "name": "China",
+  "nameHe": "סין",
+  "flag": "🇨🇳",
+  "cities": [
+   "Shanghai",
+   "Beijing",
+   "Guangzhou",
+   "Shenzhen",
+   "Chengdu"
+  ],
+  "currency": "CNY",
+  "namePool": "zh",
+  "monarchy": false
+ },
+ {
+  "code": "CO",
+  "name": "Colombia",
+  "nameHe": "קולומביה",
+  "flag": "🇨🇴",
+  "cities": [
+   "Bogota",
+   "Medellin",
+   "Cali",
+   "Barranquilla",
+   "Cartagena"
+  ],
+  "currency": "COP",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "KM",
+  "name": "Comoros",
+  "nameHe": "קומורו",
+  "flag": "🇰🇲",
+  "cities": [
+   "Moroni",
+   "Mutsamudu",
+   "Fomboni",
+   "Domoni",
+   "Mitsamiouli"
+  ],
+  "currency": "KMF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "CG",
+  "name": "Congo",
+  "nameHe": "הרפובליקה של קונגו",
+  "flag": "🇨🇬",
+  "cities": [
+   "Brazzaville",
+   "Pointe-Noire",
+   "Dolisie",
+   "Nkayi",
+   "Owando"
+  ],
+  "currency": "XAF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "CR",
+  "name": "Costa Rica",
+  "nameHe": "קוסטה ריקה",
+  "flag": "🇨🇷",
+  "cities": [
+   "San Jose",
+   "Alajuela",
+   "Cartago",
+   "Heredia",
+   "Liberia"
+  ],
+  "currency": "CRC",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "CI",
+  "name": "Cote d'Ivoire",
+  "nameHe": "חוף השנהב",
+  "flag": "🇨🇮",
+  "cities": [
+   "Abidjan",
+   "Yamoussoukro",
+   "Bouake",
+   "Daloa",
+   "San-Pedro"
+  ],
+  "currency": "XOF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "HR",
+  "name": "Croatia",
+  "nameHe": "קרואטיה",
+  "flag": "🇭🇷",
+  "cities": [
+   "Zagreb",
+   "Split",
+   "Rijeka",
+   "Osijek",
+   "Zadar"
+  ],
+  "currency": "EUR",
+  "namePool": "hr",
+  "monarchy": false
+ },
+ {
+  "code": "CU",
+  "name": "Cuba",
+  "nameHe": "קובה",
+  "flag": "🇨🇺",
+  "cities": [
+   "Havana",
+   "Santiago de Cuba",
+   "Camaguey",
+   "Holguin",
+   "Santa Clara"
+  ],
+  "currency": "CUP",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "CY",
+  "name": "Cyprus",
+  "nameHe": "קפריסין",
+  "flag": "🇨🇾",
+  "cities": [
+   "Nicosia",
+   "Limassol",
+   "Larnaca",
+   "Paphos",
+   "Famagusta"
+  ],
+  "currency": "EUR",
+  "namePool": "el",
+  "monarchy": false
+ },
+ {
+  "code": "CZ",
+  "name": "Czechia",
+  "nameHe": "צ'כיה",
+  "flag": "🇨🇿",
+  "cities": [
+   "Prague",
+   "Brno",
+   "Ostrava",
+   "Plzen",
+   "Liberec"
+  ],
+  "currency": "CZK",
+  "namePool": "cs",
+  "monarchy": false
+ },
+ {
+  "code": "DK",
+  "name": "Denmark",
+  "nameHe": "דנמרק",
+  "flag": "🇩🇰",
+  "cities": [
+   "Copenhagen",
+   "Aarhus",
+   "Odense",
+   "Aalborg",
+   "Esbjerg"
+  ],
+  "currency": "DKK",
+  "namePool": "da",
+  "monarchy": true
+ },
+ {
+  "code": "DJ",
+  "name": "Djibouti",
+  "nameHe": "ג'יבוטי",
+  "flag": "🇩🇯",
+  "cities": [
+   "Djibouti",
+   "Ali Sabieh",
+   "Tadjoura",
+   "Obock",
+   "Dikhil"
+  ],
+  "currency": "DJF",
+  "namePool": "so",
+  "monarchy": false
+ },
+ {
+  "code": "DM",
+  "name": "Dominica",
+  "nameHe": "דומיניקה",
+  "flag": "🇩🇲",
+  "cities": [
+   "Roseau",
+   "Portsmouth",
+   "Marigot",
+   "Berekua",
+   "Mahaut"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "DO",
+  "name": "Dominican Republic",
+  "nameHe": "הרפובליקה הדומיניקנית",
+  "flag": "🇩🇴",
+  "cities": [
+   "Santo Domingo",
+   "Santiago de los Caballeros",
+   "La Romana",
+   "San Pedro de Macoris",
+   "Puerto Plata"
+  ],
+  "currency": "DOP",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "CD",
+  "name": "DR Congo",
+  "nameHe": "הרפובליקה הדמוקרטית של קונגו",
+  "flag": "🇨🇩",
+  "cities": [
+   "Kinshasa",
+   "Lubumbashi",
+   "Mbuji-Mayi",
+   "Kisangani",
+   "Goma"
+  ],
+  "currency": "CDF",
+  "namePool": "ln",
+  "monarchy": false
+ },
+ {
+  "code": "EC",
+  "name": "Ecuador",
+  "nameHe": "אקוואדור",
+  "flag": "🇪🇨",
+  "cities": [
+   "Guayaquil",
+   "Quito",
+   "Cuenca",
+   "Ambato",
+   "Manta"
+  ],
+  "currency": "USD",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "EG",
+  "name": "Egypt",
+  "nameHe": "מצרים",
+  "flag": "🇪🇬",
+  "cities": [
+   "Cairo",
+   "Alexandria",
+   "Giza",
+   "Luxor",
+   "Aswan"
+  ],
+  "currency": "EGP",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "SV",
+  "name": "El Salvador",
+  "nameHe": "אל סלבדור",
+  "flag": "🇸🇻",
+  "cities": [
+   "San Salvador",
+   "Santa Ana",
+   "San Miguel",
+   "Soyapango",
+   "Santa Tecla"
+  ],
+  "currency": "USD",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "GQ",
+  "name": "Equatorial Guinea",
+  "nameHe": "גינאה המשוונית",
+  "flag": "🇬🇶",
+  "cities": [
+   "Malabo",
+   "Bata",
+   "Ebebiyin",
+   "Mongomo",
+   "Evinayong"
+  ],
+  "currency": "XAF",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "ER",
+  "name": "Eritrea",
+  "nameHe": "אריתריאה",
+  "flag": "🇪🇷",
+  "cities": [
+   "Asmara",
+   "Keren",
+   "Massawa",
+   "Assab",
+   "Mendefera"
+  ],
+  "currency": "ERN",
+  "namePool": "ti",
+  "monarchy": false
+ },
+ {
+  "code": "EE",
+  "name": "Estonia",
+  "nameHe": "אסטוניה",
+  "flag": "🇪🇪",
+  "cities": [
+   "Tallinn",
+   "Tartu",
+   "Narva",
+   "Parnu",
+   "Kohtla-Jarve"
+  ],
+  "currency": "EUR",
+  "namePool": "et",
+  "monarchy": false
+ },
+ {
+  "code": "SZ",
+  "name": "Eswatini",
+  "nameHe": "אסוואטיני",
+  "flag": "🇸🇿",
+  "cities": [
+   "Mbabane",
+   "Manzini",
+   "Lobamba",
+   "Siteki",
+   "Piggs Peak"
+  ],
+  "currency": "SZL",
+  "namePool": "zu",
+  "monarchy": true
+ },
+ {
+  "code": "ET",
+  "name": "Ethiopia",
+  "nameHe": "אתיופיה",
+  "flag": "🇪🇹",
+  "cities": [
+   "Addis Ababa",
+   "Dire Dawa",
+   "Mekelle",
+   "Gondar",
+   "Bahir Dar"
+  ],
+  "currency": "ETB",
+  "namePool": "am",
+  "monarchy": false
+ },
+ {
+  "code": "FJ",
+  "name": "Fiji",
+  "nameHe": "פיג'י",
+  "flag": "🇫🇯",
+  "cities": [
+   "Suva",
+   "Nadi",
+   "Lautoka",
+   "Labasa",
+   "Levuka"
+  ],
+  "currency": "FJD",
+  "namePool": "fj",
+  "monarchy": false
+ },
+ {
+  "code": "FI",
+  "name": "Finland",
+  "nameHe": "פינלנד",
+  "flag": "🇫🇮",
+  "cities": [
+   "Helsinki",
+   "Espoo",
+   "Tampere",
+   "Vantaa",
+   "Oulu"
+  ],
+  "currency": "EUR",
+  "namePool": "fi",
+  "monarchy": false
+ },
+ {
+  "code": "FR",
+  "name": "France",
+  "nameHe": "צרפת",
+  "flag": "🇫🇷",
+  "cities": [
+   "Paris",
+   "Marseille",
+   "Lyon",
+   "Toulouse",
+   "Nice"
+  ],
+  "currency": "EUR",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "GA",
+  "name": "Gabon",
+  "nameHe": "גבון",
+  "flag": "🇬🇦",
+  "cities": [
+   "Libreville",
+   "Port-Gentil",
+   "Franceville",
+   "Oyem",
+   "Lambarene"
+  ],
+  "currency": "XAF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "GM",
+  "name": "Gambia",
+  "nameHe": "גמביה",
+  "flag": "🇬🇲",
+  "cities": [
+   "Banjul",
+   "Serekunda",
+   "Brikama",
+   "Bakau",
+   "Farafenni"
+  ],
+  "currency": "GMD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "GE",
+  "name": "Georgia",
+  "nameHe": "גאורגיה",
+  "flag": "🇬🇪",
+  "cities": [
+   "Tbilisi",
+   "Batumi",
+   "Kutaisi",
+   "Rustavi",
+   "Gori"
+  ],
+  "currency": "GEL",
+  "namePool": "ka",
+  "monarchy": false
+ },
+ {
+  "code": "DE",
+  "name": "Germany",
+  "nameHe": "גרמניה",
+  "flag": "🇩🇪",
+  "cities": [
+   "Berlin",
+   "Hamburg",
+   "Munich",
+   "Cologne",
+   "Frankfurt"
+  ],
+  "currency": "EUR",
+  "namePool": "de",
+  "monarchy": false
+ },
+ {
+  "code": "GH",
+  "name": "Ghana",
+  "nameHe": "גאנה",
+  "flag": "🇬🇭",
+  "cities": [
+   "Accra",
+   "Kumasi",
+   "Tamale",
+   "Takoradi",
+   "Cape Coast"
+  ],
+  "currency": "GHS",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "GR",
+  "name": "Greece",
+  "nameHe": "יוון",
+  "flag": "🇬🇷",
+  "cities": [
+   "Athens",
+   "Thessaloniki",
+   "Patras",
+   "Heraklion",
+   "Larissa"
+  ],
+  "currency": "EUR",
+  "namePool": "el",
+  "monarchy": false
+ },
+ {
+  "code": "GD",
+  "name": "Grenada",
+  "nameHe": "גרנדה",
+  "flag": "🇬🇩",
+  "cities": [
+   "St. George's",
+   "Gouyave",
+   "Grenville",
+   "Victoria",
+   "Sauteurs"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "GT",
+  "name": "Guatemala",
+  "nameHe": "גואטמלה",
+  "flag": "🇬🇹",
+  "cities": [
+   "Guatemala City",
+   "Mixco",
+   "Villa Nueva",
+   "Quetzaltenango",
+   "Antigua Guatemala"
+  ],
+  "currency": "GTQ",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "GN",
+  "name": "Guinea",
+  "nameHe": "גינאה",
+  "flag": "🇬🇳",
+  "cities": [
+   "Conakry",
+   "Nzerekore",
+   "Kankan",
+   "Kindia",
+   "Labe"
+  ],
+  "currency": "GNF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "GW",
+  "name": "Guinea-Bissau",
+  "nameHe": "גינאה-ביסאו",
+  "flag": "🇬🇼",
+  "cities": [
+   "Bissau",
+   "Bafata",
+   "Gabu",
+   "Bissora",
+   "Bolama"
+  ],
+  "currency": "XOF",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "GY",
+  "name": "Guyana",
+  "nameHe": "גיאנה",
+  "flag": "🇬🇾",
+  "cities": [
+   "Georgetown",
+   "Linden",
+   "New Amsterdam",
+   "Anna Regina",
+   "Bartica"
+  ],
+  "currency": "GYD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "HT",
+  "name": "Haiti",
+  "nameHe": "האיטי",
+  "flag": "🇭🇹",
+  "cities": [
+   "Port-au-Prince",
+   "Cap-Haitien",
+   "Gonaives",
+   "Les Cayes",
+   "Jacmel"
+  ],
+  "currency": "HTG",
+  "namePool": "ht",
+  "monarchy": false
+ },
+ {
+  "code": "HN",
+  "name": "Honduras",
+  "nameHe": "הונדורס",
+  "flag": "🇭🇳",
+  "cities": [
+   "Tegucigalpa",
+   "San Pedro Sula",
+   "Choloma",
+   "La Ceiba",
+   "El Progreso"
+  ],
+  "currency": "HNL",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "HU",
+  "name": "Hungary",
+  "nameHe": "הונגריה",
+  "flag": "🇭🇺",
+  "cities": [
+   "Budapest",
+   "Debrecen",
+   "Szeged",
+   "Miskolc",
+   "Pecs"
+  ],
+  "currency": "HUF",
+  "namePool": "hu",
+  "monarchy": false
+ },
+ {
+  "code": "IS",
+  "name": "Iceland",
+  "nameHe": "איסלנד",
+  "flag": "🇮🇸",
+  "cities": [
+   "Reykjavik",
+   "Kopavogur",
+   "Hafnarfjordur",
+   "Akureyri",
+   "Reykjanesbaer"
+  ],
+  "currency": "ISK",
+  "namePool": "is",
+  "monarchy": false
+ },
+ {
+  "code": "IN",
+  "name": "India",
+  "nameHe": "הודו",
+  "flag": "🇮🇳",
+  "cities": [
+   "Mumbai",
+   "Delhi",
+   "Bangalore",
+   "Hyderabad",
+   "Chennai"
+  ],
+  "currency": "INR",
+  "namePool": "hi",
+  "monarchy": false
+ },
+ {
+  "code": "ID",
+  "name": "Indonesia",
+  "nameHe": "אינדונזיה",
+  "flag": "🇮🇩",
+  "cities": [
+   "Jakarta",
+   "Surabaya",
+   "Bandung",
+   "Medan",
+   "Semarang"
+  ],
+  "currency": "IDR",
+  "namePool": "id",
+  "monarchy": false
+ },
+ {
+  "code": "IR",
+  "name": "Iran",
+  "nameHe": "איראן",
+  "flag": "🇮🇷",
+  "cities": [
+   "Tehran",
+   "Mashhad",
+   "Isfahan",
+   "Karaj",
+   "Shiraz"
+  ],
+  "currency": "IRR",
+  "namePool": "fa",
+  "monarchy": false
+ },
+ {
+  "code": "IQ",
+  "name": "Iraq",
+  "nameHe": "עיראק",
+  "flag": "🇮🇶",
+  "cities": [
+   "Baghdad",
+   "Basra",
+   "Mosul",
+   "Erbil",
+   "Najaf"
+  ],
+  "currency": "IQD",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "IE",
+  "name": "Ireland",
+  "nameHe": "אירלנד",
+  "flag": "🇮🇪",
+  "cities": [
+   "Dublin",
+   "Cork",
+   "Limerick",
+   "Galway",
+   "Waterford"
+  ],
+  "currency": "EUR",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "IL",
+  "name": "Israel",
+  "nameHe": "ישראל",
+  "flag": "🇮🇱",
+  "cities": [
+   "Tel Aviv",
+   "Jerusalem",
+   "Haifa",
+   "Beersheba",
+   "Netanya"
+  ],
+  "currency": "ILS",
+  "namePool": "he",
+  "monarchy": false
+ },
+ {
+  "code": "IT",
+  "name": "Italy",
+  "nameHe": "איטליה",
+  "flag": "🇮🇹",
+  "cities": [
+   "Rome",
+   "Milan",
+   "Naples",
+   "Turin",
+   "Palermo"
+  ],
+  "currency": "EUR",
+  "namePool": "it",
+  "monarchy": false
+ },
+ {
+  "code": "JM",
+  "name": "Jamaica",
+  "nameHe": "ג'מייקה",
+  "flag": "🇯🇲",
+  "cities": [
+   "Kingston",
+   "Montego Bay",
+   "Spanish Town",
+   "Portmore",
+   "May Pen"
+  ],
+  "currency": "JMD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "JP",
+  "name": "Japan",
+  "nameHe": "יפן",
+  "flag": "🇯🇵",
+  "cities": [
+   "Tokyo",
+   "Osaka",
+   "Yokohama",
+   "Nagoya",
+   "Sapporo"
+  ],
+  "currency": "JPY",
+  "namePool": "ja",
+  "monarchy": true
+ },
+ {
+  "code": "JO",
+  "name": "Jordan",
+  "nameHe": "ירדן",
+  "flag": "🇯🇴",
+  "cities": [
+   "Amman",
+   "Zarqa",
+   "Irbid",
+   "Aqaba",
+   "Madaba"
+  ],
+  "currency": "JOD",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "KZ",
+  "name": "Kazakhstan",
+  "nameHe": "קזחסטן",
+  "flag": "🇰🇿",
+  "cities": [
+   "Almaty",
+   "Astana",
+   "Shymkent",
+   "Karaganda",
+   "Aktobe"
+  ],
+  "currency": "KZT",
+  "namePool": "kk",
+  "monarchy": false
+ },
+ {
+  "code": "KE",
+  "name": "Kenya",
+  "nameHe": "קניה",
+  "flag": "🇰🇪",
+  "cities": [
+   "Nairobi",
+   "Mombasa",
+   "Kisumu",
+   "Nakuru",
+   "Eldoret"
+  ],
+  "currency": "KES",
+  "namePool": "sw",
+  "monarchy": false
+ },
+ {
+  "code": "KI",
+  "name": "Kiribati",
+  "nameHe": "קיריבטי",
+  "flag": "🇰🇮",
+  "cities": [
+   "South Tarawa",
+   "Betio",
+   "Bairiki",
+   "Bikenibeu",
+   "Teaoraereke"
+  ],
+  "currency": "AUD",
+  "namePool": "ki",
+  "monarchy": false
+ },
+ {
+  "code": "XK",
+  "name": "Kosovo",
+  "nameHe": "קוסובו",
+  "flag": "🇽🇰",
+  "cities": [
+   "Pristina",
+   "Prizren",
+   "Peja",
+   "Gjakova",
+   "Mitrovica"
+  ],
+  "currency": "EUR",
+  "namePool": "sq",
+  "monarchy": false
+ },
+ {
+  "code": "KW",
+  "name": "Kuwait",
+  "nameHe": "כווית",
+  "flag": "🇰🇼",
+  "cities": [
+   "Kuwait City",
+   "Hawalli",
+   "Salmiya",
+   "Al Ahmadi",
+   "Jahra"
+  ],
+  "currency": "KWD",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "KG",
+  "name": "Kyrgyzstan",
+  "nameHe": "קירגיזסטן",
+  "flag": "🇰🇬",
+  "cities": [
+   "Bishkek",
+   "Osh",
+   "Jalal-Abad",
+   "Karakol",
+   "Tokmok"
+  ],
+  "currency": "KGS",
+  "namePool": "ky",
+  "monarchy": false
+ },
+ {
+  "code": "LA",
+  "name": "Laos",
+  "nameHe": "לאוס",
+  "flag": "🇱🇦",
+  "cities": [
+   "Vientiane",
+   "Pakse",
+   "Savannakhet",
+   "Luang Prabang",
+   "Thakhek"
+  ],
+  "currency": "LAK",
+  "namePool": "lo",
+  "monarchy": false
+ },
+ {
+  "code": "LV",
+  "name": "Latvia",
+  "nameHe": "לטביה",
+  "flag": "🇱🇻",
+  "cities": [
+   "Riga",
+   "Daugavpils",
+   "Liepaja",
+   "Jelgava",
+   "Jurmala"
+  ],
+  "currency": "EUR",
+  "namePool": "lv",
+  "monarchy": false
+ },
+ {
+  "code": "LB",
+  "name": "Lebanon",
+  "nameHe": "לבנון",
+  "flag": "🇱🇧",
+  "cities": [
+   "Beirut",
+   "Tripoli",
+   "Sidon",
+   "Tyre",
+   "Zahle"
+  ],
+  "currency": "LBP",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "LS",
+  "name": "Lesotho",
+  "nameHe": "לסוטו",
+  "flag": "🇱🇸",
+  "cities": [
+   "Maseru",
+   "Teyateyaneng",
+   "Mafeteng",
+   "Hlotse",
+   "Mohale's Hoek"
+  ],
+  "currency": "LSL",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "LR",
+  "name": "Liberia",
+  "nameHe": "ליבריה",
+  "flag": "🇱🇷",
+  "cities": [
+   "Monrovia",
+   "Gbarnga",
+   "Buchanan",
+   "Ganta",
+   "Kakata"
+  ],
+  "currency": "LRD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "LY",
+  "name": "Libya",
+  "nameHe": "לוב",
+  "flag": "🇱🇾",
+  "cities": [
+   "Tripoli",
+   "Benghazi",
+   "Misrata",
+   "Tobruk",
+   "Sabha"
+  ],
+  "currency": "LYD",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "LI",
+  "name": "Liechtenstein",
+  "nameHe": "ליכטנשטיין",
+  "flag": "🇱🇮",
+  "cities": [
+   "Vaduz",
+   "Schaan",
+   "Balzers",
+   "Triesen",
+   "Eschen"
+  ],
+  "currency": "CHF",
+  "namePool": "de",
+  "monarchy": true
+ },
+ {
+  "code": "LT",
+  "name": "Lithuania",
+  "nameHe": "ליטא",
+  "flag": "🇱🇹",
+  "cities": [
+   "Vilnius",
+   "Kaunas",
+   "Klaipeda",
+   "Siauliai",
+   "Panevezys"
+  ],
+  "currency": "EUR",
+  "namePool": "lt",
+  "monarchy": false
+ },
+ {
+  "code": "LU",
+  "name": "Luxembourg",
+  "nameHe": "לוקסמבורג",
+  "flag": "🇱🇺",
+  "cities": [
+   "Luxembourg City",
+   "Esch-sur-Alzette",
+   "Differdange",
+   "Dudelange",
+   "Diekirch"
+  ],
+  "currency": "EUR",
+  "namePool": "fr",
+  "monarchy": true
+ },
+ {
+  "code": "MG",
+  "name": "Madagascar",
+  "nameHe": "מדגסקר",
+  "flag": "🇲🇬",
+  "cities": [
+   "Antananarivo",
+   "Toamasina",
+   "Antsirabe",
+   "Mahajanga",
+   "Fianarantsoa"
+  ],
+  "currency": "MGA",
+  "namePool": "mg",
+  "monarchy": false
+ },
+ {
+  "code": "MW",
+  "name": "Malawi",
+  "nameHe": "מלאווי",
+  "flag": "🇲🇼",
+  "cities": [
+   "Lilongwe",
+   "Blantyre",
+   "Mzuzu",
+   "Zomba",
+   "Kasungu"
+  ],
+  "currency": "MWK",
+  "namePool": "ny",
+  "monarchy": false
+ },
+ {
+  "code": "MY",
+  "name": "Malaysia",
+  "nameHe": "מלזיה",
+  "flag": "🇲🇾",
+  "cities": [
+   "Kuala Lumpur",
+   "George Town",
+   "Johor Bahru",
+   "Ipoh",
+   "Kuching"
+  ],
+  "currency": "MYR",
+  "namePool": "ms",
+  "monarchy": true
+ },
+ {
+  "code": "MV",
+  "name": "Maldives",
+  "nameHe": "האיים המלדיביים",
+  "flag": "🇲🇻",
+  "cities": [
+   "Male",
+   "Addu City",
+   "Fuvahmulah",
+   "Kulhudhuffushi",
+   "Thinadhoo"
+  ],
+  "currency": "MVR",
+  "namePool": "si",
+  "monarchy": false
+ },
+ {
+  "code": "ML",
+  "name": "Mali",
+  "nameHe": "מאלי",
+  "flag": "🇲🇱",
+  "cities": [
+   "Bamako",
+   "Sikasso",
+   "Mopti",
+   "Koutiala",
+   "Kayes"
+  ],
+  "currency": "XOF",
+  "namePool": "ff",
+  "monarchy": false
+ },
+ {
+  "code": "MT",
+  "name": "Malta",
+  "nameHe": "מלטה",
+  "flag": "🇲🇹",
+  "cities": [
+   "Valletta",
+   "Birkirkara",
+   "Sliema",
+   "Mosta",
+   "Qormi"
+  ],
+  "currency": "EUR",
+  "namePool": "mt",
+  "monarchy": false
+ },
+ {
+  "code": "MH",
+  "name": "Marshall Islands",
+  "nameHe": "איי מרשל",
+  "flag": "🇲🇭",
+  "cities": [
+   "Majuro",
+   "Ebeye",
+   "Jaluit",
+   "Wotje",
+   "Arno"
+  ],
+  "currency": "USD",
+  "namePool": "mh",
+  "monarchy": false
+ },
+ {
+  "code": "MR",
+  "name": "Mauritania",
+  "nameHe": "מאוריטניה",
+  "flag": "🇲🇷",
+  "cities": [
+   "Nouakchott",
+   "Nouadhibou",
+   "Kiffa",
+   "Rosso",
+   "Atar"
+  ],
+  "currency": "MRU",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "MU",
+  "name": "Mauritius",
+  "nameHe": "מאוריציוס",
+  "flag": "🇲🇺",
+  "cities": [
+   "Port Louis",
+   "Beau Bassin-Rose Hill",
+   "Vacoas-Phoenix",
+   "Curepipe",
+   "Quatre Bornes"
+  ],
+  "currency": "MUR",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "MX",
+  "name": "Mexico",
+  "nameHe": "מקסיקו",
+  "flag": "🇲🇽",
+  "cities": [
+   "Mexico City",
+   "Guadalajara",
+   "Monterrey",
+   "Puebla",
+   "Tijuana"
+  ],
+  "currency": "MXN",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "FM",
+  "name": "Micronesia",
+  "nameHe": "מיקרונזיה",
+  "flag": "🇫🇲",
+  "cities": [
+   "Palikir",
+   "Weno",
+   "Kolonia",
+   "Tofol",
+   "Colonia"
+  ],
+  "currency": "USD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "MD",
+  "name": "Moldova",
+  "nameHe": "מולדובה",
+  "flag": "🇲🇩",
+  "cities": [
+   "Chisinau",
+   "Balti",
+   "Tiraspol",
+   "Bender",
+   "Cahul"
+  ],
+  "currency": "MDL",
+  "namePool": "ro",
+  "monarchy": false
+ },
+ {
+  "code": "MC",
+  "name": "Monaco",
+  "nameHe": "מונקו",
+  "flag": "🇲🇨",
+  "cities": [
+   "Monaco",
+   "Monte Carlo",
+   "La Condamine",
+   "Fontvieille",
+   "Moneghetti"
+  ],
+  "currency": "EUR",
+  "namePool": "fr",
+  "monarchy": true
+ },
+ {
+  "code": "MN",
+  "name": "Mongolia",
+  "nameHe": "מונגוליה",
+  "flag": "🇲🇳",
+  "cities": [
+   "Ulaanbaatar",
+   "Erdenet",
+   "Darkhan",
+   "Choibalsan",
+   "Murun"
+  ],
+  "currency": "MNT",
+  "namePool": "mn",
+  "monarchy": false
+ },
+ {
+  "code": "ME",
+  "name": "Montenegro",
+  "nameHe": "מונטנגרו",
+  "flag": "🇲🇪",
+  "cities": [
+   "Podgorica",
+   "Niksic",
+   "Herceg Novi",
+   "Pljevlja",
+   "Bar"
+  ],
+  "currency": "EUR",
+  "namePool": "sr",
+  "monarchy": false
+ },
+ {
+  "code": "MA",
+  "name": "Morocco",
+  "nameHe": "מרוקו",
+  "flag": "🇲🇦",
+  "cities": [
+   "Casablanca",
+   "Rabat",
+   "Marrakesh",
+   "Fes",
+   "Tangier"
+  ],
+  "currency": "MAD",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "MZ",
+  "name": "Mozambique",
+  "nameHe": "מוזמביק",
+  "flag": "🇲🇿",
+  "cities": [
+   "Maputo",
+   "Matola",
+   "Beira",
+   "Nampula",
+   "Chimoio"
+  ],
+  "currency": "MZN",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "MM",
+  "name": "Myanmar",
+  "nameHe": "מיאנמר",
+  "flag": "🇲🇲",
+  "cities": [
+   "Yangon",
+   "Mandalay",
+   "Naypyidaw",
+   "Mawlamyine",
+   "Bago"
+  ],
+  "currency": "MMK",
+  "namePool": "my",
+  "monarchy": false
+ },
+ {
+  "code": "NA",
+  "name": "Namibia",
+  "nameHe": "נמיביה",
+  "flag": "🇳🇦",
+  "cities": [
+   "Windhoek",
+   "Walvis Bay",
+   "Swakopmund",
+   "Oshakati",
+   "Rundu"
+  ],
+  "currency": "NAD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "NR",
+  "name": "Nauru",
+  "nameHe": "נאורו",
+  "flag": "🇳🇷",
+  "cities": [
+   "Yaren",
+   "Denigomodu",
+   "Meneng",
+   "Aiwo",
+   "Anabar"
+  ],
+  "currency": "AUD",
+  "namePool": "nr",
+  "monarchy": false
+ },
+ {
+  "code": "NP",
+  "name": "Nepal",
+  "nameHe": "נפאל",
+  "flag": "🇳🇵",
+  "cities": [
+   "Kathmandu",
+   "Pokhara",
+   "Lalitpur",
+   "Biratnagar",
+   "Bharatpur"
+  ],
+  "currency": "NPR",
+  "namePool": "ne",
+  "monarchy": false
+ },
+ {
+  "code": "NL",
+  "name": "Netherlands",
+  "nameHe": "הולנד",
+  "flag": "🇳🇱",
+  "cities": [
+   "Amsterdam",
+   "Rotterdam",
+   "The Hague",
+   "Utrecht",
+   "Eindhoven"
+  ],
+  "currency": "EUR",
+  "namePool": "nl",
+  "monarchy": true
+ },
+ {
+  "code": "NZ",
+  "name": "New Zealand",
+  "nameHe": "ניו זילנד",
+  "flag": "🇳🇿",
+  "cities": [
+   "Auckland",
+   "Wellington",
+   "Christchurch",
+   "Hamilton",
+   "Dunedin"
+  ],
+  "currency": "NZD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "NI",
+  "name": "Nicaragua",
+  "nameHe": "ניקרגואה",
+  "flag": "🇳🇮",
+  "cities": [
+   "Managua",
+   "Leon",
+   "Masaya",
+   "Chinandega",
+   "Matagalpa"
+  ],
+  "currency": "NIO",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "NE",
+  "name": "Niger",
+  "nameHe": "ניז'ר",
+  "flag": "🇳🇪",
+  "cities": [
+   "Niamey",
+   "Zinder",
+   "Maradi",
+   "Agadez",
+   "Tahoua"
+  ],
+  "currency": "XOF",
+  "namePool": "ha",
+  "monarchy": false
+ },
+ {
+  "code": "NG",
+  "name": "Nigeria",
+  "nameHe": "ניגריה",
+  "flag": "🇳🇬",
+  "cities": [
+   "Lagos",
+   "Kano",
+   "Ibadan",
+   "Abuja",
+   "Port Harcourt"
+  ],
+  "currency": "NGN",
+  "namePool": "yo",
+  "monarchy": false
+ },
+ {
+  "code": "KP",
+  "name": "North Korea",
+  "nameHe": "צפון קוריאה",
+  "flag": "🇰🇵",
+  "cities": [
+   "Pyongyang",
+   "Hamhung",
+   "Chongjin",
+   "Nampo",
+   "Wonsan"
+  ],
+  "currency": "KPW",
+  "namePool": "ko",
+  "monarchy": false
+ },
+ {
+  "code": "MK",
+  "name": "North Macedonia",
+  "nameHe": "מקדוניה הצפונית",
+  "flag": "🇲🇰",
+  "cities": [
+   "Skopje",
+   "Bitola",
+   "Kumanovo",
+   "Prilep",
+   "Tetovo"
+  ],
+  "currency": "MKD",
+  "namePool": "bg",
+  "monarchy": false
+ },
+ {
+  "code": "NO",
+  "name": "Norway",
+  "nameHe": "נורווגיה",
+  "flag": "🇳🇴",
+  "cities": [
+   "Oslo",
+   "Bergen",
+   "Trondheim",
+   "Stavanger",
+   "Drammen"
+  ],
+  "currency": "NOK",
+  "namePool": "no",
+  "monarchy": true
+ },
+ {
+  "code": "OM",
+  "name": "Oman",
+  "nameHe": "עומאן",
+  "flag": "🇴🇲",
+  "cities": [
+   "Muscat",
+   "Salalah",
+   "Sohar",
+   "Nizwa",
+   "Sur"
+  ],
+  "currency": "OMR",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "PK",
+  "name": "Pakistan",
+  "nameHe": "פקיסטן",
+  "flag": "🇵🇰",
+  "cities": [
+   "Karachi",
+   "Lahore",
+   "Islamabad",
+   "Faisalabad",
+   "Rawalpindi"
+  ],
+  "currency": "PKR",
+  "namePool": "ur",
+  "monarchy": false
+ },
+ {
+  "code": "PW",
+  "name": "Palau",
+  "nameHe": "פלאו",
+  "flag": "🇵🇼",
+  "cities": [
+   "Ngerulmud",
+   "Koror",
+   "Airai",
+   "Melekeok",
+   "Kloulklubed"
+  ],
+  "currency": "USD",
+  "namePool": "pw",
+  "monarchy": false
+ },
+ {
+  "code": "PS",
+  "name": "Palestine",
+  "nameHe": "פלסטין",
+  "flag": "🇵🇸",
+  "cities": [
+   "Gaza",
+   "Ramallah",
+   "Hebron",
+   "Nablus",
+   "Bethlehem"
+  ],
+  "currency": "ILS",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "PA",
+  "name": "Panama",
+  "nameHe": "פנמה",
+  "flag": "🇵🇦",
+  "cities": [
+   "Panama City",
+   "San Miguelito",
+   "Colon",
+   "David",
+   "Santiago"
+  ],
+  "currency": "PAB",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "PG",
+  "name": "Papua New Guinea",
+  "nameHe": "פפואה גינאה החדשה",
+  "flag": "🇵🇬",
+  "cities": [
+   "Port Moresby",
+   "Lae",
+   "Mount Hagen",
+   "Madang",
+   "Kokopo"
+  ],
+  "currency": "PGK",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "PY",
+  "name": "Paraguay",
+  "nameHe": "פרגוואי",
+  "flag": "🇵🇾",
+  "cities": [
+   "Asuncion",
+   "Ciudad del Este",
+   "San Lorenzo",
+   "Luque",
+   "Encarnacion"
+  ],
+  "currency": "PYG",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "PE",
+  "name": "Peru",
+  "nameHe": "פרו",
+  "flag": "🇵🇪",
+  "cities": [
+   "Lima",
+   "Arequipa",
+   "Trujillo",
+   "Chiclayo",
+   "Cusco"
+  ],
+  "currency": "PEN",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "PH",
+  "name": "Philippines",
+  "nameHe": "הפיליפינים",
+  "flag": "🇵🇭",
+  "cities": [
+   "Manila",
+   "Quezon City",
+   "Davao",
+   "Cebu City",
+   "Zamboanga"
+  ],
+  "currency": "PHP",
+  "namePool": "tl",
+  "monarchy": false
+ },
+ {
+  "code": "PL",
+  "name": "Poland",
+  "nameHe": "פולין",
+  "flag": "🇵🇱",
+  "cities": [
+   "Warsaw",
+   "Krakow",
+   "Lodz",
+   "Wroclaw",
+   "Poznan"
+  ],
+  "currency": "PLN",
+  "namePool": "pl",
+  "monarchy": false
+ },
+ {
+  "code": "PT",
+  "name": "Portugal",
+  "nameHe": "פורטוגל",
+  "flag": "🇵🇹",
+  "cities": [
+   "Lisbon",
+   "Porto",
+   "Braga",
+   "Coimbra",
+   "Faro"
+  ],
+  "currency": "EUR",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "QA",
+  "name": "Qatar",
+  "nameHe": "קטאר",
+  "flag": "🇶🇦",
+  "cities": [
+   "Doha",
+   "Al Rayyan",
+   "Al Wakrah",
+   "Al Khor",
+   "Umm Salal"
+  ],
+  "currency": "QAR",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "RO",
+  "name": "Romania",
+  "nameHe": "רומניה",
+  "flag": "🇷🇴",
+  "cities": [
+   "Bucharest",
+   "Cluj-Napoca",
+   "Timisoara",
+   "Iasi",
+   "Constanta"
+  ],
+  "currency": "RON",
+  "namePool": "ro",
+  "monarchy": false
+ },
+ {
+  "code": "RU",
+  "name": "Russia",
+  "nameHe": "רוסיה",
+  "flag": "🇷🇺",
+  "cities": [
+   "Moscow",
+   "Saint Petersburg",
+   "Novosibirsk",
+   "Yekaterinburg",
+   "Kazan"
+  ],
+  "currency": "RUB",
+  "namePool": "ru",
+  "monarchy": false
+ },
+ {
+  "code": "RW",
+  "name": "Rwanda",
+  "nameHe": "רואנדה",
+  "flag": "🇷🇼",
+  "cities": [
+   "Kigali",
+   "Butare",
+   "Gitarama",
+   "Ruhengeri",
+   "Gisenyi"
+  ],
+  "currency": "RWF",
+  "namePool": "rw",
+  "monarchy": false
+ },
+ {
+  "code": "KN",
+  "name": "Saint Kitts and Nevis",
+  "nameHe": "סנט קיטס ונוויס",
+  "flag": "🇰🇳",
+  "cities": [
+   "Basseterre",
+   "Charlestown",
+   "Sandy Point Town",
+   "Cayon",
+   "Dieppe Bay Town"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "LC",
+  "name": "Saint Lucia",
+  "nameHe": "סנט לוסיה",
+  "flag": "🇱🇨",
+  "cities": [
+   "Castries",
+   "Gros Islet",
+   "Vieux Fort",
+   "Micoud",
+   "Soufriere"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "VC",
+  "name": "Saint Vincent and the Grenadines",
+  "nameHe": "סנט וינסנט והגרנדינים",
+  "flag": "🇻🇨",
+  "cities": [
+   "Kingstown",
+   "Georgetown",
+   "Barrouallie",
+   "Layou",
+   "Port Elizabeth"
+  ],
+  "currency": "XCD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "WS",
+  "name": "Samoa",
+  "nameHe": "סמואה",
+  "flag": "🇼🇸",
+  "cities": [
+   "Apia",
+   "Vaitele",
+   "Faleasiu",
+   "Salelologa",
+   "Lufilufi"
+  ],
+  "currency": "WST",
+  "namePool": "sm",
+  "monarchy": false
+ },
+ {
+  "code": "SM",
+  "name": "San Marino",
+  "nameHe": "סן מרינו",
+  "flag": "🇸🇲",
+  "cities": [
+   "San Marino",
+   "Serravalle",
+   "Borgo Maggiore",
+   "Domagnano",
+   "Fiorentino"
+  ],
+  "currency": "EUR",
+  "namePool": "it",
+  "monarchy": false
+ },
+ {
+  "code": "ST",
+  "name": "Sao Tome and Principe",
+  "nameHe": "סאו טומה ופרינסיפה",
+  "flag": "🇸🇹",
+  "cities": [
+   "Sao Tome",
+   "Santo Amaro",
+   "Neves",
+   "Santana",
+   "Trindade"
+  ],
+  "currency": "STN",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "SA",
+  "name": "Saudi Arabia",
+  "nameHe": "ערב הסעודית",
+  "flag": "🇸🇦",
+  "cities": [
+   "Riyadh",
+   "Jeddah",
+   "Mecca",
+   "Medina",
+   "Dammam"
+  ],
+  "currency": "SAR",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "SN",
+  "name": "Senegal",
+  "nameHe": "סנגל",
+  "flag": "🇸🇳",
+  "cities": [
+   "Dakar",
+   "Touba",
+   "Thies",
+   "Kaolack",
+   "Saint-Louis"
+  ],
+  "currency": "XOF",
+  "namePool": "wo",
+  "monarchy": false
+ },
+ {
+  "code": "RS",
+  "name": "Serbia",
+  "nameHe": "סרביה",
+  "flag": "🇷🇸",
+  "cities": [
+   "Belgrade",
+   "Novi Sad",
+   "Nis",
+   "Kragujevac",
+   "Subotica"
+  ],
+  "currency": "RSD",
+  "namePool": "sr",
+  "monarchy": false
+ },
+ {
+  "code": "SC",
+  "name": "Seychelles",
+  "nameHe": "סיישל",
+  "flag": "🇸🇨",
+  "cities": [
+   "Victoria",
+   "Anse Boileau",
+   "Beau Vallon",
+   "Takamaka",
+   "Cascade"
+  ],
+  "currency": "SCR",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "SL",
+  "name": "Sierra Leone",
+  "nameHe": "סיירה לאון",
+  "flag": "🇸🇱",
+  "cities": [
+   "Freetown",
+   "Bo",
+   "Kenema",
+   "Makeni",
+   "Koidu"
+  ],
+  "currency": "SLE",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "SG",
+  "name": "Singapore",
+  "nameHe": "סינגפור",
+  "flag": "🇸🇬",
+  "cities": [
+   "Singapore",
+   "Jurong West",
+   "Woodlands",
+   "Tampines",
+   "Bedok"
+  ],
+  "currency": "SGD",
+  "namePool": "zh",
+  "monarchy": false
+ },
+ {
+  "code": "SK",
+  "name": "Slovakia",
+  "nameHe": "סלובקיה",
+  "flag": "🇸🇰",
+  "cities": [
+   "Bratislava",
+   "Kosice",
+   "Presov",
+   "Zilina",
+   "Nitra"
+  ],
+  "currency": "EUR",
+  "namePool": "cs",
+  "monarchy": false
+ },
+ {
+  "code": "SI",
+  "name": "Slovenia",
+  "nameHe": "סלובניה",
+  "flag": "🇸🇮",
+  "cities": [
+   "Ljubljana",
+   "Maribor",
+   "Celje",
+   "Kranj",
+   "Koper"
+  ],
+  "currency": "EUR",
+  "namePool": "hr",
+  "monarchy": false
+ },
+ {
+  "code": "SB",
+  "name": "Solomon Islands",
+  "nameHe": "איי שלמה",
+  "flag": "🇸🇧",
+  "cities": [
+   "Honiara",
+   "Gizo",
+   "Auki",
+   "Kirakira",
+   "Buala"
+  ],
+  "currency": "SBD",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "SO",
+  "name": "Somalia",
+  "nameHe": "סומליה",
+  "flag": "🇸🇴",
+  "cities": [
+   "Mogadishu",
+   "Hargeisa",
+   "Bosaso",
+   "Kismayo",
+   "Baidoa"
+  ],
+  "currency": "SOS",
+  "namePool": "so",
+  "monarchy": false
+ },
+ {
+  "code": "ZA",
+  "name": "South Africa",
+  "nameHe": "דרום אפריקה",
+  "flag": "🇿🇦",
+  "cities": [
+   "Johannesburg",
+   "Cape Town",
+   "Durban",
+   "Pretoria",
+   "Gqeberha"
+  ],
+  "currency": "ZAR",
+  "namePool": "zu",
+  "monarchy": false
+ },
+ {
+  "code": "KR",
+  "name": "South Korea",
+  "nameHe": "דרום קוריאה",
+  "flag": "🇰🇷",
+  "cities": [
+   "Seoul",
+   "Busan",
+   "Incheon",
+   "Daegu",
+   "Daejeon"
+  ],
+  "currency": "KRW",
+  "namePool": "ko",
+  "monarchy": false
+ },
+ {
+  "code": "SS",
+  "name": "South Sudan",
+  "nameHe": "דרום סודן",
+  "flag": "🇸🇸",
+  "cities": [
+   "Juba",
+   "Wau",
+   "Malakal",
+   "Yei",
+   "Bor"
+  ],
+  "currency": "SSP",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "ES",
+  "name": "Spain",
+  "nameHe": "ספרד",
+  "flag": "🇪🇸",
+  "cities": [
+   "Madrid",
+   "Barcelona",
+   "Valencia",
+   "Seville",
+   "Zaragoza"
+  ],
+  "currency": "EUR",
+  "namePool": "es",
+  "monarchy": true
+ },
+ {
+  "code": "LK",
+  "name": "Sri Lanka",
+  "nameHe": "סרי לנקה",
+  "flag": "🇱🇰",
+  "cities": [
+   "Colombo",
+   "Kandy",
+   "Galle",
+   "Jaffna",
+   "Negombo"
+  ],
+  "currency": "LKR",
+  "namePool": "si",
+  "monarchy": false
+ },
+ {
+  "code": "SD",
+  "name": "Sudan",
+  "nameHe": "סודן",
+  "flag": "🇸🇩",
+  "cities": [
+   "Khartoum",
+   "Omdurman",
+   "Port Sudan",
+   "Kassala",
+   "El Obeid"
+  ],
+  "currency": "SDG",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "SR",
+  "name": "Suriname",
+  "nameHe": "סורינאם",
+  "flag": "🇸🇷",
+  "cities": [
+   "Paramaribo",
+   "Lelydorp",
+   "Nieuw Nickerie",
+   "Moengo",
+   "Albina"
+  ],
+  "currency": "SRD",
+  "namePool": "nl",
+  "monarchy": false
+ },
+ {
+  "code": "SE",
+  "name": "Sweden",
+  "nameHe": "שוודיה",
+  "flag": "🇸🇪",
+  "cities": [
+   "Stockholm",
+   "Gothenburg",
+   "Malmo",
+   "Uppsala",
+   "Vasteras"
+  ],
+  "currency": "SEK",
+  "namePool": "sv",
+  "monarchy": true
+ },
+ {
+  "code": "CH",
+  "name": "Switzerland",
+  "nameHe": "שווייץ",
+  "flag": "🇨🇭",
+  "cities": [
+   "Zurich",
+   "Geneva",
+   "Basel",
+   "Bern",
+   "Lausanne"
+  ],
+  "currency": "CHF",
+  "namePool": "de",
+  "monarchy": false
+ },
+ {
+  "code": "SY",
+  "name": "Syria",
+  "nameHe": "סוריה",
+  "flag": "🇸🇾",
+  "cities": [
+   "Damascus",
+   "Aleppo",
+   "Homs",
+   "Latakia",
+   "Hama"
+  ],
+  "currency": "SYP",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "TW",
+  "name": "Taiwan",
+  "nameHe": "טאיוואן",
+  "flag": "🇹🇼",
+  "cities": [
+   "Taipei",
+   "Kaohsiung",
+   "Taichung",
+   "Tainan",
+   "Hsinchu"
+  ],
+  "currency": "TWD",
+  "namePool": "zh",
+  "monarchy": false
+ },
+ {
+  "code": "TJ",
+  "name": "Tajikistan",
+  "nameHe": "טג'יקיסטן",
+  "flag": "🇹🇯",
+  "cities": [
+   "Dushanbe",
+   "Khujand",
+   "Kulob",
+   "Bokhtar",
+   "Istaravshan"
+  ],
+  "currency": "TJS",
+  "namePool": "tg",
+  "monarchy": false
+ },
+ {
+  "code": "TZ",
+  "name": "Tanzania",
+  "nameHe": "טנזניה",
+  "flag": "🇹🇿",
+  "cities": [
+   "Dar es Salaam",
+   "Dodoma",
+   "Mwanza",
+   "Arusha",
+   "Mbeya"
+  ],
+  "currency": "TZS",
+  "namePool": "sw",
+  "monarchy": false
+ },
+ {
+  "code": "TH",
+  "name": "Thailand",
+  "nameHe": "תאילנד",
+  "flag": "🇹🇭",
+  "cities": [
+   "Bangkok",
+   "Chiang Mai",
+   "Nakhon Ratchasima",
+   "Phuket",
+   "Pattaya"
+  ],
+  "currency": "THB",
+  "namePool": "th",
+  "monarchy": true
+ },
+ {
+  "code": "TL",
+  "name": "Timor-Leste",
+  "nameHe": "מזרח טימור",
+  "flag": "🇹🇱",
+  "cities": [
+   "Dili",
+   "Baucau",
+   "Maliana",
+   "Suai",
+   "Lospalos"
+  ],
+  "currency": "USD",
+  "namePool": "pt",
+  "monarchy": false
+ },
+ {
+  "code": "TG",
+  "name": "Togo",
+  "nameHe": "טוגו",
+  "flag": "🇹🇬",
+  "cities": [
+   "Lome",
+   "Sokode",
+   "Kara",
+   "Kpalime",
+   "Atakpame"
+  ],
+  "currency": "XOF",
+  "namePool": "fr",
+  "monarchy": false
+ },
+ {
+  "code": "TO",
+  "name": "Tonga",
+  "nameHe": "טונגה",
+  "flag": "🇹🇴",
+  "cities": [
+   "Nuku'alofa",
+   "Neiafu",
+   "Haveluloto",
+   "Vaini",
+   "Pangai"
+  ],
+  "currency": "TOP",
+  "namePool": "to",
+  "monarchy": true
+ },
+ {
+  "code": "TT",
+  "name": "Trinidad and Tobago",
+  "nameHe": "טרינידד וטובגו",
+  "flag": "🇹🇹",
+  "cities": [
+   "Port of Spain",
+   "San Fernando",
+   "Chaguanas",
+   "Arima",
+   "Scarborough"
+  ],
+  "currency": "TTD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "TN",
+  "name": "Tunisia",
+  "nameHe": "תוניסיה",
+  "flag": "🇹🇳",
+  "cities": [
+   "Tunis",
+   "Sfax",
+   "Sousse",
+   "Kairouan",
+   "Bizerte"
+  ],
+  "currency": "TND",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "TR",
+  "name": "Turkey",
+  "nameHe": "טורקיה",
+  "flag": "🇹🇷",
+  "cities": [
+   "Istanbul",
+   "Ankara",
+   "Izmir",
+   "Bursa",
+   "Antalya"
+  ],
+  "currency": "TRY",
+  "namePool": "tr",
+  "monarchy": false
+ },
+ {
+  "code": "TM",
+  "name": "Turkmenistan",
+  "nameHe": "טורקמניסטן",
+  "flag": "🇹🇲",
+  "cities": [
+   "Ashgabat",
+   "Turkmenabat",
+   "Dashoguz",
+   "Mary",
+   "Balkanabat"
+  ],
+  "currency": "TMT",
+  "namePool": "tk",
+  "monarchy": false
+ },
+ {
+  "code": "TV",
+  "name": "Tuvalu",
+  "nameHe": "טובאלו",
+  "flag": "🇹🇻",
+  "cities": [
+   "Funafuti",
+   "Vaitupu",
+   "Nanumea",
+   "Niutao",
+   "Nui"
+  ],
+  "currency": "AUD",
+  "namePool": "tv",
+  "monarchy": true
+ },
+ {
+  "code": "UG",
+  "name": "Uganda",
+  "nameHe": "אוגנדה",
+  "flag": "🇺🇬",
+  "cities": [
+   "Kampala",
+   "Gulu",
+   "Lira",
+   "Mbarara",
+   "Jinja"
+  ],
+  "currency": "UGX",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "UA",
+  "name": "Ukraine",
+  "nameHe": "אוקראינה",
+  "flag": "🇺🇦",
+  "cities": [
+   "Kyiv",
+   "Kharkiv",
+   "Odesa",
+   "Dnipro",
+   "Lviv"
+  ],
+  "currency": "UAH",
+  "namePool": "uk",
+  "monarchy": false
+ },
+ {
+  "code": "AE",
+  "name": "United Arab Emirates",
+  "nameHe": "איחוד האמירויות",
+  "flag": "🇦🇪",
+  "cities": [
+   "Dubai",
+   "Abu Dhabi",
+   "Sharjah",
+   "Al Ain",
+   "Ajman"
+  ],
+  "currency": "AED",
+  "namePool": "ar",
+  "monarchy": true
+ },
+ {
+  "code": "GB",
+  "name": "United Kingdom",
+  "nameHe": "בריטניה",
+  "flag": "🇬🇧",
+  "cities": [
+   "London",
+   "Birmingham",
+   "Manchester",
+   "Glasgow",
+   "Liverpool"
+  ],
+  "currency": "GBP",
+  "namePool": "en",
+  "monarchy": true
+ },
+ {
+  "code": "US",
+  "name": "United States",
+  "nameHe": "ארצות הברית",
+  "flag": "🇺🇸",
+  "cities": [
+   "New York",
+   "Los Angeles",
+   "Chicago",
+   "Houston",
+   "Phoenix"
+  ],
+  "currency": "USD",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "UY",
+  "name": "Uruguay",
+  "nameHe": "אורוגוואי",
+  "flag": "🇺🇾",
+  "cities": [
+   "Montevideo",
+   "Salto",
+   "Paysandu",
+   "Las Piedras",
+   "Rivera"
+  ],
+  "currency": "UYU",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "UZ",
+  "name": "Uzbekistan",
+  "nameHe": "אוזבקיסטן",
+  "flag": "🇺🇿",
+  "cities": [
+   "Tashkent",
+   "Samarkand",
+   "Namangan",
+   "Andijan",
+   "Bukhara"
+  ],
+  "currency": "UZS",
+  "namePool": "uz",
+  "monarchy": false
+ },
+ {
+  "code": "VU",
+  "name": "Vanuatu",
+  "nameHe": "ונואטו",
+  "flag": "🇻🇺",
+  "cities": [
+   "Port Vila",
+   "Luganville",
+   "Norsup",
+   "Isangel",
+   "Sola"
+  ],
+  "currency": "VUV",
+  "namePool": "bi",
+  "monarchy": false
+ },
+ {
+  "code": "VA",
+  "name": "Vatican City",
+  "nameHe": "הוותיקן",
+  "flag": "🇻🇦",
+  "cities": [
+   "Vatican City"
+  ],
+  "currency": "EUR",
+  "namePool": "it",
+  "monarchy": true
+ },
+ {
+  "code": "VE",
+  "name": "Venezuela",
+  "nameHe": "ונצואלה",
+  "flag": "🇻🇪",
+  "cities": [
+   "Caracas",
+   "Maracaibo",
+   "Valencia",
+   "Barquisimeto",
+   "Maracay"
+  ],
+  "currency": "VES",
+  "namePool": "es",
+  "monarchy": false
+ },
+ {
+  "code": "VN",
+  "name": "Vietnam",
+  "nameHe": "וייטנאם",
+  "flag": "🇻🇳",
+  "cities": [
+   "Ho Chi Minh City",
+   "Hanoi",
+   "Da Nang",
+   "Hai Phong",
+   "Can Tho"
+  ],
+  "currency": "VND",
+  "namePool": "vi",
+  "monarchy": false
+ },
+ {
+  "code": "YE",
+  "name": "Yemen",
+  "nameHe": "תימן",
+  "flag": "🇾🇪",
+  "cities": [
+   "Sanaa",
+   "Aden",
+   "Taiz",
+   "Hodeidah",
+   "Ibb"
+  ],
+  "currency": "YER",
+  "namePool": "ar",
+  "monarchy": false
+ },
+ {
+  "code": "ZM",
+  "name": "Zambia",
+  "nameHe": "זמביה",
+  "flag": "🇿🇲",
+  "cities": [
+   "Lusaka",
+   "Kitwe",
+   "Ndola",
+   "Kabwe",
+   "Livingstone"
+  ],
+  "currency": "ZMW",
+  "namePool": "en",
+  "monarchy": false
+ },
+ {
+  "code": "ZW",
+  "name": "Zimbabwe",
+  "nameHe": "זימבבווה",
+  "flag": "🇿🇼",
+  "cities": [
+   "Harare",
+   "Bulawayo",
+   "Chitungwiza",
+   "Mutare",
+   "Gweru"
+  ],
+  "currency": "ZWL",
+  "namePool": "sn",
+  "monarchy": false
+ }
+]

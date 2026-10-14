@@ -74,3 +74,17 @@ describe('content integrity', () => {
     expect(gaps).toEqual([])
   })
 })
+
+describe('countries', () => {
+  it('every country has a name pool, cities, flag and Hebrew name', async () => {
+    const { COUNTRIES, POOLS } = await import('./people')
+    const bad = COUNTRIES.filter((c) => !POOLS[c.namePool] || !c.cities.length || !c.flag || !c.nameHe || c.code.length !== 2)
+    expect(bad.map((c) => `${c.code}:${c.namePool}`)).toEqual([])
+    expect(new Set(COUNTRIES.map((c) => c.code)).size).toBe(COUNTRIES.length)
+  })
+  it('every pool has 40 female, 40 male and 40 last names', async () => {
+    const { POOLS } = await import('./people')
+    const bad = Object.entries(POOLS).filter(([, p]) => p.female.length < 40 || p.male.length < 40 || p.last.length < 40).map(([k]) => k)
+    expect(bad).toEqual([])
+  })
+})
